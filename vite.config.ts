@@ -14,7 +14,7 @@ export default defineConfig({
       exposes: {
         './HelloWorld': './src/components/HelloWorld.vue',
       },
-      shared: ['vue', 'vuetify'],
+      shared: ['vue'],
     }),
   ],
   base: '',
