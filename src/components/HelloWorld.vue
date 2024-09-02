@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-// import 'vuetify/styles'
 
 defineProps<{ msg: string }>()
 
@@ -11,7 +10,7 @@ const count = ref(0)
   <h2 class="read-the-docs">{{ msg }}</h2>
 
   <div class="card">
-    <VBtn @click="count++">count is {{ count }}</VBtn>
+    <button type="button" @click="count++">count is {{ count }}</button>
   </div>
 </template>
 
