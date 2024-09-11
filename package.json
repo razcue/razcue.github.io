@@ -12,6 +12,8 @@
     "test-storybook": "test-storybook"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@mdi/font": "^7.4.47",
     "vue": "^3.4.37",
     "vue-i18n": "^9.14.0",
     "vuetify": "^3.7.1"
@@ -35,6 +37,6 @@
     "typescript": "^5.5.3",
     "vite": "^5.4.1",
     "vite-plugin-vuetify": "^2.0.4",
-    "vue-tsc": "^2.0.29"
+    "vue-tsc": "^2.1.6"
   }
 }

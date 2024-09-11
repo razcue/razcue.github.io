@@ -1,31 +1,109 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import ProfileHead from './components/ProfileHead.vue'
+import ProfileSkills from './components/ProfileSkills.vue'
+import ProfileExperienceEducation from './components/ProfileExperienceEducation.vue'
+import ModuleFederationShowcase from './components/ModuleFederationShowcase.vue'
+import StorybookShowcase from './components/StorybookShowcase.vue'
+import { ref, nextTick, provide } from 'vue'
+import ContactForm from './components/ContactForm.vue'
+
+const showSnackbar = ref(false)
+
+type Anchor = 'top' | 'bottom' | 'top start' | 'top end' | 'bottom start' | 'bottom end'
+
+const snackbarOptions = ref({
+  message: '',
+  variant: 'flat' as 'flat' | 'text' | 'elevated' | 'tonal' | 'outlined' | 'plain', // Set the correct type for variant
+  color: 'primary',
+  timeout: 2000,
+  location: 'top end' as Anchor,
+  transition: 'fade-transition',
+  showAction: false,
+  actionText: 'Cerrar',
+})
+
+interface iSnackbarOptions {
+  message?: string
+  variant?: 'flat' | 'text' | 'elevated' | 'tonal' | 'outlined' | 'plain' // Make sure variant has correct types
+  color?: string
+  timeout?: number
+  location?: 'top' | 'bottom' | 'top end' | 'bottom end'
+  transition?: string
+  showAction?: boolean
+  actionText?: string
+}
+
+const throwSnack = (options: iSnackbarOptions) => {
+  snackbarOptions.value = {
+    message: options.message || '',
+    variant: options.variant || 'flat',
+    color: options.color || 'primary',
+    timeout: options.timeout || 2000,
+    location: options.location || 'top end',
+    transition: options.transition || 'fade-transition',
+    showAction: options.showAction || false,
+    actionText: options.actionText || 'Cerrar',
+  }
+
+  nextTick(() => {
+    showSnackbar.value = true // No need for .value with v-model, update showSnackbar directly
+  })
+}
+
+// Provide the throwSnack function to the rest of the app
+provide('Snackbar:giveMeASnack', throwSnack)
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <h1>Hello World from</h1>
-  <HelloWorld msg="Vite + TypeScript + Vue + Vuetify + ModuleFederation + StoryBook + GitHubPages + CI/CD" />
+  <VContainer fluid>
+    <VSlideYTransition>
+      <ProfileHead />
+    </VSlideYTransition>
+
+    <VSlideYTransition>
+      <ProfileSkills />
+    </VSlideYTransition>
+
+    <VSlideYTransition>
+      <ProfileExperienceEducation />
+    </VSlideYTransition>
+
+    <VSlideYTransition>
+      <ModuleFederationShowcase />
+    </VSlideYTransition>
+
+    <VSlideYTransition>
+      <StorybookShowcase />
+    </VSlideYTransition>
+
+    <VSlideYTransition>
+      <ContactForm />
+    </VSlideYTransition>
+
+    <!-- Snackbar component -->
+    <VSnackbar
+        v-model="showSnackbar"
+    :variant="snackbarOptions.variant"
+    :color="snackbarOptions.color"
+    :timeout="snackbarOptions.timeout"
+    :location="snackbarOptions.location"
+    :transition="snackbarOptions.transition"
+    >
+    {{ snackbarOptions.message }}
+    <template v-if="snackbarOptions.showAction" #actions>
+      <VBtn
+          :color="snackbarOptions.color"
+          @click="showSnackbar = false"
+      >
+      {{ snackbarOptions.actionText }}
+      </VBtn>
+    </template>
+    </VSnackbar>
+  </VContainer>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+<style>
+body {
+  font-family: 'Roboto', sans-serif;
 }
 </style>
