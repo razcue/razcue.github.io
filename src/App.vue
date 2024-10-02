@@ -2,12 +2,7 @@
 import ProfileHead from './components/ProfileHead.vue'
 import ProfileSkills from './components/ProfileSkills.vue'
 import ProfileExperienceEducation from './components/ProfileExperienceEducation.vue'
-import ModuleFederationShowcase from './components/ModuleFederationShowcase.vue'
-import StorybookShowcase from './components/StorybookShowcase.vue'
 import { ref, nextTick, provide } from 'vue'
-import ContactForm from './components/ContactForm.vue'
-import ModuleFederationShowcaseTest from '@/components/ModuleFederationShowcaseTest.vue'
-import Portfolio from "@/components/Portfolio.vue";
 
 const showSnackbar = ref(false)
 
