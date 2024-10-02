@@ -25,7 +25,7 @@
         </VRow>
         <VRow class="mt-0">
           <div class="text-subtitle-1 px-2">
-            Accomplished and results-driven web developer with over 6 years of experience in creating dynamic, scalable,
+            Accomplished and results-driven web developer with over 5 years of experience creating dynamic, scalable,
             and high-performance web applications. Skilled in building reusable components, optimizing core functionalities,
             and delivering tailored solutions that align with business needs. Proven expertise in driving projects
             from concept to completion with a strong focus on clean code, best practices, and a collaborative approach to problem-solving.
