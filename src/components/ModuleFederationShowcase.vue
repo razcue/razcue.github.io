@@ -7,61 +7,28 @@
           Module Federation allows you to share code across different applications without requiring them to be bundled together. This is particularly useful for micro-frontends, where multiple applications can independently deploy, but share common components.
         </div>
 
-        <div class="text-h6 mb-3">Importing Components</div>
-        <VExpansionPanels>
-          <VExpansionPanel>
-            <VExpansionPanelTitle>Using Vite</VExpansionPanelTitle>
-            <VExpansionPanelText>
-              <pre>
-                <code>
-                  &lt;template&gt;
-                  &lt;script setup&gt;
-import { defineAsyncComponent } from 'vue'
+        <CodeShowcase :languages="languages">
+          <!-- Description Slot -->
+          <template #description>
+            This example shows how to implement a code snippet component with language tabs and a copy-to-clipboard button.
+          </template>
 
-const HelloWorld = defineAsyncComponent(() =>
-  import('mf.razcue.github.io/HelloWorld')
-)
-
-// Use HelloWorld as a component in your Vue app
-&lt;/script&gt;
-export default {
-  components: {
-    HelloWorld
-  }
-}
-                  &lt;/template&gt;
-                </code>
-              </pre>
-            </VExpansionPanelText>
-          </VExpansionPanel>
-
-          <VExpansionPanel>
-            <VExpansionPanelTitle>Using Webpack</VExpansionPanelTitle>
-            <VExpansionPanelText>
-              <pre>
-                <code>
-                  &lt;React.Suspense fallback=&quot;Loading...&quot;&gt;
-                    &lt;HelloWorld /&gt;
-                  &lt;/React.Suspense&gt;
-
-const HelloWorld = React.lazy(() =>
-  import('mf.razcue.github.io/HelloWorld')
-)
-
-// Use HelloWorld as a component in your React app
-export default function App() {
-  return (
-    &lt;React.Suspense fallback=&quot;Loading...&quot;&gt;
-      &lt;HelloWorld /&gt;
-    &lt;/React.Suspense&gt;
-  );
-}
-                </code>
-              </pre>
-            </VExpansionPanelText>
-          </VExpansionPanel>
-        </VExpansionPanels>
+          <!-- Notes Slot -->
+          <template #notes>
+            Note: This component is fully customizable and allows you to showcase code in various languages/technologies.
+          </template>
+        </CodeShowcase>
       </VCard>
     </VCol>
   </VRow>
 </template>
+
+<script setup>
+import CodeShowcase from "@/components/CodeShowcase.vue";
+
+const languages = [
+  { label: 'HTML', code: '<h1>Hello, world!</h1>' },
+  { label: 'CSS', code: 'h1 { color: red; font-size: 2rem; }' },
+  { label: 'JavaScript', code: 'console.log("Hello, world!");' }
+]
+</script>

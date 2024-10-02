@@ -6,6 +6,8 @@ import ModuleFederationShowcase from './components/ModuleFederationShowcase.vue'
 import StorybookShowcase from './components/StorybookShowcase.vue'
 import { ref, nextTick, provide } from 'vue'
 import ContactForm from './components/ContactForm.vue'
+import ModuleFederationShowcaseTest from '@/components/ModuleFederationShowcaseTest.vue'
+import Portfolio from "@/components/Portfolio.vue";
 
 const showSnackbar = ref(false)
 
@@ -46,7 +48,7 @@ const throwSnack = (options: iSnackbarOptions) => {
   }
 
   nextTick(() => {
-    showSnackbar.value = true // No need for .value with v-model, update showSnackbar directly
+    showSnackbar.value = true
   })
 }
 
@@ -68,36 +70,24 @@ provide('Snackbar:giveMeASnack', throwSnack)
       <ProfileExperienceEducation />
     </VSlideYTransition>
 
-    <VSlideYTransition>
-      <ModuleFederationShowcase />
-    </VSlideYTransition>
-
-    <VSlideYTransition>
-      <StorybookShowcase />
-    </VSlideYTransition>
-
-    <VSlideYTransition>
-      <ContactForm />
-    </VSlideYTransition>
-
     <!-- Snackbar component -->
     <VSnackbar
-        v-model="showSnackbar"
-    :variant="snackbarOptions.variant"
-    :color="snackbarOptions.color"
-    :timeout="snackbarOptions.timeout"
-    :location="snackbarOptions.location"
-    :transition="snackbarOptions.transition"
+      v-model="showSnackbar"
+      :variant="snackbarOptions.variant"
+      :color="snackbarOptions.color"
+      :timeout="snackbarOptions.timeout"
+      :location="snackbarOptions.location"
+      :transition="snackbarOptions.transition"
     >
-    {{ snackbarOptions.message }}
-    <template v-if="snackbarOptions.showAction" #actions>
-      <VBtn
+      {{ snackbarOptions.message }}
+      <template v-if="snackbarOptions.showAction" #actions>
+        <VBtn
           :color="snackbarOptions.color"
           @click="showSnackbar = false"
-      >
-      {{ snackbarOptions.actionText }}
-      </VBtn>
-    </template>
+        >
+        {{ snackbarOptions.actionText }}
+        </VBtn>
+      </template>
     </VSnackbar>
   </VContainer>
 </template>

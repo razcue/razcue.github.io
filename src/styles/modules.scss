@@ -1,0 +1,12 @@
+.quote {
+  display: flex;
+  gap: 2rem;
+}
+
+.quote__author {
+  font-weight: bold;
+}
+
+.quote__text {
+  font-style: italic;
+}

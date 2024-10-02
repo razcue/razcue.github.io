@@ -23,14 +23,14 @@ export default defineConfig({
       '@': new URL('./src', import.meta.url).pathname,
     },
   },
-  // css: {
-  //   preprocessorOptions: {
-  //     scss: {
-  //       additionalData:
-  //           `@import 'vuetify/styles';`,
-  //     },
-  //   },
-  // },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData:
+            `@import 'vuetify/styles';`,
+      },
+    },
+  },
   build: {
     target: 'esnext',
     cssCodeSplit: true,
