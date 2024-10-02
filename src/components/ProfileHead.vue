@@ -31,6 +31,24 @@
             from concept to completion with a strong focus on clean code, best practices, and a collaborative approach to problem-solving.
           </div>
         </VRow>
+        <VRow class="mt-6 align-center flex-column">
+          <div class="separator" />
+
+          <VRow class="mt-0 justify-space-between gap-4">
+            <VCol class="d-flex gap-2">
+              <VIcon left>mdi-whatsapp</VIcon>
+              <a href="https://wa.me/+5354761244" target="_blank">+5354761244</a>
+            </VCol>
+            <VCol class="d-flex gap-2">
+              <VIcon left>mdi-chat-outline</VIcon>
+              <a href="https://t.me/razcue" target="_blank">@razcue</a>
+            </VCol>
+            <VCol class="d-flex gap-2">
+              <VIcon left>mdi-email-outline</VIcon>
+              <a href="mailto:razcue@yandex.com" target="_blank">razcue@yandex.com</a>
+            </VCol>
+          </VRow>
+        </VRow>
       </VCard>
     </VCol>
   </VRow>
@@ -44,6 +62,10 @@
 .profile__pic {
   width: 140px;
   padding: 30px 0 0 10px;
+}
+
+.gap-2 {
+  gap: 0.4rem;
 }
 
 .gap-4 {
@@ -61,6 +83,12 @@
 
 .quote__text {
   font-style: italic;
+}
+
+.separator {
+  height: 0.1rem;
+  width: 80%;
+  background-color: #90a4ae;
 }
 </style>
 <script setup lang="ts">
