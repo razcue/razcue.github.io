@@ -5,13 +5,13 @@
         <VExpansionPanels>
           <VExpansionPanel>
             <VExpansionPanelTitle>Experience</VExpansionPanelTitle>
-            <VExpansionPanelText>
+            <VExpansionPanelText class="v-expansion-panel-text__wrapper-padding_0">
               <VContainer>
                 <VRow>
                   <VCol cols="12">
                     <section>
                       <VCard outlined>
-                        <header>
+                        <header class="px-2 pt-2">
                           <h2>Lead Developer at Dejavu</h2>
                           <h3>Panama City, Panama | January 2024 – August 2024</h3>
                         </header>
@@ -33,7 +33,7 @@
                   <VCol cols="12">
                     <section>
                       <VCard outlined>
-                        <header>
+                        <header class="px-2 pt-2">
                           <h2>Full-Stack Developer at First Due</h2>
                           <h3>New York, US | March 2021 – November 2023</h3>
                         </header>
@@ -55,7 +55,7 @@
                   <VCol cols="12">
                     <section id="experience">
                       <VCard outlined>
-                        <header>
+                        <header class="px-2 pt-2">
                           <h2>Full-Stack Developer at Grupo de Electrónica para el Turismo (GET)</h2>
                           <h3>Havana, Cuba | March 2019 – December 2020</h3>
                         </header>
@@ -82,11 +82,11 @@
           <VExpansionPanel>
             <VExpansionPanelTitle>Education & Certification</VExpansionPanelTitle>
             <VExpansionPanelText>
-              <div class="mb-4">
+              <div class="mb-4 px-2 pt-2">
                 <div class="text-h6">Bachelor in Computer Science</div>
                 <div class="text-body-2 text--secondary">University of Informatics Sciences, Havana, 2013 - 2018</div>
               </div>
-              <div>
+              <div class="pa-2">
                 <div class="text-h6">Web Responsive Design</div>
                 <div class="text-body-2 text--secondary">
                   Free Code Camp Course - <a href="https://www.freecodecamp.org/certification/fcc0d66daac-ef4f-4e0e-9e60-d02d24f85508/responsive-web-design" target="_blank">link</a>, 2021

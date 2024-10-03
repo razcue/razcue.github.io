@@ -44,6 +44,7 @@ h1 {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  overflow-x: hidden;
 }
 
 @media (prefers-color-scheme: light) {
@@ -56,5 +57,15 @@ h1 {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+div.v-expansion-panel-text__wrapper {
+  padding: 0;
+}
+
+@media (min-width: 1280px) {
+  div.v-expansion-panel-text__wrapper {
+    padding: 8px 24px 16px;
   }
 }

@@ -4,7 +4,7 @@
       <VCard elevation="3" class="pa-6">
         <div class="text-h5 mb-4">Skills</div>
         <VRow class="justify-center py-2">
-          <div class="d-flex justify-center align-center">
+          <div class="d-flex flex-column flex-lg-row justify-center align-center">
             <span class="font-italic">"Live as if you were to die tomorrow. Learn as if you were to live forever."</span>
             <span class="font-weight-bold ml-2">Mahatma Gandhi</span>
           </div>
@@ -18,7 +18,9 @@
               <VExpansionPanel>
                 <VExpansionPanelTitle>Communication Skills</VExpansionPanelTitle>
                 <VExpansionPanelText>
-                  <span>Communication is one of the most essential soft skills for any developer, particularly in an environment where you interact with multiple stakeholders.</span>
+                  <div class="px-4">
+                    <span>Communication is one of the most essential soft skills for any developer, particularly in an environment where you interact with multiple stakeholders.</span>
+                  </div>
                   <VList>
                     <VListItem>
                       <VListItemTitle>Client Communication</VListItemTitle>
@@ -62,7 +64,7 @@
               </VExpansionPanel>
               <VExpansionPanel>
                 <VExpansionPanelTitle>Time Management</VExpansionPanelTitle>
-                <VExpansionPanelText>
+                <VExpansionPanelText class="pa-4">
                   <div class="v-list-item-title v-list-item-title_description-plain">Effective time management ensures project deadlines are met without sacrificing quality.</div>
                   <div class="v-list-item-subtitle v-list-item-subtitle_description-plain mt-2">
                     Prioritization is key. Successful developers break down large tasks into manageable steps and set clear goals for each sprint. Utilizing tools like Jira or Asana can streamline task assignment and ensure accountability. Furthermore, consistent reviews and reassessments allow for adaptive planning, ensuring potential blockers are addressed before they cause delays. A well-organized schedule also leaves room for unforeseen challenges and adjustments.
@@ -72,7 +74,9 @@
               <VExpansionPanel>
                 <VExpansionPanelTitle>Collaboration and Teamwork</VExpansionPanelTitle>
                 <VExpansionPanelText>
-                  <span>Collaboration is a fundamental part of development, especially as projects often require the expertise of frontend and backend developers, others specialists, and a lot of fireworks.</span>
+                  <div class="px-4">
+                    <span>Collaboration is a fundamental part of development, especially as projects often require the expertise of frontend and backend developers, others specialists, and a lot of fireworks.</span>
+                  </div>
                   <VList>
                     <VListItem>
                       <VListItemTitle>Pair Programming</VListItemTitle>
@@ -98,7 +102,9 @@
               <VExpansionPanel>
                 <VExpansionPanelTitle>Adaptability</VExpansionPanelTitle>
                 <VExpansionPanelText>
-                  <span>As a developer, you will constantly face changing requirements, new tools, and evolving technologies.</span>
+                  <div class="px-4">
+                    <span>As a developer, you will constantly face changing requirements, new tools, and evolving technologies.</span>
+                  </div>
                   <VList>
                     <VListItem>
                       <VListItemTitle>Tech Stack Adaptation</VListItemTitle>
@@ -117,7 +123,7 @@
               </VExpansionPanel>
               <VExpansionPanel>
                 <VExpansionPanelTitle>Attention to Detail</VExpansionPanelTitle>
-                <VExpansionPanelText>
+                <VExpansionPanelText class="pa-4">
                   <div class="v-list-item-title v-list-item-title_description-plain">Precision and focus on small details can mean the difference between a smooth or buggy product.</div>
                   <div class="v-list-item-subtitle v-list-item-subtitle_description-plain mt-2">
                     Every piece of code matters. Whether it’s in writing precise SQL queries or ensuring pixel-perfect layouts, attention to detail is crucial. This involves not only spotting errors but also anticipating potential issues, like security vulnerabilities, performance bottlenecks, or accessibility concerns. Testing every edge case ensures the code is robust, scalable, and secure.
@@ -127,7 +133,9 @@
               <VExpansionPanel>
                 <VExpansionPanelTitle>Emotional Intelligence</VExpansionPanelTitle>
                 <VExpansionPanelText>
-                  <span>Emotional intelligence (EQ) helps you navigate interpersonal relationships at work, manage stress, and respond well to feedback.</span>
+                  <div class="px-4">
+                    <span>Emotional intelligence (EQ) helps you navigate interpersonal relationships at work, manage stress, and respond well to feedback.</span>
+                  </div>
                   <VList>
                     <VListItem>
                       <VListItemTitle>Receiving Feedback</VListItemTitle>
@@ -146,8 +154,8 @@
               </VExpansionPanel>
               <VExpansionPanel>
                 <VExpansionPanelTitle>Creativity</VExpansionPanelTitle>
-                <VExpansionPanelText>
-                  <div class="quote">
+                <VExpansionPanelText class="pa-4">
+                  <div class="quote d-flex flex-column flex-lg-row justify-center align-center">
                     <span class="quote__text">"Genius is one percent inspiration, ninety-nine percent perspiration."</span>
                     <span class="quote__author">Thomas Edison</span>
                   </div>
@@ -164,7 +172,9 @@
               <VExpansionPanel>
                 <VExpansionPanelTitle>Mentoring and Leadership</VExpansionPanelTitle>
                 <VExpansionPanelText>
-                  <span>Leadership skills are particularly valuable as you gain experience. Even if you’re not in a formal leadership role, mentoring junior developers can help solidify your knowledge and improve team productivity.</span>
+                  <div class="px-4">
+                    <span>Leadership skills are particularly valuable as you gain experience. Even if you’re not in a formal leadership role, mentoring junior developers can help solidify your knowledge and improve team productivity.</span>
+                  </div>
                   <VList>
                     <VListItem>
                       <VListItemTitle>Knowledge Sharing</VListItemTitle>
@@ -485,6 +495,19 @@
   display: block;
   text-align: justify;
   white-space: unset;
+}
+
+.quote {
+  display: flex;
+  gap: 1rem;
+}
+
+.quote__author {
+  font-weight: bold;
+}
+
+.quote__text {
+  font-style: italic;
 }
 </style>
 <script setup lang="ts">

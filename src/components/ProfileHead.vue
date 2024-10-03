@@ -3,7 +3,7 @@
     <VCol cols="12" md="8">
       <VCard elevation="3" class="pa-6">
         <VRow align="center" justify="center">
-          <VCol class="d-flex align-center justify-center gap-4">
+          <VCol class="d-flex flex-column flex-lg-row align-center justify-center gap-4">
             <div>
               <VAvatar size="120" class="mb-4">
                 <img src="../assets/profile_pic.png" class="profile__pic" alt="Profile Picture">
@@ -34,7 +34,7 @@
         <VRow class="mt-6 align-center flex-column">
           <div class="separator" />
 
-          <VRow class="mt-0 justify-space-between gap-4">
+          <VRow class="mt-0 flex-column flex-lg-row align-start justify-start gap-lg-4">
             <VCol class="d-flex gap-2">
               <VIcon left>mdi-whatsapp</VIcon>
               <a href="https://wa.me/+5354761244" target="_blank">+5354761244</a>
@@ -89,6 +89,12 @@
   height: 0.1rem;
   width: 80%;
   background-color: #90a4ae;
+}
+
+@media (min-width: 1280px) {
+  .gap-lg-4 {
+    gap: 1rem;
+  }
 }
 </style>
 <script setup lang="ts">
