@@ -1,4 +1,4 @@
-import t from"./__federation_expose_HelloWorld-BCc8HJCz.js";const n={title:"Example/HelloWorld",component:t,argTypes:{msg:{control:"text"}}},o=a=>({components:{HelloWorld:t},setup(){return{args:a}},template:'<HelloWorld v-bind="args" />'}),e=o.bind({});e.args={msg:"Hello from a custom message!"};const s=o.bind({});s.args={msg:"Check out this styled message!"};const r=o.bind({});r.args={msg:"Click the button to increase the count."};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`args => ({
+import t from"./__federation_expose_HelloWorld-CeIEH7fX.js";const n={title:"Example/HelloWorld",component:t,argTypes:{msg:{control:"text"}}},o=a=>({components:{HelloWorld:t},setup(){return{args:a}},template:'<HelloWorld v-bind="args" />'}),e=o.bind({});e.args={msg:"Hello from a custom message!"};const s=o.bind({});s.args={msg:"Check out this styled message!"};const r=o.bind({});r.args={msg:"Click the button to increase the count."};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`args => ({
   components: {
     HelloWorld
   },
