@@ -2,7 +2,7 @@
   <VRow justify="center" class="mt-6">
     <VCol cols="12" md="8">
       <VCard elevation="3" class="pa-6">
-        <VExpansionPanels>
+        <VExpansionPanels variant="popout">
           <VExpansionPanel>
             <VExpansionPanelTitle>Experience</VExpansionPanelTitle>
             <VExpansionPanelText class="v-expansion-panel-text__wrapper-padding_0">

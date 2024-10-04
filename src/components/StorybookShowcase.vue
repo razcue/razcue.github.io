@@ -1,6 +1,6 @@
 <template>
   <VRow justify="center" class="mt-6">
-    <VCol cols="12" md="8">
+    <VCol cols="12">
       <VCard elevation="3" class="pa-6">
         <div class="text-h5 mb-4">Storybook</div>
         <div class="text-body-1 mb-4">

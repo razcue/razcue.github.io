@@ -1,8 +1,55 @@
+<template>
+  <VContainer fluid>
+    <VSlideYTransition>
+      <ProfileHead />
+    </VSlideYTransition>
+
+    <VSlideYTransition>
+      <ProfileSkills />
+    </VSlideYTransition>
+
+    <VSlideYTransition>
+      <ProfileExperienceEducation />
+    </VSlideYTransition>
+
+    <VSlideYTransition>
+      <Portfolio />
+    </VSlideYTransition>
+
+    <!-- Snackbar component -->
+    <VSnackbar
+      v-model="showSnackbar"
+      :variant="snackbarOptions.variant"
+      :color="snackbarOptions.color"
+      :timeout="snackbarOptions.timeout"
+      :location="snackbarOptions.location"
+      :transition="snackbarOptions.transition"
+    >
+      {{ snackbarOptions.message }}
+      <template v-if="snackbarOptions.showAction" #actions>
+        <VBtn
+          :color="snackbarOptions.color"
+          @click="showSnackbar = false"
+        >
+        {{ snackbarOptions.actionText }}
+        </VBtn>
+      </template>
+    </VSnackbar>
+  </VContainer>
+
+<!--  Checkout LICENSE file at https://github.com/razcue/razcue.github.io/blob/master/LICENSE -->
+<!--  <LicenseFooter />-->
+</template>
+
 <script setup lang="ts">
 import ProfileHead from './components/ProfileHead.vue'
 import ProfileSkills from './components/ProfileSkills.vue'
 import ProfileExperienceEducation from './components/ProfileExperienceEducation.vue'
 import { ref, nextTick, provide } from 'vue'
+import Portfolio from "@/components/Portfolio.vue";
+
+// Checkout LICENSE file at https://github.com/razcue/razcue.github.io/blob/master/LICENSE
+// import LicenseFooter from "@/components/LicenseFooter.vue";
 
 const showSnackbar = ref(false)
 
@@ -47,45 +94,8 @@ const throwSnack = (options: iSnackbarOptions) => {
   })
 }
 
-// Provide the throwSnack function to the rest of the app
 provide('Snackbar:giveMeASnack', throwSnack)
 </script>
-
-<template>
-  <VContainer fluid>
-    <VSlideYTransition>
-      <ProfileHead />
-    </VSlideYTransition>
-
-    <VSlideYTransition>
-      <ProfileSkills />
-    </VSlideYTransition>
-
-    <VSlideYTransition>
-      <ProfileExperienceEducation />
-    </VSlideYTransition>
-
-    <!-- Snackbar component -->
-    <VSnackbar
-      v-model="showSnackbar"
-      :variant="snackbarOptions.variant"
-      :color="snackbarOptions.color"
-      :timeout="snackbarOptions.timeout"
-      :location="snackbarOptions.location"
-      :transition="snackbarOptions.transition"
-    >
-      {{ snackbarOptions.message }}
-      <template v-if="snackbarOptions.showAction" #actions>
-        <VBtn
-          :color="snackbarOptions.color"
-          @click="showSnackbar = false"
-        >
-        {{ snackbarOptions.actionText }}
-        </VBtn>
-      </template>
-    </VSnackbar>
-  </VContainer>
-</template>
 
 <style>
 body {

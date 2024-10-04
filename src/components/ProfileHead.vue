@@ -4,7 +4,8 @@
       <VCard elevation="3" class="pa-6">
         <VRow align="center" justify="center">
           <VCol class="d-flex flex-column flex-lg-row align-center justify-center gap-4">
-            <div>
+            <div class="position-relative">
+              <VFab icon="mdi-github" size="40" class="repository-button" href="https://github.com/razcue/razcue.github.io"></VFab>
               <VAvatar size="120" class="mb-4">
                 <img src="../assets/profile_pic.png" class="profile__pic" alt="Profile Picture">
               </VAvatar>
@@ -89,6 +90,18 @@
   height: 0.1rem;
   width: 80%;
   background-color: #90a4ae;
+}
+
+.position-relative {
+  position: relative !important;
+}
+
+.repository-button {
+  position: absolute;
+  height: inherit;
+  top: 98px;
+  left: 82px;
+  z-index: 10;
 }
 
 @media (min-width: 1280px) {

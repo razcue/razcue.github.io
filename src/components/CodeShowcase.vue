@@ -6,7 +6,7 @@
     </div>
 
     <!-- Button group for switching between languages -->
-    <div class="code-showcase__tab-buttons">
+    <div v-if="languages.length > 1" class="code-showcase__tab-buttons">
       <button
           v-for="(language, index) in languages"
           :key="index"
@@ -17,13 +17,13 @@
       </button>
     </div>
 
-    <!-- Code content based on selected tab -->
-    <div class="code-showcase__content">
-      <pre><code>{{ languages[currentTab].code }}</code></pre>
-    </div>
+    <div class="code-showcase__content-container">
+      <!-- Code content based on selected tab -->
+      <div class="code-showcase__content">
+        <pre><code>{{ languages[currentTab].code }}</code></pre>
+      </div>
 
-    <!-- Copy to clipboard button -->
-    <div class="code-showcase__button-container">
+      <!-- Copy to clipboard button -->
       <button class="code-showcase__copy-button" @click="copyCode">
         Copy Code
       </button>
@@ -52,6 +52,8 @@ const props = defineProps({
   }
 })
 
+const emit = defineEmits(['copy'])
+
 // Track the currently selected tab
 const currentTab = ref(0)
 
@@ -59,7 +61,7 @@ const currentTab = ref(0)
 const copyCode = () => {
   const code = props.languages[currentTab.value].code
   navigator.clipboard.writeText(code).then(() => {
-    alert('Code copied to clipboard!')
+    emit('copy');
   })
 }
 </script>
@@ -74,7 +76,7 @@ const copyCode = () => {
 
 .code-showcase__description,
 .code-showcase__notes {
-  margin-bottom: 16px;
+  margin: 16px 0 8px;
   font-size: 14px;
   color: #333;
 }
@@ -115,23 +117,30 @@ const copyCode = () => {
 }
 
 .code-showcase__copy-button {
-  margin-top: 12px;
-  background-color: #007bff;
-  color: white;
-  padding: 8px 12px;
-  border: none;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  opacity: 0.7;
+  background: transparent;
+  border: 1px solid white;
+  padding: 2px 5px;
+  margin: 0;
   border-radius: 4px;
   cursor: pointer;
   font-size: 14px;
 }
 
 .code-showcase__copy-button:hover {
-  background-color: #0056b3;
+  opacity: 1;
 }
 
-.code-showcase__button-container {
-  margin-top: 16px;
-  display: flex;
-  justify-content: flex-end;
+.code-showcase__content-container {
+  background-color: #272822;
+  padding: 16px 16px 8px;
+  border-radius: 4px;
+  color: #f8f8f2;
+  font-family: monospace;
+  white-space: pre-wrap;
+  position: relative;
 }
 </style>
