@@ -69,7 +69,139 @@
     <link href="./sb-addons/chromatic-com-storybook-10/manager-bundle.js" rel="modulepreload" />
     
     <link href="./sb-addons/interactions-11/manager-bundle.js" rel="modulepreload" />
-       
+      <style>
+    /* Block for the header container */
+    .header__icons-container {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        justify-content: space-between;
+    }
+
+    /* Base button styles */
+    .header__button {
+        border: none;
+        background: none;
+        margin: 0 5px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        transition: transform 0.3s ease, opacity 0.3s ease; /* Add smooth animation on hover */
+    }
+
+    /* Hover effect for button scaling */
+    .header__button:hover {
+        transform: scale(1.1); /* Slightly enlarge the button on hover */
+        opacity: 0.9; /* Make the button a little transparent on hover */
+    }
+
+    /* Element for an image inside the header */
+    .header__profile-pic {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        transition: transform 0.3s ease; /* Smooth image scaling */
+    }
+
+    /* Image hover effect: scale up */
+    .header__profile-pic:hover {
+        transform: scale(1.1); /* Enlarge the profile picture when hovered */
+    }
+
+    /* Icon styles */
+    .header__icon {
+        font-size: 24px;
+        color: #000; /* Default icon color */
+        transition: color 0.3s ease, transform 0.3s ease; /* Add animation for color and transform changes */
+    }
+
+    /* Modifier for large icons (e.g., GitHub icon) */
+    .header__icon--large {
+        font-size: 32px;
+    }
+
+    /* Modifier for icons with top margin */
+    .header__icon--top-margin {
+        margin-top: 0.5rem;
+    }
+
+    /* Icon hover effect: rotate and change color */
+    .header__icon:hover {
+        color: #007bff; /* Change icon color on hover */
+        transform: rotate(20deg); /* Rotate the icon a bit when hovered */
+    }
+
+    /* Optional additional hover effect for icon scaling */
+    .header__icon--large:hover {
+        transform: rotate(20deg) scale(1.2); /* Rotate and scale up larger icons when hovered */
+    }
+</style>
+
+<!-- Load Material Design Icons CDN -->
+<link href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet">
+
+<script>
+    // Ensure the script runs only after the DOM is fully loaded
+    window.addEventListener("DOMContentLoaded", function () {
+
+        function insertDivIntoHeader() {
+            const header = document.querySelector('.css-d3imve'); // Select the Storybook header
+
+            if (header && !header.querySelector('.header__icons-container')) { // Ensure header exists and div isn't already inserted
+                // Create the container div
+                const div = document.createElement('div');
+                div.classList.add('header__icons-container');
+
+                // Create profile picture button
+                const profileButton = document.createElement('button');
+                profileButton.classList.add('header__button'); // BEM: header button block
+                profileButton.onclick = function() {
+                    window.location.href = 'https://razcue.github.io'; // Replace with the redirect URL
+                };
+
+                const menuLeftIcon = document.createElement('i');
+                menuLeftIcon.classList.add('mdi', 'mdi-menu-left-outline', 'header__icon', 'header__icon--top-margin'); // BEM
+
+                const profileImg = document.createElement('img');
+                profileImg.src = '../src/assets/profile_pic.png'; // Set the correct path to your profile picture
+                profileImg.classList.add('header__profile-pic');
+                profileImg.alt = 'Profile Picture';
+
+                profileButton.appendChild(menuLeftIcon);
+                profileButton.appendChild(profileImg);
+
+                // Create GitHub icon button
+                const githubButton = document.createElement('button');
+                githubButton.classList.add('header__button');
+                githubButton.onclick = function() {
+                    window.open('https://github.com/razcue/razcue.github.io', '_blank'); // Open link in a new tab
+                };
+
+                const githubIcon = document.createElement('i');
+                githubIcon.classList.add('mdi', 'mdi-github', 'header__icon', 'header__icon--large'); // BEM
+
+                githubButton.appendChild(githubIcon);
+
+                // Append both buttons to the div
+                div.appendChild(profileButton);
+                div.appendChild(githubButton);
+
+                // Insert the div as the first child of the header
+                header.prepend(div);
+            }
+        }
+
+        // Use setInterval to keep checking for the Storybook header every 500ms
+        const intervalId = setInterval(() => {
+            if (document.querySelector('.css-d3imve')) {
+                insertDivIntoHeader();
+                clearInterval(intervalId); // Clear the interval once the header is found and the buttons are inserted
+            }
+        }, 500);
+    });
+</script>
+ 
 
     <style>
       #storybook-root[hidden] {
