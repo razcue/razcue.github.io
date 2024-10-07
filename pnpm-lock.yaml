@@ -17,6 +17,9 @@ importers:
       vue:
         specifier: ^3.4.37
         version: 3.5.4(typescript@5.6.2)
+      vue-component-type-helpers:
+        specifier: ^2.1.6
+        version: 2.1.6
       vue-i18n:
         specifier: ^9.14.0
         version: 9.14.0(vue@3.5.4(typescript@5.6.2))
@@ -1206,10 +1209,10 @@ packages:
   '@storybook/codemod@8.2.9':
     resolution: {integrity: sha512-3yRx1lFMm1FXWVv+CKDiYM4gOQPEfpcZAQrjfcumxSDUrB091pnU1PeI92Prj3vCdi4+0oPNuN4yDGNUYTMP/A==}
 
-  '@storybook/components@8.2.9':
-    resolution: {integrity: sha512-OkkcZ/f/6o3GdFEEK9ZHKIGHWUHmavZUYs5xaSgU64bOrA2aqEFtfeWWitZYTv3Euhk8MVLWfyEMDfez0AlvDg==}
+  '@storybook/components@8.3.5':
+    resolution: {integrity: sha512-Rq28YogakD3FO4F8KwAtGpo1g3t4V/gfCLqTQ8B6oQUFoxLqegkWk/DlwCzvoJndXuQJfdSyM6+r1JcA4Nql5A==}
     peerDependencies:
-      storybook: ^8.2.9
+      storybook: ^8.3.5
 
   '@storybook/core-common@8.2.9':
     resolution: {integrity: sha512-DdV+Myvi8nk9rv62M5j0B2bTlQfCX4p3htwzKPgmaHyhvVLuOqBbfKtDOWPCwaVLXx7Q0wpBFlgM0rxmQXLVDQ==}
@@ -1235,8 +1238,8 @@ packages:
   '@storybook/global@5.0.0':
     resolution: {integrity: sha512-FcOqPAXACP0I3oJ/ws6/rrPT9WGhu915Cg8D02a9YxLo0DE9zI+a9A5gRGvmQ09fiWPukqI8ZAEoQEdWUKMQdQ==}
 
-  '@storybook/icons@1.2.10':
-    resolution: {integrity: sha512-310apKdDcjbbX2VSLWPwhEwAgjxTzVagrwucVZIdGPErwiAppX8KvBuWZgPo+rQLVrtH8S+pw1dbUwjcE6d7og==}
+  '@storybook/icons@1.2.12':
+    resolution: {integrity: sha512-UxgyK5W3/UV4VrI3dl6ajGfHM4aOqMAkFLWe2KibeQudLf6NJpDrDMSHwZj+3iKC4jFU7dkKbbtH2h/al4sW3Q==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -5432,7 +5435,7 @@ snapshots:
     dependencies:
       '@storybook/csf': 0.1.11
       '@storybook/global': 5.0.0
-      '@storybook/icons': 1.2.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@storybook/icons': 1.2.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/lodash': 4.17.7
       color-convert: 2.0.1
       dequal: 2.0.3
@@ -5488,7 +5491,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@storybook/components@8.2.9(storybook@8.2.9(@babel/preset-env@7.25.4(@babel/core@7.25.2)))':
+  '@storybook/components@8.3.5(storybook@8.2.9(@babel/preset-env@7.25.4(@babel/core@7.25.2)))':
     dependencies:
       storybook: 8.2.9(@babel/preset-env@7.25.4(@babel/core@7.25.2))
 
@@ -5531,7 +5534,7 @@ snapshots:
 
   '@storybook/global@5.0.0': {}
 
-  '@storybook/icons@1.2.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@storybook/icons@1.2.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -5633,7 +5636,7 @@ snapshots:
 
   '@storybook/vue3@8.2.9(storybook@8.2.9(@babel/preset-env@7.25.4(@babel/core@7.25.2)))(vue@3.5.4(typescript@5.6.2))':
     dependencies:
-      '@storybook/components': 8.2.9(storybook@8.2.9(@babel/preset-env@7.25.4(@babel/core@7.25.2)))
+      '@storybook/components': 8.3.5(storybook@8.2.9(@babel/preset-env@7.25.4(@babel/core@7.25.2)))
       '@storybook/global': 5.0.0
       '@storybook/manager-api': 8.2.9(storybook@8.2.9(@babel/preset-env@7.25.4(@babel/core@7.25.2)))
       '@storybook/preview-api': 8.2.9(storybook@8.2.9(@babel/preset-env@7.25.4(@babel/core@7.25.2)))

@@ -91,14 +91,36 @@
             <VExpansionPanelText class="v-expansion-panel-text__wrapper-padding_0">
               <VContainer>
                 <VRow class="d-flex justify-center">
-                  <VChip
-                    class="ma-2"
-                    color="primary"
-                    label
-                  >
-                    Coming Soon
-                    <VIcon icon="mdi-alert-rhombus-outline" end></VIcon>
-                  </VChip>
+                  <VCol cols="12" md="6">
+                    <div class="repo-container" onclick="window.open('https://github.com/razcue/laravelBa', '_blank')">
+                      <img src="../assets/dashboard_pic.png" alt="LaravelBa MVP Solution" class="repo-image">
+                      <div class="repo-info">
+                        <h3>LaravelBa MVP Solution</h3>
+                        <p>
+                          <strong>LaravelBa</strong> is a full-stack <strong>MVP solution</strong> built with <strong>Laravel 10</strong>,
+                          <strong>InertiaJS</strong>, and <strong>Vue 3</strong>, powered by <strong>Vite</strong>, <strong>SCSS</strong>,
+                          <strong>TailwindCSS</strong>, and <strong>PrimeVue</strong>. It supports <strong>authentication</strong>,
+                          <strong>authorization</strong>, and includes <strong>user management</strong> and <strong>product management</strong> features,
+                          making it a solid foundation for modern web applications.
+                        </p>
+                      </div>
+                    </div>
+                  </VCol>
+                  <VCol cols="12" md="6">
+                    <div class="repo-container" onclick="window.open('https://github.com/razcue/velaio.test', '_blank')">
+                      <img src="../assets/dashboard_pic.png" alt="VELAIO Technical Assessment" class="repo-image">
+                      <div class="repo-info">
+                        <h3>VELAIO Technical Assessment Project</h3>
+                        <p>
+                          This project, created for the <strong>Frontend Developer position at VELAIO</strong>,
+                          demonstrates a <strong>Clean Architecture</strong> approach using <strong>Angular 16</strong>.
+                          The project is structured into three layers: <strong>Domain</strong>, <strong>Infrastructure</strong>,
+                          and <strong>Presentation</strong>, ensuring <strong>scalability</strong>, <strong>testability</strong>,
+                          and <strong>maintainability</strong>.
+                        </p>
+                      </div>
+                    </div>
+                  </VCol>
                 </VRow>
               </VContainer>
             </VExpansionPanelText>
@@ -146,3 +168,40 @@ const showSnackbarCodeCopy = () => {
   })
 };
 </script>
+
+<style scoped>
+.repo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  gap: 1rem;
+}
+
+.repo-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.repo-image {
+  width: 180px;
+  height: 140px;
+  border-radius: 8px;
+}
+
+.repo-info h3 {
+  font-size: 1.5em;
+  margin-bottom: 8px;
+}
+
+.repo-info p {
+  font-size: 1em;
+  color: #333;
+}
+</style>

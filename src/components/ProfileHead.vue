@@ -35,7 +35,7 @@
         <VRow class="mt-6 align-center flex-column">
           <div class="separator" />
 
-          <VRow class="mt-0 flex-column flex-lg-row align-start justify-start gap-lg-4">
+          <VRow class="flex-column flex-lg-row mx-6 my-2 gap-lg-4 align-self-start">
             <VCol class="d-flex gap-2">
               <VIcon left>mdi-whatsapp</VIcon>
               <a href="https://wa.me/+5354761244" target="_blank">+5354761244</a>
@@ -102,6 +102,10 @@
   top: 98px;
   left: 82px;
   z-index: 10;
+}
+
+.repository-button:hover {
+  transform: scale(1.1); /* Rotate and scale up larger icons when hovered */
 }
 
 @media (min-width: 1280px) {

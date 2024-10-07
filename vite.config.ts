@@ -9,10 +9,10 @@ export default defineConfig({
     vue(),
     vuetify(),
     federation({
-      name: 'mf.razcue.github.io',
+      name: 'modules.razcue.github.io',
       filename: 'remoteEntry.js',
       exposes: {
-        './HelloWorld': './src/components/HelloWorld.vue',
+        './Marquee': './src/components/Marquee.vue',
       },
       shared: ['vue'],
     }),
@@ -27,7 +27,7 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         additionalData:
-            `@import 'vuetify/styles';`,
+          `@import 'vuetify/styles';`,
       },
     },
   },
