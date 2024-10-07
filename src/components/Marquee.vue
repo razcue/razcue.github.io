@@ -21,7 +21,7 @@ const props = defineProps({
   },
   width: {
     type: String,
-    default: '100%', // default width of the container
+    default: '100%', // Default width of the container
   },
   startCentered: {
     type: Boolean,
