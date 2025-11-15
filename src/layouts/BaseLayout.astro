@@ -1,52 +1,82 @@
 ---
 import '../styles/global.css';
+import { getTranslation, type Locale } from '../utils/i18n';
 
 export interface Props {
-  title: string;
+  title?: string;
+  description?: string;
+  locale: Locale;
 }
 
-const { title } = Astro.props;
+const { title, description, locale } = Astro.props;
+const t = getTranslation(locale);
+
+// Use i18n SEO content
+const finalTitle = title || t.seo.title;
+const finalDescription = description || t.seo.description;
+
+// Canonical URL with proper locale
+const baseUrl = 'https://razcue.github.io';
+const canonicalPath = locale === 'es' ? '/es/' : '/';
+const canonicalUrl = `${baseUrl}${canonicalPath}`;
+
+// Alternate language URLs
+const enUrl = baseUrl + '/';
+const esUrl = baseUrl + '/es/';
+
+// Try og-image.jpg first, fallback to svg (create a proper JPG for production)
+const ogImage = `${baseUrl}/og-image.svg`;
 ---
 
 <!doctype html>
-<html lang={Astro.currentLocale || 'en'} data-theme="dark">
+<html lang={locale} data-theme="dark">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Portfolio of Rayko Azcue - Frontend Developer specializing in React, TypeScript, and modern web technologies"
-    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>{finalTitle}</title>
+    <meta name="title" content={finalTitle} />
+    <meta name="description" content={finalDescription} />
     <meta name="author" content="Rayko Azcue" />
-    <meta
-      name="keywords"
-      content="frontend developer, react, typescript, javascript, web development, portfolio"
-    />
+    <meta name="keywords" content={t.seo.keywords} />
     <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#0f172a" />
+    <meta name="theme-color" content="#0a192f" />
+    <meta name="googlebot" content="index, follow" />
+    <meta
+      name="google-site-verification"
+      content="TVVS4E_zJ3cyJDwUq1adRtCOZySQUpV-PqN4swPjP7s"
+    />
+
+    <!-- Canonical and Alternate URLs -->
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="alternate" hreflang="en" href={enUrl} />
+    <link rel="alternate" hreflang="es" href={esUrl} />
+    <link rel="alternate" hreflang="x-default" href={enUrl} />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://raykoazcue.dev/" />
-    <meta property="og:title" content="Rayko Azcue - Frontend Developer" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={finalTitle} />
+    <meta property="og:description" content={finalDescription} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={t.seo.ogImageAlt} />
+    <meta property="og:site_name" content={t.seo.siteName} />
+    <meta property="og:locale" content={locale === 'es' ? 'es_ES' : 'en_US'} />
     <meta
-      property="og:description"
-      content="Portfolio of Rayko Azcue - Frontend Developer specializing in React, TypeScript, and modern web technologies"
+      property="og:locale:alternate"
+      content={locale === 'es' ? 'en_US' : 'es_ES'}
     />
-    <meta property="og:image" content="https://raykoazcue.dev/og-image.jpg" />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://raykoazcue.dev/" />
-    <meta property="twitter:title" content="Rayko Azcue - Frontend Developer" />
-    <meta
-      property="twitter:description"
-      content="Portfolio of Rayko Azcue - Frontend Developer specializing in React, TypeScript, and modern web technologies"
-    />
-    <meta
-      property="twitter:image"
-      content="https://raykoazcue.dev/og-image.jpg"
-    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalUrl} />
+    <meta name="twitter:title" content={finalTitle} />
+    <meta name="twitter:description" content={finalDescription} />
+    <meta name="twitter:image" content={ogImage} />
+    <meta name="twitter:image:alt" content="Rayko Azcue - Frontend Developer" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -59,29 +89,72 @@ const { title } = Astro.props;
     <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
 
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
 
-    <!-- Structured Data -->
+    <!-- Structured Data - JSON-LD for Person and Website -->
     <script
       type="application/ld+json"
       is:inline
       set:html={JSON.stringify({
         '@context': 'https://schema.org',
-        '@type': 'Person',
-        name: 'Rayko Azcue',
-        jobTitle: 'Frontend Developer',
-        url: 'https://raykoazcue.dev',
-        sameAs: [
-          'https://github.com/raykoazcue',
-          'https://linkedin.com/in/raykoazcue',
-        ],
-        knowsAbout: [
-          'React',
-          'TypeScript',
-          'JavaScript',
-          'Astro',
-          'Node.js',
-          'Web Development',
+        '@graph': [
+          {
+            '@type': 'Person',
+            '@id': `${baseUrl}/#person`,
+            name: 'Rayko Azcue',
+            url: baseUrl,
+            image: ogImage,
+            jobTitle: t.seo.jobTitle,
+            description: finalDescription,
+            sameAs: [
+              'https://github.com/razcue',
+              'https://linkedin.com/in/razcue',
+            ],
+            knowsAbout: [
+              'Vue.js',
+              'Nuxt',
+              'React',
+              'Astro',
+              'TypeScript',
+              'JavaScript',
+              'Tailwind CSS',
+              'UnoCSS',
+              'Node.js',
+              'PHP',
+              'Laravel',
+              'Web Development',
+              'Frontend Development',
+              'Responsive Design',
+            ],
+            knowsLanguage: [
+              { '@type': 'Language', name: 'English' },
+              { '@type': 'Language', name: 'Spanish' },
+            ],
+          },
+          {
+            '@type': 'WebSite',
+            '@id': `${baseUrl}/#website`,
+            url: baseUrl,
+            name: t.seo.siteName,
+            description: finalDescription,
+            inLanguage: [locale === 'es' ? 'es-ES' : 'en-US'],
+            author: {
+              '@id': `${baseUrl}/#person`,
+            },
+          },
+          {
+            '@type': 'WebPage',
+            '@id': `${canonicalUrl}#webpage`,
+            url: canonicalUrl,
+            name: finalTitle,
+            description: finalDescription,
+            inLanguage: locale === 'es' ? 'es-ES' : 'en-US',
+            isPartOf: {
+              '@id': `${baseUrl}/#website`,
+            },
+            about: {
+              '@id': `${baseUrl}/#person`,
+            },
+          },
         ],
       })}
     />

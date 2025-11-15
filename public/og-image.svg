@@ -1,0 +1,43 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0a192f"/>
+  
+  <!-- Accent gradient -->
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#64ffda;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#64ffda;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grad)"/>
+  
+  <!-- Main text -->
+  <text x="600" y="220" font-family="system-ui, -apple-system, sans-serif" font-size="72" font-weight="bold" fill="#e6f1ff" text-anchor="middle">
+    Rayko Azcue
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="36" fill="#8892b0" text-anchor="middle">
+    Frontend Developer
+  </text>
+  
+  <!-- Tech stack line 1 -->
+  <text x="600" y="360" font-family="system-ui, -apple-system, sans-serif" font-size="24" fill="#64ffda" text-anchor="middle">
+    Vue • Nuxt • React • Astro • TypeScript
+  </text>
+  
+  <!-- Tech stack line 2 -->
+  <text x="600" y="400" font-family="system-ui, -apple-system, sans-serif" font-size="24" fill="#64ffda" text-anchor="middle">
+    Tailwind • UnoCSS • Node.js
+  </text>
+  
+  <!-- Email -->
+  <text x="600" y="480" font-family="monospace" font-size="20" fill="#8892b0" text-anchor="middle">
+    razcue@yandex.com
+  </text>
+  
+  <!-- URL -->
+  <text x="600" y="520" font-family="monospace" font-size="20" fill="#64ffda" text-anchor="middle">
+    razcue.github.io
+  </text>
+</svg>

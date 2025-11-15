@@ -70,8 +70,10 @@ export default function Contact({ locale }: ContactProps) {
 
     try {
       // Use Vercel API endpoint - update this with your actual Vercel project URL
-      const apiUrl = import.meta.env.PUBLIC_API_URL || 'https://razcue-github-io.vercel.app/api/contact';
-      
+      const apiUrl =
+        import.meta.env.PUBLIC_API_URL ||
+        'https://razcue-github-io.vercel.app/api/contact';
+
       const response = await fetch(apiUrl, {
         method: 'POST',
         headers: {

@@ -79,20 +79,23 @@ export default async function handler(
     }
 
     if (notificationEmail.error || confirmationEmail.error) {
-      console.error('Email error:', notificationEmail.error || confirmationEmail.error);
-      return response.status(500).json({ 
-        error: 'Failed to send email. Please try again.' 
+      console.error(
+        'Email error:',
+        notificationEmail.error || confirmationEmail.error
+      );
+      return response.status(500).json({
+        error: 'Failed to send email. Please try again.',
       });
     }
 
-    return response.status(200).json({ 
+    return response.status(200).json({
       success: true,
-      message: 'Message sent successfully!' 
+      message: 'Message sent successfully!',
     });
   } catch (error) {
     console.error('Contact form error:', error);
-    return response.status(500).json({ 
-      error: 'An error occurred. Please try again later.' 
+    return response.status(500).json({
+      error: 'An error occurred. Please try again later.',
     });
   }
 }

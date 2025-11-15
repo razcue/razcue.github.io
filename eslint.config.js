@@ -43,6 +43,8 @@ export default [
         HTMLElement: 'readonly',
         HTMLInputElement: 'readonly',
         HTMLTextAreaElement: 'readonly',
+        history: 'readonly',
+        process: 'readonly',
       },
     },
     plugins: {

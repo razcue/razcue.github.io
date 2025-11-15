@@ -25,9 +25,12 @@ export default function LanguageToggle({ currentPath }: LanguageToggleProps) {
     // Save locale preference to localStorage
     setStoredLocale(newLocale);
 
-    // Navigate to the new locale path
+    // Get current hash (section) to preserve it
+    const currentHash = window.location.hash;
+
+    // Navigate to the new locale path with preserved hash
     const newPath = getLocalizedPath(currentPath, newLocale);
-    window.location.href = newPath;
+    window.location.href = newPath + currentHash;
   };
 
   return (

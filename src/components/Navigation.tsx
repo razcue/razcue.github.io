@@ -10,6 +10,12 @@ export default function Navigation({ locale }: NavigationProps) {
   const [activeSection, setActiveSection] = useState('about');
 
   useEffect(() => {
+    // Set active section based on hash on mount
+    const hash = window.location.hash.replace('#', '');
+    if (hash && ['about', 'experience', 'projects', 'contact'].includes(hash)) {
+      setActiveSection(hash);
+    }
+
     const handleScroll = () => {
       const sections = ['about', 'experience', 'projects', 'contact'];
       const mainContent = document.querySelector(
@@ -28,6 +34,10 @@ export default function Navigation({ locale }: NavigationProps) {
           // Check if section is in viewport
           if (rect.top >= mainRect.top && rect.top <= mainRect.top + 200) {
             setActiveSection(sectionId);
+            // Update URL hash without scrolling
+            if (window.location.hash !== `#${sectionId}`) {
+              history.replaceState(null, '', `#${sectionId}`);
+            }
             break;
           }
         }
@@ -46,7 +56,11 @@ export default function Navigation({ locale }: NavigationProps) {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
+      // Update URL hash first
+      window.location.hash = sectionId;
+      // Then scroll to element
       element.scrollIntoView({ behavior: 'smooth' });
+      setActiveSection(sectionId);
     }
   };
 
@@ -63,9 +77,13 @@ export default function Navigation({ locale }: NavigationProps) {
       <ul className="space-y-4">
         {navItems.map((item) => (
           <li key={item.id}>
-            <button
-              onClick={() => scrollToSection(item.id)}
-              className={`flex items-center justify-start gap-4 text-sm transition-all text-left group ${
+            <a
+              href={`#${item.id}`}
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection(item.id);
+              }}
+              className={`flex items-center justify-start gap-4 text-sm transition-all group ${
                 activeSection === item.id
                   ? 'text-[var(--accent)] w-9/12'
                   : 'text-[var(--text-secondary)] hover:text-[var(--accent)] w-8/12'
@@ -92,7 +110,7 @@ export default function Navigation({ locale }: NavigationProps) {
                   minWidth: activeSection === item.id ? '4rem' : '2rem',
                 }}
               ></span>
-            </button>
+            </a>
           </li>
         ))}
       </ul>

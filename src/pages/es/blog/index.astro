@@ -1,8 +1,11 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { type Locale } from '../../../utils/i18n';
+
+const currentLocale: Locale = 'es';
 ---
 
-<BaseLayout title="Blog - Rayko Azcue">
+<BaseLayout title="Blog - Rayko Azcue" locale={currentLocale}>
   <div class="min-h-screen bg-bg">
     <!-- Navigation Header -->
     <header

@@ -13,7 +13,7 @@ import { type Locale } from '../../utils/i18n';
 const currentLocale: Locale = 'es';
 ---
 
-<BaseLayout title="Rayko Azcue - Desarrollador Frontend">
+<BaseLayout locale={currentLocale}>
   <!-- Locale preference redirect script -->
   <script>
     // Check if user has a stored locale preference and redirect if needed
@@ -98,6 +98,17 @@ const currentLocale: Locale = 'es';
         container.querySelectorAll('section')
       ) as HTMLElement[];
       if (!sections.length) return;
+
+      // Scroll to section based on URL hash on page load
+      const hash = window.location.hash.replace('#', '');
+      if (hash) {
+        const targetSection = document.getElementById(hash);
+        if (targetSection) {
+          setTimeout(() => {
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+          }, 100);
+        }
+      }
 
       let isAnimating = false;
       const animationTimeout = 800; // ms, tuned for smooth scrolling

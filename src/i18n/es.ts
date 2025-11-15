@@ -239,4 +239,16 @@ export default {
   footer: {
     copyright: '© {year} Rayko Azcue. Todos los derechos reservados.',
   },
+
+  // SEO Meta
+  seo: {
+    title: 'Rayko Azcue - Desarrollador Frontend',
+    description:
+      'Portfolio de Rayko Azcue - Desarrollador Frontend especializado en Vue, Nuxt, React, Astro, Tailwind, UnoCSS y TypeScript. Experiencia en desarrollo web moderno y responsive.',
+    keywords:
+      'Rayko Azcue, desarrollador frontend, Vue, Nuxt, React, Astro, TypeScript, JavaScript, Tailwind, UnoCSS, Node.js, Laravel, PHP, desarrollo web',
+    ogImageAlt: 'Rayko Azcue - Desarrollador Frontend',
+    siteName: 'Portfolio de Rayko Azcue',
+    jobTitle: 'Desarrollador Frontend',
+  },
 };
