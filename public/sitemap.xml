@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- English Homepage -->
+  <url>
+    <loc>https://razcue.github.io/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://razcue.github.io/es/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://razcue.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://razcue.github.io/"/>
+    <lastmod>2025-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- English Blog -->
+  <url>
+    <loc>https://razcue.github.io/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://razcue.github.io/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://razcue.github.io/blog/"/>
+    <lastmod>2025-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- English Lab -->
+  <url>
+    <loc>https://razcue.github.io/lab/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://razcue.github.io/es/lab/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://razcue.github.io/lab/"/>
+    <lastmod>2025-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Spanish Homepage -->
+  <url>
+    <loc>https://razcue.github.io/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://razcue.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://razcue.github.io/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://razcue.github.io/"/>
+    <lastmod>2025-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Spanish Blog -->
+  <url>
+    <loc>https://razcue.github.io/es/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://razcue.github.io/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://razcue.github.io/es/blog/"/>
+    <lastmod>2025-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Spanish Lab -->
+  <url>
+    <loc>https://razcue.github.io/es/lab/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://razcue.github.io/lab/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://razcue.github.io/es/lab/"/>
+    <lastmod>2025-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+</urlset>
