@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Blog - Rayko Azcue">
+  <div class="min-h-screen bg-bg">
+    <!-- Navigation Header -->
+    <header
+      class="sticky top-0 z-50 bg-bg/80 backdrop-blur-sm border-b border-surface"
+    >
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 py-4">
+        <nav class="flex items-center justify-between">
+          <a
+            href="/"
+            class="text-text hover:text-accent transition-colors font-medium"
+          >
+            ← Back to Portfolio
+          </a>
+          <h1 class="text-xl font-bold text-text">Blog</h1>
+          <div class="w-24"></div>
+          <!-- Spacer for centering -->
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-6 lg:px-8 py-20">
+      <div class="text-center">
+        <h2 class="text-4xl lg:text-6xl font-bold text-text mb-8">
+          Coming Soon
+        </h2>
+        <p class="text-xl text-text-secondary max-w-2xl mx-auto">
+          Blog posts and technical articles are currently being written. Stay
+          tuned for insights on web development, technology trends, and more.
+        </p>
+      </div>
+    </main>
+  </div>
+</BaseLayout>

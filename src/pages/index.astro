@@ -1,0 +1,226 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.tsx';
+import Navigation from '../components/Navigation.tsx';
+import About from '../components/About.tsx';
+import Experience from '../components/Experience.tsx';
+import Projects from '../components/Projects.tsx';
+import Contact from '../components/Contact.tsx';
+import Sidebar from '../components/Sidebar.tsx';
+import Footer from '../components/Footer.tsx';
+import { type Locale } from '../utils/i18n';
+
+const currentLocale: Locale = (Astro.currentLocale as Locale) || 'en';
+---
+
+<BaseLayout title="Rayko Azcue - Frontend Developer">
+  <!-- Locale preference redirect script -->
+  <script>
+    // Check if user has a stored locale preference and redirect if needed
+    const storedLocale = localStorage.getItem('locale');
+    const currentPath = window.location.pathname;
+
+    // Only redirect on first load of the English homepage
+    if (storedLocale === 'es' && currentPath === '/') {
+      window.location.href = '/es/';
+    }
+  </script>
+
+  <div id="portfolio-layout" class="min-h-screen flex overflow-x-hidden">
+    <!-- Column 1: Hero & Navigation (No scroll) - Max width 640px -->
+    <div
+      class="hidden lg:flex flex-col pt-0 py-8 justify-between overflow-y-hidden bg-bg w-full max-w-md min-w-80"
+    >
+      <div class="p-6 lg:p-8 space-y-6 md:space-y-8">
+        <!-- Hero Section with Social Links -->
+        <Hero locale={currentLocale} client:idle />
+
+        <!-- Navigation -->
+        <Navigation locale={currentLocale} client:idle />
+      </div>
+
+      <!-- Footer -->
+      <Footer locale={currentLocale} />
+    </div>
+
+    <!-- Column 2: Main Content - Flexible width -->
+    <div class="flex-1 bg-bg min-w-0" id="main-content">
+      <div
+        id="main-scroll"
+        class="h-screen overflow-y-auto m-y-auto md:pt-0 pb-20 md:pb-0 pl-2 lg:pl-0"
+        style="scrollbar-width: none; -ms-overflow-style: none;"
+      >
+        <div class="max-w-full lg:max-w-6xl mx-auto">
+          <About locale={currentLocale} />
+          <Experience locale={currentLocale} client:visible />
+          <Projects locale={currentLocale} client:visible />
+          <Contact locale={currentLocale} client:visible />
+        </div>
+      </div>
+    </div>
+
+    <!-- Column 3: Sidebar (No scroll) - Max width 6rem -->
+    <div class="block bg-[var(--bg)] px-1 lg:px-4 flex-shrink-0">
+      <div class="h-screen">
+        <Sidebar locale={currentLocale} client:idle />
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="lg:hidden fixed bottom-0 left-0 right-0 py-2 sm:py-4 w-full flex justify-center bg-[var(--bg)] z-10"
+  >
+    <Footer locale={currentLocale} />
+  </div>
+
+  <style>
+    /* enable CSS snap as a fallback/extra UX layer */
+    #main-content #main-scroll {
+      scroll-snap-type: y mandatory;
+      -webkit-overflow-scrolling: touch;
+      scroll-behavior: smooth;
+    }
+
+    #main-content #main-scroll section {
+      scroll-snap-align: start;
+    }
+  </style>
+
+  <script>
+    // Full-page section snapping: wheel/touch/keyboard -> scroll to next/previous <section>
+    document.addEventListener('DOMContentLoaded', () => {
+      const container = document.querySelector(
+        '#main-content #main-scroll'
+      ) as HTMLElement;
+      if (!container) return;
+
+      const sections = Array.from(
+        container.querySelectorAll('section')
+      ) as HTMLElement[];
+      if (!sections.length) return;
+
+      let isAnimating = false;
+      const animationTimeout = 800; // ms, tuned for smooth scrolling
+
+      // Helpers
+      const getCurrentIndex = () => {
+        const scrollTop = container.scrollTop;
+        let nearest = 0;
+        let minDiff = Infinity;
+        for (let i = 0; i < sections.length; i++) {
+          const offset = sections[i].offsetTop;
+          const diff = Math.abs(offset - scrollTop);
+          if (diff < minDiff) {
+            minDiff = diff;
+            nearest = i;
+          }
+        }
+        return nearest;
+      };
+
+      const scrollToIndex = (index: number) => {
+        const clamped = Math.max(0, Math.min(sections.length - 1, index));
+        const targetTop = sections[clamped].offsetTop;
+        if (Math.abs(container.scrollTop - targetTop) < 2) return;
+        isAnimating = true;
+        container.scrollTo({ top: targetTop, behavior: 'smooth' });
+        // Clear flag after timeout; using timeout is simple and reliable across browsers
+        setTimeout(() => {
+          isAnimating = false;
+        }, animationTimeout);
+      };
+
+      // Utility to ignore inputs and interactive elements
+      const isInteractive = (el: EventTarget | null) => {
+        if (!(el instanceof Element)) return false;
+        const tag = el.tagName.toLowerCase();
+        if (['input', 'textarea', 'select', 'button'].includes(tag))
+          return true;
+        if (el.closest && (el as Element).closest('.no-snap')) return true;
+        return false;
+      };
+
+      // Wheel handling (capture both on container and window so scrolling anywhere can trigger)
+      const onWheel = (e: WheelEvent) => {
+        if (isAnimating) {
+          e.preventDefault();
+          return;
+        }
+        if (isInteractive(e.target)) return; // don't intercept when interacting with forms
+
+        // Decide direction
+        const delta = e.deltaY;
+        if (Math.abs(delta) < 10) return; // ignore tiny deltas
+
+        e.preventDefault();
+        const idx = getCurrentIndex();
+        if (delta > 0) scrollToIndex(idx + 1);
+        else scrollToIndex(idx - 1);
+      };
+
+      window.addEventListener('wheel', onWheel, { passive: false });
+      container.addEventListener('wheel', onWheel, { passive: false });
+
+      // Touch (swipe)
+      let touchStartY = 0;
+      container.addEventListener(
+        'touchstart',
+        (ev: TouchEvent) => {
+          touchStartY = ev.touches[0].clientY;
+        },
+        { passive: true }
+      );
+
+      container.addEventListener(
+        'touchend',
+        (ev: TouchEvent) => {
+          const touchEndY = ev.changedTouches[0].clientY;
+          const dy = touchStartY - touchEndY;
+          const threshold = 40;
+          if (Math.abs(dy) < threshold) return;
+          const idx = getCurrentIndex();
+          if (dy > 0) scrollToIndex(idx + 1);
+          else scrollToIndex(idx - 1);
+        },
+        { passive: true }
+      );
+
+      // Keyboard navigation
+      window.addEventListener('keydown', (e) => {
+        const active = document.activeElement;
+        if (
+          active &&
+          ['input', 'textarea', 'select'].includes(active.tagName.toLowerCase())
+        )
+          return;
+        if (isAnimating) {
+          e.preventDefault();
+          return;
+        }
+
+        const idx = getCurrentIndex();
+        if (e.key === 'ArrowDown' || e.key === 'PageDown') {
+          e.preventDefault();
+          scrollToIndex(idx + 1);
+        } else if (e.key === 'ArrowUp' || e.key === 'PageUp') {
+          e.preventDefault();
+          scrollToIndex(idx - 1);
+        } else if (e.key === 'Home') {
+          e.preventDefault();
+          scrollToIndex(0);
+        } else if (e.key === 'End') {
+          e.preventDefault();
+          scrollToIndex(sections.length - 1);
+        }
+      });
+
+      // Ensure correct snap after resize or initial load
+      window.addEventListener('resize', () => {
+        setTimeout(() => {
+          const idx = getCurrentIndex();
+          scrollToIndex(idx);
+        }, 150);
+      });
+    });
+  </script>
+</BaseLayout>
