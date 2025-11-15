@@ -1,25 +1,40 @@
-import type { APIRoute } from 'astro';
+import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { Resend } from 'resend';
 
-// Mark this endpoint as server-rendered (required for POST requests)
-export const prerender = false;
+const resend = new Resend(process.env.RESEND_API_KEY);
 
-const resend = new Resend(import.meta.env.RESEND_API_KEY);
+export default async function handler(
+  request: VercelRequest,
+  response: VercelResponse
+) {
+  // Handle CORS
+  response.setHeader('Access-Control-Allow-Credentials', 'true');
+  response.setHeader('Access-Control-Allow-Origin', '*'); // In production, set this to 'https://razcue.github.io'
+  response.setHeader(
+    'Access-Control-Allow-Methods',
+    'GET,OPTIONS,PATCH,DELETE,POST,PUT'
+  );
+  response.setHeader(
+    'Access-Control-Allow-Headers',
+    'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version'
+  );
 
-export const POST: APIRoute = async ({ request }) => {
+  // Handle OPTIONS request
+  if (request.method === 'OPTIONS') {
+    return response.status(200).end();
+  }
+
+  // Only allow POST
+  if (request.method !== 'POST') {
+    return response.status(405).json({ error: 'Method not allowed' });
+  }
+
   try {
-    const data = await request.json();
-    const { name, email, subject, message } = data;
+    const { name, email, subject, message } = request.body;
 
     // Validate required fields
     if (!name || !email || !subject || !message) {
-      return new Response(
-        JSON.stringify({ error: 'All fields are required' }),
-        {
-          status: 400,
-          headers: { 'Content-Type': 'application/json' },
-        }
-      );
+      return response.status(400).json({ error: 'All fields are required' });
     }
 
     // Send email to you (notification) with sender's info included
@@ -48,49 +63,36 @@ export const POST: APIRoute = async ({ request }) => {
     // Only send confirmation if the sender is you (for testing)
     if (email === 'razcue@yandex.com') {
       confirmationEmail = await resend.emails.send({
-        from: 'Rayko Azcue <onboarding@resend.dev>',
+        from: 'Portfolio Contact <onboarding@resend.dev>',
         to: email,
-        replyTo: 'razcue@yandex.com',
-        subject: `Re: ${subject}`,
+        subject: 'Thank you for contacting me!',
         html: `
-          <h2>Thank you for reaching out!</h2>
-          <p>Hi ${name},</p>
+          <h2>Thank you for reaching out, ${name}!</h2>
           <p>I've received your message and will get back to you as soon as possible.</p>
+          <hr>
           <p><strong>Your message:</strong></p>
           <p>${message.replace(/\n/g, '<br>')}</p>
-          <br>
+          <hr>
           <p>Best regards,<br>Rayko Azcue</p>
         `,
       });
     }
 
-    // Check if both emails were sent successfully
     if (notificationEmail.error || confirmationEmail.error) {
-      console.error(
-        'Email error:',
-        notificationEmail.error || confirmationEmail.error
-      );
-      return new Response(JSON.stringify({ error: 'Failed to send email' }), {
-        status: 500,
-        headers: { 'Content-Type': 'application/json' },
+      console.error('Email error:', notificationEmail.error || confirmationEmail.error);
+      return response.status(500).json({ 
+        error: 'Failed to send email. Please try again.' 
       });
     }
 
-    return new Response(
-      JSON.stringify({
-        success: true,
-        message: 'Emails sent successfully',
-      }),
-      {
-        status: 200,
-        headers: { 'Content-Type': 'application/json' },
-      }
-    );
+    return response.status(200).json({ 
+      success: true,
+      message: 'Message sent successfully!' 
+    });
   } catch (error) {
     console.error('Contact form error:', error);
-    return new Response(JSON.stringify({ error: 'Internal server error' }), {
-      status: 500,
-      headers: { 'Content-Type': 'application/json' },
+    return response.status(500).json({ 
+      error: 'An error occurred. Please try again later.' 
     });
   }
-};
+}

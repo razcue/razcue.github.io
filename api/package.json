@@ -1,0 +1,19 @@
+{
+  "name": "razcue-portfolio-api",
+  "version": "1.0.0",
+  "description": "Serverless API for portfolio contact form",
+  "main": "api/contact.ts",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "@vercel/node": "^3.2.21",
+    "resend": "^4.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.9",
+    "typescript": "^5.7.2",
+    "vercel": "^37.21.1"
+  }
+}

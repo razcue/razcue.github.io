@@ -2,7 +2,6 @@
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 import UnoCSS from '@unocss/astro';
-import vercel from '@astrojs/vercel';
 
 // https://astro.build/config
 export default defineConfig({
@@ -14,7 +13,6 @@ export default defineConfig({
       ],
     }),
   ],
-  adapter: vercel(),
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'es'],
@@ -27,7 +25,7 @@ export default defineConfig({
     assets: '_astro',
   },
   compressHTML: true,
-  output: 'server',
+  output: 'static',
   vite: {
     build: {
       cssCodeSplit: true,

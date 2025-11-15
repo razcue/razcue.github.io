@@ -114,34 +114,30 @@ Quality tools configured:
 
 ## 🚢 Deployment
 
-This project uses a dual deployment strategy:
+This project uses a **dual deployment strategy**:
 
-- **GitHub Pages**: Static site at `razcue.github.io`
-- **Vercel**: Serverless functions for contact form API
+- **GitHub Pages**: Static site at `https://razcue.github.io`
+- **Vercel**: Serverless API functions for contact form
 
-See [DEPLOYMENT.md](DEPLOYMENT.md) for comprehensive deployment instructions including:
+### Architecture
 
-- Repository setup (renaming to `razcue.github.io`)
-- Environment variables configuration
-- GitHub Actions workflows
-- Vercel integration
-- Domain configuration
-- Troubleshooting guide
+```
+Static Site (GitHub Pages) → API Calls → Serverless Functions (Vercel)
+```
 
-### Quick Deploy
+### Setup Guide
 
-1. **Setup GitHub Secrets**:
-   - `VERCEL_TOKEN`, `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID`, `RESEND_API_KEY`
+See [DEPLOYMENT-SETUP.md](DEPLOYMENT-SETUP.md) for complete setup instructions.
 
-2. **Setup Vercel Environment**:
-   - Add `RESEND_API_KEY` in Vercel project settings
+**Quick setup:**
 
-3. **Push to master**:
-   ```bash
-   git push origin master
-   ```
+1. Enable GitHub Pages (Settings → Pages → Source: GitHub Actions)
+2. Create Vercel API project: `cd api && vercel`
+3. Add secrets to GitHub and environment variables to Vercel
+4. Update `PUBLIC_API_URL` in `.env`
+5. Push to master
 
-GitHub Actions will automatically deploy to both GitHub Pages and Vercel.
+Both deployments happen automatically via GitHub Actions.
 
 ## 🌟 Features
 
@@ -157,8 +153,12 @@ GitHub Actions will automatically deploy to both GitHub Pages and Vercel.
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
+**All Rights Reserved** - Copyright (c) 2025 Rayko Azcue
 
-## 🤝 Contributing
+This is a personal portfolio project. The source code is available for reference and educational purposes only. You may NOT copy, modify, distribute, or use this code as a template for your own projects without explicit permission.
 
-Feel free to fork this project and adapt it for your own portfolio!
+See [LICENSE](LICENSE) for full details.
+
+## ⚠️ Usage Notice
+
+This repository is **not open source**. While the code is publicly viewable for learning purposes, it is not licensed for reuse. If you're interested in using any part of this code, please contact me at razcue@yandex.com.

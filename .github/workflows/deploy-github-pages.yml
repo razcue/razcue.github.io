@@ -30,16 +30,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Configure for static build
-        run: |
-          # Temporarily modify astro.config.mjs for static build
-          sed -i 's/output: .server./output: "static"/' astro.config.mjs
-          sed -i 's/adapter: vercel()//' astro.config.mjs
-
       - name: Build site
         run: npm run build
         env:
           NODE_ENV: production
+          # PUBLIC_ variables are safe to expose (they're in the client bundle)
+          PUBLIC_API_URL: ${{ secrets.PUBLIC_API_URL || 'https://your-vercel-project.vercel.app/api/contact' }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
