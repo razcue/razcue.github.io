@@ -7,9 +7,25 @@ export default async function handler(
   request: VercelRequest,
   response: VercelResponse
 ) {
-  // Handle CORS
+  // Handle CORS - Must be set before any response
+  const allowedOrigins = [
+    'https://razcue.github.io',
+    'http://localhost:4321',
+    'http://localhost:3000',
+  ];
+
+  const origin = request.headers.origin || '';
+
+  if (allowedOrigins.includes(origin)) {
+    response.setHeader('Access-Control-Allow-Origin', origin);
+  } else {
+    response.setHeader(
+      'Access-Control-Allow-Origin',
+      'https://razcue.github.io'
+    );
+  }
+
   response.setHeader('Access-Control-Allow-Credentials', 'true');
-  response.setHeader('Access-Control-Allow-Origin', '*'); // In production, set this to 'https://razcue.github.io'
   response.setHeader(
     'Access-Control-Allow-Methods',
     'GET,OPTIONS,PATCH,DELETE,POST,PUT'
@@ -19,7 +35,7 @@ export default async function handler(
     'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version'
   );
 
-  // Handle OPTIONS request
+  // Handle OPTIONS preflight request
   if (request.method === 'OPTIONS') {
     return response.status(200).end();
   }
