@@ -35,7 +35,7 @@ jobs:
         env:
           NODE_ENV: production
           # PUBLIC_ variables are safe to expose (they're in the client bundle)
-          PUBLIC_API_URL: ${{ secrets.PUBLIC_API_URL || 'https://your-vercel-project.vercel.app/api/contact' }}
+          PUBLIC_API_URL: ${{ secrets.PUBLIC_API_URL || 'https://razcue-github-io.vercel.app/api/contact' }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
