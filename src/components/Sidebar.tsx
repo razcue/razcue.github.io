@@ -70,13 +70,13 @@ export default function Sidebar({ locale }: SideBarProps) {
               onClick={() => scrollToSection(item.id)}
               className={`flex items-center justify-start gap-4 text-sm transition-all text-left group ${
                 activeSection === item.id
-                  ? 'text-[var(--accent)] w-9/12'
-                  : 'text-[var(--text-secondary)] hover:text-[var(--accent)] w-8/12'
+                  ? 'text-accent w-9/12'
+                  : 'text-text-secondary hover:text-accent w-8/12'
               }`}
               aria-label={`Navigate to ${item.id} section`}
             >
               <div
-                className={`w-4 h-3 border-2 duration-500 transition-all ${activeSection === item.id ? 'border-[var(--accent)] rotate-65' : 'border-[var(--text-secondary)] opacity-30'}`}
+                className={`w-4 h-3 border-2 duration-500 transition-all ${activeSection === item.id ? 'border-accent rotate-65' : 'border-text-secondary opacity-30'}`}
               />
             </button>
           </li>
@@ -84,27 +84,27 @@ export default function Sidebar({ locale }: SideBarProps) {
       </ul>
 
       {/* Vertical Line above links */}
-      <div className="block lg:hidden w-px flex-1 bg-[var(--text-secondary)] opacity-30 mb-4 sm:mb-6 max-h-4 sm:max-h-16 lg:max-h-32"></div>
+      <div className="block lg:hidden w-px flex-1 bg-text-secondary opacity-30 mb-4 sm:mb-6 max-h-4 sm:max-h-16 lg:max-h-32"></div>
 
       {/* Blog and Lab Links */}
-      <div className="block lg:hidden border-t border-[var(--surface)] mb-4 sm:mb-6">
+      <div className="block lg:hidden border-t border-surface mb-4 sm:mb-6">
         <ul className="space-y-1 sm:space-y-2">
           <li>
             <a
               href="/blog"
-              className="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors text-xs sm:text-sm font-medium tracking-widest"
+              className="text-text-secondary hover:text-accent transition-colors text-xs sm:text-sm font-medium tracking-widest"
               style={{ writingMode: 'vertical-rl' }}
             >
               <span className="font-medium">{t.nav.blog}</span>
             </a>
           </li>
           <li>
-            <div className="w-px h-2 sm:h-4 ml-2 flex-1 bg-[var(--text-secondary)] opacity-30 mb-3 sm:mb-4"></div>
+            <div className="w-px h-2 sm:h-4 ml-2 flex-1 bg-text-secondary opacity-30 mb-3 sm:mb-4"></div>
           </li>
           <li>
             <a
               href="/lab"
-              className="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors text-xs sm:text-sm font-medium tracking-widest"
+              className="text-text-secondary hover:text-accent transition-colors text-xs sm:text-sm font-medium tracking-widest"
               style={{ writingMode: 'vertical-rl' }}
             >
               <span className="font-medium">{t.nav.lab}</span>
@@ -114,7 +114,7 @@ export default function Sidebar({ locale }: SideBarProps) {
       </div>
 
       {/* Vertical Line above theme */}
-      <div className="block lg:hidden w-px flex-1 bg-[var(--text-secondary)] opacity-30 mb-4 sm:mb-6 max-h-4 sm:max-h-16 lg:max-h-32"></div>
+      <div className="block lg:hidden w-px flex-1 bg-text-secondary opacity-30 mb-4 sm:mb-6 max-h-4 sm:max-h-16 lg:max-h-32"></div>
 
       {/* Theme Toggle */}
       <div className="mb-1 sm:mb-4">
@@ -127,13 +127,13 @@ export default function Sidebar({ locale }: SideBarProps) {
       </div>
 
       {/* Vertical Line above email */}
-      <div className="w-px flex-1 bg-[var(--text-secondary)] opacity-30 mb-4 sm:mb-6 max-h-4 sm:max-h-16 lg:max-h-32"></div>
+      <div className="w-px flex-1 bg-text-secondary opacity-30 mb-4 sm:mb-6 max-h-4 sm:max-h-16 lg:max-h-32"></div>
 
       {/* Vertical Email */}
       <div className="flex flex-col items-center">
         <a
           href="mailto:razcue@yandex.com"
-          className="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors text-xs sm:text-sm font-medium tracking-widest"
+          className="text-text-secondary hover:text-accent transition-colors text-xs sm:text-sm font-medium tracking-widest"
           style={{ writingMode: 'vertical-rl' }}
         >
           razcue@yandex.com
@@ -141,7 +141,7 @@ export default function Sidebar({ locale }: SideBarProps) {
       </div>
 
       {/* Vertical Line below email */}
-      <div className="w-px flex-1 bg-[var(--text-secondary)] opacity-30 mt-4 sm:mt-6 max-h-16 lg:max-h-32"></div>
+      <div className="w-px flex-1 bg-text-secondary opacity-30 mt-4 sm:mt-6 max-h-16 lg:max-h-32"></div>
     </div>
   );
 }

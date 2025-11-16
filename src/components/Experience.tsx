@@ -29,7 +29,7 @@ export default function Experience({ locale }: ExperienceProps) {
       className="min-h-screen flex items-start lg:items-center px-2 lg:px-6 lg:px-8 py-12 lg:py-20"
     >
       <div className="w-full mt-[8dvh] lg:mt-0">
-        <h2 className="text-lg sm:text-2xl lg:text-4xl font-bold text-[var(--text)] mb-4 sm:mb-8 lg:mb-12">
+        <h2 className="text-lg sm:text-2xl lg:text-4xl font-bold text-text mb-4 sm:mb-8 lg:mb-12">
           {t.experience.title}
         </h2>
 
@@ -53,8 +53,8 @@ export default function Experience({ locale }: ExperienceProps) {
                   transition-all duration-200
                   ${
                     activeTab === index
-                      ? 'text-[var(--accent)] bg-[var(--surface)]'
-                      : 'text-[var(--text-secondary)] hover:text-[var(--accent)] hover:bg-[var(--surface)]/50'
+                      ? 'text-accent bg-surface'
+                      : 'text-text-secondary hover:text-accent hover:bg-surface/50'
                   }
                 `}
               >
@@ -62,7 +62,7 @@ export default function Experience({ locale }: ExperienceProps) {
                 <span
                   className={`
                     absolute left-0 top-0 w-0.5 h-full 
-                    bg-[var(--accent)] transition-all duration-200
+                    bg-accent transition-all duration-200
                     ${activeTab === index ? 'opacity-100' : 'opacity-0'}
                   `}
                 />
@@ -89,8 +89,8 @@ export default function Experience({ locale }: ExperienceProps) {
                   w-3 h-3 rounded-full transition-all duration-300
                   ${
                     activeTab === index
-                      ? 'bg-[var(--accent)] w-8'
-                      : 'bg-[var(--text-secondary)]/30 hover:bg-[var(--text-secondary)]/50'
+                      ? 'bg-accent w-8'
+                      : 'bg-text-secondary/30 hover:bg-text-secondary/50'
                   }
                 `}
               />
@@ -110,30 +110,25 @@ export default function Experience({ locale }: ExperienceProps) {
               >
                 {/* Role and Period */}
                 <div>
-                  <h3 className="text-base sm:text-xl lg:text-2xl font-semibold text-[var(--text)]">
+                  <h3 className="text-base sm:text-xl lg:text-2xl font-semibold text-text">
                     {exp.role}
-                    <span className="text-[var(--accent)]">
-                      {' '}
-                      # {exp.company}
-                    </span>
+                    <span className="text-accent"> # {exp.company}</span>
                   </h3>
-                  <p className="text-xs sm:text-sm text-[var(--text-secondary)] mt-1">
+                  <p className="text-xs sm:text-sm text-text-secondary mt-1">
                     {exp.period}
                     {exp.industry && (
-                      <span className="text-[var(--accent)] ml-2">
-                        • {exp.industry}
-                      </span>
+                      <span className="text-accent ml-2">• {exp.industry}</span>
                     )}
                   </p>
                   {exp.location && (
-                    <p className="text-xs sm:text-sm text-[var(--text-secondary)]">
+                    <p className="text-xs sm:text-sm text-text-secondary">
                       {exp.location}
                     </p>
                   )}
                 </div>
 
                 {/* Description */}
-                <div className="text-[var(--text-secondary)] text-xs sm:text-base leading-relaxed">
+                <div className="text-text-secondary text-xs sm:text-base leading-relaxed">
                   {exp.description}
                 </div>
 
@@ -142,7 +137,7 @@ export default function Experience({ locale }: ExperienceProps) {
                   {exp.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="px-2 sm:px-3 py-0.5 sm:py-1 text-[var(--accent)] text-xs sm:text-sm rounded-full border border-[var(--accent)]/20"
+                      className="px-2 sm:px-3 py-0.5 sm:py-1 text-accent text-xs sm:text-sm rounded-full border border-accent/20"
                     >
                       {tech}
                     </span>

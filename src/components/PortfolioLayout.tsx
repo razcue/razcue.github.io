@@ -20,7 +20,7 @@ export default function PortfolioLayout({
       {/* Standard Desktop (1024px-1536px): 5/12 */}
       {/* Large Tablets & Big Phones (640px-1023px): 2/12 */}
       {/* Small Phones (<640px): 12/12 (full width) */}
-      <div className="col-span-12 md:col-span-2 lg:col-span-5 bg-[var(--surface)] border-r border-[var(--surface)]">
+      <div className="col-span-12 md:col-span-2 lg:col-span-5 bg-surface border-r border-surface">
         <div className="sticky top-0 h-screen overflow-y-auto">
           <div className="p-6 lg:p-8">
             {hero}
@@ -40,7 +40,7 @@ export default function PortfolioLayout({
       {/* Standard Desktop (1024px-1536px): 1/12 */}
       {/* Large Tablets & Big Phones (640px-1023px): 2/12 */}
       {/* Small Phones (<640px): hidden */}
-      <div className="hidden md:col-span-2 lg:col-span-1 bg-[var(--surface)] border-l border-[var(--surface)]">
+      <div className="hidden md:col-span-2 lg:col-span-1 bg-surface border-l border-surface">
         <div className="sticky top-0 h-screen flex flex-col items-center justify-center p-4">
           {sidebar}
         </div>

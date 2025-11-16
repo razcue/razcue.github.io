@@ -24,7 +24,7 @@ export default function CircularScore({ score, label }: CircularScoreProps) {
 
   return (
     <div className="flex flex-col items-center gap-1 sm:gap-3">
-      <div className="circular-score-container relative">
+      <div className="relative w-20 h-20 sm:w-25 sm:h-25 lg:w-30 lg:h-30">
         <svg
           viewBox={`0 0 ${viewBoxSize} ${viewBoxSize}`}
           className="transform -rotate-90 w-full h-full"
@@ -59,7 +59,7 @@ export default function CircularScore({ score, label }: CircularScoreProps) {
         {/* Score text */}
         <div className="absolute inset-0 flex items-center justify-center">
           <span
-            className="circular-score-text font-bold text-[var(--accent)]"
+            className="text-xl sm:text-2xl lg:text-3xl font-bold text-accent"
             style={{ opacity }}
           >
             {score}
@@ -67,7 +67,7 @@ export default function CircularScore({ score, label }: CircularScoreProps) {
         </div>
       </div>
       {/* Label */}
-      <span className="text-sm text-[var(--text-secondary)] text-center font-medium">
+      <span className="text-sm text-text-secondary text-center font-medium">
         {label}
       </span>
     </div>

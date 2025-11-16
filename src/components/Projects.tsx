@@ -38,15 +38,15 @@ export default function Projects({ locale }: ProjectsProps) {
   const getStatusColor = (status?: string) => {
     switch (status) {
       case 'deployed':
-        return 'text-[var(--accent)]';
+        return 'text-accent';
       case 'in-progress':
-        return 'text-[var(--text)]';
+        return 'text-text';
       case 'deprecated':
-        return 'text-[var(--text-secondary)]';
+        return 'text-text-secondary';
       case 'idea':
-        return 'text-[var(--text)]/80';
+        return 'text-text/80';
       default:
-        return 'text-[var(--text)]';
+        return 'text-text';
     }
   };
 
@@ -67,7 +67,7 @@ export default function Projects({ locale }: ProjectsProps) {
       className="min-h-screen flex items-start lg:items-center px-2 lg:px-6 lg:px-8 py-12 lg:py-20"
     >
       <div className="w-full mx-auto">
-        <h2 className="text-lg sm:text-2xl lg:text-4xl font-bold text-[var(--text)] mb-4 sm:mb-8 lg:mb-12">
+        <h2 className="text-lg sm:text-2xl lg:text-4xl font-bold text-text mb-4 sm:mb-8 lg:mb-12">
           {t.projects.title}
         </h2>
 
@@ -89,8 +89,8 @@ export default function Projects({ locale }: ProjectsProps) {
                   w-3 h-3 rounded-full transition-all duration-300
                   ${
                     activeProject === index
-                      ? 'bg-[var(--accent)] w-8'
-                      : 'bg-[var(--text-secondary)]/30 hover:bg-[var(--text-secondary)]/50'
+                      ? 'bg-accent w-8'
+                      : 'bg-text-secondary/30 hover:bg-text-secondary/50'
                   }
                 `}
               />
@@ -104,7 +104,7 @@ export default function Projects({ locale }: ProjectsProps) {
             {/* Mobile Layout - Compact vertical stack */}
             <div className="lg:hidden col-span-1 space-y-3">
               {/* Title */}
-              <h3 className="text-base sm:text-lg font-bold text-[var(--text)] text-center">
+              <h3 className="text-base sm:text-lg font-bold text-text text-center">
                 {currentProject.title}
               </h3>
 
@@ -112,8 +112,8 @@ export default function Projects({ locale }: ProjectsProps) {
               <div className="relative w-full max-w-60 mx-auto">
                 {/* Mobile Screenshot - Primary, centered */}
                 <div className="relative w-11/20 z-10">
-                  <div className="rounded-lg overflow-hidden border-2 border-[var(--accent)]/30 bg-[var(--surface)] shadow-xl">
-                    <div className="aspect-[9/19] bg-gradient-to-br from-[var(--accent)]/15 via-[var(--surface)] to-[var(--accent)]/5 flex items-center justify-center relative">
+                  <div className="rounded-lg overflow-hidden border-2 border-accent/30 bg-surface shadow-xl">
+                    <div className="aspect-[9/19] bg-gradient-to-br from-accent/15 via-surface to-accent/5 flex items-center justify-center relative">
                       {currentProject.pictureMobileUrl ? (
                         <img
                           src={currentProject.pictureMobileUrl}
@@ -124,10 +124,10 @@ export default function Projects({ locale }: ProjectsProps) {
                       ) : (
                         <>
                           <div
-                            className="absolute inset-0 backdrop-blur-md bg-[var(--surface)]/30"
+                            className="absolute inset-0 backdrop-blur-md bg-surface/30"
                             aria-hidden="true"
                           />
-                          <div className="text-center text-[var(--text-secondary)] relative z-10">
+                          <div className="text-center text-text-secondary relative z-10">
                             <div className="text-3xl mb-1">📱</div>
                             <p className="text-[10px]">Mobile</p>
                           </div>
@@ -139,8 +139,8 @@ export default function Projects({ locale }: ProjectsProps) {
 
                 {/* Desktop Screenshot - Smaller, bottom right overlap */}
                 <div className="absolute bottom-2/5 right-0 w-13/16">
-                  <div className="rounded overflow-hidden border border-[var(--accent)]/20 bg-[var(--surface)] shadow-lg">
-                    <div className="aspect-[16/9] bg-gradient-to-br from-[var(--accent)]/20 via-[var(--surface)] to-[var(--accent)]/10 flex items-center justify-center relative">
+                  <div className="rounded overflow-hidden border border-accent/20 bg-surface shadow-lg">
+                    <div className="aspect-[16/9] bg-gradient-to-br from-accent/20 via-surface to-accent/10 flex items-center justify-center relative">
                       {currentProject.pictureDesktopUrl ? (
                         <img
                           src={currentProject.pictureDesktopUrl}
@@ -151,10 +151,10 @@ export default function Projects({ locale }: ProjectsProps) {
                       ) : (
                         <>
                           <div
-                            className="absolute inset-0 backdrop-blur-md bg-[var(--surface)]/30"
+                            className="absolute inset-0 backdrop-blur-md bg-surface/30"
                             aria-hidden="true"
                           />
-                          <div className="text-center text-[var(--text-secondary)] relative">
+                          <div className="text-center text-text-secondary relative">
                             <div className="text-xl">🖥️</div>
                             <p className="text-[9px]">Desktop</p>
                           </div>
@@ -174,7 +174,7 @@ export default function Projects({ locale }: ProjectsProps) {
                     </span>
                   )}
                   {currentProject.license && (
-                    <span className="text-xs font-medium text-[var(--accent)] rounded-full">
+                    <span className="text-xs font-medium text-accent rounded-full">
                       {currentProject.license}
                     </span>
                   )}
@@ -188,7 +188,7 @@ export default function Projects({ locale }: ProjectsProps) {
                         href={currentProject.githubUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-fit text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors"
+                        className="w-fit text-text-secondary hover:text-accent transition-colors"
                         aria-label="View GitHub repository"
                         title="GitHub"
                       >
@@ -200,7 +200,7 @@ export default function Projects({ locale }: ProjectsProps) {
                         href={currentProject.liveUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className=" text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors"
+                        className=" text-text-secondary hover:text-accent transition-colors"
                         aria-label="View live site"
                         title="Live Site"
                       >
@@ -210,7 +210,7 @@ export default function Projects({ locale }: ProjectsProps) {
                   </div>
                   <button
                     onClick={() => handleTalkAbout(currentProject.title)}
-                    className="flex items-center gap-1.5 px-2.5 py-1.5 text-[10px] font-medium text-[var(--text-secondary)] hover:text-[var(--accent)] border border-[var(--text-secondary)]/20 hover:border-[var(--accent)] rounded-md transition-colors"
+                    className="flex items-center gap-1.5 px-2.5 py-1.5 text-[10px] font-medium text-text-secondary hover:text-accent border border-text-secondary/20 hover:border-accent rounded-md transition-colors"
                     aria-label={`Talk about ${currentProject.title}`}
                   >
                     <div className="i-tabler-message-dots w-3.5 h-3.5" />
@@ -220,8 +220,8 @@ export default function Projects({ locale }: ProjectsProps) {
               </div>
 
               {/* Description */}
-              <div className="bg-[var(--surface)] rounded-lg p-2.5 sm:p-3 shadow-lg border border-[var(--accent)]/10">
-                <p className="text-[var(--text-secondary)] text-[11px] sm:text-xs leading-relaxed">
+              <div className="bg-surface rounded-lg p-2.5 sm:p-3 shadow-lg border border-accent/10">
+                <p className="text-text-secondary text-[11px] sm:text-xs leading-relaxed">
                   {currentProject.description}
                 </p>
               </div>
@@ -231,7 +231,7 @@ export default function Projects({ locale }: ProjectsProps) {
                 {currentProject.technologies.map((tech, techIndex) => (
                   <span
                     key={techIndex}
-                    className="text-[10px] font-mono text-[var(--accent)]"
+                    className="text-[10px] font-mono text-accent"
                   >
                     {techIndex > 0 && <span className="mr-1">-</span>}
                     {tech}
@@ -245,7 +245,7 @@ export default function Projects({ locale }: ProjectsProps) {
               {/* Desktop Screenshot - Left side, primary */}
               <div className="col-span-7 relative">
                 <div className="mb-3 flex items-center gap-3 flex-wrap">
-                  <h3 className="text-xl lg:text-2xl font-bold text-[var(--text)]">
+                  <h3 className="text-xl lg:text-2xl font-bold text-text">
                     {currentProject.title}
                   </h3>
                   {currentProject.status && (
@@ -256,15 +256,15 @@ export default function Projects({ locale }: ProjectsProps) {
                     </span>
                   )}
                   {currentProject.license && (
-                    <span className="text-xs font-medium text-[var(--accent)]">
+                    <span className="text-xs font-medium text-accent">
                       {currentProject.license}
                     </span>
                   )}
                 </div>
 
                 <div className="relative">
-                  <div className="rounded-lg overflow-hidden border border-[var(--accent)]/20 bg-[var(--surface)] shadow-lg">
-                    <div className="aspect-[16/9] bg-gradient-to-br from-[var(--accent)]/20 via-[var(--surface)] to-[var(--accent)]/10 flex items-center justify-center relative">
+                  <div className="rounded-lg overflow-hidden border border-accent/20 bg-surface shadow-lg">
+                    <div className="aspect-[16/9] bg-gradient-to-br from-accent/20 via-surface to-accent/10 flex items-center justify-center relative">
                       {currentProject.pictureDesktopUrl ? (
                         <img
                           src={currentProject.pictureDesktopUrl}
@@ -275,10 +275,10 @@ export default function Projects({ locale }: ProjectsProps) {
                       ) : (
                         <>
                           <div
-                            className="absolute inset-0 backdrop-blur-md bg-[var(--surface)]/30"
+                            className="absolute inset-0 backdrop-blur-md bg-surface/30"
                             aria-hidden="true"
                           />
-                          <div className="text-center text-[var(--text-secondary)] relative z-10">
+                          <div className="text-center text-text-secondary relative z-10">
                             <div className="text-4xl mb-2">🖥️</div>
                             <p className="text-sm">Desktop</p>
                           </div>
@@ -289,8 +289,8 @@ export default function Projects({ locale }: ProjectsProps) {
 
                   {/* Mobile Screenshot - Floating overlay */}
                   <div className="absolute -top-2 -right-4 w-[18cqw]">
-                    <div className="rounded-lg overflow-hidden border-2 border-[var(--accent)]/30 bg-[var(--surface)] shadow-xl">
-                      <div className="aspect-[9/19] bg-gradient-to-br from-[var(--accent)]/15 via-[var(--surface)] to-[var(--accent)]/5 flex items-center justify-center relative">
+                    <div className="rounded-lg overflow-hidden border-2 border-accent/30 bg-surface shadow-xl">
+                      <div className="aspect-[9/19] bg-gradient-to-br from-accent/15 via-surface to-accent/5 flex items-center justify-center relative">
                         {currentProject.pictureMobileUrl ? (
                           <img
                             src={currentProject.pictureMobileUrl}
@@ -301,10 +301,10 @@ export default function Projects({ locale }: ProjectsProps) {
                         ) : (
                           <>
                             <div
-                              className="absolute inset-0 backdrop-blur-md bg-[var(--surface)]/30"
+                              className="absolute inset-0 backdrop-blur-md bg-surface/30"
                               aria-hidden="true"
                             />
-                            <div className="text-center text-[var(--text-secondary)] relative z-10">
+                            <div className="text-center text-text-secondary relative z-10">
                               <div className="text-5xl mb-2">📱</div>
                               <p className="text-sm">Mobile</p>
                             </div>
@@ -324,7 +324,7 @@ export default function Projects({ locale }: ProjectsProps) {
                       href={currentProject.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-2 text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors"
+                      className="p-2 text-text-secondary hover:text-accent transition-colors"
                       aria-label="View GitHub repository"
                       title="GitHub"
                     >
@@ -336,7 +336,7 @@ export default function Projects({ locale }: ProjectsProps) {
                       href={currentProject.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-2 text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors"
+                      className="p-2 text-text-secondary hover:text-accent transition-colors"
                       aria-label="View live site"
                       title="Live Site"
                     >
@@ -345,7 +345,7 @@ export default function Projects({ locale }: ProjectsProps) {
                   )}
                   <button
                     onClick={() => handleTalkAbout(currentProject.title)}
-                    className="flex items-center gap-2 ml-2 px-4 py-2 text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--accent)] border border-[var(--text-secondary)] hover:border-[var(--accent)] rounded-md transition-colors"
+                    className="flex items-center gap-2 ml-2 px-4 py-2 text-sm font-medium text-text-secondary hover:text-accent border border-text-secondary hover:border-accent rounded-md transition-colors"
                     aria-label={`Talk about ${currentProject.title}`}
                   >
                     <div className="i-tabler-message-dots w-4 h-4" />
@@ -353,8 +353,8 @@ export default function Projects({ locale }: ProjectsProps) {
                   </button>
                 </div>
 
-                <div className="bg-[var(--surface)] rounded-lg p-5 shadow-lg border border-[var(--accent)]/10 mb-4">
-                  <p className="text-[var(--text-secondary)] text-lg leading-relaxed">
+                <div className="bg-surface rounded-lg p-5 shadow-lg border border-accent/10 mb-4">
+                  <p className="text-text-secondary text-lg leading-relaxed">
                     {currentProject.description}
                   </p>
                 </div>
@@ -363,7 +363,7 @@ export default function Projects({ locale }: ProjectsProps) {
                   {currentProject.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="text-sm font-mono text-[var(--accent)]"
+                      className="text-sm font-mono text-accent"
                     >
                       {techIndex > 0 && <span className="mr-1">-</span>}
                       {tech}

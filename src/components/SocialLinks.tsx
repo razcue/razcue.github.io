@@ -5,7 +5,7 @@ export default function SocialLinks() {
         href="https://github.com/razcue"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors"
+        className="text-text-secondary hover:text-accent transition-colors"
         aria-label="GitHub"
       >
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -16,7 +16,7 @@ export default function SocialLinks() {
         href="https://linkedin.com/in/rayko-azcue"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors"
+        className="text-text-secondary hover:text-accent transition-colors"
         aria-label="LinkedIn"
       >
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">

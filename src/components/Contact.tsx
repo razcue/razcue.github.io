@@ -125,10 +125,10 @@ export default function Contact({ locale }: ContactProps) {
           className="absolute top-4 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-md px-4 animate-slide-down"
         >
           {status === 'success' && (
-            <div className="p-4 bg-[var(--accent)]/10 border border-[var(--accent)]/30 rounded-lg shadow-lg backdrop-blur-sm">
+            <div className="p-4 bg-accent/10 border border-accent/30 rounded-lg shadow-lg backdrop-blur-sm">
               <div className="flex items-start gap-3">
                 <svg
-                  className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--accent)] flex-shrink-0 mt-0.5"
+                  className="w-5 h-5 sm:w-6 sm:h-6 text-accent flex-shrink-0 mt-0.5"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -141,10 +141,10 @@ export default function Contact({ locale }: ContactProps) {
                   />
                 </svg>
                 <div>
-                  <p className="text-[var(--accent)] font-medium text-xs sm:text-sm lg:text-base">
+                  <p className="text-accent font-medium text-xs sm:text-sm lg:text-base">
                     {t.contact.success}
                   </p>
-                  <p className="text-[var(--text-secondary)] text-xs sm:text-sm mt-1">
+                  <p className="text-text-secondary text-xs sm:text-sm mt-1">
                     {t.contact.successDetails}
                   </p>
                 </div>
@@ -178,11 +178,11 @@ export default function Contact({ locale }: ContactProps) {
       )}
 
       <div className="w-full">
-        <h2 className="text-lg sm:text-2xl lg:text-4xl font-bold text-[var(--text)] mb-4 sm:mb-6 lg:mb-8">
+        <h2 className="text-lg sm:text-2xl lg:text-4xl font-bold text-text mb-4 sm:mb-6 lg:mb-8">
           {t.contact.title}
         </h2>
 
-        <p className="text-[var(--text-secondary)] text-xs sm:text-base lg:text-lg mb-6 sm:mb-8 lg:mb-12 max-w-2xl">
+        <p className="text-text-secondary text-xs sm:text-base lg:text-lg mb-6 sm:mb-8 lg:mb-12 max-w-2xl">
           {t.contact.description}
         </p>
 
@@ -194,7 +194,7 @@ export default function Contact({ locale }: ContactProps) {
             <div>
               <label
                 htmlFor="name"
-                className="block text-[var(--text)] font-medium mb-1 sm:mb-2 text-xs sm:text-sm lg:text-base"
+                className="block text-text font-medium mb-1 sm:mb-2 text-xs sm:text-sm lg:text-base"
               >
                 {t.contact.name}
               </label>
@@ -205,7 +205,7 @@ export default function Contact({ locale }: ContactProps) {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full px-3 py-2 sm:px-4 sm:py-3 bg-[var(--surface)] border border-[var(--surface)] rounded-lg text-[var(--text)] text-xs sm:text-sm lg:text-base placeholder-text-secondary focus:outline-none focus:ring-2 focus:ring-[var(--accent)]"
+                className="w-full px-3 py-2 sm:px-4 sm:py-3 bg-surface border border-surface rounded-lg text-text text-xs sm:text-sm lg:text-base placeholder-text-secondary focus:outline-none focus:ring-2 focus:ring-accent"
                 placeholder={t.contact.placeholders.name}
               />
             </div>
@@ -213,7 +213,7 @@ export default function Contact({ locale }: ContactProps) {
             <div>
               <label
                 htmlFor="email"
-                className="block text-[var(--text)] font-medium mb-1 sm:mb-2 text-xs sm:text-sm lg:text-base"
+                className="block text-text font-medium mb-1 sm:mb-2 text-xs sm:text-sm lg:text-base"
               >
                 {t.contact.email}
               </label>
@@ -224,7 +224,7 @@ export default function Contact({ locale }: ContactProps) {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-3 py-2 sm:px-4 sm:py-3 bg-[var(--surface)] border border-[var(--surface)] rounded-lg text-[var(--text)] text-xs sm:text-sm lg:text-base placeholder-text-secondary focus:outline-none focus:ring-2 focus:ring-[var(--accent)]"
+                className="w-full px-3 py-2 sm:px-4 sm:py-3 bg-surface border border-surface rounded-lg text-text text-xs sm:text-sm lg:text-base placeholder-text-secondary focus:outline-none focus:ring-2 focus:ring-accent"
                 placeholder={t.contact.placeholders.email}
               />
             </div>
@@ -233,7 +233,7 @@ export default function Contact({ locale }: ContactProps) {
           <div>
             <label
               htmlFor="subject"
-              className="block text-[var(--text)] font-medium mb-1 sm:mb-2 text-xs sm:text-sm lg:text-base"
+              className="block text-text font-medium mb-1 sm:mb-2 text-xs sm:text-sm lg:text-base"
             >
               {t.contact.subject}
             </label>
@@ -244,7 +244,7 @@ export default function Contact({ locale }: ContactProps) {
               value={formData.subject}
               onChange={handleChange}
               required
-              className="w-full px-3 py-2 sm:px-4 sm:py-3 bg-[var(--surface)] border border-[var(--surface)] rounded-lg text-[var(--text)] text-xs sm:text-sm lg:text-base placeholder-text-secondary focus:outline-none focus:ring-2 focus:ring-[var(--accent)]"
+              className="w-full px-3 py-2 sm:px-4 sm:py-3 bg-surface border border-surface rounded-lg text-text text-xs sm:text-sm lg:text-base placeholder-text-secondary focus:outline-none focus:ring-2 focus:ring-accent"
               placeholder={t.contact.placeholders.subject}
             />
           </div>
@@ -252,7 +252,7 @@ export default function Contact({ locale }: ContactProps) {
           <div>
             <label
               htmlFor="message"
-              className="block text-[var(--text)] font-medium mb-1 sm:mb-2 text-xs sm:text-sm lg:text-base"
+              className="block text-text font-medium mb-1 sm:mb-2 text-xs sm:text-sm lg:text-base"
             >
               {t.contact.message}
             </label>
@@ -263,7 +263,7 @@ export default function Contact({ locale }: ContactProps) {
               onChange={handleChange}
               required
               rows={6}
-              className="w-full px-3 py-2 sm:px-4 sm:py-3 bg-[var(--surface)] border border-[var(--surface)] rounded-lg text-[var(--text)] text-xs sm:text-sm lg:text-base placeholder-text-secondary focus:outline-none focus:ring-2 focus:ring-[var(--accent)] resize-none"
+              className="w-full px-3 py-2 sm:px-4 sm:py-3 bg-surface border border-surface rounded-lg text-text text-xs sm:text-sm lg:text-base placeholder-text-secondary focus:outline-none focus:ring-2 focus:ring-accent resize-none"
               placeholder={t.contact.placeholders.message}
             />
           </div>
@@ -271,7 +271,7 @@ export default function Contact({ locale }: ContactProps) {
           <button
             type="submit"
             disabled={status === 'sending'}
-            className="px-6 py-2 sm:px-8 mb-2 lg:mb-4 sm:py-3 bg-[var(--accent)] text-dark font-medium text-xs sm:text-sm lg:text-base rounded-lg hover:bg-[var(--accent)]/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            className="px-6 py-2 sm:px-8 mb-2 lg:mb-4 sm:py-3 bg-accent text-dark font-medium text-xs sm:text-sm lg:text-base rounded-lg hover:bg-accent/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {status === 'sending' ? t.contact.sending : t.contact.send}
           </button>

@@ -17,7 +17,7 @@ export default function CTAButton({ locale }: CTAButtonProps) {
   return (
     <button
       onClick={scrollToContact}
-      className="mt-8 px-6 py-3 bg-[var(--accent)] text-dark font-medium rounded-lg hover:bg-[var(--accent)]/90 transition-colors"
+      className="mt-8 px-6 py-3 bg-accent text-dark font-medium rounded-lg hover:bg-accent/90 transition-colors"
     >
       {t.hero.cta}
     </button>

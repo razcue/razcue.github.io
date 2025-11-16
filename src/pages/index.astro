@@ -60,7 +60,7 @@ const currentLocale: Locale = (Astro.currentLocale as Locale) || 'en';
     </div>
 
     <!-- Column 3: Sidebar (No scroll) - Max width 6rem -->
-    <div class="block bg-[var(--bg)] px-1 lg:px-4 flex-shrink-0">
+    <div class="block bg-bg px-1 lg:px-4 flex-shrink-0">
       <div class="h-screen">
         <Sidebar locale={currentLocale} client:idle />
       </div>
@@ -68,7 +68,7 @@ const currentLocale: Locale = (Astro.currentLocale as Locale) || 'en';
   </div>
 
   <div
-    class="lg:hidden fixed bottom-0 left-0 right-0 py-2 sm:py-4 w-full flex justify-center bg-[var(--bg)] z-10"
+    class="lg:hidden fixed bottom-0 left-0 right-0 py-2 sm:py-4 w-full flex justify-center bg-bg z-10"
   >
     <Footer locale={currentLocale} />
   </div>

@@ -85,14 +85,14 @@ export default function Navigation({ locale }: NavigationProps) {
               }}
               className={`flex items-center justify-start gap-4 text-sm transition-all group ${
                 activeSection === item.id
-                  ? 'text-[var(--accent)] w-9/12'
-                  : 'text-[var(--text-secondary)] hover:text-[var(--accent)] w-8/12'
+                  ? 'text-accent w-9/12'
+                  : 'text-text-secondary hover:text-accent w-8/12'
               }`}
               aria-label={`Navigate to ${item.label} section`}
             >
               <div className="flex items-center gap-3">
                 {/* # symbol - only visible on hover */}
-                <span className="text-lg font-medium font-mono translate-y-px opacity-0 group-hover:opacity-100 transition-opacity text-[var(--accent)]">
+                <span className="text-lg font-medium font-mono translate-y-px opacity-0 group-hover:opacity-100 transition-opacity text-accent">
                   #
                 </span>
 
@@ -103,8 +103,8 @@ export default function Navigation({ locale }: NavigationProps) {
               <span
                 className={`h-px transition-all flex-1 ${
                   activeSection === item.id
-                    ? 'bg-[var(--accent)] opacity-100'
-                    : 'bg-[var(--text-secondary)] opacity-30 group-hover:opacity-60 group-hover:bg-[var(--accent)]'
+                    ? 'bg-accent opacity-100'
+                    : 'bg-text-secondary opacity-30 group-hover:opacity-60 group-hover:bg-accent'
                 }`}
                 style={{
                   minWidth: activeSection === item.id ? '4rem' : '2rem',
@@ -116,12 +116,12 @@ export default function Navigation({ locale }: NavigationProps) {
       </ul>
 
       {/* Blog and Lab Links */}
-      <div className="pt-6 border-t border-[var(--surface)]">
+      <div className="pt-6 border-t border-surface">
         <ul className="space-y-4">
           <li>
             <a
               href="/blog"
-              className="flex items-center gap-3 text-xl text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors group"
+              className="flex items-center gap-3 text-xl text-text-secondary hover:text-accent transition-colors group"
             >
               {/* External link icon */}
               <svg
@@ -141,7 +141,7 @@ export default function Navigation({ locale }: NavigationProps) {
           <li>
             <a
               href="/lab"
-              className="flex items-center gap-3 text-xl text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors group"
+              className="flex items-center gap-3 text-xl text-text-secondary hover:text-accent transition-colors group"
             >
               {/* External link icon */}
               <svg

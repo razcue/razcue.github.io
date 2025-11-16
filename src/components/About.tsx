@@ -30,10 +30,10 @@ export default function About({ locale }: AboutProps) {
 
         {/* About Me */}
         <div className="mb-4 sm:mb-8 lg:mb-16">
-          <h2 className="text-lg sm:text-2xl lg:text-4xl font-bold text-[var(--text)] mb-1 sm:mb-2 lg:mb-4">
+          <h2 className="text-lg sm:text-2xl lg:text-4xl font-bold text-text mb-1 sm:mb-2 lg:mb-4">
             {t.about.title}
           </h2>
-          <div className="space-y-2 text-[var(--text-secondary)] text-xs sm:text-base lg:text-lg leading-relaxed">
+          <div className="space-y-2 text-text-secondary text-xs sm:text-base lg:text-lg leading-relaxed">
             {t.about.description.map((paragraph, index) => (
               <p key={index} className={`${index === 1 && 'hidden lg:block'}`}>
                 {paragraph}
@@ -44,10 +44,10 @@ export default function About({ locale }: AboutProps) {
 
         {/* About This Site */}
         <div>
-          <h3 className="text-lg sm:text-2xl lg:text-4xl font-bold text-[var(--text)] mb-1 sm:mb-2 lg:mb-4">
+          <h3 className="text-lg sm:text-2xl lg:text-4xl font-bold text-text mb-1 sm:mb-2 lg:mb-4">
             {t.about.siteMetrics}
           </h3>
-          <p className="text-[var(--text-secondary)] text-xs sm:text-base lg:text-lg mb-0 sm:mb-4 lg:mb-8">
+          <p className="text-text-secondary text-xs sm:text-base lg:text-lg mb-0 sm:mb-4 lg:mb-8">
             {t.about.siteMetricsDescription}
           </p>
 
