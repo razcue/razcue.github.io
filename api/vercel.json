@@ -1,6 +1,8 @@
 {
   "version": 2,
   "regions": ["iad1"],
+  "buildCommand": "echo 'No build required'",
+  "outputDirectory": ".",
   "functions": {
     "api/**/*.ts": {
       "maxDuration": 10
