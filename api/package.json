@@ -4,6 +4,7 @@
   "description": "Serverless API for portfolio contact form",
   "main": "api/contact.ts",
   "scripts": {
+    "build": "echo 'No build step required for serverless functions'",
     "dev": "vercel dev",
     "deploy": "vercel --prod"
   },
