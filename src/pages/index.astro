@@ -6,14 +6,13 @@ import About from '../components/About.tsx';
 import Experience from '../components/Experience.tsx';
 import Projects from '../components/Projects.tsx';
 import Contact from '../components/Contact.tsx';
-import Sidebar from '../components/Sidebar.tsx';
 import Footer from '../components/Footer.tsx';
 import { type Locale } from '../utils/i18n';
 
 const currentLocale: Locale = (Astro.currentLocale as Locale) || 'en';
 ---
 
-<BaseLayout locale={currentLocale}>
+<BaseLayout locale={currentLocale} showNavigation={true}>
   <!-- Locale preference redirect script -->
   <script>
     // Check if user has a stored locale preference and redirect if needed
@@ -58,13 +57,6 @@ const currentLocale: Locale = (Astro.currentLocale as Locale) || 'en';
         </div>
       </div>
     </div>
-
-    <!-- Column 3: Sidebar (No scroll) - Max width 6rem -->
-    <div class="block bg-bg px-1 lg:px-4 flex-shrink-0">
-      <div class="h-screen">
-        <Sidebar locale={currentLocale} client:idle />
-      </div>
-    </div>
   </div>
 
   <div
@@ -74,20 +66,13 @@ const currentLocale: Locale = (Astro.currentLocale as Locale) || 'en';
   </div>
 
   <style>
-    /* enable CSS snap as a fallback/extra UX layer */
     #main-content #main-scroll {
-      scroll-snap-type: y mandatory;
-      -webkit-overflow-scrolling: touch;
       scroll-behavior: smooth;
-    }
-
-    #main-content #main-scroll section {
-      scroll-snap-align: start;
     }
   </style>
 
   <script>
-    // Full-page section snapping: wheel/touch/keyboard -> scroll to next/previous <section>
+    // Section snapping: wheel/keyboard for desktop, native touch scroll-snap for mobile
     document.addEventListener('DOMContentLoaded', () => {
       const container = document.querySelector(
         '#main-content #main-scroll'
@@ -111,9 +96,9 @@ const currentLocale: Locale = (Astro.currentLocale as Locale) || 'en';
       }
 
       let isAnimating = false;
-      const animationTimeout = 800; // ms, tuned for smooth scrolling
+      const animationTimeout = 800;
 
-      // Helpers
+      // Get current section based on scroll position
       const getCurrentIndex = () => {
         const scrollTop = container.scrollTop;
         let nearest = 0;
@@ -129,39 +114,36 @@ const currentLocale: Locale = (Astro.currentLocale as Locale) || 'en';
         return nearest;
       };
 
+      // Scroll to section using scrollIntoView (same as Sidebar navigation)
       const scrollToIndex = (index: number) => {
         const clamped = Math.max(0, Math.min(sections.length - 1, index));
-        const targetTop = sections[clamped].offsetTop;
-        if (Math.abs(container.scrollTop - targetTop) < 2) return;
+        const section = sections[clamped];
+        if (!section) return;
+
         isAnimating = true;
-        container.scrollTo({ top: targetTop, behavior: 'smooth' });
-        // Clear flag after timeout; using timeout is simple and reliable across browsers
+        section.scrollIntoView({ behavior: 'smooth' });
         setTimeout(() => {
           isAnimating = false;
         }, animationTimeout);
       };
 
-      // Utility to ignore inputs and interactive elements
+      // Check if interacting with form elements
       const isInteractive = (el: EventTarget | null) => {
         if (!(el instanceof Element)) return false;
         const tag = el.tagName.toLowerCase();
-        if (['input', 'textarea', 'select', 'button'].includes(tag))
-          return true;
-        if (el.closest && (el as Element).closest('.no-snap')) return true;
-        return false;
+        return ['input', 'textarea', 'select', 'button'].includes(tag);
       };
 
-      // Wheel handling (capture both on container and window so scrolling anywhere can trigger)
+      // Wheel handling for desktop (one section at a time)
       const onWheel = (e: WheelEvent) => {
         if (isAnimating) {
           e.preventDefault();
           return;
         }
-        if (isInteractive(e.target)) return; // don't intercept when interacting with forms
+        if (isInteractive(e.target)) return;
 
-        // Decide direction
         const delta = e.deltaY;
-        if (Math.abs(delta) < 10) return; // ignore tiny deltas
+        if (Math.abs(delta) < 10) return;
 
         e.preventDefault();
         const idx = getCurrentIndex();
@@ -171,30 +153,6 @@ const currentLocale: Locale = (Astro.currentLocale as Locale) || 'en';
 
       window.addEventListener('wheel', onWheel, { passive: false });
       container.addEventListener('wheel', onWheel, { passive: false });
-
-      // Touch (swipe)
-      let touchStartY = 0;
-      container.addEventListener(
-        'touchstart',
-        (ev: TouchEvent) => {
-          touchStartY = ev.touches[0].clientY;
-        },
-        { passive: true }
-      );
-
-      container.addEventListener(
-        'touchend',
-        (ev: TouchEvent) => {
-          const touchEndY = ev.changedTouches[0].clientY;
-          const dy = touchStartY - touchEndY;
-          const threshold = 40;
-          if (Math.abs(dy) < threshold) return;
-          const idx = getCurrentIndex();
-          if (dy > 0) scrollToIndex(idx + 1);
-          else scrollToIndex(idx - 1);
-        },
-        { passive: true }
-      );
 
       // Keyboard navigation
       window.addEventListener('keydown', (e) => {
@@ -225,13 +183,55 @@ const currentLocale: Locale = (Astro.currentLocale as Locale) || 'en';
         }
       });
 
-      // Ensure correct snap after resize or initial load
-      window.addEventListener('resize', () => {
-        setTimeout(() => {
+      // Touch navigation for mobile
+      let touchStartY = 0;
+      let touchStartTime = 0;
+
+      container.addEventListener(
+        'touchstart',
+        (e) => {
+          if (isInteractive(e.target)) return;
+          touchStartY = e.touches[0].clientY;
+          touchStartTime = Date.now();
+        },
+        { passive: true }
+      );
+
+      container.addEventListener(
+        'touchmove',
+        (e) => {
+          if (isInteractive(e.target)) return;
+          // Prevent default scroll during swipe
+          e.preventDefault();
+        },
+        { passive: false }
+      );
+
+      container.addEventListener(
+        'touchend',
+        (e) => {
+          if (isAnimating) return;
+          if (isInteractive(e.target)) return;
+
+          const touchEndY = e.changedTouches[0].clientY;
+          const touchEndTime = Date.now();
+          const diff = touchStartY - touchEndY;
+          const duration = touchEndTime - touchStartTime;
+
+          // Minimum swipe distance (50px) and max duration (500ms for swipe)
+          if (Math.abs(diff) < 50 || duration > 500) return;
+
           const idx = getCurrentIndex();
-          scrollToIndex(idx);
-        }, 150);
-      });
+          if (diff > 0) {
+            // Swiped up (bottom to top) - go to next section
+            scrollToIndex(idx + 1);
+          } else {
+            // Swiped down (top to bottom) - go to previous section
+            scrollToIndex(idx - 1);
+          }
+        },
+        { passive: true }
+      );
     });
   </script>
 </BaseLayout>

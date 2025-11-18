@@ -1,14 +1,16 @@
 # Rayko Azcue - Portfolio Website
 
-Modern, performant portfolio website built with Astro, React, and UnoCSS. Features internationalization (EN/ES), dark/light themes, and a contact form with email integration.
+Modern, performant portfolio website built with Astro, React, and UnoCSS. Features internationalization (EN/ES), dark/light themes, a blog with MDX support, and a contact form with email integration.
 
 ## 🚀 Tech Stack
 
 - **Framework**: Astro 5.15.3 with React integration
-- **Styling**: UnoCSS with Tailwind preset
+- **Styling**: UnoCSS with Tailwind preset and Tabler icons
 - **Language**: TypeScript
+- **Content**: Astro Content Collections with MDX
 - **Email**: Resend API for contact form
-- **Deployment**: GitHub Page (static site), Vercel (serverless)
+- **Blog Comments**: Giscus (GitHub Discussions)
+- **Deployment**: GitHub Pages (static site), Vercel (serverless)
 - **Code Quality**: ESLint, Prettier, TypeScript checks
 
 ## 📁 Project Structure
@@ -16,68 +18,65 @@ Modern, performant portfolio website built with Astro, React, and UnoCSS. Featur
 ```text
 /
 ├── .github/
-│   └── workflows/         # GitHub Actions workflows
+│   └── workflows/                   # GitHub Actions workflows
 │       ├── deploy-github-pages.yml  # Static site deployment
-│       └── deploy-vercel.yml        # API deployment
-├── api/                   # Vercel serverless functions
-│   ├── contact.ts         # Contact form API endpoint
-│   ├── package.json       # API dependencies
-│   ├── tsconfig.json      # API TypeScript config
-│   ├── vercel.json        # Vercel configuration
-│   └── .env.example       # API environment template
-├── public/                # Static assets (favicon, images, etc.)
+│       └── deploy-vercel.yml        # API/serverless deployment
+├── api/
+│   └── api/                         # Vercel serverless functions
+│       ├── contact.ts               # Contact form API endpoint
+│       ├── newsletter.ts            # Newsletter subscription endpoint
+│       ├── package.json             # API dependencies
+│       ├── tsconfig.json            # API TypeScript config
+│       ├── vercel.json              # Vercel configuration
+│       └── .env.example             # API environment template
+├── public/
+│   ├── blog-images/                 # Blog post images
+│   └── ...                          # Other static assets
 ├── src/
-│   ├── components/        # React components
+│   ├── components/
+│   │   ├── blog/                    # Blog-specific components
+│   │   │   ├── BlogCard.tsx
+│   │   │   ├── FeaturedPost.tsx
+│   │   │   ├── NewsletterSignup.tsx
+│   │   │   ├── Sidebar.tsx
+│   │   │   ├── SortControl.tsx
+│   │   │   └── TagFilter.tsx
 │   │   ├── About.tsx
-│   │   ├── CircularScore.tsx
 │   │   ├── Contact.tsx
-│   │   ├── CTAButton.tsx
 │   │   ├── Experience.tsx
-│   │   ├── Footer.tsx
 │   │   ├── Hero.tsx
-│   │   ├── LanguageToggle.tsx
 │   │   ├── Navigation.tsx
-│   │   ├── PortfolioLayout.tsx
-│   │   ├── ProfileHeader.tsx
 │   │   ├── Projects.tsx
-│   │   ├── Sidebar.tsx
-│   │   ├── SocialLinks.tsx
-│   │   ├── ThemeProvider.tsx
-│   │   └── ThemeToggle.tsx
-│   ├── i18n/              # Internationalization
-│   │   ├── en.ts          # English translations
-│   │   └── es.ts          # Spanish translations
-│   ├── layouts/           # Page layouts
+│   │   └── ...                      # Other components
+│   ├── content/
+│   │   └── blog/                    # Blog posts (MDX)
+│   │       ├── en/                  # English posts
+│   │       └── es/                  # Spanish posts
+│   ├── i18n/                        # Internationalization
+│   │   ├── en.ts                    # English translations
+│   │   └── es.ts                    # Spanish translations
+│   ├── layouts/
 │   │   └── BaseLayout.astro
-│   ├── pages/             # Routes (file-based routing)
-│   │   ├── index.astro    # English homepage
+│   ├── pages/
+│   │   ├── index.astro              # English homepage
+│   │   ├── rss.xml.ts               # English RSS feed
 │   │   ├── blog/
-│   │   │   └── index.astro
-│   │   ├── lab/
-│   │   │   └── index.astro
-│   │   └── es/            # Spanish routes
+│   │   │   ├── index.astro          # Blog list page
+│   │   │   └── [slug].astro         # Blog post page
+│   │   └── es/                      # Spanish routes
 │   │       ├── index.astro
-│   │       ├── blog/
-│   │       │   └── index.astro
-│   │       └── lab/
-│   │           └── index.astro
-│   ├── styles/            # Global styles
+│   │       ├── rss.xml.ts           # Spanish RSS feed
+│   │       └── blog/
+│   │           ├── index.astro
+│   │           └── [slug].astro
+│   ├── styles/
 │   │   └── global.css
-│   └── utils/             # Utilities
-│       ├── i18n.ts        # i18n helpers
-│       └── theme.ts       # Theme management
-├── openspec/              # OpenSpec documentation
-│   ├── AGENTS.md
-│   ├── project.md
-│   ├── changes/           # Change proposals
-│   └── specs/             # Technical specs
-├── astro.config.mjs       # Astro configuration
-├── uno.config.ts          # UnoCSS configuration
-├── eslint.config.js       # ESLint configuration
-├── tsconfig.json          # TypeScript configuration
-├── package.json           # Dependencies and scripts
-├── .env.example           # Environment variables template
-└── LICENSE                # Proprietary license
+│   └── utils/
+│       ├── i18n.ts                  # i18n helpers
+│       └── theme.ts                 # Theme helpers
+├── astro.config.mjs                 # Astro configuration
+├── uno.config.ts                    # UnoCSS configuration
+└── ...
 ```
 
 ## 🧞 Commands
@@ -119,56 +118,20 @@ The site supports English (default) and Spanish:
 
 - Language preference stored in localStorage
 - Fallback to browser language detection
-- **Section hash preservation across language changes**
 
-### Hash Navigation & Language Persistence
+**Hash Navigation & Language Persistence**
 
 The site implements hash-based section navigation that persists when changing languages.
-
-**How it works:**
-
-1. Clicking on navigation links adds hash to URL: `https://razcue.github.io/#experience`
-2. When changing language, the hash is preserved: `https://razcue.github.io/es/#experience`
-3. Page scrolls to the same section in the new language
-
-**Implementation example:**
-
-```typescript
-// In LanguageToggle.tsx or similar component
-const handleLanguageChange = (newLocale: string) => {
-  const currentHash = window.location.hash; // e.g., "#experience"
-  const newPath = newLocale === 'en' ? '/' : `/${newLocale}/`;
-  window.location.href = newPath + currentHash;
-};
-
-// In Navigation.tsx
-<a href="#about">About</a>
-<a href="#experience">Experience</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-
-// In your components
-<section id="about">...</section>
-<section id="experience">...</section>
-<section id="projects">...</section>
-<section id="contact">...</section>
-```
-
-**CSS for smooth scrolling:**
-
-```css
-html {
-  scroll-behavior: smooth;
-}
-```
-
-This ensures users stay at their current section when switching languages, improving UX.
 
 ## 🎨 Theming
 
 - **Light/Dark modes** with system preference detection
 - Theme preference stored in localStorage
 - Dark theme is default
+
+**CSS for smooth scrolling:**
+
+This ensures users stay at their current section when switching languages, improving UX.
 
 ## 📧 Contact Form Setup
 
@@ -396,113 +359,173 @@ cd api && npm run dev
 
 ## 🌟 Features
 
+### Portfolio
+
 - ✅ Fully responsive (mobile-first design)
 - ✅ Internationalization (EN/ES) with hash preservation
 - ✅ Dark/Light theme support
 - ✅ Contact form with email notifications
 - ✅ Project showcase with status indicators
 - ✅ Professional experience timeline
+- ✅ Section-based scroll navigation (wheel/keyboard/touch)
+
+### Blog
+
+- ✅ MDX support for rich content
+- ✅ Bilingual content (EN/ES) with separate RSS feeds
+- ✅ Featured posts with hero images (1200×630)
+- ✅ Tag-based filtering with URL state preservation
+- ✅ Sorting by date or reading time (asc/desc)
+- ✅ Automatic reading time calculation
+- ✅ Giscus comments integration (GitHub Discussions)
+- ✅ Newsletter signup with Buttondown API
+- ✅ Responsive grid and list views
+- ✅ SEO optimized with Open Graph and JSON-LD
+
+### Performance & Quality
+
 - ✅ Performance optimized (Terser minification, code splitting)
 - ✅ Accessibility optimized (96/100 Lighthouse score)
 - ✅ SEO optimized (100/100 Lighthouse score)
+- ✅ Strict TypeScript and ESLint checks
 
-### SEO
+## 📝 Blog Setup & Usage
 
-✅ Semantic HTML structure  
-✅ Meta descriptions and Open Graph tags  
-✅ Proper heading hierarchy (h1, h2, h3)  
-✅ Alt text for images
+### Quick Start
 
-## 🔍 SEO & Search Engine Visibility
+See [BLOG_SETUP.md](./BLOG_SETUP.md) for complete setup instructions including:
 
-The site is optimized for search engines with a **100/100 Lighthouse SEO score**.
+- Giscus comments configuration
+- Newsletter integration (Buttondown)
+- Image naming conventions
 
-### ✅ Implemented
+### Creating a New Blog Post
 
-- Semantic HTML structure with proper heading hierarchy
-- Dynamic meta tags (title, description, keywords) for EN/ES
-- Open Graph tags for social media sharing
-- Twitter Cards for rich previews
-- JSON-LD structured data (Person, WebSite, WebPage schemas)
-- Canonical URLs with hreflang for multilingual content
-- `robots.txt` and `sitemap.xml` with bilingual support
-- Responsive viewport and theme-color meta tags
+1. **Create MDX file** in the appropriate language directory:
 
-### 📋 Post-Deployment SEO Checklist
+```bash
+# English post
+touch src/content/blog/en/my-new-post.mdx
 
-After deploying your site, complete these steps to maximize search visibility:
+# Spanish post
+touch src/content/blog/es/my-new-post.mdx
+```
 
-#### 1. Google Search Console Setup
+2. **Add frontmatter** at the top of your MDX file:
 
-1. Go to [Google Search Console](https://search.google.com/search-console)
-2. Add property: `https://razcue.github.io`
-3. Verify ownership (HTML tag method recommended)
-4. Submit sitemap: `https://razcue.github.io/sitemap.xml`
-5. Request indexing for main pages
+```mdx
+---
+title: 'My Awesome Blog Post'
+description: 'A brief description of what this post is about'
+pubDate: 2025-01-15
+heroImage: '/blog-images/my-new-post-hero.webp'
+tags: ['javascript', 'webdev', 'tutorial']
+featured: true # Optional: show on homepage and at top of blog list
+---
 
-#### 2. Bing Webmaster Tools
+Your content goes here with full MDX support...
+```
 
-1. Go to [Bing Webmaster Tools](https://www.bing.com/webmasters)
-2. Add your site
-3. Verify ownership
-4. Submit sitemap: `https://razcue.github.io/sitemap.xml`
+3. **Create post images** (1200×630px recommended):
 
-#### 3. Social Media Validation
+```bash
+# Save images in public/blog-images/
+public/blog-images/my-new-post-hero.webp
+public/blog-images/my-new-post-og.svg  # Optional: og-image for social sharing
+```
 
-Test how your site appears when shared:
+**Image naming convention:** `[slug]-hero.webp, [slug]-og.svg`
 
-- [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/)
-- [Twitter Card Validator](https://cards-dev.twitter.com/validator)
-- [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/)
+4. **Preview your post**:
 
-#### 4. Structured Data Validation
+```bash
+npm run dev
+# Visit http://localhost:4321/blog/my-new-post
+# Spanish: http://localhost:4321/es/blog/my-new-post
+```
 
-Verify your JSON-LD markup:
+### Frontmatter Options
 
-- [Google Rich Results Test](https://search.google.com/test/rich-results)
-- [Schema.org Validator](https://validator.schema.org/)
+| Field         | Type     | Required | Description                            |
+| :------------ | :------- | :------- | :------------------------------------- |
+| `title`       | string   | ✅       | Post title (for SEO and display)       |
+| `description` | string   | ✅       | Brief summary (for SEO and cards)      |
+| `pubDate`     | date     | ✅       | Publication date (YYYY-MM-DD)          |
+| `heroImage`   | string   | ✅       | Path to hero image (1200×630px)        |
+| `tags`        | string[] | ✅       | Categories/tags for filtering          |
+| `featured`    | boolean  | ⬜       | Show as featured post (default: false) |
 
-#### 5. Create Professional OG Image
+### MDX Features
 
-The current `og-image.svg` is a placeholder. Create a 1200x630px image:
+Blog posts support full MDX capabilities:
 
-- Use [Canva](https://canva.com) or [Figma](https://figma.com)
-- Include your name, title, and branding
-- Export as JPG and save to `public/og-image.jpg`
-- Update `BaseLayout.astro` to use the JPG
+- **Markdown**: Headers, lists, links, images, code blocks
+- **React Components**: Import and use custom components
+- **Code Syntax Highlighting**: Automatic with Astro
+- **Custom Styling**: UnoCSS utility classes available
 
-#### 6. Monitor & Improve
+Example:
 
-- Check Google Search Console weekly for crawl errors
-- Monitor keyword rankings for "Rayko Azcue"
-- Track clicks and impressions in Search Console
-- Update content regularly to maintain freshness
+````mdx
+---
+title: 'Advanced React Patterns'
+description: 'Learn advanced patterns in React'
+pubDate: 2025-01-15
+heroImage: '/blog-images/react-patterns-hero.webp'
+tags: ['react', 'javascript', 'patterns']
+---
 
-### 💡 Tips for Ranking "Rayko Azcue"
+import CustomComponent from '../../components/CustomComponent';
 
-1. **Link Building**: Link to your portfolio from:
-   - GitHub profile README
-   - LinkedIn profile
-   - Dev.to, Medium, or personal blog posts
-   - Stack Overflow profile
+## Introduction
 
-2. **Social Signals**: Share your portfolio on:
-   - Twitter/X with @razcue
-   - LinkedIn posts
-   - Reddit (relevant subreddits)
-   - Developer communities
+Here's some **bold text** and _italic text_.
 
-3. **Content Freshness**: Update your portfolio regularly:
-   - Add new projects
-   - Write blog posts
-   - Update experience section
+<CustomComponent prop="value" />
 
-4. **External Mentions**: Get your name mentioned:
-   - Contribute to open source (commit messages with your name)
-   - Comment on tech blogs/articles
-   - Participate in developer forums
+```javascript
+const example = () => {
+  console.log('Code with syntax highlighting!');
+};
+```
+````
 
-Google typically indexes new sites within 1-2 weeks. Searching "Rayko Azcue" should show your portfolio within a month of deployment and completing the checklist above.
+### Blog Features
+
+**Sorting & Filtering:**
+
+- Sort by date or reading time (ascending/descending)
+- Filter by tags with state preservation in URL
+- URL params: `?tag=javascript&sort=date&dir=desc`
+
+**RSS Feeds:**
+
+- English: `https://razcue.github.io/rss.xml`
+- Spanish: `https://razcue.github.io/es/rss.xml`
+
+**Comments:**
+
+- Powered by Giscus (GitHub Discussions)
+- Automatic per-post threads via pathname mapping
+- See [BLOG_SETUP.md](./BLOG_SETUP.md) for configuration
+
+**Newsletter:**
+
+- Buttondown integration for subscriptions
+- Configurable in `api/api/newsletter.ts`
+
+## 🔍 SEO Optimization
+
+The site includes comprehensive SEO features.
+
+**Key SEO Features:**
+
+- Dynamic meta tags (title, description) for EN/ES
+- Open Graph tags for social media
+- JSON-LD structured data
+- RSS feeds for blog content
+- Sitemap and robots.txt
+- 100/100 Lighthouse SEO score
 
 ## 📄 License
 

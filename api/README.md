@@ -45,6 +45,7 @@ Or push to GitHub and let the GitHub Action handle deployment.
 Set in Vercel dashboard:
 
 - `RESEND_API_KEY`: Your Resend API key
+- `BUTTONDOWN_API_KEY`: Your Buttondown API key (for newsletter)
 
 ## API Endpoints
 
@@ -69,5 +70,25 @@ Send a contact form message.
 {
   "success": true,
   "message": "Message sent successfully!"
+}
+```
+
+### POST /api/newsletter
+
+Subscribe to the newsletter.
+
+**Request Body:**
+
+```json
+{
+  "email": "john@example.com"
+}
+```
+
+**Response:**
+
+```json
+{
+  "success": true
 }
 ```

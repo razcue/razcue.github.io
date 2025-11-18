@@ -10,6 +10,33 @@ export default {
     lab: 'Lab',
   },
 
+  // Blog
+  blog: {
+    title: 'Blog',
+    subtitle: 'Thoughts on web development and more',
+    featured: 'Featured',
+    allPosts: 'All Posts',
+    filterByTag: 'Filter by Tag',
+    noPostsYet: 'No posts yet. Check back soon!',
+    readArticle: 'Read Article',
+    minRead: 'min read',
+    backToBlog: 'Back to Blog',
+    shareArticle: 'Share this article',
+    shareOn: 'Share on',
+    comments: 'Comments',
+    updated: 'Updated',
+    newsletter: {
+      title: 'Subscribe to my Newsletter',
+      description: 'Get the latest posts delivered right to your inbox',
+      placeholder: 'your.email@example.com',
+      subscribing: 'Subscribing...',
+      subscribe: 'Subscribe',
+      successMessage: 'Successfully subscribed! Check your email to confirm.',
+      errorMessage: 'Failed to subscribe. Please try again.',
+      poweredBy: 'Powered by Buttondown. No spam, unsubscribe anytime.',
+    },
+  },
+
   // Hero Section
   hero: {
     greeting: "Hi, I'm",

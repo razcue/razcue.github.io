@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { getTranslation, type Locale } from '../utils/i18n';
 
 interface ProjectsProps {
@@ -22,6 +22,77 @@ export default function Projects({ locale }: ProjectsProps) {
   const projects: Project[] = ((t.projects && t.projects.items) ||
     []) as Project[];
   const [activeProject, setActiveProject] = useState(0);
+  const [showSwipeHint, setShowSwipeHint] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  // Check if user has seen the swipe hint
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    const hasSeenHint = localStorage.getItem('projects-swipe-hint-seen');
+    if (!hasSeenHint) {
+      setShowSwipeHint(true);
+
+      // Hide hint after 3 seconds
+      const timer = setTimeout(() => {
+        setShowSwipeHint(false);
+        localStorage.setItem('projects-swipe-hint-seen', 'true');
+      }, 3000);
+
+      return () => clearTimeout(timer);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (typeof window === 'undefined' || !sectionRef.current) return;
+
+    let touchStartX = 0;
+    let touchStartY = 0;
+    let touchStartTime = 0;
+
+    const handleTouchStart = (e: TouchEvent) => {
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+      touchStartTime = Date.now();
+    };
+
+    const handleTouchEnd = (e: TouchEvent) => {
+      const touchEndX = e.changedTouches[0].clientX;
+      const touchEndY = e.changedTouches[0].clientY;
+      const touchEndTime = Date.now();
+
+      const diffX = touchStartX - touchEndX;
+      const diffY = touchStartY - touchEndY;
+      const duration = touchEndTime - touchStartTime;
+
+      // Check if it's a swipe (fast gesture)
+      if (duration > 500) return;
+
+      // Determine if swipe is more horizontal or vertical
+      const isHorizontal = Math.abs(diffX) > Math.abs(diffY);
+
+      // Only handle horizontal swipes with minimum distance
+      if (isHorizontal && Math.abs(diffX) > 50) {
+        e.preventDefault();
+        if (diffX > 0) {
+          // Swiped left - go to next
+          setActiveProject((prev) => Math.min(prev + 1, projects.length - 1));
+        } else {
+          // Swiped right - go to previous
+          setActiveProject((prev) => Math.max(prev - 1, 0));
+        }
+      }
+    };
+
+    const section = sectionRef.current;
+    section.addEventListener('touchstart', handleTouchStart, { passive: true });
+    section.addEventListener('touchend', handleTouchEnd, { passive: false });
+
+    return () => {
+      section.removeEventListener('touchstart', handleTouchStart);
+      section.removeEventListener('touchend', handleTouchEnd);
+    };
+  }, [projects.length]);
 
   const handleTalkAbout = (projectTitle: string) => {
     // Encode the message and add it to the URL hash
@@ -63,9 +134,22 @@ export default function Projects({ locale }: ProjectsProps) {
 
   return (
     <section
+      ref={sectionRef}
       id="projects"
-      className="min-h-screen flex items-start lg:items-center px-2 lg:px-6 lg:px-8 py-12 lg:py-20"
+      className="min-h-screen flex items-start lg:items-center px-2 lg:px-6 lg:px-8 py-12 lg:py-20 relative"
     >
+      {/* Swipe Hint - Mobile Only */}
+      {showSwipeHint && (
+        <div className="lg:hidden absolute inset-0 pointer-events-none flex items-center justify-between px-4 z-20">
+          <div className="animate-pulse">
+            <div className="i-tabler-chevron-left w-12 h-12 text-accent opacity-70 animate-bounce-horizontal-left" />
+          </div>
+          <div className="animate-pulse animation-delay-300">
+            <div className="i-tabler-chevron-right w-12 h-12 text-accent opacity-70 animate-bounce-horizontal-right" />
+          </div>
+        </div>
+      )}
+
       <div className="w-full mx-auto">
         <h2 className="text-lg sm:text-2xl lg:text-4xl font-bold text-text mb-4 sm:mb-8 lg:mb-12">
           {t.projects.title}
@@ -86,7 +170,7 @@ export default function Projects({ locale }: ProjectsProps) {
                 aria-label={`View ${project.title}`}
                 onClick={() => setActiveProject(index)}
                 className={`
-                  w-3 h-3 rounded-full transition-all duration-300
+                  w-3 h-3 rounded-full transition-all duration-300 cursor-pointer
                   ${
                     activeProject === index
                       ? 'bg-accent w-8'
@@ -210,7 +294,7 @@ export default function Projects({ locale }: ProjectsProps) {
                   </div>
                   <button
                     onClick={() => handleTalkAbout(currentProject.title)}
-                    className="flex items-center gap-1.5 px-2.5 py-1.5 text-[10px] font-medium text-text-secondary hover:text-accent border border-text-secondary/20 hover:border-accent rounded-md transition-colors"
+                    className="flex items-center gap-1.5 px-2.5 py-1.5 text-[10px] font-medium text-text-secondary hover:text-accent border border-text-secondary/20 hover:border-accent rounded-md transition-colors cursor-pointer"
                     aria-label={`Talk about ${currentProject.title}`}
                   >
                     <div className="i-tabler-message-dots w-3.5 h-3.5" />
@@ -345,7 +429,7 @@ export default function Projects({ locale }: ProjectsProps) {
                   )}
                   <button
                     onClick={() => handleTalkAbout(currentProject.title)}
-                    className="flex items-center gap-2 ml-2 px-4 py-2 text-sm font-medium text-text-secondary hover:text-accent border border-text-secondary hover:border-accent rounded-md transition-colors"
+                    className="flex items-center gap-2 ml-2 px-4 py-2 text-sm font-medium text-text-secondary hover:text-accent border border-text-secondary hover:border-accent rounded-md transition-colors cursor-pointer"
                     aria-label={`Talk about ${currentProject.title}`}
                   >
                     <div className="i-tabler-message-dots w-4 h-4" />

@@ -1,4 +1,4 @@
-import { type Locale } from '../utils/i18n';
+import { getTranslation, type Locale } from '../utils/i18n';
 import ProfileHeader from './ProfileHeader';
 
 interface HeroProps {
@@ -12,6 +12,7 @@ export default function Hero({ locale }: HeroProps) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
+  const t = getTranslation(locale);
 
   return (
     <div className="space-y-12">
@@ -22,10 +23,10 @@ export default function Hero({ locale }: HeroProps) {
       <div className="flex justify-center">
         <button
           onClick={() => scrollToSection('contact')}
-          className="relative px-6 py-3 text-accent font-medium overflow-hidden group w-48"
+          className="relative px-6 py-3 text-accent font-medium overflow-hidden group w-48 cursor-pointer"
           style={{ background: 'transparent' }}
         >
-          <span className="relative z-10 uppercase">Get In Touch</span>
+          <span className="relative z-10 uppercase">{t.hero.cta}</span>
 
           {/* Animated borders - two pens drawing from corners */}
           {/* Top border - draws from right to left */}

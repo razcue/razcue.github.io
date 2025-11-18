@@ -127,19 +127,7 @@ export default function Contact({ locale }: ContactProps) {
           {status === 'success' && (
             <div className="p-4 bg-accent/10 border border-accent/30 rounded-lg shadow-lg backdrop-blur-sm">
               <div className="flex items-start gap-3">
-                <svg
-                  className="w-5 h-5 sm:w-6 sm:h-6 text-accent flex-shrink-0 mt-0.5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
+                <i className="i-tabler-circle-check w-5 h-5 sm:w-6 sm:h-6 text-accent flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-accent font-medium text-xs sm:text-sm lg:text-base">
                     {t.contact.success}
@@ -155,19 +143,7 @@ export default function Contact({ locale }: ContactProps) {
           {status === 'error' && (
             <div className="p-4 bg-red-500/10 border border-red-500/30 rounded-lg shadow-lg backdrop-blur-sm">
               <div className="flex items-start gap-3">
-                <svg
-                  className="w-5 h-5 sm:w-6 sm:h-6 text-red-400 flex-shrink-0 mt-0.5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
+                <i className="i-tabler-alert-circle w-5 h-5 sm:w-6 sm:h-6 text-red-400 flex-shrink-0 mt-0.5" />
                 <p className="text-red-400 text-xs sm:text-sm lg:text-base">
                   {t.contact.error}
                 </p>
@@ -271,7 +247,7 @@ export default function Contact({ locale }: ContactProps) {
           <button
             type="submit"
             disabled={status === 'sending'}
-            className="px-6 py-2 sm:px-8 mb-2 lg:mb-4 sm:py-3 bg-accent text-dark font-medium text-xs sm:text-sm lg:text-base rounded-lg hover:bg-accent/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            className="px-6 py-2 sm:px-8 mb-2 lg:mb-4 sm:py-3 bg-accent text-dark font-medium text-xs sm:text-sm lg:text-base rounded-lg hover:bg-accent/90 transition-colors disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed"
           >
             {status === 'sending' ? t.contact.sending : t.contact.send}
           </button>

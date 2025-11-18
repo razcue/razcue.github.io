@@ -20,15 +20,20 @@ export function getLocaleFromUrl(url: URL): Locale {
 
 export function getLocalizedPath(pathname: string, locale: Locale): string {
   // Remove leading slash
-  const path = pathname.startsWith('/') ? pathname.slice(1) : pathname;
+  let path = pathname.startsWith('/') ? pathname.slice(1) : pathname;
 
-  // If it's the home page and locale is default (en), don't add locale prefix
-  if ((path === '' || path === 'index.html') && locale === 'en') {
-    return '/';
+  // Remove existing locale prefix if present
+  if (path.startsWith('es/')) {
+    path = path.slice(3);
   }
 
-  // For other pages, add locale prefix
-  return locale === 'en' ? `/${path}` : `/${locale}/${path}`;
+  // If it's the home page
+  if (path === '' || path === 'index.html') {
+    return locale === 'en' ? '/' : '/es/';
+  }
+
+  // For other pages, add locale prefix for Spanish, none for English
+  return locale === 'en' ? `/${path}` : `/es/${path}`;
 }
 
 /**

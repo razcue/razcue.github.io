@@ -51,3 +51,36 @@ body {
 .animate-slide-down {
   animation: slide-down 0.3s ease-out;
 }
+
+/* Horizontal bounce animations for swipe hints */
+@keyframes bounce-horizontal-left {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes bounce-horizontal-right {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+.animate-bounce-horizontal-left {
+  animation: bounce-horizontal-left 1s ease-in-out infinite;
+}
+
+.animate-bounce-horizontal-right {
+  animation: bounce-horizontal-right 1s ease-in-out infinite;
+}
+
+.animation-delay-300 {
+  animation-delay: 300ms;
+}

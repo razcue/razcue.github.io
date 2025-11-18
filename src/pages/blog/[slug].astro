@@ -1,0 +1,312 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const blogEntries = await getCollection(
+    'blog',
+    ({ data }) => data.locale === 'en'
+  );
+  return blogEntries.map((entry) => {
+    // Remove the locale prefix from slug (en/post-name -> post-name)
+    const slug = entry.slug.replace(/^en\//, '');
+    return {
+      params: { slug },
+      props: { entry },
+    };
+  });
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+const {
+  title,
+  description,
+  pubDate,
+  updatedDate,
+  heroImage,
+  tags,
+  readingTime,
+  locale,
+  liveUrl,
+  githubUrl,
+} = entry.data;
+
+const formattedDate = new Intl.DateTimeFormat(locale, {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+}).format(pubDate);
+
+const formattedUpdatedDate = updatedDate
+  ? new Intl.DateTimeFormat(locale, {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    }).format(updatedDate)
+  : null;
+
+const seo = {
+  title: `${title} - Rayko Azcue`,
+  description,
+  keywords: tags.join(', '),
+  locale,
+};
+
+// Share URLs - use clean slug without locale prefix
+const cleanSlug = entry.slug.replace(/^en\//, '');
+const postUrl = `https://razcue.github.io/blog/${cleanSlug}`;
+const shareUrls = {
+  linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(postUrl)}`,
+  devto: `https://dev.to/new?prefill=---%0Atitle%3A%20${encodeURIComponent(title)}%0Apublished%3A%20false%0Adescription%3A%20${encodeURIComponent(description)}%0A---%0A%0A${encodeURIComponent(`Read more: ${postUrl}`)}`,
+  reddit: `https://reddit.com/submit?url=${encodeURIComponent(postUrl)}&title=${encodeURIComponent(title)}`,
+};
+---
+
+<BaseLayout {...seo}>
+  <!-- Main Content -->
+  <main class="flex-1 overflow-y-auto">
+    <article class="container mx-auto px-6 py-12 max-w-4xl">
+      <!-- Hero Image -->
+      {
+        heroImage && (
+          <img
+            src={heroImage}
+            alt={title}
+            class="w-full aspect-[1200/630] object-cover rounded-lg mb-8"
+          />
+        )
+      }
+
+      <!-- Header -->
+      <header class="mb-8">
+        <div
+          class="flex flex-wrap items-center gap-3 text-sm text-text-secondary mb-4"
+        >
+          <time datetime={pubDate.toISOString()}>{formattedDate}</time>
+          {
+            formattedUpdatedDate && (
+              <>
+                <span>•</span>
+                <span>Updated {formattedUpdatedDate}</span>
+              </>
+            )
+          }
+          <span>•</span>
+          <span>⏱️ {readingTime} min read</span>
+        </div>
+
+        <h1 class="text-4xl md:text-5xl font-bold text-text mb-4">{title}</h1>
+        <p class="text-xl text-text-secondary mb-6">{description}</p>
+
+        <!-- Tags -->
+        <div class="flex flex-wrap gap-2 mb-6">
+          {
+            tags.map((tag: string) => (
+              <a
+                href={`/blog?tag=${tag}`}
+                class="text-sm px-3 py-1 bg-accent/10 text-accent rounded-lg hover:bg-accent/20 transition-colors"
+              >
+                #{tag}
+              </a>
+            ))
+          }
+        </div>
+
+        <!-- Project Links -->
+        {
+          (liveUrl || githubUrl) && (
+            <div class="flex flex-wrap gap-3 pt-4 border-t border-surface">
+              {liveUrl && (
+                <a
+                  href={liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-2 px-4 py-2 bg-accent text-dark rounded-lg hover:bg-accent/90 transition-colors text-sm font-medium"
+                >
+                  🔗 Live Demo
+                </a>
+              )}
+              {githubUrl && (
+                <a
+                  href={githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-2 px-4 py-2 bg-surface text-text rounded-lg hover:bg-accent/20 transition-colors text-sm font-medium"
+                >
+                  💻 View Code
+                </a>
+              )}
+            </div>
+          )
+        }
+      </header>
+
+      <!-- Article Content -->
+      <div class="prose prose-lg dark:prose-invert max-w-none mb-12">
+        <Content />
+      </div>
+
+      <!-- Share Buttons -->
+      <div class="border-t border-surface pt-8 mb-12">
+        <h3 class="text-lg font-semibold text-text mb-4">Share this article</h3>
+        <div class="flex flex-wrap gap-3">
+          <a
+            href={shareUrls.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-4 py-2 bg-[#0077B5] text-white rounded-lg hover:opacity-90 transition-opacity text-sm font-medium"
+          >
+            Share on LinkedIn
+          </a>
+          <a
+            href={shareUrls.devto}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-4 py-2 bg-[#0A0A0A] text-white rounded-lg hover:opacity-90 transition-opacity text-sm font-medium"
+          >
+            Share on Dev.to
+          </a>
+          <a
+            href={shareUrls.reddit}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-4 py-2 bg-[#FF4500] text-white rounded-lg hover:opacity-90 transition-opacity text-sm font-medium"
+          >
+            Share on Reddit
+          </a>
+        </div>
+      </div>
+
+      <!-- Giscus Comments -->
+      <div class="border-t border-surface pt-8">
+        <h3 class="text-lg font-semibold text-text mb-4">Comments</h3>
+        <script
+          is:inline
+          src="https://giscus.app/client.js"
+          data-repo="razcue/razcue.github.io"
+          data-repo-id="R_kgDOP-jCog"
+          data-category="General"
+          data-category-id="DIC_kwDOP-jCos4Cx5Lu"
+          data-mapping="pathname"
+          data-strict="0"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="bottom"
+          data-theme="preferred_color_scheme"
+          data-lang="en"
+          data-loading="lazy"
+          crossorigin="anonymous"
+          async></script>
+      </div>
+    </article>
+  </main>
+</BaseLayout>
+
+<style is:global>
+  /* Prose styles for blog content */
+  .prose {
+    color: var(--text);
+  }
+
+  .prose h1,
+  .prose h2,
+  .prose h3,
+  .prose h4,
+  .prose h5,
+  .prose h6 {
+    color: var(--text);
+    font-weight: 700;
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+
+  .prose h2 {
+    font-size: 1.875rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--surface);
+  }
+
+  .prose h3 {
+    font-size: 1.5rem;
+  }
+
+  .prose p {
+    margin-bottom: 1.25rem;
+    line-height: 1.75;
+  }
+
+  .prose a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+  }
+
+  .prose a:hover {
+    text-decoration-thickness: 2px;
+  }
+
+  .prose code {
+    background-color: var(--surface);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.875em;
+  }
+
+  .prose pre {
+    background-color: var(--surface);
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+  }
+
+  .prose pre code {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    font-size: 0.875rem;
+  }
+
+  .prose blockquote {
+    border-left: 4px solid var(--accent);
+    padding-left: 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: var(--text-secondary);
+  }
+
+  .prose ul,
+  .prose ol {
+    margin: 1.25rem 0;
+    padding-left: 1.75rem;
+  }
+
+  .prose li {
+    margin: 0.5rem 0;
+  }
+
+  .prose img {
+    border-radius: 0.5rem;
+    margin: 2rem 0;
+  }
+
+  .prose table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+  }
+
+  .prose th,
+  .prose td {
+    border: 1px solid var(--surface);
+    padding: 0.75rem;
+    text-align: left;
+  }
+
+  .prose th {
+    background-color: var(--surface);
+    font-weight: 600;
+  }
+</style>

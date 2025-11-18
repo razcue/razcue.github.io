@@ -120,41 +120,19 @@ export default function Navigation({ locale }: NavigationProps) {
         <ul className="space-y-4">
           <li>
             <a
-              href="/blog"
+              href={locale === 'es' ? '/es/blog' : '/blog'}
               className="flex items-center gap-3 text-xl text-text-secondary hover:text-accent transition-colors group"
             >
-              {/* External link icon */}
-              <svg
-                className="w-5 h-5"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
+              <i className="i-tabler-external-link w-5 h-5" />
               <span className="font-medium">{t.nav.blog}</span>
             </a>
           </li>
           <li>
             <a
-              href="/lab"
+              href={locale === 'es' ? '/es/lab' : '/lab'}
               className="flex items-center gap-3 text-xl text-text-secondary hover:text-accent transition-colors group"
             >
-              {/* External link icon */}
-              <svg
-                className="w-5 h-5"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
+              <i className="i-tabler-external-link w-5 h-5" />
               <span className="font-medium">{t.nav.lab}</span>
             </a>
           </li>

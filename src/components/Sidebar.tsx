@@ -5,10 +5,69 @@ import { getTranslation, type Locale } from '../utils/i18n';
 
 interface SideBarProps {
   locale: Locale;
+  showNavigation?: boolean;
+  currentPath?: string;
 }
 
-export default function Sidebar({ locale }: SideBarProps) {
+// Map of paths to their parent/back navigation
+const backNavigationMap: Record<string, string> = {
+  '/blog': '/',
+  '/es/blog': '/es/',
+  '/lab': '/',
+  '/es/lab': '/es/',
+};
+
+export default function Sidebar({
+  locale,
+  showNavigation = false,
+  currentPath = '/',
+}: SideBarProps) {
   const t = getTranslation(locale);
+
+  // Determine back navigation URL
+  const getBackUrl = () => {
+    // Normalize path (remove trailing slash for comparison)
+    const normalizedPath = currentPath.endsWith('/')
+      ? currentPath.slice(0, -1)
+      : currentPath;
+
+    // Check exact match first
+    if (backNavigationMap[normalizedPath]) {
+      return backNavigationMap[normalizedPath];
+    }
+
+    // Check if it's a blog post page (any path under /blog/ that's not the index)
+    if (
+      (currentPath.startsWith('/blog/') || currentPath.startsWith('/blog')) &&
+      currentPath !== '/blog' &&
+      currentPath !== '/blog/' &&
+      !currentPath.startsWith('/blog/tag/')
+    ) {
+      return '/blog';
+    }
+    if (
+      (currentPath.startsWith('/es/blog/') ||
+        currentPath.startsWith('/es/blog')) &&
+      currentPath !== '/es/blog' &&
+      currentPath !== '/es/blog/' &&
+      !currentPath.startsWith('/es/blog/tag/')
+    ) {
+      return '/es/blog';
+    }
+
+    // Default: go back in history
+    return null;
+  };
+
+  const backUrl = getBackUrl();
+
+  const handleBack = () => {
+    if (backUrl) {
+      window.location.href = backUrl;
+    } else {
+      window.history.back();
+    }
+  };
 
   const [activeSection, setActiveSection] = useState('about');
 
@@ -61,37 +120,60 @@ export default function Sidebar({ locale }: SideBarProps) {
   ];
 
   return (
-    <div className="flex flex-col items-center h-full justify-end pb-8 pt-8">
-      {/* Main Navigation */}
-      <ul className="block lg:hidden space-y-4 mb-4 sm:mb-6 pl-2">
-        {navItems.map((item) => (
-          <li key={item.id}>
-            <button
-              onClick={() => scrollToSection(item.id)}
-              className={`flex items-center justify-start gap-4 text-sm transition-all text-left group ${
-                activeSection === item.id
-                  ? 'text-accent w-9/12'
-                  : 'text-text-secondary hover:text-accent w-8/12'
-              }`}
-              aria-label={`Navigate to ${item.id} section`}
-            >
-              <div
-                className={`w-4 h-3 border-2 duration-500 transition-all ${activeSection === item.id ? 'border-accent rotate-65' : 'border-text-secondary opacity-30'}`}
-              />
-            </button>
-          </li>
-        ))}
-      </ul>
+    <div className="flex flex-col items-center h-full pt-2 pb-8">
+      {/* Back Button - Show when not on home page */}
+      {currentPath !== '/' && currentPath !== '/es/' && (
+        <>
+          <button
+            onClick={handleBack}
+            className="my-4 text-text-secondary hover:text-accent transition-colors cursor-pointer"
+            aria-label="Go back"
+          >
+            <i className="i-tabler-arrow-left w-6 h-6" />
+          </button>
+          <div className="w-px flex-1 bg-text-secondary opacity-30 mb-4 sm:mb-6"></div>
+        </>
+      )}
 
-      {/* Vertical Line above links */}
-      <div className="block lg:hidden w-px flex-1 bg-text-secondary opacity-30 mb-4 sm:mb-6 max-h-4 sm:max-h-16 lg:max-h-32"></div>
+      {/* Spacer to push content to bottom when no back button */}
+      {(currentPath === '/' || currentPath === '/es/') && (
+        <div className="flex-1"></div>
+      )}
+
+      {/* Main Navigation - Only show on home page */}
+      {showNavigation && (
+        <>
+          <ul className="block lg:hidden space-y-4 mb-4 sm:mb-6 pl-2">
+            {navItems.map((item) => (
+              <li key={item.id}>
+                <button
+                  onClick={() => scrollToSection(item.id)}
+                  className={`flex items-center justify-start gap-4 text-sm transition-all text-left cursor-pointer group ${
+                    activeSection === item.id
+                      ? 'text-accent w-9/12'
+                      : 'text-text-secondary hover:text-accent w-8/12'
+                  }`}
+                  aria-label={`Navigate to ${item.id} section`}
+                >
+                  <div
+                    className={`w-4 h-3 border-2 duration-500 transition-all ${activeSection === item.id ? 'border-accent rotate-65' : 'border-text-secondary opacity-30'}`}
+                  />
+                </button>
+              </li>
+            ))}
+          </ul>
+
+          {/* Vertical Line above links */}
+          <div className="block lg:hidden w-px flex-1 bg-text-secondary opacity-30 mb-4 sm:mb-6 max-h-4 sm:max-h-16 lg:max-h-32"></div>
+        </>
+      )}
 
       {/* Blog and Lab Links */}
       <div className="block lg:hidden border-t border-surface mb-4 sm:mb-6">
         <ul className="space-y-1 sm:space-y-2">
           <li>
             <a
-              href="/blog"
+              href={locale === 'es' ? '/es/blog' : '/blog'}
               className="text-text-secondary hover:text-accent transition-colors text-xs sm:text-sm font-medium tracking-widest"
               style={{ writingMode: 'vertical-rl' }}
             >
@@ -103,7 +185,7 @@ export default function Sidebar({ locale }: SideBarProps) {
           </li>
           <li>
             <a
-              href="/lab"
+              href={locale === 'es' ? '/es/lab' : '/lab'}
               className="text-text-secondary hover:text-accent transition-colors text-xs sm:text-sm font-medium tracking-widest"
               style={{ writingMode: 'vertical-rl' }}
             >
@@ -123,7 +205,7 @@ export default function Sidebar({ locale }: SideBarProps) {
 
       {/* Language Toggle - Horizontal */}
       <div className="mb-4 sm:mb-6">
-        <LanguageToggle currentPath="/" />
+        <LanguageToggle currentPath={currentPath} />
       </div>
 
       {/* Vertical Line above email */}

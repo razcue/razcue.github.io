@@ -25,17 +25,4 @@ export default defineConfig({
       accent: 'var(--accent)',
     },
   },
-  // Preflights (CSS reset) are automatically included and applied FIRST
-  // This ensures utility classes like bg-accent override the reset's background-color: transparent
-  // The order is: Preflights (reset) → Theme → Utility classes → Your custom CSS
-  preflights: [
-    {
-      getCSS: () => `
-        /* Override button reset to not set background-color by default */
-        button, [type='button'], [type='reset'], [type='submit'] {
-          background-color: initial;
-        }
-      `,
-    },
-  ],
 });
