@@ -12,12 +12,21 @@ export default function Navigation({ locale }: NavigationProps) {
   useEffect(() => {
     // Set active section based on hash on mount
     const hash = window.location.hash.replace('#', '');
-    if (hash && ['about', 'experience', 'projects', 'contact'].includes(hash)) {
+    if (
+      hash &&
+      ['about', 'open-to', 'experience', 'projects', 'contact'].includes(hash)
+    ) {
       setActiveSection(hash);
     }
 
     const handleScroll = () => {
-      const sections = ['about', 'experience', 'projects', 'contact'];
+      const sections = [
+        'about',
+        'open-to',
+        'experience',
+        'projects',
+        'contact',
+      ];
       const mainContent = document.querySelector(
         '#main-content .overflow-y-auto'
       );
@@ -66,6 +75,7 @@ export default function Navigation({ locale }: NavigationProps) {
 
   const navItems = [
     { id: 'about', label: t.nav.about },
+    { id: 'open-to', label: t.nav.openTo },
     { id: 'experience', label: t.nav.experience },
     { id: 'projects', label: t.nav.projects },
     { id: 'contact', label: t.nav.contact },

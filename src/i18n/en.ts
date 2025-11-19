@@ -3,6 +3,7 @@ export default {
   nav: {
     home: 'Home',
     about: 'About',
+    openTo: 'Open To',
     experience: 'Experience',
     projects: 'Projects',
     contact: 'Contact',
@@ -42,7 +43,7 @@ export default {
     greeting: "Hi, I'm",
     name: 'Rayko Azcue',
     title: 'Software Engineer',
-    subtitle: 'Frontend Developer',
+    subtitle: 'Front End Developer',
     description:
       'I build exceptional digital experiences with modern web technologies.',
     cta: 'Get In Touch',
@@ -52,7 +53,7 @@ export default {
   about: {
     title: 'About Me',
     description: [
-      'I specialize in bringing ideas to life through high-performance applications that drive real business results. With a primary focus on frontend development and extensive backend experience, I create tailored solutions designed to boost conversions and meet your specific business objectives.',
+      'I specialize in bringing ideas to life through high-performance applications that drive real business results. With a primary focus on front end development and extensive backend experience, I create tailored solutions designed to boost conversions and meet your specific business objectives.',
       'Every business is unique, and so are my solutions. I deliver personalized digital experiences using modern technologies, with a strong emphasis on Core Web Vitals and business metrics, translating your goals into measurable outcomes.',
     ],
     siteMetrics: 'About This Site',
@@ -77,7 +78,7 @@ export default {
         industry: 'Monetization & adTech',
         technologies: ['Nuxt', 'Vue 3', 'Vuetify', 'Tailwind', 'TypeScript'],
         description:
-          'Delivered frontend solutions for CMS and consumer app, migrating from Vuetify to Tailwind, and translating Figma designs into pixel-perfect implementations. Owned end-to-end feature delivery from development through production deployment, while collaborating with QA and Product Managers to ensure quality standards. Conducted performance reviews and optimizations, improving load times and user experience.',
+          'Delivered front end solutions for CMS and consumer app, migrating from Vuetify to Tailwind, and translating Figma designs into pixel-perfect implementations. Owned end-to-end feature delivery from development through production deployment, while collaborating with QA and Product Managers to ensure quality standards. Conducted performance reviews and optimizations, improving load times and user experience.',
       },
       {
         company: 'BSE America',
@@ -97,7 +98,7 @@ export default {
         industry: 'Sports Tech',
         technologies: ['React', 'PrimeReact', 'TypeScript'],
         description:
-          'Responsible for the frontend of a padel tournament management system: translated Figma designs into a pixel‑perfect, responsive React UI and implemented robust frontend–backend integrations with an Express.js API. Focused on maintainable, testable code and UX improvements to streamline scheduling, rankings and player management for admins and participants.',
+          'Responsible for the front end of a padel tournament management system: translated Figma designs into a pixel‑perfect, responsive React UI and implemented robust front end–backend integrations with an Express.js API. Focused on maintainable, testable code and UX improvements to streamline scheduling, rankings and player management for admins and participants.',
       },
       {
         company: 'First Due @Inc5000',
@@ -129,7 +130,7 @@ export default {
           'MySQL',
         ],
         description:
-          'Developed the frontend for a fuel logistics system using Angular 11 and NgZorro, building modules for fuel availability, movement tracking, and asset management. Assisted with database optimization and migration tasks to improve query performance. Mentored a junior developer on frontend best practices, code organization, and Angular patterns.',
+          'Developed the front end for a fuel logistics system using Angular 11 and NgZorro, building modules for fuel availability, movement tracking, and asset management. Assisted with database optimization and migration tasks to improve query performance. Mentored a junior developer on front end best practices, code organization, and Angular patterns.',
       },
       {
         company: 'Grupo de Electrónica para el Turismo',
@@ -269,13 +270,28 @@ export default {
 
   // SEO Meta
   seo: {
-    title: 'Rayko Azcue - Frontend Developer',
+    title: 'Rayko Azcue - Front End Developer',
     description:
-      'Portfolio of Rayko Azcue - Frontend Developer specializing in Vue, Nuxt, React, Astro, Tailwind, UnoCSS, and TypeScript. Experience in modern and responsive web development.',
+      'Portfolio of Rayko Azcue - Front End Developer specializing in Vue, Nuxt, React, Astro, Tailwind, UnoCSS, and TypeScript. Experience in modern and responsive web development.',
     keywords:
-      'Rayko Azcue, frontend developer, Vue, Nuxt, React, Astro, TypeScript, JavaScript, Tailwind, UnoCSS, Node.js, Laravel, PHP, web development',
-    ogImageAlt: 'Rayko Azcue - Frontend Developer',
+      'Rayko Azcue, front end developer, Vue, Nuxt, React, Astro, TypeScript, JavaScript, Tailwind, UnoCSS, Node.js, Laravel, PHP, web development',
+    ogImageAlt: 'Rayko Azcue - Front End Developer',
     siteName: 'Rayko Azcue Portfolio',
-    jobTitle: 'Frontend Developer',
+    jobTitle: 'Front End Developer',
+  },
+  // Job status / availability
+  openTo: {
+    title: "I'm actively looking for new opportunities",
+    intro:
+      "Below are the roles I'm targeting and my availability. If you think I might be a good fit, let's talk!",
+    rolesTitle: 'Target Roles',
+    roles: ['Front End Developer', 'Full Stack Developer'],
+    preferredRole: 'Preferred',
+    availabilityTitle: 'Availability & Location',
+    availability: [
+      'Remote globally within an English or Spanish setup',
+      'On-site/Hybrid with relocation basis. Prefer family relocation packages. Primary interest: Latin America or Spain, but open to discussing other locations',
+    ],
+    ctaTalk: "Let's Talk",
   },
 };

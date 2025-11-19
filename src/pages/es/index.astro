@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/Hero.tsx';
 import Navigation from '../../components/Navigation.tsx';
 import About from '../../components/About.tsx';
+import JobStatus from '../../components/JobStatus.tsx';
 import Experience from '../../components/Experience.tsx';
 import Projects from '../../components/Projects.tsx';
 import Contact from '../../components/Contact.tsx';
@@ -51,6 +52,7 @@ const currentLocale: Locale = 'es';
       >
         <div class="max-w-full lg:max-w-6xl mx-auto">
           <About locale={currentLocale} />
+          <JobStatus locale={currentLocale} client:visible />
           <Experience locale={currentLocale} client:visible />
           <Projects locale={currentLocale} client:visible />
           <Contact locale={currentLocale} client:visible />

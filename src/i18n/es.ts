@@ -3,6 +3,7 @@ export default {
   nav: {
     home: 'Inicio',
     about: 'Sobre Mí',
+    openTo: 'Abierto A',
     experience: 'Experiencia',
     projects: 'Proyectos',
     contact: 'Contacto',
@@ -10,6 +11,21 @@ export default {
     lab: 'Laboratorio',
   },
 
+  // Estado laboral / disponibilidad
+  openTo: {
+    title: 'Estoy buscando activamente nuevas oportunidades',
+    intro:
+      'Abajo están los roles que me interesan y mi disponibilidad. Si crees que puedo ser un buen candidato, ¡hablemos!',
+    rolesTitle: 'Roles Buscados',
+    roles: ['Front End Developer', 'Full Stack Developer'],
+    preferredRole: 'Preferido',
+    availabilityTitle: 'Disponibilidad y Ubicación',
+    availability: [
+      'Remoto globalmente en entorno de inglés o español',
+      'Presencial/Híbrido con base de reubicación. Prefiero paquetes de reubicación familiar. Interés principal: América Latina o España, pero abierto a discutir otras ubicaciones',
+    ],
+    ctaTalk: 'Hablemos',
+  },
   // Blog
   blog: {
     title: 'Blog',
@@ -43,7 +59,7 @@ export default {
     greeting: 'Hola, soy',
     name: 'Rayko Azcue',
     title: 'Ingeniero de Software',
-    subtitle: 'Desarrollador Frontend',
+    subtitle: 'Desarrollador Front End',
     description:
       'Creo experiencias digitales excepcionales con tecnologías web modernas.',
     cta: 'Contactar',
@@ -53,7 +69,7 @@ export default {
   about: {
     title: 'Sobre Mí',
     description: [
-      'Me especializo en dar vida a las ideas a través de aplicaciones de alto rendimiento que generan resultados comerciales reales. Con un enfoque principal en desarrollo frontend y amplia experiencia en backend, creo soluciones personalizadas diseñadas para impulsar conversiones y alcanzar tus objetivos comerciales específicos.',
+      'Me especializo en dar vida a las ideas a través de aplicaciones de alto rendimiento que generan resultados comerciales reales. Con un enfoque principal en desarrollo front end y amplia experiencia en backend, creo soluciones personalizadas diseñadas para impulsar conversiones y alcanzar tus objetivos comerciales específicos.',
       'Cada negocio es único, y también lo son mis soluciones. Entrego experiencias digitales personalizadas utilizando tecnologías modernas, con un fuerte énfasis en Core Web Vitals y métricas de negocio, traduciendo tus objetivos en resultados medibles.',
     ],
     siteMetrics: 'Sobre Este Sitio',
@@ -78,7 +94,7 @@ export default {
         industry: 'Monetización & adTech',
         technologies: ['Nuxt', 'Vue 3', 'Vuetify', 'Tailwind', 'TypeScript'],
         description:
-          'Entregué soluciones frontend para CMS y app de consumo, migrando de Vuetify a Tailwind y traduciendo diseños de Figma en implementaciones pixel-perfect. Asumí la entrega completa de funcionalidades de principio a fin desde el desarrollo hasta el despliegue en producción, colaborando con QA y Product Managers para asegurar estándares de calidad. Realicé revisiones y optimizaciones de rendimiento, mejorando tiempos de carga y experiencia de usuario.',
+          'Entregué soluciones front end para CMS y app de consumo, migrando de Vuetify a Tailwind y traduciendo diseños de Figma en implementaciones pixel-perfect. Asumí la entrega completa de funcionalidades de principio a fin desde el desarrollo hasta el despliegue en producción, colaborando con QA y Product Managers para asegurar estándares de calidad. Realicé revisiones y optimizaciones de rendimiento, mejorando tiempos de carga y experiencia de usuario.',
       },
       {
         company: 'BSE America',
@@ -98,7 +114,7 @@ export default {
         industry: 'Sports Tech',
         technologies: ['React', 'PrimeReact', 'TypeScript'],
         description:
-          'Responsable del frontend de un sistema de gestión de torneos de pádel: traduje diseños de Figma en una interfaz de usuario responsive y pixel-perfect basada en React, e implementé integraciones robustas frontend–backend con una API en Express.js. Enfocado en código mantenible y testeable y en mejoras de UX para optimizar la gestión de calendarios, rankings y participantes.',
+          'Responsable del front end de un sistema de gestión de torneos de pádel: traduje diseños de Figma en una interfaz de usuario responsive y pixel-perfect basada en React, e implementé integraciones robustas front end–backend con una API en Express.js. Enfocado en código mantenible y testeable y en mejoras de UX para optimizar la gestión de calendarios, rankings y participantes.',
       },
       {
         company: 'First Due @Inc5000',
@@ -130,7 +146,7 @@ export default {
           'MySQL',
         ],
         description:
-          'Desarrollé el frontend para un sistema de logística de combustible usando Angular 11 y NgZorro, centrado en disponibilidad de combustible, seguimiento de movimientos y gestión de activos. Asistí con tareas de optimización y migración de bases de datos para mejorar el rendimiento de consultas. Adiestré a un desarrollador junior acerca de buenas prácticas frontend, organización de código y patrones de Angular.',
+          'Desarrollé el front end para un sistema de logística de combustible usando Angular 11 y NgZorro, centrado en disponibilidad de combustible, seguimiento de movimientos y gestión de activos. Asistí con tareas de optimización y migración de bases de datos para mejorar el rendimiento de consultas. Adiestré a un desarrollador junior acerca de buenas prácticas front end, organización de código y patrones de Angular.',
       },
       {
         company: 'Grupo de Electrónica para el Turismo',
@@ -270,13 +286,13 @@ export default {
 
   // SEO Meta
   seo: {
-    title: 'Rayko Azcue - Desarrollador Frontend',
+    title: 'Rayko Azcue - Desarrollador Front End',
     description:
-      'Portfolio de Rayko Azcue - Desarrollador Frontend especializado en Vue, Nuxt, React, Astro, Tailwind, UnoCSS y TypeScript. Experiencia en desarrollo web moderno y responsive.',
+      'Portfolio de Rayko Azcue - Desarrollador Front End especializado en Vue, Nuxt, React, Astro, Tailwind, UnoCSS y TypeScript. Experiencia en desarrollo web moderno y responsive.',
     keywords:
-      'Rayko Azcue, desarrollador frontend, Vue, Nuxt, React, Astro, TypeScript, JavaScript, Tailwind, UnoCSS, Node.js, Laravel, PHP, desarrollo web',
-    ogImageAlt: 'Rayko Azcue - Desarrollador Frontend',
-    siteName: 'Portfolio de Rayko Azcue',
-    jobTitle: 'Desarrollador Frontend',
+      'Rayko Azcue, desarrollador front end, Vue, Nuxt, React, Astro, TypeScript, JavaScript, Tailwind, UnoCSS, Node.js, Laravel, PHP, desarrollo web',
+    ogImageAlt: 'Rayko Azcue - Desarrollador Front End',
+    siteName: 'Rayko Azcue Portfolio',
+    jobTitle: 'Desarrollador Front End',
   },
 };

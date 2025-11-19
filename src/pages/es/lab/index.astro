@@ -6,38 +6,16 @@ const currentLocale: Locale = 'es';
 ---
 
 <BaseLayout title="Laboratorio - Rayko Azcue" locale={currentLocale}>
-  <div class="min-h-screen bg-bg">
-    <!-- Navigation Header -->
-    <header
-      class="sticky top-0 z-50 bg-bg/80 backdrop-blur-sm border-b border-surface"
-    >
-      <div class="max-w-7xl mx-auto px-6 lg:px-8 py-4">
-        <nav class="flex items-center justify-between">
-          <a
-            href="/es/"
-            class="text-text hover:text-accent transition-colors font-medium"
-          >
-            ← Volver al Portafolio
-          </a>
-          <h1 class="text-xl font-bold text-text">Laboratorio</h1>
-          <div class="w-24"></div>
-          <!-- Spacer for centering -->
-        </nav>
-      </div>
-    </header>
-
+  <div class="min-h-screen bg-bg flex items-center justify-center px-6">
     <!-- Main Content -->
-    <main class="max-w-7xl mx-auto px-6 lg:px-8 py-20">
-      <div class="text-center">
-        <h2 class="text-4xl lg:text-6xl font-bold text-text mb-8">
-          Próximamente
-        </h2>
-        <p class="text-xl text-text-secondary max-w-2xl mx-auto">
-          Experimentos interactivos y mini-proyectos están en desarrollo.
-          Explora codificación creativa, animaciones y características
-          experimentales.
-        </p>
-      </div>
+    <main class="text-center max-w-2xl">
+      <h1 class="text-4xl lg:text-6xl font-bold text-text mb-8">
+        Próximamente
+      </h1>
+      <p class="text-xl text-text-secondary">
+        Experimentos y micro-soluciones. Explorando cosas interesantes y
+        divirtiéndome.
+      </p>
     </main>
   </div>
 </BaseLayout>

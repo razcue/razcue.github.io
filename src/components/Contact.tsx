@@ -69,10 +69,11 @@ export default function Contact({ locale }: ContactProps) {
     setStatus('sending');
 
     try {
-      // Use Vercel API endpoint - update this with your actual Vercel project URL
-      const apiUrl =
+      // Use environment variable for API URL, fallback for dev
+      const apiBase =
         import.meta.env.PUBLIC_API_URL ||
-        'https://razcue-github-io.vercel.app/api/contact';
+        'https://razcue-github-io.vercel.app/api/';
+      const apiUrl = `${apiBase}contact`;
 
       const response = await fetch(apiUrl, {
         method: 'POST',
@@ -247,7 +248,7 @@ export default function Contact({ locale }: ContactProps) {
           <button
             type="submit"
             disabled={status === 'sending'}
-            className="px-6 py-2 sm:px-8 mb-2 lg:mb-4 sm:py-3 bg-accent text-dark font-medium text-xs sm:text-sm lg:text-base rounded-lg hover:bg-accent/90 transition-colors disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed"
+            className="px-6 py-2 sm:px-8 mb-2 lg:mb-4 sm:py-3 bg-accent text-surface font-medium text-xs sm:text-sm lg:text-base rounded-lg hover:bg-accent/90 transition-colors disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed"
           >
             {status === 'sending' ? t.contact.sending : t.contact.send}
           </button>

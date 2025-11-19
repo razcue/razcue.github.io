@@ -73,7 +73,13 @@ export default function Sidebar({
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['about', 'experience', 'projects', 'contact'];
+      const sections = [
+        'about',
+        'open-to',
+        'experience',
+        'projects',
+        'contact',
+      ];
       const mainContent = document.querySelector(
         '#main-content .overflow-y-auto'
       );
@@ -114,6 +120,7 @@ export default function Sidebar({
 
   const navItems = [
     { id: 'about' },
+    { id: 'open-to' },
     { id: 'experience' },
     { id: 'projects' },
     { id: 'contact' },

@@ -20,8 +20,11 @@ export default function NewsletterSignup({ className = '', locale }: Props) {
     setMessage('');
 
     try {
-      // TODO: Replace with actual Buttondown API endpoint
-      const response = await fetch('/api/newsletter', {
+      // Use environment variable for API URL, fallback to relative path for dev
+      const apiBase = import.meta.env.PUBLIC_API_URL || '/api/';
+      const apiUrl = `${apiBase}newsletter`;
+
+      const response = await fetch(apiUrl, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
