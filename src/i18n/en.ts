@@ -47,6 +47,7 @@ export default {
     description:
       'I build exceptional digital experiences with modern web technologies.',
     cta: 'Get In Touch',
+    downloadResume: 'Resume',
   },
 
   // About Section
@@ -77,8 +78,12 @@ export default {
         role: 'Senior Front End Developer',
         industry: 'Monetization & adTech',
         technologies: ['Nuxt', 'Vue 3', 'Vuetify', 'Tailwind', 'TypeScript'],
+        bullets: [
+          'Delivered front-end features for internal CMS and consumer-facing monetization app, resolving 120+ Jira tasks and translating Figma designs into pixel‑perfect, responsive UIs.',
+          'Migrated 40+ Vue components from Vuetify to Tailwind and led performance optimizations that reduced bundle size by 19% and improved LCP from 9.1s to 6.6s, contributing to a 15% conversion lift.',
+        ],
         description:
-          'Delivered front end solutions for CMS and consumer app, migrating from Vuetify to Tailwind, and translating Figma designs into pixel-perfect implementations. Owned end-to-end feature delivery from development through production deployment, while collaborating with QA and Product Managers to ensure quality standards. Conducted performance reviews and optimizations, improving load times and user experience.',
+          'Delivered front end solutions for CMS and consumer app, migrating from Vuetify to Tailwind, and translating Figma designs into pixel-perfect implementations. Conducted performance reviews and optimizations to improve load times and user experience.',
       },
       {
         company: 'BSE America',
@@ -87,8 +92,12 @@ export default {
         role: 'Lead Developer',
         industry: 'E-commerce, Assets Management',
         technologies: ['Laravel', 'TypeScript', 'Vue 3', 'Vuetify', 'Swagger'],
+        bullets: [
+          "Architected and developed from scratch an end‑to‑end CRM with a WooCommerce store comunication, integrated an automated invoicing and tax compliance module aligned with Panama's electronic bill system.",
+          'Implemented CI/CD pipelines and AWS S3 secure storage, reducing deployment time from 20min to 4min and mentoring 3 developers to improve code review approval rate from 40% to 85%.',
+        ],
         description:
-          'Led architecture and development of an end‑to‑end CRM with WooCommerce integration, delivering core business modules for sales, products, logistics, consignment and contracts. Designed and implemented RESTful APIs in Laravel, added notification flows (email, WhatsApp), and implemented CI/CD pipelines and secure storage on AWS S3 to support reliable deployments. Worked directly with product owners to prioritize features and guided the development team to deliver scalable, production‑ready functionality, while mentoring the development team.',
+          'Led architecture and development of an end‑to‑end CRM with WooCommerce integration and implemented RESTful APIs in Laravel, notification flows, and CI/CD to support reliable deployments.',
       },
       {
         company: 'EncodeBiz',
@@ -113,8 +122,12 @@ export default {
           'ArcGIS',
           'PostgreSQL',
         ],
+        bullets: [
+          'Delivered multi-tenant SaaS features across Fire Prevention, EMS and Assets modules serving 40+ fire departments, supporting company growth and contributing to Inc 5000 recognition.',
+          'Enhanced geolocation capabilities and implemented a barcode/QR scanner processing 5,000+ daily scans with >99% accuracy, improving operational tracking and data reliability.',
+        ],
         description:
-          'Contributed multi-tenant features across multiple SaaS modules for fire and EMS operations, assets and operational workflows. Implemented a customized barcode/QR scanner component, integrated Google Maps and ArcGIS for geolocation mapping, fixed critical bugs, and enforced code‑quality practices through reviews and standards. Collaborated closely with product, design and operations to add value to the platform. The company made it into the Inc 5000 for four consecutive years since 2022.',
+          'Contributed multi-tenant features across multiple SaaS modules for fire and EMS operations, assets and operational workflows. Implemented a customized barcode/QR scanner component and integrated Google Maps and ArcGIS for geolocation mapping.',
       },
       {
         company: 'Tecnomática',

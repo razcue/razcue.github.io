@@ -63,6 +63,7 @@ export default {
     description:
       'Creo experiencias digitales excepcionales con tecnologías web modernas.',
     cta: 'Contactar',
+    downloadResume: 'Currículum',
   },
 
   // About Section

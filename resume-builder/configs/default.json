@@ -1,0 +1,65 @@
+{
+  "contactInfo": {
+    "location": "Havana, Cuba",
+    "phone": "+53 5476-1244",
+    "email": "razcue@yandex.com",
+    "website": "razcue.github.io"
+  },
+  "summary": "Frontend Developer with 6+ years delivering reliable, production-ready web applications for clients across Spain, US, and Latin America, with strong backend development expertise. Specialized in building high-performance interfaces that drive business results through Web Vitals optimization, SEO, and seamless API integrations.",
+  "skills": {
+    "technical": "Vue, Nuxt, React, Next, Angular, Astro, Sanity, TypeScript, JavaScript, HTML, CSS, Tailwind, Vuetify, Figma, Laravel, Yii, PHP, Node.js, RESTful APIs, PostgreSQL, AWS S3, CI/CD, Git, WordPress, WooCommerce",
+    "languages": "English (Professional - B2), Spanish (Native)"
+  },
+  "education": [
+    {
+      "institution": "University of Informatics Sciences",
+      "degree": "Computer Sciences Engineer - Bachelor's degree",
+      "location": "Havana, Cuba",
+      "date": "Sep 2013 - Jul 2018"
+    },
+    {
+      "institution": "freeCodeCamp",
+      "degree": "Responsive Web Design Certificate",
+      "location": "Online",
+      "date": "2021",
+      "certificationUrl": "https://www.freecodecamp.org/certification/fcc0d66daac-ef4f-4e0e-9e60-d02d24f85508/responsive-web-design",
+      "certificationText": "View Certificate"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Blue Creator Agency | Kimia Group",
+      "title": "Front End Developer",
+      "location": "Remote, Madrid, Spain",
+      "dateRange": "Jan 2025 – Nov 2025",
+      "bullets": [
+        "Delivered front end solutions for internal CMS platform and consumer-facing client app in monetization/adTech space, resolving 120+ Jira tasks while translating Figma designs into pixel-perfect, responsive UI",
+        "Migrated consumer-facing client app from Vuetify to Tailwind across 40+ Vue components for improved user experience, reducing bundle size by 19%",
+        "Conducted performance audits and optimizations on the client app, improving Largest Contentful Paint (LCP) from 9.1s to 6.6s, driving a 15% conversion rate improvement based on UI/UX and Web Vitals enhancements"
+      ],
+      "skills": "Vue, Nuxt, TypeScript, JavaScript, Tailwind, Vuetify, Figma, CI/CD"
+    },
+    {
+      "company": "BSE America",
+      "title": "Lead Developer",
+      "location": "Remote, Panama",
+      "dateRange": "Jan 2024 – Nov 2024",
+      "bullets": [
+        "Architected and developed from scratch an end-to-end CRM with WooCommerce integration serving sales operations, implementing RESTful APIs in Laravel for seamless data exchange with WooCommerce and Panama's electronic bill API for automated invoicing and tax compliance, achieving near 100% delivery success rate",
+        "Implemented CI/CD pipelines and AWS S3 secure storage, reducing deployment time from 20min to 4min, and mentored 3 developers on Laravel and Vue best practices improving code review approval rate from 40% to 85%"
+      ],
+      "skills": "Laravel, PHP, JavaScript, Vue, Vuetify, PostgreSQL, AWS S3, Wordpress, WooCommerce, CI/CD"
+    },
+    {
+      "company": "First Due",
+      "title": "Full Stack Developer",
+      "location": "Remote, New York, US",
+      "dateRange": "Mar 2021 – Nov 2023",
+      "bullets": [
+        "Contributed multi-tenant SaaS features across modules for Fire Prevention, EMS and Assets operations serving 40+ fire departments across United States and Canada, helping drive company success as it made Inc 5000 list for four consecutive years since 2022",
+        "Enhanced Google Maps and ArcGIS APIs integrations for geolocation mapping with real-time tracking, and implemented custom barcode/QR scanner component processing 5,000+ daily asset scans with >99% accuracy"
+      ],
+      "skills": "Vue, Yii, Google Maps API, ArcGIS API, PostgreSQL, PHP, JavaScript"
+    }
+  ]
+}

@@ -202,6 +202,22 @@ export default function Sidebar({
         </ul>
       </div>
 
+      {/* Vertical Line above download */}
+      <div className="block lg:hidden w-px flex-1 bg-text-secondary opacity-30 mb-4 sm:mb-6 max-h-4 sm:max-h-16 lg:max-h-32"></div>
+
+      {/* Download Resume Button */}
+      <div className="block lg:hidden mb-4 sm:mb-6">
+        <a
+          href="/Rayko_Azcue_Resume.pdf"
+          download="Rayko_Azcue_Resume.pdf"
+          className="text-text-secondary hover:text-accent transition-colors cursor-pointer block"
+          aria-label="Download Resume"
+          title="Download Resume"
+        >
+          <i className="i-tabler-file-download w-6 h-6" />
+        </a>
+      </div>
+
       {/* Vertical Line above theme */}
       <div className="block lg:hidden w-px flex-1 bg-text-secondary opacity-30 mb-4 sm:mb-6 max-h-4 sm:max-h-16 lg:max-h-32"></div>
 

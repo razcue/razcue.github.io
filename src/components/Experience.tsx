@@ -12,6 +12,7 @@ interface ExperienceItem {
   role: string;
   industry?: string;
   description: string;
+  bullets?: string[];
   technologies: string[];
 }
 
@@ -212,9 +213,17 @@ export default function Experience({ locale }: ExperienceProps) {
                 </div>
 
                 {/* Description */}
-                <div className="text-text-secondary text-xs sm:text-base leading-relaxed">
-                  {exp.description}
-                </div>
+                {exp.bullets && exp.bullets.length > 0 ? (
+                  <ul className="text-text-secondary text-xs sm:text-base leading-relaxed space-y-2 list-disc list-outside ml-5">
+                    {exp.bullets.map((bullet, bulletIndex) => (
+                      <li key={bulletIndex}>{bullet}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <div className="text-text-secondary text-xs sm:text-base leading-relaxed">
+                    {exp.description}
+                  </div>
+                )}
 
                 {/* Technologies */}
                 <div className="flex flex-wrap gap-1.5 sm:gap-2 pt-1 sm:pt-2">

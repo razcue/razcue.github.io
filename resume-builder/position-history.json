@@ -1,0 +1,154 @@
+[
+  {
+    "id": "pos-2025-11-28T04-05-55-594Z",
+    "timestamp": "2025-11-28T04:05:55.594Z",
+    "metadata": {
+      "language": "en",
+      "targetPosition": "Senior Frontend Engineer",
+      "keywords": {
+        "technical": [],
+        "soft": []
+      },
+      "client": null,
+      "dateBuilt": "2025-11-28T04:05:55.594Z"
+    },
+    "description": "Test position",
+    "coverLetter": "Dear Hiring Team,\n\nI am excited to apply for the Senior Frontend Engineer role. I bring hands-on experience building production front-end applications, with a focus on performance, accessibility, and measurable business impact. Attached is a tailored resume highlighting relevant achievements.\n\nSincerely,\nRayko Azcue Pérez",
+    "emailLetter": "Hi Hiring Team,\n\nI've attached my resume for the Senior Frontend Engineer role. I look forward to discussing how my experience can help your team.\n\nBest regards,\nRayko",
+    "resume": {
+      "contactInfo": {
+        "location": "Havana, Cuba",
+        "phone": "+53 5476-1244",
+        "email": "razcue@yandex.com",
+        "website": "razcue.github.io"
+      },
+      "education": [
+        {
+          "institution": "University of Informatics Sciences",
+          "degree": "Computer Sciences Engineer - Bachelor's degree",
+          "location": "Havana, Cuba",
+          "date": "Sep 2013 - Jul 2018"
+        },
+        {
+          "institution": "freeCodeCamp",
+          "degree": "Responsive Web Design Certificate",
+          "location": "Online",
+          "date": "2021",
+          "certificationUrl": "https://www.freecodecamp.org/certification/fcc0d66daac-ef4f-4e0e-9e60-d02d24f85508/responsive-web-design",
+          "certificationText": "View Certificate"
+        }
+      ],
+      "experience": [
+        {
+          "company": "Blue Creator Agency | Kimia Group",
+          "title": "Front End Developer",
+          "location": "Remote, Madrid, Spain",
+          "dateRange": "Jan 2025 – Nov 2025",
+          "bullets": [
+            "Delivered front end solutions for internal CMS platform and consumer-facing client app in monetization/adTech space, resolving 120+ Jira tasks while translating Figma designs into pixel-perfect, responsive UI",
+            "Migrated consumer-facing client app from Vuetify to Tailwind across 40+ Vue components for improved user experience, reducing bundle size by 19%",
+            "Conducted performance audits and optimizations on the client app, improving Largest Contentful Paint (LCP) from 9.1s to 6.6s, driving a 15% conversion rate improvement based on UI/UX and Web Vitals enhancements"
+          ],
+          "skills": "Vue, Nuxt, TypeScript, JavaScript, Tailwind, Vuetify, Figma, CI/CD"
+        },
+        {
+          "company": "BSE America",
+          "title": "Lead Developer",
+          "location": "Remote, Panama",
+          "dateRange": "Jan 2024 – Nov 2024",
+          "bullets": [
+            "Architected and developed from scratch an end-to-end CRM with WooCommerce integration serving sales operations, implementing RESTful APIs in Laravel for seamless data exchange with WooCommerce and Panama's electronic bill API for automated invoicing and tax compliance, achieving near 100% delivery success rate",
+            "Implemented CI/CD pipelines and AWS S3 secure storage, reducing deployment time from 20min to 4min, and mentored 3 developers on Laravel and Vue best practices improving code review approval rate from 40% to 85%"
+          ],
+          "skills": "Laravel, PHP, JavaScript, Vue, Vuetify, PostgreSQL, AWS S3, Wordpress, WooCommerce, CI/CD"
+        },
+        {
+          "company": "First Due",
+          "title": "Full Stack Developer",
+          "location": "Remote, New York, US",
+          "dateRange": "Mar 2021 – Nov 2023",
+          "bullets": [
+            "Contributed multi-tenant SaaS features across modules for Fire Prevention, EMS and Assets operations serving 40+ fire departments across United States and Canada, helping drive company success as it made Inc 5000 list for four consecutive years since 2022",
+            "Enhanced Google Maps and ArcGIS APIs integrations for geolocation mapping with real-time tracking, and implemented custom barcode/QR scanner component processing 5,000+ daily asset scans with >99% accuracy"
+          ],
+          "skills": "Vue, Yii, Google Maps API, ArcGIS API, PostgreSQL, PHP, JavaScript"
+        }
+      ]
+    },
+    "outputFile": "/home/rayko/WebstormProjects/razcue.github.io/public/resume.pdf"
+  },
+  {
+    "id": "pos-2025-11-27T12-17-02-639Z",
+    "timestamp": "2025-11-27T12:17:02.639Z",
+    "metadata": {
+      "language": "en",
+      "targetPosition": "Front-End Engineer (React)",
+      "keywords": {
+        "technical": ["React", "TypeScript", "Performance", "Accessibility"],
+        "soft": ["Communication", "Teamwork"]
+      },
+      "client": "Global Digital Product Studio",
+      "dateBuilt": "2025-11-27T12:17:02.639Z"
+    },
+    "description": "We are looking for a Front-End Engineer with strong React and TypeScript skills to join our team working on client-facing digital products. The role requires performance optimization, a11y awareness, and the ability to work cross-functionally.",
+    "coverLetter": "Dear Hiring Team,\n\nI am excited to apply for the Front-End Engineer (React) role at Global Digital Product Studio. I bring hands-on experience building production front-end applications, with a focus on performance, accessibility, and measurable business impact. Attached is a tailored resume highlighting relevant achievements.\n\nSincerely,\nRayko Azcue Pérez",
+    "emailLetter": "Hi Global Digital Product Studio,\n\nI've attached my resume for the Front-End Engineer (React) role. I look forward to discussing how my experience can help your team.\n\nBest regards,\nRayko",
+    "resume": {
+      "contactInfo": {
+        "location": "Havana, Cuba",
+        "email": "razcue@yandex.com",
+        "website": "razcue.github.io"
+      },
+      "education": [
+        {
+          "institution": "University of Informatics Sciences",
+          "degree": "Computer Sciences Engineer - Bachelor's degree",
+          "location": "Havana, Cuba",
+          "date": "sep/2013 - jul/2018"
+        }
+      ],
+      "experience": [
+        {
+          "company": "Blue Creator Agency | Kimia Group",
+          "title": "Senior Front End Developer",
+          "location": "Remote, Madrid, Spain",
+          "dateRange": "Jan 2025 – Nov 2025",
+          "bullets": [
+            "Delivered front end solutions for CMS and consumer app, migrating from Vuetify to Tailwind while maintaining feature parity and improving bundle size by 25%",
+            "Translated Figma designs into pixel-perfect, responsive React/Vue components used across 5+ product modules",
+            "Owned end-to-end feature delivery collaborating with QA and Product Managers, reducing bug rate by 30%",
+            "Conducted performance reviews and optimizations, improving Largest Contentful Paint (LCP) from 2.1s to 1.2s and Time to Interactive (TTI) by 40%"
+          ],
+          "skills": "React, Vue, Nuxt, TypeScript, JavaScript, Tailwind, Vuetify, Figma, Performance Optimization, Code Reviews, Agile"
+        },
+        {
+          "company": "BSE America",
+          "title": "Lead Developer",
+          "location": "Remote, Panama",
+          "dateRange": "Jan 2024 – Nov 2024",
+          "bullets": [
+            "Architected and developed end-to-end CRM with WooCommerce integration serving 200+ sales representatives, reducing order processing time by 35%",
+            "Designed and implemented RESTful APIs in Laravel for core business modules (sales, logistics, contracts), achieving 99.9% uptime",
+            "Built notification system (email/WhatsApp) handling 10,000+ messages/day with 98% delivery success rate",
+            "Implemented CI/CD pipelines and AWS S3 secure storage, reducing deployment failures by 40% and cutting release time from 3h to 30min",
+            "Mentored 3 developers on Laravel best practices and code review standards, improving team code quality score from 65% to 85%"
+          ],
+          "skills": "Laravel, PHP, Node.js, REST APIs, MySQL, AWS S3, WooCommerce, CI/CD, Git, Mentoring, Agile/Scrum"
+        },
+        {
+          "company": "EncodeBiz",
+          "title": "Front End Developer",
+          "location": "Remote, Madrid, Spain",
+          "dateRange": "Nov 2023 – Jan 2024",
+          "bullets": [
+            "Built responsive React UI for padel tournament management system, translating Figma designs into production-ready components",
+            "Implemented robust frontend-backend integrations with Express.js REST API, reducing data sync errors by 60%",
+            "Focused on maintainable, testable code and UX improvements for scheduling and player management features used by 500+ tournament participants"
+          ],
+          "skills": "React, TypeScript, Express.js, Node.js, REST APIs, Figma, Testing, UX Design"
+        }
+      ]
+    },
+    "outputFile": "public/resume.pdf"
+  }
+]

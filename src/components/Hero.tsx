@@ -6,12 +6,6 @@ interface HeroProps {
 }
 
 export default function Hero({ locale }: HeroProps) {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
   const t = getTranslation(locale);
 
   return (
@@ -19,37 +13,38 @@ export default function Hero({ locale }: HeroProps) {
       {/* Greeting and Name with Social Links */}
       <ProfileHeader locale={locale} />
 
-      {/* CTA Button */}
-      <div className="flex justify-center">
-        <button
-          onClick={() => scrollToSection('contact')}
-          className="relative px-6 py-3 text-accent font-medium overflow-hidden group w-48 cursor-pointer"
+      {/* CTA Buttons */}
+      <div className="flex gap-6 justify-center items-center">
+        {/* Download Resume Button */}
+        <a
+          href="/Rayko_Azcue_Resume.pdf"
+          download="Rayko_Azcue_Resume.pdf"
+          className="relative px-4 py-3 text-accent font-medium overflow-hidden group w-40 cursor-pointer flex items-center justify-center gap-2"
           style={{ background: 'transparent' }}
         >
-          <span className="relative z-10 uppercase">{t.hero.cta}</span>
+          <i className="i-tabler-file-download relative z-10 text-xl"></i>
+          <span className="relative z-10 uppercase">
+            {t.hero.downloadResume}
+          </span>
 
-          {/* Animated borders - two pens drawing from corners */}
-          {/* Top border - draws from right to left */}
+          {/* Animated borders - matching style */}
           <span
             className="absolute top-0 right-0 w-2 h-px bg-accent transition-all duration-500 ease-out group-hover:w-full"
             style={{ transformOrigin: 'right' }}
           ></span>
-          {/* Right border - draws from top to bottom */}
           <span
             className="absolute top-0 right-0 w-px h-2 bg-accent transition-all duration-500 ease-out delay-100 group-hover:h-full"
             style={{ transformOrigin: 'top' }}
           ></span>
-          {/* Bottom border - draws from left to right */}
           <span
             className="absolute bottom-0 left-0 w-2 h-px bg-accent transition-all duration-500 ease-out group-hover:w-full"
             style={{ transformOrigin: 'left' }}
           ></span>
-          {/* Left border - draws from bottom to top */}
           <span
             className="absolute bottom-0 left-0 w-px h-2 bg-accent transition-all duration-500 ease-out delay-100 group-hover:h-full"
             style={{ transformOrigin: 'bottom' }}
           ></span>
-        </button>
+        </a>
       </div>
     </div>
   );
