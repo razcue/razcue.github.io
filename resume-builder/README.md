@@ -162,6 +162,15 @@ Use this to:
 4. **Keep formatting simple:** The Harvard template is already optimized
 5. **Use exact job titles** and technology names from the posting
 
+## ATS Testing Tools
+
+Test your resume's ATS compatibility before applying:
+
+- **RezScore AI** (Free): https://ai.rezscore.com/
+  - Upload your PDF and get instant ATS analysis
+  - Provides detailed scoring and improvement suggestions
+  - No sign-up required
+
 ## Outputs
 
 After running the build:

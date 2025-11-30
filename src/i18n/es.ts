@@ -90,22 +90,41 @@ export default {
       {
         company: 'Blue Creator Agency | Kimia Group',
         location: 'Remoto, Madrid, España',
-        period: '01/2025 - 11/2025',
+        period: 'Ene/2025 - Nov/2025',
         role: 'Senior Front End Developer',
         industry: 'Monetización & adTech',
-        technologies: ['Nuxt', 'Vue 3', 'Vuetify', 'Tailwind', 'TypeScript'],
-        description:
-          'Entregué soluciones front end para CMS y app de consumo, migrando de Vuetify a Tailwind y traduciendo diseños de Figma en implementaciones pixel-perfect. Asumí la entrega completa de funcionalidades de principio a fin desde el desarrollo hasta el despliegue en producción, colaborando con QA y Product Managers para asegurar estándares de calidad. Realicé revisiones y optimizaciones de rendimiento, mejorando tiempos de carga y experiencia de usuario.',
+        technologies: [
+          'Nuxt',
+          'Vue 3',
+          'Vuetify',
+          'Tailwind',
+          'JavaScript',
+          'TypeScript',
+        ],
+        bullets: [
+          'Implementé características front‑end para un CMS interno y una app de monetización; resolví más de 120 incidencias en Jira y transformé los diseños de Figma en interfaces responsivas y fieles al diseño.',
+          'Migré más de 40 componentes Vue de Vuetify a Tailwind y lideré optimizaciones de rendimiento que redujeron el bundle en un 19% y mejoraron el LCP de 9.1s a 6.6s.',
+        ],
       },
       {
         company: 'BSE America',
         location: 'Remoto, Panamá, Panamá',
-        period: '01/2024 - 11/2024',
+        period: 'Ene/2024 - Nov/2024',
         role: 'Lead Developer',
         industry: 'E-commerce, Gestión de Activos',
-        technologies: ['Laravel', 'TypeScript', 'Vue 3', 'Vuetify', 'Swagger'],
-        description:
-          'Dirigí la arquitectura y el desarrollo de un CRM completo con integración con WooCommerce, entregando módulos principales para ventas, productos, logística, consignaciones y contratos. Diseñé e implementé APIs RESTful en Laravel, añadí flujos de notificaciones (email, WhatsApp) e implementé flujos CI/CD y almacenamiento seguro en AWS S3 para soportar despliegues fiables. Trabajé directamente con product owners para priorizar funcionalidades y guié al equipo de desarrollo para ofrecer funcionalidades escalables y listas para producción, además de adiestrar al equipo de desarrollo.',
+        technologies: [
+          'Laravel 11',
+          'Vue 3',
+          'TypeScript',
+          'Vuetify',
+          'Swagger',
+          'JavaScript',
+          'PHP',
+        ],
+        bullets: [
+          'Diseñé y desarrollé un CRM de extremo a extremo con integración a WooCommerce, incluida facturación automatizada y seguimiento fiscal adapatadas al sistema electrónico de Panamá.',
+          'Establecí flujos de integración y despliegue continuo, almacenamiento seguro en AWS S3, reduciendo el tiempo de despliegue de ~20min a ~4min; además formé a 3 desarrolladores, elevando la tasa de aprobación de revisiones de código de 40% a 85%.',
+        ],
       },
       {
         company: 'EncodeBiz',
@@ -113,9 +132,11 @@ export default {
         period: '11/2023 - 01/2024',
         role: 'Front End Developer',
         industry: 'Sports Tech',
-        technologies: ['React', 'PrimeReact', 'TypeScript'],
-        description:
-          'Responsable del front end de un sistema de gestión de torneos de pádel: traduje diseños de Figma en una interfaz de usuario responsive y pixel-perfect basada en React, e implementé integraciones robustas front end–backend con una API en Express.js. Enfocado en código mantenible y testeable y en mejoras de UX para optimizar la gestión de calendarios, rankings y participantes.',
+        technologies: ['React', 'PrimeReact', 'JavaScript', 'TypeScript'],
+        bullets: [
+          'Implementé varios módulos de front‑end para un sistema de gestión de torneos de pádel, transformando de Figma en interfaces responsivas basadas en componentes de React y aumentando la completitud de procesos administrativos en ~20%.',
+          'Integré la interfaz con una API en Node.js/Express y optimicé flujos locales con ngrok, reduciendo incidencias y tickets de soporte en ~30% y acortando los ciclos de retroalimentación entre equipos.',
+        ],
       },
       {
         company: 'First Due @Inc5000',
@@ -129,9 +150,13 @@ export default {
           'Google Maps API',
           'ArcGIS',
           'PostgreSQL',
+          'JavaScript',
+          'PHP',
         ],
-        description:
-          'Contribuí con funcionalidades multi-tenant en múltiples módulos SaaS para operaciones de bomberos y EMS, activos y flujos operativos. Implementé un componente personalizado de escáner de código de barras/QR, integré Google Maps y ArcGIS para mapeo geolocalizado, solucioné bugs críticos y reforcé prácticas de calidad de código mediante revisiones y estándares. Colaboré estrechamente con producto, diseño y operaciones para agregar valor a la plataforma. La empresa logró entrar en el Inc 5000 durante cuatro años consecutivos desde 2022.',
+        bullets: [
+          'Implementé características multi‑tenant en módulos SaaS para prevención de incendios, EMS y gestión de activos, dando servicio a más de 40 departamentos de bomberos.',
+          'Mejoré funcionalidades de geolocalización e implementé un escáner de códigos/QR que procesaba más de 5,000 escaneos diarios con >99% de precisión, mejorando la trazabilidad operativa.',
+        ],
       },
       {
         company: 'Tecnomática',
@@ -142,46 +167,54 @@ export default {
         technologies: [
           'Angular 11',
           'NgZorro',
+          'JavaScript',
           'TypeScript',
           'PostgreSQL',
           'MySQL',
         ],
-        description:
-          'Desarrollé el front end para un sistema de logística de combustible usando Angular 11 y NgZorro, centrado en disponibilidad de combustible, seguimiento de movimientos y gestión de activos. Asistí con tareas de optimización y migración de bases de datos para mejorar el rendimiento de consultas. Adiestré a un desarrollador junior acerca de buenas prácticas front end, organización de código y patrones de Angular.',
+        bullets: [
+          'Implementé módulos de interfaz de usuario en Angular 11 (NgZorro) para un sistema de logística de combustible, centrados en disponibilidad, movimiento y gestión de activos.',
+          'Optimizé consultas claves de logística en ~25–30% mediante migraciones y ajustes de base de datos PostgreSQL/MySQL, aumentando el rendimiento y la fiabilidad de los informes.',
+        ],
       },
       {
         company: 'Grupo de Electrónica para el Turismo',
         location: 'Presencial, La Habana, Cuba',
-        period: '03/2019 - 11/2020',
-        role: 'Full Stack Developer',
+        period: 'Mar/2019 - Nov/2020',
+        role: 'Junior Full Stack Developer',
         industry: 'Sector Público & Logística',
         technologies: [
-          'Laravel',
+          'Laravel 6',
           'Vue 2',
           'Vuetify',
           'Elasticsearch',
           'Express.js',
           'PostgreSQL',
+          'JavaScript',
+          'PHP',
         ],
-        description:
-          'Fungí como desarrollador principal (trabajando mayormente de forma independiente) para un sistema de gestión documental construido con Laravel y Vue 2. Implementé almacenamiento seguro de documentos, control de acceso basado en roles y búsqueda de documentos usando Elasticsearch para recuperación rápida. Desarrollé procesamiento asíncrono de notificaciones para manejar tareas en segundo plano eficientemente. También contribuí al desarrollo de una plataforma de reservas hoteleras usando Express.js.',
+        bullets: [
+          'Lideré el desarrollo de un sistema multi‑tenant de gestión documental (Laravel/Vue 2) con almacenamiento seguro y búsqueda mejorada basada en Elasticsearch, reduciendo tiempos de búsqueda típicos a <1s.',
+          'Co‑desarrollé una plataforma de reservas hoteleras (Express.js/PostgreSQL), mejorando la tasa de conversión de reservas en ~10–15% y habilitando precios dinámicos con notificaciones automatizadas.',
+        ],
       },
       {
         company: 'Banco Central de Cuba (BCC)',
         location: 'Presencial, La Habana, Cuba',
-        period: '09/2018 - 02/2019',
-        role: 'Full Stack Developer',
+        period: 'Sep/2018 - Feb/2019',
+        role: 'Junior Full Stack Developer',
         industry: 'Banca, Gestión de Activos',
         technologies: [
           '.NET Framework',
           'C#',
-          'MVC',
           'Entity Framework',
           'SQL Server',
           'Bootstrap',
         ],
-        description:
-          'Desarrollé un sistema robusto de gestión de activos como parte del portal de cumplimiento interno del banco, mejorando la gestión del ciclo de vida, la rendición de cuentas y el cumplimiento normativo para activos bancarios críticos. Ingenieré funcionalidades principales incluyendo seguimiento de activos, actualizaciones de inventario y reportes de cumplimiento. Colaboré con equipos interdepartamentales para definir requisitos alineados con regulaciones bancarias.',
+        bullets: [
+          'Implementé seguimiento de activos, actualizaciones de inventario y reportes de cumplimiento en .NET/C#/SQL Server, reduciendo el trabajo manual en ~20–30%.',
+          'Colaboré con distintos departamentos y equipos de cumplimiento normativo para alinear el sistema con regulaciones, reduciendo el trabajo derivado de las auditorías.',
+        ],
       },
     ],
   },

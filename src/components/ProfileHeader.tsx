@@ -27,7 +27,7 @@ export default function ProfileHeader({ locale }: ProfileHeaderProps) {
         <div className="flex flex-col gap-1 lg:gap-2 mt-1 lg:mt-2">
           <a
             className="i-tabler-brand-linkedin?mask text-2xl lg:text-3xl bg-text-secondary hover:bg-accent transition-colors"
-            href="https://linkedin.com/in/rayko-azcue-p%C3%A9rez-7667ab379"
+            href="https://linkedin.com/in/rayko-azcue"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
