@@ -3,7 +3,6 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import FeaturedPost from '../../components/blog/FeaturedPost';
 import BlogCard from '../../components/blog/BlogCard';
-import NewsletterSignup from '../../components/blog/NewsletterSignup';
 import TagFilter from '../../components/blog/TagFilter';
 import SortControl from '../../components/blog/SortControl';
 import { getTranslation } from '../../utils/i18n';
@@ -92,14 +91,11 @@ const seo = {
           </a>
         </div>
       </div>
-      <!-- Featured Post + Newsletter -->
+      <!-- Featured Post -->
       {
         featuredPost && (
           <div class="mb-16">
             <FeaturedPost post={featuredPost} client:load />
-            <div class="mt-8">
-              <NewsletterSignup locale="en" client:load />
-            </div>
           </div>
         )
       }

@@ -41,17 +41,6 @@ export default {
     shareOn: 'Compartir en',
     comments: 'Comentarios',
     updated: 'Actualizado',
-    newsletter: {
-      title: 'Suscríbete a mi Newsletter',
-      description:
-        'Recibe los últimos artículos directamente en tu bandeja de entrada',
-      placeholder: 'tu.email@ejemplo.com',
-      subscribing: 'Suscribiendo...',
-      subscribe: 'Suscribirse',
-      successMessage: '¡Suscripción exitosa! Revisa tu email para confirmar.',
-      errorMessage: 'Error al suscribirse. Por favor intenta de nuevo.',
-      poweredBy: 'Powered by Buttondown. Sin spam, cancela cuando quieras.',
-    },
   },
 
   // Hero Section
