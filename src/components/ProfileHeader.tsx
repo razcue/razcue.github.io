@@ -13,27 +13,16 @@ export default function ProfileHeader({ locale }: ProfileHeaderProps) {
         {t.hero.greeting}
       </p>
 
-      <div className="flex items-start gap-1 lg:gap-4">
-        <div className="flex-1">
-          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-text">
-            {t.hero.name}
-          </h1>
-          <h2 className="text-base md:text-xl text-text-secondary">
+      <div className="w-48 md:w-64 lg:w-full">
+        <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-text">
+          {t.hero.name}
+        </h1>
+        <div className="flex justify-between">
+          <h2 className="text-base md:text-xl lg:text-2xl text-text-secondary">
             Front End Developer
           </h2>
-        </div>
-
-        {/* Vertical Social Links */}
-        <div className="flex flex-col gap-1 lg:gap-2 mt-1 lg:mt-2">
           <a
-            className="i-tabler-brand-linkedin?mask text-2xl lg:text-3xl bg-text-secondary hover:bg-accent transition-colors"
-            href="https://linkedin.com/in/rayko-azcue"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-          />
-          <a
-            className="i-tabler-brand-github?mask text-2xl lg:text-3xl bg-text-secondary hover:bg-accent transition-colors"
+            className="hidden lg:block i-tabler-brand-github?mask text-lg md:text-2xl lg:text-3xl bg-text-secondary hover:bg-accent transition-colors mt-0.5 lg:mt-0"
             href="https://github.com/razcue"
             target="_blank"
             rel="noopener noreferrer"

@@ -138,7 +138,7 @@ export default function Sidebar({
           >
             <i className="i-tabler-arrow-left w-6 h-6" />
           </button>
-          <div className="w-px flex-1 bg-text-secondary opacity-30 mb-4 sm:mb-6"></div>
+          <div className="w-px flex-1 bg-text-secondary opacity-30 mb-4 md:mb-6"></div>
         </>
       )}
 
@@ -150,7 +150,7 @@ export default function Sidebar({
       {/* Main Navigation - Only show on home page */}
       {showNavigation && (
         <>
-          <ul className="block lg:hidden space-y-4 mb-4 sm:mb-6 pl-2">
+          <ul className="block lg:hidden space-y-4 mb-4 md:mb-6 pl-2">
             {navItems.map((item) => (
               <li key={item.id}>
                 <button
@@ -171,29 +171,29 @@ export default function Sidebar({
           </ul>
 
           {/* Vertical Line above links */}
-          <div className="block lg:hidden w-px flex-1 bg-text-secondary opacity-30 mb-4 sm:mb-6 max-h-4 sm:max-h-16 lg:max-h-32"></div>
+          <div className="block lg:hidden w-px flex-1 bg-text-secondary opacity-30 mb-4 md:mb-6 max-h-4 md:max-h-16 lg:max-h-32"></div>
         </>
       )}
 
       {/* Blog and Lab Links */}
-      <div className="block lg:hidden border-t border-surface mb-4 sm:mb-6">
-        <ul className="space-y-1 sm:space-y-2">
+      <div className="block lg:hidden border-t border-surface mb-4 md:mb-6">
+        <ul className="space-y-1 md:space-y-2">
           <li>
             <a
               href={locale === 'es' ? '/es/blog' : '/blog'}
-              className="text-text-secondary hover:text-accent transition-colors text-xs sm:text-sm font-medium tracking-widest"
+              className="text-text-secondary hover:text-accent transition-colors text-xs md:text-sm font-medium tracking-widest"
               style={{ writingMode: 'vertical-rl' }}
             >
               <span className="font-medium">{t.nav.blog}</span>
             </a>
           </li>
           <li>
-            <div className="w-px h-2 sm:h-4 ml-2 flex-1 bg-text-secondary opacity-30 mb-3 sm:mb-4"></div>
+            <div className="w-px h-2 md:h-4 ml-2 flex-1 bg-text-secondary opacity-30 mb-3 md:mb-4"></div>
           </li>
           <li>
             <a
               href={locale === 'es' ? '/es/lab' : '/lab'}
-              className="text-text-secondary hover:text-accent transition-colors text-xs sm:text-sm font-medium tracking-widest"
+              className="text-text-secondary hover:text-accent transition-colors text-xs md:text-sm font-medium tracking-widest"
               style={{ writingMode: 'vertical-rl' }}
             >
               <span className="font-medium">{t.nav.lab}</span>
@@ -203,10 +203,10 @@ export default function Sidebar({
       </div>
 
       {/* Vertical Line above download */}
-      <div className="block lg:hidden w-px flex-1 bg-text-secondary opacity-30 mb-4 sm:mb-6 max-h-4 sm:max-h-16 lg:max-h-32"></div>
+      <div className="block lg:hidden w-px flex-1 bg-text-secondary opacity-30 mb-4 md:mb-6 max-h-4 md:max-h-16 lg:max-h-32"></div>
 
       {/* Download Resume Button */}
-      <div className="block lg:hidden mb-4 sm:mb-6">
+      <div className="block lg:hidden mb-4 md:mb-6">
         <a
           href="/Rayko_Azcue_Resume.pdf"
           download="Rayko_Azcue_Resume.pdf"
@@ -216,29 +216,36 @@ export default function Sidebar({
         >
           <i className="i-tabler-file-download w-6 h-6" />
         </a>
+        <a
+          className="i-tabler-brand-github?mask text-2xl bg-text-secondary hover:bg-accent transition-colors mt-2.5"
+          href="https://github.com/razcue"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        />
       </div>
 
       {/* Vertical Line above theme */}
-      <div className="block lg:hidden w-px flex-1 bg-text-secondary opacity-30 mb-4 sm:mb-6 max-h-4 sm:max-h-16 lg:max-h-32"></div>
+      <div className="block lg:hidden w-px flex-1 bg-text-secondary opacity-30 mb-2 md:mb-6 max-h-4 md:max-h-16 lg:max-h-32"></div>
 
       {/* Theme Toggle */}
-      <div className="mb-1 sm:mb-4">
+      <div className="mb-1 md:mb-4">
         <ThemeToggle />
       </div>
 
       {/* Language Toggle - Horizontal */}
-      <div className="mb-4 sm:mb-6">
+      <div className="mb-4 md:mb-6">
         <LanguageToggle currentPath={currentPath} />
       </div>
 
       {/* Vertical Line above email */}
-      <div className="w-px flex-1 bg-text-secondary opacity-30 mb-4 sm:mb-6 max-h-4 sm:max-h-16 lg:max-h-32"></div>
+      <div className="w-px flex-1 bg-text-secondary opacity-30 mb-4 md:mb-6 max-h-4 md:max-h-16 lg:max-h-32"></div>
 
       {/* Vertical Email */}
       <div className="flex flex-col items-center">
         <a
           href="mailto:razcue@yandex.com"
-          className="text-text-secondary hover:text-accent transition-colors text-xs sm:text-sm font-medium tracking-widest"
+          className="text-text-secondary hover:text-accent transition-colors text-xs md:text-sm font-medium tracking-widest"
           style={{ writingMode: 'vertical-rl' }}
         >
           razcue@yandex.com
@@ -246,7 +253,7 @@ export default function Sidebar({
       </div>
 
       {/* Vertical Line below email */}
-      <div className="w-px flex-1 bg-text-secondary opacity-30 mt-4 sm:mt-6 max-h-16 lg:max-h-32"></div>
+      <div className="w-px flex-1 bg-text-secondary opacity-30 mt-4 md:mt-6 max-h-16 lg:max-h-32"></div>
     </div>
   );
 }

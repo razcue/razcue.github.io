@@ -30,7 +30,7 @@ export default function ThemeToggle() {
         className="p-2 rounded-lg transition-colors cursor-pointer"
         aria-label="Toggle theme"
       >
-        <i className="i-tabler-moon h-4 sm:h-5 w-4 sm:w-5" />
+        <i className="i-tabler-moon h-4 md:h-5 w-4 md:w-5" />
       </button>
     );
   }

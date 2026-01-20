@@ -36,7 +36,7 @@ export default function LanguageToggle({ currentPath }: LanguageToggleProps) {
   return (
     <button
       onClick={toggleLanguage}
-      className="text-sm sm:text-base font-medium text-primary hover:text-accent transition-colors cursor-pointer"
+      className="text-sm md:text-base font-medium text-primary hover:text-accent transition-colors cursor-pointer"
       aria-label={`Switch to ${currentLocale === 'en' ? 'Spanish' : 'English'}`}
     >
       {currentLocale === 'en' ? 'ES' : 'EN'}

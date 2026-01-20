@@ -1,7 +1,7 @@
 ---
 title: 'Why Astro Changes Everything for Web Development'
 description: 'Explore how Astro is revolutionizing web development with partial hydration, zero JS by default, and incredible performance metrics that actually matter.'
-pubDate: 2024-01-15
+pubDate: 2025-12-02
 heroImage: '/blog-images/astro-changes-everything-hero.webp'
 tags: ['astro', 'performance', 'web-vitals', 'frameworks']
 draft: false
@@ -41,20 +41,20 @@ Only the `CommentSection` requires JavaScript, so only that component is hydrate
 
 ### Real Performance Numbers
 
-This site achieves exceptional Web Vitals scores thanks to Astro's architecture:
+This page achieves exceptional Web Vitals scores thanks to Astro's architecture:
 
 <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 my-8 p-6 bg-surface rounded-lg">
   <CircularScore score={100} label="Performance" client:visible />
-  <CircularScore score={100} label="Accessibility" client:visible />
+  <CircularScore score={94} label="Accessibility" client:visible />
   <CircularScore score={100} label="Best Practices" client:visible />
-  <CircularScore score={100} label="SEO" client:visible />
+  <CircularScore score={92} label="SEO" client:visible />
 </div>
 
 **Core Web Vitals:**
 
 - **First Contentful Paint (FCP)**: < 0.5s
-- **Largest Contentful Paint (LCP)**: < 1.2s
-- **Total Blocking Time (TBT)**: < 100ms
+- **Largest Contentful Paint (LCP)**: < 0.5s
+- **Total Blocking Time (TBT)**: 0ms
 - **Cumulative Layout Shift (CLS)**: < 0.01
 - **JavaScript Bundle**: ~45KB (vs 280KB+ in typical React apps)
 

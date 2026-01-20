@@ -1,6 +1,6 @@
 ---
 title: 'Por Qué Astro Lo Cambia Todo en el Desarrollo Web'
-description: 'Explora cómo Astro está revolucionando el desarrollo web con hidratación parcial, cero JS por defecto, y métricas de rendimiento increíbles que realmente importan.'
+description: 'Explora cómo Astro está revolucionando el desarrollo web con hidratación parcial, cero JS por defecto, y métricas con rendimiento increíble que realmente importan.'
 pubDate: 2024-01-15
 heroImage: '/blog-images/astro-changes-everything-hero.webp'
 tags: ['astro', 'performance', 'web-vitals', 'frameworks']
@@ -14,9 +14,9 @@ import CircularScore from '../../../components/CircularScore';
 
 ## El Problema con el Desarrollo Web Moderno
 
-Los frameworks web modernos nos han dado experiencias de desarrollo increíbles, pero ¿a qué costo? El sitio web promedio ahora envía **megabytes** de JavaScript a los usuarios, la mayoría es overhead del framework que los usuarios nunca pidieron.
+Los frameworks web modernos nos han dado experiencias de desarrollo increíbles, pero ¿a qué costo? El sitio web promedio ahora envía **megabytes** de JavaScript a los usuarios, la mayoría es sobrecarga del framework que los usuarios nunca pidieron.
 
-Considera esto: Una simple publicación de blog no debería requerir React, Vue, o cualquier framework ejecutándose en el navegador solo para mostrar texto e imágenes. Sin embargo, eso es exactamente lo que hacen la mayoría de los sitios modernos.
+Considera esto: Una simple publicación en un blog no debería requerir React, Vue, o cualquier framework ejecutándose en el navegador solo para mostrar texto e imágenes. Sin embargo, eso es exactamente lo que hacen la mayoría de los sitios modernos.
 
 ## Presentando Astro: Un Cambio de Paradigma
 
@@ -41,26 +41,26 @@ Solo el `CommentSection` requiere JavaScript, así que solo ese componente se hi
 
 ### Números Reales de Rendimiento
 
-Este sitio logra puntuaciones excepcionales en Web Vitals gracias a la arquitectura de Astro:
+Esta página logra puntuaciones excepcionales en Web Vitals gracias a la arquitectura de Astro:
 
 <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 my-8 p-6 bg-surface rounded-lg">
   <CircularScore score={100} label="Performance" client:visible />
-  <CircularScore score={100} label="Accessibility" client:visible />
+  <CircularScore score={94} label="Accessibility" client:visible />
   <CircularScore score={100} label="Best Practices" client:visible />
-  <CircularScore score={100} label="SEO" client:visible />
+  <CircularScore score={92} label="SEO" client:visible />
 </div>
 
 **Core Web Vitals:**
 
 - **First Contentful Paint (FCP)**: < 0.5s
-- **Largest Contentful Paint (LCP)**: < 1.2s
-- **Total Blocking Time (TBT)**: < 100ms
+- **Largest Contentful Paint (LCP)**: < 0.5s
+- **Total Blocking Time (TBT)**: 0ms
 - **Cumulative Layout Shift (CLS)**: < 0.01
-- **Bundle de JavaScript**: ~45KB (vs 280KB+ en apps típicas de React)
+- **JavaScript Bundle**: ~45KB (vs 280KB+ en aplicaciones típicas de React)
 
-Estas no son solo métricas de vanidad - se traducen en mejoras reales en la experiencia del usuario, mejor ranking SEO, y mayores tasas de conversión.
+Estas no son solo métricas coloquiales - se traducen en mejoras reales en la experiencia del usuario, mejor posicionamiento SEO, y mayores tasas de conversión.
 
-## Agnóstico de Framework: Usa Lo Que Amas
+## Framework Agnóstico: Usa Lo Que Amas
 
 Aquí es donde Astro se pone realmente interesante. Puedes usar **múltiples frameworks en el mismo proyecto**:
 
@@ -80,7 +80,7 @@ Cada componente de framework solo envía su JavaScript necesario cuando se neces
 
 ## Colecciones de Contenido: Contenido Type-Safe
 
-Las Colecciones de Contenido de Astro te dan gestión de contenido potenciada por TypeScript desde el principio:
+Las Colecciones de Contenido de Astro ofrecen gestión de contenido potenciada por TypeScript desde el principio:
 
 ```typescript
 import { z, defineCollection } from 'astro:content';
@@ -95,11 +95,11 @@ const blogCollection = defineCollection({
 });
 ```
 
-Ahora tu IDE autocompleta campos del frontmatter, detecta errores tipográficos, y asegura consistencia en todo tu contenido.
+Ahora tu IDE autocompleta campos de metadata, detecta errores tipográficos, y asegura consistencia en todo tu contenido.
 
 ## Características de Vanguardia Que Distinguen a Astro
 
-Astro no es solo sobre rendimiento - es una plataforma completa de desarrollo web moderno con características de última generación:
+Astro no es solo sobre rendimiento, es una plataforma completa de desarrollo web moderno con características de última generación:
 
 ### Componentes y Utilidades Integrados
 
@@ -120,9 +120,9 @@ import { Code } from 'astro:components';
 
 No necesitas instalar y configurar paquetes de terceros para tareas comunes.
 
-### API de View Transitions
+### API de Transiciones Visuales
 
-Transiciones de página integradas con una sola línea:
+Transiciones integradas en tus páginas con una sola línea:
 
 ```astro
 ---
@@ -134,9 +134,9 @@ import { ViewTransitions } from 'astro:transitions';
 </head>
 ```
 
-Obtén navegación fluida tipo app sin overhead de JavaScript.
+Obtén navegación fluida tipo app sin sobrecarga de JavaScript.
 
-### Astro Actions: Funciones de Servidor Type-Safe
+### Astro Actions: Funciones Type-Safe del lado del Servidor
 
 Define funciones serverless con seguridad de tipos completa:
 
@@ -174,7 +174,7 @@ src/pages/
     contact.ts         → /api/contact (endpoint API)
 ```
 
-No se necesita configuración - la estructura de archivos es tu enrutador.
+No se necesita configuración, la estructura de archivos es tu enrutador.
 
 ### Soporte para Middleware
 
@@ -189,7 +189,7 @@ export function onRequest({ request, locals }, next) {
 }
 ```
 
-### Adaptadores de Despliegue
+### Adaptadores para Despliegue
 
 Despliega en cualquier lugar con adaptadores oficiales:
 
@@ -223,7 +223,7 @@ Herramientas de desarrollo integradas directamente en tu navegador:
 
 Todo sin salir de tu entorno de desarrollo.
 
-### Mentalidad HTML-First
+### Mentalidad Primero-HTML
 
 Aquí está lo mejor: **si conoces HTML, puedes construir con Astro**. Sin abstracciones complejas, sin peculiaridades de JSX. Los componentes Astro son HTML con superpoderes:
 
@@ -244,10 +244,10 @@ Esto reduce la barrera de entrada mientras mantiene capacidades de nivel profesi
 
 ¿La mejor parte? No sacrificas DX por rendimiento. Astro te da:
 
-- ⚡ Reemplazo de módulo en caliente súper rápido
+- ⚡ Reemplazo súper rápido de módulo en caliente
 - 🎨 Estilos con alcance por defecto
 - 📦 División de código automática
-- 🔧 Soporte TypeScript integrado
+- 🔧 Soporte integrado para TypeScript
 - 🎯 Optimización a nivel de componente
 
 ## ¿Cuándo Deberías Usar Astro?
@@ -268,7 +268,7 @@ Quizás no ideal para:
 
 Astro representa un replanteamiento fundamental de cómo construimos para la web. Pregunta: "¿Qué pasaría si solo enviáramos JavaScript cuando realmente lo necesitamos?"
 
-¿La respuesta? Sitios increíblemente rápidos que rankean mejor, cargan más rápido, y proporcionan mejores experiencias de usuario - todo mientras mantienen una ergonomía de desarrollo increíble.
+¿La respuesta? Sitios increíblemente rápidos con mejor posicionamiento, cargan más rápido, y proporcionan mejores experiencias de usuario, todo mientras mantienen una ergonomía de desarrollo increíble.
 
 Si aún no has probado Astro, ahora es el momento. Tus usuarios (y tus puntuaciones de Lighthouse) te lo agradecerán.
 
