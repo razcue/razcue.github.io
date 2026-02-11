@@ -1,4 +1,22 @@
 {
+  "metadata": {
+    "id": "default",
+    "configName": "default",
+    "language": "en",
+    "dateCreated": "2025-02-10T00:00:00.000Z",
+    "targetPosition": "Full Stack Developer",
+    "keywords": {
+      "technical": [
+        "React",
+        "Vue",
+        "TypeScript",
+        "Laravel",
+        "Node.js",
+        "PostgreSQL"
+      ],
+      "soft": ["Communication", "Problem-solving", "Teamwork"]
+    }
+  },
   "contactInfo": {
     "location": "Havana, Cuba",
     "phone": "+53 5476-1244",
@@ -8,7 +26,7 @@
   "summary": "Frontend Developer with 6+ years delivering reliable, production-ready web applications for clients across Spain, US, and Latin America, with strong backend development expertise. Specialized in building high-performance interfaces that drive business results through Web Vitals optimization, SEO, and seamless API integrations.",
   "skills": {
     "technical": "Vue, Nuxt, React, Next, Angular, Astro, Sanity, TypeScript, JavaScript, HTML, CSS, Tailwind, Vuetify, Figma, Laravel, Yii, PHP, Node.js, RESTful APIs, PostgreSQL, AWS S3, CI/CD, Git, WordPress, WooCommerce",
-    "languages": "English (Professional - B2), Spanish (Native)"
+    "languages": "English (B2 - Professional), Spanish (Native)"
   },
   "education": [
     {

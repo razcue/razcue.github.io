@@ -5,12 +5,25 @@
  * Resume Builder Script
  *
  * Builds an ATS-friendly HTML resume from a JSON config and converts to PDF.
- * Tracks build history for easy rebuilds.
+ * Automatically merges contact info and education from default.json.
+ * Tracks build history metadata for easy rebuilds.
  *
  * Usage:
  *   node build-resume.js [config-name]
+ *   node build-resume.js 2025-02-10-google-senior-frontend-engineer
  *   node build-resume.js default
- *   node build-resume.js tailored-react-engineer
+ *
+ * Config files:
+ *   - resume-builder/configs/default.json (base profile, contact, education)
+ *   - resume-builder/configs/YYYY-MM-DD-{company}-{role}.json (tailored resumes)
+ *
+ * The script will:
+ *   1. Load the config
+ *   2. Merge missing contactInfo/education from default.json
+ *   3. Render HTML from template
+ *   4. Convert to PDF
+ *   5. Update position-history.json with metadata entry
+ *   6. Save PDF to public/resume.pdf (or public/Rayko_Azcue_Resume.pdf for default)
  */
 
 const fs = require('fs');
@@ -20,6 +33,7 @@ const puppeteer = require('puppeteer');
 
 const CONFIGS_DIR = path.join(__dirname, 'configs');
 const TEMPLATES_DIR = path.join(__dirname, 'templates');
+const DEFAULT_CONFIG_FILE = path.join(__dirname, 'configs', 'default.json');
 const POSITION_HISTORY_FILE = path.join(__dirname, 'position-history.json');
 const OUTPUT_DIR = path.join(__dirname, '..', 'public');
 
@@ -41,6 +55,45 @@ function loadConfig(configName) {
 
   const raw = fs.readFileSync(configPath, 'utf8');
   return JSON.parse(raw);
+}
+
+/**
+ * Load default config (for fallback values)
+ */
+function loadDefaultConfig() {
+  if (!fs.existsSync(DEFAULT_CONFIG_FILE)) {
+    console.warn('⚠️  Default config not found. Using minimal defaults.');
+    return {
+      contactInfo: {
+        location: 'Havana, Cuba',
+        email: 'razcue@yandex.com',
+        phone: '+53 5476-1244',
+        website: 'razcue.github.io',
+      },
+      education: [],
+    };
+  }
+
+  const raw = fs.readFileSync(DEFAULT_CONFIG_FILE, 'utf8');
+  return JSON.parse(raw);
+}
+
+/**
+ * Merge config with defaults
+ * Prioritizes config values, uses defaults for missing contactInfo/education
+ */
+function mergeWithDefaults(config, defaults) {
+  return {
+    ...config,
+    contactInfo: {
+      ...defaults.contactInfo,
+      ...(config.contactInfo || {}),
+    },
+    education: config.education || defaults.education || [],
+    summary: config.summary || '',
+    skills: config.skills || defaults.skills || {},
+    experience: config.experience || [],
+  };
 }
 
 /**
@@ -166,22 +219,27 @@ async function buildResume(configName, positionJsonPath) {
     // Register Handlebars helpers
     registerHelpers();
 
-    // Load config (contactInfo, education, experience)
+    // Load config
     console.log('1️⃣  Loading configuration...');
     const config = loadConfig(configName);
+
+    // Load defaults and merge
+    console.log('2️⃣  Loading defaults and merging...');
+    const defaults = loadDefaultConfig();
+    const mergedConfig = mergeWithDefaults(config, defaults);
     console.log(`   ✅ Loaded config: ${configName}`);
     console.log(
-      `   📇 Contact: ${config.contactInfo.email} · ${config.contactInfo.location}`
+      `   📇 Contact: ${mergedConfig.contactInfo.email} · ${mergedConfig.contactInfo.location}`
     );
 
     // Load template
-    console.log('\n2️⃣  Loading template...');
+    console.log('\n3️⃣  Loading template...');
     const templateSource = loadTemplate('harvard-template');
     console.log('   ✅ Template loaded');
 
     // Render HTML
-    console.log('\n3️⃣  Rendering HTML...');
-    const html = renderResume(templateSource, config);
+    console.log('\n4️⃣  Rendering HTML...');
+    const html = renderResume(templateSource, mergedConfig);
     console.log('   ✅ HTML rendered');
 
     // Save HTML (for debugging)
@@ -190,7 +248,7 @@ async function buildResume(configName, positionJsonPath) {
     console.log(`   📝 HTML saved: ${htmlOutputPath}`);
 
     // Convert to PDF
-    console.log('\n4️⃣  Converting to PDF...');
+    console.log('\n5️⃣  Converting to PDF...');
 
     // Use descriptive filename for default resume, generic for position-specific
     const pdfFilename = positionJsonPath
@@ -203,50 +261,25 @@ async function buildResume(configName, positionJsonPath) {
 
     // Save to position history only if a position JSON was provided
     if (positionJsonPath) {
-      console.log('\n5️⃣  Building position history entry...');
+      console.log('\n6️⃣  Building position history entry...');
 
-      let positionData = {};
-      try {
-        const raw = fs.readFileSync(positionJsonPath, 'utf8');
-        positionData = JSON.parse(raw);
-      } catch (e) {
-        // If parsing fails, use plain text description
-        positionData = {
-          description: fs.readFileSync(positionJsonPath, 'utf8'),
-        };
-      }
+      // Extract metadata from config
+      const configMetadata = config.metadata || {};
 
-      // Minimal metadata extraction (prefer explicit fields in position JSON)
-      const metadata = {
-        language: positionData.language || 'en',
-        targetPosition: positionData.targetPosition || positionData.title || '',
-        keywords: positionData.keywords || { technical: [], soft: [] },
-        client: positionData.client || null,
-        dateBuilt: new Date().toISOString(),
-      };
-
-      // Simple generated cover letter and email (placeholders; can be edited later)
-      const coverLetter =
-        positionData.coverLetter ||
-        `Dear Hiring Team,\n\nI am excited to apply for the ${metadata.targetPosition} role${metadata.client ? ' at ' + metadata.client : ''}. I bring hands-on experience building production front-end applications, with a focus on performance, accessibility, and measurable business impact. Attached is a tailored resume highlighting relevant achievements.\n\nSincerely,\nRayko Azcue Pérez`;
-
-      const emailLetter =
-        positionData.emailLetter ||
-        `Hi ${metadata.client || 'Hiring Team'},\n\nI've attached my resume for the ${metadata.targetPosition} role. I look forward to discussing how my experience can help your team.\n\nBest regards,\nRayko`;
-
+      // Metadata entry (lightweight, only essential info)
       const historyEntry = {
-        id: `pos-${new Date().toISOString().replace(/[:.]/g, '-')}`,
+        id: configMetadata.id || configName,
         timestamp: new Date().toISOString(),
-        metadata,
-        description: positionData.description || positionData,
-        coverLetter,
-        emailLetter,
-        resume: {
-          contactInfo: config.contactInfo,
-          education: config.education,
-          experience: config.experience,
+        configFilename: `${configName}.json`,
+        metadata: {
+          targetPosition: configMetadata.targetPosition || config.summary || '',
+          company: configMetadata.company || '',
+          language: configMetadata.language || 'en',
+          keywords: configMetadata.keywords || { technical: [], soft: [] },
+          applicationDeadline: configMetadata.applicationDeadline || null,
+          status: configMetadata.status || 'draft',
+          dateCreated: configMetadata.dateCreated || new Date().toISOString(),
         },
-        outputFile: pdfOutputPath,
       };
 
       savePositionHistory(historyEntry);
@@ -257,9 +290,9 @@ async function buildResume(configName, positionJsonPath) {
     console.log('\n✅ Resume build complete!\n');
     console.log(`📊 Summary:`);
     console.log(
-      `   - Contact: ${config.contactInfo.email} · ${config.contactInfo.location}`
+      `   - Contact: ${mergedConfig.contactInfo.email} · ${mergedConfig.contactInfo.location}`
     );
-    console.log(`   - Experiences: ${config.experience.length}`);
+    console.log(`   - Experiences: ${mergedConfig.experience.length}`);
     console.log(`   - Output: ${pdfOutputPath}\n`);
   } catch (error) {
     console.error('\n❌ Build failed:', error.message);

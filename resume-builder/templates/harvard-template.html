@@ -166,6 +166,17 @@
     </div>
     {{/if}}
 
+    <!-- Technical Skills -->
+    {{#if skills}}
+    <div class="section">
+      <div class="section-title">Skills</div>
+      <p style="margin-bottom: 4px">
+        <strong>Technologies:</strong> {{skills.technical}}
+      </p>
+      <p><strong>Languages:</strong> {{skills.languages}}</p>
+    </div>
+    {{/if}}
+
     <!-- Education -->
     <div class="section">
       <div class="section-title">Education</div>
@@ -176,18 +187,7 @@
           <span class="location">{{location}}</span>
         </div>
         <div class="position-header">
-          <span class="position-title"
-            >{{degree}}{{#if certificationUrl}} (<a
-              href="{{certificationUrl}}"
-              target="_blank"
-              style="
-                color: #000;
-                text-decoration: underline;
-                font-weight: normal;
-              "
-              >{{certificationText}}</a
-            >){{/if}}</span
-          >
+          <span class="position-title">{{degree}}</span>
           <span class="date-range">{{date}}</span>
         </div>
       </div>
@@ -196,7 +196,7 @@
 
     <!-- Experience -->
     <div class="section">
-      <div class="section-title">Experience</div>
+      <div class="section-title">Selected Experience</div>
       {{#each experience}}
       <div class="entry">
         <div class="entry-header">
@@ -218,16 +218,5 @@
       </div>
       {{/each}}
     </div>
-
-    <!-- Technical Skills -->
-    {{#if skills}}
-    <div class="section">
-      <div class="section-title">Skills</div>
-      <p style="margin-bottom: 4px">
-        <strong>Technologies:</strong> {{skills.technical}}
-      </p>
-      <p><strong>Languages:</strong> {{skills.languages}}</p>
-    </div>
-    {{/if}}
   </body>
 </html>
