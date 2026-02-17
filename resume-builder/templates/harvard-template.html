@@ -173,6 +173,11 @@
       <p style="margin-bottom: 4px">
         <strong>Technologies:</strong> {{skills.technical}}
       </p>
+      {{#if skills.additional}}
+      <p style="margin-bottom: 4px">
+        <strong>Additional:</strong> {{skills.additional}}
+      </p>
+      {{/if}}
       <p><strong>Languages:</strong> {{skills.languages}}</p>
     </div>
     {{/if}}

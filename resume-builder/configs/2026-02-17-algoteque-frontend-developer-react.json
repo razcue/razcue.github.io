@@ -1,0 +1,132 @@
+{
+  "metadata": {
+    "id": "2026-02-17-algoteque-frontend-developer-react",
+    "configName": "2026-02-17-algoteque-frontend-developer-react",
+    "language": "en",
+    "dateCreated": "2026-02-17T00:00:00.000Z",
+    "dateBuilt": null,
+    "targetPosition": "Frontend Developer (React)",
+    "applicationType": "company page",
+    "jobLink": "https://jaabz.com/jobs/160057-frontend-developer-react",
+    "client": "ALGOTEQUE Innovation Hub",
+    "clientWebsite": "https://algoteque.com/",
+    "positionModel": "remote",
+    "location": "Poland (Fully Remote)",
+    "keywords": {
+      "technical": [
+        "React",
+        "TypeScript",
+        "REST APIs",
+        "Sass",
+        "RxJS",
+        "Axios",
+        "JWT",
+        "OAuth",
+        "Component Architecture"
+      ],
+      "soft": ["Code Review", "Collaboration", "Clean Code", "Remote Work"]
+    }
+  },
+  "contactInfo": {
+    "location": "Havana, Cuba",
+    "phone": "+53 5476-1244",
+    "email": "razcue@yandex.com",
+    "website": "razcue.github.io"
+  },
+  "summary": "Frontend Developer with 7+ years building scalable web applications, including React and TypeScript projects in SaaS and enterprise environments. Proven track record in REST API integration, authentication systems (OAuth2, JWT), and component architecture. Solid understanding of OOP principles with experience in C#/.NET. Passionate about clean code, performance optimization, and delivering impactful solutions in collaborative remote teams.",
+  "skills": {
+    "technical": "React, Next, Vue, Angular, TypeScript, JavaScript, Sass/SCSS, HTML, CSS, Tailwind, REST APIs, OAuth2, JWT, RxJS, Redux, Zuztand, PrimeReact, Laravel, PHP, Node.js, C#, .NET, PostgreSQL, Axios, CI/CD, Git",
+    "additional": "Team Leadership, Mentoring, Code Review, Figma to Code, Jira, Agile, OOP Principles, Clean Code, Remote Collaboration",
+    "languages": "English (C1 - Advanced), Spanish (Native)"
+  },
+  "education": [
+    {
+      "institution": "University of Informatics Sciences",
+      "degree": "Computer Sciences Engineer - Bachelor's degree",
+      "location": "Havana, Cuba",
+      "date": "Sep 2013 - Jul 2018"
+    },
+    {
+      "institution": "freeCodeCamp",
+      "degree": "Responsive Web Design Certificate",
+      "location": "Online",
+      "date": "2021"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Blue Creator Agency | Kimia Group",
+      "title": "Senior Front End Developer",
+      "location": "Remote, Madrid, Spain",
+      "dateRange": "Jan 2025 – Nov 2025",
+      "bullets": [
+        "Delivered front end solutions for internal CMS platform and consumer-facing client app in monetization/adTech space, resolving 120+ Jira tasks while translating Figma designs into pixel-perfect, responsive UI",
+        "Migrated 40+ Vue components from Vuetify to Tailwind; reduced bundle size by 19% and improved LCP from 9.1s to 6.6s"
+      ],
+      "skills": "Vue, Nuxt, TypeScript, JavaScript, Tailwind, Vuetify, Sass, Figma to Code"
+    },
+    {
+      "company": "BSE America",
+      "title": "Lead Developer",
+      "location": "Remote, Panama",
+      "dateRange": "Jan 2024 – Nov 2024",
+      "bullets": [
+        "Architected RESTful APIs with OAuth2/Laravel Passport authentication for a CRM/CMS that serve as a back office solution for a store in WooCommerce, ensuring secure API communication with 100% compliance with Panama's electronic billing system",
+        "Established CI/CD pipelines and code quality standards; conducted technical code reviews and mentored 3 developers, improving review approval rates from 40% to 85%"
+      ],
+      "skills": "Laravel, PHP, REST APIs, OAuth2, JWT, PostgreSQL, Vue, TypeScript, JavaScript, Vuetify, SCSS"
+    },
+    {
+      "company": "EncodeBiz",
+      "title": "Front End Developer",
+      "location": "Remote, Madrid, Spain",
+      "dateRange": "Nov 2023 – Jan 2024",
+      "bullets": [
+        "Spearheaded React front-end development for a padel tournament system using TypeScript, PrimeReact, and Redux; translated Figma designs into pixel-perfect UI and increased admin workflow completion by ~20%",
+        "Integrated React UI with Node.js/Express REST API, handling authentication and data synchronization; implemented SSO, authentication, and RBAC (Role-Based Access Control) for the admin dashboard"
+      ],
+      "skills": "React, TypeScript, JavaScript, PrimeReact, Sass, RxJS, Redux, Axios, Figma to Code"
+    }
+  ],
+  "artifacts": {
+    "coverLetter": [
+      "Dear Hiring Manager,",
+      "",
+      "I am excited to apply for the Frontend Developer position at ALGOTEQUE for your aviation industry project. With 7+ years of experience building scalable web applications—including hands-on React and TypeScript development—I am confident in my ability to contribute to your team from day one.",
+      "",
+      "At Blue Creator Agency | Kimia Group, I delivered front-end solutions for internal CMS platforms and consumer-facing apps in the monetization/adTech space, resolving 120+ Jira tasks while translating Figma designs into pixel-perfect, responsive UIs. I also migrated 40+ Vue components from Vuetify to Tailwind, reducing bundle size by 19% and improving LCP performance.",
+      "",
+      "At BSE America, I architected RESTful APIs with OAuth2/Laravel Passport authentication for a CRM/CMS that served as a back office solution for a WooCommerce store. This experience gives me deep expertise in secure API authentication patterns and back-office system architecture.",
+      "",
+      "At EncodeBiz, I spearheaded React front-end development for a padel tournament system using TypeScript and Redux. I also implemented SSO, authentication, and RBAC for the admin dashboard—experience directly relevant to your authentication and authorization requirements.",
+      "",
+      "I am passionate about clean code, component reusability, and collaborative development through code reviews. The fully remote B2B arrangement aligns perfectly with my experience working across distributed teams in Spain, Panama, and the US.",
+      "",
+      "I would welcome the opportunity to discuss how my React expertise, TypeScript proficiency, and REST API experience can support ALGOTEQUE's aviation project. Thank you for considering my application.",
+      "",
+      "Best regards,",
+      "Rayko Azcue"
+    ],
+    "emailPitch": [
+      "Hi there,",
+      "",
+      "I came across ALGOTEQUE's Frontend Developer opening for the aviation project and wanted to reach out. I'm a Frontend Developer with 7+ years of experience, including recent React/TypeScript work (Redux, PrimeReact) and strong REST API integration skills.",
+      "",
+      "Key highlights that match your needs:",
+      "• Built React + TypeScript frontends with reusable component architecture",
+      "• Implemented SSO, authentication, and RBAC at EncodeBiz",
+      "• Architected RESTful APIs with OAuth2/Laravel Passport authentication at BSE America",
+      "• Delivered CMS frontends and migrated 40+ components at Kimia Group",
+      "• Experienced in Sass, code reviews, and CI/CD workflows",
+      "",
+      "I'm currently working remote from Cuba and open to B2B contracts. Would love to discuss how I can contribute to your aviation project.",
+      "",
+      "Best,",
+      "Rayko Azcue",
+      "razcue@yandex.com | razcue.github.io"
+    ],
+    "socialMessage": [
+      "Hi! I noticed ALGOTEQUE is hiring a Frontend Developer for an aviation project. I'm a React/TypeScript developer with 7+ years experience, SSO/RBAC implementation, OAuth2 API architecture, and CMS development. Currently remote and open to B2B. Would love to connect and learn more about the role!"
+    ]
+  }
+}
