@@ -1,15 +1,137 @@
 [
   {
+    "configId": "2026-02-17-algoteque-frontend-developer-react",
+    "company": "ALGOTEQUE Innovation Hub",
+    "position": "Frontend Developer (React)",
+    "appliedDate": "2026-02-17",
+    "status": "applied",
+    "positionModel": "remote",
+    "location": "Poland (Fully Remote)",
+    "notes": {
+      "model": "B2B contract, fully remote work. No relocation needed.",
+      "company": "IT consultancy firm helping startups, mid-sized and large corporations deliver innovative technologies. Project is for a client in the aviation industry.",
+      "techStack": "React, TypeScript, RxJS, Axios, Sass, REST APIs, JWT, OAuth, C#/.NET (bonus)",
+      "role": "Frontend Developer - Build and maintain React applications with TypeScript, implement reusable component architecture, manage state with RxJS, handle API integration with Axios, style with Sass, integrate REST APIs with authentication/authorization."
+    }
+  },
+  {
+    "configId": "2026-02-16-cuba-telegram-fintech-backend-developer",
+    "company": "Fintech SaaS Platform (Cuba/Telegram)",
+    "position": "Backend Developer - PHP/Symfony",
+    "appliedDate": "2026-02-17",
+    "status": "applied",
+    "positionModel": "remote",
+    "location": "Remote",
+    "notes": {
+      "model": "100% Remote position. Application via Telegram DM.",
+      "company": "Fintech/procurement SaaS platform focused on financial analysis, payment terms negotiation, spend management, and value proposition tracking.",
+      "techStack": "PHP 8.1+, Symfony 6.4, API Platform 3.x, GraphQL, Doctrine ORM, PostgreSQL 16, MongoDB, Elasticsearch, RabbitMQ, Docker, AWS, Microsoft Graph API, Firebase, Google Places API, Amazon SES, Sentry, PHPUnit, Mockery, Faker, Git, PHPStan, PHP-CS-Fixer, PSR-12",
+      "role": "Backend Developer responsible for designing, developing and maintaining RESTful APIs using Symfony and API Platform, optimizing Doctrine queries, implementing async processing, integrating third-party services, writing automated tests, and contributing to architectural decisions."
+    }
+  },
+  {
+    "configId": "2026-02-16-hireboost-senior-software-engineer",
+    "company": "HireBoost",
+    "position": "Senior Software Engineer",
+    "appliedDate": "2026-02-16",
+    "status": "ready-to-apply",
+    "positionModel": "remote-global",
+    "location": "Remote (LATAM-based, CST)",
+    "notes": {
+      "model": "100% Remote role open to LATAM-based candidates willing to work CST timezone. Salary range: $4,225 - $5,400 USD/monthly.",
+      "company": "Professional software development agency and product studio founded in 2019, supporting American tech companies and startups. Incubates consumer products through internal app studio. Values: honesty, reliability, growth.",
+      "techStack": "React, TypeScript, Capacitor (Mobile), PHP (Laravel), Stripe SDK, Docker, Kubernetes",
+      "role": "Senior Software Engineer - Design, develop and maintain features across web and mobile applications. Work with emerging technologies (AI, spatial computing, blockchain). Translate product requirements into scalable systems. Shape technical direction and make architectural decisions."
+    }
+  },
+  {
+    "configId": "2026-02-15-lgg-advisors-senior-full-stack",
+    "company": "LGG Advisors",
+    "position": "Senior Full-Stack Software Engineer",
+    "appliedDate": "2026-02-15",
+    "status": "applied",
+    "positionModel": "hybrid",
+    "location": "Porto or Lisbon, Portugal",
+    "notes": {
+      "model": "Hybrid position in Porto or Lisbon office. 50% work from home. Full VISA sponsorship and relocation support for candidates outside Portugal/Spain.",
+      "company": "Financial sector consultancy with offices in Porto, Lisbon, London, Madrid. High added-value services to global financial firms. Fast-growing, innovation-focused culture.",
+      "techStack": "TypeScript/JavaScript, Vue.js/React/Angular, Node.js, SQL/NoSQL, Docker/Kubernetes, CI/CD, Jira, Bitbucket, Jenkins",
+      "role": "Senior Full-Stack Software Engineer. Design and develop scalable applications, participate in architecture decisions, implement CI/CD, conduct code reviews and mentoring, collaborate with globally distributed teams. Financial sector clients."
+    }
+  },
+  {
+    "configId": "2026-02-15-haystack-people-senior-php-developer",
+    "company": "Haystack People",
+    "position": "Senior PHP Developer",
+    "appliedDate": "2026-02-15",
+    "status": "applied",
+    "positionModel": "hybrid",
+    "location": "Netherlands",
+    "notes": {
+      "model": "Hybrid working model based in Netherlands. Visa sponsorship available for relocation - candidate will live in Netherlands once sponsored. Salary up to €75K + 8% holiday allowance.",
+      "company": "One of the largest home & living boulevards in Netherlands and Belgium. Fast-growing scale-up with 250+ employees. Major technical transformation from legacy to modern Symfony-based architecture.",
+      "techStack": "PHP, Symfony (target architecture) or Laravel, MySQL/PostgreSQL, CI/CD, AWS/GCP, API-driven systems, middleware",
+      "role": "Senior PHP Developer in 5-person team. Building and modernizing ERP and Warehouse Systems. Contributing to architectural decisions, platform modernization from legacy to modern stack. Coaching colleagues and elevating engineering standards."
+    }
+  },
+  {
+    "configId": "2026-02-15-the-big-phone-store-backend-developer",
+    "company": "The Big Phone Store",
+    "position": "Backend Developer (Laravel)",
+    "appliedDate": "2026-02-15",
+    "status": "applied",
+    "positionModel": "remote-global",
+    "location": "Remote (Global) or Hybrid (UK)",
+    "notes": {
+      "model": "Remote-friendly (global) or hybrid (UK). Apple equipment provided for UK developers. UK visa sponsorship after 6-12 months based on performance. 28 days paid holiday + birthday off. Salary: £27,000 - £50,000. RE-APPLIED: Initially sent to customer service email, company responded with recruitment email and asked to resubmit application to correct address.",
+      "company": "eCommerce company focused on sustainability (tech/mobile devices). Full-time, permanent role. Inclusive, values-driven culture.",
+      "techStack": "Laravel 8.4, PHP 7.4, Vue.js, Nuxt.js, Redis, RabbitMQ, Elasticsearch, Horizon, OAuth2/Laravel Passport",
+      "role": "Backend Developer architecting and maintaining scalable backend systems for eCommerce operations and internal tools. Building APIs and integrations. Collaborating with frontend team using Vue/Nuxt. Contributing to architecture decisions."
+    }
+  },
+  {
+    "configId": "2026-02-15-amberes-founding-engineer",
+    "company": "Amberes",
+    "position": "Founding Engineer",
+    "appliedDate": "2026-02-15",
+    "status": "applied",
+    "positionModel": "hybrid",
+    "location": "London, UK",
+    "notes": {
+      "model": "Hybrid position in London office with flexible working. Visa sponsorship available. US relocation potential. £90K–£150K base + strong equity.",
+      "company": "High-growth cyber and SaaS platform for identity, access, and security automation. Tier-1 investor backed. Early-stage, product-led with enterprise customers in financial services, tech, and regulated sectors.",
+      "techStack": "TypeScript, JavaScript, SQL-based datastores, modern web frameworks, secure cloud infrastructure, Infrastructure-as-Code",
+      "role": "Founding Engineer in core platform team. Broad ownership across systems/services. Direct exposure to enterprise-scale security use cases. Shape product from early stage through scale."
+    }
+  },
+  {
+    "configId": "2026-02-13-catawiki-software-engineer",
+    "company": "Catawiki",
+    "position": "Backend Software Engineer",
+    "appliedDate": "2026-02-13",
+    "status": "applied",
+    "positionModel": "hybrid",
+    "location": "Lisbon, Portugal",
+    "notes": {
+      "model": "Hybrid position based in Lisbon office (minimum 2 days per week in office). Excellent relocation package offered for candidates living outside Portugal including relocation assistance, 22 days holiday + national holidays, health insurance, meal card per working day, working-from-home allowance, flexible working hours, and holistic wellbeing programme.",
+      "company": "High-scale e-commerce marketplace for special objects. 75k auctions/week, 10M+ monthly visitors. 850+ employees across Amsterdam, Paris, Lisbon offices. Values: ownership, growth mindset, customer passion.",
+      "techStack": "Ruby (main stack), PostgreSQL, microservices architecture, REST APIs, high availability/low latency systems, CI/CD, AWS",
+      "role": "Backend Software Engineer supporting one of 3 verticals (Demand, Supply, or Fulfilment). Small autonomous Agile teams. End-to-end responsibility for microservices. 4+ years experience required in e-commerce/fintech/SaaS."
+    }
+  },
+  {
     "configId": "2026-02-11-proxify-senior-frontend-react",
     "company": "Proxify",
     "position": "Senior Frontend Developer (React.js)",
     "appliedDate": "2026-02-11",
     "status": "applied",
-    "notes": "Remote full-time role for client via Proxify. Focus: React, CI/CD, performance optimization, best practices. 5000+ developer community.",
-    "artifacts": {
-      "resume": "public/Rayko_Azcue_Resume.pdf",
-      "coverLetter": "inline",
-      "emailPitch": "inline"
+    "positionModel": "remote-global",
+    "location": "Remote",
+    "notes": {
+      "model": "Fully remote position. Work from anywhere globally. No relocation needed.",
+      "company": "Remote full-time role via Proxify talent network. 5000+ developer community. Focus on matching developers with client projects.",
+      "techStack": "React, CI/CD, performance optimization, best practices",
+      "role": "Senior Frontend Developer working with React.js for client projects via Proxify platform."
     }
   }
 ]
