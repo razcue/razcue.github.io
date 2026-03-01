@@ -133,6 +133,11 @@ function registerHelpers() {
     }
     return ret;
   });
+
+  // Helper for equality comparison
+  Handlebars.registerHelper('eq', function (a, b) {
+    return a === b;
+  });
 }
 
 /**
@@ -141,9 +146,10 @@ function registerHelpers() {
 function renderResume(templateSource, config) {
   const template = Handlebars.compile(templateSource);
 
-  // Config now contains: contactInfo, summary, skills, education, experience
+  // Config now contains: contactInfo, summary, skills, education, experience, metadata
   const data = {
     // Header name is fixed in template (Rayko Azcue Pérez)
+    language: config.metadata?.language || 'en',
     location: config.contactInfo.location || '',
     phone: config.contactInfo.phone || '',
     email: config.contactInfo.email || '',

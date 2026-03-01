@@ -1,5 +1,52 @@
 [
   {
+    "configId": "2026-02-21-deel-software-engineer",
+    "company": "Deel",
+    "position": "Software Engineer",
+    "appliedDate": "2026-02-21",
+    "status": "applied",
+    "positionModel": "remote",
+    "location": "LATAM (Remote)",
+    "salary": "$60,000 USD/year",
+    "notes": {
+      "model": "Remote-first company, 7,000 team members across 100+ countries. $17.3B valuation, $1B ARR. Fastest-growing SaaS company in history.",
+      "company": "Deel - All-in-one payroll and HR platform for global teams. HRIS, payroll, compliance, benefits, performance, equipment management. CNBC Disruptor 50, Forbes Cloud 100.",
+      "techStack": "TypeScript, React.js, Node.js, State Management (Redux/Pinia/Zustand), HTML5, CSS3, SaaS 24/7",
+      "role": "Software Engineer - Frontend focused with full-stack capabilities. Design, code, test, maintain applications. Collaborative remote-first culture. Business-focused development.",
+      "applicationLimits": "Candidates may not apply more than 3 times in any 60 day span for any job. Candidates may not re-apply to any role within 30 days if not presented with an offer. Candidates may not re-apply to the same role within 90 days if not presented with an offer."
+    }
+  },
+  {
+    "configId": "2026-02-19-cyberpuerta-frontend-web-developer",
+    "company": "Cyberpuerta",
+    "position": "Frontend Web Developer",
+    "appliedDate": "2026-02-19",
+    "status": "applied",
+    "positionModel": "remote",
+    "location": "México (Remoto)",
+    "notes": {
+      "model": "100% remoto Lunes a Viernes formato flexible. Líder e-commerce tecnología en México (TOP 200 sitios más visitados).",
+      "company": "Cyberpuerta - Empresa líder de e-commerce en productos de tecnología en México. TOP 200 sitios web más visitados. Cultura de innovación continua.",
+      "techStack": "Vue.js, React, Nuxt.js, Next.js, TypeScript, Storybook, SEO, Core Web Vitals, JavaScript, HTML5, CSS3, Tailwind",
+      "role": "Frontend Web Developer - Mantener proyectos heredados y migrar a tecnologías modernas. Enfoque en performance, SEO, Core Web Vitals."
+    }
+  },
+  {
+    "configId": "2026-02-17-positivelinks-laravel-vuejs-developer",
+    "company": "PositiveLinks",
+    "position": "Laravel/Vue.js Developer",
+    "appliedDate": "2026-02-17",
+    "status": "applied",
+    "positionModel": "remote-global",
+    "location": "Remote (Work From Anywhere)",
+    "notes": {
+      "model": "Fully Flexible Remote Work – perform from anywhere. Australian market leader expanding worldwide.",
+      "company": "PositiveLinks - Australian market leader expanding worldwide. High-performance culture, 10X growth mindset, fast career growth with 6-month performance reviews.",
+      "techStack": "Laravel 10+, Vue.js, Nuxt.js, MySQL, RESTful APIs, AWS, Git, Sass, TypeScript, Stripe API, HTML5, CSS3, JavaScript",
+      "role": "Laravel/Vue.js Developer - Develop high-quality applications using Laravel and Vue.js/Nuxt.js, build RESTful APIs with clean architecture, optimize MySQL queries, collaborate with designers and developers, participate in deployments."
+    }
+  },
+  {
     "configId": "2026-02-17-algoteque-frontend-developer-react",
     "company": "ALGOTEQUE Innovation Hub",
     "position": "Frontend Developer (React)",
@@ -30,18 +77,20 @@
     }
   },
   {
-    "configId": "2026-02-16-hireboost-senior-software-engineer",
-    "company": "HireBoost",
-    "position": "Senior Software Engineer",
-    "appliedDate": "2026-02-16",
-    "status": "ready-to-apply",
-    "positionModel": "remote-global",
-    "location": "Remote (LATAM-based, CST)",
+    "configId": "2026-02-21-deel-software-engineer",
+    "company": "Deel",
+    "position": "Software Engineer",
+    "appliedDate": "2026-02-21",
+    "status": "applied",
+    "positionModel": "remote",
+    "location": "LATAM (Remote)",
+    "salary": "$60,000 USD/year",
     "notes": {
-      "model": "100% Remote role open to LATAM-based candidates willing to work CST timezone. Salary range: $4,225 - $5,400 USD/monthly.",
-      "company": "Professional software development agency and product studio founded in 2019, supporting American tech companies and startups. Incubates consumer products through internal app studio. Values: honesty, reliability, growth.",
-      "techStack": "React, TypeScript, Capacitor (Mobile), PHP (Laravel), Stripe SDK, Docker, Kubernetes",
-      "role": "Senior Software Engineer - Design, develop and maintain features across web and mobile applications. Work with emerging technologies (AI, spatial computing, blockchain). Translate product requirements into scalable systems. Shape technical direction and make architectural decisions."
+      "model": "Remote-first company, 7,000 team members across 100+ countries. $17.3B valuation, $1B ARR. Fastest-growing SaaS company in history.",
+      "company": "Deel - All-in-one payroll and HR platform for global teams. HRIS, payroll, compliance, benefits, performance, equipment management. CNBC Disruptor 50, Forbes Cloud 100.",
+      "techStack": "TypeScript, React.js, Node.js, State Management (Redux/Pinia/Zustand), HTML5, CSS3, SaaS 24/7",
+      "role": "Software Engineer - Frontend focused with full-stack capabilities. Design, code, test, maintain applications. Collaborative remote-first culture. Business-focused development.",
+      "applicationLimits": "Candidates may not apply more than 3 times in any 60 day span for any job. Candidates may not re-apply to any role within 30 days if not presented with an offer. Candidates may not re-apply to the same role within 90 days if not presented with an offer."
     }
   },
   {

@@ -1,9 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="{{language}}">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{name}} - Resume</title>
+    <title>
+      Rayko Azcue Pérez - {{#if (eq language
+      "es")}}Currículum{{else}}Resume{{/if}}
+    </title>
     <style>
       * {
         margin: 0;
@@ -153,15 +156,23 @@
       <h1>Rayko Azcue Pérez</h1>
       <div class="header-divider"></div>
       <div class="contact-info">
-        {{location}} • {{phone}} • <a href="mailto:{{email}}">{{email}}</a> •
-        <a href="https://{{website}}" target="_blank">{{website}}</a>
+        {{#if (eq language "es")}} La Habana, Cuba • +53 5476-1244 •
+        <a href="mailto:razcue@yandex.com">razcue@yandex.com</a> •
+        <a href="https://razcue.github.io" target="_blank">razcue.github.io</a>
+        {{else}} Havana, Cuba • +53 5476-1244 •
+        <a href="mailto:razcue@yandex.com">razcue@yandex.com</a> •
+        <a href="https://razcue.github.io" target="_blank">razcue.github.io</a>
+        {{/if}}
       </div>
     </div>
 
     <!-- Professional Summary -->
     {{#if summary}}
     <div class="section">
-      <div class="section-title">Professional Summary</div>
+      <div class="section-title">
+        {{#if (eq language "es")}}Resumen Profesional{{else}}Professional
+        Summary{{/if}}
+      </div>
       <p style="text-align: justify; margin-bottom: 8px">{{summary}}</p>
     </div>
     {{/if}}
@@ -169,39 +180,96 @@
     <!-- Technical Skills -->
     {{#if skills}}
     <div class="section">
-      <div class="section-title">Skills</div>
+      <div class="section-title">
+        {{#if (eq language "es")}}Habilidades{{else}}Skills{{/if}}
+      </div>
       <p style="margin-bottom: 4px">
-        <strong>Technologies:</strong> {{skills.technical}}
+        <strong
+          >{{#if (eq language
+          "es")}}Tecnologías:{{else}}Technologies:{{/if}}</strong
+        >
+        {{skills.technical}}
       </p>
       {{#if skills.additional}}
       <p style="margin-bottom: 4px">
-        <strong>Additional:</strong> {{skills.additional}}
+        <strong
+          >{{#if (eq language
+          "es")}}Adicionales:{{else}}Additional:{{/if}}</strong
+        >
+        {{skills.additional}}
       </p>
       {{/if}}
-      <p><strong>Languages:</strong> {{skills.languages}}</p>
+      <p>
+        <strong
+          >{{#if (eq language "es")}}Idiomas:{{else}}Languages:{{/if}}</strong
+        >
+        {{skills.languages}}
+      </p>
     </div>
     {{/if}}
 
     <!-- Education -->
     <div class="section">
-      <div class="section-title">Education</div>
-      {{#each education}}
+      <div class="section-title">
+        {{#if (eq language "es")}}Educación{{else}}Education{{/if}}
+      </div>
+      {{#if (eq language "es")}}
+      <!-- Spanish Education -->
       <div class="entry">
         <div class="entry-header">
-          <span class="organization">{{institution}}</span>
-          <span class="location">{{location}}</span>
+          <span class="organization"
+            >Universidad de las Ciencias Informáticas</span
+          >
+          <span class="location">La Habana, Cuba</span>
         </div>
         <div class="position-header">
-          <span class="position-title">{{degree}}</span>
-          <span class="date-range">{{date}}</span>
+          <span class="position-title">Ingeniero en Ciencias Informáticas - Licenciatura</span>
+          <span class="date-range">Sep 2013 - Jul 2018</span>
         </div>
       </div>
-      {{/each}}
+      <div class="entry">
+        <div class="entry-header">
+          <span class="organization">freeCodeCamp</span>
+          <span class="location">Online</span>
+        </div>
+        <div class="position-header">
+          <span class="position-title">Responsive Web Design Certificate</span>
+          <span class="date-range">2021</span>
+        </div>
+      </div>
+      {{else}}
+      <!-- English Education -->
+      <div class="entry">
+        <div class="entry-header">
+          <span class="organization">University of Informatics Sciences</span>
+          <span class="location">Havana, Cuba</span>
+        </div>
+        <div class="position-header">
+          <span class="position-title"
+            >Computer Sciences Engineer - Bachelor's degree</span
+          >
+          <span class="date-range">Sep 2013 - Jul 2018</span>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <span class="organization">freeCodeCamp</span>
+          <span class="location">Online</span>
+        </div>
+        <div class="position-header">
+          <span class="position-title">Responsive Web Design Certificate</span>
+          <span class="date-range">2021</span>
+        </div>
+      </div>
+      {{/if}}
     </div>
 
     <!-- Experience -->
     <div class="section">
-      <div class="section-title">Selected Experience</div>
+      <div class="section-title">
+        {{#if (eq language "es")}}Experiencia Seleccionada{{else}}Selected
+        Experience{{/if}}
+      </div>
       {{#each experience}}
       <div class="entry">
         <div class="entry-header">
@@ -217,9 +285,6 @@
           <li>{{this}}</li>
           {{/each}}
         </ul>
-        <p style="margin-top: 4px; font-size: 10pt">
-          <strong>Technical Skills:</strong> {{skills}}
-        </p>
       </div>
       {{/each}}
     </div>
