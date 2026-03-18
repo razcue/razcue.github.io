@@ -18,7 +18,7 @@ const knowledgeBase = {
   education: [
     {
       institution: 'University of Informatics Sciences',
-      degree: "Computer Sciences Engineer - Bachelor's degree",
+      degree: "Bachelor's degree",
       location: 'Havana, Cuba',
       date: 'Sep 2013 - Jul 2018',
     },
@@ -367,33 +367,6 @@ export default async function handler(
   request: VercelRequest,
   response: VercelResponse
 ) {
-  const allowedOrigins = ['https://razcue.github.io'];
-
-  const origin = request.headers.origin || '';
-
-  if (allowedOrigins.includes(origin)) {
-    response.setHeader('Access-Control-Allow-Origin', origin);
-  } else {
-    response.setHeader(
-      'Access-Control-Allow-Origin',
-      'https://razcue.github.io'
-    );
-  }
-
-  response.setHeader('Access-Control-Allow-Credentials', 'true');
-  response.setHeader(
-    'Access-Control-Allow-Methods',
-    'GET,OPTIONS,PATCH,DELETE,POST,PUT'
-  );
-  response.setHeader(
-    'Access-Control-Allow-Headers',
-    'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version'
-  );
-
-  if (request.method === 'OPTIONS') {
-    return response.status(200).end();
-  }
-
   if (request.method !== 'POST') {
     return response.status(405).json({ error: 'Method not allowed' });
   }
