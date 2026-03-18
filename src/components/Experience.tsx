@@ -112,7 +112,7 @@ export default function Experience({ locale }: ExperienceProps) {
         </div>
       )}
 
-      <div className="w-full mt-[8dvh] lg:mt-0">
+      <div className="w-full mt-0">
         <h2 className="text-lg sm:text-2xl lg:text-4xl font-bold text-text mb-4 sm:mb-8 lg:mb-12">
           {t.experience.title}
         </h2>
@@ -157,7 +157,7 @@ export default function Experience({ locale }: ExperienceProps) {
 
           {/* Mobile Dot Navigation - Horizontal dots for mobile/tablet */}
           <div
-            className="flex lg:hidden justify-center gap-2 mb-4"
+            className="flex lg:hidden justify-center gap-3 mb-4"
             role="tablist"
             aria-label="Experience navigation"
           >
@@ -170,11 +170,11 @@ export default function Experience({ locale }: ExperienceProps) {
                 aria-label={`View ${exp.company} experience`}
                 onClick={() => setActiveTab(index)}
                 className={`
-                  w-3 h-3 rounded-full transition-all duration-300
+                  w-3 h-3 border-2 transition-all duration-500
                   ${
                     activeTab === index
-                      ? 'bg-accent w-8'
-                      : 'bg-text-secondary/30 hover:bg-text-secondary/50'
+                      ? 'border-accent bg-accent rotate-65 text-accent'
+                      : 'border-text-secondary opacity-30 text-text-secondary hover:text-accent'
                   }
                 `}
               />

@@ -14,7 +14,14 @@ export default function Navigation({ locale }: NavigationProps) {
     const hash = window.location.hash.replace('#', '');
     if (
       hash &&
-      ['about', 'open-to', 'experience', 'projects', 'contact'].includes(hash)
+      [
+        'about',
+        'open-to',
+        'experience',
+        'projects',
+        // 'this-site',
+        'contact',
+      ].includes(hash)
     ) {
       setActiveSection(hash);
     }
@@ -25,6 +32,7 @@ export default function Navigation({ locale }: NavigationProps) {
         'open-to',
         'experience',
         'projects',
+        // 'this-site',
         'contact',
       ];
       const mainContent = document.querySelector(
@@ -78,6 +86,7 @@ export default function Navigation({ locale }: NavigationProps) {
     { id: 'open-to', label: t.nav.openTo },
     { id: 'experience', label: t.nav.experience },
     { id: 'projects', label: t.nav.projects },
+    // { id: 'this-site', label: t.nav.thisSite },
     { id: 'contact', label: t.nav.contact },
   ];
 

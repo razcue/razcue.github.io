@@ -35,7 +35,7 @@ export default function JobStatus({ locale }: JobStatusProps) {
                   <span className="i-tabler-check w-5 h-5 text-accent" />
                   {role}
                   {i === 0 && (
-                    <span className="ml-2 px-2 py-0.5 text-xs border border-accent text-accent rounded-full">
+                    <span className="ml-0 sm:ml-2 px-2 pb-[0.02rem] pt-[0.1rem] text-[0.65rem] sm:text-base sm:pb-0.5 sm:pt-1 sm:px-3 border border-accent text-accent rounded-full">
                       {t.openTo.preferredRole}
                     </span>
                   )}

@@ -29,7 +29,7 @@ const currentLocale: Locale = (Astro.currentLocale as Locale) || 'en';
   <div id="portfolio-layout" class="min-h-screen flex overflow-x-hidden">
     <!-- Column 1: Hero & Navigation (No scroll) - Max width 640px -->
     <div
-      class="hidden lg:flex flex-col pt-0 py-8 justify-between overflow-y-hidden bg-bg w-97"
+      class="hidden lg:flex flex-col pt-0 py-8 justify-between overflow-y-hidden bg-bg w-full max-w-md min-w-80"
     >
       <div class="p-6 lg:p-8 space-y-6 md:space-y-8">
         <!-- Hero Section with Social Links -->
@@ -55,6 +55,7 @@ const currentLocale: Locale = (Astro.currentLocale as Locale) || 'en';
           <JobStatus locale={currentLocale} client:visible />
           <Experience locale={currentLocale} client:visible />
           <Projects locale={currentLocale} client:visible />
+          <!-- <ThisSite locale={currentLocale} client:visible /> -->
           <Contact locale={currentLocale} client:visible />
         </div>
       </div>
@@ -138,6 +139,9 @@ const currentLocale: Locale = (Astro.currentLocale as Locale) || 'en';
 
       // Wheel handling for desktop (one section at a time)
       const onWheel = (e: WheelEvent) => {
+        // Skip if chat is open - let chat handle its own scroll
+        if (document.body.classList.contains('chat-open')) return;
+
         if (isAnimating) {
           e.preventDefault();
           return;
@@ -158,6 +162,9 @@ const currentLocale: Locale = (Astro.currentLocale as Locale) || 'en';
 
       // Keyboard navigation
       window.addEventListener('keydown', (e) => {
+        // Skip if chat is open
+        if (document.body.classList.contains('chat-open')) return;
+
         const active = document.activeElement;
         if (
           active &&

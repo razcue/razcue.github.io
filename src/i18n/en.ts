@@ -3,6 +3,7 @@ export default {
   nav: {
     home: 'Home',
     about: 'About',
+    thisSite: 'This Site',
     openTo: 'Open To',
     experience: 'Experience',
     projects: 'Projects',
@@ -33,7 +34,7 @@ export default {
     greeting: "Hi, I'm",
     name: 'Rayko Azcue',
     title: 'Software Engineer',
-    subtitle: 'Front End Developer',
+    subtitle: 'Software Engineer',
     description:
       'I build exceptional digital experiences with modern web technologies.',
     cta: 'Get In Touch',
@@ -43,10 +44,13 @@ export default {
   // About Section
   about: {
     title: 'About Me',
+    beforeDescription: 'With more than',
+    yearsOfExperience: 'years of experience',
     description: [
-      'I specialize in bringing ideas to life through high-performance applications that drive real business results. With a primary focus on front end development and extensive backend experience, I create tailored solutions designed to boost conversions and meet your specific business objectives.',
+      ', I specialize in bringing ideas to life through high-performance applications that drive real business results. With a primary focus on extensive backend experience, I create tailored solutions front end development and designed to boost conversions and meet your specific business objectives.',
       'Every business is unique, and so are my solutions. I deliver personalized digital experiences using modern technologies, with a strong emphasis on Core Web Vitals and business metrics, translating your goals into measurable outcomes.',
     ],
+    githubStreak: 'GitHub Streak',
     siteMetrics: 'About This Site',
     siteMetricsDescription:
       'Built with performance and best practices in mind.',
@@ -54,6 +58,92 @@ export default {
     accessibility: 'Accessibility',
     bestPractices: 'Best Practices',
     seo: 'SEO',
+  },
+
+  // This Site Section
+  thisSite: {
+    title: 'This Site',
+    description:
+      'A high-performance portfolio built with modern web technologies.',
+    webVitals: 'Web Vitals',
+    featuresTitle: 'Features',
+    techStack: 'Tech Stack',
+    techStackItems: [
+      'Astro',
+      'React',
+      'TypeScript',
+      'Tailwind CSS',
+      'UnoCSS',
+      'Vercel',
+    ],
+    features: {
+      performance: 'High Performance',
+      design: 'Distinctive Design',
+      accessibility: 'WCAG Accessible',
+      seo: 'SEO Optimized',
+      i18n: 'i18n (EN/ES)',
+      responsive: 'Fully Responsive',
+      blog: 'Blog with MDX',
+      ai: {
+        chat: 'AI Chat Assistant',
+        resume: 'AI Resume Builder',
+        jobSearch: 'AI Job Search',
+      },
+    },
+    featureDescriptions: {
+      performance: [
+        'Zero-JS by default with Astro',
+        'Perfect Lighthouse scores',
+        'Optimized asset loading',
+      ],
+      design: [
+        'Unique non-generic aesthetic',
+        'Custom color scheme',
+        'Smooth animations',
+      ],
+      accessibility: [
+        'WCAG 2.1 AA compliant',
+        'Keyboard navigation',
+        'Screen reader support',
+      ],
+      seo: [
+        'Server-side rendering',
+        'Semantic HTML structure',
+        'Open Graph meta tags',
+      ],
+      i18n: [
+        'English & Spanish support',
+        'Auto locale detection',
+        'URL-based localization',
+      ],
+      responsive: [
+        'Mobile-first approach',
+        'Fluid typography',
+        'Adaptive layouts',
+      ],
+      blog: [
+        'MDX content support',
+        'Code syntax highlighting',
+        'RSS feed generation',
+      ],
+    },
+    aiFeatures: {
+      chat: [
+        'Conversational AI powered by LLMs',
+        'Resume context embedding',
+        'Code snippet highlighting',
+      ],
+      resume: [
+        'Tailored resume generation using JD',
+        'ATS-optimized formatting',
+        'PDF export capability',
+      ],
+      jobSearch: [
+        'Automated job discovery',
+        'Smart filtering by tech stack',
+        'One-click Easy Apply integration',
+      ],
+    },
   },
 
   // Experience Section

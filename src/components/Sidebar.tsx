@@ -2,6 +2,7 @@ import LanguageToggle from './LanguageToggle';
 import { useState, useEffect } from 'react';
 import ThemeToggle from './ThemeToggle';
 import { getTranslation, type Locale } from '../utils/i18n';
+import ChatWithToast from './ChatWithToast';
 
 interface SideBarProps {
   locale: Locale;
@@ -123,6 +124,7 @@ export default function Sidebar({
     { id: 'open-to' },
     { id: 'experience' },
     { id: 'projects' },
+    // { id: 'this-site' },
     { id: 'contact' },
   ];
 
@@ -150,7 +152,7 @@ export default function Sidebar({
       {/* Main Navigation - Only show on home page */}
       {showNavigation && (
         <>
-          <ul className="block lg:hidden space-y-4 mb-4 md:mb-6 pl-2">
+          <ul className="block lg:hidden space-y-4 mb-2 md:mb-6 pl-2">
             {navItems.map((item) => (
               <li key={item.id}>
                 <button
@@ -171,12 +173,12 @@ export default function Sidebar({
           </ul>
 
           {/* Vertical Line above links */}
-          <div className="block lg:hidden w-px flex-1 bg-text-secondary opacity-30 mb-4 md:mb-6 max-h-4 md:max-h-16 lg:max-h-32"></div>
+          <div className="block lg:hidden w-px flex-1 bg-text-secondary opacity-30 mb-2 md:mb-6 max-h-4 md:max-h-16 lg:max-h-32"></div>
         </>
       )}
 
       {/* Blog and Lab Links */}
-      <div className="block lg:hidden border-t border-surface mb-4 md:mb-6">
+      <div className="block lg:hidden border-t border-surface mb-0 md:mb-6">
         <ul className="space-y-1 md:space-y-2">
           <li>
             <a
@@ -188,7 +190,7 @@ export default function Sidebar({
             </a>
           </li>
           <li>
-            <div className="w-px h-2 md:h-4 ml-2 flex-1 bg-text-secondary opacity-30 mb-3 md:mb-4"></div>
+            <div className="w-px h-2 md:h-4 ml-2 flex-1 bg-text-secondary opacity-30 hidden md:block mb-0 md:mb-4"></div>
           </li>
           <li>
             <a
@@ -203,10 +205,10 @@ export default function Sidebar({
       </div>
 
       {/* Vertical Line above download */}
-      <div className="block lg:hidden w-px flex-1 bg-text-secondary opacity-30 mb-4 md:mb-6 max-h-4 md:max-h-16 lg:max-h-32"></div>
+      <div className="block lg:hidden w-px flex-1 bg-text-secondary opacity-30 mb-2 md:mb-6 max-h-4 md:max-h-16 lg:max-h-32"></div>
 
       {/* Download Resume Button */}
-      <div className="block lg:hidden mb-4 md:mb-6">
+      <div className="block lg:hidden mb-0 md:mb-6">
         <a
           href="/Rayko_Azcue_Resume.pdf"
           download="Rayko_Azcue_Resume.pdf"
@@ -217,7 +219,7 @@ export default function Sidebar({
           <i className="i-tabler-file-download w-6 h-6" />
         </a>
         <a
-          className="i-tabler-brand-github?mask text-2xl bg-text-secondary hover:bg-accent transition-colors mt-2.5"
+          className="i-tabler-brand-github?mask text-2xl bg-text-secondary hover:bg-accent transition-colors mt-2 md:mt-2.5"
           href="https://github.com/razcue"
           target="_blank"
           rel="noopener noreferrer"
@@ -226,15 +228,20 @@ export default function Sidebar({
       </div>
 
       {/* Vertical Line above theme */}
-      <div className="block lg:hidden w-px flex-1 bg-text-secondary opacity-30 mb-2 md:mb-6 max-h-4 md:max-h-16 lg:max-h-32"></div>
+      <div className="block lg:hidden w-px flex-1 bg-text-secondary opacity-30 mb-0 md:mb-6 max-h-0 md:max-h-16 lg:max-h-32"></div>
 
       {/* Theme Toggle */}
-      <div className="mb-1 md:mb-4">
+      <div className="mb-0 md:mb-1">
         <ThemeToggle />
       </div>
 
+      {/* Chat with Toast */}
+      <div className="mb-1.5 md:mb-2.5">
+        <ChatWithToast />
+      </div>
+
       {/* Language Toggle - Horizontal */}
-      <div className="mb-4 md:mb-6">
+      <div className="mb-2 md:mb-6">
         <LanguageToggle currentPath={currentPath} />
       </div>
 

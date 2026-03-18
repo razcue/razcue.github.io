@@ -1,21 +1,69 @@
 import { getTranslation, type Locale } from '../utils/i18n';
-import CircularScore from './CircularScore';
 import ProfileHeader from './ProfileHeader';
 
 interface AboutProps {
   locale: Locale;
 }
 
+const GITHUB_USER = 'razcue';
+
+function getYearsOfExperience(startDate: Date = new Date(2018, 8, 1)): number {
+  const now = new Date();
+  let years = now.getFullYear() - startDate.getFullYear();
+  const monthDiff = now.getMonth() - startDate.getMonth();
+  if (
+    monthDiff < 0 ||
+    (monthDiff === 0 && now.getDate() < startDate.getDate())
+  ) {
+    years--;
+  }
+  return years;
+}
+
+function getStreakStatsUrl(locale: Locale, theme: 'dark' | 'light'): string {
+  const base = 'https://github-readme-streak-stats.herokuapp.com';
+  const params = new URLSearchParams({
+    user: GITHUB_USER,
+    theme: 'transparent',
+    hide_border: 'true',
+    exclude_days: 'Sun,Sat',
+    card_width: '494',
+    card_height: '194',
+  });
+
+  if (theme === 'dark') {
+    params.set('border', '1E293B');
+    params.set('stroke', '64ffda');
+    params.set('ring', '64ffda');
+    params.set('fire', '64ffda');
+    params.set('currStreakNum', '64ffda');
+    params.set('currStreakLabel', '64ffda');
+    params.set('sideNums', '64ffda');
+    params.set('sideLabels', '64ffda');
+    params.set('dates', '8892b0');
+    params.set('excludeDaysLabel', '0a192f');
+  } else {
+    params.set('border', 'E2E8F0');
+    params.set('stroke', '0EA5E9');
+    params.set('ring', '0EA5E9');
+    params.set('fire', '0EA5E9');
+    params.set('currStreakNum', '0EA5E9');
+    params.set('currStreakLabel', '0EA5E9');
+    params.set('sideNums', '0EA5E9');
+    params.set('sideLabels', '0EA5E9');
+    params.set('dates', '64748B');
+    params.set('excludeDaysLabel', 'FFFFFF');
+  }
+
+  params.set('locale', locale);
+
+  return `${base}?${params.toString()}`;
+}
+
 export default function About({ locale }: AboutProps) {
   const t = getTranslation(locale);
-
-  // Static Lighthouse-style metrics - update these values as needed
-  const siteMetrics = {
-    performance: 100,
-    accessibility: 96,
-    bestPractices: 100,
-    seo: 100,
-  };
+  const yearsExp = getYearsOfExperience();
+  const yearsText = `${yearsExp} ${t.about.yearsOfExperience}`;
 
   return (
     <section
@@ -29,43 +77,65 @@ export default function About({ locale }: AboutProps) {
         </div>
 
         {/* About Me */}
-        <div className="mb-4 sm:mb-8 lg:mb-16">
-          <h2 className="text-lg sm:text-2xl lg:text-4xl font-bold text-text mb-1 sm:mb-2 lg:mb-4">
-            {t.about.title}
-          </h2>
+        <div>
+          {/* Title with Profile Photo on desktop */}
+          <div className="flex items-start gap-8 mb-1 sm:mb-2 lg:mb-4">
+            <h2 className="text-lg sm:text-2xl lg:text-4xl font-bold text-text translate-y-0 lg:translate-y-4">
+              {t.about.title}
+            </h2>
+            {/* Desktop Profile Photo - Only visible on lg screens */}
+            <div className="hidden lg:block w-14 h-14 rotate-45 overflow-hidden border-2 border-accent/80 shadow-lg shrink-0 -mt-1">
+              <img
+                src="/profile-pic.png"
+                alt="Rayko Azcue"
+                className="aspect-1 w-20 h-auto max-w-100 -rotate-45 object-cover -translate-x-2.5 -translate-y-3.5"
+              />
+            </div>
+          </div>
+
           <div className="space-y-2 text-text-secondary text-xs sm:text-base lg:text-lg leading-relaxed">
             {t.about.description.map((paragraph, index) => (
               <p key={index} className={`${index === 1 && 'hidden lg:block'}`}>
-                {paragraph}
+                {index === 0 ? (
+                  <>
+                    {t.about.beforeDescription}{' '}
+                    <span className="text-accent font-semibold">
+                      {yearsText}
+                    </span>
+                    {paragraph}
+                  </>
+                ) : (
+                  paragraph
+                )}
               </p>
             ))}
           </div>
         </div>
 
-        {/* About This Site */}
-        <div>
-          <h3 className="text-lg sm:text-2xl lg:text-4xl font-bold text-text mb-1 sm:mb-2 lg:mb-4">
-            {t.about.siteMetrics}
+        {/* GitHub Streak Stats */}
+        <div className="mt-4 lg:mt-6">
+          <h3 className="text-sm sm:text-base font-semibold text-text mb-2">
+            {t.about.githubStreak}
           </h3>
-          <p className="text-text-secondary text-xs sm:text-base lg:text-lg mb-0 sm:mb-4 lg:mb-8">
-            {t.about.siteMetricsDescription}
-          </p>
-
-          <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6 scale-80 sm:scale-100">
-            <CircularScore
-              score={siteMetrics.performance}
-              label={t.about.performance}
+          <a
+            href="https://github.com/razcue"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block w-full max-w-md lg:max-w-lg mx-auto"
+          >
+            {/* Dark theme - shown by default, hidden when light */}
+            <img
+              src={getStreakStatsUrl(locale, 'dark')}
+              alt="GitHub Streak"
+              className="w-full h-auto streak-dark"
             />
-            <CircularScore
-              score={siteMetrics.accessibility}
-              label={t.about.accessibility}
+            {/* Light theme - hidden by default, shown when light */}
+            <img
+              src={getStreakStatsUrl(locale, 'light')}
+              alt="GitHub Streak"
+              className="w-full h-auto hidden streak-light"
             />
-            <CircularScore
-              score={siteMetrics.bestPractices}
-              label={t.about.bestPractices}
-            />
-            <CircularScore score={siteMetrics.seo} label={t.about.seo} />
-          </div>
+          </a>
         </div>
       </div>
     </section>

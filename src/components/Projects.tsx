@@ -158,7 +158,7 @@ export default function Projects({ locale }: ProjectsProps) {
         {/* Navigation Dots - Always visible */}
         {projects.length > 1 && (
           <div
-            className="flex justify-center gap-2 mb-6 lg:mb-8"
+            className="flex justify-center gap-3 mb-6 lg:mb-8"
             role="tablist"
             aria-label="Project navigation"
           >
@@ -170,11 +170,11 @@ export default function Projects({ locale }: ProjectsProps) {
                 aria-label={`View ${project.title}`}
                 onClick={() => setActiveProject(index)}
                 className={`
-                  w-3 h-3 rounded-full transition-all duration-300 cursor-pointer
+                  w-3 h-3 border-2 transition-all duration-500 cursor-pointer
                   ${
                     activeProject === index
-                      ? 'bg-accent w-8'
-                      : 'bg-text-secondary/30 hover:bg-text-secondary/50'
+                      ? 'border-accent bg-accent rotate-65 text-accent'
+                      : 'border-text-secondary opacity-30 text-text-secondary hover:text-accent'
                   }
                 `}
               />
@@ -195,7 +195,7 @@ export default function Projects({ locale }: ProjectsProps) {
               {/* Screenshots Container with Overlap */}
               <div className="relative w-full max-w-60 mx-auto">
                 {/* Mobile Screenshot - Primary, centered */}
-                <div className="relative w-11/20 z-10">
+                <div className="relative w-8/20 z-10">
                   <div className="rounded-lg overflow-hidden border-2 border-accent/30 bg-surface shadow-xl">
                     <div className="aspect-[9/19] bg-gradient-to-br from-accent/15 via-surface to-accent/5 flex items-center justify-center relative">
                       {currentProject.pictureMobileUrl ? (
@@ -222,7 +222,7 @@ export default function Projects({ locale }: ProjectsProps) {
                 </div>
 
                 {/* Desktop Screenshot - Smaller, bottom right overlap */}
-                <div className="absolute bottom-2/5 right-0 w-13/16">
+                <div className="absolute bottom-4/12 right-0 w-11/16">
                   <div className="rounded overflow-hidden border border-accent/20 bg-surface shadow-lg">
                     <div className="aspect-[16/9] bg-gradient-to-br from-accent/20 via-surface to-accent/10 flex items-center justify-center relative">
                       {currentProject.pictureDesktopUrl ? (

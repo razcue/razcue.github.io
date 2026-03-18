@@ -3,6 +3,7 @@ export default {
   nav: {
     home: 'Inicio',
     about: 'Sobre Mí',
+    thisSite: 'Este Sitio',
     openTo: 'Abierto A',
     experience: 'Experiencia',
     projects: 'Proyectos',
@@ -48,7 +49,7 @@ export default {
     greeting: 'Hola, soy',
     name: 'Rayko Azcue',
     title: 'Ingeniero de Software',
-    subtitle: 'Desarrollador Front End',
+    subtitle: 'Ingeniero de Software',
     description:
       'Creo experiencias digitales excepcionales con tecnologías web modernas.',
     cta: 'Contactar',
@@ -58,10 +59,13 @@ export default {
   // About Section
   about: {
     title: 'Sobre Mí',
+    beforeDescription: 'Con más de',
+    yearsOfExperience: 'años de experiencia',
     description: [
-      'Me especializo en dar vida a las ideas a través de aplicaciones de alto rendimiento que generan resultados comerciales reales. Con un enfoque principal en desarrollo front end y amplia experiencia en backend, creo soluciones personalizadas diseñadas para impulsar conversiones y alcanzar tus objetivos comerciales específicos.',
+      ', me especializo en dar vida a las ideas a través de aplicaciones de alto rendimiento que generan resultados comerciales reales. Con un enfoque principal en desarrollo front end y amplia experiencia en backend, creo soluciones personalizadas diseñadas para impulsar conversiones y alcanzar tus objetivos comerciales específicos.',
       'Cada negocio es único, y también lo son mis soluciones. Entrego experiencias digitales personalizadas utilizando tecnologías modernas, con un fuerte énfasis en Core Web Vitals y métricas de negocio, traduciendo tus objetivos en resultados medibles.',
     ],
+    githubStreak: 'Racha de GitHub',
     siteMetrics: 'Sobre Este Sitio',
     siteMetricsDescription:
       'Construido con rendimiento y mejores prácticas en mente.',
@@ -69,6 +73,92 @@ export default {
     accessibility: 'Accesibilidad',
     bestPractices: 'Mejores Prácticas',
     seo: 'SEO',
+  },
+
+  // This Site Section
+  thisSite: {
+    title: 'Este Sitio',
+    description:
+      'Un portafolio de alto rendimiento construido con tecnologías web modernas.',
+    webVitals: 'Métricas Web',
+    featuresTitle: 'Características',
+    techStack: 'Tecnologías',
+    techStackItems: [
+      'Astro',
+      'React',
+      'TypeScript',
+      'Tailwind CSS',
+      'UnoCSS',
+      'Vercel',
+    ],
+    features: {
+      performance: 'Alto Rendimiento',
+      design: 'Diseño Distintivo',
+      accessibility: 'Accesible WCAG',
+      seo: 'SEO Optimizado',
+      i18n: 'i18n (EN/ES)',
+      responsive: 'Totalmente Adaptable',
+      blog: 'Blog con MDX',
+      ai: {
+        chat: 'Asistente IA',
+        resume: 'Constructor CV IA',
+        jobSearch: 'Buscador de Empleo IA',
+      },
+    },
+    featureDescriptions: {
+      performance: [
+        'Cero JS por defecto con Astro',
+        'Puntuaciones perfectas en Lighthouse',
+        'Carga optimizada de recursos',
+      ],
+      design: [
+        'Estética única no genérica',
+        'Esquema de colores personalizado',
+        'Animaciones suaves',
+      ],
+      accessibility: [
+        'Cumple con WCAG 2.1 AA',
+        'Navegación por teclado',
+        'Soporte para lectores de pantalla',
+      ],
+      seo: [
+        'Renderizado del lado del servidor',
+        'Estructura HTML semántica',
+        'Etiquetas meta Open Graph',
+      ],
+      i18n: [
+        'Soporte para inglés y español',
+        'Detección automática de idioma',
+        'Localización basada en URL',
+      ],
+      responsive: [
+        'Enfoque mobile-first',
+        'Tipografía fluida',
+        'Diseños adaptativos',
+      ],
+      blog: [
+        'Soporte para contenido MDX',
+        'Resaltado de sintaxis de código',
+        'Generación de feed RSS',
+      ],
+    },
+    aiFeatures: {
+      chat: [
+        'IA conversacional impulsada por LLMs',
+        'Embedding de contexto del currículum',
+        'Resaltado de código en fragmentos',
+      ],
+      resume: [
+        'Generación de CV personalizado usando JD',
+        'Formato optimizado para ATS',
+        'Exportación a PDF',
+      ],
+      jobSearch: [
+        'Descubrimiento automático de empleo',
+        'Filtrado inteligente por stack tecnológico',
+        'Integración con un clic para Easy Apply',
+      ],
+    },
   },
 
   // Experience Section
