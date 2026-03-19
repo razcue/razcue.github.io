@@ -1,3 +1,14 @@
+# PRIORITY
+
+## ThisSite Section
+
+- [ ] Integrate ThisSite.tsx into portfolio pages (index.astro, es/index.astro)
+- [ ] Add translations for new feature descriptions (en.ts, es.ts)
+- [ ] Test responsive behavior on mobile/desktop
+- [ ] Review content accuracy (scores, feature list)
+
+---
+
 # Dashboard
 
 ### Description
