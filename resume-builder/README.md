@@ -182,3 +182,65 @@ After running the build:
 The default resume is automatically available at `/Rayko_Azcue_Resume.pdf` on your deployed site.
 
 When building for a specific position using a position JSON file, a temporary `resume.pdf` is created instead.
+
+---
+
+## Current Resume Configuration
+
+### Selected Experiences (4 of 7 available)
+
+1. **Blue Creator Agency** - Front end optimization, bundle reduction (25%), LCP improvements
+2. **BSE America** - System architecture, CRM platform, 10k+ messages/day handling
+3. **EncodeBiz** - Virtual courses platform, 500+ participants, error reduction (60%)
+4. **First Due** - Emergency management system, 200+ departments, 5k scans/day
+
+### Current Keywords
+
+**Technical:**
+React, TypeScript, Vue, Nuxt, Astro, Tailwind, Node.js, REST APIs, CI/CD, Performance, Accessibility
+
+**Soft:**
+Code Reviews, Agile/Scrum, Cross-functional, Remote Work, Mentoring, Problem Solving, Communication
+
+## ATS Optimization Checklist
+
+Your resume is optimized for:
+
+- ✅ Simple, clean HTML structure (no complex tables)
+- ✅ Standard section headings (Education, Experience, Skills)
+- ✅ Standard font (Times New Roman 11pt)
+- ✅ Keyword-rich content (technical + soft skills)
+- ✅ Quantified achievements with metrics
+- ✅ Action verbs at bullet starts
+- ✅ PDF format with proper text extraction
+
+## Live Integration
+
+The download button is integrated into the Hero section at `/` (EN) and `/es` (ES).
+
+- **Download URL:** `/Rayko_Azcue_Resume.pdf`
+- **Responsive design:** Works on mobile and desktop
+- **Bilingual labels:** EN: "Resume" / ES: "Currículum"
+- **File name:** `Rayko_Azcue_Resume.pdf`
+
+## Dependencies
+
+```json
+{
+  "handlebars": "^4.7.8",
+  "puppeteer": "^23.11.1"
+}
+```
+
+## Workflow for Job Applications
+
+1. **Find job posting** with specific requirements
+2. **Copy config:** `cp configs/default.json configs/company-role.json`
+3. **Tailor config:**
+   - Extract keywords from job description
+   - Update `metadata.targetPosition` and `metadata.keywords`
+   - Select most relevant 3-5 experiences (`selected: true`)
+   - Adjust bullets to highlight matching skills
+4. **Build:** `npm run build:resume company-role`
+5. **Download:** Visit portfolio `/resume.pdf` or use generated file directly
+6. **Track:** Check `build-history.json` for reference
