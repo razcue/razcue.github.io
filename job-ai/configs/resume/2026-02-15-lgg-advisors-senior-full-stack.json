@@ -1,0 +1,169 @@
+{
+  "metadata": {
+    "id": "2026-02-15-lgg-advisors-senior-full-stack",
+    "type": "direct-apply",
+    "company": {
+      "name": "LGG Advisors",
+      "website": "https://lggadvisors.com/",
+      "email": null,
+      "sector": "Financial Services",
+      "techStack": ["Vue.js", "React", "Angular", "Node.js", "TypeScript"]
+    },
+    "position": {
+      "title": "Senior Full-Stack Software Engineer",
+      "url": "https://jaabz.com/jobs/160137-senior-full-stack-software-engineer",
+      "applicationType": "company page contact form",
+      "model": "hybrid",
+      "location": "Porto or Lisbon, Portugal",
+      "salary": null,
+      "keywords": {
+        "technical": [
+          "TypeScript",
+          "JavaScript",
+          "Vue.js",
+          "React",
+          "Angular",
+          "Node.js",
+          "SQL",
+          "PostgreSQL",
+          "CI/CD"
+        ],
+        "soft": ["Financial sector", "Leadership", "Architecture"]
+      }
+    },
+    "status": "applied",
+    "applicationDate": "2026-02-15",
+    "rejectionDate": null,
+    "notes": {
+      "model": "Hybrid position in Porto or Lisbon office. 50% work from home. Full VISA sponsorship and relocation support for candidates outside Portugal/Spain.",
+      "company": "LGG Advisors - Financial sector consultancy with offices in Porto, Lisbon, London, Madrid. High added-value services to global financial firms. Fast-growing, innovation-focused culture.",
+      "techStack": "TypeScript/JavaScript, Vue.js/React/Angular, Node.js, SQL/NoSQL, Docker/Kubernetes, CI/CD, Jira, Bitbucket, Jenkins",
+      "role": "Senior Full-Stack Software Engineer. Design and develop scalable applications, participate in architecture decisions, implement CI/CD, conduct code reviews and mentoring, collaborate with globally distributed teams. Financial sector clients.",
+      "rejection": "",
+      "applicationLimits": ""
+    }
+  },
+  "contactInfo": {
+    "location": "Havana, Cuba",
+    "phone": "+53 5476-1244",
+    "email": "razcue@yandex.com",
+    "website": "razcue.github.io"
+  },
+  "summary": "Senior Full-Stack Engineer with 7+ years architecting scalable web applications across SaaS, e-commerce, and enterprise platforms. Expert in TypeScript, Vue.js, React, and Angular with strong backend expertise in Node.js, Laravel, and PostgreSQL. Proven track record implementing CI/CD pipelines, conducting code reviews, and mentoring teams. Experienced in good coding practices and working with distributed Agile teams for US and European clients.",
+  "skills": {
+    "technical": "TypeScript, JavaScript, Vue.js, Nuxt, React, Angular, Node.js, Laravel, PHP, PostgreSQL, MySQL, MongoDB, REST APIs, GraphQL, CI/CD, Docker, Git, Jira, Agile, Tailwind, shadcn/ui, Cloudflare",
+    "languages": "English (B2 - Professional), Spanish (Native)"
+  },
+  "experience": [
+    {
+      "company": "Delfín Motor Labs SL",
+      "title": "Senior Front End Developer",
+      "location": "Remote, Madrid, Spain",
+      "dateRange": "Jan 2026 – Present",
+      "bullets": [
+        "Deployed comprehensive SEO optimization strategy using Vue.js, Nuxt, and TypeScript with Core Web Vitals tuning; increased organic traffic by 28% and improved LCP from 3.2s to 1.4s, CLS from 0.15 to 0.08",
+        "Implemented Cloudflare Cache Purge strategy with dynamic rendering and edge caching layers using Tailwind CSS and shadcn/ui components; reduced TTFB and improved overall response times by 48%"
+      ],
+      "skills": "JavaScript, TypeScript, Vue.js, Nuxt, Tailwind CSS, shadcn/ui, Cloudflare, SEO, Web Vitals"
+    },
+    {
+      "company": "First Due (Inc 5000 company since 2022)",
+      "title": "Full Stack Developer",
+      "location": "Remote, New York, US",
+      "dateRange": "Mar 2021 – Nov 2023",
+      "bullets": [
+        "Developed multi-tenant SaaS platform using Yii, Vue.js, and PostgreSQL serving 40+ enterprise clients with modular architecture for high availability",
+        "Collaborated with distributed US-based teams using Agile methodologies, delivering features for operational modules"
+      ],
+      "skills": "PHP, JavaScript, Vue.js, Yii, PostgreSQL, Redis, Docker"
+    },
+    {
+      "company": "Grupo de Electrónica para el Turismo (GET)",
+      "title": "Full Stack Developer",
+      "location": "Havana, Cuba",
+      "dateRange": "Mar 2019 – Nov 2020",
+      "bullets": [
+        "Led development of multi-tenant Document Management System using Laravel, Vue.js, and Elasticsearch with RBAC, reducing search times to under 1s for enterprise clients",
+        "Co-developed hotel reservation platform using Node.js/Express.js backend with PostgreSQL, handling 500+ daily bookings and building RESTful APIs for real-time inventory management"
+      ],
+      "skills": "PHP, JavaScript, Laravel, Vue.js, Node.js, Express.js, Elasticsearch, PostgreSQL"
+    }
+  ],
+  "artifacts": {
+    "coverLetter": [
+      "Dear LGG Advisors Hiring Team,",
+      "",
+      "I am writing to express my strong interest in the Senior Full-Stack Software Engineer position at LGG Advisors. With 7+ years of experience architecting scalable applications for enterprise clients across the US and Europe, I am excited about the opportunity to contribute to your innovative financial sector consultancy.",
+      "",
+      "My expertise aligns closely with your requirements: I have extensive experience with TypeScript, Vue.js, React, and Angular on the frontend, combined with strong backend skills in Node.js and Laravel. At Delfín Motor Labs, I architect Vue 3/Nuxt applications with TypeScript while implementing CI/CD pipelines that reduced deployment failures by 62%. At BSE America, I built a full-stack CRM system with automated financial workflows and established code review standards while mentoring developers—directly matching your emphasis on code quality and peer mentoring.",
+      "",
+      "Working with First Due (an Inc 5000 company), I developed multi-tenant SaaS platforms for 40+ enterprise clients using Agile methodologies with distributed US teams. This experience has given me deep familiarity with Jira, Git workflows, and cross-functional collaboration across time zones. I am well-versed in secure coding principles, database optimization (PostgreSQL/MySQL), and implementing SDLC best practices with automated testing and CI/CD.",
+      "",
+      "I am particularly drawn to LGG Advisors because of your focus on sophisticated financial sector clients and your commitment to innovation. The opportunity to work from your Porto or Lisbon office with visa sponsorship and relocation support is exactly what I am seeking for my next career chapter. I thrive in environments that balance technical excellence with creative problem-solving for complex client needs.",
+      "",
+      "I would welcome the opportunity to discuss how my full-stack expertise, experience with distributed teams, and passion for clean, secure code can contribute to LGG Advisors' continued growth.",
+      "",
+      "Thank you for considering my application. I look forward to connecting.",
+      "",
+      "Best regards,",
+      "Rayko Azcue"
+    ],
+    "emailPitch": [
+      "Subject: Senior Full-Stack Engineer Application - TypeScript & Vue.js Specialist",
+      "",
+      "Dear LGG Advisors Team,",
+      "",
+      "I am a Senior Full-Stack Engineer with 7+ years building scalable applications for enterprise clients. I came across your opening on Jaabz and am excited about the opportunity to join your Porto/Lisbon team working with financial sector clients.",
+      "",
+      "Technical highlights matching your stack:",
+      "• TypeScript, Vue.js, React, Angular expertise (7+ years)",
+      "• Node.js and Laravel backend development with PostgreSQL",
+      "• CI/CD implementation reducing deployment failures by 62%",
+      "• Code review leadership and mentoring (improved team quality metrics)",
+      "• Agile/Scrum experience with Jira, Git, distributed teams",
+      "• Multi-tenant SaaS architecture for 40+ enterprise clients",
+      "",
+      "Recent achievements:",
+      "→ Architected full-stack CRM with automated financial workflows",
+      "→ Optimized Core Web Vitals (LCP: 3.2s → 1.4s) for scalable frontend",
+      "→ Delivered features for Inc 5000 company serving US enterprise clients",
+      "",
+      "I am particularly interested in your VISA sponsorship and relocation support to Portugal, as I am actively seeking European opportunities. My experience working with US and European clients has prepared me for the sophisticated financial sector projects you handle.",
+      "",
+      "My resume and portfolio are available at razcue.github.io. I would welcome the opportunity to discuss how my skills can contribute to your team.",
+      "",
+      "Best regards,",
+      "Rayko Azcue",
+      "razcue@yandex.com",
+      "+53 5476-1244",
+      "razcue.github.io"
+    ],
+    "socialMessage": [
+      "Hi! I'm Rayko, a Senior Full-Stack Engineer with 7+ years building scalable applications for enterprise clients across US and Europe.",
+      "",
+      "I came across LGG Advisors' Senior Full-Stack opening and I'm excited about your work with financial sector clients. My expertise includes:",
+      "• TypeScript, Vue.js, React, Angular",
+      "• Node.js, Laravel, PostgreSQL",
+      "• CI/CD, code reviews, mentoring",
+      "• Agile/Jira with distributed teams",
+      "",
+      "Recently architected full-stack CRM systems and optimized performance for Inc 5000 companies. I'm particularly interested in your relocation support to Portugal!",
+      "",
+      "Would love to connect and learn more about the role."
+    ]
+  },
+  "education": [
+    {
+      "institution": "University of Informatics Sciences",
+      "degree": "Computer Sciences Engineer - Bachelor's degree",
+      "location": "Havana, Cuba",
+      "date": "Sep 2013 - Jul 2018"
+    },
+    {
+      "institution": "freeCodeCamp",
+      "degree": "Responsive Web Design Certificate",
+      "location": "Online",
+      "date": "2021"
+    }
+  ]
+}

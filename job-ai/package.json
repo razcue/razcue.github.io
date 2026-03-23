@@ -1,0 +1,17 @@
+{
+  "name": "job-ai",
+  "version": "1.0.0",
+  "description": "Autonomous job application system",
+  "type": "module",
+  "scripts": {
+    "mail": "bun run lib/yandex-mailer.ts",
+    "build:resume": "node lib/build-resume.cjs"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "nodemailer": "^6.9.8"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.17"
+  }
+}

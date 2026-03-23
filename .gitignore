@@ -6,6 +6,9 @@ dist/
 # dependencies
 node_modules/
 
+# job-ai dependencies
+job-ai/node_modules/
+
 # logs
 npm-debug.log*
 yarn-debug.log*
@@ -16,6 +19,7 @@ pnpm-debug.log*
 # environment variables
 .env
 .env.production
+job-ai/.env
 
 # macOS-specific files
 .DS_Store
@@ -24,3 +28,6 @@ pnpm-debug.log*
 .idea/
 .vercel
 public/resume.html
+
+# agent configs (contains API keys)
+opencode.json

@@ -1,0 +1,155 @@
+{
+  "metadata": {
+    "id": "2026-02-19-cyberpuerta-frontend-web-developer",
+    "type": "direct-apply",
+    "company": {
+      "name": "Cyberpuerta",
+      "website": "https://www.cyberpuerta.mx/",
+      "email": null,
+      "sector": "E-commerce",
+      "techStack": [
+        "Vue.js",
+        "React",
+        "Nuxt.js",
+        "Next.js",
+        "TypeScript",
+        "Storybook",
+        "SEO",
+        "Tailwind"
+      ]
+    },
+    "position": {
+      "title": "Frontend Web Developer",
+      "url": "https://cyberpuerta.breezy.hr/p/7dcfcb6cc454-frontend-web-developer",
+      "applicationType": "company page",
+      "model": "remote",
+      "location": "Remote (México)",
+      "salary": null,
+      "keywords": {
+        "technical": [
+          "Vue.js",
+          "React",
+          "Nuxt.js",
+          "Next.js",
+          "TypeScript",
+          "Storybook",
+          "SEO",
+          "Core Web Vitals",
+          "Tailwind"
+        ],
+        "soft": [
+          "Autonomía",
+          "Innovación",
+          "Migración de tecnologías",
+          "High-traffic",
+          "eCommerce"
+        ]
+      }
+    },
+    "status": "applied",
+    "applicationDate": "2026-02-19",
+    "rejectionDate": null,
+    "notes": {
+      "model": "100% remoto de Lunes a Viernes en formato flexible. Líder de e-commerce en productos de tecnología en México (TOP 200 sitios web más visitados).",
+      "company": "Cyberpuerta - Empresa líder de e-commerce en productos de tecnología en México. TOP 200 sitios web más visitados de México. Cultura orientada a innovación continua y altos estándares de servicio.",
+      "techStack": "Vue.js, React, Nuxt.js, Next.js, TypeScript, Storybook, SEO, Core Web Vitals, JavaScript, HTML5, CSS3, Tailwind",
+      "role": "Frontend Web Developer - Mantener proyectos heredados y adoptar tecnologías modernas. Enfoque en performance, escalabilidad, SEO y Core Web Vitals. Experiencia en proyectos de alto tráfico.",
+      "rejection": "",
+      "applicationLimits": ""
+    }
+  },
+  "contactInfo": {
+    "location": "La Habana, Cuba",
+    "phone": "+53 5476-1244",
+    "email": "razcue@yandex.com",
+    "website": "razcue.github.io"
+  },
+  "summary": "Frontend Engineer con 7+ años diseñando arquitecturas frontend escalables para e-commerce, SaaS y otros sectores. Especialista en SEO, optimización de Core Web Vitals y estrategias de renderizado (SSR, SSG, ISR, SWR). Experiencia sólida en migración de proyectos legacy a tecnologías modernas. Experiencia extensiva cómo full-stack con PHP, Node.js, Laravel, Yii, Express.js y Nest.js, desarrollando RESTful APIs, arquitecturas multi-tenant y sistemas de alto tráfico. Uso herramientas de IA cómo GitHub Copilot, OpenCode y Ollama, junto a Agent Skills y MCPs.",
+  "skills": {
+    "technical": "Vue.js, Nuxt.js, React.js, Next.js, TypeScript, JavaScript, HTML5, CSS3, Tailwind, shadcn/ui, Vuetify, PrimeReact, Vitest, React Testing Library, Storybook, Pinia, Redux, SEO, Lighthouse, Cloudflare, Vercel, CI/CD",
+    "additional": "Arquitectura de Software, Optimización Web (SEO, Accesibilidad, Performance), Migración de Tecnologías Legacy, Herramientas de IA basadas en Agentes Generativos, Diseño Pixel-Perfect, Diseño Mobile-First, Figma a Código, Metodologías Ágiles (SCRUM, Kamban), Autonomía, Trabajo Remoto, Tutoría, Revisión de Código",
+    "languages": "Español (Nativo), Inglés (C1 - Avanzado)"
+  },
+  "experience": [
+    {
+      "company": "Delfín Motor Labs SL",
+      "title": "Senior Front End Developer",
+      "location": "Remoto, Madrid, España",
+      "dateRange": "Ene 2026 – Presente",
+      "bullets": [
+        "Optimización de e-commerce aplicando estrategias de renderizado con Nuxt y Cloudflare Cache Purge, mejorando LCP de 3.2s a 1.4s, CLS de 0.15 a 0.08, y aumentando tráfico orgánico 38% mediante SEO técnico"
+      ],
+      "skills": "Vue.js, Nuxt.js, TypeScript, Arquitectura Frontend, SEO, Core Web Vitals, SSR/SSG"
+    },
+    {
+      "company": "Blue Creator Agency | Kimia Group",
+      "title": "Senior Front End Developer",
+      "location": "Remoto, Madrid, España",
+      "dateRange": "Ene 2025 – Nov 2025",
+      "bullets": [
+        "Desarrollé más de 120 tareas en Jira para CMS interno y app de monetización y gamificación; ownership completo del producto y tareas, entrega a producción de features críticos",
+        "Implementé UIs responsive pixel-perfect desde mockups de Figma para interfaces de usuario de alta calidad",
+        "Lideré migración de componentes Vue de Vuetify a Tailwind; con una reducción del 19% en bundle size y LCP de 9.1s a 6.6s"
+      ],
+      "skills": "Vue.js, TypeScript, Storybook, Tailwind, Vuetify, Herramientas IA"
+    },
+    {
+      "company": "First Due (Inc 5000 desde 2022)",
+      "title": "Full Stack Developer",
+      "location": "Remoto, New York, EE.UU.",
+      "dateRange": "Mar 2021 – Nov 2023",
+      "bullets": [
+        "Lideré migración progresiva de plantillas PHP con Yii 2 a SPAs modulares con Vue Router (Fire Prevention, EMS, Assets); con una reducción de 45% en tiempos de carga y mejor experiencia de usuario",
+        "Desarrollé funcionalidades para un SaaS multi-tenant que servía a 40+ departamentos de bomberos; contribuyendo al éxito de la empresa y su inclusión en la lista Inc 5000"
+      ],
+      "skills": "Vue.js, Yii 2, PHP, JavaScript, PostgreSQL, Vue Router"
+    }
+  ],
+  "artifacts": {
+    "coverLetter": [
+      "Estimado equipo de Cyberpuerta,",
+      "",
+      "Aplico a la posición de Frontend Web Developer. Tengo 7+ años diseñando arquitecturas frontend para e-commerce y plataformas de alto tráfico, justo lo que necesitan para mantener su posición en el TOP 200 de México.",
+      "",
+      "Mis fortalezas coinciden con sus requisitos:",
+      "",
+      "• Arquitectura frontend, SEO y Core Web Vitals: En Delfín Motor Labs diseñé arquitectura con Nuxt.js aplicando SSR/SSG, mejorando LCP de 3.2s a 1.4s e incrementando tráfico orgánico 38%.",
+      "",
+      "• Migración de tecnologías legacy: En Blue Creator Agency lideré migración de 40+ componentes Vue (Vuetify → Tailwind) usando Copilot y Cursor, reduciendo bundle size 19%.",
+      "",
+      "• Storybook: Implementé Storybook para 25+ componentes, mejorando consistencia UI y reduciendo onboarding time.",
+      "",
+      "• Herramientas IA: Uso diario de Copilot, Cursor, OpenCode y Agent Coding para acelerar desarrollo y refactoring.",
+      "",
+      "Además, trabajé en First Due (Inc 5000) con multi-tenant SaaS sirviendo 40+ clientes enterprise. Conozco los retos de performance y escalabilidad de sitios masivos.",
+      "",
+      "Me interesa su cultura de innovación y autonomía. Como dev remoto con equipos en EE.UU., España y Panamá, valoro la flexibilidad que ofrecen.",
+      "",
+      "Quedo atento para conversar cómo puedo contribuir a la evolución de sus productos.",
+      "",
+      "Saludos,",
+      "Rayko Azcue"
+    ],
+    "emailPitch": [
+      "Hola,",
+      "",
+      "Soy Rayko, Frontend Engineer con 7+ años. Veo que buscan dev con experiencia en arquitectura frontend, SEO y Core Web Vitals.",
+      "",
+      "Logros relevantes:",
+      "• Lideré arquitectura Nuxt.js con SSR/SSG; LCP 3.2s → 1.4s, tráfico orgánico +38%",
+      "• Migré 40+ componentes Vue (Vuetify → Tailwind) usando Copilot/Cursor; bundle -19%",
+      "• Implementé Storybook para 25+ componentes",
+      "• Experiencia en high-traffic (multi-tenant SaaS, 5,000+ ops/día)",
+      "",
+      "Uso herramientas IA (Copilot, Cursor, OpenCode, Agent Coding) para acelerar desarrollo.",
+      "",
+      "¿Conversamos sobre el rol?",
+      "",
+      "Rayko Azcue",
+      "razcue@yandex.com | razcue.github.io"
+    ],
+    "socialMessage": [
+      "¡Hola Cyberpuerta! 👋 Soy Rayko, Frontend Engineer con 7+ años. Especialista en arquitectura frontend, SEO y Core Web Vitals. Lideré migración de 40+ componentes usando herramientas IA (Copilot, Cursor) y mejoré métricas clave (LCP 3.2s→1.4s). Experiencia en Storybook y high-traffic apps. Me encantaría contribuir al TOP 200 de México. ¿Charlamos? 🚀"
+    ]
+  }
+}

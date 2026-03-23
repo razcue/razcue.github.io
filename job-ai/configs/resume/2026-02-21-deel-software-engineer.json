@@ -1,0 +1,146 @@
+{
+  "metadata": {
+    "id": "2026-02-21-deel-software-engineer",
+    "type": "direct-apply",
+    "company": {
+      "name": "Deel",
+      "website": "https://www.deel.com/",
+      "email": null,
+      "sector": "HR/Payroll SaaS",
+      "techStack": ["TypeScript", "React.js", "Node.js"]
+    },
+    "position": {
+      "title": "Software Engineer",
+      "url": "https://www.deel.com/careers/position/?ashby_jid=168b0c3c-2df8-4aba-aebc-4eeac17a3240",
+      "applicationType": "company page",
+      "model": "remote",
+      "location": "LATAM (Remote)",
+      "salary": "$60,000 USD/year",
+      "keywords": {
+        "technical": [
+          "TypeScript",
+          "React.js",
+          "Node.js",
+          "Redux",
+          "Pinia",
+          "Zustand",
+          "HTML5",
+          "CSS3",
+          "SaaS",
+          "FinTech",
+          "Stripe",
+          "AWS S3"
+        ],
+        "soft": [
+          "Remote-first",
+          "Distributed Teams",
+          "Cross-functional Collaboration",
+          "Product Ownership",
+          "Agile"
+        ]
+      }
+    },
+    "status": "applied",
+    "applicationDate": "2026-02-21",
+    "rejectionDate": null,
+    "notes": {
+      "model": "Remote-first company, 7,000 team members across 100+ countries. $17.3B valuation, $1B ARR. Fastest-growing SaaS company in history.",
+      "company": "Deel - All-in-one payroll and HR platform for global teams. HRIS, payroll, compliance, benefits, performance, equipment management. CNBC Disruptor 50, Forbes Cloud 100.",
+      "techStack": "TypeScript, React.js, Node.js, State Management (Redux/Pinia/Zustand), HTML5, CSS3, SaaS 24/7",
+      "role": "Software Engineer - Frontend focused with full-stack capabilities. Design, code, test, maintain applications. Collaborative remote-first culture. Business-focused development.",
+      "rejection": "",
+      "applicationLimits": "Candidates may not apply more than 3 times in any 60 day span for any job. Candidates may not re-apply to any role within 30 days if not presented with an offer. Candidates may not re-apply to the same role within 90 days if not presented with an offer."
+    }
+  },
+  "contactInfo": {
+    "location": "Havana, Cuba",
+    "phone": "+53 5476-1244",
+    "email": "razcue@yandex.com",
+    "website": "razcue.github.io"
+  },
+  "summary": "Software Engineer with 7+ years building scalable SaaS applications. Expert in TypeScript and React.js with deep knowledge of functional components, React Hooks, and state management (Redux, Zustand). Full-stack capabilities with Node.js backend experience. Proven track record in remote-first distributed teams across US, Spain, and LATAM.",
+  "skills": {
+    "technical": "TypeScript, JavaScript, PHP, React.js, Next.js, Vue.js, Nuxt.js, Redux, Pinia, Zustand, React Hooks, Node.js, Express.js, HTML5, CSS3, Tailwind, PrimeReact, shadcn/ui, PostgreSQL, REST APIs",
+    "additional": "SaaS Development, Multi-tenant Architecture, Distributed Teams, Cross-functional Collaboration, Product Ownership, Agile/Scrum, Pixel-Perfect Design, Figma to Code, Mentoring, Code Review",
+    "languages": "English (C1), Spanish (Native)"
+  },
+  "experience": [
+    {
+      "company": "Blue Creator Agency | Kimia Group",
+      "title": "Senior Front End Developer",
+      "location": "Remote, Madrid, Spain",
+      "dateRange": "Jan 2025 – Nov 2025",
+      "bullets": [
+        "Delivered 120+ Jira tasks over a monetization/gamification SaaS app with missions system, points rewards, referral program, and 20+ gift card providers for redemption",
+        "Led migration from Vuetify to Tailwind reducing bundle size 19% and improving LCP 9.1s → 6.6s",
+        "Implemented responsive pixel-perfect UIs from Figma mockups; tracked conversions and revenue per user via Google Analytics"
+      ]
+    },
+    {
+      "company": "EncodeBiz",
+      "title": "Front End Developer",
+      "location": "Remote, Madrid, Spain",
+      "dateRange": "Nov 2023 – Jan 2024",
+      "bullets": [
+        "Built padel tournament system with scheduling, results, player registration, scoreboards, with pixel-perfect UIs from Figma; increased admin flow completion ~20%",
+        "Spearheaded React/TypeScript SaaS with Redux state management; functional components, React Hooks, Node.js/Express.js backend integration",
+        "Wrote unit tests with React Testing Library, cutting issues ~30%"
+      ]
+    },
+    {
+      "company": "First Due (Inc 5000 company)",
+      "title": "Full Stack Developer",
+      "location": "Remote, New York, US",
+      "dateRange": "Mar 2021 – Nov 2023",
+      "bullets": [
+        "Developed multi-tenant SaaS serving 40+ fire departments; company grew from 50 to 150+ employees during tenure",
+        "Led migration from legacy PHP to Vue.js SPAs reducing load time 45%; cross-functional collaboration with backend, product, and QA",
+        "Built statistics module from scratch with reports; integrated medical compliance (NEMSIS) and connected cardio readers for EMS module"
+      ]
+    }
+  ],
+  "artifacts": {
+    "coverLetter": [
+      "Dear Deel Team,",
+      "",
+      "I'm excited to apply for the Software Engineer position at Deel. With 7+ years building scalable SaaS applications and deep expertise in TypeScript and React.js, I'm eager to contribute to the platform that's transforming global work.",
+      "",
+      "Why I'm a great fit:",
+      "",
+      "• TypeScript & React Expertise: I've built production applications using React with functional components, React Hooks, and Redux state management. At EncodeBiz, I delivered a tournament management SaaS with React/TypeScript, integrating with Node.js backends and writing comprehensive tests with React Testing Library.",
+      "",
+      "• SaaS & FinTech Experience: At Delfín Motor Labs, I integrated Stripe payments for an e-commerce SaaS platform, handling secure payment flows and webhook events. At First Due (Inc 5000), I developed multi-tenant SaaS features for 40+ enterprise clients, experiencing rapid company growth from 50 to 150+ employees.",
+      "",
+      "• Remote-First Culture: I've thrived in distributed teams across US, Spain, Panama, and LATAM for 4+ years. I understand the unique challenges of async communication, cross-timezone collaboration, and maintaining team camaraderie remotely.",
+      "",
+      "• Full-Stack Capabilities: While frontend-focused, I have solid Node.js/Express backend experience. I've designed REST APIs, worked with PostgreSQL and Redis, and deployed to AWS S3 and VPS infrastructure.",
+      "",
+      "Deel's mission to unlock global opportunity resonates deeply with me. As someone who has worked remotely across multiple countries and timezones, I've experienced firsthand the challenges your platform solves. I'm passionate about building products that enable the future of work.",
+      "",
+      "I'd love to discuss how I can contribute to Deel's continued growth and success.",
+      "",
+      "Best regards,",
+      "Rayko Azcue"
+    ],
+    "emailPitch": [
+      "Hi,",
+      "",
+      "I'm Rayko, a Software Engineer with 7+ years building SaaS applications. I'm excited about Deel's mission to unlock global opportunity.",
+      "",
+      "Relevant experience:",
+      "• Expert in TypeScript/React with Redux state management; built production SaaS apps",
+      "• FinTech experience: Stripe payments integration at e-commerce platform",
+      "• Multi-tenant SaaS at First Due (Inc 5000): 40+ enterprise clients, 24/7 uptime",
+      "• 4+ years in remote-first distributed teams across US/EU/LATAM",
+      "• Node.js/Express backend experience; full-stack capabilities",
+      "",
+      "I'd love to chat about how I can contribute to Deel's mission.",
+      "",
+      "Rayko Azcue",
+      "razcue@yandex.com | razcue.github.io"
+    ],
+    "socialMessage": [
+      "Hi Deel! 👋 I'm Rayko, a Software Engineer with 7+ years in SaaS. Expert in TypeScript/React with Redux, Node.js backend experience, and FinTech (Stripe). Built multi-tenant platforms at First Due (Inc 5000) and thrive in remote-first teams. Excited about your mission to unlock global opportunity! 🚀"
+    ]
+  }
+}

@@ -1,0 +1,579 @@
+{
+  "applications": [
+    {
+      "id": "2026-02-21-deel-software-engineer",
+      "type": "direct-apply",
+      "company": {
+        "name": "Deel",
+        "website": "https://www.deel.com/",
+        "email": null,
+        "sector": "HR/Payroll SaaS",
+        "techStack": ["TypeScript", "React.js", "Node.js"]
+      },
+      "position": {
+        "title": "Software Engineer",
+        "url": "https://www.deel.com/careers/position/?ashby_jid=168b0c3c-2df8-4aba-aebc-4eeac17a3240",
+        "applicationType": "company page",
+        "model": "remote",
+        "location": "LATAM (Remote)",
+        "salary": "$60,000 USD/year",
+        "keywords": {
+          "technical": [
+            "TypeScript",
+            "React.js",
+            "Node.js",
+            "Redux",
+            "Pinia",
+            "Zustand",
+            "HTML5",
+            "CSS3",
+            "SaaS",
+            "FinTech",
+            "Stripe",
+            "AWS S3"
+          ],
+          "soft": [
+            "Remote-first",
+            "Distributed Teams",
+            "Cross-functional Collaboration",
+            "Product Ownership",
+            "Agile"
+          ]
+        }
+      },
+      "status": "applied",
+      "applicationDate": "2026-02-21",
+      "rejectionDate": null,
+      "notes": {
+        "model": "Remote-first company, 7,000 team members across 100+ countries. $17.3B valuation, $1B ARR. Fastest-growing SaaS company in history.",
+        "company": "Deel - All-in-one payroll and HR platform for global teams. HRIS, payroll, compliance, benefits, performance, equipment management. CNBC Disruptor 50, Forbes Cloud 100.",
+        "techStack": "TypeScript, React.js, Node.js, State Management (Redux/Pinia/Zustand), HTML5, CSS3, SaaS 24/7",
+        "role": "Software Engineer - Frontend focused with full-stack capabilities. Design, code, test, maintain applications. Collaborative remote-first culture. Business-focused development.",
+        "rejection": "",
+        "applicationLimits": "Candidates may not apply more than 3 times in any 60 day span for any job. Candidates may not re-apply to any role within 30 days if not presented with an offer. Candidates may not re-apply to the same role within 90 days if not presented with an offer."
+      },
+      "proposal": {
+        "proposedAt": null,
+        "proposedWhy": {},
+        "notes": {}
+      }
+    },
+    {
+      "id": "2026-02-19-cyberpuerta-frontend-web-developer",
+      "type": "direct-apply",
+      "company": {
+        "name": "Cyberpuerta",
+        "website": "https://www.cyberpuerta.mx/",
+        "email": null,
+        "sector": "E-commerce",
+        "techStack": [
+          "Vue.js",
+          "React",
+          "Nuxt.js",
+          "Next.js",
+          "TypeScript",
+          "Storybook",
+          "SEO",
+          "Tailwind"
+        ]
+      },
+      "position": {
+        "title": "Frontend Web Developer",
+        "url": "https://cyberpuerta.breezy.hr/p/7dcfcb6cc454-frontend-web-developer",
+        "applicationType": "company page",
+        "model": "remote",
+        "location": "Remote (México)",
+        "salary": null,
+        "keywords": {
+          "technical": [
+            "Vue.js",
+            "React",
+            "Nuxt.js",
+            "Next.js",
+            "TypeScript",
+            "Storybook",
+            "SEO",
+            "Core Web Vitals",
+            "Tailwind"
+          ],
+          "soft": [
+            "Autonomía",
+            "Innovación",
+            "Migración de tecnologías",
+            "High-traffic",
+            "eCommerce"
+          ]
+        }
+      },
+      "status": "applied",
+      "applicationDate": "2026-02-19",
+      "rejectionDate": null,
+      "notes": {
+        "model": "100% remoto de Lunes a Viernes en formato flexible. Líder de e-commerce en productos de tecnología en México (TOP 200 sitios web más visitados).",
+        "company": "Cyberpuerta - Empresa líder de e-commerce en productos de tecnología en México. TOP 200 sitios web más visitados de México. Cultura orientada a innovación continua y altos estándares de servicio.",
+        "techStack": "Vue.js, React, Nuxt.js, Next.js, TypeScript, Storybook, SEO, Core Web Vitals, JavaScript, HTML5, CSS3, Tailwind",
+        "role": "Frontend Web Developer - Mantener proyectos heredados y adoptar tecnologías modernas. Enfoque en performance, escalabilidad, SEO y Core Web Vitals. Experiencia en proyectos de alto tráfico.",
+        "rejection": "",
+        "applicationLimits": ""
+      },
+      "proposal": {
+        "proposedAt": null,
+        "proposedWhy": {},
+        "notes": {}
+      }
+    },
+    {
+      "id": "2026-02-17-positivelinks-laravel-vuejs-developer",
+      "type": "direct-apply",
+      "company": {
+        "name": "PositiveLinks",
+        "website": "https://www.thepositivelinks.com/",
+        "email": null,
+        "sector": "Software Development",
+        "techStack": ["Laravel", "Vue.js", "Nuxt.js", "MySQL", "AWS"]
+      },
+      "position": {
+        "title": "Laravel/Vue.js Developer",
+        "url": "https://jaabz.com/jobs/165163-laravel-vuejs-developer",
+        "applicationType": "company page",
+        "model": "remote-global",
+        "location": "Remote (Work From Anywhere)",
+        "salary": null,
+        "keywords": {
+          "technical": [
+            "Laravel",
+            "Vue.js",
+            "Nuxt.js",
+            "TypeScript",
+            "MySQL",
+            "RESTful APIs",
+            "AWS",
+            "Git",
+            "Sass"
+          ],
+          "soft": [
+            "Remote-first",
+            "Fast-paced",
+            "Growth mindset",
+            "Australian culture"
+          ]
+        }
+      },
+      "status": "applied",
+      "applicationDate": "2026-02-17",
+      "rejectionDate": null,
+      "notes": {
+        "model": "Fully Flexible Remote Work – perform from anywhere. Australian market leader expanding worldwide.",
+        "company": "PositiveLinks - Australian market leader expanding worldwide. High-performance culture, 10X growth mindset, fast career growth with 6-month performance reviews.",
+        "techStack": "Laravel 10+, Vue.js, Nuxt.js, MySQL, RESTful APIs, AWS, Git, Sass, TypeScript, Stripe API, HTML5, CSS3, JavaScript",
+        "role": "Laravel/Vue.js Developer - Develop high-quality applications using Laravel and Vue.js/Nuxt.js, build RESTful APIs with clean architecture, optimize MySQL queries, collaborate with designers and developers, participate in deployments.",
+        "rejection": "",
+        "applicationLimits": ""
+      },
+      "proposal": {
+        "proposedAt": null,
+        "proposedWhy": {},
+        "notes": {}
+      }
+    },
+    {
+      "id": "2026-02-17-algoteque-frontend-developer-react",
+      "type": "direct-apply",
+      "company": {
+        "name": "ALGOTEQUE Innovation Hub",
+        "website": "https://algoteque.com/",
+        "email": null,
+        "sector": "IT Consulting",
+        "techStack": ["React", "TypeScript", "RxJS", "Axios", "Sass"]
+      },
+      "position": {
+        "title": "Frontend Developer (React)",
+        "url": "https://jaabz.com/jobs/160057-frontend-developer-react",
+        "applicationType": "company page",
+        "model": "remote",
+        "location": "Poland (Fully Remote)",
+        "salary": null,
+        "keywords": {
+          "technical": [
+            "React",
+            "TypeScript",
+            "REST APIs",
+            "Sass",
+            "RxJS",
+            "Axios"
+          ],
+          "soft": ["Client-facing", "Aviation industry", "B2B"]
+        }
+      },
+      "status": "applied",
+      "applicationDate": "2026-02-17",
+      "rejectionDate": null,
+      "notes": {
+        "model": "B2B contract, fully remote work. No relocation needed.",
+        "company": "ALGOTEQUE Innovation Hub - IT consultancy firm helping startups, mid-sized and large corporations deliver innovative technologies. Project is for a client in the aviation industry.",
+        "techStack": "React, TypeScript, RxJS, Axios, Sass, REST APIs, JWT, OAuth, C#/.NET (bonus)",
+        "role": "Frontend Developer - Build and maintain React applications with TypeScript, implement reusable component architecture, manage state with RxJS, handle API integration with Axios, style with Sass, integrate REST APIs with authentication/authorization.",
+        "rejection": "",
+        "applicationLimits": ""
+      },
+      "proposal": {
+        "proposedAt": null,
+        "proposedWhy": {},
+        "notes": {}
+      }
+    },
+    {
+      "id": "2026-02-16-cuba-telegram-fintech-backend-developer",
+      "type": "direct-apply",
+      "company": {
+        "name": "Fintech SaaS Platform",
+        "website": null,
+        "email": null,
+        "sector": "FinTech",
+        "techStack": ["PHP", "Symfony", "GraphQL", "PostgreSQL", "Doctrine ORM"]
+      },
+      "position": {
+        "title": "Backend Developer - PHP/Symfony",
+        "url": null,
+        "applicationType": "Telegram DM",
+        "model": "remote",
+        "location": "Remote",
+        "salary": null,
+        "keywords": {
+          "technical": [
+            "PHP",
+            "Symfony",
+            "API Platform",
+            "Doctrine ORM",
+            "PostgreSQL",
+            "REST APIs",
+            "Docker",
+            "PHPUnit"
+          ],
+          "soft": ["Remote-first", "FinTech", "Startup"]
+        }
+      },
+      "status": "applied",
+      "applicationDate": "2026-02-17",
+      "rejectionDate": null,
+      "notes": {
+        "model": "100% Remote position. Application via Telegram DM.",
+        "company": "Fintech/procurement SaaS platform focused on financial analysis, payment terms negotiation, spend management, and value proposition tracking.",
+        "techStack": "PHP 8.1+, Symfony 6.4, API Platform 3.x, GraphQL, Doctrine ORM, PostgreSQL 16, MongoDB, Elasticsearch, RabbitMQ, Docker, AWS, Microsoft Graph API, Firebase, Google Places API, Amazon SES, Sentry, PHPUnit, Mockery, Faker, Git, PHPStan, PHP-CS-Fixer, PSR-12",
+        "role": "Backend Developer responsible for designing, developing and maintaining RESTful APIs using Symfony and API Platform, optimizing Doctrine queries, implementing async processing, integrating third-party services, writing automated tests, and contributing to architectural decisions.",
+        "rejection": "",
+        "applicationLimits": ""
+      },
+      "proposal": {
+        "proposedAt": null,
+        "proposedWhy": {},
+        "notes": {}
+      }
+    },
+    {
+      "id": "2026-02-15-lgg-advisors-senior-full-stack",
+      "type": "direct-apply",
+      "company": {
+        "name": "LGG Advisors",
+        "website": "https://lggadvisors.com/",
+        "email": null,
+        "sector": "Financial Services",
+        "techStack": ["Vue.js", "React", "Angular", "Node.js", "TypeScript"]
+      },
+      "position": {
+        "title": "Senior Full-Stack Software Engineer",
+        "url": "https://jaabz.com/jobs/160137-senior-full-stack-software-engineer",
+        "applicationType": "company page contact form",
+        "model": "hybrid",
+        "location": "Porto or Lisbon, Portugal",
+        "salary": null,
+        "keywords": {
+          "technical": [
+            "TypeScript",
+            "JavaScript",
+            "Vue.js",
+            "React",
+            "Angular",
+            "Node.js",
+            "SQL",
+            "PostgreSQL",
+            "CI/CD"
+          ],
+          "soft": ["Financial sector", "Leadership", "Architecture"]
+        }
+      },
+      "status": "applied",
+      "applicationDate": "2026-02-15",
+      "rejectionDate": null,
+      "notes": {
+        "model": "Hybrid position in Porto or Lisbon office. 50% work from home. Full VISA sponsorship and relocation support for candidates outside Portugal/Spain.",
+        "company": "LGG Advisors - Financial sector consultancy with offices in Porto, Lisbon, London, Madrid. High added-value services to global financial firms. Fast-growing, innovation-focused culture.",
+        "techStack": "TypeScript/JavaScript, Vue.js/React/Angular, Node.js, SQL/NoSQL, Docker/Kubernetes, CI/CD, Jira, Bitbucket, Jenkins",
+        "role": "Senior Full-Stack Software Engineer. Design and develop scalable applications, participate in architecture decisions, implement CI/CD, conduct code reviews and mentoring, collaborate with globally distributed teams. Financial sector clients.",
+        "rejection": "",
+        "applicationLimits": ""
+      },
+      "proposal": {
+        "proposedAt": null,
+        "proposedWhy": {},
+        "notes": {}
+      }
+    },
+    {
+      "id": "2026-02-15-haystack-people-senior-php-developer",
+      "type": "direct-apply",
+      "company": {
+        "name": "Haystack People",
+        "website": "https://www.haystackpeople.com/",
+        "email": null,
+        "sector": "E-commerce",
+        "techStack": ["PHP", "Symfony", "Laravel", "MySQL", "PostgreSQL"]
+      },
+      "position": {
+        "title": "Senior PHP Developer",
+        "url": "https://jaabz.com/jobs/161711-senior-php-developer",
+        "applicationType": "email",
+        "model": "hybrid",
+        "location": "Netherlands",
+        "salary": "€75,000/year + 8% holiday allowance",
+        "keywords": {
+          "technical": [
+            "PHP",
+            "Laravel",
+            "Symfony",
+            "MySQL",
+            "PostgreSQL",
+            "API",
+            "CI/CD",
+            "AWS"
+          ],
+          "soft": ["E-commerce", "Leadership", "Mentoring"]
+        }
+      },
+      "status": "applied",
+      "applicationDate": "2026-02-15",
+      "rejectionDate": null,
+      "notes": {
+        "model": "Hybrid working model based in Netherlands. Visa sponsorship available for relocation - candidate will live in Netherlands once sponsored. Salary up to €75K + 8% holiday allowance.",
+        "company": "Haystack People - One of the largest home & living boulevards in Netherlands and Belgium. Fast-growing scale-up with 250+ employees. Major technical transformation from legacy to modern Symfony-based architecture.",
+        "techStack": "PHP, Symfony (target architecture) or Laravel, MySQL/PostgreSQL, CI/CD, AWS/GCP, API-driven systems, middleware",
+        "role": "Senior PHP Developer in 5-person team. Building and modernizing ERP and Warehouse Systems. Contributing to architectural decisions, platform modernization from legacy to modern stack. Coaching colleagues and elevating engineering standards.",
+        "rejection": "",
+        "applicationLimits": ""
+      },
+      "proposal": {
+        "proposedAt": null,
+        "proposedWhy": {},
+        "notes": {}
+      }
+    },
+    {
+      "id": "2026-02-15-the-big-phone-store-backend-developer",
+      "type": "direct-apply",
+      "company": {
+        "name": "The Big Phone Store",
+        "website": "https://www.thebigphonestore.co.uk/",
+        "email": null,
+        "sector": "E-commerce",
+        "techStack": [
+          "Laravel",
+          "PHP",
+          "Vue.js",
+          "Nuxt.js",
+          "Redis",
+          "RabbitMQ"
+        ]
+      },
+      "position": {
+        "title": "Backend Developer (Laravel)",
+        "url": "https://jaabz.com/jobs/163901-back-end-developer",
+        "applicationType": "company page contact form and email",
+        "model": "remote-global",
+        "location": "Remote (Global) or Hybrid (UK)",
+        "salary": "£27,000 - £50,000",
+        "keywords": {
+          "technical": [
+            "Laravel",
+            "PHP",
+            "Vue.js",
+            "Nuxt.js",
+            "Redis",
+            "RabbitMQ",
+            "Elasticsearch",
+            "OAuth2"
+          ],
+          "soft": ["E-commerce", "Sustainability", "UK culture"]
+        }
+      },
+      "status": "applied",
+      "applicationDate": "2026-02-15",
+      "rejectionDate": null,
+      "notes": {
+        "model": "Remote-friendly (global) or hybrid (UK). Apple equipment provided for UK developers. UK visa sponsorship after 6-12 months based on performance. 28 days paid holiday + birthday off. Salary: £27,000 - £50,000. RE-APPLIED: Initially sent to customer service email, company responded with recruitment email and asked to resubmit application to correct address.",
+        "company": "The Big Phone Store - eCommerce company focused on sustainability (tech/mobile devices). Full-time, permanent role. Inclusive, values-driven culture.",
+        "techStack": "Laravel 8.4, PHP 7.4, Vue.js, Nuxt.js, Redis, RabbitMQ, Elasticsearch, Horizon, OAuth2/Laravel Passport",
+        "role": "Backend Developer architecting and maintaining scalable backend systems for eCommerce operations and internal tools. Building APIs and integrations. Collaborating with frontend team using Vue/Nuxt. Contributing to architecture decisions.",
+        "rejection": "",
+        "applicationLimits": ""
+      },
+      "proposal": {
+        "proposedAt": null,
+        "proposedWhy": {},
+        "notes": {}
+      }
+    },
+    {
+      "id": "2026-02-15-amberes-founding-engineer",
+      "type": "direct-apply",
+      "company": {
+        "name": "Amberes",
+        "website": "https://www.amberes.co.uk/",
+        "email": null,
+        "sector": "Cybersecurity/SaaS",
+        "techStack": [
+          "TypeScript",
+          "JavaScript",
+          "SQL",
+          "Vue",
+          "React",
+          "Laravel"
+        ]
+      },
+      "position": {
+        "title": "Founding Engineer",
+        "url": "https://jaabz.com/jobs/159272-founding-engineer",
+        "applicationType": "jaabz.com job post",
+        "model": "hybrid",
+        "location": "London, UK",
+        "salary": "£90,000 - £150,000 + equity",
+        "keywords": {
+          "technical": [
+            "TypeScript",
+            "JavaScript",
+            "SQL",
+            "Vue",
+            "React",
+            "Laravel",
+            "CI/CD",
+            "AWS",
+            "Cloudflare"
+          ],
+          "soft": ["Founding team", "Security", "Leadership", "Architecture"]
+        }
+      },
+      "status": "applied",
+      "applicationDate": "2026-02-15",
+      "rejectionDate": null,
+      "notes": {
+        "model": "Hybrid position in London office with flexible working. Visa sponsorship available. US relocation potential. £90K–£150K base + strong equity.",
+        "company": "Amberes - High-growth cyber and SaaS platform for identity, access, and security automation. Tier-1 investor backed. Early-stage, product-led with enterprise customers in financial services, tech, and regulated sectors.",
+        "techStack": "TypeScript, JavaScript, SQL-based datastores, modern web frameworks, secure cloud infrastructure, Infrastructure-as-Code",
+        "role": "Founding Engineer in core platform team. Broad ownership across systems/services. Direct exposure to enterprise-scale security use cases. Shape product from early stage through scale.",
+        "rejection": "",
+        "applicationLimits": ""
+      },
+      "proposal": {
+        "proposedAt": null,
+        "proposedWhy": {},
+        "notes": {}
+      }
+    },
+    {
+      "id": "2026-02-13-catawiki-software-engineer",
+      "type": "direct-apply",
+      "company": {
+        "name": "Catawiki",
+        "website": "https://www.catawiki.com/",
+        "email": null,
+        "sector": "E-commerce",
+        "techStack": ["Ruby", "PostgreSQL", "AWS", "Microservices"]
+      },
+      "position": {
+        "title": "Backend Software Engineer",
+        "url": "https://catawiki.careers/vacancies/backend-software-engineer-portugal-2807554-5758060",
+        "applicationType": "company page",
+        "model": "hybrid",
+        "location": "Lisbon, Portugal",
+        "salary": null,
+        "keywords": {
+          "technical": [
+            "Backend Development",
+            "Microservices",
+            "OOP",
+            "REST APIs",
+            "SQL",
+            "PostgreSQL",
+            "Database Design",
+            "High Availability",
+            "E-commerce",
+            "CI/CD"
+          ],
+          "soft": ["E-commerce", "Agile", "Cross-functional"]
+        }
+      },
+      "status": "applied",
+      "applicationDate": "2026-02-13",
+      "rejectionDate": null,
+      "notes": {
+        "model": "Hybrid position based in Lisbon office (minimum 2 days per week in office). Excellent relocation package offered for candidates living outside Portugal including relocation assistance, 22 days holiday + national holidays, health insurance, meal card per working day, working-from-home allowance, flexible working hours, and holistic wellbeing programme.",
+        "company": "Catawiki - High-scale e-commerce marketplace for special objects. 75k auctions/week, 10M+ monthly visitors. 850+ employees across Amsterdam, Paris, Lisbon offices. Values: ownership, growth mindset, customer passion.",
+        "techStack": "Ruby (main stack), PostgreSQL, microservices architecture, REST APIs, high availability/low latency systems, CI/CD, AWS",
+        "role": "Backend Software Engineer supporting one of 3 verticals (Demand, Supply, or Fulfilment). Small autonomous Agile teams. End-to-end responsibility for microservices. 4+ years experience required in e-commerce/fintech/SaaS.",
+        "rejection": "",
+        "applicationLimits": ""
+      },
+      "proposal": {
+        "proposedAt": null,
+        "proposedWhy": {},
+        "notes": {}
+      }
+    },
+    {
+      "id": "2026-02-11-proxify-senior-frontend-react",
+      "type": "direct-apply",
+      "company": {
+        "name": "Proxify",
+        "website": "https://proxify.io",
+        "email": null,
+        "sector": "Talent Platform",
+        "techStack": ["React", "CI/CD", "Performance"]
+      },
+      "position": {
+        "title": "Senior Frontend Developer (React.js)",
+        "url": "https://proxify.io",
+        "applicationType": "platform",
+        "model": "remote-global",
+        "location": "Remote",
+        "salary": null,
+        "keywords": {
+          "technical": [
+            "React.js",
+            "CI/CD",
+            "Performance",
+            "Best practices",
+            "Low-latency applications",
+            "Reusable code"
+          ],
+          "soft": ["Remote-first", "Talent network", "Client-facing"]
+        }
+      },
+      "status": "applied",
+      "applicationDate": "2026-02-11",
+      "rejectionDate": null,
+      "notes": {
+        "model": "Fully remote position. Work from anywhere globally. No relocation needed.",
+        "company": "Proxify - Remote full-time role via Proxify talent network. 5000+ developer community. Focus on matching developers with client projects.",
+        "techStack": "React, CI/CD, performance optimization, best practices",
+        "role": "Senior Frontend Developer working with React.js for client projects via Proxify platform.",
+        "rejection": "",
+        "applicationLimits": ""
+      },
+      "proposal": {
+        "proposedAt": null,
+        "proposedWhy": {},
+        "notes": {}
+      }
+    }
+  ],
+  "lastUpdated": "2026-03-06"
+}
