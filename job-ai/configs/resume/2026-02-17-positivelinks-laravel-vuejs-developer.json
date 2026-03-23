@@ -60,6 +60,14 @@
     "additional": "Agile (Scrum/Kanban), Team Leadership, Mentoring, Code Review, Technical Decision Making, Figma to Code, SOLID Principles",
     "languages": "English (C1 - Advanced), Spanish (Native)"
   },
+  "education": [
+    {
+      "institution": "University of Informatics Sciences",
+      "degree": "Computer Sciences Engineer - Bachelor's degree",
+      "location": "Havana, Cuba",
+      "date": "Sep 2013 - Jul 2018"
+    }
+  ],
   "experience": [
     {
       "company": "Delfín Motor Labs SL",

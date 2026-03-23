@@ -61,6 +61,14 @@
     "technical": "TypeScript, JavaScript, Vue, Nuxt, React, Laravel, Node.js, PostgreSQL, AWS S3, Cloudflare, CI/CD, RBAC, REST APIs, Infrastructure-as-Code, Tailwind",
     "languages": "English (B2 - Professional), Spanish (Native)"
   },
+  "education": [
+    {
+      "institution": "University of Informatics Sciences",
+      "degree": "Computer Sciences Engineer - Bachelor's degree",
+      "location": "Havana, Cuba",
+      "date": "Sep 2013 - Jul 2018"
+    }
+  ],
   "experience": [
     {
       "company": "Delfín Motor Labs SL",
@@ -141,19 +149,5 @@
       "",
       "Excited about the London hybrid setup and US relocation potential! Would love to connect and learn more about the role."
     ]
-  },
-  "education": [
-    {
-      "institution": "University of Informatics Sciences",
-      "degree": "Computer Sciences Engineer - Bachelor's degree",
-      "location": "Havana, Cuba",
-      "date": "Sep 2013 - Jul 2018"
-    },
-    {
-      "institution": "freeCodeCamp",
-      "degree": "Responsive Web Design Certificate",
-      "location": "Online",
-      "date": "2021"
-    }
-  ]
+  }
 }

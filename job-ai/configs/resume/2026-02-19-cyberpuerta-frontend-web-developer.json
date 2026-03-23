@@ -70,6 +70,14 @@
     "additional": "Arquitectura de Software, Optimización Web (SEO, Accesibilidad, Performance), Migración de Tecnologías Legacy, Herramientas de IA basadas en Agentes Generativos, Diseño Pixel-Perfect, Diseño Mobile-First, Figma a Código, Metodologías Ágiles (SCRUM, Kamban), Autonomía, Trabajo Remoto, Tutoría, Revisión de Código",
     "languages": "Español (Nativo), Inglés (C1 - Avanzado)"
   },
+  "education": [
+    {
+      "institution": "University of Informatics Sciences",
+      "degree": "Computer Sciences Engineer - Bachelor's degree",
+      "location": "Havana, Cuba",
+      "date": "Sep 2013 - Jul 2018"
+    }
+  ],
   "experience": [
     {
       "company": "Delfín Motor Labs SL",

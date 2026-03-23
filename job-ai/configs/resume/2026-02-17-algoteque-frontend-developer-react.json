@@ -7,7 +7,13 @@
       "website": "https://algoteque.com/",
       "email": null,
       "sector": "IT Consulting",
-      "techStack": ["React", "TypeScript", "RxJS", "Axios", "Sass"]
+      "techStack": [
+        "React",
+        "TypeScript",
+        "RxJS",
+        "Axios",
+        "Sass"
+      ]
     },
     "position": {
       "title": "Frontend Developer (React)",
@@ -25,7 +31,11 @@
           "RxJS",
           "Axios"
         ],
-        "soft": ["Client-facing", "Aviation industry", "B2B"]
+        "soft": [
+          "Client-facing",
+          "Aviation industry",
+          "B2B"
+        ]
       }
     },
     "status": "applied",
@@ -58,12 +68,6 @@
       "degree": "Computer Sciences Engineer - Bachelor's degree",
       "location": "Havana, Cuba",
       "date": "Sep 2013 - Jul 2018"
-    },
-    {
-      "institution": "freeCodeCamp",
-      "degree": "Responsive Web Design Certificate",
-      "location": "Online",
-      "date": "2021"
     }
   ],
   "experience": [

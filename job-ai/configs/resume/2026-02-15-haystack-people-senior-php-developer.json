@@ -53,6 +53,14 @@
     "technical": "PHP, Laravel, Yii, Symfony, MySQL, PostgreSQL, JavaScript, Vue.js, REST APIs, AWS, CI/CD, Elasticsearch, Git, SOLID principles",
     "languages": "English (B2 - Professional), Spanish (Native)"
   },
+  "education": [
+    {
+      "institution": "University of Informatics Sciences",
+      "degree": "Computer Sciences Engineer - Bachelor's degree",
+      "location": "Havana, Cuba",
+      "date": "Sep 2013 - Jul 2018"
+    }
+  ],
   "experience": [
     {
       "company": "BSE America",
@@ -150,19 +158,5 @@
       "",
       "Would love to connect and discuss how I can contribute to your technical transformation!"
     ]
-  },
-  "education": [
-    {
-      "institution": "University of Informatics Sciences",
-      "degree": "Computer Sciences Engineer - Bachelor's degree",
-      "location": "Havana, Cuba",
-      "date": "Sep 2013 - Jul 2018"
-    },
-    {
-      "institution": "freeCodeCamp",
-      "degree": "Responsive Web Design Certificate",
-      "location": "Online",
-      "date": "2021"
-    }
-  ]
+  }
 }

@@ -53,6 +53,14 @@
     "technical": "Laravel, PHP, Vue.js, Nuxt.js, JavaScript, TypeScript, PostgreSQL, MySQL, Redis, Elasticsearch, REST APIs, RabbitMQ, OAuth2, CI/CD, Git, Tailwind",
     "languages": "English (C1 - Advanced), Spanish (Native)"
   },
+  "education": [
+    {
+      "institution": "University of Informatics Sciences",
+      "degree": "Computer Sciences Engineer - Bachelor's degree",
+      "location": "Havana, Cuba",
+      "date": "Sep 2013 - Jul 2018"
+    }
+  ],
   "experience": [
     {
       "company": "BSE America",
@@ -136,19 +144,5 @@
       "",
       "Experienced working remotely across US and EU teams. Excited about your remote-first culture and visa sponsorship pathway! Would love to connect and learn more about the role."
     ]
-  },
-  "education": [
-    {
-      "institution": "University of Informatics Sciences",
-      "degree": "Computer Sciences Engineer - Bachelor's degree",
-      "location": "Havana, Cuba",
-      "date": "Sep 2013 - Jul 2018"
-    },
-    {
-      "institution": "freeCodeCamp",
-      "degree": "Responsive Web Design Certificate",
-      "location": "Online",
-      "date": "2021"
-    }
-  ]
+  }
 }

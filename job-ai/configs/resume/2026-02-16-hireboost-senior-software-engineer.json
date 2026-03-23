@@ -1,7 +1,9 @@
 {
   "metadata": {
     "id": "2026-02-16-hireboost-senior-software-engineer",
+    "configName": "2026-02-16-hireboost-senior-software-engineer",
     "language": "en",
+    "dateCreated": "2026-02-16T00:00:00.000Z",
     "targetPosition": "Senior Software Engineer",
     "applicationType": "email",
     "jobLink": "https://jaabz.com/jobs/156037-senior-software-engineer",
@@ -26,7 +28,6 @@
         "Collaboration"
       ]
     },
-    "dateBuilt": "2026-02-16",
     "notes": {
       "model": "100% Remote role open to LATAM-based candidates willing to work CST timezone. Salary range: $4,225 - $5,400 USD/monthly.",
       "company": "Professional software development agency and product studio founded in 2019, supporting American tech companies and startups. Incubates consumer products through internal app studio. Values: honesty, reliability, growth.",
@@ -46,6 +47,14 @@
     "additional": "Team Leadership, Mentoring, Figma to Code, Jira, Linux/Ubuntu, Agile, Cross-functional Collaboration, Technical Decision Making, Product Ownership, Code Review",
     "languages": "English (C1 - Advanced), Spanish (Native)"
   },
+  "education": [
+    {
+      "institution": "University of Informatics Sciences",
+      "degree": "Computer Sciences Engineer - Bachelor's degree",
+      "location": "Havana, Cuba",
+      "date": "Sep 2013 - Jul 2018"
+    }
+  ],
   "experience": [
     {
       "company": "Blue Creator Agency | Kimia Group",
@@ -53,10 +62,9 @@
       "location": "Remote, Madrid, Spain",
       "dateRange": "Jan 2025 – Nov 2025",
       "bullets": [
-        "Delivered front-end solutions for internal CMS and consumer monetization platform, resolving 120+ Jira tasks with pixel-perfect UI implementation",
-        "Migrated 40+ components from Vuetify to Tailwind, reducing bundle size by 19% and improving Core Web Vitals performance metrics"
-      ],
-      "skills": "Vue, Nuxt, TypeScript, JavaScript, Tailwind, Vuetify, Figma to Code, CI/CD"
+        "Delivered front-end solutions for internal CMS and consumer monetization platform, resolving 120+ Jira tasks with pixel-perfect UI implementation.",
+        "Migrated 40+ components from Vuetify to Tailwind, reducing bundle size by 19% and improving Core Web Vitals performance metrics."
+      ]
     },
     {
       "company": "BSE America",
@@ -64,10 +72,9 @@
       "location": "Remote, Panama",
       "dateRange": "Jan 2024 – Nov 2024",
       "bullets": [
-        "Architected end-to-end CRM with WooCommerce integration using Laravel REST APIs, achieving near 100% delivery success rate for sales operations and Panama's electronic billing compliance",
-        "Led technical team of 3 developers, mentoring on Laravel and Vue best practices while improving code review approval rate from 40% to 85%"
-      ],
-      "skills": "Laravel, PHP, Vue, Vuetify, PostgreSQL, Redis, AWS S3, CI/CD, REST APIs"
+        "Architected end-to-end CRM with WooCommerce integration using Laravel REST APIs, achieving near 100% delivery success rate for sales operations and Panama's electronic billing compliance.",
+        "Led technical team of 3 developers, mentoring on Laravel and Vue best practices while improving code review approval rate from 40% to 85%."
+      ]
     },
     {
       "company": "First Due (Inc 5000 company since 2022)",
@@ -75,10 +82,9 @@
       "location": "Remote, New York, US",
       "dateRange": "Mar 2021 – Nov 2023",
       "bullets": [
-        "Delivered multi-tenant SaaS features across Fire Prevention, EMS and Assets modules serving 40+ fire departments at a startup founded in 2016, contributing to company growth that achieved Inc 5000 recognition in 2022",
-        "Enhanced geolocation and implemented barcode/QR scanning processing 5,000+ daily scans with >99% accuracy"
-      ],
-      "skills": "Vue, Yii, PHP, JavaScript, PostgreSQL, Redis, Google Maps/ArcGIS API"
+        "Delivered multi-tenant SaaS features across Fire Prevention, EMS and Assets modules serving 40+ fire departments at a startup founded in 2016, contributing to company growth that achieved Inc 5000 recognition in 2022.",
+        "Enhanced geolocation and implemented barcode/QR scanning processing 5,000+ daily scans with >99% accuracy."
+      ]
     }
   ],
   "artifacts": {

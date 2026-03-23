@@ -7,7 +7,13 @@
       "website": null,
       "email": null,
       "sector": "FinTech",
-      "techStack": ["PHP", "Symfony", "GraphQL", "PostgreSQL", "Doctrine ORM"]
+      "techStack": [
+        "PHP",
+        "Symfony",
+        "GraphQL",
+        "PostgreSQL",
+        "Doctrine ORM"
+      ]
     },
     "position": {
       "title": "Backend Developer - PHP/Symfony",
@@ -27,7 +33,11 @@
           "Docker",
           "PHPUnit"
         ],
-        "soft": ["Remote-first", "FinTech", "Startup"]
+        "soft": [
+          "Remote-first",
+          "FinTech",
+          "Startup"
+        ]
       }
     },
     "status": "applied",
@@ -59,14 +69,6 @@
       "degree": "Computer Sciences Engineer - Bachelor's degree",
       "location": "Havana, Cuba",
       "date": "Sep 2013 - Jul 2018"
-    },
-    {
-      "institution": "freeCodeCamp",
-      "degree": "Responsive Web Design Certificate",
-      "location": "Online",
-      "date": "2021",
-      "certificationUrl": "https://www.freecodecamp.org/certification/fcc0d66daac-ef4f-4e0e-9e60-d02d24f85508/responsive-web-design",
-      "certificationText": "View Certificate"
     }
   ],
   "experience": [

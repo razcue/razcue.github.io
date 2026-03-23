@@ -7,7 +7,11 @@
       "website": "https://proxify.io",
       "email": null,
       "sector": "Talent Platform",
-      "techStack": ["React", "CI/CD", "Performance"]
+      "techStack": [
+        "React",
+        "CI/CD",
+        "Performance"
+      ]
     },
     "position": {
       "title": "Senior Frontend Developer (React.js)",
@@ -25,7 +29,11 @@
           "Low-latency applications",
           "Reusable code"
         ],
-        "soft": ["Remote-first", "Talent network", "Client-facing"]
+        "soft": [
+          "Remote-first",
+          "Talent network",
+          "Client-facing"
+        ]
       }
     },
     "status": "applied",
@@ -61,13 +69,6 @@
       "degree": "Computer Sciences Engineer - Bachelor's degree",
       "location": "Havana, Cuba",
       "date": "Sep 2013 - Jul 2018"
-    },
-    {
-      "institution": "freeCodeCamp",
-      "degree": "Responsive Web Design Certificate",
-      "location": "Online",
-      "date": "2021",
-      "certificationUrl": "https://www.freecodecamp.org/certification/fcc0d66daac-ef4f-4e0e-9e60-d02d24f85508/responsive-web-design"
     }
   ],
   "experience": [

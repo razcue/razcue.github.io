@@ -54,6 +54,14 @@
     "technical": "TypeScript, JavaScript, Vue.js, Nuxt, React, Angular, Node.js, Laravel, PHP, PostgreSQL, MySQL, MongoDB, REST APIs, GraphQL, CI/CD, Docker, Git, Jira, Agile, Tailwind, shadcn/ui, Cloudflare",
     "languages": "English (B2 - Professional), Spanish (Native)"
   },
+  "education": [
+    {
+      "institution": "University of Informatics Sciences",
+      "degree": "Computer Sciences Engineer - Bachelor's degree",
+      "location": "Havana, Cuba",
+      "date": "Sep 2013 - Jul 2018"
+    }
+  ],
   "experience": [
     {
       "company": "Delfín Motor Labs SL",
@@ -151,19 +159,5 @@
       "",
       "Would love to connect and learn more about the role."
     ]
-  },
-  "education": [
-    {
-      "institution": "University of Informatics Sciences",
-      "degree": "Computer Sciences Engineer - Bachelor's degree",
-      "location": "Havana, Cuba",
-      "date": "Sep 2013 - Jul 2018"
-    },
-    {
-      "institution": "freeCodeCamp",
-      "degree": "Responsive Web Design Certificate",
-      "location": "Online",
-      "date": "2021"
-    }
-  ]
+  }
 }

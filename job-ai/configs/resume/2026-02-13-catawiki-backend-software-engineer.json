@@ -7,7 +7,12 @@
       "website": "https://www.catawiki.com/",
       "email": null,
       "sector": "E-commerce",
-      "techStack": ["Ruby", "PostgreSQL", "AWS", "Microservices"]
+      "techStack": [
+        "Ruby",
+        "PostgreSQL",
+        "AWS",
+        "Microservices"
+      ]
     },
     "position": {
       "title": "Backend Software Engineer",
@@ -29,7 +34,11 @@
           "E-commerce",
           "CI/CD"
         ],
-        "soft": ["E-commerce", "Agile", "Cross-functional"]
+        "soft": [
+          "E-commerce",
+          "Agile",
+          "Cross-functional"
+        ]
       }
     },
     "status": "applied",

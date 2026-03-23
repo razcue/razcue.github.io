@@ -64,6 +64,14 @@
     "additional": "SaaS Development, Multi-tenant Architecture, Distributed Teams, Cross-functional Collaboration, Product Ownership, Agile/Scrum, Pixel-Perfect Design, Figma to Code, Mentoring, Code Review",
     "languages": "English (C1), Spanish (Native)"
   },
+  "education": [
+    {
+      "institution": "University of Informatics Sciences",
+      "degree": "Computer Sciences Engineer - Bachelor's degree",
+      "location": "Havana, Cuba",
+      "date": "Sep 2013 - Jul 2018"
+    }
+  ],
   "experience": [
     {
       "company": "Blue Creator Agency | Kimia Group",
