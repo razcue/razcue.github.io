@@ -1,0 +1,205 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "rayko portfolio",
+      "intents": [
+        {
+          "name": "GetNameIntent",
+          "slots": [],
+          "utterances": [
+            "what is your name",
+            "who are you",
+            "tell me your name",
+            "what do they call you",
+            "your name"
+          ]
+        },
+        {
+          "name": "GetTitleIntent",
+          "slots": [],
+          "utterances": [
+            "what do you do",
+            "what is your job",
+            "what is your profession",
+            "who are you professionally",
+            "what is your role",
+            "tell me about your job"
+          ]
+        },
+        {
+          "name": "GetSummaryIntent",
+          "slots": [],
+          "utterances": [
+            "tell me about yourself",
+            "give me a summary",
+            "who is rayko azcue",
+            "tell me about rayko",
+            "what is your background",
+            "describe yourself"
+          ]
+        },
+        {
+          "name": "GetExperienceIntent",
+          "slots": [],
+          "utterances": [
+            "tell me about your experience",
+            "what is your work experience",
+            "how many years of experience",
+            "tell me your professional history",
+            "what jobs have you had",
+            "your work history"
+          ]
+        },
+        {
+          "name": "GetCurrentRoleIntent",
+          "slots": [],
+          "utterances": [
+            "where do you work now",
+            "what is your current job",
+            "who do you work for",
+            "current position",
+            "what are you working on now",
+            "present job"
+          ]
+        },
+        {
+          "name": "GetSkillsIntent",
+          "slots": [],
+          "utterances": [
+            "what are your skills",
+            "what technologies do you know",
+            "what do you specialize in",
+            "technical skills",
+            "your tech stack",
+            "what frameworks do you use"
+          ]
+        },
+        {
+          "name": "GetAvailabilityIntent",
+          "slots": [],
+          "utterances": [
+            "are you available for work",
+            "are you looking for a job",
+            "are you open to work",
+            "are you hiring",
+            "is rayko available",
+            "is he looking for work"
+          ]
+        },
+        {
+          "name": "GetLocationIntent",
+          "slots": [],
+          "utterances": [
+            "where are you located",
+            "where do you live",
+            "what is your location",
+            "where are you based",
+            "current location"
+          ]
+        },
+        {
+          "name": "GetContactIntent",
+          "slots": [],
+          "utterances": [
+            "how can i contact you",
+            "what is your email",
+            "how do i reach you",
+            "contact information",
+            "your email address",
+            "how to contact rayko"
+          ]
+        },
+        {
+          "name": "GetEducationIntent",
+          "slots": [],
+          "utterances": [
+            "what is your education",
+            "where did you study",
+            "what degrees do you have",
+            "your university",
+            "your schooling"
+          ]
+        },
+        {
+          "name": "GetProjectsIntent",
+          "slots": [],
+          "utterances": [
+            "what projects have you built",
+            "show me your projects",
+            "what have you developed",
+            "your portfolio projects",
+            "notable projects"
+          ]
+        },
+        {
+          "name": "GetLanguagesIntent",
+          "slots": [],
+          "utterances": [
+            "what languages do you speak",
+            "do you speak english",
+            "your language skills"
+          ]
+        },
+        {
+          "name": "GetGitHubIntent",
+          "slots": [],
+          "utterances": [
+            "what is your github",
+            "your github profile",
+            "github url"
+          ]
+        },
+        {
+          "name": "GetYearsExperienceIntent",
+          "slots": [],
+          "utterances": [
+            "how many years of experience do you have",
+            "years of experience",
+            "your experience level"
+          ]
+        },
+        {
+          "name": "GetRemoteWorkIntent",
+          "slots": [],
+          "utterances": [
+            "do you work remotely",
+            "remote work",
+            "can you work remote",
+            "are you open to remote"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "slots": [],
+          "utterances": [
+            "help",
+            "what can i ask",
+            "what can you tell me",
+            "help me"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "slots": [],
+          "utterances": [
+            "stop",
+            "thank you",
+            "thanks",
+            "goodbye",
+            "that is all"
+          ]
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "slots": [],
+          "utterances": ["cancel", "never mind"]
+        },
+        {
+          "name": "FallbackIntent",
+          "slots": [],
+          "utterances": []
+        }
+      ]
+    }
+  }
+}

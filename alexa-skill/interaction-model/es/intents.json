@@ -1,0 +1,199 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "portfolio de rayko",
+      "intents": [
+        {
+          "name": "GetNameIntent",
+          "slots": [],
+          "utterances": [
+            "como te llamas",
+            "cual es tu nombre",
+            "quien eres",
+            "dime tu nombre",
+            "tu nombre"
+          ]
+        },
+        {
+          "name": "GetTitleIntent",
+          "slots": [],
+          "utterances": [
+            "a que te dedicas",
+            "cual es tu trabajo",
+            "cual es tu profesion",
+            "quien eres profesionalmente",
+            "cual es tu rol",
+            "hablame de tu trabajo"
+          ]
+        },
+        {
+          "name": "GetSummaryIntent",
+          "slots": [],
+          "utterances": [
+            "hablame de ti",
+            "dame un resumen",
+            "quien es rayko azcue",
+            "hablame de rayko",
+            "cual es tu perfil",
+            "describete"
+          ]
+        },
+        {
+          "name": "GetExperienceIntent",
+          "slots": [],
+          "utterances": [
+            "hablame de tu experiencia",
+            "cual es tu experiencia laboral",
+            "cuantos años de experiencia tienes",
+            "dime tu historial profesional",
+            "que trabajos has tenido",
+            "tu historial laboral"
+          ]
+        },
+        {
+          "name": "GetCurrentRoleIntent",
+          "slots": [],
+          "utterances": [
+            "donde trabajas ahora",
+            "cual es tu trabajo actual",
+            "para quien trabajas",
+            "puesto actual",
+            "en que estas trabajando ahora",
+            "trabajo presente"
+          ]
+        },
+        {
+          "name": "GetSkillsIntent",
+          "slots": [],
+          "utterances": [
+            "cuales son tus habilidades",
+            "que tecnologias conoces",
+            "en que te especializas",
+            "habilidades tecnicas",
+            "tu stack tecnologico",
+            "que frameworks usas"
+          ]
+        },
+        {
+          "name": "GetAvailabilityIntent",
+          "slots": [],
+          "utterances": [
+            "estas disponible para trabajar",
+            "estas buscando trabajo",
+            "estas abierto a trabajar",
+            "estas contratando",
+            "rayko esta disponible",
+            "esta buscando trabajo"
+          ]
+        },
+        {
+          "name": "GetLocationIntent",
+          "slots": [],
+          "utterances": [
+            "donde estas ubicado",
+            "donde vives",
+            "cual es tu ubicacion",
+            "donde estas basado",
+            "ubicacion actual"
+          ]
+        },
+        {
+          "name": "GetContactIntent",
+          "slots": [],
+          "utterances": [
+            "como puedo contactarte",
+            "cual es tu correo",
+            "como te puedo contactar",
+            "informacion de contacto",
+            "tu correo electronico",
+            "como contactar a rayko"
+          ]
+        },
+        {
+          "name": "GetEducationIntent",
+          "slots": [],
+          "utterances": [
+            "cual es tu formacion",
+            "donde estudiaste",
+            "que titulos tienes",
+            "tu universidad",
+            "tu formacion academica"
+          ]
+        },
+        {
+          "name": "GetProjectsIntent",
+          "slots": [],
+          "utterances": [
+            "que proyectos has construido",
+            "muestrame tus proyectos",
+            "que has desarrollado",
+            "proyectos de tu portfolio",
+            "proyectos notables"
+          ]
+        },
+        {
+          "name": "GetLanguagesIntent",
+          "slots": [],
+          "utterances": [
+            "que idiomas hablas",
+            "hablas ingles",
+            "tus habilidades linguisticas"
+          ]
+        },
+        {
+          "name": "GetGitHubIntent",
+          "slots": [],
+          "utterances": [
+            "cual es tu github",
+            "tu perfil de github",
+            "url de github"
+          ]
+        },
+        {
+          "name": "GetYearsExperienceIntent",
+          "slots": [],
+          "utterances": [
+            "cuantos años de experiencia tienes",
+            "años de experiencia",
+            "tu nivel de experiencia"
+          ]
+        },
+        {
+          "name": "GetRemoteWorkIntent",
+          "slots": [],
+          "utterances": [
+            "trabajas de forma remota",
+            "trabajo remoto",
+            "puedes trabajar remoto",
+            "estas abierto a remoto"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "slots": [],
+          "utterances": [
+            "ayuda",
+            "que puedo preguntar",
+            "que me puedes decir",
+            "ayudame"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "slots": [],
+          "utterances": ["para", "gracias", "adiós", "eso es todo"]
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "slots": [],
+          "utterances": ["cancelar", "olvidalo"]
+        },
+        {
+          "name": "FallbackIntent",
+          "slots": [],
+          "utterances": []
+        }
+      ]
+    }
+  }
+}
