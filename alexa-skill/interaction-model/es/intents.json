@@ -6,7 +6,7 @@
         {
           "name": "GetNameIntent",
           "slots": [],
-          "utterances": [
+          "samples": [
             "como te llamas",
             "cual es tu nombre",
             "quien eres",
@@ -17,7 +17,7 @@
         {
           "name": "GetTitleIntent",
           "slots": [],
-          "utterances": [
+          "samples": [
             "a que te dedicas",
             "cual es tu trabajo",
             "cual es tu profesion",
@@ -29,7 +29,7 @@
         {
           "name": "GetSummaryIntent",
           "slots": [],
-          "utterances": [
+          "samples": [
             "hablame de ti",
             "dame un resumen",
             "quien es rayko azcue",
@@ -41,7 +41,7 @@
         {
           "name": "GetExperienceIntent",
           "slots": [],
-          "utterances": [
+          "samples": [
             "hablame de tu experiencia",
             "cual es tu experiencia laboral",
             "cuantos años de experiencia tienes",
@@ -53,7 +53,7 @@
         {
           "name": "GetCurrentRoleIntent",
           "slots": [],
-          "utterances": [
+          "samples": [
             "donde trabajas ahora",
             "cual es tu trabajo actual",
             "para quien trabajas",
@@ -65,7 +65,7 @@
         {
           "name": "GetSkillsIntent",
           "slots": [],
-          "utterances": [
+          "samples": [
             "cuales son tus habilidades",
             "que tecnologias conoces",
             "en que te especializas",
@@ -77,7 +77,7 @@
         {
           "name": "GetAvailabilityIntent",
           "slots": [],
-          "utterances": [
+          "samples": [
             "estas disponible para trabajar",
             "estas buscando trabajo",
             "estas abierto a trabajar",
@@ -89,7 +89,7 @@
         {
           "name": "GetLocationIntent",
           "slots": [],
-          "utterances": [
+          "samples": [
             "donde estas ubicado",
             "donde vives",
             "cual es tu ubicacion",
@@ -100,7 +100,7 @@
         {
           "name": "GetContactIntent",
           "slots": [],
-          "utterances": [
+          "samples": [
             "como puedo contactarte",
             "cual es tu correo",
             "como te puedo contactar",
@@ -112,7 +112,7 @@
         {
           "name": "GetEducationIntent",
           "slots": [],
-          "utterances": [
+          "samples": [
             "cual es tu formacion",
             "donde estudiaste",
             "que titulos tienes",
@@ -123,7 +123,7 @@
         {
           "name": "GetProjectsIntent",
           "slots": [],
-          "utterances": [
+          "samples": [
             "que proyectos has construido",
             "muestrame tus proyectos",
             "que has desarrollado",
@@ -134,7 +134,7 @@
         {
           "name": "GetLanguagesIntent",
           "slots": [],
-          "utterances": [
+          "samples": [
             "que idiomas hablas",
             "hablas ingles",
             "tus habilidades linguisticas"
@@ -143,7 +143,7 @@
         {
           "name": "GetGitHubIntent",
           "slots": [],
-          "utterances": [
+          "samples": [
             "cual es tu github",
             "tu perfil de github",
             "url de github"
@@ -152,7 +152,7 @@
         {
           "name": "GetYearsExperienceIntent",
           "slots": [],
-          "utterances": [
+          "samples": [
             "cuantos años de experiencia tienes",
             "años de experiencia",
             "tu nivel de experiencia"
@@ -161,7 +161,7 @@
         {
           "name": "GetRemoteWorkIntent",
           "slots": [],
-          "utterances": [
+          "samples": [
             "trabajas de forma remota",
             "trabajo remoto",
             "puedes trabajar remoto",
@@ -171,7 +171,7 @@
         {
           "name": "AMAZON.HelpIntent",
           "slots": [],
-          "utterances": [
+          "samples": [
             "ayuda",
             "que puedo preguntar",
             "que me puedes decir",
@@ -181,17 +181,17 @@
         {
           "name": "AMAZON.StopIntent",
           "slots": [],
-          "utterances": ["para", "gracias", "adiós", "eso es todo"]
+          "samples": ["para", "gracias", "adiós", "eso es todo"]
         },
         {
           "name": "AMAZON.CancelIntent",
           "slots": [],
-          "utterances": ["cancelar", "olvidalo"]
+          "samples": ["cancelar", "olvidalo"]
         },
         {
-          "name": "FallbackIntent",
+          "name": "AMAZON.FallbackIntent",
           "slots": [],
-          "utterances": []
+          "samples": []
         }
       ]
     }

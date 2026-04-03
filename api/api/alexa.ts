@@ -320,8 +320,17 @@ export default async function handler(
         return response.json(buildAlexaResponse(staticResponse, shouldEnd));
       }
 
-      if (intentName === 'FallbackIntent') {
+      if (intentName === 'AMAZON.FallbackIntent') {
         const userMessage = 'Tell me about Rayko Azcue';
+        const aiResponse = await getAIResponse(userMessage, locale);
+        return response.json(buildAlexaResponse(aiResponse));
+      }
+
+      if (intentName === 'FallbackIntent') {
+        const querySlot = alexaRequest.request.intent?.slots?.Query as
+          | { value?: string }
+          | undefined;
+        const userMessage = querySlot?.value || 'Tell me about Rayko Azcue';
         const aiResponse = await getAIResponse(userMessage, locale);
         return response.json(buildAlexaResponse(aiResponse));
       }
