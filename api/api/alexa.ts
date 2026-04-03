@@ -263,8 +263,8 @@ function buildAlexaResponse(
     version: '1.0',
     response: {
       outputSpeech: {
-        type: 'SSML',
-        ssml: `<speak>${outputSpeech}</speak>`,
+        type: 'PlainText',
+        text: outputSpeech,
       },
       shouldEndSession,
     },
@@ -299,9 +299,9 @@ export default async function handler(
 
     if (requestType === 'LaunchRequest') {
       const welcomeMsg = locale.startsWith('es')
-        ? 'Bienvenido a Rayko Portfolio. Soy el asistente de voz de Rayko Azcue. Puedes preguntarme sobre su experiencia, habilidades o proyectos. ¿Qué te gustaría saber?'
-        : "Welcome to Rayko Portfolio. I am Rayko Azcue's voice assistant. You can ask me about his experience, skills, or projects. What would you like to know?";
-      return response.json(buildAlexaResponse(welcomeMsg));
+        ? 'Bienvenido a Rayko Azcue. Soy el asistente de voz de Rayko Azcue. Puedes preguntarme sobre su experiencia, habilidades o proyectos. ¿Qué te gustaría saber?'
+        : "Welcome to Rayko Azcue. I am Rayko Azcue's voice assistant. You can ask me about his experience, skills, or projects. What would you like to know?";
+      return response.json(buildAlexaResponse(welcomeMsg, false));
     }
 
     if (requestType === 'IntentRequest') {
@@ -323,7 +323,7 @@ export default async function handler(
       if (intentName === 'AMAZON.FallbackIntent') {
         const userMessage = 'Tell me about Rayko Azcue';
         const aiResponse = await getAIResponse(userMessage, locale);
-        return response.json(buildAlexaResponse(aiResponse));
+        return response.json(buildAlexaResponse(aiResponse, false));
       }
 
       if (intentName === 'FallbackIntent') {
@@ -332,13 +332,13 @@ export default async function handler(
           | undefined;
         const userMessage = querySlot?.value || 'Tell me about Rayko Azcue';
         const aiResponse = await getAIResponse(userMessage, locale);
-        return response.json(buildAlexaResponse(aiResponse));
+        return response.json(buildAlexaResponse(aiResponse, false));
       }
 
       const fallbackMsg = locale.startsWith('es')
         ? 'No entendí esa pregunta. Puedes preguntarme sobre la experiencia, habilidades, proyectos o cómo contactar a Rayko.'
         : "I didn't understand that question. You can ask me about Rayko's experience, skills, projects, or how to contact him.";
-      return response.json(buildAlexaResponse(fallbackMsg));
+      return response.json(buildAlexaResponse(fallbackMsg, false));
     }
 
     if (requestType === 'SessionEndedRequest') {

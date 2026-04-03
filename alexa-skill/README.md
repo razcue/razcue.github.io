@@ -1,6 +1,47 @@
-# Alexa Skill Setup - Rayko Portfolio
+# Alexa Skill Setup - Rayko Azcue
 
 Voice assistant for Rayko Azcue's portfolio. Users can ask about experience, skills, projects, and contact information.
+
+## Skill Details
+
+| Property            | Value                            |
+| ------------------- | -------------------------------- |
+| **Skill Name**      | Rayko Azcue                      |
+| **Invocation (EN)** | rayko azcue                      |
+| **Invocation (ES)** | rayko azcue                      |
+| **Languages**       | English (en-US), Spanish (es-ES) |
+
+## Distribution - Example Phrases
+
+### English (en-US)
+
+```
+- Alexa, ask Rayko Azcue
+- Alexa, open Rayko Azcue
+- Alexa, talk to Rayko Azcue
+```
+
+### Spanish (es-ES)
+
+```
+- Alexa, abre Rayko Azcue
+- Alexa, pregunta a Rayko Azcue
+- Alexa, habla con Rayko Azcue
+```
+
+## Distribution - Descriptions
+
+### English (en-US)
+
+**One Sentence:** Ask Alexa about Rayko Azcue's experience, skills, and projects.
+
+**Detailed:** Rayko Azcue is your voice assistant to learn about a Senior Software Engineer with 7+ years of experience. Ask about his work experience, technical skills, projects, availability for work, location, and how to contact him. The assistant responds in English and Spanish, and uses AI for questions not covered by predefined queries.
+
+### Spanish (es-ES)
+
+**One Sentence:** Pregunta a Alexa sobre la experiencia, habilidades y proyectos de Rayko Azcue.
+
+**Detailed:** Rayko Azcue es tu asistente de voz para conocer a un Ingeniero de Software Senior con más de 7 años de experiencia. Pregúntale sobre su experiencia laboral, habilidades técnicas, proyectos, disponibilidad para trabajar, ubicación y cómo contactarlo. El asistente responde en español e inglés, y usa IA para preguntas no cubiertas por las consultas predefinidas.
 
 ## Architecture
 
@@ -33,7 +74,7 @@ api/
 ### 1. Create Skill in Alexa Developer Console
 
 1. Go to [developer.amazon.com/alexa/console/ask](https://developer.amazon.com/alexa/console/ask)
-2. Create new skill → "Rayko Portfolio"
+2. Create new skill → "Rayko Azcue"
 3. Choose language: English (or Spanish - you'll create both)
 4. Choose model: Custom
 5. Choose hosting method: Alexa-Hosted (or self-hosted)
@@ -72,7 +113,7 @@ ask api upload-interaction -s <skill-id> -f interaction-model/en/intents.json
 
 1. In Alexa Console → Test
 2. Enable skill testing
-3. Try: "Alexa, ask Rayko Portfolio about his experience"
+3. Try: "Alexa, ask Rayko Azcue about his experience"
 
 ## Intent List
 
@@ -109,13 +150,13 @@ When an utterance doesn't match any static intent:
 
 ## Invocation
 
-- English: "Alexa, ask Rayko Portfolio about his experience"
-- Spanish: "Alexa, pregunta a Rayko Portfolio sobre su experiencia"
+- English: "Alexa, ask Rayko Azcue about his experience"
+- Spanish: "Alexa, pregunta a Rayko Azcue sobre su experiencia"
 
 Or open the skill:
 
-- English: "Alexa, open Rayko Portfolio"
-- Spanish: "Alexa, abre Rayko Portfolio"
+- English: "Alexa, open Rayko Azcue"
+- Spanish: "Alexa, abre Rayko Azcue"
 
 ## Environment Variables
 

@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "rayko portfolio",
+      "invocationName": "rayko azcue",
       "intents": [
         {
           "name": "GetNameIntent",
