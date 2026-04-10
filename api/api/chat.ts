@@ -274,7 +274,6 @@ const knowledgeBase = {
     email: 'razcue@yandex.com',
     phone: '+53 5476-1244',
     location: 'Madrid, Spain',
-    linkedin: 'https://www.linkedin.com/in/rayko-azcue/',
     github: 'https://github.com/razcue',
     website: 'https://razcue.github.io',
   },
@@ -351,7 +350,6 @@ ${projectsList}
 Email: ${kb.contact.email}
 Phone: ${kb.contact.phone}
 Location: ${kb.contact.location}
-LinkedIn: ${kb.contact.linkedin}
 GitHub: ${kb.contact.github}
 Website: ${kb.contact.website}
 
