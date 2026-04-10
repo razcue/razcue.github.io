@@ -1,3 +1,8 @@
+---
+name: resume-build
+description: 'Agent skill for building tailored and hybrid PDF resumes for job applications. Creates configs and generates PDF resumes based on job proposals.'
+---
+
 # Resume Build - Agent Skill
 
 ## Overview

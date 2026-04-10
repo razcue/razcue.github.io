@@ -135,10 +135,15 @@
       "name": "LatamCent",
       "url": "https://latamcent.com/careers/",
       "type": "direct_careers"
+    },
+    {
+      "name": "Venon Solutions",
+      "url": "https://www.careers-page.com/venon-solutions",
+      "type": "staff_augmentation"
     }
   ],
   "notes": {
-    "last_updated": "2026-02-21",
+    "last_updated": "2026-03-27",
     "categories": {
       "job_board": "General tech job listings",
       "staff_augmentation": "Companies that provide remote talent to US companies",

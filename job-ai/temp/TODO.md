@@ -1,30 +1,29 @@
 # TODO - Job Applications
 
-Generated: 2026-03-06
-
-## Summary
-
-| Type          | Count | Status          |
-| ------------- | ----- | --------------- |
-| Direct Apply  | 12    | Already applied |
-| Outreach      | 0     | No pending      |
-| Total Applied | 12    | -               |
-
-## Pending Actions
-
-No pending actions. Run job-search skill to find new opportunities.
+**Last Updated:** 2026-04-09
 
 ---
 
-## Status Legend
+## Summary
 
-- **manual-apply**: Company has career page with job posting - apply directly
-- **send-outreach**: No direct apply - send cold outreach email
-- **build-resume**: Need to create tailored resume config first
-- **pending**: Awaiting user approval
-- **approved**: Approved, ready to proceed
-- **sent**: Outreach email sent
-- **applied**: Direct application submitted
-- **interview**: Got interview
-- **negociation**: In salary negotiation
-- **rejected**: Application rejected
+| Type                | Count |
+| ------------------- | ----- |
+| Active Applications | 0     |
+| Archived (Feb 2026) | 12    |
+| Rejections          | 3     |
+| No Response (>30d)  | 8     |
+| Negociation         | 1     |
+| Pending Follow-ups  | 0     |
+| Open Proposals      | 0     |
+
+---
+
+## Pending Follow-ups
+
+No pending follow-ups.
+
+---
+
+## Open Proposals
+
+No open proposals.

@@ -1,54 +1,89 @@
 # Direct Applications - Pending Review
 
-Generated: 2026-03-06
+Generated: 2026-03-29
 
 ---
 
-No direct apply proposals pending. Run job-search to find new opportunities with active job postings.
+No pending proposals.
+
+**To add proposals:** Run job-search skill, it will create proposals here.
 
 ---
 
-## Format Guide
+## Proposal Format
 
-When proposals exist, they follow this format:
+When proposals are added, they follow this format:
 
-## Company Name - Position Title
+```markdown
+## {{company_name}} - {{position_title}}
 
-**Action:** manual-apply  
-**Proposed:** YYYY-MM-DD
+**Score:** {{score}}/100 ({{priority}} PRIORITY)
+**Proposed:** {{YYYY-MM-DD}}
+**Action:** Direct Apply + Outreach + Follow-up
 
 ### Company
 
-- **Name:** Company Name
-- **Website:** company.com
-- **Sector:** Industry
-- **Tech Stack:** Vue.js, React, etc.
+- **Name:** {{company_name}}
+- **Website:** {{company_website}}
+- **Email:** {{contact_email}}
+- **Sector:** {{industry_sector}}
+- **Tech Stack:** {{tech_stack_csv}}
+- **Stage:** {{startup|series-a|series-b|enterprise|unknown}}
 
 ### Position
 
-- **Title:** Job Title
-- **URL:** link to posting
-
-### Skills (for resume)
-
-- Tech skills to emphasize
-
-### Experience (relevant highlights)
-
-- Key achievements to highlight
-
-### Summary (tailored)
-
-- Custom summary for this role
-
-### Notes
-
-- Additional context
+- **Title:** {{position_title}}
+- **URL:** {{job_posting_url}}
+- **Application Type:** {{company_page|email|LinkedIn}}
+- **Model:** {{remote|hybrid|onsite}}
+- **Location:** {{location}}
+- **Salary:** {{salary_range_or_null}}
+- **Language:** {{en|es}}
 
 ---
 
-### Resume Action Needed
+## Resume Sections (Tailored)
 
-[ ] Build tailored resume
-[ ] Build hybrid resume
-[ ] Review and approve → Apply
+**Speech Mode:** Match company's language
+**Tone:** Professional, achievements-focused
+
+### Profile (Tailored)
+
+{{2-3 sentences tailored to company using knowledge base}}
+
+### Skills to Highlight
+
+{{3-5 skills most relevant to the job posting}}
+
+---
+
+## Cover Letter (for direct apply)
+
+**Subject:** {{position_title}} Application - Rayko Azcue
+
+{{Full cover letter in company language}}
+
+---
+
+## Outreach Email (to technical contact)
+
+**Subject:** {{Dynamic subject line}}
+
+{{Full outreach email}}
+
+---
+
+## Follow-up Email (7 days after)
+
+**Subject:** Following up - {{position_title}}
+
+{{Follow-up email}}
+
+---
+
+### Actions
+
+[ ] Review cover letter → Approve → Apply
+[ ] Review outreach email → Approve → Send
+[ ] Build resumes
+```

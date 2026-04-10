@@ -180,18 +180,21 @@ For each application, two PDFs are generated:
       "soft": ["Remote-first", "Agile"]
     }
   },
-  "status": "pending" | "approved" | "sent" | "applied" | "interview" | "negociation" | "rejected",
+  "status": "pending" | "approved" | "sent" | "applied" | "followup-scheduled" | "followup-sent" | "no-response" | "interview" | "negociation" | "rejected",
   "applicationDate": "YYYY-MM-DD" | null,
   "proposedAt": "YYYY-MM-DD",
   "proposedWhy": "Reason for targeting",
   "outcomes": {
     "emailSentAt": "YYYY-MM-DD",
+    "emailsSent": ["email1", "email2", ...],
+    "followupSentAt": null,
     "responseReceived": true | false,
     "responseDate": "YYYY-MM-DD" | null,
-    "responseType": "positive" | "negative" | "no-response",
+    "responseType": "positive" | "negative" | "in-review" | "no-response",
     "interviewScheduled": true | false,
     "interviewDate": "YYYY-MM-DD" | null,
-    "feedback": "Notes from the process"
+    "feedback": "Notes from the process",
+    "emailContent": "Full email text sent"
   },
   "rejectionDate": null,
   "rejectionNote": "",
