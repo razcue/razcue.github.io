@@ -67,19 +67,21 @@ Complete workflow for autonomous job application management.
 
 ---
 
-## Key Files
+## Key Files (DATA-ONLY - No Logic)
 
-| File                             | Purpose                         |
-| -------------------------------- | ------------------------------- |
-| `data/applications.json`         | Single source of truth          |
-| `data/applications-YYYY-MM.json` | Archived applications           |
-| `data/companies.json`            | Company tracking                |
-| `data/email-state.json`          | Email check state               |
-| `temp/TODO.md`                   | Current status (check first)    |
-| `temp/MANUAL_TODO.md`            | Uncertain emails needing review |
-| `temp/direct.md`                 | HIGH score proposals            |
-| `temp/outreach.md`               | MEDIUM score proposals          |
-| `temp/followups.md`              | Scheduled follow-ups            |
+| File                             | Purpose                          |
+| -------------------------------- | -------------------------------- |
+| `data/applications.json`         | Single source of truth           |
+| `data/applications-YYYY-MM.json` | Archived applications            |
+| `data/companies.json`            | Company tracking                 |
+| `data/email-state.json`          | Email check state                |
+| `temp/TODO.md`                   | Current status (check first)     |
+| `temp/MANUAL_TODO.md`            | Uncertain emails needing review  |
+| `temp/direct.md`                 | HIGH score proposals (data only) |
+| `temp/outreach.md`               | MEDIUM score proposals (data)    |
+| `temp/followups.md`              | Scheduled follow-ups             |
+
+**IMPORTANT:** Temp files should contain ONLY data (company info, emails, status). NO logic, NO rules, NO workflow explanations. See job-search skill for workflow logic.
 
 ---
 

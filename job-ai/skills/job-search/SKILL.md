@@ -41,6 +41,48 @@ Autonomous job opportunity hunter that searches, filters, and proposes outreach 
 - Prioritize roles with family relocation support
 - Target countries: Spain, Uruguay, Mexico, or similar
 
+## Filtering Rules (APPLY BEFORE SCORING)
+
+### 1. Location Fit Check
+
+- ✅ Good fit → Continue to scoring:
+  - Remote globally / "work from anywhere" / "remote" / "anywhere in the world"
+  - Remote LATAM (no specific countries listed)
+  - Visa sponsorship (any country)
+
+- ❌ Not a good fit → Skip or mark as OUTREACH:
+  - Remote LATAM with SPECIFIC country list, not having Cuba (e.g., "Argentina, Brazil, Colombia") → OUTREACH
+  - Specific cities/countries listed without Cuba → OUTREACH
+  - "LATAM" with countries listed that don't include Cuba → OUTREACH
+
+**Note:** It's acceptable if "remote LATAM" or similar broad terms are used; Cuba doesn't need to be explicitly listed. Only problematic when specific countries are listed excluding Cuba.
+
+### 2. Active Position Check
+
+- ✅ Job posting URL is active and accepting applications → DIRECT APPLY eligible
+- ❌ Job posting shows "Closed", "No longer accepting", "Expired", "This job is closed" → OUTREACH
+
+### 3. Application Source Check
+
+- ✅ Company careers page (company.com/careers, company.com/jobs, company.com/jobs/...) → DIRECT APPLY
+- ❌ Job board postings → OUTREACH (not direct apply)
+  - We Work Remotely
+  - Remotive
+  - LinkedIn Jobs
+  - Indeed
+  - Glassdoor
+  - Dynamo Jobs
+  - Remote Rocketship
+  - VueJobs
+  - Get on Board (company page is OK, but their job board is not)
+
+### 4. Double-hit Strategy
+
+- All direct apply entries MUST also include company outreach emails
+- Even when applying via company page, also send outreach email to company contacts (multiple emails if found)
+
+---
+
 ## How It Works
 
 ### 0. Daily Full Checkout (ALWAYS RUN FIRST)
@@ -128,12 +170,18 @@ Search for companies using:
 For each company found, gather:
 
 - Company name, website
-- **Contact emails (FIND MULTIPLE):**
-  - Job posting email (if listed)
-  - HR/Recruitment: Try hr@{{domain}}, careers@{{domain}}, jobs@{{domain}}, recruiting@{{domain}}, talent@{{domain}}, recruitment@{{domain}}
-  - General contact: Try contact@{{domain}}, info@{{domain}}, hello@{{domain}}, support@{{domain}}
-  - Visit company homepage, careers page, contact page for additional emails
-  - **Send applications to ALL found emails (no max limit)**
+- **Contact emails (FIND MULTIPLE - VERIFY EACH):**
+  - **Step 1:** Check job posting page for application email (if listed)
+  - **Step 2:** Visit company website and scrape:
+    - Homepage footer
+    - /contact page
+    - /careers or /jobs page
+  - **Step 3:** Generate ALL possible email patterns:
+    - HR/Recruitment: hr@{{domain}}, careers@{{domain}}, jobs@{{domain}}, recruiting@{{domain}}, talent@{{domain}}, recruitment@{{domain}}, hiring@{{domain}}, apply@{{domain}}, work@{{domain}}
+    - General contact: contact@{{domain}}, info@{{domain}}, hello@{{domain}}, support@{{domain}}, admin@{{domain}}, team@{{domain}}, office@{{domain}}
+  - **Step 4:** Verify emails by visiting company website pages to confirm they exist
+  - **Step 5:** Document which emails were actually verified on the website vs guessed
+  - **Send applications to ALL verified emails found (no max limit)**
 - Sector, product, target customers
 - Tech stack
 - Career page URL
@@ -146,11 +194,13 @@ For each company found, gather:
 
 1. **Job posting language:**
    - If posting is in Spanish → use Spanish
+   - If posting is in Portuguese → use English (NOT Portuguese)
    - If posting is in English → use English
-   - If posting is mixed → default to English
+   - If posting is in another language → default to English
 
 2. **Company origin:**
    - Spanish-speaking countries (Spain, Mexico, LATAM) → check posting, default Spanish
+   - Portuguese-speaking countries (Brazil, Portugal) → use English (NOT Portuguese)
    - English-speaking countries/companies → English
 
 3. **User preference:**
@@ -161,6 +211,7 @@ For each company found, gather:
 **Language decision rules:**
 
 - If job posting explicitly asks for Spanish responses → Spanish
+- If job posting is in Portuguese → English (NOT Portuguese)
 - If company team is Spanish-speaking (Spanish in job description, "habla español") → Spanish
 - Otherwise → English
 
@@ -174,28 +225,37 @@ For each company found, gather:
 
 Before proposing, check against `applications.json` AND `companies.json`:
 
-| Scenario                                    | Action                                  |
-| ------------------------------------------- | --------------------------------------- |
-| Same company + same position                | **SKIP** - Already applied              |
-| Same company + different position           | **ALLOW** - New opportunity             |
-| Already sent outreach + has new job posting | **PROPOSE** - Direct apply now possible |
-| Company already in pending proposals        | **SKIP** - Already proposed             |
-| Company has 3+ rejections in history        | **SKIP** - Low response rate            |
-| Company has positive response in history    | **BOOST SCORE** - Prioritize            |
+| Scenario                                    | Action                                                          |
+| ------------------------------------------- | --------------------------------------------------------------- |
+| Same company + same position                | **SKIP** - Already applied                                      |
+| Same company + different position           | **CHECK** - Keep highest score only, skip others within 30 days |
+| Already sent outreach + has new job posting | **PROPOSE** - Direct apply now possible                         |
+| Company already in pending proposals        | **SKIP** - Already proposed                                     |
+| Company has 3+ rejections in history        | **SKIP** - Low response rate                                    |
+| Company has positive response in history    | **BOOST SCORE** - Prioritize                                    |
+
+**Same Company Time Window Rule:**
+
+- If you have applied to or sent outreach to a company within the last 30 days, DO NOT propose additional positions at the same company
+- Keep only the highest-scoring position at each company
+- Wait until 30+ days have passed before targeting the same company again
 
 ### 6. Classify Opportunity
 
-**A. Direct Apply** (has active job posting):
+**APPLY FILTERING RULES FIRST (Section 2.4), THEN classify:**
 
-- Company has career page WITH active job posting
-- Job posting is NOT redirect to LinkedIn only
-- → Mark as "manual-apply"
+**A. Direct Apply** (passes ALL filtering rules):
 
-**B. Outreach** (no direct apply possible):
+- Location fit: ✅ (remote globally, LATAM without countries, visa)
+- Active position: ✅ Job posting URL is active
+- Source: ✅ Company careers page (not job board)
+- → Mark as "direct-apply" + add outreach emails for double-hit
 
-- No career page found
-- Career page but NO active job postings
-- Job posting redirects to LinkedIn (no direct apply)
+**B. Outreach** (fails one or more filtering rules):
+
+- Location fails: Specific countries listed without Cuba → OUTREACH
+- Position closed: Job posting no longer accepting applications → OUTREACH
+- Source is job board: We Work Remotely, Remotive, LinkedIn, etc. → OUTREACH
 - → Mark as "send-outreach"
 
 ### 7. Calculate Priority Score
@@ -216,13 +276,13 @@ For each valid opportunity, calculate a priority score (0-100):
 
 **Work Model (0-20 points):**
 
-| Model                                | Points | Notes               |
-| ------------------------------------ | ------ | ------------------- |
-| Visa sponsorship + family relocation | +20    | Good for relocation |
-| Remote (from Cuba/LATAM)             | +20    | Perfect             |
-| Remote (global)                      | +15    | Works               |
-| Hybrid without visa                  | +0     | Skip                |
-| Onsite                               | +0     | Not suitable        |
+| Model                                   | Points | Notes               |
+| --------------------------------------- | ------ | ------------------- |
+| Visa sponsorship + family relocation    | +20    | Best for relocation |
+| Remote (global/LATAM without countries) | +20    | Passed filter       |
+| Remote (specific countries)             | +10    | Lower priority      |
+| Hybrid without visa                     | +0     | Skip, Not suitable  |
+| Onsite without visa                     | +0     | Skip, Not suitable  |
 
 **Salary/Benefits (0-20 points):**
 
