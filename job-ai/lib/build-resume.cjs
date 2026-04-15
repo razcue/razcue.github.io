@@ -32,10 +32,10 @@ const Handlebars = require('handlebars');
 const puppeteer = require('puppeteer');
 
 const CONFIGS_DIR = path.join(__dirname, 'configs');
-const TEMPLATES_DIR = path.join(__dirname, 'templates');
+const TEMPLATES_DIR = path.join(__dirname, '..', 'templates');
 const DEFAULT_CONFIG_FILE = path.join(__dirname, 'configs', 'default.json');
 const POSITION_HISTORY_FILE = path.join(__dirname, 'position-history.json');
-const OUTPUT_DIR = path.join(__dirname, '..', 'public');
+const OUTPUT_DIR = path.join(__dirname, '..', '..', 'public');
 
 /**
  * Load config file

@@ -1,4 +1,95 @@
 {
-  "applications": [],
-  "lastUpdated": "2026-03-29"
+  "applications": [
+    {
+      "id": "2026-04-13-tecla-frontend-vuejs",
+      "type": "outreach",
+      "score": 42,
+      "priority": "LOW",
+      "company": {
+        "name": "TECLA",
+        "website": "https://teclatam.com",
+        "email": null,
+        "sector": "IT Services / Staff Augmentation",
+        "techStack": [
+          "Vue.js",
+          "Nuxt.js",
+          "TypeScript",
+          "Pinia",
+          "TailwindCSS"
+        ],
+        "stage": "Growth"
+      },
+      "position": {
+        "title": "Frontend Developer (Vue.js)",
+        "url": "https://www.getonbrd.com/jobs/programming/frontend-developer-vuejs-tecla-remote",
+        "applicationType": "outreach",
+        "model": "remote",
+        "location": "LATAM",
+        "salary": null,
+        "language": "en",
+        "keywords": {
+          "technical": [
+            "Vue.js",
+            "Nuxt.js",
+            "TypeScript",
+            "Pinia",
+            "TailwindCSS",
+            "Core Web Vitals"
+          ],
+          "soft": ["Remote Work", "Agile", "Distributed Teams"]
+        }
+      },
+      "status": "sent",
+      "applicationDate": "2026-04-13",
+      "notes": {
+        "model": "IT Services - Remote",
+        "company": "TECLA - Staff augmentation company with 100+ experts serving LATAM market",
+        "techStack": "Vue.js, Nuxt.js, TypeScript, Pinia, TailwindCSS, Remote-first",
+        "role": "Frontend Developer position (closed) - outreach to explore opportunities"
+      },
+      "outcomes": {
+        "emailSentAt": "2026-04-13",
+        "followupSentAt": null,
+        "emailsSent": [
+          "careers@teclatam.com",
+          "jobs@teclatam.com",
+          "hiring@teclatam.com",
+          "recruiting@teclatam.com",
+          "talent@teclatam.com",
+          "team@teclatam.com",
+          "hr@teclatam.com",
+          "contact@teclatam.com",
+          "hello@teclatam.com",
+          "info@teclatam.com"
+        ],
+        "emailsFailed": [],
+        "responseReceived": false,
+        "responseDate": null,
+        "responseType": "no-response",
+        "interviewScheduled": false,
+        "interviewDate": null,
+        "feedback": "",
+        "emailContent": ""
+      },
+      "proposal": {
+        "proposedAt": "2026-04-13",
+        "proposedWhy": "Vue.js developer position matching tech stack",
+        "profile": "Senior Frontend Developer with 7+ years building web applications for companies across Europe, US, and LATAM. Strong expertise in Vue.js ecosystem with additional experience as Full-Stack Developer integrating PHP backends (Laravel, Yii) into frontend applications.",
+        "skills": [
+          "Vue.js",
+          "Nuxt.js",
+          "TypeScript",
+          "Pinia",
+          "TailwindCSS",
+          "Laravel",
+          "PHP",
+          "Core Web Vitals"
+        ],
+        "coverLetter": "",
+        "outreachEmail": "I'm Rayko Azcue, a Software Developer with 7+ years of experience serving companies across Europe, US, and LATAM, with hands-on experience in Vue.js, Nuxt.js, TypeScript, Pinia, TailwindCSS, and performance optimization. I'm reaching out to explore potential opportunities at TECLA.",
+        "followupEmail": "My name is Rayko Azcue, and I recently reached out regarding frontend or full-stack opportunities at TECLA. I wanted to know if there might be any current or upcoming positions that could be a good match for my experience. With 7+ years building web applications and strong expertise in Vue.js, Nuxt.js, and TypeScript, I'd love to discuss how I could contribute to your team."
+      }
+    }
+  ],
+  "lastUpdated": "2026-04-13"
 }

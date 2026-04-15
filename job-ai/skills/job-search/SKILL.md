@@ -321,211 +321,102 @@ For each valid opportunity, calculate a priority score (0-100):
 
 ### 9. Save Proposals to Temp Files
 
-Create detailed proposals with FULL EMAIL CONTENT and RESUME SECTIONS.
+Create detailed proposals for each opportunity with the following structure:
+
+**Every proposal in temp/outreach.md MUST include:**
+
+- **Summary (Tailored):** 2-3 sentences following the Summary Template below
+- **Skills to Highlight:** 3-5 skills most relevant to the job/company
+- **Email Draft:** Following the Email Introduction Template below
+- **Follow-up Email Draft:** Following the Follow-up Email Template below
 
 **USE KNOWLEDGE BASE:**
 
-- Load `job-ai/KNOWLEDGE_BASE.md` for:
-  - Profile sections (use actual achievements, not placeholders)
-  - Skills to highlight (match job requirements)
-  - Experience bullets (use real examples)
-  - Email tone and content style
+- Load `job-ai/KNOWLEDGE_BASE.md` (English) or `job-ai/KNOWLEDGE_BASE.es.md` (Spanish) based on company language
+- Load `job-ai/data/configs/default.json` for profile sections (use actual achievements)
+- Match skills to job requirements
+- Use real experience examples
+
+**Templates (ALWAYS USE):**
+
+**Email Introduction Template:**
+
+"I'm a Software Developer with 7+ years of experience serving companies across Europe, US, and LATAM, with hands-on experience in [company's sector/similar sectors]."
+
+**Summary Template:**
+
+"Senior Front End & Full Stack Engineer with 7+ years building web applications for companies across Europe, US, and LATAM. Strong expertise in [main technologies] with proven track record of [key achievement]. Cross-functional experience across [sectors]."
+
+**Follow-up Email Template:**
+
+"Subject: Checking In - [Position] Opportunity at [Company]
+
+Dear [Company] Team,
+
+My name is [Your Name], and I recently reached out regarding [position] opportunities at [Company]. I wanted to know if there might be any current or upcoming positions that could be a good match for my experience.
+
+With 7+ years building web applications and strong expertise in [main technologies], I'd love to discuss how I could contribute to your team.
+
+Best regards
+[Your Name]"
+
+**Key points for follow-up emails:**
+
+- Always introduce yourself by name first
+- Mention you sent an email previously and show interest
+- Use "I wanted to know if there might be" (NOT "I wanted to follow up and see if there might be")
+- Never include "Please let me know if you'd like to connect"
+- Keep under 150 words
 
 **Speech Mode & Tone:**
 
-- Language: Match company's language (English or Spanish) - see section 2.5
+- Language: Match company's language (English or Spanish)
 - Tone: Professional, concise, confident but not arrogant
 - Length: Emails under 150 words
 - Focus: Value proposition, not just interest
 
-**temp/direct.md** - For high-score opportunities (70+):
+**Proposal Structure for temp/outreach.md:**
 
 ```markdown
-## {{company_name}} - {{position_title}}
+### {{company}} - {{position}}
 
-**Score:** {{score}}/100 ({{priority}} PRIORITY)
-**Proposed:** {{YYYY-MM-DD}}
-**Action:** Direct Apply + Outreach + Follow-up
-
-### Company
-
-- **Name:** {{company_name}}
-- **Website:** {{company_website}}
-- **Emails:** {{comma-separated list of all found emails}}
-- **Sector:** {{industry_sector}}
-- **Tech Stack:** {{tech_stack_csv}}
-- **Stage:** {{startup|series-a|series-b|enterprise|unknown}}
-
-### Position
-
-- **Title:** {{position_title}}
-- **URL:** {{job_posting_url}}
-- **Application Type:** {{company_page|email|LinkedIn}}
-- **Model:** {{remote|hybrid|onsite}}
-- **Location:** {{location}}
-- **Salary:** {{salary_range_or_null}}
-
----
-
-## Resume Sections (Tailored)
-
-**Speech Mode:** Match company's language
-**Tone:** Professional, achievements-focused
-
-### Profile (Tailored)
-
-{{2-3 sentences: years_experience + primary_skill + key_achievement + how_it_relates_to_company}}
-
-### Skills to Highlight
-
-{{3-5 skills most relevant to the job posting}}
-
----
-
-## Cover Letter (for direct apply)
-
-**Subject:** {{position_title}} Application - Rayko Azcue
-
-**Tone:** Professional, concise, role-focused
-
-Dear {{Hiring Team|Hiring Manager}},
-
-{{Opening: Express interest in role + why company (1 sentence)}}
-
-{{Body: 1-2 relevant achievements that match job requirements (2 sentences)}}
-
-{{Closing: Call to action + attached resume mention (1 sentence)}}
-
-Best regards,
-Rayko Azcue
-
----
-
-## Outreach Email (to technical contact)
-
-**Subject:** {{Dynamic subject line - company name + role or question}}
-
-**Tone:** Professional, curious, value-first
-
-Hi {{recipient_name|there}},
-
-{{Opening: 1 sentence - specific thing noticed about company OR connection to their work}}
-
-{{Body: Your relevant achievement + why this company interests you (2 sentences)}}
-
-{{Closing: Question or call to action}}
-
-Best regards,
-Rayko Azcue
-Senior Frontend Developer
-{{linkedin_url}}
-{{phone_number}}
-
----
-
-## Follow-up Email (schedule for 7 days after)
-
-**Subject:** Following up - {{position_title}}
-
-**Tone:** Polite, brief, non-pushy
-
-Hi {{recipient_name|there}},
-
-{{Short follow-up: Reference previous email + still interested + ask if needed more info}}
-
-Best regards,
-Rayko Azcue
-
----
-
-### Actions
-
-[ ] Review cover letter → Approve → Apply via company page
-[ ] Review outreach email → Approve → Send to technical contact
-[ ] On send: Add follow-up to temp/followups.md
-[ ] Build tailored + hybrid resumes
-```
-
-**temp/outreach.md** - For medium-score opportunities (40-69):
-
-```markdown
-## {{company_name}}
-
-**Score:** {{score}}/100 (MEDIUM PRIORITY)
-**Proposed:** {{YYYY-MM-DD}}
-**Action:** Outreach Only
-
-### Company
-
-- **Name:** {{company_name}}
-- **Website:** {{company_website}}
-- **Emails:** {{comma-separated list of all found emails}}
-- **Sector:** {{industry_sector}}
-- **Tech Stack:** {{tech_stack_csv}}
-
-### Position (if any)
-
-- **Title:** {{position_title_or_null}}
-- **URL:** {{job_posting_url_or_null}}
-- **Model:** {{remote|hybrid|onsite}}
+- **Score:** {{score}}
+- **Position:** {{position_title}}
+- **URL:** {{job_url}}
+- **Website:** {{website}}
+- **Sector:** {{sector}}
+- **Tech Stack:** {{tech_stack}}
+- **Stage:** {{stage}}
+- **Work Model:** {{remote|hybrid|onsite}}
 - **Location:** {{location}}
 
----
+#### Company Emails
 
-## Resume Sections (Tailored)
+- {{all email addresses found}}
 
-**Speech Mode:** Match company's language
-**Tone:** Professional, concise
+#### Email Draft
 
-### Profile (Tailored)
+[Full outreach email using template above]
 
-{{2-3 sentences: years_experience + primary_skill + key_achievement}}
+#### Summary (Tailored)
 
-### Skills to Highlight
+[2-3 sentences following Summary Template]
 
-{{3-5 skills most relevant to company}}
+#### Skills to Highlight
 
----
+- {{skill 1}}
+- {{skill 2}}
+- {{skill 3}}
 
-## Outreach Email
+#### Follow-up Email Draft
 
-**Subject:** {{Dynamic subject - role + company name}}
-
-**Tone:** Professional, concise, curious
-
-Hi {{recipient_name|there}},
-
-{{Opening: 1 sentence - noticed about company}}
-
-{{Body: Your relevant experience + what interests you about them}}
-
-{{Closing: Question about hiring or connection}}
-
-Best regards,
-Rayko Azcue
-
----
-
-## Follow-up Email (7 days after)
-
-**Subject:** Following up - {{company_name}}
-
-**Tone:** Polite, brief, non-pushy
-
-Hi {{recipient_name|there}},
-
-{{Short follow-up: still interested + any opportunities}}
-
-Best regards,
-Rayko Azcue
-
----
-
-### Actions
-
-[ ] Review outreach email → Approve → Send
-[ ] On send: Add follow-up to temp/followups.md
+[Full follow-up email using template above]
 ```
+
+**Actions for each proposal:**
+
+[ ] Review email drafts → Approve
+[ ] On approval: Add to applications.json and followups.md
 
 ### 10. Present Options to User
 
@@ -682,7 +573,9 @@ After all updates, regenerate TODO.md with:
 
 - Current application counts by status
 - Pending follow-ups
-- Open proposals
+- Open proposals (remove the just-applied proposal from the list)
+
+**IMPORTANT:** Also remove the applied proposal from `temp/outreach.md` file removing the entry entirely.
 
 ---
 

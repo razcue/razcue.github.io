@@ -12,7 +12,7 @@ const SENDER_NAME = process.env.SENDER_NAME || 'Rayko Azcue Pérez';
 const SENDER_EMAIL = process.env.SENDER_EMAIL || 'razcue@yandex.com';
 
 export interface SendEmailOptions {
-  to: string;
+  to: string | string[];
   subject: string;
   html?: string;
   text?: string;
@@ -32,6 +32,12 @@ export interface SendEmailResult {
   error?: string;
 }
 
+export interface BatchResult {
+  success: boolean;
+  sent: string[];
+  failed: { email: string; error: string }[];
+}
+
 async function sendEmail(options: SendEmailOptions): Promise<SendEmailResult> {
   const { to, subject, html, text, fromName, replyTo, attachments } = options;
 
@@ -42,6 +48,11 @@ async function sendEmail(options: SendEmailOptions): Promise<SendEmailResult> {
         'Missing YANDEX_USER or YANDEX_APP_PASSWORD environment variables. Create an app password at https://id.yandex.com/security/app-passwords',
     };
   }
+
+  const recipients = Array.isArray(to)
+    ? to
+    : to.split(',').map((e) => e.trim());
+  const toStr = recipients.join(', ');
 
   const transporter = nodemailer.createTransport({
     host: YANDEX_SMTP_HOST,
@@ -56,7 +67,7 @@ async function sendEmail(options: SendEmailOptions): Promise<SendEmailResult> {
   try {
     const info = await transporter.sendMail({
       from: `"${fromName || SENDER_NAME}" <${SENDER_EMAIL}>`,
-      to,
+      to: toStr,
       subject,
       html,
       text,
@@ -80,6 +91,42 @@ async function sendEmail(options: SendEmailOptions): Promise<SendEmailResult> {
   }
 }
 
+async function sendBatch(options: SendEmailOptions): Promise<BatchResult> {
+  const { to, subject, html, text, fromName, replyTo, attachments } = options;
+
+  const recipients = Array.isArray(to)
+    ? to
+    : to.split(',').map((e) => e.trim());
+  const sent: string[] = [];
+  const failed: { email: string; error: string }[] = [];
+
+  for (const email of recipients) {
+    const result = await sendEmail({
+      to: email,
+      subject,
+      html,
+      text,
+      fromName,
+      replyTo,
+      attachments,
+    });
+
+    if (result.success) {
+      sent.push(email);
+      console.log(`✓ Sent to: ${email} (${result.messageId})`);
+    } else {
+      failed.push({ email, error: result.error || 'Unknown error' });
+      console.error(`✗ Failed to ${email}: ${result.error}`);
+    }
+  }
+
+  return {
+    success: failed.length === 0,
+    sent,
+    failed,
+  };
+}
+
 async function main() {
   const { values } = parseArgs({
     options: {
@@ -90,6 +137,7 @@ async function main() {
       'from-name': { type: 'string' },
       'reply-to': { type: 'string' },
       attachment: { type: 'string' },
+      batch: { type: 'boolean', default: false },
     },
   });
 
@@ -101,27 +149,29 @@ async function main() {
     'from-name': fromName,
     'reply-to': replyTo,
     attachment,
+    batch,
   } = values;
 
   if (!to || !subject) {
     console.error(
-      'Usage: bun run lib/yandex-mailer.ts --to "recipient@example.com" --subject "Subject" --html "<p>Body</p>"'
+      'Usage: bun run lib/yandex-mailer.ts --to "a@a.com,b@b.com" --subject "Subject" --html "<p>Body</p>"'
     );
     console.error('');
     console.error('Options:');
-    console.error('  --to <email>          Recipient email (required)');
-    console.error('  --subject <text>      Email subject (required)');
     console.error(
-      '  --html <html>         HTML body (optional, requires --text if not provided)'
+      '  --to <emails>        Recipients (comma-separated, required)'
     );
+    console.error('  --subject <text>    Email subject (required)');
     console.error(
-      '  --text <text>        Plain text body (optional, required if --html not provided)'
+      '  --html <html>       HTML body (optional, requires --text if not provided)'
     );
+    console.error('  --text <text>      Plain text body (optional)');
+    console.error('  --from-name <name> Sender name (optional)');
+    console.error('  --reply-to <email> Reply-to email (optional)');
+    console.error('  --attachment <path> PDF attachment (optional)');
     console.error(
-      '  --from-name <name>   Sender name (optional, default: Rayko Azcue Pérez)'
+      '  --batch          Send to each recipient separately (optional)'
     );
-    console.error('  --reply-to <email>   Reply-to email (optional)');
-    console.error('  --attachment <path>  PDF attachment path (optional)');
     process.exit(1);
   }
 
@@ -130,6 +180,7 @@ async function main() {
     process.exit(1);
   }
 
+  const recipients = to.split(',').map((e) => e.trim());
   const attachments: Attachment[] = [];
   if (attachment) {
     const files = attachment.split(',');
@@ -141,7 +192,7 @@ async function main() {
     }
   }
 
-  console.log(`Sending email to: ${to}`);
+  console.log(`Sending to: ${recipients.join(', ')}`);
   console.log(`Subject: ${subject}`);
   if (attachments.length > 0) {
     console.log(
@@ -149,8 +200,45 @@ async function main() {
     );
   }
 
+  if (batch || recipients.length > 1) {
+    console.log('Using batch mode (one email per recipient)...\n');
+    const result = await sendBatch({
+      to: recipients,
+      subject,
+      html,
+      text,
+      fromName,
+      replyTo,
+      attachments: attachments.length > 0 ? attachments : undefined,
+    });
+
+    console.log(`\n--- Summary ---`);
+    console.log(`Sent: ${result.sent.length}/${recipients.length}`);
+    console.log(`Failed: ${result.failed.length}`);
+
+    if (result.sent.length === 0) {
+      console.error(`\n✗ ALL emails failed - cannot proceed with application`);
+      process.exit(1);
+    }
+
+    if (result.failed.length > 0) {
+      console.log(`\n⚠ Partial success - continuing with application:`);
+      console.log(`  ✓ Sent to: ${result.sent.join(', ')}`);
+      console.log(
+        `  ✗ Failed: ${result.failed.map((f) => f.email).join(', ')}`
+      );
+    } else {
+      console.log(`\n✓ All emails sent successfully!`);
+    }
+
+    console.log(`\n--- Output Data (for application update) ---`);
+    console.log(`SENT_EMAILS=${result.sent.join(',')}`);
+    console.log(`FAILED_EMAILS=${result.failed.map((f) => f.email).join(',')}`);
+    process.exit(0);
+  }
+
   const result = await sendEmail({
-    to,
+    to: recipients[0],
     subject,
     html,
     text,
@@ -162,6 +250,7 @@ async function main() {
   if (result.success) {
     console.log(`✓ Email sent successfully!`);
     console.log(`  Message ID: ${result.messageId}`);
+    process.exit(0);
   } else {
     console.error(`✗ Failed to send email: ${result.error}`);
     process.exit(1);
@@ -174,7 +263,9 @@ if (import.meta.url === `file://${process.argv[1]}`) {
 
 export {
   sendEmail,
+  sendBatch,
   type SendEmailOptions,
   type SendEmailResult,
+  type BatchResult,
   type Attachment,
 };

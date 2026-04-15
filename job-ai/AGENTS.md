@@ -16,7 +16,12 @@ Complete workflow for autonomous job application management.
 
 1. CHECK TODO → temp/TODO.md, MANUAL_TODO.md, followups.md
 
-2. FOLLOW-UP → Process due follow-ups in temp/followups.md
+2. PROCESS FOLLOW-UPS (if due)
+   - Read followups.md for entries due today or past
+   - Build fresh resume for each
+   - Send follow-up email to ALL emails from initial outreach
+   - Parse result, update emailsSent/emailsFailed
+   - Permanently remove failed emails from both outreach and follow-up from future attempts
 
 3. SEARCH → Web search + sources.json
 
@@ -25,16 +30,42 @@ Complete workflow for autonomous job application management.
 5. SCORE → Calculate priority (HIGH 70+, MEDIUM 40-69, LOW <40)
 
 6. PROPOSE → Save to temp/direct.md (HIGH) or temp/outreach.md (MEDIUM)
+   - Each proposal should have: Summary, Skills to Highlight, Email Draft, Follow-up Email Draft
 
 7. USER APPROVAL → Wait for user to approve
 
-8. BUILD → resume-build skill creates tailored + hybrid PDFs
+8. BUILD RESUME → Generate fresh resume for this specific application
+   - Use proposal's Summary + Skills to Highlight
+   - Fill other sections from default.json (contactInfo, education, experience, artifacts)
 
-9. EXECUTE → Apply or send outreach email
+9. EXECUTE OUTREACH (batch mode)
+   - Send to all email patterns using --batch
+   - Parse result: SENT_EMAILS, FAILED_EMAILS
+   - If 0 sent: ABORT, do not update any data, rollback generated config
 
-10. UPDATE → applications.json + companies.json
+10. UPDATE APPLICATION DATA
+    - applications.json: add sent emails to emailsSent array
+    - companies.json: add contact history
+    - TODO.md: move from open proposals to active applications
 
-11. SCHEDULE → Add follow-up to temp/followups.md
+11. SCHEDULE FOLLOW-UP
+    - Create entry in followups.md with:
+      - Due date (7 days from now)
+      - Company, Position, Application ID
+      - Status: "outreach (YYYY-MM-DD)"
+      - Emails sent, Emails failed
+      - Position URL
+      - Initial Email Draft (from proposal)
+      - Follow-up Email Draft (from proposal)
+
+12. CLEANUP
+    - Remove proposal from outreach.md (processed)
+    - If last application: regenerate default resume
+
+13. UPDATE TODO
+    - Active Applications count
+    - Future Follow-ups count
+    - Open Proposals count
 ```
 
 ---
@@ -109,11 +140,14 @@ SENDER_EMAIL=razcue@yandex.com
 ## Commands
 
 ```bash
-# Check emails
+# Check emails (INBOX)
 bun run lib/yandex-email-checker.ts
 
-# Send email
-bun run lib/yandex-mailer.ts --to "..." --subject "..." --html "..."
+# Send email (single recipient)
+bun run lib/yandex-mailer.ts --to "recipient@example.com" --subject "Subject" --html "<p>Body</p>"
+
+# Send to multiple recipients (batch mode - one email per recipient)
+bun run lib/yandex-mailer.ts --to "a@x.com,b@x.com,c@x.com" --batch --subject "Subject" --html "<p>Body</p>"
 
 # Build resume
 node lib/build-resume.cjs <application-id>

@@ -2,6 +2,7 @@ import { config } from 'dotenv';
 import Imap from 'imap';
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { join } from 'path';
+import dns from 'dns';
 
 config();
 
@@ -73,6 +74,18 @@ function loadEmailState(): EmailState {
       return JSON.parse(readFileSync(EMAIL_STATE_FILE, 'utf-8'));
   } catch {}
   return { lastEmailCheck: null };
+}
+
+async function resolveIPv4(hostname: string): Promise<string> {
+  return new Promise((resolve, reject) => {
+    dns.resolve4(hostname, (err, addresses) => {
+      if (err || !addresses || addresses.length === 0) {
+        reject(new Error(`DNS resolution failed for ${hostname}`));
+        return;
+      }
+      resolve(addresses[0]);
+    });
+  });
 }
 
 function saveEmailState(state: EmailState) {
@@ -553,14 +566,17 @@ async function checkEmails(): Promise<{
 
   const todo: TodoItem[] = [];
 
+  const resolvedHost = await resolveIPv4(YANDEX_IMAP_HOST);
+  console.log(`Resolved ${YANDEX_IMAP_HOST} to IPv4: ${resolvedHost}`);
+
   return new Promise((resolve) => {
     const imap = new Imap({
       user: YANDEX_USER,
       password: YANDEX_APP_PASSWORD,
-      host: YANDEX_IMAP_HOST,
+      host: resolvedHost,
       port: YANDEX_IMAP_PORT,
       tls: true,
-      tlsOptions: { rejectUnauthorized: false },
+      tlsOptions: { rejectUnauthorized: false, servername: YANDEX_IMAP_HOST },
     });
 
     imap.on('ready', () => {
