@@ -176,9 +176,8 @@ For each company found, gather:
     - Homepage footer
     - /contact page
     - /careers or /jobs page
-  - **Step 3:** Generate ALL possible email patterns:
-    - HR/Recruitment: hr@{{domain}}, careers@{{domain}}, jobs@{{domain}}, recruiting@{{domain}}, talent@{{domain}}, recruitment@{{domain}}, hiring@{{domain}}, apply@{{domain}}, work@{{domain}}
-    - General contact: contact@{{domain}}, info@{{domain}}, hello@{{domain}}, support@{{domain}}, admin@{{domain}}, team@{{domain}}, office@{{domain}}
+  - **Step 3:** Generate ALL possible email patterns (no limit):
+    hr@{{domain}}, careers@{{domain}}, jobs@{{domain}}, recruiting@{{domain}}, talent@{{domain}}, recruitment@{{domain}}, hiring@{{domain}}, apply@{{domain}}, work@{{domain}}, contact@{{domain}}, info@{{domain}}, hello@{{domain}}, support@{{domain}}, admin@{{domain}}, team@{{domain}}, office@{{domain}}, contactus@{{domain}}, general@{{domain}}, mail@{{domain}}, staff@{{domain}}, dev@{{domain}}, tech@{{domain}}, it@{{domain}}
   - **Step 4:** Verify emails by visiting company website pages to confirm they exist
   - **Step 5:** Document which emails were actually verified on the website vs guessed
   - **Send applications to ALL verified emails found (no max limit)**
@@ -233,6 +232,7 @@ Before proposing, check against `applications.json` AND `companies.json`:
 | Company already in pending proposals        | **SKIP** - Already proposed                                     |
 | Company has 3+ rejections in history        | **SKIP** - Low response rate                                    |
 | Company has positive response in history    | **BOOST SCORE** - Prioritize                                    |
+| Company marked as "unreachable"             | **SKIP** - All emails bounced, no valid email found             |
 
 **Same Company Time Window Rule:**
 
@@ -339,9 +339,13 @@ Create detailed proposals for each opportunity with the following structure:
 
 **Templates (ALWAYS USE):**
 
+**Important Rule:** Only include sectors/domains that are documented in the knowledge base or your actual experience. NEVER claim experience in sectors you don't have (e.g., Legal Tech, FinTech, Healthcare, etc. unless explicitly in KNOWLEDGE_BASE.md).
+
 **Email Introduction Template:**
 
 "I'm a Software Developer with 7+ years of experience serving companies across Europe, US, and LATAM, with hands-on experience in [company's sector/similar sectors]."
+
+Only use sectors from KNOWLEDGE_BASE.md or default.json experience section.
 
 **Summary Template:**
 

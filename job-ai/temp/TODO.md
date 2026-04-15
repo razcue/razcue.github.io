@@ -1,6 +1,6 @@
 # TODO - Job Applications
 
-**Last Updated:** 2026-04-13
+**Last Updated:** 2026-04-15
 
 ---
 
@@ -8,21 +8,24 @@
 
 | Type                | Count |
 | ------------------- | ----- |
-| Active Applications | 1     |
+| Active Applications | 3     |
+| Bounced/Unreachable | 1     |
 | Archived (Feb 2026) | 12    |
 | Rejections          | 3     |
 | No Response (>30d)  | 8     |
 | Negociation         | 1     |
 | Pending Follow-ups  | 0     |
-| Open Proposals      | 12    |
+| Open Proposals      | 9     |
 
 ---
 
 ## Active Applications
 
-| #   | Company | Position        | Applied    | Status   |
-| --- | ------- | --------------- | ---------- | -------- |
-| 1   | TECLA   | Frontend Vue.js | 2026-04-13 | outreach |
+| #   | Company        | Position        | Applied    | Status   |
+| --- | -------------- | --------------- | ---------- | -------- |
+| 1   | TECLA          | Frontend Vue.js | 2026-04-13 | outreach |
+| 2   | iubenda        | Senior Vue.js   | 2026-04-15 | outreach |
+| 3   | FullStack Labs | Senior Frontend | 2026-04-15 | outreach |
 
 ---
 
@@ -39,16 +42,13 @@
 
 ### MEDIUM PRIORITY (40-69)
 
-| #   | Company        | Position          | Score |
-| --- | -------------- | ----------------- | ----- |
-| 5   | Venturus       | Frontend Vue.js   | 68    |
-| 6   | South Geeks    | Senior Frontend   | 67    |
-| 7   | Workana        | Senior Fullstack  | 65    |
-| 8   | Sparq          | Full Stack        | 63    |
-| 9   | Azumo          | Frontend Engineer | 62    |
-| 10  | FullStack Labs | Senior Frontend   | 60    |
-| 11  | Wited          | Vue/Nuxt          | 52    |
-| 12  | iubenda        | Senior Vue.js     | 48    |
+| #   | Company     | Position          | Score |
+| --- | ----------- | ----------------- | ----- |
+| 5   | Venturus    | Frontend Vue.js   | 68    |
+| 6   | South Geeks | Senior Frontend   | 67    |
+| 7   | Workana     | Senior Fullstack  | 65    |
+| 8   | Sparq       | Full Stack        | 63    |
+| 9   | Azumo       | Frontend Engineer | 62    |
 
 ---
 
@@ -60,6 +60,8 @@ None (due today or past)
 
 ## Future Follow-ups
 
-| #   | Company | Position        | Due        |
-| --- | ------- | --------------- | ---------- |
-| 1   | TECLA   | Frontend Vue.js | 2026-04-20 |
+| #   | Company        | Position        | Due        |
+| --- | -------------- | --------------- | ---------- |
+| 1   | TECLA          | Frontend Vue.js | 2026-04-20 |
+| 2   | iubenda        | Senior Vue.js   | 2026-04-22 |
+| 3   | FullStack Labs | Senior Frontend | 2026-04-22 |

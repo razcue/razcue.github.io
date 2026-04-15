@@ -10,7 +10,11 @@
         "website": "https://www.deel.com/",
         "email": null,
         "sector": "HR/Payroll SaaS",
-        "techStack": ["TypeScript", "React.js", "Node.js"],
+        "techStack": [
+          "TypeScript",
+          "React.js",
+          "Node.js"
+        ],
         "stage": "enterprise"
       },
       "position": {
@@ -186,7 +190,13 @@
         "website": "https://www.thepositivelinks.com/",
         "email": null,
         "sector": "Software Development",
-        "techStack": ["Laravel", "Vue.js", "Nuxt.js", "MySQL", "AWS"],
+        "techStack": [
+          "Laravel",
+          "Vue.js",
+          "Nuxt.js",
+          "MySQL",
+          "AWS"
+        ],
         "stage": "startup"
       },
       "position": {
@@ -255,7 +265,13 @@
         "website": "https://algoteque.com/",
         "email": null,
         "sector": "IT Consulting",
-        "techStack": ["React", "TypeScript", "RxJS", "Axios", "Sass"],
+        "techStack": [
+          "React",
+          "TypeScript",
+          "RxJS",
+          "Axios",
+          "Sass"
+        ],
         "stage": "startup"
       },
       "position": {
@@ -275,7 +291,11 @@
             "RxJS",
             "Axios"
           ],
-          "soft": ["Client-facing", "Aviation industry", "B2B"]
+          "soft": [
+            "Client-facing",
+            "Aviation industry",
+            "B2B"
+          ]
         }
       },
       "status": "no-response",
@@ -303,7 +323,14 @@
         "proposedAt": "2026-02-17",
         "proposedWhy": "React match, fully remote, aviation industry project",
         "profile": "Frontend Developer specialized in React with TypeScript. Experience building reusable component architectures and managing state with RxJS. B2B client-facing experience.",
-        "skills": ["React", "TypeScript", "RxJS", "Axios", "Sass", "REST APIs"],
+        "skills": [
+          "React",
+          "TypeScript",
+          "RxJS",
+          "Axios",
+          "Sass",
+          "REST APIs"
+        ],
         "coverLetter": "",
         "outreachEmail": "",
         "followupEmail": ""
@@ -347,7 +374,11 @@
             "Docker",
             "PHPUnit"
           ],
-          "soft": ["Remote-first", "FinTech", "Startup"]
+          "soft": [
+            "Remote-first",
+            "FinTech",
+            "Startup"
+          ]
         }
       },
       "status": "negociation",
@@ -399,7 +430,13 @@
         "website": "https://lggadvisors.com/",
         "email": null,
         "sector": "Financial Services",
-        "techStack": ["Vue.js", "React", "Angular", "Node.js", "TypeScript"],
+        "techStack": [
+          "Vue.js",
+          "React",
+          "Angular",
+          "Node.js",
+          "TypeScript"
+        ],
         "stage": "enterprise"
       },
       "position": {
@@ -422,7 +459,11 @@
             "PostgreSQL",
             "CI/CD"
           ],
-          "soft": ["Financial sector", "Leadership", "Architecture"]
+          "soft": [
+            "Financial sector",
+            "Leadership",
+            "Architecture"
+          ]
         }
       },
       "status": "no-response",
@@ -473,7 +514,13 @@
         "website": "https://www.haystackpeople.com/",
         "email": null,
         "sector": "E-commerce",
-        "techStack": ["PHP", "Symfony", "Laravel", "MySQL", "PostgreSQL"],
+        "techStack": [
+          "PHP",
+          "Symfony",
+          "Laravel",
+          "MySQL",
+          "PostgreSQL"
+        ],
         "stage": "series-a"
       },
       "position": {
@@ -495,7 +542,11 @@
             "CI/CD",
             "AWS"
           ],
-          "soft": ["E-commerce", "Leadership", "Mentoring"]
+          "soft": [
+            "E-commerce",
+            "Leadership",
+            "Mentoring"
+          ]
         }
       },
       "status": "no-response",
@@ -576,7 +627,11 @@
             "Elasticsearch",
             "OAuth2"
           ],
-          "soft": ["E-commerce", "Sustainability", "UK culture"]
+          "soft": [
+            "E-commerce",
+            "Sustainability",
+            "UK culture"
+          ]
         }
       },
       "status": "no-response",
@@ -659,7 +714,12 @@
             "AWS",
             "Cloudflare"
           ],
-          "soft": ["Founding team", "Security", "Leadership", "Architecture"]
+          "soft": [
+            "Founding team",
+            "Security",
+            "Leadership",
+            "Architecture"
+          ]
         }
       },
       "status": "no-response",
@@ -711,7 +771,12 @@
         "website": "https://www.catawiki.com/",
         "email": null,
         "sector": "E-commerce",
-        "techStack": ["Ruby", "PostgreSQL", "AWS", "Microservices"],
+        "techStack": [
+          "Ruby",
+          "PostgreSQL",
+          "AWS",
+          "Microservices"
+        ],
         "stage": "enterprise"
       },
       "position": {
@@ -735,7 +800,11 @@
             "E-commerce",
             "CI/CD"
           ],
-          "soft": ["E-commerce", "Agile", "Cross-functional"]
+          "soft": [
+            "E-commerce",
+            "Agile",
+            "Cross-functional"
+          ]
         }
       },
       "status": "rejected",
@@ -786,7 +855,11 @@
         "website": "https://proxify.io",
         "email": null,
         "sector": "Talent Platform",
-        "techStack": ["React", "CI/CD", "Performance"],
+        "techStack": [
+          "React",
+          "CI/CD",
+          "Performance"
+        ],
         "stage": "startup"
       },
       "position": {
@@ -806,7 +879,11 @@
             "Low-latency applications",
             "Reusable code"
           ],
-          "soft": ["Remote-first", "Talent network", "Client-facing"]
+          "soft": [
+            "Remote-first",
+            "Talent network",
+            "Client-facing"
+          ]
         }
       },
       "status": "no-response",
@@ -856,7 +933,13 @@
         "website": "https://hireboost.io/",
         "email": null,
         "sector": "HR/Talent Platform",
-        "techStack": ["React", "TypeScript", "Laravel", "PHP", "Node.js"],
+        "techStack": [
+          "React",
+          "TypeScript",
+          "Laravel",
+          "PHP",
+          "Node.js"
+        ],
         "stage": "startup"
       },
       "position": {
@@ -876,7 +959,11 @@
             "Node.js",
             "Full Stack"
           ],
-          "soft": ["Leadership", "Mentoring", "Problem-solving"]
+          "soft": [
+            "Leadership",
+            "Mentoring",
+            "Problem-solving"
+          ]
         }
       },
       "status": "no-response",
@@ -896,12 +983,18 @@
         "proposedAt": "2026-02-16",
         "proposedWhy": "React + Laravel match, remote LATAM",
         "profile": "Senior Full Stack Engineer with React, TypeScript, Laravel expertise",
-        "skills": ["React", "TypeScript", "Vue", "Nuxt", "Laravel", "PHP"],
+        "skills": [
+          "React",
+          "TypeScript",
+          "Vue",
+          "Nuxt",
+          "Laravel",
+          "PHP"
+        ],
         "coverLetter": "",
         "outreachEmail": "",
         "followupEmail": ""
       }
     }
-  ],
-  "lastUpdated": "2026-04-09"
+  ]
 }

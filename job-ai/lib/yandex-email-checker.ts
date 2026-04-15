@@ -142,7 +142,7 @@ function extractDomain(emailOrUrl: string): string | null {
     if (domain.includes('@')) {
       domain = domain.split('@')[1] || '';
     }
-    domain = domain.replace(/^(https?:\/\/)?(www\.)?/, '');
+    domain = domain.replace(/^(https?:\/\/)(www\.)?/, '');
     domain = domain.split('/')[0]?.split(':')[0] || '';
     domain = domain.split('>')[0] || '';
     if (domain.startsWith('.')) domain = domain.substring(1);
@@ -150,6 +150,63 @@ function extractDomain(emailOrUrl: string): string | null {
   } catch {
     return null;
   }
+}
+
+function extractFailedEmailFromBounce(body: string): string | null {
+  const emailRegex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g;
+  const matches = body.match(emailRegex);
+
+  if (matches && matches.length > 0) {
+    const validEmails = matches.filter((email) => {
+      const [local, domain] = email.split('@');
+      return local && domain && local.length >= 2 && domain.includes('.');
+    });
+
+    if (validEmails.length > 0) {
+      return validEmails[0].toLowerCase();
+    }
+  }
+  return null;
+}
+
+function isBounceEmail(
+  from: string,
+  subject: string,
+  body: string
+): { isBounce: boolean; failedEmail: string | null } {
+  const fromLower = from.toLowerCase();
+  const subjectLower = subject.toLowerCase();
+  const bodyLower = body.toLowerCase();
+
+  const bounceIndicators = [
+    'mailer-daemon',
+    'postmaster@',
+    'noreply@',
+    'bounce@',
+  ];
+
+  const bounceSubjects = [
+    'undelivered',
+    'mail returned',
+    'delivery status',
+    'recipient address rejected',
+    'mail failure',
+    'delivery failed',
+  ];
+
+  const isFromBounceSender = bounceIndicators.some((ind) =>
+    fromLower.includes(ind)
+  );
+  const isBounceSubject = bounceSubjects.some((sub) =>
+    subjectLower.includes(sub)
+  );
+
+  if (!isFromBounceSender || !isBounceSubject) {
+    return { isBounce: false, failedEmail: null };
+  }
+
+  const failedEmail = extractFailedEmailFromBounce(body);
+  return { isBounce: true, failedEmail };
 }
 
 function buildCompanyKeywords(apps: AppData[]): Map<string, AppData> {
@@ -649,6 +706,69 @@ async function checkEmails(): Promise<{
                 const senderDomain = extractDomain(from);
 
                 let matchedApp: AppData | null = null;
+
+                const bounceCheck = isBounceEmail(from, subject, body);
+                if (bounceCheck.isBounce && bounceCheck.failedEmail) {
+                  const failedEmailDomain = extractDomain(
+                    bounceCheck.failedEmail
+                  );
+
+                  for (const [key, app] of companyKeywordMap) {
+                    if (
+                      failedEmailDomain &&
+                      (failedEmailDomain === key ||
+                        failedEmailDomain.endsWith('.' + key))
+                    ) {
+                      matchedApp = app;
+                      break;
+                    }
+                  }
+
+                  if (matchedApp) {
+                    console.log(
+                      `\n  [${seq}] BOUNCE DETECTED: ${matchedApp.company.name}`
+                    );
+                    console.log(
+                      `      Failed email: ${bounceCheck.failedEmail}`
+                    );
+
+                    if (!matchedApp.outcomes) {
+                      matchedApp.outcomes = {};
+                    }
+                    if (!matchedApp.outcomes.emailsFailed) {
+                      matchedApp.outcomes.emailsFailed = [];
+                    }
+                    if (!matchedApp.outcomes.emailsSent) {
+                      matchedApp.outcomes.emailsSent = [];
+                    }
+
+                    const alreadyFailed =
+                      matchedApp.outcomes.emailsFailed.includes(
+                        bounceCheck.failedEmail
+                      );
+                    const alreadySent = matchedApp.outcomes.emailsSent.includes(
+                      bounceCheck.failedEmail
+                    );
+
+                    if (!alreadyFailed) {
+                      matchedApp.outcomes.emailsFailed.push(
+                        bounceCheck.failedEmail
+                      );
+                      updated++;
+                    }
+                    if (alreadySent) {
+                      matchedApp.outcomes.emailsSent =
+                        matchedApp.outcomes.emailsSent.filter(
+                          (e) => e !== bounceCheck.failedEmail
+                        );
+                      updated++;
+                      console.log(
+                        `      Removed from emailsSent, added to emailsFailed`
+                      );
+                    }
+                  }
+                }
+
                 const emailText = (
                   from +
                   ' ' +

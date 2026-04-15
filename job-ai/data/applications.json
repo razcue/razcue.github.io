@@ -89,7 +89,245 @@
         "outreachEmail": "I'm Rayko Azcue, a Software Developer with 7+ years of experience serving companies across Europe, US, and LATAM, with hands-on experience in Vue.js, Nuxt.js, TypeScript, Pinia, TailwindCSS, and performance optimization. I'm reaching out to explore potential opportunities at TECLA.",
         "followupEmail": "My name is Rayko Azcue, and I recently reached out regarding frontend or full-stack opportunities at TECLA. I wanted to know if there might be any current or upcoming positions that could be a good match for my experience. With 7+ years building web applications and strong expertise in Vue.js, Nuxt.js, and TypeScript, I'd love to discuss how I could contribute to your team."
       }
+    },
+    {
+      "id": "2026-04-15-iubenda-senior-vuejs",
+      "type": "outreach",
+      "score": 48,
+      "priority": "LOW",
+      "company": {
+        "name": "iubenda",
+        "website": "https://www.iubenda.com",
+        "email": null,
+        "sector": "SaaS / Legal Tech",
+        "techStack": ["Vue.js", "JavaScript", "TypeScript"],
+        "stage": "Growth"
+      },
+      "position": {
+        "title": "Senior Frontend Developer | Vue.js",
+        "url": "https://dynamitejobs.com/company/iubenda/remote-job/senior-frontend-developer-vue-js-remote-1",
+        "applicationType": "outreach",
+        "model": "remote",
+        "location": "Worldwide",
+        "salary": null,
+        "language": "en",
+        "keywords": {
+          "technical": ["Vue.js", "JavaScript", "TypeScript", "Nuxt.js"],
+          "soft": ["Remote Work", "Agile", "Distributed Teams"]
+        }
+      },
+      "status": "sent",
+      "applicationDate": "2026-04-15",
+      "notes": {
+        "model": "SaaS - Remote",
+        "company": "iubenda - Legal Tech/SaaS company based in Italy, growing globally",
+        "techStack": "Vue.js, JavaScript, TypeScript, Remote-first",
+        "role": "Senior Frontend Developer position (closed) - outreach to explore opportunities"
+      },
+      "outcomes": {
+        "emailSentAt": "2026-04-15",
+        "followupSentAt": null,
+        "emailsSent": ["info@iubenda.com"],
+        "emailsFailed": [
+          "jobs@iubenda.com",
+          "careers@iubenda.com",
+          "hello@iubenda.com",
+          "hiring@iubenda.com",
+          "recruiting@iubenda.com",
+          "talent@iubenda.com",
+          "team@iubenda.com",
+          "hr@iubenda.com",
+          "contact@iubenda.com"
+        ],
+        "responseReceived": false,
+        "responseDate": null,
+        "responseType": "no-response",
+        "interviewScheduled": false,
+        "interviewDate": null,
+        "feedback": "",
+        "emailContent": ""
+      },
+      "proposal": {
+        "proposedAt": "2026-04-15",
+        "proposedWhy": "Vue.js developer position matching tech stack",
+        "profile": "Senior Frontend Developer with 7+ years building web applications for companies across Europe, US, and LATAM. Strong expertise in Vue.js and TypeScript with experience building SaaS platforms. Cross-functional background across e-commerce, SaaS, and enterprise solutions.",
+        "skills": [
+          "Vue.js",
+          "Nuxt.js",
+          "TypeScript",
+          "SaaS platforms",
+          "Performance optimization",
+          "Core Web Vitals"
+        ],
+        "coverLetter": "",
+        "outreachEmail": "I'm Rayko Azcue, a Software Developer with 7+ years of experience serving companies across Europe, US, and LATAM, with hands-on experience in Vue.js, Nuxt.js, TypeScript, and building SaaS platforms. I'm reaching out to explore potential opportunities at iubenda.",
+        "followupEmail": "My name is Rayko Azcue, and I recently reached out regarding senior Vue.js opportunities at iubenda. I wanted to know if there might be any current or upcoming positions that could be a good match for my experience. With 7+ years building web applications and strong expertise in Vue.js and TypeScript, I'd love to discuss how I could contribute to your team."
+      }
+    },
+    {
+      "id": "2026-04-15-wited-vue-nuxt",
+      "type": "outreach",
+      "score": 52,
+      "priority": "LOW",
+      "company": {
+        "name": "Wited",
+        "website": "https://www.wited.com",
+        "email": null,
+        "sector": "EdTech / Education Technology",
+        "techStack": ["Vue.js", "Nuxt.js", "TypeScript", "Pinia"],
+        "stage": "Growth"
+      },
+      "position": {
+        "title": "Desarrollador Front-end Vue/Nuxt",
+        "url": "https://www.getonbrd.com/jobs/programming/desarrollador-frontend-vue-nuxt-wited-remote",
+        "applicationType": "outreach",
+        "model": "remote",
+        "location": "Chile (position closed)",
+        "salary": null,
+        "language": "en",
+        "keywords": {
+          "technical": ["Vue.js", "Nuxt.js", "TypeScript", "Pinia"],
+          "soft": ["Remote Work", "EdTech"]
+        }
+      },
+      "status": "bounced",
+      "applicationDate": "2026-04-15",
+      "notes": {
+        "model": "EdTech - Remote",
+        "company": "Wited - EdTech company in Chile, position closed but outreach to explore opportunities",
+        "techStack": "Vue.js, Nuxt.js, TypeScript, Pinia, Remote-first",
+        "role": "Frontend Vue/Nuxt position (closed) - outreach to explore opportunities",
+        "unreachable": true,
+        "unreachableReason": "All 23 email patterns bounced - company email domain appears to be inactive/non-existent"
+      },
+      "outcomes": {
+        "emailSentAt": "2026-04-15",
+        "followupSentAt": null,
+        "emailsSent": [],
+        "emailsFailed": [
+          "careers@wited.com",
+          "jobs@wited.com",
+          "hiring@wited.com",
+          "recruiting@wited.com",
+          "talent@wited.com",
+          "team@wited.com",
+          "hr@wited.com",
+          "contact@wited.com",
+          "hello@wited.com",
+          "info@wited.com",
+          "recruitment@wited.com",
+          "apply@wited.com",
+          "work@wited.com",
+          "support@wited.com",
+          "admin@wited.com",
+          "office@wited.com",
+          "contactus@wited.com",
+          "general@wited.com",
+          "mail@wited.com",
+          "dev@wited.com",
+          "it@wited.com",
+          "staff@wited.com",
+          "tech@wited.com"
+        ],
+        "responseReceived": false,
+        "responseDate": null,
+        "responseType": "no-response",
+        "interviewScheduled": false,
+        "interviewDate": null,
+        "feedback": "",
+        "emailContent": ""
+      },
+      "proposal": {
+        "proposedAt": "2026-04-15",
+        "proposedWhy": "Vue.js/Nuxt position matching tech stack",
+        "profile": "Senior Frontend Developer with 7+ years building web applications for companies across Europe, US, and LATAM. Strong expertise in Vue.js, Nuxt.js, and TypeScript with experience in modern frontend architectures. Cross-functional background across e-commerce and SaaS sectors.",
+        "skills": [
+          "Vue.js",
+          "Nuxt.js (SSR/SSG)",
+          "TypeScript",
+          "Pinia",
+          "TailwindCSS",
+          "Core Web Vitals",
+          "Performance optimization",
+          "SEO"
+        ],
+        "coverLetter": "",
+        "outreachEmail": "I'm a Software Developer with 7+ years of experience serving companies across Europe, US, and LATAM, with hands-on experience SaaS platforms development. I came across your profile and would like to express interest. My stack includes Vue.js, Nuxt.js (SSR/SSG), TypeScript, Pinia, TailwindCSS, performance optimization. Are there any current frontend opportunities?",
+        "followupEmail": "My name is Rayko Azcue, and I recently reached out regarding frontend Vue.js/Nuxt opportunities at Wited. I wanted to know if there might be any current or upcoming positions that could be a good match for my experience. With 7+ years building web applications and strong expertise in Vue.js, Nuxt.js, and TypeScript, I'd love to discuss how I could contribute to your EdTech platform."
+      }
+    },
+    {
+      "id": "2026-04-15-fullstack-labs-senior-frontend",
+      "type": "outreach",
+      "score": 60,
+      "priority": "MEDIUM",
+      "company": {
+        "name": "FullStack Labs",
+        "website": "https://www.fullstacklabs.co",
+        "email": null,
+        "sector": "Software Development / Staff Augmentation",
+        "techStack": ["React", "Vue", "Mobile"],
+        "stage": "Enterprise"
+      },
+      "position": {
+        "title": "Senior Frontend Developer (Costa Rica)",
+        "url": "https://remoteresolve.io/jobs/senior-frontend-developer-latin-america-costa-rica-remote-tktxq",
+        "applicationType": "outreach",
+        "model": "remote",
+        "location": "Costa Rica required",
+        "salary": null,
+        "language": "en",
+        "keywords": {
+          "technical": ["React", "Vue", "TypeScript"],
+          "soft": ["Remote Work", "Staff Augmentation"]
+        }
+      },
+      "status": "sent",
+      "applicationDate": "2026-04-15",
+      "notes": {
+        "model": "Staff Augmentation - Remote",
+        "company": "FullStack Labs - US-based software development company, strong LATAM focus",
+        "techStack": "React, Vue, Mobile, Remote-first",
+        "role": "Senior Frontend position (requires Costa Rica residency) - outreach to explore other LATAM opportunities"
+      },
+      "outcomes": {
+        "emailSentAt": "2026-04-15",
+        "followupSentAt": null,
+        "emailsSent": ["team@fullstacklabs.co", "hr@fullstacklabs.co"],
+        "emailsFailed": [
+          "info@fullstacklabs.co",
+          "careers@fullstacklabs.co",
+          "jobs@fullstacklabs.co",
+          "hiring@fullstacklabs.co",
+          "recruiting@fullstacklabs.co",
+          "talent@fullstacklabs.co",
+          "contact@fullstacklabs.co",
+          "hello@fullstacklabs.co"
+        ],
+        "responseReceived": false,
+        "responseDate": null,
+        "responseType": "no-response",
+        "interviewScheduled": false,
+        "interviewDate": null,
+        "feedback": "",
+        "emailContent": ""
+      },
+      "proposal": {
+        "proposedAt": "2026-04-15",
+        "proposedWhy": "Senior Frontend position, tech stack matches (Vue/React)",
+        "profile": "Senior Frontend Developer with 7+ years building web applications for companies across Europe, US, and LATAM. Strong expertise in Vue.js and React with experience across remote teams. Cross-functional background in SaaS and enterprise solutions.",
+        "skills": [
+          "Vue.js",
+          "React",
+          "TypeScript",
+          "Nuxt.js",
+          "Core Web Vitals"
+        ],
+        "coverLetter": "",
+        "outreachEmail": "I'm a Software Developer with 7+ years of experience serving companies across Europe, US, and LATAM. I saw the Costa Rica position but I'm based in Cuba. I'm interested in exploring other LATAM opportunities. My stack includes Vue.js, Nuxt.js, React, TypeScript, performance optimization. Would love to discuss other possibilities.",
+        "followupEmail": "My name is Rayko Azcue, and I recently reached out regarding senior frontend opportunities at FullStack Labs. I wanted to know if there might be any current or upcoming positions that could be a good match for my experience. With 7+ years building web applications and strong expertise in TypeScript, Vue.js, and React, I'd love to discuss how I could contribute to your software development team."
+      }
     }
   ],
-  "lastUpdated": "2026-04-13"
+  "lastUpdated": "2026-04-15"
 }

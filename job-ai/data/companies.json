@@ -310,7 +310,76 @@
       "negativeResponses": 0,
       "totalContacts": 1,
       "notes": "IT Services / Staff Augmentation, remote-first, 100+ experts in LATAM. OUTREACH SENT."
+    },
+    {
+      "name": "iubenda",
+      "website": "https://www.iubenda.com",
+      "sector": "SaaS / Legal Tech",
+      "techStack": ["Vue.js", "JavaScript", "TypeScript"],
+      "stage": "Growth",
+      "score": 48,
+      "lastContact": "2026-04-15",
+      "contactHistory": [
+        {
+          "date": "2026-04-15",
+          "type": "outreach",
+          "status": "sent",
+          "response": "no-response",
+          "applicationId": "2026-04-15-iubenda-senior-vuejs",
+          "notes": "Sent outreach to 10 email patterns. 9 bounced, only info@iubenda.com delivered."
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 0,
+      "totalContacts": 1,
+      "notes": "SaaS / Legal Tech, Italy-based, growing globally. OUTREACH SENT."
+    },
+    {
+      "name": "Wited",
+      "website": "https://www.wited.com",
+      "sector": "EdTech / Education Technology",
+      "techStack": ["Vue.js", "Nuxt.js", "TypeScript", "Pinia"],
+      "stage": "growth",
+      "score": 0,
+      "lastContact": "2026-04-15",
+      "contactHistory": [
+        {
+          "date": "2026-04-15",
+          "type": "outreach",
+          "status": "bounced",
+          "response": "bounced",
+          "applicationId": "2026-04-15-wited-vue-nuxt",
+          "notes": "Sent outreach to 23 email patterns. ALL BOUNCED - company email domain appears inactive."
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 0,
+      "totalContacts": 1,
+      "notes": "EdTech, Chile-based. UNREACHABLE: All 23 email patterns bounced. Do not propose."
+    },
+    {
+      "name": "FullStack Labs",
+      "website": "https://www.fullstacklabs.co",
+      "sector": "Software Development / Staff Augmentation",
+      "techStack": ["React", "Vue", "Mobile"],
+      "stage": "enterprise",
+      "score": 50,
+      "lastContact": "2026-04-15",
+      "contactHistory": [
+        {
+          "date": "2026-04-15",
+          "type": "outreach",
+          "status": "sent",
+          "response": "no-response",
+          "applicationId": "2026-04-15-fullstack-labs-senior-frontend",
+          "notes": "Sent outreach to 10 email patterns. 8 bounced, only team@ and hr@ delivered."
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 0,
+      "totalContacts": 1,
+      "notes": "US-based software development company, strong LATAM focus. Costa Rica position requires residency."
     }
   ],
-  "lastUpdated": "2026-04-13"
+  "lastUpdated": "2026-04-15"
 }
