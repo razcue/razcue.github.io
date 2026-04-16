@@ -1,45 +1,45 @@
 {
   "metadata": {
-    "id": "2026-04-15-fullstack-labs-senior-frontend",
+    "id": "2026-04-15-azumo-frontend-engineer",
     "type": "outreach",
     "company": {
-      "name": "FullStack Labs",
-      "website": "https://www.fullstacklabs.co",
+      "name": "Azumo",
+      "website": "https://azumo.com",
       "email": [
-        "team@fullstacklabs.co",
-        "hr@fullstacklabs.co",
-        "careers@fullstacklabs.co",
-        "jobs@fullstacklabs.co",
-        "hiring@fullstacklabs.co",
-        "recruiting@fullstacklabs.co",
-        "talent@fullstacklabs.co",
-        "contact@fullstacklabs.co",
-        "hello@fullstacklabs.co",
-        "info@fullstacklabs.co"
+        "people@azumo.co",
+        "careers@azumo.com",
+        "jobs@azumo.com",
+        "hiring@azumo.com",
+        "recruiting@azumo.com",
+        "talent@azumo.com",
+        "team@azumo.com",
+        "hr@azumo.com",
+        "contact@azumo.com",
+        "hello@azumo.com"
       ],
-      "sector": "Software Development / Staff Augmentation",
-      "techStack": ["React", "Vue", "Mobile"]
+      "sector": "Staff Augmentation / IT Services",
+      "techStack": ["React", "Angular", "Vue", "TypeScript"]
     },
     "position": {
-      "title": "Senior Frontend Developer",
-      "url": "https://www.linkedin.com/jobs/view/senior-front-end-developer-fullstack-labs-costa-rica-3975266624/",
+      "title": "Frontend Engineer - Latin America",
+      "url": "https://vuejobs.com/jobs/azumo-frontend-engineer-latin-america-remote",
       "applicationType": "outreach",
       "model": "remote",
-      "location": "Costa Rica (requires residency)",
+      "location": "Latin America",
       "salary": null,
       "keywords": {
-        "technical": ["React", "Vue", "TypeScript", "Frontend"],
-        "soft": ["Remote Work", "Staff Augmentation"]
+        "technical": ["React", "Vue", "TypeScript"],
+        "soft": ["Remote Work", "Nearshoring"]
       }
     },
     "status": "sent",
     "applicationDate": "2026-04-15",
     "rejectionDate": null,
     "notes": {
-      "model": "Software Development - Remote",
-      "company": "FullStack Labs - US-based software development company, strong LATAM focus",
-      "techStack": "React, Vue, Mobile, Remote-first",
-      "role": "Senior Frontend position - outreach to explore opportunities"
+      "model": "Staff Augmentation - Remote",
+      "company": "Azumo - Nearshore software development company connecting LATAM talent with US companies",
+      "techStack": "React, Angular, Vue, TypeScript, Remote-first",
+      "role": "Frontend Engineer position - outreach to explore nearshore opportunities"
     }
   },
   "contactInfo": {
@@ -48,10 +48,10 @@
     "email": "razcue@yandex.com",
     "website": "razcue.github.io"
   },
-  "summary": "Senior Frontend Developer with 7+ years building web applications for companies across Europe, US, and LATAM. Strong expertise in Vue.js and React with experience across remote teams. Cross-functional background in SaaS and enterprise solutions.",
+  "summary": "Senior Frontend Developer with 7+ years building web applications for companies across Europe, US, and LATAM. Strong expertise in Vue.js and React. Cross-functional background in SaaS, e-commerce, and enterprise solutions.",
   "skills": {
-    "technical": "Vue.js, React, TypeScript, Nuxt.js, Core Web Vitals, Performance optimization, TailwindCSS, Pinia, REST APIs, CI/CD, GitHub Actions",
-    "additional": "Remote Work, Distributed Teams, Agile, Scrum, Pixel-Perfect Design, Mobile-First Design, Figma to Code, Technical Decision Making, Code Review",
+    "technical": "Vue.js, React, TypeScript, Nuxt.js, Core Web Vitals, Performance optimization",
+    "additional": "Remote Work, Distributed Teams, Agile, Nearshoring, Staff Augmentation",
     "languages": "English (C1 - Advanced), Spanish (Native)"
   },
   "education": [

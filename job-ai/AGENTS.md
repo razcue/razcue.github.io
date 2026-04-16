@@ -34,21 +34,34 @@ Complete workflow for autonomous job application management.
 
 7. USER APPROVAL → Wait for user to approve
 
-8. BUILD RESUME → Generate fresh resume for this specific application
-   - Use proposal's Summary + Skills to Highlight
-   - Fill other sections from default.json (contactInfo, education, experience, artifacts)
+8. CREATE RESUME CONFIG → Generate config file in data/configs/
+   - Metadata structure MUST match config format
+   - Verify company email array is populated (not null/empty)
 
-9. EXECUTE OUTREACH (batch mode)
-   - Send to all email patterns using --batch
-   - Parse result: SENT_EMAILS, FAILED_EMAILS
-   - If 0 sent: ABORT, do not update any data, rollback generated config
+9. BUILD RESUME → Generate fresh PDF for this specific application
+   - Use config file from step 8
+   - Output: public/resume-{id}.pdf (unique per company!)
+   - MUST complete before step 10
+   - IMPORTANT: Resume filenames must be unique (e.g., resume-2026-04-15-venturus.pdf)
 
-10. UPDATE APPLICATION DATA
+10. VERIFY RESUME → Before sending, verify:
+    - Resume config exists in data/configs/
+    - Resume PDF exists in public/resume-{id}.pdf
+    - Resume metadata matches company (check id, company name, position)
+    - ATTACHMENT must be company-specific resume, NOT generic
+    - Use correct filename: resume-{id}.pdf
+
+11. EXECUTE OUTREACH (batch mode)
+    - Send to all email patterns using --batch
+    - Parse result: SENT_EMAILS, FAILED_EMAILS
+    - If 0 sent: ABORT, do not update any data, rollback generated config
+
+12. UPDATE APPLICATION DATA
     - applications.json: add sent emails to emailsSent array
     - companies.json: add contact history
     - TODO.md: move from open proposals to active applications
 
-11. SCHEDULE FOLLOW-UP
+13. SCHEDULE FOLLOW-UP
     - Create entry in followups.md with:
       - Due date (7 days from now)
       - Company, Position, Application ID
@@ -58,11 +71,11 @@ Complete workflow for autonomous job application management.
       - Initial Email Draft (from proposal)
       - Follow-up Email Draft (from proposal)
 
-12. CLEANUP
+14. CLEANUP
     - Remove proposal from outreach.md (processed)
     - If last application: regenerate default resume
 
-13. UPDATE TODO
+15. UPDATE TODO
     - Active Applications count
     - Future Follow-ups count
     - Open Proposals count

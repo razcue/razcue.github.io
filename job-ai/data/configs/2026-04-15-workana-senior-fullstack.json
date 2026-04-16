@@ -1,45 +1,45 @@
 {
   "metadata": {
-    "id": "2026-04-15-fullstack-labs-senior-frontend",
+    "id": "2026-04-15-workana-senior-fullstack",
     "type": "outreach",
     "company": {
-      "name": "FullStack Labs",
-      "website": "https://www.fullstacklabs.co",
+      "name": "Workana",
+      "website": "https://www.workana.com",
       "email": [
-        "team@fullstacklabs.co",
-        "hr@fullstacklabs.co",
-        "careers@fullstacklabs.co",
-        "jobs@fullstacklabs.co",
-        "hiring@fullstacklabs.co",
-        "recruiting@fullstacklabs.co",
-        "talent@fullstacklabs.co",
-        "contact@fullstacklabs.co",
-        "hello@fullstacklabs.co",
-        "info@fullstacklabs.co"
+        "jobs@workana.com",
+        "careers@workana.com",
+        "hiring@workana.com",
+        "recruiting@workana.com",
+        "talent@workana.com",
+        "team@workana.com",
+        "hr@workana.com",
+        "contact@workana.com",
+        "hello@workana.com",
+        "info@workana.com"
       ],
-      "sector": "Software Development / Staff Augmentation",
-      "techStack": ["React", "Vue", "Mobile"]
+      "sector": "Freelance Platform / Talent Marketplace",
+      "techStack": ["Node.js", "Golang", "PHP", "React", "Vue"]
     },
     "position": {
-      "title": "Senior Frontend Developer",
-      "url": "https://www.linkedin.com/jobs/view/senior-front-end-developer-fullstack-labs-costa-rica-3975266624/",
+      "title": "Senior Fullstack Developer",
+      "url": "https://remotive.com/remote/jobs/software-dev/senior-fullstack-developer-1871050",
       "applicationType": "outreach",
       "model": "remote",
-      "location": "Costa Rica (requires residency)",
-      "salary": null,
+      "location": "LATAM",
+      "salary": "$5,000 USD/month",
       "keywords": {
-        "technical": ["React", "Vue", "TypeScript", "Frontend"],
-        "soft": ["Remote Work", "Staff Augmentation"]
+        "technical": ["Node.js", "Vue.js", "React", "Laravel"],
+        "soft": ["Remote Work", "Freelance Platform"]
       }
     },
     "status": "sent",
     "applicationDate": "2026-04-15",
     "rejectionDate": null,
     "notes": {
-      "model": "Software Development - Remote",
-      "company": "FullStack Labs - US-based software development company, strong LATAM focus",
-      "techStack": "React, Vue, Mobile, Remote-first",
-      "role": "Senior Frontend position - outreach to explore opportunities"
+      "model": "Freelance Platform - Remote",
+      "company": "Workana - One of the largest freelance platforms in Latin America",
+      "techStack": "Node.js, Golang, PHP, React, Vue, Remote-first",
+      "role": "Senior Fullstack position - outreach to explore opportunities"
     }
   },
   "contactInfo": {
@@ -48,10 +48,10 @@
     "email": "razcue@yandex.com",
     "website": "razcue.github.io"
   },
-  "summary": "Senior Frontend Developer with 7+ years building web applications for companies across Europe, US, and LATAM. Strong expertise in Vue.js and React with experience across remote teams. Cross-functional background in SaaS and enterprise solutions.",
+  "summary": "Senior Fullstack Developer with 7+ years building web applications for companies across Europe, US, and LATAM. Strong expertise in Vue.js/Laravel and Node.js with cross-functional experience in SaaS and enterprise solutions.",
   "skills": {
-    "technical": "Vue.js, React, TypeScript, Nuxt.js, Core Web Vitals, Performance optimization, TailwindCSS, Pinia, REST APIs, CI/CD, GitHub Actions",
-    "additional": "Remote Work, Distributed Teams, Agile, Scrum, Pixel-Perfect Design, Mobile-First Design, Figma to Code, Technical Decision Making, Code Review",
+    "technical": "Vue.js, Nuxt.js, React, TypeScript, Laravel, Node.js, PostgreSQL, REST APIs, Performance optimization",
+    "additional": "Remote Work, Distributed Teams, Agile, Freelance Platforms, Talent Marketplaces",
     "languages": "English (C1 - Advanced), Spanish (Native)"
   },
   "education": [

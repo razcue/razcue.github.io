@@ -327,6 +327,460 @@
         "outreachEmail": "I'm a Software Developer with 7+ years of experience serving companies across Europe, US, and LATAM. I saw the Costa Rica position but I'm based in Cuba. I'm interested in exploring other LATAM opportunities. My stack includes Vue.js, Nuxt.js, React, TypeScript, performance optimization. Would love to discuss other possibilities.",
         "followupEmail": "My name is Rayko Azcue, and I recently reached out regarding senior frontend opportunities at FullStack Labs. I wanted to know if there might be any current or upcoming positions that could be a good match for my experience. With 7+ years building web applications and strong expertise in TypeScript, Vue.js, and React, I'd love to discuss how I could contribute to your software development team."
       }
+    },
+    {
+      "id": "2026-04-15-venturus-frontend-vuejs",
+      "type": "outreach",
+      "score": 68,
+      "priority": "MEDIUM",
+      "company": {
+        "name": "Venturus",
+        "website": "https://www.venturus.org.br",
+        "email": null,
+        "sector": "Software Development / AI / Computer Vision",
+        "techStack": [
+          "Vue.js",
+          "Vue 3",
+          "Composition API",
+          "TypeScript",
+          "Vitest"
+        ],
+        "stage": "Enterprise"
+      },
+      "position": {
+        "title": "Front-End Developer Vue.js",
+        "url": "https://remotive.com/remote/jobs/software-development/front-end-developer-vue-js-3896846",
+        "applicationType": "outreach",
+        "model": "remote",
+        "location": "Brazil only",
+        "salary": null,
+        "language": "en",
+        "keywords": {
+          "technical": [
+            "Vue.js",
+            "Vue 3",
+            "Composition API",
+            "TypeScript",
+            "Vitest"
+          ],
+          "soft": ["Remote Work", "AI", "Computer Vision"]
+        }
+      },
+      "status": "sent",
+      "applicationDate": "2026-04-15",
+      "notes": {
+        "model": "Software Development - Remote",
+        "company": "Venturus - Brazilian technology company with 30+ years, 800+ employees, serving 60+ clients globally",
+        "techStack": "Vue.js (Vue 3 + Composition API), TypeScript, Vitest, Remote-first",
+        "role": "Frontend Vue.js position - outreach to explore remote opportunities (position requires Brazil)"
+      },
+      "outcomes": {
+        "emailSentAt": "2026-04-15",
+        "followupSentAt": null,
+        "emailsSent": [
+          "hr@venturus.org.br",
+          "careers@venturus.org.br",
+          "jobs@venturus.org.br",
+          "recruiting@venturus.org.br",
+          "talent@venturus.org.br",
+          "recruitment@venturus.org.br",
+          "hiring@venturus.org.br",
+          "apply@venturus.org.br",
+          "work@venturus.org.br",
+          "info@venturus.org.br",
+          "hello@venturus.org.br",
+          "support@venturus.org.br",
+          "admin@venturus.org.br",
+          "team@venturus.org.br",
+          "office@venturus.org.br",
+          "contactus@venturus.org.br",
+          "general@venturus.org.br",
+          "mail@venturus.org.br",
+          "staff@venturus.org.br",
+          "dev@venturus.org.br",
+          "tech@venturus.org.br",
+          "it@venturus.org.br"
+        ],
+        "emailsFailed": ["contact@venturus.org.br"],
+        "responseReceived": false,
+        "responseDate": null,
+        "responseType": "no-response",
+        "interviewScheduled": false,
+        "interviewDate": null,
+        "feedback": "",
+        "emailContent": ""
+      },
+      "proposal": {
+        "proposedAt": "2026-04-15",
+        "proposedWhy": "Vue.js position matching tech stack",
+        "profile": "Senior Frontend Developer with 7+ years building web applications for companies across Europe, US, and LATAM. Strong expertise in Vue.js, Vue 3, and Nuxt.js with experience in cutting-edge technologies including AI. Cross-functional experience across enterprise, SaaS, and multiple tech sectors.",
+        "skills": [
+          "Vue.js",
+          "Vue 3",
+          "Composition API",
+          "TypeScript",
+          "Vitest",
+          "SSR/SSG with Nuxt",
+          "AI"
+        ],
+        "coverLetter": "",
+        "outreachEmail": "I'm a Software Developer with 7+ years of experience serving companies across Europe, US, and LATAM, with hands-on experience in AI and enterprise software. I'm interested in opportunities at Venturus. My experience includes Vue.js/Composition API, TypeScript, Pinia, Vitest, SSR/SSG with Nuxt. I work remotely with clients globally. Would you consider candidates outside Brazil for remote positions?",
+        "followupEmail": "My name is Rayko Azcue, and I recently reached out regarding frontend Vue.js opportunities at Venturus. I wanted to know if there might be any current or upcoming positions that could be a good match for my experience. With 7+ years building web applications and strong expertise in Vue.js, TypeScript, and modern frontend technologies, I'd love to discuss how I could contribute to your AI and enterprise projects."
+      }
+    },
+    {
+      "id": "2026-04-15-south-geeks-senior-frontend",
+      "type": "outreach",
+      "score": 67,
+      "priority": "MEDIUM",
+      "company": {
+        "name": "South Geeks",
+        "website": "https://www.southgeeks.com",
+        "email": null,
+        "sector": "Software Consultancy / Staff Augmentation",
+        "techStack": ["Vue.js", "React", "Nuxt", "Next", "TypeScript"],
+        "stage": "Growth"
+      },
+      "position": {
+        "title": "Senior Front End Engineer",
+        "url": "https://www.remoterocketship.com/company/south-geeks/jobs/senior-front-end-engineer-latin-america",
+        "applicationType": "outreach",
+        "model": "remote",
+        "location": "Anywhere in Latin America",
+        "salary": null,
+        "language": "en",
+        "keywords": {
+          "technical": ["Vue.js", "React", "Nuxt", "Next", "TypeScript"],
+          "soft": ["Remote Work", "Staff Augmentation"]
+        }
+      },
+      "status": "sent",
+      "applicationDate": "2026-04-15",
+      "notes": {
+        "model": "Software Consultancy - Remote",
+        "company": "South Geeks - Software consultancy connecting top LATAM developers with companies worldwide",
+        "techStack": "Vue.js, React, Nuxt, Next, TypeScript, Remote-first",
+        "role": "Senior Frontend position - outreach to explore opportunities"
+      },
+      "outcomes": {
+        "emailSentAt": "2026-04-15",
+        "followupSentAt": null,
+        "emailsSent": [
+          "hr@southgeeks.com",
+          "careers@southgeeks.com",
+          "jobs@southgeeks.com",
+          "recruiting@southgeeks.com",
+          "talent@southgeeks.com",
+          "recruitment@southgeeks.com",
+          "hiring@southgeeks.com",
+          "apply@southgeeks.com",
+          "work@southgeeks.com",
+          "contact@southgeeks.com",
+          "info@southgeeks.com",
+          "hello@southgeeks.com",
+          "support@southgeeks.com",
+          "admin@southgeeks.com",
+          "team@southgeeks.com",
+          "office@southgeeks.com",
+          "general@southgeeks.com",
+          "mail@southgeeks.com",
+          "staff@southgeeks.com",
+          "tech@southgeeks.com",
+          "it@southgeeks.com"
+        ],
+        "emailsFailed": ["contactus@southgeeks.com", "dev@southgeeks.com"],
+        "responseReceived": false,
+        "responseDate": null,
+        "responseType": "no-response",
+        "interviewScheduled": false,
+        "interviewDate": null,
+        "feedback": "",
+        "emailContent": ""
+      },
+      "proposal": {
+        "proposedAt": "2026-04-15",
+        "proposedWhy": "Senior Frontend position matching tech stack",
+        "profile": "Senior Frontend Engineer with 7+ years building web applications for companies across Europe, US, and LATAM. Strong expertise in Vue.js, React, Nuxt, and TypeScript with experience across SaaS, e-commerce, and other sectors. Background in building remote teams and connecting developers with opportunities.",
+        "skills": [
+          "Vue.js",
+          "React",
+          "Nuxt",
+          "Next",
+          "TypeScript",
+          "SSR/SSG",
+          "Core Web Vitals"
+        ],
+        "coverLetter": "",
+        "outreachEmail": "I'm a Software Developer with 7+ years of experience serving companies across Europe, US, and LATAM, with hands-on experience working within remote teams. I'm interested in opportunities at South Geeks. My experience includes Vue.js/Nuxt.js (SSR/SSG), React/Next.js, performance optimization, building SaaS and e-commerce platforms. I work remotely with clients globally and am comfortable with LATAM time zones.",
+        "followupEmail": "My name is Rayko Azcue, and I recently reached out regarding senior frontend opportunities at South Geeks. I wanted to know if there might be any current or upcoming positions that could be a good match for my experience. With 7+ years building web applications and strong expertise in Vue.js, React, and full-stack development, I'd love to discuss how I could contribute to your software consultancy connecting top LATAM developers with companies worldwide."
+      }
+    },
+    {
+      "id": "2026-04-15-workana-senior-fullstack",
+      "type": "outreach",
+      "score": 65,
+      "priority": "MEDIUM",
+      "company": {
+        "name": "Workana",
+        "website": "https://www.workana.com",
+        "email": null,
+        "sector": "Freelance Platform / Talent Marketplace",
+        "techStack": ["Node.js", "Golang", "PHP", "React", "Vue"],
+        "stage": "Growth"
+      },
+      "position": {
+        "title": "Senior Fullstack Developer",
+        "url": "https://remotive.com/remote/jobs/software-dev/senior-fullstack-developer-1871050",
+        "applicationType": "outreach",
+        "model": "remote",
+        "location": "LATAM",
+        "salary": "$5,000 USD/month",
+        "language": "en",
+        "keywords": {
+          "technical": ["Node.js", "Vue.js", "React", "Laravel"],
+          "soft": ["Remote Work", "Freelance Platform"]
+        }
+      },
+      "status": "sent",
+      "applicationDate": "2026-04-15",
+      "notes": {
+        "model": "Freelance Platform - Remote",
+        "company": "Workana - One of the largest freelance platforms in Latin America",
+        "techStack": "Node.js, Golang, PHP, React, Vue, Remote-first",
+        "role": "Senior Fullstack position - outreach to explore opportunities"
+      },
+      "outcomes": {
+        "emailSentAt": "2026-04-15",
+        "followupSentAt": null,
+        "emailsSent": [
+          "hr@workana.com",
+          "careers@workana.com",
+          "jobs@workana.com",
+          "recruiting@workana.com",
+          "talent@workana.com",
+          "recruitment@workana.com",
+          "hiring@workana.com",
+          "apply@workana.com",
+          "work@workana.com",
+          "contact@workana.com",
+          "info@workana.com",
+          "hello@workana.com",
+          "support@workana.com",
+          "admin@workana.com",
+          "team@workana.com",
+          "office@workana.com",
+          "contactus@workana.com",
+          "general@workana.com",
+          "mail@workana.com",
+          "staff@workana.com",
+          "dev@workana.com",
+          "tech@workana.com",
+          "it@workana.com"
+        ],
+        "emailsFailed": [],
+        "responseReceived": false,
+        "responseDate": null,
+        "responseType": "no-response",
+        "interviewScheduled": false,
+        "interviewDate": null,
+        "feedback": "",
+        "emailContent": ""
+      },
+      "proposal": {
+        "proposedAt": "2026-04-15",
+        "proposedWhy": "Senior Fullstack position with Vue.js/Laravel",
+        "profile": "Senior Fullstack Developer with 7+ years building web applications for companies across Europe, US, and LATAM. Strong expertise in Vue.js/Laravel and Node.js with cross-functional experience in SaaS and enterprise solutions.",
+        "skills": [
+          "Vue.js",
+          "Nuxt.js",
+          "React",
+          "TypeScript",
+          "Laravel",
+          "Node.js",
+          "PostgreSQL"
+        ],
+        "coverLetter": "",
+        "outreachEmail": "I'm a Software Developer with 7+ years of experience serving companies across Europe, US, and LATAM, with hands-on experience in SaaS platforms. I'm interested in opportunities at Workana. My stack includes Vue.js, Nuxt.js, React, Laravel, Node.js, PostgreSQL, and performance optimization. I work remotely and am currently available.",
+        "followupEmail": "My name is Rayko Azcue, and I recently reached out regarding senior fullstack opportunities at Workana. I wanted to know if there might be any current or upcoming positions that could be a good match for my experience. With 7+ years building web applications and strong expertise in Vue.js, Laravel, and Node.js, I'd love to discuss how I could contribute to your freelance platform connecting skilled professionals with companies."
+      }
+    },
+    {
+      "id": "2026-04-15-sparq-full-stack",
+      "type": "outreach",
+      "score": 63,
+      "priority": "MEDIUM",
+      "company": {
+        "name": "Sparq",
+        "website": "https://www.sparq.com",
+        "email": null,
+        "sector": "Software Development",
+        "techStack": ["Node.js", "React", "Vue"],
+        "stage": "Unknown"
+      },
+      "position": {
+        "title": "Full Stack Developer",
+        "url": "https://remotive.com/remote/jobs/software-development/full-stack-developer-3856052",
+        "applicationType": "outreach",
+        "model": "remote",
+        "location": "LATAM",
+        "salary": null,
+        "language": "en",
+        "keywords": {
+          "technical": ["Node.js", "React", "Vue"],
+          "soft": ["Remote Work"]
+        }
+      },
+      "status": "sent",
+      "applicationDate": "2026-04-15",
+      "notes": {
+        "model": "Software Development - Remote",
+        "company": "Sparq - Software development company",
+        "techStack": "Node.js, React/Vue, Remote-first",
+        "role": "Full Stack position - outreach to explore opportunities"
+      },
+      "outcomes": {
+        "emailSentAt": "2026-04-15",
+        "followupSentAt": null,
+        "emailsSent": [
+          "hr@sparq.com",
+          "careers@sparq.com",
+          "jobs@sparq.com",
+          "recruiting@sparq.com",
+          "talent@sparq.com",
+          "recruitment@sparq.com",
+          "hiring@sparq.com",
+          "apply@sparq.com",
+          "work@sparq.com",
+          "contact@sparq.com",
+          "info@sparq.com",
+          "hello@sparq.com",
+          "support@sparq.com",
+          "admin@sparq.com",
+          "team@sparq.com",
+          "office@sparq.com",
+          "contactus@sparq.com",
+          "general@sparq.com",
+          "mail@sparq.com",
+          "staff@sparq.com",
+          "dev@sparq.com",
+          "tech@sparq.com",
+          "it@sparq.com"
+        ],
+        "emailsFailed": [],
+        "responseReceived": false,
+        "responseDate": null,
+        "responseType": "no-response",
+        "interviewScheduled": false,
+        "interviewDate": null,
+        "feedback": "",
+        "emailContent": ""
+      },
+      "proposal": {
+        "proposedAt": "2026-04-15",
+        "proposedWhy": "Full Stack position with Vue.js/Node.js",
+        "profile": "Full Stack Developer with 7+ years building web applications for companies across Europe, US, and LATAM. Strong expertise in Vue.js and Node.js with cross-functional experience across SaaS, enterprise, and LATAM market projects.",
+        "skills": [
+          "Vue.js",
+          "Nuxt.js",
+          "React",
+          "TypeScript",
+          "Node.js",
+          "Express",
+          "PostgreSQL"
+        ],
+        "coverLetter": "",
+        "outreachEmail": "I'm a Software Developer with 7+ years of experience serving companies across Europe, US, and LATAM, with hands-on experience in software development. I'm interested in opportunities at Sparq. My stack includes Vue.js, Nuxt.js, React, Node.js, Express, PostgreSQL. I work remotely and am currently available.",
+        "followupEmail": "My name is Rayko Azcue, and I recently reached out regarding fullstack opportunities at Sparq. I wanted to know if there might be any current or upcoming positions that could be a good match for my experience. With 7+ years building web applications and strong expertise in Vue.js and Node.js, I'd love to discuss how I could contribute to your team."
+      }
+    },
+    {
+      "id": "2026-04-15-azumo-frontend-engineer",
+      "type": "outreach",
+      "score": 62,
+      "priority": "MEDIUM",
+      "company": {
+        "name": "Azumo",
+        "website": "https://azumo.com",
+        "email": null,
+        "sector": "Staff Augmentation / IT Services",
+        "techStack": ["React", "Angular", "Vue", "TypeScript"],
+        "stage": "Growth"
+      },
+      "position": {
+        "title": "Frontend Engineer - Latin America",
+        "url": "https://vuejobs.com/jobs/azumo-frontend-engineer-latin-america-remote",
+        "applicationType": "outreach",
+        "model": "remote",
+        "location": "Latin America",
+        "salary": null,
+        "language": "en",
+        "keywords": {
+          "technical": ["React", "Vue", "TypeScript"],
+          "soft": ["Remote Work", "Nearshoring"]
+        }
+      },
+      "status": "sent",
+      "applicationDate": "2026-04-15",
+      "notes": {
+        "model": "Staff Augmentation - Remote",
+        "company": "Azumo - Nearshore software development company connecting LATAM talent with US companies",
+        "techStack": "React, Angular, Vue, TypeScript, Remote-first",
+        "role": "Frontend Engineer position - outreach to explore nearshore opportunities"
+      },
+      "outcomes": {
+        "emailSentAt": "2026-04-15",
+        "followupSentAt": null,
+        "emailsSent": [
+          "hr@azumo.com",
+          "careers@azumo.com",
+          "jobs@azumo.com",
+          "recruiting@azumo.com",
+          "recruitment@azumo.com",
+          "hiring@azumo.com",
+          "apply@azumo.com",
+          "work@azumo.com",
+          "contact@azumo.com",
+          "info@azumo.com",
+          "hello@azumo.com",
+          "team@azumo.com",
+          "contactus@azumo.com",
+          "general@azumo.com",
+          "mail@azumo.com",
+          "staff@azumo.com",
+          "dev@azumo.com",
+          "tech@azumo.com",
+          "it@azumo.com",
+          "people@azumo.co"
+        ],
+        "emailsFailed": [
+          "talent@azumo.com",
+          "support@azumo.com",
+          "admin@azumo.com",
+          "office@azumo.com"
+        ],
+        "responseReceived": false,
+        "responseDate": null,
+        "responseType": "no-response",
+        "interviewScheduled": false,
+        "interviewDate": null,
+        "feedback": "",
+        "emailContent": ""
+      },
+      "proposal": {
+        "proposedAt": "2026-04-15",
+        "proposedWhy": "Frontend Engineer position matching tech stack (Vue/React)",
+        "profile": "Senior Frontend Developer with 7+ years building web applications for companies across Europe, US, and LATAM. Strong expertise in Vue.js and React. Cross-functional background in SaaS, e-commerce, and enterprise solutions.",
+        "skills": [
+          "Vue.js",
+          "React",
+          "TypeScript",
+          "Nuxt.js",
+          "Core Web Vitals"
+        ],
+        "coverLetter": "",
+        "outreachEmail": "I'm a Software Developer with 7+ years of experience serving companies across Europe, US, and LATAM, with hands-on experience on enterprise solutions. I'm interested in nearshore opportunities at Azumo. My stack includes Vue.js, Nuxt.js, React, TypeScript, performance optimization. I work remotely and am currently available.",
+        "followupEmail": "My name is Rayko Azcue, and I recently reached out regarding frontend engineering opportunities at Azumo. I wanted to know if there might be any current or upcoming nearshore positions that could be a good match for my experience. With 7+ years building web applications and strong expertise in Vue.js and React, I'd love to discuss how I could contribute to your team connecting LATAM talent with US companies."
+      }
     }
   ],
   "lastUpdated": "2026-04-15"

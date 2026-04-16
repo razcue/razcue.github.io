@@ -379,6 +379,127 @@
       "negativeResponses": 0,
       "totalContacts": 1,
       "notes": "US-based software development company, strong LATAM focus. Costa Rica position requires residency."
+    },
+    {
+      "name": "Venturus",
+      "website": "https://www.venturus.org.br",
+      "sector": "Software Development / AI / Computer Vision",
+      "techStack": [
+        "Vue.js",
+        "Vue 3",
+        "Composition API",
+        "TypeScript",
+        "Vitest"
+      ],
+      "stage": "enterprise",
+      "score": 68,
+      "lastContact": "2026-04-15",
+      "contactHistory": [
+        {
+          "date": "2026-04-15",
+          "type": "outreach",
+          "status": "sent",
+          "response": "no-response",
+          "applicationId": "2026-04-15-venturus-frontend-vuejs",
+          "notes": "Sent outreach to 23 email patterns. 22 sent, 1 failed (SPAM rejection)."
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 0,
+      "totalContacts": 1,
+      "notes": "Brazilian tech company, 30+ years, 800+ employees. Position requires Brazil but outreach for remote opportunities."
+    },
+    {
+      "name": "South Geeks",
+      "website": "https://www.southgeeks.com",
+      "sector": "Software Consultancy / Staff Augmentation",
+      "techStack": ["Vue.js", "React", "Nuxt", "Next", "TypeScript"],
+      "stage": "growth",
+      "score": 67,
+      "lastContact": "2026-04-15",
+      "contactHistory": [
+        {
+          "date": "2026-04-15",
+          "type": "outreach",
+          "status": "sent",
+          "response": "no-response",
+          "applicationId": "2026-04-15-south-geeks-senior-frontend",
+          "notes": "Sent outreach to 23 email patterns. 21 sent, 2 failed (SPAM rejection)."
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 0,
+      "totalContacts": 1,
+      "notes": "Software consultancy connecting top LATAM developers with companies worldwide."
+    },
+    {
+      "name": "Workana",
+      "website": "https://www.workana.com",
+      "sector": "Freelance Platform / Talent Marketplace",
+      "techStack": ["Node.js", "Golang", "PHP", "React", "Vue"],
+      "stage": "growth",
+      "score": 65,
+      "lastContact": "2026-04-15",
+      "contactHistory": [
+        {
+          "date": "2026-04-15",
+          "type": "outreach",
+          "status": "sent",
+          "response": "no-response",
+          "applicationId": "2026-04-15-workana-senior-fullstack",
+          "notes": "Sent outreach to 23 email patterns. All 23 sent successfully."
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 0,
+      "totalContacts": 1,
+      "notes": "One of the largest freelance platforms in Latin America. $5,000/month contractor rate."
+    },
+    {
+      "name": "Sparq",
+      "website": "https://www.sparq.com",
+      "sector": "Software Development",
+      "techStack": ["Node.js", "React", "Vue"],
+      "stage": "unknown",
+      "score": 63,
+      "lastContact": "2026-04-15",
+      "contactHistory": [
+        {
+          "date": "2026-04-15",
+          "type": "outreach",
+          "status": "sent",
+          "response": "no-response",
+          "applicationId": "2026-04-15-sparq-full-stack",
+          "notes": "Sent outreach to 23 email patterns. All 23 sent successfully."
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 0,
+      "totalContacts": 1,
+      "notes": "Software development company, LATAM focus."
+    },
+    {
+      "name": "Azumo",
+      "website": "https://azumo.com",
+      "sector": "Staff Augmentation / IT Services",
+      "techStack": ["React", "Angular", "Vue", "TypeScript"],
+      "stage": "growth",
+      "score": 62,
+      "lastContact": "2026-04-15",
+      "contactHistory": [
+        {
+          "date": "2026-04-15",
+          "type": "outreach",
+          "status": "sent",
+          "response": "no-response",
+          "applicationId": "2026-04-15-azumo-frontend-engineer",
+          "notes": "Sent outreach to 24 email patterns. 20 sent, 4 failed (SPAM rejection)."
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 0,
+      "totalContacts": 1,
+      "notes": "Nearshore software development company, LATAM talent to US companies."
     }
   ],
   "lastUpdated": "2026-04-15"

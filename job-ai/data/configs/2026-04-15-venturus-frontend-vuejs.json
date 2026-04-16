@@ -1,35 +1,47 @@
 {
   "metadata": {
-    "id": "2026-04-15-fullstack-labs-senior-frontend",
+    "id": "2026-04-15-venturus-frontend-vuejs",
     "type": "outreach",
     "company": {
-      "name": "FullStack Labs",
-      "website": "https://www.fullstacklabs.co",
+      "name": "Venturus",
+      "website": "https://www.venturus.org.br",
       "email": [
-        "team@fullstacklabs.co",
-        "hr@fullstacklabs.co",
-        "careers@fullstacklabs.co",
-        "jobs@fullstacklabs.co",
-        "hiring@fullstacklabs.co",
-        "recruiting@fullstacklabs.co",
-        "talent@fullstacklabs.co",
-        "contact@fullstacklabs.co",
-        "hello@fullstacklabs.co",
-        "info@fullstacklabs.co"
+        "rh@venturus.org.br",
+        "careers@venturus.org.br",
+        "jobs@venturus.org.br",
+        "hiring@venturus.org.br",
+        "recruiting@venturus.org.br",
+        "talent@venturus.org.br",
+        "team@venturus.org.br",
+        "hr@venturus.org.br",
+        "contact@venturus.org.br",
+        "info@venturus.org.br"
       ],
-      "sector": "Software Development / Staff Augmentation",
-      "techStack": ["React", "Vue", "Mobile"]
+      "sector": "Software Development / AI / Computer Vision",
+      "techStack": [
+        "Vue.js",
+        "Vue 3",
+        "Composition API",
+        "TypeScript",
+        "Vitest"
+      ]
     },
     "position": {
-      "title": "Senior Frontend Developer",
-      "url": "https://www.linkedin.com/jobs/view/senior-front-end-developer-fullstack-labs-costa-rica-3975266624/",
+      "title": "Front-End Developer Vue.js",
+      "url": "https://remotive.com/remote/jobs/software-development/front-end-developer-vue-js-3896846",
       "applicationType": "outreach",
       "model": "remote",
-      "location": "Costa Rica (requires residency)",
+      "location": "Brazil only",
       "salary": null,
       "keywords": {
-        "technical": ["React", "Vue", "TypeScript", "Frontend"],
-        "soft": ["Remote Work", "Staff Augmentation"]
+        "technical": [
+          "Vue.js",
+          "Vue 3",
+          "Composition API",
+          "TypeScript",
+          "Vitest"
+        ],
+        "soft": ["Remote Work", "AI", "Computer Vision"]
       }
     },
     "status": "sent",
@@ -37,9 +49,9 @@
     "rejectionDate": null,
     "notes": {
       "model": "Software Development - Remote",
-      "company": "FullStack Labs - US-based software development company, strong LATAM focus",
-      "techStack": "React, Vue, Mobile, Remote-first",
-      "role": "Senior Frontend position - outreach to explore opportunities"
+      "company": "Venturus - Brazilian technology company with 30+ years, 800+ employees, serving 60+ clients globally",
+      "techStack": "Vue.js (Vue 3 + Composition API), TypeScript, Vitest, Remote-first",
+      "role": "Frontend Vue.js position - outreach to explore remote opportunities (position requires Brazil)"
     }
   },
   "contactInfo": {
@@ -48,10 +60,10 @@
     "email": "razcue@yandex.com",
     "website": "razcue.github.io"
   },
-  "summary": "Senior Frontend Developer with 7+ years building web applications for companies across Europe, US, and LATAM. Strong expertise in Vue.js and React with experience across remote teams. Cross-functional background in SaaS and enterprise solutions.",
+  "summary": "Senior Frontend Developer with 7+ years building web applications for companies across Europe, US, and LATAM. Strong expertise in Vue.js, Vue 3, and Nuxt.js with experience in cutting-edge technologies including AI and enterprise software. Cross-functional experience across enterprise, SaaS, and multiple tech sectors.",
   "skills": {
-    "technical": "Vue.js, React, TypeScript, Nuxt.js, Core Web Vitals, Performance optimization, TailwindCSS, Pinia, REST APIs, CI/CD, GitHub Actions",
-    "additional": "Remote Work, Distributed Teams, Agile, Scrum, Pixel-Perfect Design, Mobile-First Design, Figma to Code, Technical Decision Making, Code Review",
+    "technical": "Vue.js, Vue 3, Composition API, TypeScript, Pinia, Vitest, SSR/SSG with Nuxt, Core Web Vitals, Performance optimization",
+    "additional": "Remote Work, Distributed Teams, Agile, Enterprise software development, AI/Computer Vision",
     "languages": "English (C1 - Advanced), Spanish (Native)"
   },
   "education": [

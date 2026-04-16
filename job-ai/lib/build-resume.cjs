@@ -262,10 +262,11 @@ async function buildResume(configName, positionJsonPath) {
     // Convert to PDF
     console.log('\n5️⃣  Converting to PDF...');
 
-    // Use descriptive filename for default resume, generic for position-specific
-    const pdfFilename = positionJsonPath
-      ? 'resume.pdf'
-      : 'Rayko_Azcue_Resume.pdf';
+    // Use unique filename based on config ID to avoid overwriting previous resumes
+    const pdfFilename =
+      configName === 'default'
+        ? 'Rayko_Azcue_Resume.pdf'
+        : `resume-${configName}.pdf`;
     const pdfOutputPath = path.join(OUTPUT_DIR, pdfFilename);
 
     await htmlToPdf(html, pdfOutputPath);

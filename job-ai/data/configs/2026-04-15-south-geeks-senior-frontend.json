@@ -1,34 +1,34 @@
 {
   "metadata": {
-    "id": "2026-04-15-fullstack-labs-senior-frontend",
+    "id": "2026-04-15-south-geeks-senior-frontend",
     "type": "outreach",
     "company": {
-      "name": "FullStack Labs",
-      "website": "https://www.fullstacklabs.co",
+      "name": "South Geeks",
+      "website": "https://www.southgeeks.com",
       "email": [
-        "team@fullstacklabs.co",
-        "hr@fullstacklabs.co",
-        "careers@fullstacklabs.co",
-        "jobs@fullstacklabs.co",
-        "hiring@fullstacklabs.co",
-        "recruiting@fullstacklabs.co",
-        "talent@fullstacklabs.co",
-        "contact@fullstacklabs.co",
-        "hello@fullstacklabs.co",
-        "info@fullstacklabs.co"
+        "careers@southgeeks.com",
+        "jobs@southgeeks.com",
+        "hiring@southgeeks.com",
+        "recruiting@southgeeks.com",
+        "talent@southgeeks.com",
+        "team@southgeeks.com",
+        "hr@southgeeks.com",
+        "contact@southgeeks.com",
+        "hello@southgeeks.com",
+        "info@southgeeks.com"
       ],
-      "sector": "Software Development / Staff Augmentation",
-      "techStack": ["React", "Vue", "Mobile"]
+      "sector": "Software Consultancy / Staff Augmentation",
+      "techStack": ["Vue.js", "React", "Nuxt", "Next", "TypeScript"]
     },
     "position": {
-      "title": "Senior Frontend Developer",
-      "url": "https://www.linkedin.com/jobs/view/senior-front-end-developer-fullstack-labs-costa-rica-3975266624/",
+      "title": "Senior Front End Engineer",
+      "url": "https://www.remoterocketship.com/company/south-geeks/jobs/senior-front-end-engineer-latin-america",
       "applicationType": "outreach",
       "model": "remote",
-      "location": "Costa Rica (requires residency)",
+      "location": "Anywhere in Latin America",
       "salary": null,
       "keywords": {
-        "technical": ["React", "Vue", "TypeScript", "Frontend"],
+        "technical": ["Vue.js", "React", "Nuxt", "Next", "TypeScript"],
         "soft": ["Remote Work", "Staff Augmentation"]
       }
     },
@@ -36,9 +36,9 @@
     "applicationDate": "2026-04-15",
     "rejectionDate": null,
     "notes": {
-      "model": "Software Development - Remote",
-      "company": "FullStack Labs - US-based software development company, strong LATAM focus",
-      "techStack": "React, Vue, Mobile, Remote-first",
+      "model": "Software Consultancy - Remote",
+      "company": "South Geeks - Software consultancy connecting top LATAM developers with companies worldwide",
+      "techStack": "Vue.js, React, Nuxt, Next, TypeScript, Remote-first",
       "role": "Senior Frontend position - outreach to explore opportunities"
     }
   },
@@ -48,10 +48,10 @@
     "email": "razcue@yandex.com",
     "website": "razcue.github.io"
   },
-  "summary": "Senior Frontend Developer with 7+ years building web applications for companies across Europe, US, and LATAM. Strong expertise in Vue.js and React with experience across remote teams. Cross-functional background in SaaS and enterprise solutions.",
+  "summary": "Senior Frontend Engineer with 7+ years building web applications for companies across Europe, US, and LATAM. Strong expertise in Vue.js, React, Nuxt, and TypeScript with experience across SaaS, e-commerce, and other sectors. Background in building remote teams and connecting developers with opportunities.",
   "skills": {
-    "technical": "Vue.js, React, TypeScript, Nuxt.js, Core Web Vitals, Performance optimization, TailwindCSS, Pinia, REST APIs, CI/CD, GitHub Actions",
-    "additional": "Remote Work, Distributed Teams, Agile, Scrum, Pixel-Perfect Design, Mobile-First Design, Figma to Code, Technical Decision Making, Code Review",
+    "technical": "Vue.js, React, Nuxt, Next, TypeScript, SSR/SSG, Core Web Vitals, Performance optimization",
+    "additional": "Remote Work, Distributed Teams, Agile, Software Consultancy, Staff Augmentation",
     "languages": "English (C1 - Advanced), Spanish (Native)"
   },
   "education": [

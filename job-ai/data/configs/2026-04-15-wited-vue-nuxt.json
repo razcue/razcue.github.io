@@ -1,10 +1,48 @@
 {
   "metadata": {
     "id": "2026-04-15-wited-vue-nuxt",
-    "configName": "wited-vue-nuxt",
-    "language": "en",
-    "dateCreated": "2026-04-15T00:00:00.000Z",
-    "targetPosition": "Frontend Vue.js/Nuxt Developer"
+    "type": "outreach",
+    "company": {
+      "name": "Wited",
+      "website": "https://www.wited.com",
+      "email": [
+        "hello@wited.com",
+        "contact@wited.com",
+        "info@wited.com",
+        "jobs@wited.com",
+        "careers@wited.com",
+        "hiring@wited.com",
+        "recruiting@wited.com",
+        "talent@wited.com",
+        "team@wited.com",
+        "hr@wited.com"
+      ],
+      "sector": "EdTech / Education Technology",
+      "techStack": ["Vue.js", "Nuxt.js", "TypeScript", "Pinia"]
+    },
+    "position": {
+      "title": "Desarrollador Front-end Vue/Nuxt",
+      "url": "https://www.wited.com/empleos",
+      "applicationType": "outreach",
+      "model": "remote",
+      "location": "Chile",
+      "salary": null,
+      "keywords": {
+        "technical": ["Vue.js", "Nuxt.js", "TypeScript", "Pinia"],
+        "soft": ["Remote Work", "EdTech"]
+      }
+    },
+    "status": "bounced",
+    "applicationDate": "2026-04-15",
+    "rejectionDate": "2026-04-15",
+    "notes": {
+      "model": "EdTech - Remote",
+      "company": "Wited - EdTech company in Chile",
+      "techStack": "Vue.js, Nuxt.js, TypeScript, Pinia",
+      "role": "Frontend Vue/Nuxt position - all emails bounced (unreachable)",
+      "rejection": "All 23 email patterns bounced - company email domain appears inactive",
+      "applicationLimits": "Do not propose again - company is unreachable"
+    }
   },
   "contactInfo": {
     "location": "Havana, Cuba",
