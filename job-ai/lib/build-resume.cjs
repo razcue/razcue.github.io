@@ -90,15 +90,19 @@ function loadDefaultConfig() {
  */
 function mergeWithDefaults(config, defaults) {
   return {
+    ...defaults,
     ...config,
     contactInfo: {
       ...defaults.contactInfo,
       ...(config.contactInfo || {}),
     },
     education: config.education || defaults.education || [],
-    summary: config.summary || '',
-    skills: config.skills || defaults.skills || {},
-    experience: config.experience || [],
+    skills: {
+      ...defaults.skills,
+      ...(config.skills || {}),
+    },
+    experience: config.experience || defaults.experience || [],
+    summary: config.summary || defaults.summary || '',
   };
 }
 

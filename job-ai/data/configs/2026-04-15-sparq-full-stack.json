@@ -15,7 +15,20 @@
         "team@sparq.com",
         "hr@sparq.com",
         "contact@sparq.com",
-        "hello@sparq.com"
+        "hello@sparq.com",
+        "support@sparq.com",
+        "admin@sparq.com",
+        "office@sparq.com",
+        "contactus@sparq.com",
+        "general@sparq.com",
+        "mail@sparq.com",
+        "staff@sparq.com",
+        "dev@sparq.com",
+        "tech@sparq.com",
+        "it@sparq.com",
+        "recruitment@sparq.com",
+        "apply@sparq.com",
+        "work@sparq.com"
       ],
       "sector": "Software Development",
       "techStack": ["Node.js", "React", "Vue"]

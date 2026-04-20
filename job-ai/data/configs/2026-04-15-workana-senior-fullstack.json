@@ -15,7 +15,20 @@
         "hr@workana.com",
         "contact@workana.com",
         "hello@workana.com",
-        "info@workana.com"
+        "info@workana.com",
+        "support@workana.com",
+        "admin@workana.com",
+        "office@workana.com",
+        "contactus@workana.com",
+        "general@workana.com",
+        "mail@workana.com",
+        "staff@workana.com",
+        "dev@workana.com",
+        "tech@workana.com",
+        "it@workana.com",
+        "recruitment@workana.com",
+        "apply@workana.com",
+        "work@workana.com"
       ],
       "sector": "Freelance Platform / Talent Marketplace",
       "techStack": ["Node.js", "Golang", "PHP", "React", "Vue"]

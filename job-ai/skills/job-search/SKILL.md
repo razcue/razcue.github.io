@@ -326,7 +326,9 @@ Create detailed proposals for each opportunity with the following structure:
 **Every proposal in temp/outreach.md MUST include:**
 
 - **Summary (Tailored):** 2-3 sentences following the Summary Template below
-- **Skills to Highlight:** 3-5 skills most relevant to the job/company
+- **Skills to Highlight:** Split into TWO sub-sections with comma-separated values:
+  - **technologies:** Primary technical skills (Vue.js, Nuxt.js, TypeScript, etc.)
+  - **additional:** Soft skills and complementary skills (Team Leadership, Remote Work, etc.)
 - **Email Draft:** Following the Email Introduction Template below
 - **Follow-up Email Draft:** Following the Follow-up Email Template below
 
@@ -339,7 +341,7 @@ Create detailed proposals for each opportunity with the following structure:
 
 **Templates (ALWAYS USE):**
 
-**Important Rule:** Only include sectors/domains that are documented in the knowledge base or your actual experience. NEVER claim experience in sectors you don't have (e.g., Legal Tech, FinTech, Healthcare, etc. unless explicitly in KNOWLEDGE_BASE.md).
+Important Rule: Only include sectors/domains that are documented in the knowledge base or your actual experience. NEVER claim experience in sectors you don't have (e.g., Legal Tech, FinTech, Healthcare, etc. unless explicitly in KNOWLEDGE_BASE.md).
 
 **Email Introduction Template:**
 
@@ -408,23 +410,55 @@ Best regards
 
 #### Skills to Highlight
 
-- {{skill 1}}
-- {{skill 2}}
-- {{skill 3}}
+**technologies:** {{comma-separated technical skills}}
+**additional:** {{comma-separated soft skills}}
 
 #### Follow-up Email Draft
 
 [Full follow-up email using template above]
 ```
 
-**Actions for each proposal:**
+### 10. BUILD CONFIG BEFORE USER VALIDATION
 
-[ ] Review email drafts → Approve
-[ ] On approval: Add to applications.json and followups.md
+**CRITICAL: Create the full resume config BEFORE showing proposals to user for validation.**
 
-### 10. Present Options to User
+For each proposal, create the config file in `job-ai/data/configs/{id}.json` with:
 
-Show summary table with scores and ask:
+```json
+{
+  "metadata": {
+    "id": "{{id}}",
+    "configName": "{{company}}-{{position}}",
+    "language": "{{en|es}}",
+    "dateCreated": "{{ISO date}}",
+    "targetPosition": "{{position_title}}",
+    "keywords": {
+      "technical": [comma-separated from job post or company stack],
+      "soft": [comma-separated from job post or company stack]
+    }
+  },
+  "contactInfo": {
+    "location": "Havana, Cuba",
+    "phone": "+53 5476-1244",
+    "email": "razcue@yandex.com",
+    "website": "razcue.github.io"
+  },
+  "summary": "{{copy exactly from proposal.summary}}",
+  "skills": {
+    "technical": "{{copy exactly from proposal.skills.technologies}}",
+    "additional": "{{copy exactly from proposal.skills.additional}}",
+    "languages": "English (C1 - Advanced), Spanish (Native)"
+  },
+  "education": [...from default.json...],
+  "experience": [...from default.json...]
+}
+```
+
+**The config's summary and skills MUST mirror the proposal exactly.**
+
+### 11. Present Options to User for Validation
+
+Show summary table with scores AND include the config content (summary + skills) for validation:
 
 ```
 I found X opportunities:
@@ -435,24 +469,32 @@ I found X opportunities:
 | 2 | Company B | 55 | MEDIUM | Outreach only |
 | ...
 
-What would you like to do?
-[A] Process high-priority (score 70+)
-[B] Process medium-priority (score 40-69)
-[C] Both
-[D] Review details first
-[E] Something else?
+For each opportunity, here's the content that will go into the resume:
+
+### Company A - Senior Vue.js Developer
+**Summary:** [exact summary from proposal]
+**Skills - technologies:** [exact tech skills]
+**Skills - additional:** [exact soft skills]
+
+### Company B - Frontend Engineer
+**Summary:** [exact summary from proposal]
+**Skills - technologies:** [exact tech skills]
+**Skills - additional:** [exact soft skills]
+
+Do you approve these? [A] Approve all [B] Approve specific [C] Request changes
 ```
 
-### 11. On User Approval - Full Workflow
+**The user validates the summary and skills that will appear in the resume.**
 
-When user approves a proposal, execute these steps in order:
+### 12. On User Approval - Build PDF Resume
 
-#### Step 1: Create Resume Config
+When user approves:
 
-- Call resume-build skill → Build resumes
-- Creates `configs/resume/{id}.json` with tailored config
+1. **Build PDF Resume** using the validated config:
+   - Use `node lib/build-resume.cjs {{config-id}}`
+   - Output: `public/resume-{{config-id}}.pdf`
 
-#### Step 2: Execute Primary Action
+2. **Then Execute Primary Action** (same as before)
 
 **If DIRECT APPLY:**
 

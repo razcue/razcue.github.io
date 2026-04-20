@@ -30,18 +30,29 @@ Complete workflow for autonomous job application management.
 5. SCORE → Calculate priority (HIGH 70+, MEDIUM 40-69, LOW <40)
 
 6. PROPOSE → Save to temp/direct.md (HIGH) or temp/outreach.md (MEDIUM)
-   - Each proposal should have: Summary, Skills to Highlight, Email Draft, Follow-up Email Draft
+   - Each proposal MUST have: Summary, Skills (technologies, additional), Email Draft, Follow-up Email Draft
+   - Skills must be comma-separated in two sub-sections:
+     - technologies: Primary technical skills (Vue.js, Nuxt.js, TypeScript, etc.)
+     - additional: Soft skills (Team Leadership, Remote Work, etc.)
 
-7. USER APPROVAL → Wait for user to approve
+7. BUILD CONFIG → Generate config file in data/configs/{id}.json BEFORE user validation
+   - metadata.id, targetPosition, keywords
+   - contactInfo (from defaults)
+   - summary (EXACTLY from proposal.summary)
+   - skills.technical (EXACTLY from proposal.skills.technologies)
+   - skills.additional (EXACTLY from proposal.skills.additional)
+   - skills.languages (from defaults)
+   - education (from defaults)
+   - experience (from defaults)
 
-8. CREATE RESUME CONFIG → Generate config file in data/configs/
-   - Metadata structure MUST match config format
-   - Verify company email array is populated (not null/empty)
+8. USER APPROVAL → Show proposals with summary + skills for validation
+   - Display summary and skills for each proposal
+   - User validates content that will appear in the resume
+   - On approval, proceed to step 9
 
-9. BUILD RESUME → Generate fresh PDF for this specific application
-   - Use config file from step 8
+9. BUILD RESUME → Generate fresh PDF using validated config
+   - Use config file from step 7
    - Output: public/resume-{id}.pdf (unique per company!)
-   - MUST complete before step 10
    - IMPORTANT: Resume filenames must be unique (e.g., resume-2026-04-15-venturus.pdf)
 
 10. VERIFY RESUME → Before sending, verify:
@@ -97,7 +108,16 @@ Complete workflow for autonomous job application management.
 
 ## Application Status Values
 
-`pending` | `approved` | `sent` | `applied` | `followup-scheduled` | `followup-sent` | `no-response` | `interview` | `negociation` | `rejected`
+`pending` | `approved` | `outreach` | `sent` | `applied` | `in-review` | `bounced` | `followup-scheduled` | `followup-sent` | `no-response` | `interview` | `negociation` | `rejected`
+
+**Status Meaning:**
+| Status | Description |
+|--------|-------------|
+| `outreach` | Outreach email sent, waiting for initial response |
+| `in-review` | Company received email, reviewing (or out-of-office received) |
+| `bounced` | All emails bounced, company unreachable |
+| `sent` | Direct apply email sent |
+| `applied` | Application submitted via form |
 
 ---
 

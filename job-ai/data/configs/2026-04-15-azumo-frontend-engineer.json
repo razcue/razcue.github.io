@@ -15,7 +15,21 @@
         "team@azumo.com",
         "hr@azumo.com",
         "contact@azumo.com",
-        "hello@azumo.com"
+        "hello@azumo.com",
+        "info@azumo.com",
+        "support@azumo.com",
+        "admin@azumo.com",
+        "office@azumo.com",
+        "contactus@azumo.com",
+        "general@azumo.com",
+        "mail@azumo.com",
+        "staff@azumo.com",
+        "dev@azumo.com",
+        "tech@azumo.com",
+        "it@azumo.com",
+        "recruitment@azumo.com",
+        "apply@azumo.com",
+        "work@azumo.com"
       ],
       "sector": "Staff Augmentation / IT Services",
       "techStack": ["React", "Angular", "Vue", "TypeScript"]

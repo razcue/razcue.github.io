@@ -36,10 +36,14 @@
             "TailwindCSS",
             "Core Web Vitals"
           ],
-          "soft": ["Remote Work", "Agile", "Distributed Teams"]
+          "soft": [
+            "Remote Work",
+            "Agile",
+            "Distributed Teams"
+          ]
         }
       },
-      "status": "sent",
+      "status": "outreach",
       "applicationDate": "2026-04-13",
       "notes": {
         "model": "IT Services - Remote",
@@ -100,7 +104,11 @@
         "website": "https://www.iubenda.com",
         "email": null,
         "sector": "SaaS / Legal Tech",
-        "techStack": ["Vue.js", "JavaScript", "TypeScript"],
+        "techStack": [
+          "Vue.js",
+          "JavaScript",
+          "TypeScript"
+        ],
         "stage": "Growth"
       },
       "position": {
@@ -112,11 +120,20 @@
         "salary": null,
         "language": "en",
         "keywords": {
-          "technical": ["Vue.js", "JavaScript", "TypeScript", "Nuxt.js"],
-          "soft": ["Remote Work", "Agile", "Distributed Teams"]
+          "technical": [
+            "Vue.js",
+            "JavaScript",
+            "TypeScript",
+            "Nuxt.js"
+          ],
+          "soft": [
+            "Remote Work",
+            "Agile",
+            "Distributed Teams"
+          ]
         }
       },
-      "status": "sent",
+      "status": "outreach",
       "applicationDate": "2026-04-15",
       "notes": {
         "model": "SaaS - Remote",
@@ -127,7 +144,9 @@
       "outcomes": {
         "emailSentAt": "2026-04-15",
         "followupSentAt": null,
-        "emailsSent": ["info@iubenda.com"],
+        "emailsSent": [
+          "info@iubenda.com"
+        ],
         "emailsFailed": [
           "jobs@iubenda.com",
           "careers@iubenda.com",
@@ -174,7 +193,12 @@
         "website": "https://www.wited.com",
         "email": null,
         "sector": "EdTech / Education Technology",
-        "techStack": ["Vue.js", "Nuxt.js", "TypeScript", "Pinia"],
+        "techStack": [
+          "Vue.js",
+          "Nuxt.js",
+          "TypeScript",
+          "Pinia"
+        ],
         "stage": "Growth"
       },
       "position": {
@@ -186,8 +210,16 @@
         "salary": null,
         "language": "en",
         "keywords": {
-          "technical": ["Vue.js", "Nuxt.js", "TypeScript", "Pinia"],
-          "soft": ["Remote Work", "EdTech"]
+          "technical": [
+            "Vue.js",
+            "Nuxt.js",
+            "TypeScript",
+            "Pinia"
+          ],
+          "soft": [
+            "Remote Work",
+            "EdTech"
+          ]
         }
       },
       "status": "bounced",
@@ -266,7 +298,11 @@
         "website": "https://www.fullstacklabs.co",
         "email": null,
         "sector": "Software Development / Staff Augmentation",
-        "techStack": ["React", "Vue", "Mobile"],
+        "techStack": [
+          "React",
+          "Vue",
+          "Mobile"
+        ],
         "stage": "Enterprise"
       },
       "position": {
@@ -278,11 +314,18 @@
         "salary": null,
         "language": "en",
         "keywords": {
-          "technical": ["React", "Vue", "TypeScript"],
-          "soft": ["Remote Work", "Staff Augmentation"]
+          "technical": [
+            "React",
+            "Vue",
+            "TypeScript"
+          ],
+          "soft": [
+            "Remote Work",
+            "Staff Augmentation"
+          ]
         }
       },
-      "status": "sent",
+      "status": "outreach",
       "applicationDate": "2026-04-15",
       "notes": {
         "model": "Staff Augmentation - Remote",
@@ -293,7 +336,10 @@
       "outcomes": {
         "emailSentAt": "2026-04-15",
         "followupSentAt": null,
-        "emailsSent": ["team@fullstacklabs.co", "hr@fullstacklabs.co"],
+        "emailsSent": [
+          "team@fullstacklabs.co",
+          "hr@fullstacklabs.co"
+        ],
         "emailsFailed": [
           "info@fullstacklabs.co",
           "careers@fullstacklabs.co",
@@ -363,10 +409,14 @@
             "TypeScript",
             "Vitest"
           ],
-          "soft": ["Remote Work", "AI", "Computer Vision"]
+          "soft": [
+            "Remote Work",
+            "AI",
+            "Computer Vision"
+          ]
         }
       },
-      "status": "sent",
+      "status": "outreach",
       "applicationDate": "2026-04-15",
       "notes": {
         "model": "Software Development - Remote",
@@ -378,20 +428,22 @@
         "emailSentAt": "2026-04-15",
         "followupSentAt": null,
         "emailsSent": [
-          "hr@venturus.org.br",
+          "recruitment@venturus.org.br",
+          "apply@venturus.org.br"
+        ],
+        "emailsFailed": [
+          "rh@venturus.org.br",
           "careers@venturus.org.br",
           "jobs@venturus.org.br",
+          "hiring@venturus.org.br",
           "recruiting@venturus.org.br",
           "talent@venturus.org.br",
-          "recruitment@venturus.org.br",
-          "hiring@venturus.org.br",
-          "apply@venturus.org.br",
-          "work@venturus.org.br",
+          "team@venturus.org.br",
+          "hr@venturus.org.br",
+          "contact@venturus.org.br",
           "info@venturus.org.br",
-          "hello@venturus.org.br",
           "support@venturus.org.br",
           "admin@venturus.org.br",
-          "team@venturus.org.br",
           "office@venturus.org.br",
           "contactus@venturus.org.br",
           "general@venturus.org.br",
@@ -401,7 +453,6 @@
           "tech@venturus.org.br",
           "it@venturus.org.br"
         ],
-        "emailsFailed": ["contact@venturus.org.br"],
         "responseReceived": false,
         "responseDate": null,
         "responseType": "no-response",
@@ -438,7 +489,13 @@
         "website": "https://www.southgeeks.com",
         "email": null,
         "sector": "Software Consultancy / Staff Augmentation",
-        "techStack": ["Vue.js", "React", "Nuxt", "Next", "TypeScript"],
+        "techStack": [
+          "Vue.js",
+          "React",
+          "Nuxt",
+          "Next",
+          "TypeScript"
+        ],
         "stage": "Growth"
       },
       "position": {
@@ -450,11 +507,20 @@
         "salary": null,
         "language": "en",
         "keywords": {
-          "technical": ["Vue.js", "React", "Nuxt", "Next", "TypeScript"],
-          "soft": ["Remote Work", "Staff Augmentation"]
+          "technical": [
+            "Vue.js",
+            "React",
+            "Nuxt",
+            "Next",
+            "TypeScript"
+          ],
+          "soft": [
+            "Remote Work",
+            "Staff Augmentation"
+          ]
         }
       },
-      "status": "sent",
+      "status": "outreach",
       "applicationDate": "2026-04-15",
       "notes": {
         "model": "Software Consultancy - Remote",
@@ -466,29 +532,32 @@
         "emailSentAt": "2026-04-15",
         "followupSentAt": null,
         "emailsSent": [
-          "hr@southgeeks.com",
           "careers@southgeeks.com",
           "jobs@southgeeks.com",
+          "hiring@southgeeks.com",
           "recruiting@southgeeks.com",
           "talent@southgeeks.com",
-          "recruitment@southgeeks.com",
-          "hiring@southgeeks.com",
-          "apply@southgeeks.com",
-          "work@southgeeks.com",
+          "team@southgeeks.com",
+          "hr@southgeeks.com",
           "contact@southgeeks.com",
+          "hello@southgeeks.com"
+        ],
+        "emailsFailed": [
           "info@southgeeks.com",
-          "hello@southgeeks.com",
           "support@southgeeks.com",
           "admin@southgeeks.com",
-          "team@southgeeks.com",
           "office@southgeeks.com",
+          "contactus@southgeeks.com",
           "general@southgeeks.com",
           "mail@southgeeks.com",
           "staff@southgeeks.com",
+          "dev@southgeeks.com",
           "tech@southgeeks.com",
-          "it@southgeeks.com"
+          "it@southgeeks.com",
+          "recruitment@southgeeks.com",
+          "apply@southgeeks.com",
+          "work@southgeeks.com"
         ],
-        "emailsFailed": ["contactus@southgeeks.com", "dev@southgeeks.com"],
         "responseReceived": false,
         "responseDate": null,
         "responseType": "no-response",
@@ -525,7 +594,13 @@
         "website": "https://www.workana.com",
         "email": null,
         "sector": "Freelance Platform / Talent Marketplace",
-        "techStack": ["Node.js", "Golang", "PHP", "React", "Vue"],
+        "techStack": [
+          "Node.js",
+          "Golang",
+          "PHP",
+          "React",
+          "Vue"
+        ],
         "stage": "Growth"
       },
       "position": {
@@ -537,11 +612,19 @@
         "salary": "$5,000 USD/month",
         "language": "en",
         "keywords": {
-          "technical": ["Node.js", "Vue.js", "React", "Laravel"],
-          "soft": ["Remote Work", "Freelance Platform"]
+          "technical": [
+            "Node.js",
+            "Vue.js",
+            "React",
+            "Laravel"
+          ],
+          "soft": [
+            "Remote Work",
+            "Freelance Platform"
+          ]
         }
       },
-      "status": "sent",
+      "status": "outreach",
       "applicationDate": "2026-04-15",
       "notes": {
         "model": "Freelance Platform - Remote",
@@ -553,21 +636,23 @@
         "emailSentAt": "2026-04-15",
         "followupSentAt": null,
         "emailsSent": [
-          "hr@workana.com",
-          "careers@workana.com",
           "jobs@workana.com",
           "recruiting@workana.com",
           "talent@workana.com",
+          "team@workana.com",
+          "contact@workana.com",
+          "hello@workana.com"
+        ],
+        "emailsFailed": [
+          "hr@workana.com",
+          "careers@workana.com",
           "recruitment@workana.com",
           "hiring@workana.com",
           "apply@workana.com",
           "work@workana.com",
-          "contact@workana.com",
           "info@workana.com",
-          "hello@workana.com",
           "support@workana.com",
           "admin@workana.com",
-          "team@workana.com",
           "office@workana.com",
           "contactus@workana.com",
           "general@workana.com",
@@ -577,7 +662,6 @@
           "tech@workana.com",
           "it@workana.com"
         ],
-        "emailsFailed": [],
         "responseReceived": false,
         "responseDate": null,
         "responseType": "no-response",
@@ -614,7 +698,11 @@
         "website": "https://www.sparq.com",
         "email": null,
         "sector": "Software Development",
-        "techStack": ["Node.js", "React", "Vue"],
+        "techStack": [
+          "Node.js",
+          "React",
+          "Vue"
+        ],
         "stage": "Unknown"
       },
       "position": {
@@ -626,11 +714,17 @@
         "salary": null,
         "language": "en",
         "keywords": {
-          "technical": ["Node.js", "React", "Vue"],
-          "soft": ["Remote Work"]
+          "technical": [
+            "Node.js",
+            "React",
+            "Vue"
+          ],
+          "soft": [
+            "Remote Work"
+          ]
         }
       },
-      "status": "sent",
+      "status": "outreach",
       "applicationDate": "2026-04-15",
       "notes": {
         "model": "Software Development - Remote",
@@ -647,26 +741,27 @@
           "jobs@sparq.com",
           "recruiting@sparq.com",
           "talent@sparq.com",
-          "recruitment@sparq.com",
-          "hiring@sparq.com",
-          "apply@sparq.com",
-          "work@sparq.com",
+          "team@sparq.com",
           "contact@sparq.com",
           "info@sparq.com",
           "hello@sparq.com",
           "support@sparq.com",
           "admin@sparq.com",
-          "team@sparq.com",
-          "office@sparq.com",
           "contactus@sparq.com",
           "general@sparq.com",
           "mail@sparq.com",
           "staff@sparq.com",
           "dev@sparq.com",
-          "tech@sparq.com",
+          "tech@sparq.com"
+        ],
+        "emailsFailed": [
+          "recruitment@sparq.com",
+          "hiring@sparq.com",
+          "apply@sparq.com",
+          "work@sparq.com",
+          "office@sparq.com",
           "it@sparq.com"
         ],
-        "emailsFailed": [],
         "responseReceived": false,
         "responseDate": null,
         "responseType": "no-response",
@@ -703,7 +798,12 @@
         "website": "https://azumo.com",
         "email": null,
         "sector": "Staff Augmentation / IT Services",
-        "techStack": ["React", "Angular", "Vue", "TypeScript"],
+        "techStack": [
+          "React",
+          "Angular",
+          "Vue",
+          "TypeScript"
+        ],
         "stage": "Growth"
       },
       "position": {
@@ -715,11 +815,18 @@
         "salary": null,
         "language": "en",
         "keywords": {
-          "technical": ["React", "Vue", "TypeScript"],
-          "soft": ["Remote Work", "Nearshoring"]
+          "technical": [
+            "React",
+            "Vue",
+            "TypeScript"
+          ],
+          "soft": [
+            "Remote Work",
+            "Nearshoring"
+          ]
         }
       },
-      "status": "sent",
+      "status": "outreach",
       "applicationDate": "2026-04-15",
       "notes": {
         "model": "Staff Augmentation - Remote",
@@ -731,18 +838,24 @@
         "emailSentAt": "2026-04-15",
         "followupSentAt": null,
         "emailsSent": [
-          "hr@azumo.com",
+          "people@azumo.co",
           "careers@azumo.com",
           "jobs@azumo.com",
-          "recruiting@azumo.com",
-          "recruitment@azumo.com",
           "hiring@azumo.com",
+          "recruiting@azumo.com",
+          "team@azumo.com",
+          "hr@azumo.com",
+          "contact@azumo.com",
+          "hello@azumo.com"
+        ],
+        "emailsFailed": [
+          "info@azumo.com",
+          "support@azumo.com",
+          "admin@azumo.com",
+          "office@azumo.com",
+          "recruitment@azumo.com",
           "apply@azumo.com",
           "work@azumo.com",
-          "contact@azumo.com",
-          "info@azumo.com",
-          "hello@azumo.com",
-          "team@azumo.com",
           "contactus@azumo.com",
           "general@azumo.com",
           "mail@azumo.com",
@@ -750,13 +863,7 @@
           "dev@azumo.com",
           "tech@azumo.com",
           "it@azumo.com",
-          "people@azumo.co"
-        ],
-        "emailsFailed": [
-          "talent@azumo.com",
-          "support@azumo.com",
-          "admin@azumo.com",
-          "office@azumo.com"
+          "talent@azumo.com"
         ],
         "responseReceived": false,
         "responseDate": null,
@@ -781,7 +888,436 @@
         "outreachEmail": "I'm a Software Developer with 7+ years of experience serving companies across Europe, US, and LATAM, with hands-on experience on enterprise solutions. I'm interested in nearshore opportunities at Azumo. My stack includes Vue.js, Nuxt.js, React, TypeScript, performance optimization. I work remotely and am currently available.",
         "followupEmail": "My name is Rayko Azcue, and I recently reached out regarding frontend engineering opportunities at Azumo. I wanted to know if there might be any current or upcoming nearshore positions that could be a good match for my experience. With 7+ years building web applications and strong expertise in Vue.js and React, I'd love to discuss how I could contribute to your team connecting LATAM talent with US companies."
       }
+    },
+    {
+      "id": "2026-04-18-tekton-labs-frontend-vuejs",
+      "type": "outreach",
+      "score": 70,
+      "priority": "HIGH",
+      "company": {
+        "name": "Tekton Labs",
+        "website": "https://tekton-labs.com",
+        "email": null,
+        "sector": "IT Services / Security",
+        "techStack": [
+          "Vue.js",
+          "Vue3",
+          "Pinia",
+          "TypeScript",
+          "Jest/Vitest"
+        ],
+        "stage": "Growth"
+      },
+      "position": {
+        "title": "Frontend Developer VueJS [ALL LATAM]",
+        "url": "https://tekton-labs.breezy.hr/p/bc5cc280a0d1-frontend-developer-vuejs-all-latam",
+        "applicationType": "outreach",
+        "model": "remote",
+        "location": "LATAM (Lima, Buenos Aires, Mexico City, Colombia)",
+        "salary": null,
+        "language": "es",
+        "keywords": {
+          "technical": [
+            "Vue.js",
+            "Vue3",
+            "Pinia",
+            "TypeScript",
+            "Jest/Vitest"
+          ],
+          "soft": [
+            "Remote Work",
+            "Security",
+            "LATAM"
+          ]
+        }
+      },
+      "status": "outreach",
+      "applicationDate": "2026-04-18",
+      "notes": {
+        "model": "IT Services / Security - Remote",
+        "company": "Tekton Labs - Technology company focused on security solutions",
+        "techStack": "Vue.js, Vue3, Pinia, TypeScript, Jest/Vitest",
+        "role": "Frontend Developer VueJS position - outreach to explore opportunities"
+      },
+      "outcomes": {
+        "emailSentAt": "2026-04-18",
+        "followupSentAt": null,
+        "emailsSent": [
+          "careers@tekton-labs.com",
+          "jobs@tekton-labs.com",
+          "hiring@tekton-labs.com",
+          "recruiting@tekton-labs.com",
+          "talent@tekton-labs.com",
+          "team@tekton-labs.com",
+          "hr@tekton-labs.com",
+          "contact@tekton-labs.com",
+          "hello@tekton-labs.com",
+          "info@tekton-labs.com",
+          "support@tekton-labs.com",
+          "admin@tekton-labs.com",
+          "office@tekton-labs.com",
+          "contactus@tekton-labs.com",
+          "general@tekton-labs.com",
+          "mail@tekton-labs.com",
+          "staff@tekton-labs.com",
+          "dev@tekton-labs.com",
+          "tech@tekton-labs.com",
+          "it@tekton-labs.com",
+          "recruitment@tekton-labs.com",
+          "apply@tekton-labs.com",
+          "work@tekton-labs.com"
+        ],
+        "emailsFailed": [],
+        "responseReceived": false,
+        "responseDate": null,
+        "responseType": "no-response",
+        "interviewScheduled": false,
+        "interviewDate": null,
+        "feedback": "",
+        "emailContent": ""
+      },
+      "proposal": {
+        "proposedAt": "2026-04-18",
+        "proposedWhy": "Frontend Vue.js position matching tech stack (Spanish job posting)",
+        "profile": "Desarrollador Frontend Senior con más de 7 años construyendo aplicaciones web para empresas en Europa, US y LATAM. Gran experiencia en Vue.js, Vue 3 y Nuxt.js con enfoque en soluciones de seguridad.",
+        "skills": [
+          "Vue.js",
+          "Vue 3",
+          "Composition API",
+          "Pinia",
+          "TypeScript",
+          "Nuxt.js",
+          "SSR/SSG",
+          "Vitest"
+        ],
+        "coverLetter": "",
+        "outreachEmail": "Estimado equipo de Tekton Labs, Soy un Desarrollador con más de 7 años de experiencia sirviendo a empresas en Europa, US y LATAM, con experiencia práctica en desarrollo de software y soluciones de seguridad. Estoy interesado en el puesto de Frontend Vue.js. Mi experiencia incluye Vue.js, Vue 3, Composition API, Pinia, TypeScript, Nuxt.js (SSR/SSG), Vitest. Tengo disponibilidad para trabajar en horario EDT y fluidez en inglés (C1) y español (nativo). Saludos cordiales Rayko Azcue",
+        "followupEmail": "Estimado equipo de Tekton Labs, Me comuniqué recientemente respecto a oportunidades de frontend Vue.js en Tekton Labs. Quería saber si actualmente hay posiciones vigentes o próximas. Con más de 7 años construyendo aplicaciones web y gran experiencia en Vue.js, Vue 3 y TypeScript, me encantaría discutir cómo podría contribuir a sus proyectos de seguridad. Saludos cordiales Rayko Azcue"
+      }
+    },
+    {
+      "id": "2026-04-18-walter-senior-software-engineer",
+      "type": "outreach",
+      "score": 75,
+      "priority": "HIGH",
+      "company": {
+        "name": "WALTER",
+        "website": "https://www.gowalter.co",
+        "email": null,
+        "sector": "Staff Augmentation / Talent Platform",
+        "techStack": [
+          "React",
+          "Vue",
+          "Node.js",
+          "Python",
+          "C#/.NET"
+        ],
+        "stage": "Growth"
+      },
+      "position": {
+        "title": "Senior Software Engineer",
+        "url": "https://weworkremotely.com/remote-jobs/walter-senior-software-engineer",
+        "applicationType": "outreach",
+        "model": "remote",
+        "location": "Worldwide",
+        "salary": null,
+        "language": "en",
+        "keywords": {
+          "technical": [
+            "React",
+            "Vue",
+            "Node.js",
+            "Python",
+            "C#/.NET"
+          ],
+          "soft": [
+            "Remote Work",
+            "Staff Augmentation",
+            "Talent Platform"
+          ]
+        }
+      },
+      "status": "outreach",
+      "applicationDate": "2026-04-18",
+      "notes": {
+        "model": "Staff Augmentation / Talent Platform - Remote",
+        "company": "WALTER - Modern hiring platform connecting businesses with top-tier remote talent",
+        "techStack": "React, Vue, Node.js, Python, C#/.NET, Remote-first",
+        "role": "Senior Software Engineer position - outreach to explore opportunities"
+      },
+      "outcomes": {
+        "emailSentAt": "2026-04-18",
+        "followupSentAt": null,
+        "emailsSent": [
+          "talent@gowalter.co",
+          "jobs@gowalter.co",
+          "careers@gowalter.co",
+          "hiring@gowalter.co",
+          "recruiting@gowalter.co",
+          "team@gowalter.co",
+          "hr@gowalter.co",
+          "contact@gowalter.co",
+          "hello@gowalter.co",
+          "info@gowalter.co",
+          "support@gowalter.co",
+          "admin@gowalter.co",
+          "office@gowalter.co",
+          "contactus@gowalter.co",
+          "general@gowalter.co",
+          "mail@gowalter.co",
+          "staff@gowalter.co",
+          "dev@gowalter.co",
+          "tech@gowalter.co",
+          "it@gowalter.co",
+          "recruitment@gowalter.co",
+          "apply@gowalter.co",
+          "work@gowalter.co"
+        ],
+        "emailsFailed": [],
+        "responseReceived": false,
+        "responseDate": null,
+        "responseType": "no-response",
+        "interviewScheduled": false,
+        "interviewDate": null,
+        "feedback": "",
+        "emailContent": ""
+      },
+      "proposal": {
+        "proposedAt": "2026-04-18",
+        "proposedWhy": "Senior Software Engineer position with full-stack tech stack",
+        "profile": "Senior Software Engineer with 7+ years building web applications for companies across Europe, US, and LATAM. Strong expertise in Vue.js, React, and full-stack development.",
+        "skills": [
+          "Vue.js",
+          "React",
+          "TypeScript",
+          "Node.js",
+          "Laravel",
+          "PostgreSQL"
+        ],
+        "coverLetter": "",
+        "outreachEmail": "Hi Team, I'm a Software Developer with 7+ years of experience serving companies across Europe, US, and LATAM. I'm interested in opportunities at WALTER. My stack includes Vue.js, Nuxt.js, React, TypeScript, Node.js, Laravel, PostgreSQL, and performance optimization. I'd love to explore opportunities. Best regards Rayko Azcue",
+        "followupEmail": "Dear WALTER Team, My name is Rayko Azcue, and I recently reached out regarding senior software engineering opportunities at WALTER. I wanted to know if there might be any current or upcoming positions that could be a good match for my experience. With 7+ years building web applications and strong expertise in Vue.js, React, and full-stack development, I'd love to discuss how I could contribute to your team connecting businesses with top-tier remote talent. Best regards Rayko Azcue"
+      }
+    },
+    {
+      "id": "2026-04-18-curotec-senior-vuejs",
+      "type": "outreach",
+      "score": 80,
+      "priority": "HIGH",
+      "company": {
+        "name": "Curotec",
+        "website": "https://www.curotec.com",
+        "email": null,
+        "sector": "Software Development / IT Services",
+        "techStack": [
+          "Vue.js",
+          "NuxtJS",
+          "React",
+          "Laravel",
+          "PHP"
+        ],
+        "stage": "Enterprise"
+      },
+      "position": {
+        "title": "Senior Front-End Engineer (VueJS)",
+        "url": "https://curotec.recruitee.com/o/senior-vuejs-developer",
+        "applicationType": "outreach",
+        "model": "remote",
+        "location": "LATAM",
+        "salary": null,
+        "language": "en",
+        "keywords": {
+          "technical": [
+            "Vue.js",
+            "NuxtJS",
+            "React",
+            "Laravel",
+            "PHP",
+            "TypeScript",
+            "Pinia",
+            "TailwindCSS"
+          ],
+          "soft": [
+            "Remote Work",
+            "Enterprise",
+            "Laravel Partner"
+          ]
+        }
+      },
+      "status": "outreach",
+      "applicationDate": "2026-04-18",
+      "notes": {
+        "model": "Software Development / IT Services - Remote",
+        "company": "Curotec - Globally leading software services company, official Laravel partner, 68 employees, 15+ years",
+        "techStack": "Vue.js, NuxtJS, React, Laravel, PHP, TypeScript, Pinia, TailwindCSS",
+        "role": "Senior Front-End Engineer (VueJS) position - outreach to explore opportunities"
+      },
+      "outcomes": {
+        "emailSentAt": "2026-04-18",
+        "followupSentAt": null,
+        "emailsSent": [
+          "info@curotec.com",
+          "jobs@curotec.com",
+          "careers@curotec.com",
+          "recruiting@curotec.com",
+          "hiring@curotec.com",
+          "talent@curotec.com",
+          "hr@curotec.com",
+          "support@curotec.com",
+          "admin@curotec.com",
+          "office@curotec.com",
+          "contact@curotec.com",
+          "contactus@curotec.com",
+          "general@curotec.com",
+          "mail@curotec.com",
+          "staff@curotec.com",
+          "dev@curotec.com",
+          "tech@curotec.com",
+          "it@curotec.com",
+          "recruitment@curotec.com",
+          "apply@curotec.com",
+          "work@curotec.com",
+          "hello@curotec.com",
+          "team@curotec.com",
+          "emily.dickerson@curotec.com"
+        ],
+        "emailsFailed": [],
+        "responseReceived": true,
+        "responseDate": "2026-04-18",
+        "responseType": "neutral",
+        "responseNote": "Out of office reply from Victoria Falla (viki@curotec.com). Added emily.dickerson@curotec.com for follow-up.",
+        "interviewScheduled": false,
+        "interviewDate": null,
+        "feedback": "",
+        "emailContent": ""
+      },
+      "proposal": {
+        "proposedAt": "2026-04-18",
+        "proposedWhy": "Senior Front-End Vue.js position matching tech stack",
+        "profile": "Senior Front End & Full Stack Engineer with 7+ years building web applications for companies across Europe, US, and LATAM. Strong expertise in Vue.js, Nuxt.js, and TypeScript with proven track record of improving Core Web Vitals and implementing SEO strategies. Experienced with Laravel backend integration and enterprise-level projects across e-commerce, SaaS, and other sectors.",
+        "skills": [
+          "Vue.js",
+          "Nuxt.js (SSR/SSG)",
+          "Vue 3",
+          "Composition API",
+          "TypeScript",
+          "Pinia",
+          "TailwindCSS",
+          "Laravel",
+          "PHP",
+          "Core Web Vitals",
+          "SEO",
+          "GitHub Actions",
+          "CI/CD"
+        ],
+        "coverLetter": "",
+        "outreachEmail": "Dear Hiring Team, I'm a Software Developer with 7+ years of experience serving companies across Europe, US, and LATAM, with hands-on experience in software development and enterprise solutions. I came across your Senior Vue.js position and would love to explore opportunities. My expertise includes Vue.js, Nuxt.js (SSR/SSG), TypeScript, Pinia, TailwindCSS, and Laravel backend. I've built enterprise applications for clients globally and am comfortable with EDT business hours. Best regards Rayko Azcue",
+        "followupEmail": "Dear Curotec Team, My name is Rayko Azcue, and I recently reached out regarding your Senior Frontend Vue.js Developer position. I wanted to know if there might be any current or upcoming opportunities that could be a good match for my experience. With 7+ years building web applications and strong expertise in Vue.js, Nuxt.js, React, Laravel and TypeScript, I'd love to discuss how I could contribute to your team. Best regards Rayko Azcue"
+      }
+    },
+    {
+      "id": "2026-04-18-nango-frontend-engineer",
+      "type": "outreach",
+      "score": 72,
+      "priority": "HIGH",
+      "company": {
+        "name": "Nango",
+        "website": "https://nango.dev",
+        "email": null,
+        "sector": "SaaS / Product Integrations / AI",
+        "techStack": [
+          "Frontend",
+          "TypeScript",
+          "product integrations"
+        ],
+        "stage": "Startup (YC W23)"
+      },
+      "position": {
+        "title": "Frontend Engineer",
+        "url": "https://remotive.com/remote/jobs/software-development/frontend-engineer-3949643",
+        "applicationType": "outreach",
+        "model": "remote",
+        "location": "LATAM, Europe, USA",
+        "salary": null,
+        "language": "en",
+        "keywords": {
+          "technical": [
+            "Frontend",
+            "TypeScript",
+            "product integrations"
+          ],
+          "soft": [
+            "Remote Work",
+            "SaaS",
+            "AI"
+          ]
+        }
+      },
+      "status": "outreach",
+      "applicationDate": "2026-04-18",
+      "notes": {
+        "model": "SaaS / Product Integrations / AI - Remote",
+        "company": "Nango (YC W23) - Helps developers build product integrations with AI, trusted by Replit, Motion, Electric",
+        "techStack": "Frontend, TypeScript, product integrations, Remote-first",
+        "role": "Frontend Engineer position (closed) - outreach to explore opportunities"
+      },
+      "outcomes": {
+        "emailSentAt": "2026-04-18",
+        "followupSentAt": null,
+        "emailsSent": [
+          "careers@nango.dev",
+          "jobs@nango.dev",
+          "hello@nango.dev",
+          "hiring@nango.dev",
+          "recruiting@nango.dev",
+          "talent@nango.dev",
+          "team@nango.dev",
+          "hr@nango.dev",
+          "contact@nango.dev",
+          "info@nango.dev",
+          "support@nango.dev",
+          "admin@nango.dev",
+          "office@nango.dev",
+          "contactus@nango.dev",
+          "general@nango.dev",
+          "mail@nango.dev",
+          "staff@nango.dev",
+          "dev@nango.dev",
+          "tech@nango.dev",
+          "it@nango.dev",
+          "recruitment@nango.dev",
+          "apply@nango.dev",
+          "work@nango.dev"
+        ],
+        "emailsFailed": [],
+        "responseReceived": false,
+        "responseDate": null,
+        "responseType": "no-response",
+        "interviewScheduled": false,
+        "interviewDate": null,
+        "feedback": "",
+        "emailContent": ""
+      },
+      "proposal": {
+        "proposedAt": "2026-04-18",
+        "proposedWhy": "Frontend Engineer position matching tech stack (closed position, outreach to explore)",
+        "profile": "Senior Frontend Engineer with 7+ years building web applications for companies across Europe, US, and LATAM. Strong expertise in Vue.js/Nuxt.js and TypeScript. Cross-functional experience across SaaS, e-commerce, and other sectors.",
+        "skills": [
+          "Vue.js",
+          "Nuxt.js (SSR/SSG)",
+          "TypeScript",
+          "Frontend architecture",
+          "Core Web Vitals",
+          "SaaS platforms",
+          "product integrations",
+          "REST APIs",
+          "performance optimization"
+        ],
+        "coverLetter": "",
+        "outreachEmail": "Dear Nango Team, I'm a Software Developer with 7+ years of experience serving companies across Europe, US, and LATAM, with hands-on experience in SaaS and product integration platforms. I came across your Frontend Engineer opening (now closed) and wanted to express interest. My background includes Vue.js/Nuxt.js (SSR/SSG), TypeScript, performance optimization, building SaaS, e-commerce platforms, and other enterprise solutions. Nango's mission to help developers build product integrations with AI is compelling. Are there current or upcoming frontend opportunities? Best regards Rayko Azcue",
+        "followupEmail": "Dear Nango Team, My name is Rayko Azcue, and I recently reached out regarding frontend opportunities at Nango. I wanted to know if there might be any current or upcoming positions that could be a good match for my experience. With 7+ years building web applications and strong expertise in Vue.js, Nuxt.js, and TypeScript, I'd love to discuss how I could contribute to your team building product integrations with AI. Best regards Rayko Azcue"
+      }
     }
   ],
-  "lastUpdated": "2026-04-15"
+  "lastUpdated": "2026-04-18"
 }

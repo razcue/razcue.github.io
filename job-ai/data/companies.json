@@ -4,7 +4,11 @@
       "name": "Deel",
       "website": "https://www.deel.com/",
       "sector": "HR/Payroll SaaS",
-      "techStack": ["TypeScript", "React.js", "Node.js"],
+      "techStack": [
+        "TypeScript",
+        "React.js",
+        "Node.js"
+      ],
       "stage": "enterprise",
       "score": 60,
       "lastContact": "2026-04-07",
@@ -27,7 +31,13 @@
       "name": "Cyberpuerta",
       "website": "https://www.cyberpuerta.mx/",
       "sector": "E-commerce",
-      "techStack": ["Vue.js", "React", "Nuxt.js", "Next.js", "TypeScript"],
+      "techStack": [
+        "Vue.js",
+        "React",
+        "Nuxt.js",
+        "Next.js",
+        "TypeScript"
+      ],
       "stage": "series-a",
       "score": 70,
       "lastContact": "2026-04-07",
@@ -50,7 +60,13 @@
       "name": "PositiveLinks",
       "website": "https://www.thepositivelinks.com/",
       "sector": "Software Development",
-      "techStack": ["Laravel", "Vue.js", "Nuxt.js", "MySQL", "AWS"],
+      "techStack": [
+        "Laravel",
+        "Vue.js",
+        "Nuxt.js",
+        "MySQL",
+        "AWS"
+      ],
       "stage": "startup",
       "score": 55,
       "lastContact": "2026-04-07",
@@ -73,7 +89,13 @@
       "name": "ALGOTEQUE Innovation Hub",
       "website": "https://algoteque.com/",
       "sector": "IT Consulting",
-      "techStack": ["React", "TypeScript", "RxJS", "Axios", "Sass"],
+      "techStack": [
+        "React",
+        "TypeScript",
+        "RxJS",
+        "Axios",
+        "Sass"
+      ],
       "stage": "startup",
       "score": 30,
       "lastContact": "2026-04-07",
@@ -96,7 +118,13 @@
       "name": "Haystack People",
       "website": "https://www.haystackpeople.com/",
       "sector": "E-commerce",
-      "techStack": ["PHP", "Symfony", "Laravel", "MySQL", "PostgreSQL"],
+      "techStack": [
+        "PHP",
+        "Symfony",
+        "Laravel",
+        "MySQL",
+        "PostgreSQL"
+      ],
       "stage": "series-a",
       "score": 37,
       "lastContact": "2026-04-07",
@@ -119,7 +147,12 @@
       "name": "The Big Phone Store",
       "website": "https://www.thebigphonestore.co.uk/",
       "sector": "E-commerce",
-      "techStack": ["Laravel", "PHP", "Vue.js", "Nuxt.js"],
+      "techStack": [
+        "Laravel",
+        "PHP",
+        "Vue.js",
+        "Nuxt.js"
+      ],
       "stage": "startup",
       "score": 45,
       "lastContact": "2026-04-07",
@@ -172,7 +205,13 @@
       "name": "LGG Advisors",
       "website": "https://lggadvisors.com/",
       "sector": "Financial Services",
-      "techStack": ["Vue.js", "React", "Angular", "Node.js", "TypeScript"],
+      "techStack": [
+        "Vue.js",
+        "React",
+        "Angular",
+        "Node.js",
+        "TypeScript"
+      ],
       "stage": "enterprise",
       "score": 35,
       "lastContact": "2026-04-07",
@@ -195,7 +234,12 @@
       "name": "Catawiki",
       "website": "https://www.catawiki.com/",
       "sector": "E-commerce",
-      "techStack": ["Ruby", "PostgreSQL", "AWS", "Microservices"],
+      "techStack": [
+        "Ruby",
+        "PostgreSQL",
+        "AWS",
+        "Microservices"
+      ],
       "stage": "enterprise",
       "score": 10,
       "lastContact": "2026-04-07",
@@ -218,7 +262,11 @@
       "name": "Proxify",
       "website": "https://proxify.io",
       "sector": "Talent Platform",
-      "techStack": ["React", "CI/CD", "Performance"],
+      "techStack": [
+        "React",
+        "CI/CD",
+        "Performance"
+      ],
       "stage": "startup",
       "score": 40,
       "lastContact": "2026-04-07",
@@ -269,7 +317,12 @@
       "name": "HireBoost",
       "website": "https://hireboost.io/",
       "sector": "HR/Talent Platform",
-      "techStack": ["React", "Node.js", "TypeScript", "AI"],
+      "techStack": [
+        "React",
+        "Node.js",
+        "TypeScript",
+        "AI"
+      ],
       "stage": "startup",
       "score": 40,
       "lastContact": "2026-02-16",
@@ -292,7 +345,11 @@
       "name": "TECLA",
       "website": "https://teclatam.com",
       "sector": "IT Services / Staff Augmentation",
-      "techStack": ["Vue.js", "Nuxt.js", "TypeScript"],
+      "techStack": [
+        "Vue.js",
+        "Nuxt.js",
+        "TypeScript"
+      ],
       "stage": "growth",
       "score": 42,
       "lastContact": "2026-04-13",
@@ -315,7 +372,11 @@
       "name": "iubenda",
       "website": "https://www.iubenda.com",
       "sector": "SaaS / Legal Tech",
-      "techStack": ["Vue.js", "JavaScript", "TypeScript"],
+      "techStack": [
+        "Vue.js",
+        "JavaScript",
+        "TypeScript"
+      ],
       "stage": "Growth",
       "score": 48,
       "lastContact": "2026-04-15",
@@ -338,7 +399,12 @@
       "name": "Wited",
       "website": "https://www.wited.com",
       "sector": "EdTech / Education Technology",
-      "techStack": ["Vue.js", "Nuxt.js", "TypeScript", "Pinia"],
+      "techStack": [
+        "Vue.js",
+        "Nuxt.js",
+        "TypeScript",
+        "Pinia"
+      ],
       "stage": "growth",
       "score": 0,
       "lastContact": "2026-04-15",
@@ -361,7 +427,11 @@
       "name": "FullStack Labs",
       "website": "https://www.fullstacklabs.co",
       "sector": "Software Development / Staff Augmentation",
-      "techStack": ["React", "Vue", "Mobile"],
+      "techStack": [
+        "React",
+        "Vue",
+        "Mobile"
+      ],
       "stage": "enterprise",
       "score": 50,
       "lastContact": "2026-04-15",
@@ -401,7 +471,7 @@
           "status": "sent",
           "response": "no-response",
           "applicationId": "2026-04-15-venturus-frontend-vuejs",
-          "notes": "Sent outreach to 23 email patterns. 22 sent, 1 failed (SPAM rejection)."
+          "notes": "21 emails bounced (undelivered), 2 rejected by SPAM filter (never sent)."
         }
       ],
       "positiveResponses": 0,
@@ -413,7 +483,13 @@
       "name": "South Geeks",
       "website": "https://www.southgeeks.com",
       "sector": "Software Consultancy / Staff Augmentation",
-      "techStack": ["Vue.js", "React", "Nuxt", "Next", "TypeScript"],
+      "techStack": [
+        "Vue.js",
+        "React",
+        "Nuxt",
+        "Next",
+        "TypeScript"
+      ],
       "stage": "growth",
       "score": 67,
       "lastContact": "2026-04-15",
@@ -424,7 +500,7 @@
           "status": "sent",
           "response": "no-response",
           "applicationId": "2026-04-15-south-geeks-senior-frontend",
-          "notes": "Sent outreach to 23 email patterns. 21 sent, 2 failed (SPAM rejection)."
+          "notes": "14 emails bounced (undelivered), 9 sent but no response, 2 rejected by SPAM filter."
         }
       ],
       "positiveResponses": 0,
@@ -436,7 +512,13 @@
       "name": "Workana",
       "website": "https://www.workana.com",
       "sector": "Freelance Platform / Talent Marketplace",
-      "techStack": ["Node.js", "Golang", "PHP", "React", "Vue"],
+      "techStack": [
+        "Node.js",
+        "Golang",
+        "PHP",
+        "React",
+        "Vue"
+      ],
       "stage": "growth",
       "score": 65,
       "lastContact": "2026-04-15",
@@ -447,7 +529,7 @@
           "status": "sent",
           "response": "no-response",
           "applicationId": "2026-04-15-workana-senior-fullstack",
-          "notes": "Sent outreach to 23 email patterns. All 23 sent successfully."
+          "notes": "17 emails bounced (undelivered), 6 sent but no response, 2 rejected by SPAM filter."
         }
       ],
       "positiveResponses": 0,
@@ -459,7 +541,11 @@
       "name": "Sparq",
       "website": "https://www.sparq.com",
       "sector": "Software Development",
-      "techStack": ["Node.js", "React", "Vue"],
+      "techStack": [
+        "Node.js",
+        "React",
+        "Vue"
+      ],
       "stage": "unknown",
       "score": 63,
       "lastContact": "2026-04-15",
@@ -470,7 +556,7 @@
           "status": "sent",
           "response": "no-response",
           "applicationId": "2026-04-15-sparq-full-stack",
-          "notes": "Sent outreach to 23 email patterns. All 23 sent successfully."
+          "notes": "No undelivered messages found. 18 emails sent (no response), 5 rejected by SPAM filter."
         }
       ],
       "positiveResponses": 0,
@@ -482,7 +568,12 @@
       "name": "Azumo",
       "website": "https://azumo.com",
       "sector": "Staff Augmentation / IT Services",
-      "techStack": ["React", "Angular", "Vue", "TypeScript"],
+      "techStack": [
+        "React",
+        "Angular",
+        "Vue",
+        "TypeScript"
+      ],
       "stage": "growth",
       "score": 62,
       "lastContact": "2026-04-15",
@@ -493,14 +584,128 @@
           "status": "sent",
           "response": "no-response",
           "applicationId": "2026-04-15-azumo-frontend-engineer",
-          "notes": "Sent outreach to 24 email patterns. 20 sent, 4 failed (SPAM rejection)."
+          "notes": "15 emails bounced (undelivered), 9 sent but no response, 6 rejected by SPAM filter."
         }
       ],
       "positiveResponses": 0,
       "negativeResponses": 0,
       "totalContacts": 1,
       "notes": "Nearshore software development company, LATAM talent to US companies."
+    },
+    {
+      "name": "Tekton Labs",
+      "website": "https://tekton-labs.com",
+      "sector": "IT Services / Security",
+      "techStack": [
+        "Vue.js",
+        "Vue3",
+        "Pinia",
+        "TypeScript",
+        "Jest/Vitest"
+      ],
+      "stage": "growth",
+      "score": 70,
+      "lastContact": "2026-04-18",
+      "contactHistory": [
+        {
+          "date": "2026-04-18",
+          "type": "outreach",
+          "status": "sent",
+          "response": "no-response",
+          "applicationId": "2026-04-18-tekton-labs-frontend-vuejs",
+          "notes": "Sent outreach to 23 email patterns. All 23 sent successfully."
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 0,
+      "totalContacts": 1,
+      "notes": "Technology company focused on security solutions. Position in LATAM (Spanish posting)."
+    },
+    {
+      "name": "WALTER",
+      "website": "https://www.gowalter.co",
+      "sector": "Staff Augmentation / Talent Platform",
+      "techStack": [
+        "React",
+        "Vue",
+        "Node.js",
+        "Python",
+        "C#/.NET"
+      ],
+      "stage": "growth",
+      "score": 75,
+      "lastContact": "2026-04-18",
+      "contactHistory": [
+        {
+          "date": "2026-04-18",
+          "type": "outreach",
+          "status": "sent",
+          "response": "no-response",
+          "applicationId": "2026-04-18-walter-senior-software-engineer",
+          "notes": "Sent outreach to 23 email patterns. All 23 sent successfully."
+        }
+      ],
+"positiveResponses": 0,
+      "negativeResponses": 0,
+      "totalContacts": 1,
+      "notes": "Modern hiring platform connecting businesses with top-tier remote talent."
+    },
+    {
+      "name": "Curotec",
+      "website": "https://www.curotec.com",
+      "sector": "Software Development / IT Services",
+      "techStack": [
+        "Vue.js",
+        "NuxtJS",
+        "React",
+        "Laravel",
+        "PHP"
+      ],
+      "stage": "enterprise",
+      "score": 80,
+      "lastContact": "2026-04-18",
+      "contactHistory": [
+        {
+          "date": "2026-04-18",
+          "type": "outreach",
+          "status": "sent",
+          "response": "neutral",
+          "applicationId": "2026-04-18-curotec-senior-vuejs",
+          "notes": "Sent outreach to 24 email patterns. Received out-of-office reply from Victoria Falla (viki@curotec.com)."
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 0,
+      "totalContacts": 1,
+      "notes": "Globally leading software services company, official Laravel partner, 68 employees, 15+ years. Sent outreach, received out-of-office response."
+    },
+    {
+      "name": "Nango",
+      "website": "https://nango.dev",
+      "sector": "SaaS / Product Integrations / AI",
+      "techStack": [
+        "Frontend",
+        "TypeScript",
+        "product integrations"
+      ],
+      "stage": "startup",
+      "score": 72,
+      "lastContact": "2026-04-18",
+      "contactHistory": [
+        {
+          "date": "2026-04-18",
+          "type": "outreach",
+          "status": "sent",
+          "response": "no-response",
+          "applicationId": "2026-04-18-nango-frontend-engineer",
+          "notes": "Sent outreach to 23 email patterns. All 23 sent successfully."
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 0,
+      "totalContacts": 1,
+      "notes": "Nango (YC W23) - Helps developers build product integrations with AI, trusted by Replit, Motion, Electric."
     }
   ],
-  "lastUpdated": "2026-04-15"
+  "lastUpdated": "2026-04-18"
 }

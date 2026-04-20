@@ -1,6 +1,6 @@
 # Follow-ups
 
-**Last Updated:** 2026-04-15
+**Last Updated:** 2026-04-18
 
 ---
 
@@ -11,6 +11,153 @@ None
 ---
 
 ## Future Follow-ups
+
+### Curotec - Senior Vue.js Developer
+
+- **Due:** 2026-04-25
+- **Company:** Curotec
+- **Position:** Senior Front-End Engineer (VueJS)
+- **Application ID:** 2026-04-18-curotec-senior-vuejs
+- **Status:** in-review (2026-04-18) - Out of office reply from Victoria Falla, added emily.dickerson@curotec.com
+- **Emails Sent:** 23 + 1 (emily.dickerson@curotec.com), **Failed:** 0
+- **Position URL:** https://curotec.recruitee.com/o/senior-vuejs-developer
+
+**Initial Email Draft:**
+Subject: Senior Frontend Vue.js Developer - Available for Remote Work
+
+Dear Hiring Team,
+
+I'm a Software Developer with 7+ years of experience serving companies across Europe, US, and LATAM, with hands-on experience in software development and enterprise solutions. I came across your Senior Vue.js position and would love to explore opportunities.
+
+My expertise includes Vue.js, Nuxt.js (SSR/SSG), TypeScript, Pinia, TailwindCSS, and Laravel backend. I've built enterprise applications for clients globally and am comfortable with EDT business hours.
+
+Best regards
+Rayko Azcue
+
+**Follow-up Email Draft:**
+Subject: Checking In - Senior Frontend Vue.js Developer Opportunity at Curotec
+
+Dear Curotec Team,
+
+My name is Rayko Azcue, and I recently reached out regarding your Senior Frontend Vue.js Developer position. I wanted to know if there might be any current or upcoming opportunities that could be a good match for my experience.
+
+With 7+ years building web applications and strong expertise in Vue.js, Nuxt.js, React, Laravel and TypeScript, I'd love to discuss how I could contribute to your team.
+
+Best regards
+Rayko Azcue
+
+---
+
+### Nango - Frontend Engineer
+
+- **Due:** 2026-04-25
+- **Company:** Nango
+- **Position:** Frontend Engineer
+- **Application ID:** 2026-04-18-nango-frontend-engineer
+- **Status:** outreach (2026-04-18)
+- **Emails Sent:** 23, **Failed:** 0
+- **Position URL:** https://remotive.com/remote/jobs/software-development/frontend-engineer-3949643
+
+**Initial Email Draft:**
+Subject: Frontend Engineer Interest - Nango
+
+Dear Nango Team,
+
+I'm a Software Developer with 7+ years of experience serving companies across Europe, US, and LATAM, with hands-on experience in SaaS and product integration platforms. I came across your Frontend Engineer opening (now closed) and wanted to express interest.
+
+My background includes Vue.js/Nuxt.js (SSR/SSG), TypeScript, performance optimization, building SaaS, e-commerce platforms, and other enterprise solutions.
+
+Nango's mission to help developers build product integrations with AI is compelling. Are there current or upcoming frontend opportunities?
+
+Best regards
+Rayko Azcue
+
+**Follow-up Email Draft:**
+Subject: Checking In - Frontend Engineer Opportunity at Nango
+
+Dear Nango Team,
+
+My name is Rayko Azcue, and I recently reached out regarding frontend opportunities at Nango. I wanted to know if there might be any current or upcoming positions that could be a good match for my experience.
+
+With 7+ years building web applications and strong expertise in Vue.js, Nuxt.js, and TypeScript, I'd love to discuss how I could contribute to your team building product integrations with AI.
+
+Best regards
+Rayko Azcue
+
+---
+
+### Tekton Labs - Frontend Vue.js
+
+- **Due:** 2026-04-25
+- **Company:** Tekton Labs
+- **Position:** Frontend Developer VueJS
+- **Application ID:** 2026-04-18-tekton-labs-frontend-vuejs
+- **Status:** outreach (2026-04-18)
+- **Emails Sent:** 23, **Failed:** 0
+- **Position URL:** https://tekton-labs.breezy.hr/p/bc5cc280a0d1-frontend-developer-vuejs-all-latam
+
+**Initial Email Draft:**
+Subject: Desarrollador Frontend Vue.js - Disponible para LATAM
+
+Estimado equipo de Tekton Labs,
+
+Soy un Desarrollador con más de 7 años de experiencia sirviendo a empresas en Europa, US y LATAM, con experiencia práctica en desarrollo de software y soluciones de seguridad. Estoy interesado en el puesto de Frontend Vue.js.
+
+Mi experiencia incluye Vue.js, Vue 3, Composition API, Pinia, TypeScript, Nuxt.js (SSR/SSG), Vitest.
+
+Tengo disponibilidad para trabajar en horario EDT y fluidez en inglés (C1) y español (nativo).
+
+Saludos cordiales
+Rayko Azcue
+
+**Follow-up Email Draft:**
+Subject: Revisando - Oportunidad de Frontend Vue.js en Tekton Labs
+
+Estimado equipo de Tekton Labs,
+
+Mi nombre es Rayko Azcue, y me comuniqué recientemente respecto a oportunidades de frontend Vue.js en Tekton Labs. Quería saber si actualmente hay posiciones vigentes o próximas que podrían ser una buena opción para mi experiencia.
+
+Con más de 7 años construyendo aplicaciones web y gran experiencia en Vue.js, Vue 3 y TypeScript, me encantaría discutir cómo podría contribuir a sus proyectos de seguridad.
+
+Saludos cordiales
+Rayko Azcue
+
+---
+
+### WALTER - Senior Software Engineer
+
+- **Due:** 2026-04-25
+- **Company:** WALTER
+- **Position:** Senior Software Engineer
+- **Application ID:** 2026-04-18-walter-senior-software-engineer
+- **Status:** outreach (2026-04-18)
+- **Emails Sent:** 23, **Failed:** 0
+- **Position URL:** https://weworkremotely.com/remote-jobs/walter-senior-software-engineer
+
+**Initial Email Draft:**
+Subject: Senior Software Engineer - Interest in WALTER
+
+Hi Team,
+
+I'm a Software Developer with 7+ years of experience serving companies across Europe, US, and LATAM. I'm interested in opportunities at WALTER.
+
+My stack includes Vue.js, Nuxt.js, React, TypeScript, Node.js, Laravel, PostgreSQL, and performance optimization. I'd love to explore opportunities.
+
+Best regards
+Rayko Azcue
+
+**Follow-up Email Draft:**
+Subject: Checking In - Senior Software Engineer Opportunity at WALTER
+
+Dear WALTER Team,
+
+My name is Rayko Azcue, and I recently reached out regarding senior software engineering opportunities at WALTER. I wanted to know if there might be any current or upcoming positions that could be a good match for my experience.
+
+With 7+ years building web applications and strong expertise in Vue.js, React, and full-stack development, I'd love to discuss how I could contribute to your team connecting businesses with top-tier remote talent.
+
+Best regards
+Rayko Azcue
+
 
 ### FullStack Labs - Senior Frontend
 
@@ -178,7 +325,7 @@ Rayko Azcue
 - **Company:** South Geeks
 - **Position:** Senior Front End Engineer
 - **Application ID:** 2026-04-15-south-geeks-senior-frontend
-- **Status:** outreach (2026-04-15)
+- **Status:** in-review (2026-04-18) - Replied to outreach email
 - **Emails sent:** hr@southgeeks.com, careers@southgeeks.com, jobs@southgeeks.com, recruiting@southgeeks.com, talent@southgeeks.com, recruitment@southgeeks.com, hiring@southgeeks.com, apply@southgeeks.com, work@southgeeks.com, contact@southgeeks.com, info@southgeeks.com, hello@southgeeks.com, support@southgeeks.com, admin@southgeeks.com, team@southgeeks.com, office@southgeeks.com, general@southgeeks.com, mail@southgeeks.com, staff@southgeeks.com, tech@southgeeks.com, it@southgeeks.com
 - **Emails failed:** contactus@southgeeks.com, dev@southgeeks.com
 - **Position URL:** https://www.remoterocketship.com/company/south-geeks/jobs/senior-front-end-engineer-latin-america

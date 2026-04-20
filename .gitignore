@@ -31,3 +31,6 @@ public/resume.html
 
 # agent configs (contains API keys)
 opencode.json
+
+# job-ai generated resumes (company-specific, not tracked)
+public/resume-*.pdf

@@ -1,58 +1,58 @@
 {
   "metadata": {
-    "id": "2026-04-15-south-geeks-senior-frontend",
+    "id": "2026-04-18-walter-senior-software-engineer",
     "type": "outreach",
     "company": {
-      "name": "South Geeks",
-      "website": "https://www.southgeeks.com",
+      "name": "WALTER",
+      "website": "https://www.gowalter.co",
       "email": [
-        "careers@southgeeks.com",
-        "jobs@southgeeks.com",
-        "hiring@southgeeks.com",
-        "recruiting@southgeeks.com",
-        "talent@southgeeks.com",
-        "team@southgeeks.com",
-        "hr@southgeeks.com",
-        "contact@southgeeks.com",
-        "hello@southgeeks.com",
-        "info@southgeeks.com",
-        "support@southgeeks.com",
-        "admin@southgeeks.com",
-        "office@southgeeks.com",
-        "contactus@southgeeks.com",
-        "general@southgeeks.com",
-        "mail@southgeeks.com",
-        "staff@southgeeks.com",
-        "dev@southgeeks.com",
-        "tech@southgeeks.com",
-        "it@southgeeks.com",
-        "recruitment@southgeeks.com",
-        "apply@southgeeks.com",
-        "work@southgeeks.com"
+        "talent@gowalter.co",
+        "jobs@gowalter.co",
+        "careers@gowalter.co",
+        "hiring@gowalter.co",
+        "recruiting@gowalter.co",
+        "team@gowalter.co",
+        "hr@gowalter.co",
+        "contact@gowalter.co",
+        "hello@gowalter.co",
+        "info@gowalter.co",
+        "support@gowalter.co",
+        "admin@gowalter.co",
+        "office@gowalter.co",
+        "contactus@gowalter.co",
+        "general@gowalter.co",
+        "mail@gowalter.co",
+        "staff@gowalter.co",
+        "dev@gowalter.co",
+        "tech@gowalter.co",
+        "it@gowalter.co",
+        "recruitment@gowalter.co",
+        "apply@gowalter.co",
+        "work@gowalter.co"
       ],
-      "sector": "Software Consultancy / Staff Augmentation",
-      "techStack": ["Vue.js", "React", "Nuxt", "Next", "TypeScript"]
+      "sector": "Staff Augmentation / Talent Platform",
+      "techStack": ["React", "Vue", "Node.js", "Python", "C#/.NET"]
     },
     "position": {
-      "title": "Senior Front End Engineer",
-      "url": "https://www.remoterocketship.com/company/south-geeks/jobs/senior-front-end-engineer-latin-america",
+      "title": "Senior Software Engineer",
+      "url": "https://weworkremotely.com/remote-jobs/walter-senior-software-engineer",
       "applicationType": "outreach",
       "model": "remote",
-      "location": "Anywhere in Latin America",
+      "location": "Worldwide",
       "salary": null,
       "keywords": {
-        "technical": ["Vue.js", "React", "Nuxt", "Next", "TypeScript"],
-        "soft": ["Remote Work", "Staff Augmentation"]
+        "technical": ["React", "Vue", "Node.js", "Python", "C#/.NET"],
+        "soft": ["Remote Work", "Staff Augmentation", "Talent Platform"]
       }
     },
-    "status": "sent",
-    "applicationDate": "2026-04-15",
+    "status": "pending",
+    "applicationDate": "2026-04-18",
     "rejectionDate": null,
     "notes": {
-      "model": "Software Consultancy - Remote",
-      "company": "South Geeks - Software consultancy connecting top LATAM developers with companies worldwide",
-      "techStack": "Vue.js, React, Nuxt, Next, TypeScript, Remote-first",
-      "role": "Senior Frontend position - outreach to explore opportunities"
+      "model": "Staff Augmentation / Talent Platform - Remote",
+      "company": "WALTER - Modern hiring platform connecting businesses with top-tier remote talent",
+      "techStack": "React, Vue, Node.js, Python, C#/.NET, Remote-first",
+      "role": "Senior Software Engineer position - outreach to explore opportunities"
     }
   },
   "contactInfo": {
@@ -61,10 +61,10 @@
     "email": "razcue@yandex.com",
     "website": "razcue.github.io"
   },
-  "summary": "Senior Frontend Engineer with 7+ years building web applications for companies across Europe, US, and LATAM. Strong expertise in Vue.js, React, Nuxt, and TypeScript with experience across SaaS, e-commerce, and other sectors. Background in building remote teams and connecting developers with opportunities.",
+  "summary": "Senior Software Engineer with 7+ years building web applications for companies across Europe, US, and LATAM. Strong expertise in Vue.js, React, and full-stack development with experience across multiple sectors including talent platforms, SaaS, and enterprise solutions.",
   "skills": {
-    "technical": "Vue.js, React, Nuxt, Next, TypeScript, SSR/SSG, Core Web Vitals, Performance optimization",
-    "additional": "Remote Work, Distributed Teams, Agile, Software Consultancy, Staff Augmentation",
+    "technical": "Vue.js, React, TypeScript, Node.js, Laravel, PostgreSQL, Nuxt.js, Next.js, Core Web Vitals, Performance optimization, REST APIs, CI/CD, GitHub Actions",
+    "additional": "Remote Work, Distributed Teams, Agile, Scrum, Full-Stack Development, Code Review, Technical Decision Making, Mentorship",
     "languages": "English (C1 - Advanced), Spanish (Native)"
   },
   "education": [

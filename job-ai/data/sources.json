@@ -140,10 +140,100 @@
       "name": "Venon Solutions",
       "url": "https://www.careers-page.com/venon-solutions",
       "type": "staff_augmentation"
+    },
+    {
+      "name": "Decskill",
+      "url": "https://decskill.com/en/community/",
+      "type": "staff_augmentation"
+    },
+    {
+      "name": "Team.blue",
+      "url": "https://careers.team.blue/jobs",
+      "type": "staff_augmentation"
+    },
+    {
+      "name": "Hire Web Creators",
+      "url": "https://hirewebcreators.com/",
+      "type": "staff_augmentation"
+    },
+    {
+      "name": "LatHire",
+      "url": "https://lathire.com/latam-jobs/",
+      "type": "job_board"
+    },
+    {
+      "name": "Arc.dev (Cuba)",
+      "url": "https://arc.dev/en-cu/remote-jobs",
+      "type": "job_board"
+    },
+    {
+      "name": "Jobgether (Cuba)",
+      "url": "https://jobgether.com/remote-jobs/cuba",
+      "type": "job_board"
+    },
+    {
+      "name": "Pros Marketplace",
+      "url": "https://prosmarketplace.com",
+      "type": "talent_platform"
+    },
+    {
+      "name": "Lupa",
+      "url": "https://lupahire.com",
+      "type": "staff_augmentation"
+    },
+    {
+      "name": "NeuronHire",
+      "url": "https://www.neuronhire.com/",
+      "type": "staff_augmentation"
+    },
+    {
+      "name": "LatinDevs",
+      "url": "https://latindevs.com/",
+      "type": "talent_platform"
+    },
+    {
+      "name": "LatAmCoders",
+      "url": "https://www.latamcoders.com/",
+      "type": "talent_platform"
+    },
+    {
+      "name": "Solvedex",
+      "url": "https://solvedex.com/",
+      "type": "staff_augmentation"
+    },
+    {
+      "name": "Ideaware",
+      "url": "https://www.ideaware.co/",
+      "type": "staff_augmentation"
+    },
+    {
+      "name": "TalentHub",
+      "url": "https://www.talenthub.cloud/",
+      "type": "staff_augmentation"
+    },
+    {
+      "name": "Zipdev",
+      "url": "https://zipdevengineerstalent.com/",
+      "type": "staff_augmentation"
+    },
+    {
+      "name": "TeamEx",
+      "url": "https://teamex.dev/",
+      "type": "talent_platform"
+    },
+    {
+      "name": "Awana",
+      "url": "http://awana.io/",
+      "type": "staff_augmentation"
+    },
+    {
+      "name": "NetMidas",
+      "url": "https://netmidas.com/",
+      "type": "staff_augmentation"
     }
   ],
   "notes": {
-    "last_updated": "2026-03-27",
+    "last_updated": "2026-04-18",
     "categories": {
       "job_board": "General tech job listings",
       "staff_augmentation": "Companies that provide remote talent to US companies",

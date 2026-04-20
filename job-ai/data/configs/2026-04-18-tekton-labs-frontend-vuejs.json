@@ -1,58 +1,58 @@
 {
   "metadata": {
-    "id": "2026-04-15-south-geeks-senior-frontend",
+    "id": "2026-04-18-tekton-labs-frontend-vuejs",
     "type": "outreach",
     "company": {
-      "name": "South Geeks",
-      "website": "https://www.southgeeks.com",
+      "name": "Tekton Labs",
+      "website": "https://tekton-labs.com",
       "email": [
-        "careers@southgeeks.com",
-        "jobs@southgeeks.com",
-        "hiring@southgeeks.com",
-        "recruiting@southgeeks.com",
-        "talent@southgeeks.com",
-        "team@southgeeks.com",
-        "hr@southgeeks.com",
-        "contact@southgeeks.com",
-        "hello@southgeeks.com",
-        "info@southgeeks.com",
-        "support@southgeeks.com",
-        "admin@southgeeks.com",
-        "office@southgeeks.com",
-        "contactus@southgeeks.com",
-        "general@southgeeks.com",
-        "mail@southgeeks.com",
-        "staff@southgeeks.com",
-        "dev@southgeeks.com",
-        "tech@southgeeks.com",
-        "it@southgeeks.com",
-        "recruitment@southgeeks.com",
-        "apply@southgeeks.com",
-        "work@southgeeks.com"
+        "careers@tekton-labs.com",
+        "jobs@tekton-labs.com",
+        "hiring@tekton-labs.com",
+        "recruiting@tekton-labs.com",
+        "talent@tekton-labs.com",
+        "team@tekton-labs.com",
+        "hr@tekton-labs.com",
+        "contact@tekton-labs.com",
+        "hello@tekton-labs.com",
+        "info@tekton-labs.com",
+        "support@tekton-labs.com",
+        "admin@tekton-labs.com",
+        "office@tekton-labs.com",
+        "contactus@tekton-labs.com",
+        "general@tekton-labs.com",
+        "mail@tekton-labs.com",
+        "staff@tekton-labs.com",
+        "dev@tekton-labs.com",
+        "tech@tekton-labs.com",
+        "it@tekton-labs.com",
+        "recruitment@tekton-labs.com",
+        "apply@tekton-labs.com",
+        "work@tekton-labs.com"
       ],
-      "sector": "Software Consultancy / Staff Augmentation",
-      "techStack": ["Vue.js", "React", "Nuxt", "Next", "TypeScript"]
+      "sector": "IT Services / Security",
+      "techStack": ["Vue.js", "Vue3", "Pinia", "TypeScript", "Jest/Vitest"]
     },
     "position": {
-      "title": "Senior Front End Engineer",
-      "url": "https://www.remoterocketship.com/company/south-geeks/jobs/senior-front-end-engineer-latin-america",
+      "title": "Frontend Developer VueJS [ALL LATAM]",
+      "url": "https://tekton-labs.breezy.hr/p/bc5cc280a0d1-frontend-developer-vuejs-all-latam",
       "applicationType": "outreach",
       "model": "remote",
-      "location": "Anywhere in Latin America",
+      "location": "LATAM (Lima, Buenos Aires, Mexico City, Colombia)",
       "salary": null,
       "keywords": {
-        "technical": ["Vue.js", "React", "Nuxt", "Next", "TypeScript"],
-        "soft": ["Remote Work", "Staff Augmentation"]
+        "technical": ["Vue.js", "Vue3", "Pinia", "TypeScript", "Jest/Vitest"],
+        "soft": ["Remote Work", "Security", "LATAM"]
       }
     },
-    "status": "sent",
-    "applicationDate": "2026-04-15",
+    "status": "pending",
+    "applicationDate": "2026-04-18",
     "rejectionDate": null,
     "notes": {
-      "model": "Software Consultancy - Remote",
-      "company": "South Geeks - Software consultancy connecting top LATAM developers with companies worldwide",
-      "techStack": "Vue.js, React, Nuxt, Next, TypeScript, Remote-first",
-      "role": "Senior Frontend position - outreach to explore opportunities"
+      "model": "IT Services / Security - Remote",
+      "company": "Tekton Labs - Technology company focused on security solutions",
+      "techStack": "Vue.js, Vue3, Pinia, TypeScript, Jest/Vitest",
+      "role": "Frontend Developer VueJS position - outreach to explore opportunities"
     }
   },
   "contactInfo": {
@@ -61,10 +61,10 @@
     "email": "razcue@yandex.com",
     "website": "razcue.github.io"
   },
-  "summary": "Senior Frontend Engineer with 7+ years building web applications for companies across Europe, US, and LATAM. Strong expertise in Vue.js, React, Nuxt, and TypeScript with experience across SaaS, e-commerce, and other sectors. Background in building remote teams and connecting developers with opportunities.",
+  "summary": "Desarrollador Frontend Senior con más de 7 años construyendo aplicaciones web para empresas en Europa, US y LATAM. Gran experiencia en Vue.js, Vue 3 y Nuxt.js con enfoque en soluciones de seguridad y desarrollo de productos innovadores. Experiencia en múltiples sectores incluyendo e-commerce, SaaS y enterprise.",
   "skills": {
-    "technical": "Vue.js, React, Nuxt, Next, TypeScript, SSR/SSG, Core Web Vitals, Performance optimization",
-    "additional": "Remote Work, Distributed Teams, Agile, Software Consultancy, Staff Augmentation",
+    "technical": "Vue.js, Vue 3, Composition API, Pinia, TypeScript, Nuxt.js (SSR/SSG), Vitest, Jest, Testing, Core Web Vitals, Performance optimization, SEO",
+    "additional": "Remote Work, Distributed Teams, Agile, Scrum, Pixel-Perfect Design, Mobile-First Design, Figma to Code, Technical Decision Making, Code Review",
     "languages": "English (C1 - Advanced), Spanish (Native)"
   },
   "education": [

@@ -1,58 +1,13 @@
 {
   "metadata": {
-    "id": "2026-04-15-south-geeks-senior-frontend",
-    "type": "outreach",
-    "company": {
-      "name": "South Geeks",
-      "website": "https://www.southgeeks.com",
-      "email": [
-        "careers@southgeeks.com",
-        "jobs@southgeeks.com",
-        "hiring@southgeeks.com",
-        "recruiting@southgeeks.com",
-        "talent@southgeeks.com",
-        "team@southgeeks.com",
-        "hr@southgeeks.com",
-        "contact@southgeeks.com",
-        "hello@southgeeks.com",
-        "info@southgeeks.com",
-        "support@southgeeks.com",
-        "admin@southgeeks.com",
-        "office@southgeeks.com",
-        "contactus@southgeeks.com",
-        "general@southgeeks.com",
-        "mail@southgeeks.com",
-        "staff@southgeeks.com",
-        "dev@southgeeks.com",
-        "tech@southgeeks.com",
-        "it@southgeeks.com",
-        "recruitment@southgeeks.com",
-        "apply@southgeeks.com",
-        "work@southgeeks.com"
-      ],
-      "sector": "Software Consultancy / Staff Augmentation",
-      "techStack": ["Vue.js", "React", "Nuxt", "Next", "TypeScript"]
-    },
-    "position": {
-      "title": "Senior Front End Engineer",
-      "url": "https://www.remoterocketship.com/company/south-geeks/jobs/senior-front-end-engineer-latin-america",
-      "applicationType": "outreach",
-      "model": "remote",
-      "location": "Anywhere in Latin America",
-      "salary": null,
-      "keywords": {
-        "technical": ["Vue.js", "React", "Nuxt", "Next", "TypeScript"],
-        "soft": ["Remote Work", "Staff Augmentation"]
-      }
-    },
-    "status": "sent",
-    "applicationDate": "2026-04-15",
-    "rejectionDate": null,
-    "notes": {
-      "model": "Software Consultancy - Remote",
-      "company": "South Geeks - Software consultancy connecting top LATAM developers with companies worldwide",
-      "techStack": "Vue.js, React, Nuxt, Next, TypeScript, Remote-first",
-      "role": "Senior Frontend position - outreach to explore opportunities"
+    "id": "2026-04-18-curotec-senior-vuejs",
+    "configName": "curotec-senior-vuejs",
+    "language": "en",
+    "dateCreated": "2026-04-18T00:00:00.000Z",
+    "targetPosition": "Senior Front-End Engineer (VueJS)",
+    "keywords": {
+      "technical": ["Vue.js", "Nuxt.js", "SSR/SSG", "TypeScript", "Pinia", "TailwindCSS", "Laravel", "PHP"],
+      "soft": ["Remote Work", "Enterprise Solutions", "Cross-functional Collaboration"]
     }
   },
   "contactInfo": {
@@ -61,10 +16,10 @@
     "email": "razcue@yandex.com",
     "website": "razcue.github.io"
   },
-  "summary": "Senior Frontend Engineer with 7+ years building web applications for companies across Europe, US, and LATAM. Strong expertise in Vue.js, React, Nuxt, and TypeScript with experience across SaaS, e-commerce, and other sectors. Background in building remote teams and connecting developers with opportunities.",
+  "summary": "Senior Front End & Full Stack Engineer with 7+ years building web applications for companies across Europe, US, and LATAM. Strong expertise in Vue.js, Nuxt.js, and TypeScript with proven track record of improving Core Web Vitals and implementing SEO strategies. Experienced with Laravel backend integration and enterprise-level projects across e-commerce, SaaS, and other sectors.",
   "skills": {
-    "technical": "Vue.js, React, Nuxt, Next, TypeScript, SSR/SSG, Core Web Vitals, Performance optimization",
-    "additional": "Remote Work, Distributed Teams, Agile, Software Consultancy, Staff Augmentation",
+    "technical": "Vue.js, Nuxt.js (SSR/SSG), Vue 3, Composition API, TypeScript, Pinia, TailwindCSS, Laravel, PHP, Core Web Vitals, SEO, GitHub Actions, CI/CD",
+    "additional": "Team Leadership, Mentoring, Figma to Code, Pixel-Perfect Design, Mobile-First Design, Agile, Scrum, Remote Work, Distributed Teams",
     "languages": "English (C1 - Advanced), Spanish (Native)"
   },
   "education": [
@@ -79,8 +34,7 @@
       "degree": "Responsive Web Design Certificate",
       "location": "Online",
       "date": "2021",
-      "certificationUrl": "https://www.freecodecamp.org/certification/fcc0d66daac-ef4f-4e0e-9e60-d02d24f85508/responsive-web-design",
-      "certificationText": "View Certificate"
+      "certificationUrl": "https://www.freecodecamp.org/certification/fcc0d66daac-ef4f-4e0e-9e60-d02d24f85508/responsive-web-design"
     }
   ],
   "experience": [
@@ -146,6 +100,42 @@
         "Implemented barcode/QR scanner component for asset tracking processing 5,000+ daily scans with 99%+ accuracy.",
         "Integrated medical compliance (NEMSIS standard) for EMS module; handled medications and connected cardio readers apparatuses.",
         "Worked on incident module with Google Maps and ArcGIS for incident tracking."
+      ]
+    },
+    {
+      "company": "Tecnomática",
+      "title": "Front End Developer",
+      "location": "On-site, Havana, Cuba",
+      "dateRange": "Dec 2020 – Mar 2021",
+      "bullets": [
+        "Built Angular modules for fuel logistics system (distribution, stations management, storage, cisterns).",
+        "Mentored junior developer (recent graduate, no framework experience) via pair programming and study roadmap.",
+        "Improved critical logistics queries by ~25-30% via database optimizations (indexes, normalization/denormalization) and migrations from MySQL to PostgreSQL."
+      ]
+    },
+    {
+      "company": "Grupo de Electrónica para el Turismo (GET)",
+      "title": "Full Stack Developer",
+      "location": "On-site, Havana, Cuba",
+      "dateRange": "Mar 2019 – Nov 2020",
+      "bullets": [
+        "Led development of multi-tenant Laravel/Vue document management system with RBAC (full CRUD over roles, based on permissions), document scanning & attachments, separate database per client.",
+        "Implemented Elasticsearch integration reducing search times to under 1 second.",
+        "Deployed on-premise version at Ministry (no internet, subnet only); manual deployment, stakeholder communication, infrastructure team coordination.",
+        "Implemented authentication via email + password + client selector.",
+        "Designed and implemented RESTful APIs for hotel restaurant reservation system (Express.js/Sequelize/PostgreSQL) with booking, availability, and menus for restaurants within hotels; improved booking completion by ~15%."
+      ]
+    },
+    {
+      "company": "Banco Central de Cuba (BCC)",
+      "title": "Full Stack Developer (Junior)",
+      "location": "On-site, Havana, Cuba",
+      "dateRange": "Sep 2018 – Feb 2019",
+      "bullets": [
+        "Implemented asset tracking, inventory updates, and compliance reporting in .NET/C#/SQL Server for physical assets.",
+        "Built forms and reports for internal audits and asset numbers for locals.",
+        "Implemented automated report generation and audit trail logging, reducing manual reporting effort by ~20-30%.",
+        "Collaborated with cross-departmental stakeholders to align the system with regulations, smoothing audits and reducing rework."
       ]
     }
   ]
