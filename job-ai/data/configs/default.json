@@ -46,9 +46,9 @@
     "email": "razcue@yandex.com",
     "website": "razcue.github.io"
   },
-  "summary": "Front End & Full Stack Engineer with 7+ years building scalable, performant web applications across SaaS, e-commerce, and enterprise platforms. Expert in Vue, Nuxt, React and TypeScript. Focus areas include Core Web Vitals optimization, accessible UI, and pragmatic component design. Proven track record in remote-first distributed teams across US, Spain, and LATAM.",
+  "summary": "Senior Front End & Full Stack Engineer with 7+ years building scalable, performant web applications across SaaS, e-commerce, and other sectors, with focus on Vue, Nuxt, PHP and TypeScript. Proven track record in remote-first distributed teams across US, Spain, and LATAM.",
   "skills": {
-    "technical": "Vue, Nuxt, React, Next, Angular, Node.js, Express.js, Nest, JavaScript, TypeScript, Tailwind, UnoCSS, Laravel, Yii, Symfony, PHP, PostgreSQL, AWS S3, Redis, Docker, Elasticsearch, Swagger, CI/CD, PHPUnit, Faker, Mockery, a11y, Core Web Vitals, SEO, Vuetify, PrimeReact, NgZorro, .NET, C#, Supabase, Vercel, Cloudflare, Linux/Ubuntu, VPS Setup, n8n, Agent Coding, Mono-repos, Vite, Webpack, Redux, Pinia, Zustand, SWR, SSR, SSG, shadcn/ui, React Testing Library, StoryBook, Astro, Sanity, Express.js, Sequelize ORM, Doctrine ORM, OAuth2, Laravel Passport, RabbitMQ, Serverless, AWS Lambda, Vercel Serverless Functions, Cloudflare Workers, Eloquent ORM, Laravel Sanctum, Inertia.js, GitHub Actions, Nginx, SSL/TLS, Postman, Bruno, Sentry, ESLint, Prettier, CodeRabbit, i18n, SCSS, SASS, BEM Methodology, Conventional Commits, SOLID Principles, DRY, KISS, YAGNI, Google Analytics, Google Search Console, Lighthouse",
+    "technical": "Vue, Nuxt, React, Next, Angular, Node.js, Express.js, Nest, JavaScript, TypeScript, Tailwind, UnoCSS, Laravel, Yii, Symfony, PHP, PostgreSQL, AWS S3, Redis, Docker, Elasticsearch, Swagger, CI/CD, PHPUnit, Faker, Mockery, a11y, Core Web Vitals, SEO, Vuetify, PrimeReact, NgZorro, .NET, C#, Supabase, Vercel, Cloudflare, Linux/Ubuntu, VPS Setup, n8n, Agent Coding, Mono-repos, Vite, Webpack, Redux, Pinia, Zustand, SWR, SSR, SSG, shadcn/ui, React Testing Library, StoryBook, Astro, Sanity, Express.js, Sequelize ORM, Doctrine ORM, OAuth2, Laravel Passport, RabbitMQ, Serverless, AWS Lambda, Vercel Serverless Functions, Cloudflare Workers, Eloquent ORM, Laravel Sanctum, Inertia.js, GitHub Actions, Nginx, SSL/TLS, Postman, Bruno, Sentry, ESLint, Prettier, CodeRabbit, i18n, SCSS, SASS, BEM Methodology, Conventional Commits, SOLID Principles, DRY, KISS, YAGNI, Google Analytics, Google Search Console, Lighthouse, Amazon's Alexa Skills",
     "additional": "Team Leadership, Mentoring, Figma to Code, Pixel-Perfect Design, Mobile-First Design, Jira, Trello, Notion, Agile, Scrum, Kanban, Sprint Planning, Backlog Management, Cross-functional Collaboration, Technical Decision Making, Code Review, Technical Writing, Product and Module Ownership, Autonomy, Remote Work, Distributed Teams, Adaptability, Continuous Learning, Knowledge Sharing, Slack, Microsoft Teams, Pair Programming, Technical Interviewing, Stakeholder Communication",
     "languages": "English (C1 - Advanced), Spanish (Native)"
   },
@@ -73,7 +73,7 @@
       "company": "Delfín Motor Labs SL",
       "title": "Senior Front End Developer",
       "location": "Remote, Madrid, Spain",
-      "dateRange": "Jan 2026 – Present",
+      "dateRange": "Jan 2026 – Apr 2026",
       "bullets": [
         "Built frontend for custom CMS (Nuxt + Vuetify) and consumer storefront (Nuxt + Tailwind Plus) consuming Laravel APIs; implemented authentication via login form and SSO (Google) using Laravel Sanctum.",
         "Implemented comprehensive SEO strategy including meta tags, dynamic sitemap generation at build time, Schema markup, and canonical URLs; improved Core Web Vitals (LCP: 3.2s → 1.4s, CLS: 0.15 → 0.08) and increased organic traffic by 38%.",

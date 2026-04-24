@@ -1,0 +1,1179 @@
+{
+  "companies": [
+    {
+      "name": "Deel",
+      "website": "https://www.deel.com/",
+      "sector": "HR/Payroll SaaS",
+      "techStack": [
+        "TypeScript",
+        "React.js",
+        "Node.js"
+      ],
+      "stage": "enterprise",
+      "score": 60,
+      "lastContact": "2026-04-07",
+      "contactHistory": [
+        {
+          "date": "2026-02-21",
+          "type": "direct-apply",
+          "status": "rejected",
+          "response": "rejected",
+          "notes": "Received 'Nice to Meet You!' (positive), followed by 'Update on your application' (rejection)"
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 1,
+      "totalContacts": 1,
+      "notes": "Remote-first HR/Payroll SaaS, $17.3B valuation, 7000 employees. REJECTED: After initial positive acknowledgment.",
+      "domain": "deel.com",
+      "status": "outreach"
+    },
+    {
+      "name": "Cyberpuerta",
+      "website": "https://www.cyberpuerta.mx/",
+      "sector": "E-commerce",
+      "techStack": [
+        "Vue.js",
+        "React",
+        "Nuxt.js",
+        "Next.js",
+        "TypeScript"
+      ],
+      "stage": "series-a",
+      "score": 70,
+      "lastContact": "2026-04-07",
+      "contactHistory": [
+        {
+          "date": "2026-02-19",
+          "type": "direct-apply",
+          "status": "rejected",
+          "response": "rejected",
+          "notes": "Recibí email de confirmación de aplicación (en revisión), seguido de rechazo por requisito de residencia en México"
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 1,
+      "totalContacts": 1,
+      "notes": "TOP 200 e-commerce in Mexico, remote position. REJECTED: Only employ foreigners currently residing in Mexico with proper work documentation.",
+      "domain": "cyberpuerta.mx",
+      "status": "outreach"
+    },
+    {
+      "name": "PositiveLinks",
+      "website": "https://www.thepositivelinks.com/",
+      "sector": "Software Development",
+      "techStack": [
+        "Laravel",
+        "Vue.js",
+        "Nuxt.js",
+        "MySQL",
+        "AWS"
+      ],
+      "stage": "startup",
+      "score": 55,
+      "lastContact": "2026-04-07",
+      "contactHistory": [
+        {
+          "date": "2026-02-17",
+          "type": "direct-apply",
+          "status": "no-response",
+          "response": "no-response",
+          "notes": "No response received after 45+ days - auto-marked as no-response"
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 1,
+      "totalContacts": 1,
+      "notes": "Australian market, remote-first. NO RESPONSE after 45+ days.",
+      "domain": "thepositivelinks.com",
+      "status": "outreach"
+    },
+    {
+      "name": "ALGOTEQUE Innovation Hub",
+      "website": "https://algoteque.com/",
+      "sector": "IT Consulting",
+      "techStack": [
+        "React",
+        "TypeScript",
+        "RxJS",
+        "Axios",
+        "Sass"
+      ],
+      "stage": "startup",
+      "score": 30,
+      "lastContact": "2026-04-07",
+      "contactHistory": [
+        {
+          "date": "2026-02-17",
+          "type": "direct-apply",
+          "status": "no-response",
+          "response": "no-response",
+          "notes": "No response received after 45+ days - auto-marked as no-response"
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 1,
+      "totalContacts": 1,
+      "notes": "B2B aviation industry contract. NO RESPONSE after 45+ days.",
+      "domain": "algoteque.com",
+      "status": "outreach"
+    },
+    {
+      "name": "Haystack People",
+      "website": "https://www.haystackpeople.com/",
+      "sector": "E-commerce",
+      "techStack": [
+        "PHP",
+        "Symfony",
+        "Laravel",
+        "MySQL",
+        "PostgreSQL"
+      ],
+      "stage": "series-a",
+      "score": 37,
+      "lastContact": "2026-04-07",
+      "contactHistory": [
+        {
+          "date": "2026-02-15",
+          "type": "direct-apply",
+          "status": "no-response",
+          "response": "no-response",
+          "notes": "No response received after 47+ days - auto-marked as no-response"
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 1,
+      "totalContacts": 1,
+      "notes": "Netherlands, hybrid, visa sponsorship, €75K. NO RESPONSE after 47+ days.",
+      "domain": "haystackpeople.com",
+      "status": "outreach"
+    },
+    {
+      "name": "The Big Phone Store",
+      "website": "https://www.thebigphonestore.co.uk/",
+      "sector": "E-commerce",
+      "techStack": [
+        "Laravel",
+        "PHP",
+        "Vue.js",
+        "Nuxt.js"
+      ],
+      "stage": "startup",
+      "score": 45,
+      "lastContact": "2026-04-07",
+      "contactHistory": [
+        {
+          "date": "2026-02-15",
+          "type": "direct-apply",
+          "status": "no-response",
+          "response": "no-response",
+          "notes": "Initial customer service response redirected to recruitment email. Sent CV to jobs@thebigphonestore.co.uk, no response received."
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 1,
+      "totalContacts": 1,
+      "notes": "UK e-commerce, sustainability focus, £27K-50K. NO RESPONSE after sending CV to recruitment email.",
+      "domain": "thebigphonestore.co.uk",
+      "status": "outreach"
+    },
+    {
+      "name": "Amberes",
+      "website": "https://www.amberes.co.uk/",
+      "sector": "Cybersecurity/SaaS",
+      "techStack": [
+        "TypeScript",
+        "JavaScript",
+        "SQL",
+        "Vue",
+        "React",
+        "Laravel"
+      ],
+      "stage": "series-b",
+      "score": 65,
+      "lastContact": "2026-04-07",
+      "contactHistory": [
+        {
+          "date": "2026-02-15",
+          "type": "direct-apply",
+          "status": "no-response",
+          "response": "no-response",
+          "notes": "No response received after 47+ days - auto-marked as no-response"
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 1,
+      "totalContacts": 1,
+      "notes": "Cybersecurity, London hybrid, visa, £90K-150K + equity. NO RESPONSE after 47+ days.",
+      "domain": "amberes.co.uk",
+      "status": "outreach"
+    },
+    {
+      "name": "LGG Advisors",
+      "website": "https://lggadvisors.com/",
+      "sector": "Financial Services",
+      "techStack": [
+        "Vue.js",
+        "React",
+        "Angular",
+        "Node.js",
+        "TypeScript"
+      ],
+      "stage": "enterprise",
+      "score": 35,
+      "lastContact": "2026-04-07",
+      "contactHistory": [
+        {
+          "date": "2026-02-15",
+          "type": "direct-apply",
+          "status": "no-response",
+          "response": "no-response",
+          "notes": "No response received after 47+ days - auto-marked as no-response"
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 1,
+      "totalContacts": 1,
+      "notes": "Portugal hybrid, visa sponsorship. NO RESPONSE after 47+ days.",
+      "domain": "lggadvisors.com",
+      "status": "outreach"
+    },
+    {
+      "name": "Catawiki",
+      "website": "https://www.catawiki.com/",
+      "sector": "E-commerce",
+      "techStack": [
+        "Ruby",
+        "PostgreSQL",
+        "AWS",
+        "Microservices"
+      ],
+      "stage": "enterprise",
+      "score": 10,
+      "lastContact": "2026-04-07",
+      "contactHistory": [
+        {
+          "date": "2026-02-13",
+          "type": "direct-apply",
+          "status": "rejected",
+          "response": "rejected",
+          "notes": "Chosen to move forward with other candidates whose skills and experiences more closely align with the specific requirements for this role."
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 1,
+      "totalContacts": 1,
+      "notes": "Ruby backend, Lisbon hybrid. REJECTED: Skills/experience don't align with specific requirements.",
+      "domain": "catawiki.com",
+      "status": "outreach"
+    },
+    {
+      "name": "Proxify",
+      "website": "https://proxify.io",
+      "sector": "Talent Platform",
+      "techStack": [
+        "React",
+        "CI/CD",
+        "Performance"
+      ],
+      "stage": "startup",
+      "score": 40,
+      "lastContact": "2026-04-07",
+      "contactHistory": [
+        {
+          "date": "2026-02-11",
+          "type": "direct-apply",
+          "status": "no-response",
+          "response": "no-response",
+          "notes": "No response received after 51+ days - auto-marked as no-response"
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 1,
+      "totalContacts": 1,
+      "notes": "Remote talent platform. NO RESPONSE after 51+ days.",
+      "domain": "proxify.io",
+      "status": "outreach"
+    },
+    {
+      "name": "Calculum AI",
+      "website": "https://www.calculum.ai/",
+      "sector": "FinTech/Payments",
+      "techStack": [
+        "Vue.js",
+        "Pinia",
+        "Kendo UI"
+      ],
+      "stage": "startup",
+      "score": 30,
+      "lastContact": "2026-02-16",
+      "contactHistory": [
+        {
+          "date": "2026-02-16",
+          "type": "direct-apply",
+          "status": "negociation",
+          "response": "negative",
+          "notes": "Got interview, moved to negociation, but salary too low - rejected offer"
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 0,
+      "totalContacts": 1,
+      "notes": "Telegram-based payment platform. Had interview and negociation but rejected due to low salary.",
+      "domain": "calculum.ai",
+      "status": "black-list"
+    },
+    {
+      "name": "HireBoost",
+      "website": "https://hireboost.io/",
+      "sector": "HR/Talent Platform",
+      "techStack": [
+        "React",
+        "Node.js",
+        "TypeScript",
+        "AI"
+      ],
+      "stage": "startup",
+      "score": 40,
+      "lastContact": "2026-02-16",
+      "contactHistory": [
+        {
+          "date": "2026-02-16",
+          "type": "direct-apply",
+          "status": "no-response",
+          "response": "no-response",
+          "notes": "No response received"
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 1,
+      "totalContacts": 1,
+      "notes": "AI-powered talent platform. NO RESPONSE after application.",
+      "domain": "hireboost.io",
+      "status": "no-response"
+    },
+    {
+      "name": "TECLA",
+      "website": "https://teclatam.com",
+      "sector": "IT Services / Staff Augmentation",
+      "techStack": [
+        "Vue.js",
+        "Nuxt.js",
+        "TypeScript"
+      ],
+      "stage": "growth",
+      "score": 42,
+      "lastContact": "2026-04-23",
+      "contactHistory": [
+        {
+          "date": "2026-04-13",
+          "type": "outreach",
+          "status": "sent",
+          "response": "no-response",
+          "notes": "Sent outreach to all 10 email patterns. All delivered successfully.",
+          "emailsSent": [
+            "careers@teclatam.com",
+            "jobs@teclatam.com",
+            "hiring@teclatam.com",
+            "recruiting@teclatam.com",
+            "talent@teclatam.com",
+            "team@teclatam.com",
+            "hr@teclatam.com",
+            "contact@teclatam.com",
+            "hello@teclatam.com",
+            "info@teclatam.com"
+          ],
+          "emailsFailed": []
+        },
+        {
+          "date": "2026-04-23",
+          "type": "follow-up",
+          "status": "sent",
+          "response": "no-response",
+          "emailsSent": [
+            "careers@teclatam.com",
+            "jobs@teclatam.com",
+            "hiring@teclatam.com",
+            "recruiting@teclatam.com",
+            "talent@teclatam.com",
+            "team@teclatam.com",
+            "hr@teclatam.com",
+            "contact@teclatam.com",
+            "hello@teclatam.com",
+            "info@teclatam.com"
+          ],
+          "emailsFailed": [],
+          "notes": "Follow-up sent to 10 emails from original outreach"
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 2,
+      "totalContacts": 2,
+      "notes": "IT Services / Staff Augmentation, remote-first, 100+ experts in LATAM. OUTREACH SENT.",
+      "domain": "teclatam.com",
+      "status": "follow-up"
+    },
+    {
+      "name": "iubenda",
+      "website": "https://www.iubenda.com",
+      "sector": "SaaS / Legal Tech",
+      "techStack": [
+        "Vue.js",
+        "JavaScript",
+        "TypeScript"
+      ],
+      "stage": "Growth",
+      "score": 48,
+      "lastContact": "2026-04-23",
+      "contactHistory": [
+        {
+          "date": "2026-04-15",
+          "type": "outreach",
+          "status": "sent",
+          "response": "no-response",
+          "notes": "Sent outreach to 10 email patterns. 9 bounced, only info@iubenda.com delivered.",
+          "emailsSent": [
+            "info@iubenda.com"
+          ],
+          "emailsFailed": [
+            "jobs@iubenda.com",
+            "careers@iubenda.com",
+            "hello@iubenda.com",
+            "hiring@iubenda.com",
+            "recruiting@iubenda.com",
+            "talent@iubenda.com",
+            "team@iubenda.com",
+            "hr@iubenda.com",
+            "contact@iubenda.com"
+          ]
+        },
+        {
+          "date": "2026-04-23",
+          "type": "follow-up",
+          "status": "sent",
+          "response": "no-response",
+          "emailsSent": [
+            "info@iubenda.com"
+          ],
+          "emailsFailed": [],
+          "notes": "Follow-up sent to 1 emails from original outreach"
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 2,
+      "totalContacts": 2,
+      "notes": "SaaS / Legal Tech, Italy-based, growing globally. OUTREACH SENT.",
+      "domain": "iubenda.com",
+      "status": "follow-up"
+    },
+    {
+      "name": "Wited",
+      "website": "https://www.wited.com",
+      "sector": "EdTech / Education Technology",
+      "techStack": [
+        "Vue.js",
+        "Nuxt.js",
+        "TypeScript",
+        "Pinia"
+      ],
+      "stage": "growth",
+      "score": 0,
+      "lastContact": "2026-04-15",
+      "contactHistory": [
+        {
+          "date": "2026-04-15",
+          "type": "outreach",
+          "status": "bounced",
+          "response": "bounced",
+          "notes": "Sent outreach to 23 email patterns. ALL BOUNCED - company email domain appears inactive.",
+          "emailsSent": [],
+          "emailsFailed": [
+            "careers@wited.com",
+            "jobs@wited.com",
+            "hiring@wited.com",
+            "recruiting@wited.com",
+            "talent@wited.com",
+            "team@wited.com",
+            "hr@wited.com",
+            "contact@wited.com",
+            "hello@wited.com",
+            "info@wited.com",
+            "recruitment@wited.com",
+            "apply@wited.com",
+            "work@wited.com",
+            "support@wited.com",
+            "admin@wited.com",
+            "office@wited.com",
+            "contactus@wited.com",
+            "general@wited.com",
+            "mail@wited.com",
+            "dev@wited.com",
+            "it@wited.com",
+            "staff@wited.com",
+            "tech@wited.com"
+          ]
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 1,
+      "totalContacts": 1,
+      "notes": "EdTech, Chile-based. UNREACHABLE: All 23 email patterns bounced. Do not propose.",
+      "domain": "wited.com",
+      "status": "black-list"
+    },
+    {
+      "name": "FullStack Labs",
+      "website": "https://www.fullstacklabs.co",
+      "sector": "Software Development / Staff Augmentation",
+      "techStack": [
+        "React",
+        "Vue",
+        "Mobile"
+      ],
+      "stage": "enterprise",
+      "score": 50,
+      "lastContact": "2026-04-23",
+      "contactHistory": [
+        {
+          "date": "2026-04-15",
+          "type": "outreach",
+          "status": "sent",
+          "response": "no-response",
+          "notes": "Sent outreach to 10 email patterns. 8 bounced, only team@ and hr@ delivered.",
+          "emailsSent": [
+            "team@fullstacklabs.co",
+            "hr@fullstacklabs.co"
+          ],
+          "emailsFailed": [
+            "info@fullstacklabs.co",
+            "careers@fullstacklabs.co",
+            "jobs@fullstacklabs.co",
+            "hiring@fullstacklabs.co",
+            "recruiting@fullstacklabs.co",
+            "talent@fullstacklabs.co",
+            "contact@fullstacklabs.co",
+            "hello@fullstacklabs.co"
+          ]
+        },
+        {
+          "date": "2026-04-23",
+          "type": "follow-up",
+          "status": "sent",
+          "response": "no-response",
+          "emailsSent": [
+            "team@fullstacklabs.co",
+            "hr@fullstacklabs.co"
+          ],
+          "emailsFailed": [],
+          "notes": "Follow-up sent to 2 emails from original outreach"
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 2,
+      "totalContacts": 2,
+      "notes": "US-based software development company, strong LATAM focus. Costa Rica position requires residency.",
+      "domain": "fullstacklabs.co",
+      "status": "follow-up"
+    },
+    {
+      "name": "Venturus",
+      "website": "https://www.venturus.org.br",
+      "sector": "Software Development / AI / Computer Vision",
+      "techStack": [
+        "Vue.js",
+        "Vue 3",
+        "Composition API",
+        "TypeScript",
+        "Vitest"
+      ],
+      "stage": "enterprise",
+      "score": 68,
+      "lastContact": "2026-04-23",
+      "contactHistory": [
+        {
+          "date": "2026-04-15",
+          "type": "outreach",
+          "status": "sent",
+          "response": "no-response",
+          "notes": "21 emails bounced (undelivered), 2 rejected by SPAM filter (never sent).",
+          "emailsSent": [
+            "recruitment@venturus.org.br",
+            "apply@venturus.org.br"
+          ],
+          "emailsFailed": [
+            "rh@venturus.org.br",
+            "careers@venturus.org.br",
+            "jobs@venturus.org.br",
+            "hiring@venturus.org.br",
+            "recruiting@venturus.org.br",
+            "talent@venturus.org.br",
+            "team@venturus.org.br",
+            "hr@venturus.org.br",
+            "contact@venturus.org.br",
+            "info@venturus.org.br",
+            "support@venturus.org.br",
+            "admin@venturus.org.br",
+            "office@venturus.org.br",
+            "contactus@venturus.org.br",
+            "general@venturus.org.br",
+            "mail@venturus.org.br",
+            "staff@venturus.org.br",
+            "dev@venturus.org.br",
+            "tech@venturus.org.br",
+            "it@venturus.org.br"
+          ]
+        },
+        {
+          "date": "2026-04-23",
+          "type": "follow-up",
+          "status": "sent",
+          "response": "no-response",
+          "emailsSent": [],
+          "emailsFailed": [
+            "recruitment@venturus.org.br",
+            "apply@venturus.org.br"
+          ],
+          "notes": "Follow-up sent to 2 emails from original outreach"
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 2,
+      "totalContacts": 2,
+      "notes": "Brazilian tech company, 30+ years, 800+ employees. Position requires Brazil but outreach for remote opportunities.",
+      "domain": "venturus.org.br",
+      "status": "follow-up"
+    },
+    {
+      "name": "South Geeks",
+      "website": "https://www.southgeeks.com",
+      "sector": "Software Consultancy / Staff Augmentation",
+      "techStack": [
+        "Vue.js",
+        "React",
+        "Nuxt",
+        "Next",
+        "TypeScript"
+      ],
+      "stage": "growth",
+      "score": 67,
+      "lastContact": "2026-04-23",
+      "contactHistory": [
+        {
+          "date": "2026-04-15",
+          "type": "outreach",
+          "status": "sent",
+          "response": "no-response",
+          "notes": "14 emails bounced (undelivered), 9 sent but no response, 2 rejected by SPAM filter.",
+          "emailsSent": [
+            "careers@southgeeks.com",
+            "jobs@southgeeks.com",
+            "hiring@southgeeks.com",
+            "recruiting@southgeeks.com",
+            "talent@southgeeks.com",
+            "team@southgeeks.com",
+            "hr@southgeeks.com",
+            "contact@southgeeks.com",
+            "hello@southgeeks.com"
+          ],
+          "emailsFailed": [
+            "info@southgeeks.com",
+            "support@southgeeks.com",
+            "admin@southgeeks.com",
+            "office@southgeeks.com",
+            "contactus@southgeeks.com",
+            "general@southgeeks.com",
+            "mail@southgeeks.com",
+            "staff@southgeeks.com",
+            "dev@southgeeks.com",
+            "tech@southgeeks.com",
+            "it@southgeeks.com",
+            "recruitment@southgeeks.com",
+            "apply@southgeeks.com",
+            "work@southgeeks.com"
+          ]
+        },
+        {
+          "date": "2026-04-23",
+          "type": "follow-up",
+          "status": "sent",
+          "response": "no-response",
+          "emailsSent": [
+            "careers@southgeeks.com",
+            "jobs@southgeeks.com",
+            "hiring@southgeeks.com",
+            "recruiting@southgeeks.com",
+            "talent@southgeeks.com",
+            "team@southgeeks.com",
+            "hr@southgeeks.com",
+            "contact@southgeeks.com",
+            "hello@southgeeks.com"
+          ],
+          "emailsFailed": [],
+          "notes": "Follow-up sent to 9 emails from original outreach"
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 2,
+      "totalContacts": 2,
+      "notes": "Software consultancy connecting top LATAM developers with companies worldwide.",
+      "domain": "southgeeks.com",
+      "status": "follow-up"
+    },
+    {
+      "name": "Workana",
+      "website": "https://www.workana.com",
+      "sector": "Freelance Platform / Talent Marketplace",
+      "techStack": [
+        "Node.js",
+        "Golang",
+        "PHP",
+        "React",
+        "Vue"
+      ],
+      "stage": "growth",
+      "score": 65,
+      "lastContact": "2026-04-23",
+      "contactHistory": [
+        {
+          "date": "2026-04-15",
+          "type": "outreach",
+          "status": "sent",
+          "response": "no-response",
+          "notes": "17 emails bounced (undelivered), 6 sent but no response, 2 rejected by SPAM filter.",
+          "emailsSent": [
+            "jobs@workana.com",
+            "recruiting@workana.com",
+            "talent@workana.com",
+            "team@workana.com",
+            "contact@workana.com",
+            "hello@workana.com"
+          ],
+          "emailsFailed": [
+            "hr@workana.com",
+            "careers@workana.com",
+            "recruitment@workana.com",
+            "hiring@workana.com",
+            "apply@workana.com",
+            "work@workana.com",
+            "info@workana.com",
+            "support@workana.com",
+            "admin@workana.com",
+            "office@workana.com",
+            "contactus@workana.com",
+            "general@workana.com",
+            "mail@workana.com",
+            "staff@workana.com",
+            "dev@workana.com",
+            "tech@workana.com",
+            "it@workana.com"
+          ]
+        },
+        {
+          "date": "2026-04-23",
+          "type": "follow-up",
+          "status": "sent",
+          "response": "no-response",
+          "emailsSent": [
+            "jobs@workana.com",
+            "recruiting@workana.com",
+            "talent@workana.com",
+            "team@workana.com",
+            "contact@workana.com",
+            "hello@workana.com"
+          ],
+          "emailsFailed": [],
+          "notes": "Follow-up sent to 6 emails from original outreach"
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 2,
+      "totalContacts": 2,
+      "notes": "One of the largest freelance platforms in Latin America. $5,000/month contractor rate.",
+      "domain": "workana.com",
+      "status": "follow-up"
+    },
+    {
+      "name": "Sparq",
+      "website": "https://www.sparq.com",
+      "sector": "Software Development",
+      "techStack": [
+        "Node.js",
+        "React",
+        "Vue"
+      ],
+      "stage": "unknown",
+      "score": 63,
+      "lastContact": "2026-04-23",
+      "contactHistory": [
+        {
+          "date": "2026-04-15",
+          "type": "outreach",
+          "status": "sent",
+          "response": "no-response",
+          "notes": "No undelivered messages found. 18 emails sent (no response), 5 rejected by SPAM filter.",
+          "emailsSent": [
+            "hr@sparq.com",
+            "careers@sparq.com",
+            "jobs@sparq.com",
+            "recruiting@sparq.com",
+            "talent@sparq.com",
+            "team@sparq.com",
+            "contact@sparq.com",
+            "info@sparq.com",
+            "hello@sparq.com",
+            "support@sparq.com",
+            "admin@sparq.com",
+            "contactus@sparq.com",
+            "general@sparq.com",
+            "mail@sparq.com",
+            "staff@sparq.com",
+            "dev@sparq.com",
+            "tech@sparq.com"
+          ],
+          "emailsFailed": [
+            "recruitment@sparq.com",
+            "hiring@sparq.com",
+            "apply@sparq.com",
+            "work@sparq.com",
+            "office@sparq.com",
+            "it@sparq.com"
+          ]
+        },
+        {
+          "date": "2026-04-23",
+          "type": "follow-up",
+          "status": "sent",
+          "response": "no-response",
+          "emailsSent": [
+            "hr@sparq.com",
+            "careers@sparq.com",
+            "jobs@sparq.com",
+            "recruiting@sparq.com",
+            "talent@sparq.com",
+            "team@sparq.com",
+            "contact@sparq.com",
+            "info@sparq.com",
+            "hello@sparq.com",
+            "support@sparq.com",
+            "admin@sparq.com",
+            "contactus@sparq.com",
+            "general@sparq.com",
+            "mail@sparq.com",
+            "staff@sparq.com",
+            "dev@sparq.com",
+            "tech@sparq.com"
+          ],
+          "emailsFailed": [],
+          "notes": "Follow-up sent to 17 emails from original outreach"
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 2,
+      "totalContacts": 2,
+      "notes": "Software development company, LATAM focus.",
+      "domain": "sparq.com",
+      "status": "follow-up"
+    },
+    {
+      "name": "Azumo",
+      "website": "https://azumo.com",
+      "sector": "Staff Augmentation / IT Services",
+      "techStack": [
+        "React",
+        "Angular",
+        "Vue",
+        "TypeScript"
+      ],
+      "stage": "growth",
+      "score": 62,
+      "lastContact": "2026-04-23",
+      "contactHistory": [
+        {
+          "date": "2026-04-15",
+          "type": "outreach",
+          "status": "sent",
+          "response": "no-response",
+          "notes": "15 emails bounced (undelivered), 9 sent but no response, 6 rejected by SPAM filter.",
+          "emailsSent": [
+            "people@azumo.co",
+            "careers@azumo.com",
+            "jobs@azumo.com",
+            "hiring@azumo.com",
+            "recruiting@azumo.com",
+            "team@azumo.com",
+            "hr@azumo.com",
+            "contact@azumo.com",
+            "hello@azumo.com"
+          ],
+          "emailsFailed": [
+            "info@azumo.com",
+            "support@azumo.com",
+            "admin@azumo.com",
+            "office@azumo.com",
+            "recruitment@azumo.com",
+            "apply@azumo.com",
+            "work@azumo.com",
+            "contactus@azumo.com",
+            "general@azumo.com",
+            "mail@azumo.com",
+            "staff@azumo.com",
+            "dev@azumo.com",
+            "tech@azumo.com",
+            "it@azumo.com",
+            "talent@azumo.com"
+          ]
+        },
+        {
+          "date": "2026-04-23",
+          "type": "follow-up",
+          "status": "sent",
+          "response": "no-response",
+          "emailsSent": [
+            "people@azumo.co"
+          ],
+          "emailsFailed": [
+            "careers@azumo.com",
+            "jobs@azumo.com",
+            "hiring@azumo.com",
+            "recruiting@azumo.com",
+            "team@azumo.com",
+            "hr@azumo.com",
+            "contact@azumo.com",
+            "hello@azumo.com"
+          ],
+          "notes": "Follow-up sent to 9 emails from original outreach"
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 2,
+      "totalContacts": 2,
+      "notes": "Nearshore software development company, LATAM talent to US companies.",
+      "domain": "azumo.com",
+      "status": "follow-up"
+    },
+    {
+      "name": "Tekton Labs",
+      "website": "https://tekton-labs.com",
+      "sector": "IT Services / Security",
+      "techStack": [
+        "Vue.js",
+        "Vue3",
+        "Pinia",
+        "TypeScript",
+        "Jest/Vitest"
+      ],
+      "stage": "growth",
+      "score": 70,
+      "lastContact": "2026-04-18",
+      "contactHistory": [
+        {
+          "date": "2026-04-18",
+          "type": "outreach",
+          "status": "sent",
+          "response": "no-response",
+          "notes": "Sent outreach to 23 email patterns. All 23 sent successfully.",
+          "emailsSent": [
+            "careers@tekton-labs.com",
+            "jobs@tekton-labs.com",
+            "hiring@tekton-labs.com",
+            "recruiting@tekton-labs.com",
+            "talent@tekton-labs.com",
+            "team@tekton-labs.com",
+            "hr@tekton-labs.com",
+            "contact@tekton-labs.com",
+            "hello@tekton-labs.com",
+            "info@tekton-labs.com",
+            "support@tekton-labs.com",
+            "admin@tekton-labs.com",
+            "office@tekton-labs.com",
+            "contactus@tekton-labs.com",
+            "general@tekton-labs.com",
+            "mail@tekton-labs.com",
+            "staff@tekton-labs.com",
+            "dev@tekton-labs.com",
+            "tech@tekton-labs.com",
+            "it@tekton-labs.com",
+            "recruitment@tekton-labs.com",
+            "apply@tekton-labs.com",
+            "work@tekton-labs.com"
+          ],
+          "emailsFailed": []
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 1,
+      "totalContacts": 1,
+      "notes": "Technology company focused on security solutions. Position in LATAM (Spanish posting).",
+      "domain": "tekton-labs.com",
+      "status": "outreach"
+    },
+    {
+      "name": "WALTER",
+      "website": "https://www.gowalter.co",
+      "sector": "Staff Augmentation / Talent Platform",
+      "techStack": [
+        "React",
+        "Vue",
+        "Node.js",
+        "Python",
+        "C#/.NET"
+      ],
+      "stage": "growth",
+      "score": 75,
+      "lastContact": "2026-04-18",
+      "contactHistory": [
+        {
+          "date": "2026-04-18",
+          "type": "outreach",
+          "status": "sent",
+          "response": "no-response",
+          "notes": "Sent outreach to 23 email patterns. All 23 sent successfully.",
+          "emailsSent": [
+            "talent@gowalter.co",
+            "jobs@gowalter.co",
+            "careers@gowalter.co",
+            "hiring@gowalter.co",
+            "recruiting@gowalter.co",
+            "team@gowalter.co",
+            "hr@gowalter.co",
+            "contact@gowalter.co",
+            "hello@gowalter.co",
+            "info@gowalter.co",
+            "support@gowalter.co",
+            "admin@gowalter.co",
+            "office@gowalter.co",
+            "contactus@gowalter.co",
+            "general@gowalter.co",
+            "mail@gowalter.co",
+            "staff@gowalter.co",
+            "dev@gowalter.co",
+            "tech@gowalter.co",
+            "it@gowalter.co",
+            "recruitment@gowalter.co",
+            "apply@gowalter.co",
+            "work@gowalter.co"
+          ],
+          "emailsFailed": []
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 1,
+      "totalContacts": 1,
+      "notes": "Modern hiring platform connecting businesses with top-tier remote talent.",
+      "domain": "gowalter.co",
+      "status": "outreach"
+    },
+    {
+      "name": "Curotec",
+      "website": "https://www.curotec.com",
+      "sector": "Software Development / IT Services",
+      "techStack": [
+        "Vue.js",
+        "NuxtJS",
+        "React",
+        "Laravel",
+        "PHP"
+      ],
+      "stage": "enterprise",
+      "score": 80,
+      "lastContact": "2026-04-18",
+      "contactHistory": [
+        {
+          "date": "2026-04-18",
+          "type": "outreach",
+          "status": "sent",
+          "response": "neutral",
+          "notes": "Sent outreach to 24 email patterns. Received out-of-office reply from Victoria Falla (viki@curotec.com).",
+          "emailsSent": [
+            "info@curotec.com",
+            "jobs@curotec.com",
+            "careers@curotec.com",
+            "recruiting@curotec.com",
+            "hiring@curotec.com",
+            "talent@curotec.com",
+            "hr@curotec.com",
+            "support@curotec.com",
+            "admin@curotec.com",
+            "office@curotec.com",
+            "contact@curotec.com",
+            "contactus@curotec.com",
+            "general@curotec.com",
+            "mail@curotec.com",
+            "staff@curotec.com",
+            "dev@curotec.com",
+            "tech@curotec.com",
+            "it@curotec.com",
+            "recruitment@curotec.com",
+            "apply@curotec.com",
+            "work@curotec.com",
+            "hello@curotec.com",
+            "team@curotec.com",
+            "emily.dickerson@curotec.com"
+          ],
+          "emailsFailed": []
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 0,
+      "totalContacts": 1,
+      "notes": "Globally leading software services company, official Laravel partner, 68 employees, 15+ years. Sent outreach, received out-of-office response.",
+      "domain": "curotec.com",
+      "status": "outreach"
+    },
+    {
+      "name": "Nango",
+      "website": "https://nango.dev",
+      "sector": "SaaS / Product Integrations / AI",
+      "techStack": [
+        "Frontend",
+        "TypeScript",
+        "product integrations"
+      ],
+      "stage": "startup",
+      "score": 72,
+      "lastContact": "2026-04-18",
+      "contactHistory": [
+        {
+          "date": "2026-04-18",
+          "type": "outreach",
+          "status": "sent",
+          "response": "no-response",
+          "notes": "Sent outreach to 23 email patterns. All 23 sent successfully.",
+          "emailsSent": [
+            "careers@nango.dev",
+            "jobs@nango.dev",
+            "hello@nango.dev",
+            "hiring@nango.dev",
+            "recruiting@nango.dev",
+            "talent@nango.dev",
+            "team@nango.dev",
+            "hr@nango.dev",
+            "contact@nango.dev",
+            "info@nango.dev",
+            "support@nango.dev",
+            "admin@nango.dev",
+            "office@nango.dev",
+            "contactus@nango.dev",
+            "general@nango.dev",
+            "mail@nango.dev",
+            "staff@nango.dev",
+            "dev@nango.dev",
+            "tech@nango.dev",
+            "it@nango.dev",
+            "recruitment@nango.dev",
+            "apply@nango.dev",
+            "work@nango.dev"
+          ],
+          "emailsFailed": []
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 1,
+      "totalContacts": 1,
+      "notes": "Nango (YC W23) - Helps developers build product integrations with AI, trusted by Replit, Motion, Electric.",
+      "domain": "nango.dev",
+      "status": "outreach"
+    }
+  ],
+  "lastUpdated": "2026-04-23"
+}

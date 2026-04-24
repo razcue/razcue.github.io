@@ -1,0 +1,250 @@
+{
+  "description": "Curated list of job boards, talent platforms, and company career pages for finding remote LATAM developers",
+  "sources": [
+    {
+      "name": "Driver",
+      "url": "https://driverp.com/jobs",
+      "type": "job_board"
+    },
+    {
+      "name": "Boomering",
+      "url": "https://boomering.zohorecruit.com/jobs/Careers",
+      "type": "direct_careers"
+    },
+    {
+      "name": "Haystack People",
+      "url": "https://www.haystackpeople.nl/index.php/CurrentLanguage/3",
+      "type": "job_board"
+    },
+    {
+      "name": "WITi (Get on Board)",
+      "url": "https://www.getonbrd.com/companies/witi",
+      "type": "job_board"
+    },
+    {
+      "name": "My Expertify",
+      "url": "https://myexpertify.com/jobs",
+      "type": "job_board"
+    },
+    {
+      "name": "Jaabz Programming",
+      "url": "https://jaabz.com/jobs/category/programming?keyword=frontend&posted=3&search_submitted=1",
+      "type": "job_board"
+    },
+    {
+      "name": "Gorilla Logic",
+      "url": "https://gorillalogic.com/careers/open-roles/",
+      "type": "staff_augmentation"
+    },
+    {
+      "name": "Vates",
+      "url": "https://vates.tech/en/careers/",
+      "type": "staff_augmentation"
+    },
+    {
+      "name": "Parallel Staff",
+      "url": "https://www.careers.parallelstaff.com/job-openings",
+      "type": "staff_augmentation"
+    },
+    {
+      "name": "Deel Careers",
+      "url": "https://www.deel.com/careers/open-roles/?type=FullTime&team=Engineering",
+      "type": "direct_careers"
+    },
+    {
+      "name": "Deel Positions",
+      "url": "https://www.deel.com/careers/position/",
+      "type": "direct_careers"
+    },
+    {
+      "name": "10 Pearls (LATAM)",
+      "url": "https://10pearls.com/latin-america-job-openings/",
+      "type": "staff_augmentation"
+    },
+    {
+      "name": "Admios",
+      "url": "https://admios-new-site.webflow.io/careers#open-positions",
+      "type": "staff_augmentation"
+    },
+    {
+      "name": "Blue Coding (Lever)",
+      "url": "https://jobs.lever.co/bluecoding",
+      "type": "job_board"
+    },
+    {
+      "name": "Jobsity",
+      "url": "https://careers.jobsity.com/explore-opportunities",
+      "type": "staff_augmentation"
+    },
+    {
+      "name": "Terminal",
+      "url": "https://www.terminal.io/engineers/job-openings",
+      "type": "talent_platform"
+    },
+    {
+      "name": "Cloud Devs",
+      "url": "https://clouddevs.com/jobs/",
+      "type": "job_board"
+    },
+    {
+      "name": "TECLA Careers",
+      "url": "https://www.tecla.io/about/careers",
+      "type": "talent_platform"
+    },
+    {
+      "name": "Turing",
+      "url": "https://careers.turing.com/",
+      "type": "talent_platform"
+    },
+    {
+      "name": "Revelo",
+      "url": "https://careers.revelo.com/",
+      "type": "talent_platform"
+    },
+    {
+      "name": "Toptal",
+      "url": "https://www.toptal.com/careers#positions",
+      "type": "talent_platform"
+    },
+    {
+      "name": "BairesDev",
+      "url": "https://talent.bairesdev.com/",
+      "type": "talent_platform"
+    },
+    {
+      "name": "Hire With Near",
+      "url": "https://jobs.hirewithnear.com/",
+      "type": "talent_platform"
+    },
+    {
+      "name": "Howdy Latam",
+      "url": "https://www.howdylatam.com/oportunidades",
+      "type": "talent_platform"
+    },
+    {
+      "name": "Ncube",
+      "url": "https://ncube.com/career",
+      "type": "direct_careers"
+    },
+    {
+      "name": "1840 & Company",
+      "url": "https://jobs.lever.co/1840%26Company",
+      "type": "talent_platform"
+    },
+    {
+      "name": "LatamCent",
+      "url": "https://latamcent.com/careers/",
+      "type": "direct_careers"
+    },
+    {
+      "name": "Venon Solutions",
+      "url": "https://www.careers-page.com/venon-solutions",
+      "type": "staff_augmentation"
+    },
+    {
+      "name": "Decskill",
+      "url": "https://decskill.com/en/community/",
+      "type": "staff_augmentation"
+    },
+    {
+      "name": "Team.blue",
+      "url": "https://careers.team.blue/jobs",
+      "type": "staff_augmentation"
+    },
+    {
+      "name": "Hire Web Creators",
+      "url": "https://hirewebcreators.com/",
+      "type": "staff_augmentation"
+    },
+    {
+      "name": "LatHire",
+      "url": "https://lathire.com/latam-jobs/",
+      "type": "job_board"
+    },
+    {
+      "name": "Arc.dev (Cuba)",
+      "url": "https://arc.dev/en-cu/remote-jobs",
+      "type": "job_board"
+    },
+    {
+      "name": "Jobgether (Cuba)",
+      "url": "https://jobgether.com/remote-jobs/cuba",
+      "type": "job_board"
+    },
+    {
+      "name": "Pros Marketplace",
+      "url": "https://prosmarketplace.com",
+      "type": "talent_platform"
+    },
+    {
+      "name": "Lupa",
+      "url": "https:// lupahire.com",
+      "type": "staff_augmentation"
+    },
+    {
+      "name": "NeuronHire",
+      "url": "https://www.neuronhire.com/",
+      "type": "staff_augmentation"
+    },
+    {
+      "name": "LatinDevs",
+      "url": "https://latindevs.com/",
+      "type": "talent_platform"
+    },
+    {
+      "name": "LatAmCoders",
+      "url": "https://www.latamcoders.com/",
+      "type": "talent_platform"
+    },
+    {
+      "name": "Solvedex",
+      "url": "https://solvedex.com/",
+      "type": "staff_augmentation"
+    },
+    {
+      "name": "Ideaware",
+      "url": "https://www.ideaware.co/",
+      "type": "staff_augmentation"
+    },
+    {
+      "name": "TalentHub",
+      "url": "https://www.talenthub.cloud/",
+      "type": "staff_augmentation"
+    },
+    {
+      "name": "Zipdev",
+      "url": "https://zipdevengineerstalent.com/",
+      "type": "staff_augmentation"
+    },
+    {
+      "name": "TeamEx",
+      "url": "https://teamex.dev/",
+      "type": "talent_platform"
+    },
+    {
+      "name": "Awana",
+      "url": "http://awana.io/",
+      "type": "staff_augmentation"
+    },
+    {
+      "name": "NetMidas",
+      "url": "https://netmidas.com/",
+      "type": "staff_augmentation"
+    }
+  ],
+  "notes": {
+    "last_updated": "2026-04-18",
+    "categories": {
+      "job_board": "General tech job listings",
+      "staff_augmentation": "Companies that provide remote talent to US companies",
+      "talent_platform": "Platforms connecting LATAM talent with global companies",
+      "direct_careers": "Direct company career pages"
+    },
+    "search_tips": [
+      "Prioritize sources with active job openings",
+      "Look for companies with 'remote worldwide' or 'global team' language",
+      "Check for 'we hire from LATAM' or 'no location restrictions'",
+      "Focus on companies that already employ remote workers in similar timezones"
+    ]
+  }
+}
