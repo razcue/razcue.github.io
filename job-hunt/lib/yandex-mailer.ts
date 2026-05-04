@@ -1,8 +1,5 @@
 import nodemailer from 'nodemailer';
-import path from 'path';
 import { parseArgs } from 'util';
-
-const PROJECT_ROOT = process.cwd() + '/..';
 
 const YANDEX_USER = process.env.YANDEX_USER;
 const YANDEX_APP_PASSWORD = process.env.YANDEX_APP_PASSWORD;
@@ -37,10 +34,12 @@ const EMAIL_PATTERNS = [
   'it@{{domain}}',
 ];
 
+const DELAY_BETWEEN_EMAILS = 3000; // 3 seconds to space out emails
+const RESUME_LINK = 'https://razcue.github.io/Rayko_Azcue_Resume.pdf';
+
 interface SendOptions {
   to: string;
   type: 'outreach' | 'follow-up' | 'summary';
-  attachment?: string;
   companyName?: string;
   companyData?: {
     website?: string;
@@ -73,6 +72,8 @@ function outreachTemplate(companyName: string): { subject: string; html: string 
 
 <p>I'm based in Havana, Cuba, and available for remote work worldwide or relocation. Regarding payments, I can receive money in a US bank account and am open to discussing other payment methods if needed.</p>
 
+<p>You can view my resume here: <a href="${RESUME_LINK}">${RESUME_LINK}</a></p>
+
 <p>Would love to chat about any opportunities you might have. I'm happy to share more about my experience or answer any questions.</p>
 
 <p>Best,<br>
@@ -94,6 +95,8 @@ function followUpTemplate(companyName: string): { subject: string; html: string 
 <p>I'm a Senior Front End & Full Stack Engineer with 7+ years building scalable, performant web applications across SaaS, e-commerce, and other sectors, with focus on TypeScript and PHP. I have a proven track record in remote-first distributed teams across US, Spain, and LATAM.</p>
 
 <p>I understand things can get busy, and I just wanted to check if there might be any current or upcoming positions that could be a good fit.</p>
+
+<p>You can view my resume here: <a href="${RESUME_LINK}">${RESUME_LINK}</a></p>
 
 <p>If now isn't the right time, no worries at all - feel free to keep my resume on file for future opportunities.</p>
 
@@ -249,13 +252,7 @@ async function sendEmail(to: string, subject: string, html: string, attachment?:
 }
 
 export async function send(options: SendOptions): Promise<SendResult> {
-  const { to, type, attachment, companyName, companyData } = options;
-
-  // Default resume for outreach and follow-up if no attachment provided
-  const DEFAULT_RESUME = path.join(PROJECT_ROOT, 'public/Rayko_Azcue_Resume.pdf');
-  const resumeAttachment = (type === 'outreach' || type === 'follow-up') && !attachment 
-    ? DEFAULT_RESUME 
-    : attachment;
+  const { to, type, companyName, companyData } = options;
 
   // Split comma-separated emails into array
   const emailList = to.split(',').map(e => e.trim()).filter(e => e);
@@ -278,20 +275,8 @@ export async function send(options: SendOptions): Promise<SendResult> {
     template = followUpTemplate;
   }
   
-  // For summary, use companyData if provided; otherwise use default values to avoid null errors
-  const summaryData = type === 'summary' ? {
-    website: companyData?.website || '',
-    sector: companyData?.sector || '',
-    techStack: companyData?.techStack || [],
-    notes: companyData?.notes || '',
-    contactType: companyData?.contactType || companyName || 'summary',
-    emailsSent: companyData?.emailsSent || [],
-    emailsFailed: companyData?.emailsFailed || [],
-    dateTime: companyData?.dateTime || new Date().toISOString()
-  } : null;
-  
-  const templateResult = summaryData
-    ? summaryTemplate(targetCompany, summaryData)
+  const subject = type === 'summary' && companyData 
+    ? (template as (name: string, data: any) => ({ subject: '', html: '' }))(targetCompany, companyData)
     : (template as (name: string) => ({ subject: '', html: '' }))(targetCompany);
 
   const sent: string[] = [];
@@ -299,7 +284,7 @@ export async function send(options: SendOptions): Promise<SendResult> {
   const messages: string[] = [];
 
   for (const email of recipients) {
-    const result = await sendEmail(email, templateResult.subject, templateResult.html, resumeAttachment);
+    const result = await sendEmail(email, subject.subject, subject.html, undefined);
 
     if (result.success) {
       sent.push(email);
@@ -307,6 +292,11 @@ export async function send(options: SendOptions): Promise<SendResult> {
     } else {
       failed.push({ email, error: result.error || 'Unknown error' });
       messages.push(`✗ Failed to ${email}: ${result.error}`);
+    }
+
+    // Add delay between emails to avoid spam detection
+    if (recipients.indexOf(email) < recipients.length - 1) {
+      await new Promise(resolve => setTimeout(resolve, DELAY_BETWEEN_EMAILS));
     }
   }
 
@@ -344,20 +334,18 @@ async function main() {
     options: {
       to: { type: 'string' },
       type: { type: 'string' },
-      attachment: { type: 'string' },
       company: { type: 'string' },
     },
   });
 
-  const { to, type, attachment, company } = values;
+  const { to, type, company } = values;
 
   if (!to || !type) {
-    console.error('Usage: bun run lib/yandex-mailer.ts --to <email|domain> --type <outreach|follow-up> [--attachment <path>] [--company <name>]');
+    console.error('Usage: bun run lib/yandex-mailer.ts --to <email|domain> --type <outreach|follow-up> [--company <name>]');
     console.error('');
     console.error('Options:');
     console.error('  --to <value>     Recipient email or domain (required)');
     console.error('  --type <val>    Type: "outreach" or "follow-up" (required)');
-    console.error('  --attachment    Resume PDF path (optional)');
     console.error('  --company       Company name for email template (optional)');
     process.exit(1);
   }
@@ -375,10 +363,9 @@ async function main() {
 
   console.log(`Sending ${type} email to: ${target}`);
   console.log(`Type: ${type}`);
-  if (attachment) console.log(`Attachment: ${attachment}`);
   console.log('');
 
-  const result = await send({ to, type: type as 'outreach' | 'follow-up' | 'summary', attachment, companyName });
+  const result = await send({ to, type: type as 'outreach' | 'follow-up' | 'summary', companyName });
 
   console.log('\n--- Results ---');
   for (const msg of result.messages) {

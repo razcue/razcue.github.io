@@ -1,0 +1,148 @@
+{
+  "metadata": {
+    "id": "2026-02-15-the-big-phone-store-backend-developer",
+    "type": "direct-apply",
+    "company": {
+      "name": "The Big Phone Store",
+      "website": "https://www.thebigphonestore.co.uk/",
+      "email": null,
+      "sector": "E-commerce",
+      "techStack": ["Laravel", "PHP", "Vue.js", "Nuxt.js", "Redis", "RabbitMQ"]
+    },
+    "position": {
+      "title": "Backend Developer (Laravel)",
+      "url": "https://jaabz.com/jobs/163901-back-end-developer",
+      "applicationType": "company page contact form and email",
+      "model": "remote-global",
+      "location": "Remote (Global) or Hybrid (UK)",
+      "salary": "£27,000 - £50,000",
+      "keywords": {
+        "technical": [
+          "Laravel",
+          "PHP",
+          "Vue.js",
+          "Nuxt.js",
+          "Redis",
+          "RabbitMQ",
+          "Elasticsearch",
+          "OAuth2"
+        ],
+        "soft": ["E-commerce", "Sustainability", "UK culture"]
+      }
+    },
+    "status": "applied",
+    "applicationDate": "2026-02-15",
+    "rejectionDate": null,
+    "notes": {
+      "model": "Remote-friendly (global) or hybrid (UK). Apple equipment provided for UK developers. UK visa sponsorship after 6-12 months based on performance. 28 days paid holiday + birthday off. Salary: £27,000 - £50,000. RE-APPLIED: Initially sent to customer service email, company responded with recruitment email and asked to resubmit application to correct address.",
+      "company": "The Big Phone Store - eCommerce company focused on sustainability (tech/mobile devices). Full-time, permanent role. Inclusive, values-driven culture.",
+      "techStack": "Laravel 8.4, PHP 7.4, Vue.js, Nuxt.js, Redis, RabbitMQ, Elasticsearch, Horizon, OAuth2/Laravel Passport",
+      "role": "Backend Developer architecting and maintaining scalable backend systems for eCommerce operations and internal tools. Building APIs and integrations. Collaborating with frontend team using Vue/Nuxt. Contributing to architecture decisions.",
+      "rejection": "",
+      "applicationLimits": ""
+    }
+  },
+  "contactInfo": {
+    "location": "Havana, Cuba",
+    "phone": "+53 5476-1244",
+    "email": "razcue@yandex.com",
+    "website": "razcue.github.io"
+  },
+  "summary": "Full Stack Developer with 7+ years specializing in Laravel and Vue.js ecosystems. Proven experience building scalable eCommerce systems, RESTful APIs, and multi-tenant SaaS platforms. Strong background in database optimization, Redis caching, and secure authentication flows. Thrives in remote, autonomous environments with a passion for clean, maintainable code.",
+  "skills": {
+    "technical": "Laravel, PHP, Vue.js, Nuxt.js, JavaScript, TypeScript, PostgreSQL, MySQL, Redis, Elasticsearch, REST APIs, RabbitMQ, OAuth2, CI/CD, Git, Tailwind",
+    "languages": "English (C1 - Advanced), Spanish (Native)"
+  },
+  "education": [
+    {
+      "institution": "University of Informatics Sciences",
+      "degree": "Computer Sciences Engineer - Bachelor's degree",
+      "location": "Havana, Cuba",
+      "date": "Sep 2013 - Jul 2018"
+    }
+  ],
+  "experience": [
+    {
+      "company": "BSE America",
+      "title": "Lead Developer",
+      "location": "Remote, Panama",
+      "dateRange": "Jan 2024 – Nov 2024",
+      "bullets": [
+        "Architected end-to-end CRM with WooCommerce integration using Laravel, implementing automated invoicing and payment processing integrated with Panama's electronic billing API for tax compliance",
+        "Optimized PostgreSQL database queries and implemented Redis caching layer, reducing API response times by 35% and improving checkout flow performance",
+        "Mentored 3 developers on Laravel and Vue.js best practices, implementing code review processes that improved team code quality and deployment success rates"
+      ],
+      "skills": "PHP, TypeScript, JavaScript, Laravel, Vue.js, PostgreSQL, Redis, AWS, Docker, CI/CD, REST APIs"
+    },
+    {
+      "company": "First Due",
+      "title": "Full Stack Developer",
+      "location": "Remote, New York, US",
+      "dateRange": "Mar 2021 – Nov 2023",
+      "bullets": [
+        "Developed multi-tenant SaaS features using PHP and Vue.js serving 40+ enterprise clients, implementing RESTful APIs and Google Maps/ArcGIS API integrations for geolocation services",
+        "Built barcode/QR scanning system processing 5,000+ daily scans with 99% accuracy, optimizing data synchronization and Redis caching for high-volume operations"
+      ],
+      "skills": "PHP, JavaScript, Laravel, Vue.js, PostgreSQL, Redis, Docker, REST APIs"
+    },
+    {
+      "company": "Grupo de Electrónica para el Turismo (GET)",
+      "title": "Full Stack Developer",
+      "location": "Havana, Cuba",
+      "dateRange": "Mar 2019 – Nov 2020",
+      "bullets": [
+        "Led development of multi-tenant document management system using Laravel and Vue.js with Elasticsearch integration, reducing search response times to under 1 second",
+        "Implemented RBAC authentication system and RESTful APIs for secure data access across government and enterprise clients"
+      ],
+      "skills": "PHP, JavaScript, Laravel, Vue.js, Elasticsearch, PostgreSQL, Redis"
+    }
+  ],
+  "artifacts": {
+    "coverLetter": [
+      "Dear Hiring Manager,",
+      "",
+      "I'm excited to apply for the Backend Developer (Laravel) position at The Big Phone Store. With 7+ years of experience building scalable backend systems in Laravel and PHP, I bring hands-on expertise across your entire stack—from Laravel APIs and database optimization to Vue.js frontend collaboration and Redis/Elasticsearch integrations.",
+      "",
+      "At BSE America, I architected an end-to-end CRM with WooCommerce integration, building RESTful APIs for automated invoicing and payment processing in a remote setting. I implemented Redis caching and PostgreSQL optimizations that reduced API response times by 35%, directly improving eCommerce checkout performance. During my time at First Due, I developed multi-tenant SaaS features serving 40+ enterprise clients using PHP and Vue.js, handling 5,000+ daily transactions with robust background job processing.",
+      "",
+      "Your tech stack aligns perfectly with my experience: Laravel (8.4/10+), PHP (7.4+), Vue.js/Nuxt.js, Redis, and Elasticsearch. I'm particularly drawn to your mission around sustainability in tech, and I appreciate your remote-first culture with visa sponsorship pathways. Having worked remotely with teams across the US, Spain, and Panama, I thrive in autonomous, results-driven environments.",
+      "",
+      "I'm passionate about writing clean, maintainable code and continuously improving system architecture. I would welcome the opportunity to contribute to The Big Phone Store's platform and help scale your eCommerce operations while growing with your team.",
+      "",
+      "Thank you for considering my application. I look forward to discussing how my Laravel expertise can support your technical goals.",
+      "",
+      "Best regards,",
+      "Rayko Azcue"
+    ],
+    "emailPitch": [
+      "Subject: Backend Developer Application - Laravel & Vue.js Specialist",
+      "",
+      "Hi Team,",
+      "",
+      "I'm Rayko, a Full Stack Developer with 7+ years specializing in Laravel, PHP, and Vue.js. I came across your Backend Developer opening on Jaabz and was immediately drawn to the opportunity to work with your eCommerce platform and sustainability mission.",
+      "",
+      "Recent highlights matching your stack:",
+      "• Architected Laravel CRM with WooCommerce integration and RESTful APIs for automated payments",
+      "• Implemented Redis caching and PostgreSQL optimization, reducing API response times by 35%",
+      "• Built multi-tenant SaaS using Laravel/Vue.js serving 40+ enterprise clients with 5,000+ daily transactions",
+      "• Led Elasticsearch integration reducing search times to <1 second",
+      "",
+      "I have extensive remote work experience (US, Spain, Panama teams) and thrive in autonomous, outcome-driven environments. Your remote-first setup and visa sponsorship pathway after 6-12 months aligns perfectly with my goals for international growth.",
+      "",
+      "I'd love to discuss how my Laravel and eCommerce experience can contribute to The Big Phone Store's technical roadmap.",
+      "",
+      "Best,",
+      "Rayko Azcue",
+      "razcue@yandex.com",
+      "+53 5476-1244",
+      "razcue.github.io"
+    ],
+    "socialMessage": [
+      "Hi! I'm Rayko, a Laravel/PHP Developer with 7+ years building eCommerce systems and APIs. I saw The Big Phone Store is hiring a Backend Developer and love your focus on sustainability in tech.",
+      "",
+      "I have hands-on experience with your exact stack: Laravel, Vue.js, Redis, Elasticsearch, and REST APIs. Recently built a WooCommerce-integrated CRM with automated payments and optimized database performance (35% faster response times).",
+      "",
+      "Experienced working remotely across US and EU teams. Excited about your remote-first culture and visa sponsorship pathway! Would love to connect and learn more about the role."
+    ]
+  }
+}

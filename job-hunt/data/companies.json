@@ -1173,7 +1173,227 @@
       "notes": "Nango (YC W23) - Helps developers build product integrations with AI, trusted by Replit, Motion, Electric.",
       "domain": "nango.dev",
       "status": "outreach"
+    },
+    {
+      "name": "DaCodes",
+      "website": "https://dacodes.com",
+      "sector": "Software Development / Staff Augmentation",
+      "techStack": [
+        ".NET",
+        "Vue.js",
+        "ASP.NET Core",
+        "SQL Server"
+      ],
+      "stage": "growth",
+      "score": 65,
+      "lastContact": "2026-04-24",
+      "contactHistory": [
+        {
+          "date": "2026-04-24",
+          "type": "outreach",
+          "status": "sent",
+          "response": "no-response",
+          "emailsSent": [
+            "hiring@dacodes.com",
+            "recruitment@dacodes.co"
+          ],
+          "emailsFailed": [],
+          "notes": "SSR Fullstack .NET/Vue.js position, LATAM focus, ~$75K salary."
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 1,
+      "totalContacts": 1,
+      "notes": "Mexican software development company, 300+ employees, projects in LATAM and USA. Sent to 2 emails.",
+      "domain": "dacodes.com",
+      "status": "outreach"
+    },
+    {
+      "name": "Lean Solutions Group",
+      "website": "https://leansolutionsgroup.com",
+      "sector": "Software Development / IT Services",
+      "techStack": [
+        "React",
+        "Next.js",
+        "Gatsby",
+        "AWS",
+        "TypeScript"
+      ],
+      "stage": "enterprise",
+      "score": 55,
+      "lastContact": "2026-04-24",
+      "contactHistory": [
+        {
+          "date": "2026-04-24",
+          "type": "outreach",
+          "status": "sent",
+          "response": "no-response",
+          "emailsSent": [
+            "hr@leansolutionsgroup.com",
+            "careers@leansolutionsgroup.com",
+            "jobs@leansolutionsgroup.com",
+            "recruiting@leansolutionsgroup.com",
+            "info@leansolutionsgroup.com"
+          ],
+          "emailsFailed": [],
+          "notes": "Senior Frontend Engineer position, LATAM focus, React/Next.js."
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 1,
+      "totalContacts": 1,
+      "notes": "Software services company, LATAM focus, strong AWS/cloud environment.",
+      "domain": "leansolutionsgroup.com",
+      "status": "outreach"
+    },
+    {
+      "name": "Sanctuary Computer",
+      "website": "https://sanctuarycomputer.com",
+      "sector": "Software Development / Creative Agency",
+      "techStack": [
+        "Vue.js",
+        "Nuxt.js",
+        "Next.js",
+        "Svelte",
+        "TypeScript",
+        "Sanity",
+        "Contentful"
+      ],
+      "stage": "growth",
+      "score": 75,
+      "lastContact": "2026-04-24",
+      "contactHistory": [
+        {
+          "date": "2026-04-24",
+          "type": "outreach",
+          "status": "sent",
+          "response": "no-response",
+          "emailsSent": [
+            "jobs+noreply@sanctuary.computer"
+          ],
+          "emailsFailed": [],
+          "notes": "Senior Frontend Developer (Freelance), Remote South America/Asia. $100K+, Vue/Nuxt/Next/Svelte. User confirmed email received."
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 1,
+      "totalContacts": 1,
+      "notes": "NYC-based creative technology agency, restaurant-style culture. Hiring for garden3d creative collective.",
+      "domain": "sanctuarycomputer.com",
+      "status": "outreach"
+    },
+    {
+      "name": "CVMATCHER",
+      "website": "https://cvmatcher.com",
+      "sector": "Talent Platform / Staff Augmentation",
+      "techStack": [
+        "Vue.js",
+        "Nuxt.js",
+        "TypeScript"
+      ],
+      "stage": "startup",
+      "score": 50,
+      "lastContact": "2026-04-24",
+      "contactHistory": [
+        {
+          "date": "2026-04-24",
+          "type": "outreach",
+          "status": "sent",
+          "response": "no-response",
+          "emailsSent": [
+            "hr@cvmatcher.com",
+            "careers@cvmatcher.com",
+            "jobs@cvmatcher.com",
+            "recruiting@cvmatcher.com",
+            "talent@cvmatcher.com",
+            "recruitment@cvmatcher.com",
+            "hiring@cvmatcher.com",
+            "apply@cvmatcher.com",
+            "work@cvmatcher.com",
+            "contact@cvmatcher.com",
+            "admin@cvmatcher.com",
+            "team@cvmatcher.com",
+            "contactus@cvmatcher.com",
+            "general@cvmatcher.com",
+            "staff@cvmatcher.com"
+          ],
+          "emailsFailed": [
+            "info@cvmatcher.com",
+            "hello@cvmatcher.com",
+            "support@cvmatcher.com",
+            "office@cvmatcher.com",
+            "mail@cvmatcher.com",
+            "dev@cvmatcher.com",
+            "tech@cvmatcher.com",
+            "it@cvmatcher.com"
+          ],
+          "notes": "Senior Vue.js Developer, Remote LATAM. 15 sent with delay + link (no attachment), 8 failed."
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 1,
+      "totalContacts": 1,
+      "notes": "IT talent network connecting developers with global companies for remote projects.",
+      "domain": "cvmatcher.com",
+      "status": "outreach"
+    },
+    {
+      "name": "Caylent",
+      "website": "https://caylent.com",
+      "sector": "Software Development / Cloud Native",
+      "techStack": [
+        "React",
+        "Vue",
+        "Next.js",
+        "TypeScript",
+        "AWS"
+      ],
+      "stage": "growth",
+      "score": 58,
+      "lastContact": "2026-04-24",
+      "contactHistory": [
+        {
+          "date": "2026-04-24",
+          "type": "outreach",
+          "status": "sent",
+          "response": "no-response",
+          "emailsSent": [
+            "careers@caylent.com",
+            "recruitment@caylent.com",
+            "hiring@caylent.com"
+          ],
+          "emailsFailed": [
+            "hr@caylent.com",
+            "jobs@caylent.com",
+            "recruiting@caylent.com",
+            "talent@caylent.com",
+            "apply@caylent.com",
+            "work@caylent.com",
+            "contact@caylent.com",
+            "info@caylent.com",
+            "hello@caylent.com",
+            "support@caylent.com",
+            "admin@caylent.com",
+            "team@caylent.com",
+            "office@caylent.com",
+            "contactus@caylent.com",
+            "general@caylent.com",
+            "mail@caylent.com",
+            "staff@caylent.com",
+            "dev@caylent.com",
+            "tech@caylent.com",
+            "it@caylent.com"
+          ],
+          "notes": "Senior Frontend Developer, Remote LATAM/North America. 3 sent with delay + link (no attachment), 20 failed."
+        }
+      ],
+      "positiveResponses": 0,
+      "negativeResponses": 1,
+      "totalContacts": 1,
+      "notes": "Cloud native applications company, AWS-focused. Competitive benefits.",
+      "domain": "caylent.com",
+      "status": "outreach"
     }
   ],
-  "lastUpdated": "2026-04-23"
+  "lastUpdated": "2026-04-24"
 }

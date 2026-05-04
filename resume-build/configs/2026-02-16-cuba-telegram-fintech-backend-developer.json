@@ -1,0 +1,148 @@
+{
+  "metadata": {
+    "id": "2026-02-16-cuba-telegram-fintech-backend-developer",
+    "type": "direct-apply",
+    "company": {
+      "name": "Fintech SaaS Platform",
+      "website": null,
+      "email": null,
+      "sector": "FinTech",
+      "techStack": [
+        "PHP",
+        "Symfony",
+        "GraphQL",
+        "PostgreSQL",
+        "Doctrine ORM"
+      ]
+    },
+    "position": {
+      "title": "Backend Developer - PHP/Symfony",
+      "url": null,
+      "applicationType": "Telegram DM",
+      "model": "remote",
+      "location": "Remote",
+      "salary": null,
+      "keywords": {
+        "technical": [
+          "PHP",
+          "Symfony",
+          "API Platform",
+          "Doctrine ORM",
+          "PostgreSQL",
+          "REST APIs",
+          "Docker",
+          "PHPUnit"
+        ],
+        "soft": [
+          "Remote-first",
+          "FinTech",
+          "Startup"
+        ]
+      }
+    },
+    "status": "applied",
+    "applicationDate": "2026-02-17",
+    "rejectionDate": null,
+    "notes": {
+      "model": "100% Remote position. Application via Telegram DM.",
+      "company": "Fintech/procurement SaaS platform focused on financial analysis, payment terms negotiation, spend management, and value proposition tracking.",
+      "techStack": "PHP 8.1+, Symfony 6.4, API Platform 3.x, GraphQL, Doctrine ORM, PostgreSQL 16, MongoDB, Elasticsearch, RabbitMQ, Docker, AWS, Microsoft Graph API, Firebase, Google Places API, Amazon SES, Sentry, PHPUnit, Mockery, Faker, Git, PHPStan, PHP-CS-Fixer, PSR-12",
+      "role": "Backend Developer responsible for designing, developing and maintaining RESTful APIs using Symfony and API Platform, optimizing Doctrine queries, implementing async processing, integrating third-party services, writing automated tests, and contributing to architectural decisions.",
+      "rejection": "",
+      "applicationLimits": ""
+    }
+  },
+  "contactInfo": {
+    "location": "Havana, Cuba",
+    "phone": "+53 5476-1244",
+    "email": "razcue@yandex.com",
+    "website": "razcue.github.io"
+  },
+  "summary": "Backend-Focused Full Stack Engineer with 7+ years building scalable web applications and RESTful APIs across SaaS, e-commerce, and enterprise platforms. Strong expertise in PHP (Laravel, Symfony, Yii), PostgreSQL, and API development. Proven track record architecting multi-tenant systems, implementing CI/CD pipelines, and optimizing database performance. Passionate about clean code, SOLID principles, and automated testing.",
+  "skills": {
+    "technical": "PHP, Symfony, Laravel, Yii, Doctrine ORM, PostgreSQL, MongoDB, Elasticsearch, REST APIs, GraphQL, Docker, AWS, PHPUnit, Mockery, Faker, Sentry, Git, PHPStan, PHP-CS-Fixer, PSR-12, Swagger, Vue.js, React, TypeScript, JavaScript, Node.js, Tailwind, CI/CD",
+    "languages": "English (C1 - Advanced), Spanish (Native)"
+  },
+  "education": [
+    {
+      "institution": "University of Informatics Sciences",
+      "degree": "Computer Sciences Engineer - Bachelor's degree",
+      "location": "Havana, Cuba",
+      "date": "Sep 2013 - Jul 2018"
+    }
+  ],
+  "experience": [
+    {
+      "company": "BSE America",
+      "title": "Lead Developer",
+      "location": "Remote, Panama",
+      "dateRange": "Jan 2024 - Nov 2024",
+      "bullets": [
+        "Architected and developed end-to-end CRM with RESTful APIs in Laravel for WooCommerce integration and Panama's electronic billing system, achieving near 100% delivery success rate",
+        "Implemented CI/CD pipelines and AWS S3 secure storage, reducing deployment time to 4min; enforced code quality with automated checks and PSR-12 standards"
+      ],
+      "skills": "Laravel, PHP, Vue.js, Vuetify, TypeScript, JavaScript, PostgreSQL, Redis, REST APIs, AWS S3, PHPUnit, Swagger, CI/CD, Faker, PHPUnit, Mockery"
+    },
+    {
+      "company": "First Due (Inc 5000 company since 2022)",
+      "title": "Full Stack Developer",
+      "location": "Remote, New York, US",
+      "dateRange": "Mar 2021 - Nov 2023",
+      "bullets": [
+        "Delivered multi-tenant SaaS features across Fire Prevention, EMS and Assets modules serving 40+ fire departments, contributing to company growth achieving Inc 5000 recognition",
+        "Enhanced Google Maps and ArcGIS APIs integrations for geolocation mapping with real-time tracking and asset visualization across fire department operations"
+      ],
+      "skills": "Yii, PHP, Vue.js, Vuetify, JavaScript, PostgreSQL, Redis, Docker, REST APIs, Google Maps/ArcGIS API"
+    },
+    {
+      "company": "Grupo de Electrónica para el Turismo (GET)",
+      "title": "Full Stack Developer",
+      "location": "On-site, Havana, Cuba",
+      "dateRange": "Mar 2019 - Nov 2020",
+      "bullets": [
+        "Led development of multi-tenant Laravel/Vue document management system with RBAC and Elasticsearch integration, reducing search times to under 1 second",
+        "Designed and implemented RESTful APIs for hotel reservation system with real-time availability updates and automated confirmation workflows"
+      ],
+      "skills": "Laravel, PHP, PostgreSQL, Vue.js, JavaScript, Express.js, Vuetify, Redis, Elasticsearch, REST APIs, Faker"
+    }
+  ],
+  "artifacts": {
+    "coverLetter": [
+      "Dear Hiring Manager,",
+      "",
+      "I am writing to express my strong interest in the Backend Developer position for your fintech SaaS platform. With 7+ years of experience building scalable web applications and RESTful APIs, I have a proven track record of delivering robust backend solutions that drive business results.",
+      "",
+      "In my recent role at BSE America, I architected and developed an end-to-end CRM system with Laravel, implementing RESTful APIs for WooCommerce integration and electronic billing compliance. I reduced deployment times by 80% through CI/CD pipeline implementation and enforced code quality standards using automated testing and PSR-12 compliance. My experience with PostgreSQL, Elasticsearch, and AWS aligns closely with your tech stack requirements.",
+      "",
+      "Previously at GET, I led the development of a multi-tenant document management system with RBAC and Elasticsearch, achieving sub-second search performance. I have hands-on experience with PHPUnit for automated testing, Sentry for monitoring, and tools like PHPStan and PHP-CS-Fixer for maintaining code quality.",
+      "",
+      "I am particularly drawn to this opportunity because of the impact your platform has in the financial/procurement sector. I am eager to contribute to API design, database optimization, and architectural decisions while collaborating with your frontend team.",
+      "",
+      "Thank you for considering my application. I look forward to discussing how my backend expertise and passion for clean, tested code can contribute to your team's success.",
+      "",
+      "Best regards,",
+      "Rayko Azcue"
+    ],
+    "emailPitch": [
+      "Hi,",
+      "",
+      "I came across your Backend Developer position and I'm excited to apply. With 7+ years of backend development experience specializing in PHP (Laravel, Symfony), PostgreSQL, and RESTful API design, I believe I'm a strong fit for your fintech SaaS platform.",
+      "",
+      "Key highlights:",
+      "- Architected CRM with Laravel APIs achieving near 100% delivery success",
+      "- Reduced deployment time by 80% via CI/CD and AWS S3 integration",
+      "- Experience with PHPUnit, Sentry, PHPStan, PSR-12 standards",
+      "- Strong background in multi-tenant SaaS systems and database optimization",
+      "",
+      "I've attached my resume and would love to discuss how I can contribute to your platform's growth.",
+      "",
+      "Best,",
+      "Rayko Azcue",
+      "razcue@yandex.com",
+      "razcue.github.io"
+    ],
+    "socialMessage": [
+      "Hello! I'm interested in the Backend Developer position you posted. I have 7+ years of experience with PHP (Laravel/Symfony), PostgreSQL, REST APIs, and building SaaS platforms. I've worked with PHPUnit, Docker, AWS, and code quality tools like PHPStan. Would love to discuss how I can contribute to your fintech platform. Here's my resume for your review."
+    ]
+  }
+}

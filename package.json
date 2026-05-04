@@ -14,7 +14,7 @@
     "type-check": "astro check",
     "check": "npm run format:check && npm run lint && npm run type-check",
     "fix": "npm run format && npm run lint:fix && npm run type-check",
-    "build:resume": "node job-ai/lib/build-resume.cjs",
+    "build:resume": "node resume-build/build-resume.cjs",
     "build:linkedin": "node linkedin-guidelines/generate-banners.cjs"
   },
   "dependencies": {

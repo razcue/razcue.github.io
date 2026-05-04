@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import ThemeToggle from './ThemeToggle';
 import { getTranslation, type Locale } from '../utils/i18n';
 import ChatWithToast from './ChatWithToast';
+import DownloadWithToast from './DownloadWithToast';
 
 interface SideBarProps {
   locale: Locale;
@@ -210,15 +211,6 @@ export default function Sidebar({
       {/* Download Resume Button */}
       <div className="block lg:hidden mb-0 md:mb-6">
         <a
-          href="/Rayko_Azcue_Resume.pdf"
-          download="Rayko_Azcue_Resume.pdf"
-          className="text-text-secondary hover:text-accent transition-colors cursor-pointer block"
-          aria-label="Download Resume"
-          title="Download Resume"
-        >
-          <i className="i-tabler-file-download w-6 h-6" />
-        </a>
-        <a
           className="i-tabler-brand-github?mask text-2xl bg-text-secondary hover:bg-accent transition-colors mt-2 md:mt-2.5"
           href="https://github.com/razcue"
           target="_blank"
@@ -238,6 +230,11 @@ export default function Sidebar({
       {/* Chat with Toast */}
       <div className="mb-1.5 md:mb-2.5">
         <ChatWithToast />
+      </div>
+
+      {/* Download with Toast */}
+      <div className="block lg:hidden mb-1.5 md:mb-2.5">
+        <DownloadWithToast locale={locale} />
       </div>
 
       {/* Language Toggle - Horizontal */}

@@ -1,92 +1,68 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import ChatWidget from './ChatWidget';
 
-const CHAT_TOAST_KEY = 'chatToastDismissed';
 const ONE_HOUR_MS = 60 * 60 * 1000;
+const TWO_MINUTES_MS = 2 * 60 * 1000;
 
 export default function ChatWithToast() {
-  const [isOpen, setIsOpen] = useState(false);
   const [showToast, setShowToast] = useState(false);
-  const buttonRef = useRef<HTMLButtonElement>(null);
-  const [buttonRect, setButtonRect] = useState<DOMRect | null>(null);
-  const chatRef = useRef<HTMLDivElement>(null);
+  const [isChatOpen, setIsChatOpen] = useState(false);
 
+  // Auto-show chat toast 2 minutes after download is dismissed
   useEffect(() => {
-    const dismissedAt = localStorage.getItem(CHAT_TOAST_KEY);
-    if (!dismissedAt) {
-      setShowToast(true);
-    } else {
-      const dismissedTime = parseInt(dismissedAt, 10);
+    let timeoutId: ReturnType<typeof setTimeout>;
+
+    const checkAndShowChatToast = () => {
+      const downloadDismissed = localStorage.getItem('downloadToastDismissed');
+      const chatDismissed = localStorage.getItem('chatToastDismissed');
       const now = Date.now();
-      if (now - dismissedTime > ONE_HOUR_MS) {
-        setShowToast(true);
-      }
-    }
-  }, []);
 
-  useEffect(() => {
-    if (showToast && buttonRef.current) {
-      setButtonRect(buttonRef.current.getBoundingClientRect());
-    }
-  }, [showToast]);
+      // If download hasn't been dismissed, don't show chat toast
+      if (!downloadDismissed) return;
 
-  // Lock page scroll and handle Esc/click outside when chat is open
-  useEffect(() => {
-    if (!isOpen) return;
+      const downloadDismissedTime = parseInt(downloadDismissed);
+      const chatDismissedTime = chatDismissed ? parseInt(chatDismissed) : 0;
 
-    // Add a class to body to signal chat is open
-    document.body.classList.add('chat-open');
-
-    // Handle Esc key
-    const handleEsc = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        setIsOpen(false);
+      // Show chat if 2 minutes passed since download dismiss AND chat not shown in last hour
+      if ((now - downloadDismissedTime) >= TWO_MINUTES_MS) {
+        if (!chatDismissed || (now - chatDismissedTime) > ONE_HOUR_MS) {
+          setShowToast(true);
+        }
+      } else {
+        // Wait until 2 minutes have passed
+        timeoutId = setTimeout(checkAndShowChatToast, TWO_MINUTES_MS - (now - downloadDismissedTime));
       }
     };
 
-    // Handle click outside - only on desktop (lg breakpoint and above)
-    const handleClickOutside = (e: MouseEvent) => {
-      const isDesktop = window.innerWidth >= 1024;
-      if (!isDesktop) return;
-
-      if (chatRef.current && !chatRef.current.contains(e.target as Node)) {
-        setIsOpen(false);
-      }
-    };
-
-    document.addEventListener('keydown', handleEsc);
-    // Use setTimeout to avoid triggering immediately on button click
-    setTimeout(() => {
-      document.addEventListener('click', handleClickOutside);
-    }, 0);
+    // Check on mount and periodically
+    checkAndShowChatToast();
+    const interval = setInterval(checkAndShowChatToast, 10000);
 
     return () => {
-      document.body.classList.remove('chat-open');
-      document.removeEventListener('keydown', handleEsc);
-      document.removeEventListener('click', handleClickOutside);
+      clearTimeout(timeoutId);
+      clearInterval(interval);
     };
-  }, [isOpen]);
+  }, []);
 
+  // Click button opens dialog directly
   const handleChatClick = () => {
-    setIsOpen(true);
+    setShowToast(false);
+    setIsChatOpen(true);
   };
 
-  const handleToastChat = () => {
+  const handleDismiss = () => {
     setShowToast(false);
-    localStorage.setItem(CHAT_TOAST_KEY, Date.now().toString());
-    setIsOpen(true);
+    localStorage.setItem('chatToastDismissed', Date.now().toString());
   };
 
-  const handleToastDismiss = () => {
-    setShowToast(false);
-    localStorage.setItem(CHAT_TOAST_KEY, Date.now().toString());
+  const handleCloseChat = () => {
+    setIsChatOpen(false);
   };
 
   return (
     <div className="relative">
-      {/* Chat Button */}
+      {/* Icon Button - opens dialog directly */}
       <button
-        ref={buttonRef}
         onClick={handleChatClick}
         className="text-text-secondary hover:text-accent transition-colors cursor-pointer"
         aria-label="Chat with AI assistant"
@@ -95,15 +71,13 @@ export default function ChatWithToast() {
         <i className="i-tabler-message w-6 h-6" />
       </button>
 
-      {/* Chat Window - positioned relative to chat button (desktop only) */}
-      {isOpen && (
+      {/* Chat Window - desktop */}
+      {isChatOpen && (
         <div
-          ref={chatRef}
           className="absolute right-full mr-3 top-1/2 -translate-y-1/2 z-50 hidden lg:block animate-fade-in"
           onClick={(e) => e.stopPropagation()}
         >
           <div className="relative bg-surface border border-surface rounded-xl shadow-2xl w-96 h-[500px] flex flex-col">
-            {/* Arrow pointing right toward button */}
             <div
               className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-px bg-accent"
               style={{
@@ -115,31 +89,27 @@ export default function ChatWithToast() {
                 boxShadow: '3px 3px 6px rgba(0,0,0,0.3)',
               }}
             />
-            <ChatWidget isOpen={isOpen} onOpen={setIsOpen} />
+            <ChatWidget isOpen={true} onOpen={handleCloseChat} />
           </div>
         </div>
       )}
 
       {/* Chat Window - mobile/tablet (full screen with blur) */}
-      {isOpen && (
-        <div
-          ref={chatRef}
-          className="lg:hidden fixed inset-0 z-50 flex items-start justify-center pt-16 p-2"
-        >
-          <ChatWidget isOpen={isOpen} onOpen={setIsOpen} />
+      {isChatOpen && (
+        <div className="lg:hidden fixed inset-0 z-50 flex items-start justify-center pt-16 p-2">
+          <ChatWidget isOpen={true} onOpen={handleCloseChat} />
         </div>
       )}
 
-      {/* Chat Window - mobile/tablet (full screen with blur) */}
-      {isOpen && (
+      {/* Background blur for mobile */}
+      {isChatOpen && (
         <div className="lg:hidden fixed inset-0 z-40 bg-bg/80 backdrop-blur-md" />
       )}
 
-      {/* Toast - positioned relative to chat button */}
-      {showToast && !isOpen && buttonRect && (
+      {/* Toast - auto-triggered, shows only when dialog is not open */}
+      {showToast && !isChatOpen && (
         <div className="absolute right-full mr-3 top-1/2 -translate-y-1/2 z-40 animate-fade-in">
           <div className="relative bg-surface border border-surface p-4 rounded-xl shadow-xl w-64 sm:w-96">
-            {/* Arrow pointing right toward button */}
             <div
               className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-px bg-accent"
               style={{
@@ -162,13 +132,13 @@ export default function ChatWithToast() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-2 mt-3">
                   <button
-                    onClick={handleToastChat}
+                    onClick={handleChatClick}
                     className="px-3 py-1.5 bg-accent text-surface text-xs font-medium rounded-lg hover:bg-accent/90 transition-colors"
                   >
                     Chat now
                   </button>
                   <button
-                    onClick={handleToastDismiss}
+                    onClick={handleDismiss}
                     className="px-3 py-1.5 text-text-secondary text-xs hover:text-text transition-colors"
                   >
                     Maybe later
@@ -176,7 +146,7 @@ export default function ChatWithToast() {
                 </div>
               </div>
               <button
-                onClick={handleToastDismiss}
+                onClick={handleDismiss}
                 className="text-text-secondary hover:text-text transition-colors"
                 aria-label="Dismiss"
               >

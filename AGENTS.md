@@ -13,22 +13,29 @@ Project-specific configuration and guidelines for AI agent interactions.
 
 ---
 
-## Job-AI Workflow
+## Resume Build
 
-For job search and application tasks, see `job-ai/AGENTS.md` for complete workflow context.
+For resume building tasks, see `resume-build/` for standalone resume generation.
 
-**Trigger:** When user mentions job search, job application, job opportunities, career, hiring, or similar topics.
+**Trigger:** When user mentions resume, CV, PDF generation
 
 **Skills:**
-
-- `job-search` skill: Searches companies, scores opportunities, manages applications
 - `resume-build` skill: Builds tailored and hybrid PDF resumes
 
 **Key Files:**
+- `resume-build/configs/` - Resume configurations
+- `resume-build/KNOWLEDGE_BASE.md` - Profile knowledge base
 
-- `job-ai/data/applications.json` - Current applications
-- `job-ai/data/companies.json` - Company tracking
-- `job-ai/temp/TODO.md` - Current workflow status (check first)
+---
+
+## Job-Hunt Workflow
+
+For automated job search, see `job-hunt/AGENTS.md`.
+
+**Trigger:** "run job-hunt", "automate job search"
+
+**Key Files:**
+- `job-hunt/data/companies.json` - Company tracking
 
 ---
 

@@ -1,0 +1,162 @@
+{
+  "metadata": {
+    "id": "2026-02-15-haystack-people-senior-php-developer",
+    "type": "direct-apply",
+    "company": {
+      "name": "Haystack People",
+      "website": "https://www.haystackpeople.com/",
+      "email": null,
+      "sector": "E-commerce",
+      "techStack": ["PHP", "Symfony", "Laravel", "MySQL", "PostgreSQL"]
+    },
+    "position": {
+      "title": "Senior PHP Developer",
+      "url": "https://jaabz.com/jobs/161711-senior-php-developer",
+      "applicationType": "email",
+      "model": "hybrid",
+      "location": "Netherlands",
+      "salary": "€75,000/year + 8% holiday allowance",
+      "keywords": {
+        "technical": [
+          "PHP",
+          "Laravel",
+          "Symfony",
+          "MySQL",
+          "PostgreSQL",
+          "API",
+          "CI/CD",
+          "AWS"
+        ],
+        "soft": ["E-commerce", "Leadership", "Mentoring"]
+      }
+    },
+    "status": "applied",
+    "applicationDate": "2026-02-15",
+    "rejectionDate": null,
+    "notes": {
+      "model": "Hybrid working model based in Netherlands. Visa sponsorship available for relocation - candidate will live in Netherlands once sponsored. Salary up to €75K + 8% holiday allowance.",
+      "company": "Haystack People - One of the largest home & living boulevards in Netherlands and Belgium. Fast-growing scale-up with 250+ employees. Major technical transformation from legacy to modern Symfony-based architecture.",
+      "techStack": "PHP, Symfony (target architecture) or Laravel, MySQL/PostgreSQL, CI/CD, AWS/GCP, API-driven systems, middleware",
+      "role": "Senior PHP Developer in 5-person team. Building and modernizing ERP and Warehouse Systems. Contributing to architectural decisions, platform modernization from legacy to modern stack. Coaching colleagues and elevating engineering standards.",
+      "rejection": "",
+      "applicationLimits": ""
+    }
+  },
+  "contactInfo": {
+    "location": "Havana, Cuba",
+    "phone": "+53 5476-1244",
+    "email": "razcue@yandex.com",
+    "website": "razcue.github.io"
+  },
+  "summary": "Senior PHP Developer with 7+ years architecting scalable backend systems, ERP integrations, and e-commerce platforms. Deep expertise in modern PHP frameworks with strong foundation in SOLID principles, CI/CD, and cloud infrastructure. Proven track record modernizing legacy systems, building API-driven architectures, and mentoring teams. Comfortable with full SDLC in high-traffic environments.",
+  "skills": {
+    "technical": "PHP, Laravel, Yii, Symfony, MySQL, PostgreSQL, JavaScript, Vue.js, REST APIs, AWS, CI/CD, Elasticsearch, Git, SOLID principles",
+    "languages": "English (B2 - Professional), Spanish (Native)"
+  },
+  "education": [
+    {
+      "institution": "University of Informatics Sciences",
+      "degree": "Computer Sciences Engineer - Bachelor's degree",
+      "location": "Havana, Cuba",
+      "date": "Sep 2013 - Jul 2018"
+    }
+  ],
+  "experience": [
+    {
+      "company": "BSE America",
+      "title": "Lead Developer",
+      "location": "Remote, Panama",
+      "dateRange": "Jan 2024 – Nov 2024",
+      "bullets": [
+        "Architected end-to-end CRM system with ERP-like functionality including inventory management, automated invoicing, and WooCommerce integration using Laravel",
+        "Integrated Panama's electronic billing API for automated tax compliance and invoicing workflows, achieving near 100% delivery success rate",
+        "Implemented CI/CD pipelines and AWS infrastructure, reducing deployment time by 80% (20min → 4min) while mentoring 3 developers to elevate code quality standards"
+      ],
+      "skills": "PHP, Laravel, PostgreSQL, AWS, CI/CD, ERP, API Design"
+    },
+    {
+      "company": "First Due (Inc 5000 company since 2022)",
+      "title": "Full Stack Developer",
+      "location": "Remote, New York, US",
+      "dateRange": "Mar 2021 – Nov 2023",
+      "bullets": [
+        "Developed multi-tenant SaaS platform serving 40+ enterprise clients using PHP (Yii 2) and PostgreSQL, implementing modular architecture for asset and inventory management at Inc 5000 company",
+        "Enhanced geolocation and implemented barcode/QR scanning processing 5,000+ daily asset scans with >99% accuracy, contributing to platform scalability and four consecutive Inc 5000 recognitions since 2022"
+      ],
+      "skills": "PHP, Yii, PostgreSQL, REST APIs, Multi-tenant Architecture"
+    },
+    {
+      "company": "Grupo de Electrónica para el Turismo (GET)",
+      "title": "Full Stack Developer",
+      "location": "Havana, Cuba",
+      "dateRange": "Mar 2019 – Nov 2020",
+      "bullets": [
+        "Led development of multi-tenant document management system using Laravel 6, Elasticsearch, and PostgreSQL, implementing RBAC and API integrations for enterprise clients",
+        "Co-designed hotel reservation platform with real-time inventory management, improving booking completion rates by 10-15%"
+      ],
+      "skills": "Laravel, PHP, PostgreSQL, Elasticsearch, API Integration"
+    }
+  ],
+  "artifacts": {
+    "coverLetter": [
+      "Dear Hiring Manager,",
+      "",
+      "I am writing to express my strong interest in the Senior PHP Developer position at your Home & Living Boulevard. With 7+ years of experience building scalable PHP systems—including ERP-like platforms, warehouse management integrations, and high-traffic e-commerce architectures—I am excited about the opportunity to contribute to your technical transformation from legacy systems to a modern Symfony-based stack.",
+      "",
+      "At BSE America, I architected an end-to-end CRM system with ERP functionality, including inventory management, automated invoicing, and third-party integrations using Laravel and SOLID design principles. I implemented CI/CD pipelines and AWS infrastructure that reduced deployment times by 80%, while mentoring developers to improve code review approval rates from 40% to 85%. This experience directly aligns with your need for someone who can modernize systems while elevating engineering standards.",
+      "",
+      "During my time at First Due, I worked on a multi-tenant SaaS platform serving 40+ enterprise clients using PHP (Yii 2) and PostgreSQL. I designed RESTful APIs and optimized database queries handling 5,000+ daily transactions, contributing to the platform's scalability and reliability—skills that translate perfectly to your high-traffic e-commerce environment.",
+      "",
+      "I am particularly drawn to this role because of the opportunity to work on meaningful architectural decisions during your platform modernization journey. I thrive in environments where I can bridge legacy systems with modern practices, and I enjoy coaching colleagues to build sustainable, scalable solutions. Your focus on professionalization and growth aligns with my career goals.",
+      "",
+      "I would welcome the opportunity to discuss how my PHP expertise, architectural experience, and collaborative approach can support your team's mission to build the best home & living webshop in the Netherlands.",
+      "",
+      "Thank you for considering my application. I look forward to connecting.",
+      "",
+      "Best regards,",
+      "Rayko Azcue"
+    ],
+    "emailPitch": [
+      "Subject: Senior PHP Developer Application - ERP & E-commerce Specialist",
+      "",
+      "Dear Recruitment Team,",
+      "",
+      "I hope this message finds you well. I am writing to apply for the Senior PHP Developer position at the Home & Living Boulevard. I found the role through Jaabz and was immediately drawn to the opportunity to contribute to your platform modernization and ERP system development.",
+      "",
+      "With 7+ years of PHP development experience, I bring:",
+      "• Deep expertise in Laravel and Yii frameworks (modern PHP architecture)",
+      "• Proven experience building ERP-like systems with inventory management and automated workflows",
+      "• Strong background in CI/CD, AWS infrastructure, and database optimization (PostgreSQL/MySQL)",
+      "• Track record of modernizing systems while mentoring teams and elevating code quality",
+      "",
+      "Recent achievements:",
+      "→ Architected CRM/ERP system with WooCommerce integration and automated invoicing (Laravel)",
+      "→ Reduced deployment times by 80% through CI/CD implementation",
+      "→ Built multi-tenant SaaS handling 5,000+ daily transactions with 99% accuracy",
+      "→ Improved team code review approval from 40% to 85% through mentoring",
+      "",
+      "I am particularly excited about your transition to a modern Symfony-based architecture and the opportunity to work on scalable e-commerce solutions for millions of customers. While I am currently based in Cuba, I am actively seeking relocation opportunities to the Netherlands and am eligible for visa sponsorship.",
+      "",
+      "My resume and portfolio are available at razcue.github.io. I would welcome the opportunity to discuss how my skills align with your technical transformation goals.",
+      "",
+      "Best regards,",
+      "Rayko Azcue",
+      "razcue@yandex.com",
+      "+53 5476-1244",
+      "razcue.github.io"
+    ],
+    "socialMessage": [
+      "Hi! I'm Rayko, a Senior PHP Developer with 7+ years building ERP systems, e-commerce platforms, and scalable backend architectures.",
+      "",
+      "I came across your Senior PHP Developer role and I'm excited about your mission to modernize your platform to a Symfony-based architecture. I have hands-on experience with:",
+      "• Laravel/Yii frameworks & SOLID principles",
+      "• ERP development with inventory & warehouse management",
+      "• CI/CD, AWS, and database optimization",
+      "• API design and legacy system modernization",
+      "",
+      "Recently built a CRM/ERP system handling 5,000+ daily transactions and reduced deployment times by 80%. I'm passionate about coaching teams and elevating engineering standards.",
+      "",
+      "Would love to connect and discuss how I can contribute to your technical transformation!"
+    ]
+  }
+}

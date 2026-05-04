@@ -1,0 +1,134 @@
+{
+  "metadata": {
+    "id": "2026-02-16-hireboost-senior-software-engineer",
+    "configName": "2026-02-16-hireboost-senior-software-engineer",
+    "language": "en",
+    "dateCreated": "2026-02-16T00:00:00.000Z",
+    "targetPosition": "Senior Software Engineer",
+    "applicationType": "email",
+    "jobLink": "https://jaabz.com/jobs/156037-senior-software-engineer",
+    "client": "HireBoost",
+    "clientWebsite": "https://thehireboost.com/",
+    "positionModel": "remote-global",
+    "location": "Remote (LATAM-based, CST)",
+    "keywords": {
+      "technical": [
+        "React",
+        "TypeScript",
+        "Laravel",
+        "PHP",
+        "Node.js",
+        "Full Stack"
+      ],
+      "soft": [
+        "Leadership",
+        "Mentoring",
+        "Problem-solving",
+        "Communication",
+        "Collaboration"
+      ]
+    },
+    "notes": {
+      "model": "100% Remote role open to LATAM-based candidates willing to work CST timezone. Salary range: $4,225 - $5,400 USD/monthly.",
+      "company": "Professional software development agency and product studio founded in 2019, supporting American tech companies and startups. Incubates consumer products through internal app studio. Values: honesty, reliability, growth.",
+      "techStack": "React, TypeScript, Capacitor (Mobile), PHP (Laravel), Stripe SDK, Docker, Kubernetes",
+      "role": "Senior Software Engineer - Design, develop and maintain features across web and mobile applications. Work with emerging technologies (AI, spatial computing, blockchain). Translate product requirements into scalable systems. Shape technical direction and make architectural decisions. Code review, quality improvement, knowledge sharing. Opportunity to lead project teams."
+    }
+  },
+  "contactInfo": {
+    "location": "Havana, Cuba",
+    "phone": "+53 5476-1244",
+    "email": "razcue@yandex.com",
+    "website": "razcue.github.io"
+  },
+  "summary": "Senior Full Stack Engineer with 7+ years building scalable web and mobile applications for US and LATAM markets. Expert in React, Vue, TypeScript, Laravel, and modern DevOps practices. Proven track record leading teams, mentoring developers, and delivering high-performance systems that drive business results. Passionate about emerging technologies and collaborative product development.",
+  "skills": {
+    "technical": "React, Next, TypeScript, Vue, Nuxt, Laravel, PHP, Node.js, PostgreSQL, REST APIs, CI/CD, AWS, Cloudflare, Docker, Stripe, Tailwind",
+    "additional": "Team Leadership, Mentoring, Figma to Code, Jira, Linux/Ubuntu, Agile, Cross-functional Collaboration, Technical Decision Making, Product Ownership, Code Review",
+    "languages": "English (C1 - Advanced), Spanish (Native)"
+  },
+  "education": [
+    {
+      "institution": "University of Informatics Sciences",
+      "degree": "Computer Sciences Engineer - Bachelor's degree",
+      "location": "Havana, Cuba",
+      "date": "Sep 2013 - Jul 2018"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Blue Creator Agency | Kimia Group",
+      "title": "Senior Front End Developer",
+      "location": "Remote, Madrid, Spain",
+      "dateRange": "Jan 2025 – Nov 2025",
+      "bullets": [
+        "Delivered front-end solutions for internal CMS and consumer monetization platform, resolving 120+ Jira tasks with pixel-perfect UI implementation.",
+        "Migrated 40+ components from Vuetify to Tailwind, reducing bundle size by 19% and improving Core Web Vitals performance metrics."
+      ]
+    },
+    {
+      "company": "BSE America",
+      "title": "Lead Developer",
+      "location": "Remote, Panama",
+      "dateRange": "Jan 2024 – Nov 2024",
+      "bullets": [
+        "Architected end-to-end CRM with WooCommerce integration using Laravel REST APIs, achieving near 100% delivery success rate for sales operations and Panama's electronic billing compliance.",
+        "Led technical team of 3 developers, mentoring on Laravel and Vue best practices while improving code review approval rate from 40% to 85%."
+      ]
+    },
+    {
+      "company": "First Due (Inc 5000 company since 2022)",
+      "title": "Full Stack Developer",
+      "location": "Remote, New York, US",
+      "dateRange": "Mar 2021 – Nov 2023",
+      "bullets": [
+        "Delivered multi-tenant SaaS features across Fire Prevention, EMS and Assets modules serving 40+ fire departments at a startup founded in 2016, contributing to company growth that achieved Inc 5000 recognition in 2022.",
+        "Enhanced geolocation and implemented barcode/QR scanning processing 5,000+ daily scans with >99% accuracy."
+      ]
+    }
+  ],
+  "artifacts": {
+    "coverLetter": [
+      "Dear Hiring Manager,",
+      "",
+      "I am writing to express my strong interest in the Senior Software Engineer position at HireBoost. With 7+ years of experience building scalable web applications for US and LATAM markets, I am excited about the opportunity to contribute to your team supporting American tech companies and startups.",
+      "",
+      "Your tech stack aligns perfectly with my expertise. At Blue Creator Agency (Kimia Group), I delivered production features using Vue and Nuxt for internal CMS and consumer platforms, resolving 120+ tasks while optimizing performance metrics. At BSE America, I architected an end-to-end CRM using Laravel with RESTful API integrations, mentoring a team of 3 developers and improving code review approval rates from 40% to 85%.",
+      "",
+      "What draws me to HireBoost is your commitment to collaboration, speed, and excellence. My experience at First Due—a startup founded in 2016 delivering multi-tenant SaaS to 40+ fire departments and achieving Inc 5000 recognition in 2022—has prepared me to deliver the high standards your US clients demand. I thrive in environments where I can roll up my sleeves across the full stack, from React frontends to Laravel backends to CI/CD pipelines.",
+      "",
+      "I am particularly excited about the opportunity to work with emerging technologies like AI, spatial computing, and blockchain. While I have hands-on experience with modern web development, I am eager to expand my skill set in these cutting-edge domains.",
+      "",
+      "As a LATAM-based engineer with native Spanish and professional English proficiency, I am well-positioned to collaborate seamlessly with your US clients while working within CST timezone.",
+      "",
+      "I would welcome the opportunity to discuss how my full-stack expertise and leadership experience can contribute to HireBoost's continued growth.",
+      "",
+      "Best regards,",
+      "Rayko Azcue"
+    ],
+    "emailPitch": [
+      "Subject: Senior Software Engineer Application - React, TypeScript & Laravel Expert",
+      "",
+      "Dear HireBoost Team,",
+      "",
+      "I am applying for the Senior Software Engineer position. With 7+ years building scalable web applications and expertise in your core tech stack (React, TypeScript, Laravel), I am confident I can deliver immediate value to your US clients.",
+      "",
+      "Key highlights:",
+      "• Delivered Vue/Nuxt features resolving 120+ tasks at Kimia Group",
+      "• Led Laravel CRM development with 100% delivery success rate at BSE America",
+      "• Built multi-tenant SaaS at First Due (startup founded 2016, gained Inc 5000 in 2022)",
+      "• Mentored developers, improving code review approval from 40% to 85%",
+      "",
+      "I am based in Cuba, available to work CST hours, and passionate about emerging technologies like AI and blockchain. My resume is attached for your review.",
+      "",
+      "Would you be available for a brief call to discuss how I can contribute to your team?",
+      "",
+      "Best regards,",
+      "Rayko Azcue",
+      "razcue@yandex.com",
+      "+53 5476-1244",
+      "razcue.github.io"
+    ],
+    "socialMessage": []
+  }
+}

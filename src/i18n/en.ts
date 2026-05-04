@@ -39,6 +39,8 @@ export default {
       'I build exceptional digital experiences with modern web technologies.',
     cta: 'Get In Touch',
     downloadResume: 'Resume',
+    onePageResume: 'One Page Resume',
+    fullResumeCV: 'Full Resume',
   },
 
   // About Section
@@ -148,9 +150,38 @@ export default {
 
   // Experience Section
   experience: {
-    title: 'Professional Experience',
+    title: 'Experience Highlights',
     present: 'Present',
+    highlights: [
+      'Increased organic traffic by 38% via polished SEO strategy and improved Core Web Vitals (LCP 3.2s → 1.4s, CLS 0.15 → 0.08). @Delfín Motor Labs SL',
+      'Shipped pixel-perfect, responsive UIs across internal CMS and consumer-facing monetization app, closing 120+ Jira tasks by translating Figma designs into production-ready front-end features. @Blue Creator Agency',
+      'Drove 15% conversion lift by migrating 40+ Vue components from Vuetify to Tailwind, cutting bundle size 19% and improving LCP from 9.1s to 6.6s. @Blue Creator Agency',
+      'Architected and developed end-to-end CRM with WooCommerce integration, automated invoicing, and Panama tax compliance module from scratch. @BSE America',
+      'Mentored 3 junior developers, improving code review approval rate from 40% to 85% through code standards. @BSE America',
+      'Enhanced geolocation capabilities for Fire & EMS operations, built a barcode/QR scanner processing 5,000+ daily scans with >99% accuracy. @First Due',
+      'Led multi-tenant document management system with Elasticsearch capabilities, cutting typical search times from seconds to <1s. @Grupo de Electrónica para el Turismo',
+    ],
     items: [
+      {
+        company: 'Delfín Motor Labs SL',
+        location: 'Remote, Madrid, Spain',
+        period: 'Jan/2026 - Apr/2026',
+        role: 'Senior Front End Developer',
+        industry: 'E-commerce, SaaS',
+        technologies: [
+          'Nuxt',
+          'Vue 3',
+          'Vuetify',
+          'Tailwind',
+          'TypeScript',
+          'Laravel',
+        ],
+        bullets: [
+          'Built frontend for custom CMS (Nuxt + Vuetify) and consumer storefront (Nuxt + Tailwind) consuming Laravel APIs; implemented authentication via login form and SSO (Google) using Laravel Sanctum.',
+          'Implemented comprehensive SEO strategy including meta tags, dynamic sitemap generation at build time, Schema markup, and canonical URLs; improved Core Web Vitals (LCP: 3.2s → 1.4s, CLS: 0.15 → 0.08) and increased organic traffic by 38%.',
+          'Leveraged Nuxt rendering strategies (SSR, SSG, SWR, ISR) with Cloudflare Page Rules, CDN, and caching; reduced TTFB by 52% (450ms → 220ms) and overall response times by 48%.',
+        ],
+      },
       {
         company: 'Blue Creator Agency | Kimia Group',
         location: 'Remote, Madrid, Spain',
@@ -393,6 +424,7 @@ export default {
     siteName: 'Rayko Azcue Portfolio',
     jobTitle: 'Front End Developer',
   },
+ 
   // Job status / availability
   openTo: {
     title: "I'm actively looking for new opportunities",
