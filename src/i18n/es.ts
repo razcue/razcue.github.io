@@ -171,7 +171,6 @@ export default {
       'Incrementé tráfico orgánico 38% vía estrategia SEO y mejoré Core Web Vitals (LCP 3.2s → 1.4s, CLS 0.15 → 0.08). @Delfín Motor Labs SL',
       'Implementé interfaces responsivas y pixel-perfect para CMS interno y app de monetización, cerrando 120+ tareas de Jira transformando diseños de Figma en features de producción. @Blue Creator Agency',
       'Generé 15% más conversiones migrando 40+ componentes de Vuetify a Tailwind, reduciendo bundle 19% y mejorando LCP de 9.1s a 6.6s. @Blue Creator Agency',
-      'Diseñé y desarrollé CRM end-to-end con integración WooCommerce, facturación automatizada y módulo de cumplimiento fiscal panameño desde cero. @BSE America',
       'Formé 3 desarrolladores junior, elevando tasa de aprobación de code review de 40% a 85% mediante estándares de código. @BSE America',
       'Mejoré capacidades de geolocalización para Fire & EMS, creé escáner de códigos procesando 5,000+ escaneos diarios con >99% precisión. @First Due',
       'Lideré sistema de gestión documental multi-tenant con Elasticsearch, reduciendo tiempos de búsqueda típicos de segundos a menos de 1 segundo. @Grupo de Electrónica para el Turismo',
@@ -192,7 +191,6 @@ export default {
           'Laravel',
         ],
         bullets: [
-          'Construí frontend para CMS personalizado (Nuxt + Vuetify) y tienda consumidor (Nuxt + Tailwind) consumiendo APIs de Laravel; implementé autenticación vía formulario y SSO (Google) con Laravel Sanctum.',
           'Implementé estrategia SEO completa incluyendo meta tags, generación dinámica de sitemap en build, Schema markup y URLs canónicas; improved Core Web Vitals (LCP: 3.2s → 1.4s, CLS: 0.15 → 0.08) e incrementé tráfico orgánico 38%.',
           'Aproveché estrategias de renderizado Nuxt (SSR, SSG, SWR, ISR) con Cloudflare Page Rules, CDN y caching; reduje TTFB 52% (450ms → 220ms) y tiempos de respuesta generales 48%.',
         ],
