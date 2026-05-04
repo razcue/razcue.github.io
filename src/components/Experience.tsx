@@ -67,7 +67,7 @@ export default function Experience({ locale }: ExperienceProps) {
   return (
     <section
       id="experience"
-      className="min-h-screen flex items-start lg:items-center px-2 lg:px-6 lg:px-8 py-12 lg:py-20"
+      className="min-h-screen flex items-center lg:items-center px-2 lg:px-6 lg:px-8 py-12 lg:py-20"
     >
       <div className="w-full">
         <h2 className="text-lg sm:text-2xl lg:text-4xl font-bold text-text mb-4 sm:mb-8 lg:mb-12">
