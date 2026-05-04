@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useToastStore } from '../stores/toast';
 import en from '../i18n/en';
 import es from '../i18n/es';
@@ -13,13 +13,27 @@ export default function DownloadWithToast({ locale }: DownloadWithToastProps) {
   const esTranslations = es;
   const currentTranslations = locale === 'es' ? esTranslations : enTranslations;
 
-  const { activeToast, dismissToast } = useToastStore();
+  const { activeToast, dismissToast, showDownloadToast } = useToastStore();
   const isOpen = activeToast === 'download';
   const [mounted, setMounted] = useState(false);
+  const toastRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const handleClickOutside = (e: MouseEvent) => {
+      if (toastRef.current && !toastRef.current.contains(e.target as Node)) {
+        dismissToast();
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [isOpen, dismissToast]);
 
   if (!mounted) return null;
 
@@ -34,7 +48,7 @@ export default function DownloadWithToast({ locale }: DownloadWithToastProps) {
   return (
     <div className="relative">
       <button
-        onClick={() => {}}
+        onClick={() => showDownloadToast()}
         className="text-text-secondary hover:text-accent transition-colors cursor-pointer block"
         aria-label="Download Resume"
         title="Download Resume"
@@ -43,8 +57,8 @@ export default function DownloadWithToast({ locale }: DownloadWithToastProps) {
       </button>
 
       {isOpen && (
-        <div className="absolute right-full mr-3 top-1/2 -translate-y-1/2 z-50 animate-fade-in">
-          <div className="relative bg-surface border border-surface p-4 rounded-xl shadow-xl w-64">
+        <div ref={toastRef} className="absolute right-full mr-3 top-1/2 -translate-y-1/2 z-50 animate-fade-in">
+          <div className="relative bg-surface border border-surface p-4 rounded-xl shadow-xl w-60 max-w-74dvw">
             <div
               className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-px bg-accent"
               style={{
@@ -57,14 +71,16 @@ export default function DownloadWithToast({ locale }: DownloadWithToastProps) {
               }}
             />
             <div className="flex items-start gap-3">
+              <div className="flex-1 flex flex-col gap-2">
+                <div className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
                 <i className="i-tabler-file-download text-accent text-sm" />
               </div>
-              <div className="flex-1">
-                <p className="text-text text-sm mb-3">
-                  {currentTranslations.hero.downloadResume}:
+                  <p className="text-text text-sm">
+                    {currentTranslations.hero.downloadResume}
                 </p>
-                <div className="flex gap-2">
+                </div>
+                <div className="flex gap-2 flex-col">
                   <a
                     href="/Rayko_Azcue_Resume.pdf"
                     download="Rayko_Azcue_Resume.pdf"

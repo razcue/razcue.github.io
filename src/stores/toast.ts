@@ -40,7 +40,7 @@ export const useToastStore = create<ToastState>((set, get) => {
 
   const startInterval = () => {
     if (intervalId) clearInterval(intervalId);
-    intervalId = setInterval(checkAndShowToast, 60000);
+    intervalId = setInterval(checkAndShowToast, 5000);
   };
 
   if (typeof window !== 'undefined') {
