@@ -2,7 +2,6 @@
 import '../styles/global.css';
 import { getTranslation, type Locale } from '../utils/i18n';
 import Sidebar from '../components/Sidebar';
-import { ToastProvider } from '../stores/toast';
 
 export interface Props {
   title?: string;
@@ -175,23 +174,21 @@ const ogImage = `${baseUrl}/og-image.svg`;
         Skip to main content
       </a>
 
-      <ToastProvider>
-        <div class="flex min-h-screen">
-          <!-- Main Content Area - Add right padding to prevent overlap with fixed sidebar -->
-          <div class="flex-1 min-w-0 pr-12 lg:pr-20">
-            <slot />
-          </div>
-
-          <!-- Sidebar - Fixed position -->
-          <div class="fixed right-0 top-0 h-screen bg-bg px-1 lg:px-4 flex flex-col items-center w-12 lg:w-20">
-            <Sidebar
-              locale={locale}
-              showNavigation={showNavigation}
-              currentPath={Astro.url.pathname}
-              client:idle
-            />
-          </div>
+      <div class="flex min-h-screen">
+        <!-- Main Content Area - Add right padding to prevent overlap with fixed sidebar -->
+        <div class="flex-1 min-w-0 pr-12 lg:pr-20">
+          <slot />
         </div>
-      </ToastProvider>
+
+        <!-- Sidebar - Fixed position -->
+        <div class="fixed right-0 top-0 h-screen bg-bg px-1 lg:px-4 flex flex-col items-center w-12 lg:w-20">
+          <Sidebar
+            locale={locale}
+            showNavigation={showNavigation}
+            currentPath={Astro.url.pathname}
+            client:load
+          />
+        </div>
+      </div>
     </body>
 </html>
