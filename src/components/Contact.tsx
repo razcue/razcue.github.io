@@ -155,11 +155,11 @@ export default function Contact({ locale }: ContactProps) {
       )}
 
       <div className="w-full">
-        <h2 className="text-lg sm:text-2xl lg:text-4xl font-bold text-text mb-4 sm:mb-6 lg:mb-8">
+        <h2 className="text-lg sm:text-2xl lg:text-4xl font-bold text-text mb-1 sm:mb-2 lg:mb-4">
           {t.contact.title}
         </h2>
 
-        <p className="text-text-secondary text-xs sm:text-base lg:text-lg mb-6 sm:mb-8 lg:mb-12 max-w-2xl">
+        <p className="text-text-secondary text-xs sm:text-base lg:text-lg mb-4 lg:mb-8 max-w-2xl">
           {t.contact.description}
         </p>
 

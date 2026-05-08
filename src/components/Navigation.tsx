@@ -16,9 +16,9 @@ export default function Navigation({ locale }: NavigationProps) {
       hash &&
       [
         'about',
-        'open-to',
         'experience',
-        'projects',
+        'open-to',
+        // 'projects',
         // 'this-site',
         'contact',
       ].includes(hash)
@@ -29,9 +29,9 @@ export default function Navigation({ locale }: NavigationProps) {
     const handleScroll = () => {
       const sections = [
         'about',
-        'open-to',
         'experience',
-        'projects',
+        'open-to',
+        // 'projects',
         // 'this-site',
         'contact',
       ];
@@ -83,9 +83,9 @@ export default function Navigation({ locale }: NavigationProps) {
 
   const navItems = [
     { id: 'about', label: t.nav.about },
-    { id: 'open-to', label: t.nav.openTo },
     { id: 'experience', label: t.nav.experience },
-    { id: 'projects', label: t.nav.projects },
+    { id: 'open-to', label: t.nav.openTo },
+    // { id: 'projects', label: t.nav.projects },
     // { id: 'this-site', label: t.nav.thisSite },
     { id: 'contact', label: t.nav.contact },
   ];
@@ -146,7 +146,7 @@ export default function Navigation({ locale }: NavigationProps) {
               <span className="font-medium">{t.nav.blog}</span>
             </a>
           </li>
-          <li>
+          {/* <li>
             <a
               href={locale === 'es' ? '/es/lab' : '/lab'}
               className="flex items-center gap-3 text-xl text-text-secondary hover:text-accent transition-colors group"
@@ -154,7 +154,7 @@ export default function Navigation({ locale }: NavigationProps) {
               <i className="i-tabler-external-link w-5 h-5" />
               <span className="font-medium">{t.nav.lab}</span>
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </nav>

@@ -49,8 +49,8 @@ export default {
     beforeDescription: 'With more than',
     yearsOfExperience: 'years of experience',
     description: [
-      ', I specialize in bringing ideas to life through high-performance applications that drive real business results. With a primary focus on extensive backend experience, I create tailored solutions front end development and designed to boost conversions and meet your specific business objectives.',
-      'Every business is unique, and so are my solutions. I deliver personalized digital experiences using modern technologies, with a strong emphasis on Core Web Vitals and business metrics, translating your goals into measurable outcomes.',
+      ', I specialize in bringing ideas to life through high-performance applications that drive real business results. With a primary focus on front end development and extensive backend experience, I create tailored solutions designed to boost conversions and meet your specific business objectives.',
+      'Every business is unique, and so are my solutions. I deliver personalized digital experiences using modern technologies, with a strong emphasis on business metrics, translating your goals into measurable outcomes.',
     ],
     githubStreak: 'GitHub Streak',
     siteMetrics: 'About This Site',
@@ -154,11 +154,10 @@ export default {
     present: 'Present',
     highlights: [
       'Increased organic traffic by 38% via polished SEO strategy and improved Core Web Vitals (LCP 3.2s → 1.4s, CLS 0.15 → 0.08). @Delfín Motor Labs SL',
-      'Shipped pixel-perfect, responsive UIs across internal CMS and consumer-facing monetization app, closing 120+ Jira tasks by translating Figma designs into production-ready front-end features. @Blue Creator Agency',
-      'Drove 15% conversion lift by migrating 40+ Vue components from Vuetify to Tailwind, cutting bundle size 19% and improving LCP from 9.1s to 6.6s. @Blue Creator Agency',
+      'Shipped pixel-perfect, responsive UIs across internal CMS and consumer-facing monetization app, closing 120+ Jira tasks by translating Figma designs into production-ready front-end features. @Blue Creator Agency | Kimia Group',
+      'Drove 15% conversion lift by migrating 40+ Vue components from Vuetify to Tailwind, cutting bundle size 19% and improving LCP from 9.1s to 6.6s. @Blue Creator Agency | Kimia Group',
       'Mentored 3 junior developers, improving code review approval rate from 40% to 85% through code standards. @BSE America',
       'Enhanced geolocation capabilities for Fire & EMS operations, built a barcode/QR scanner processing 5,000+ daily scans with >99% accuracy. @First Due',
-      'Led multi-tenant document management system with Elasticsearch capabilities, cutting typical search times from seconds to <1s. @Grupo de Electrónica para el Turismo',
     ],
     items: [
       {
@@ -429,7 +428,7 @@ export default {
     intro:
       "Below are the roles I'm targeting and my availability. If you think I might be a good fit, let's talk!",
     rolesTitle: 'Target Roles',
-    roles: ['Front End Developer', 'Full Stack Developer'],
+    roles: ['Front End Developer', 'Full Stack Developer', 'Backend Developer', 'QA Automation'],
     preferredRole: 'Preferred',
     availabilityTitle: 'Availability & Location',
     availability: [

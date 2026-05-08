@@ -72,9 +72,6 @@ export default function Hero({ locale }: HeroProps) {
           className="relative px-4 py-3 text-accent font-medium overflow-hidden group w-50 cursor-pointer flex items-center justify-center gap-2"
           style={{ background: 'transparent' }}
         >
-          <i className="i-tabler-file-download text-xl"></i>
-          <span className="uppercase">{t.hero.downloadResume}</span>
-
           {/* Toggle Button - Rotated Square */}
           <button
             onClick={handleToggleClick}
@@ -89,6 +86,7 @@ export default function Hero({ locale }: HeroProps) {
               }`}
             />
           </button>
+          <span className="uppercase">{t.hero.downloadResume}</span>
 
           {/* Animated borders */}
           <span

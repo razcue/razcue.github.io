@@ -67,10 +67,10 @@ export default function Experience({ locale }: ExperienceProps) {
   return (
     <section
       id="experience"
-      className="min-h-screen flex items-center lg:items-center px-2 lg:px-6 lg:px-8 py-12 lg:py-20"
+      className="min-h-screen flex items-center lg:items-center px-2 lg:px-6 lg:px-8 sm:py-12 lg:py-20"
     >
       <div className="w-full">
-        <h2 className="text-lg sm:text-2xl lg:text-4xl font-bold text-text mb-4 sm:mb-8 lg:mb-12">
+        <h2 className="text-lg sm:text-2xl lg:text-4xl font-bold text-text mb-1 sm:mb-2 lg:mb-4">
           {t.experience.title}
         </h2>
 
@@ -122,7 +122,7 @@ export default function Experience({ locale }: ExperienceProps) {
             </div>
           </div>
         ) : (
-          <div className="space-y-3 sm:space-y-4">
+          <div className="space-y-2 sm:space-y-4">
             {highlights.map((highlight, index) => (
               <span
                 key={index}
@@ -130,7 +130,7 @@ export default function Experience({ locale }: ExperienceProps) {
                 onClick={() => handleBulletClick(highlight.companyIndex)}
                 className="w-full text-left group cursor-pointer flex items-start gap-2"
               >
-                <span className="text-text-secondary text-xs sm:text-sm leading-relaxed group-hover:text-accent transition-colors">
+                <span className="text-text-secondary text-sm sm:text-sm leading-relaxed group-hover:text-accent transition-colors">
                   {highlight.text}
                   <span
                     className="text-accent opacity-80 font-medium group-hover:opacity-100 ml-1 cursor-pointer"

@@ -84,24 +84,26 @@ export default function ChatWithToast() {
               }}
             />
             <div className="flex items-start gap-3">
-              <div className="w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
-                <i className="i-tabler-robot text-accent text-sm" />
-              </div>
               <div className="flex-1">
-                <p className="text-text text-sm">
-                  Hi! I can answer questions about Rayko&apos;s experience,
-                  skills, and availability.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-2 mt-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
+                    <i className="i-tabler-robot text-accent text-sm" />
+                  </div>
+                  <p className="text-text text-sm">
+                    Hi! I can answer questions about Rayko&apos;s experience,
+                    skills, and availability.
+                  </p>
+                </div>
+                <div className="flex flex-col sm:flex-row gap-2 mt-3 w-full">
                   <button
                     onClick={handleChatClick}
-                    className="px-3 py-1.5 bg-accent text-surface text-xs font-medium rounded-lg hover:bg-accent/90 transition-colors"
+                    className="flex-1 px-3 py-1.5 bg-accent text-surface text-xs font-medium rounded-lg hover:bg-accent/90 transition-colors cursor-pointer"
                   >
                     Chat now
                   </button>
                   <button
                     onClick={handleDismiss}
-                    className="px-3 py-1.5 text-text-secondary text-xs hover:text-text transition-colors"
+                    className="flex-1 px-3 py-1.5 text-text-secondary text-xs hover:text-text transition-colors cursor-pointer border border-accent rounded-lg"
                   >
                     Maybe later
                   </button>
@@ -109,7 +111,7 @@ export default function ChatWithToast() {
               </div>
               <button
                 onClick={handleDismiss}
-                className="text-text-secondary hover:text-text transition-colors"
+                className="text-text-secondary hover:text-text transition-colors cursor-pointer"
                 aria-label="Dismiss"
               >
                 <i className="i-tabler-x text-lg" />

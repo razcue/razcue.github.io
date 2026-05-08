@@ -173,7 +173,6 @@ export default {
       'Generé 15% más conversiones migrando 40+ componentes de Vuetify a Tailwind, reduciendo bundle 19% y mejorando LCP de 9.1s a 6.6s. @Blue Creator Agency',
       'Formé 3 desarrolladores junior, elevando tasa de aprobación de code review de 40% a 85% mediante estándares de código. @BSE America',
       'Mejoré capacidades de geolocalización para Fire & EMS, creé escáner de códigos procesando 5,000+ escaneos diarios con >99% precisión. @First Due',
-      'Lideré sistema de gestión documental multi-tenant con Elasticsearch, reduciendo tiempos de búsqueda típicos de segundos a menos de 1 segundo. @Grupo de Electrónica para el Turismo',
     ],
     items: [
       {

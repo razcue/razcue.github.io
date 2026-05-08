@@ -13,17 +13,17 @@ export default function JobStatus({ locale }: JobStatusProps) {
       className="min-h-screen flex items-center px-2 lg:px-6 lg:px-8"
     >
       <div className="w-full">
-        <h2 className="text-lg sm:text-2xl lg:text-4xl font-bold text-text mb-4 sm:mb-8 lg:mb-12">
+        <h2 className="text-lg sm:text-2xl lg:text-4xl font-bold text-text mb-1 sm:mb-2 lg:mb-4">
           {t.openTo.title}
         </h2>
-        <p className="text-text-secondary text-xs sm:text-base lg:text-lg mb-6 lg:mb-8">
+        <p className="text-text-secondary text-xs sm:text-base lg:text-lg mb-4 lg:mb-8">
           {t.openTo.intro}
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12">
           {/* Target Roles */}
           <div>
-            <h3 className="text-base sm:text-lg lg:text-2xl font-semibold text-text mb-3 lg:mb-4">
+            <h3 className="text-base sm:text-lg lg:text-2xl font-semibold text-text mb-2 lg:mb-4">
               {t.openTo.rolesTitle}
             </h3>
             <ul className="space-y-2">
@@ -46,7 +46,7 @@ export default function JobStatus({ locale }: JobStatusProps) {
 
           {/* Availability */}
           <div>
-            <h3 className="text-base sm:text-lg lg:text-2xl font-semibold text-text mb-3 lg:mb-4">
+            <h3 className="text-base sm:text-lg lg:text-2xl font-semibold text-text mb-2 lg:mb-4">
               {t.openTo.availabilityTitle}
             </h3>
             <ul className="space-y-2 mb-6">

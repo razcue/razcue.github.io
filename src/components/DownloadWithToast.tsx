@@ -49,7 +49,7 @@ export default function DownloadWithToast({ locale }: DownloadWithToastProps) {
     <div className="relative">
       <button
         onClick={() => showDownloadToast()}
-        className="text-text-secondary hover:text-accent transition-colors cursor-pointer block"
+        className="text-text-secondary hover:text-accent transition-colors block"
         aria-label="Download Resume"
         title="Download Resume"
       >
@@ -71,16 +71,16 @@ export default function DownloadWithToast({ locale }: DownloadWithToastProps) {
               }}
             />
             <div className="flex items-start gap-3">
-              <div className="flex-1 flex flex-col gap-2">
+              <div className="flex-1 flex flex-col gap-3">
                 <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
-                <i className="i-tabler-file-download text-accent text-sm" />
-              </div>
+                  <div className="w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
+                    <i className="i-tabler-file-download text-accent text-sm" />
+                  </div>
                   <p className="text-text text-sm">
                     {currentTranslations.hero.downloadResume}
-                </p>
+                  </p>
                 </div>
-                <div className="flex gap-2 flex-col">
+                <div className="flex flex-col sm:flex-row gap-2">
                   <a
                     href="/Rayko_Azcue_Resume.pdf"
                     download="Rayko_Azcue_Resume.pdf"

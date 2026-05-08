@@ -27,8 +27,8 @@ function getStreakStatsUrl(locale: Locale, theme: 'dark' | 'light'): string {
     theme: 'transparent',
     hide_border: 'true',
     exclude_days: 'Sun,Sat',
-    card_width: '494',
-    card_height: '194',
+    card_width: '370',
+    card_height: '147',
   });
 
   if (theme === 'dark') {
@@ -93,7 +93,7 @@ export default function About({ locale }: AboutProps) {
             </div>
           </div>
 
-          <div className="space-y-2 text-text-secondary text-xs sm:text-base lg:text-lg leading-relaxed">
+          <div className="space-y-2 text-text-secondary text-sm sm:text-base lg:text-lg leading-relaxed">
             {t.about.description.map((paragraph, index) => (
               <p key={index} className={`${index === 1 && 'hidden lg:block'}`}>
                 {index === 0 ? (

@@ -15,8 +15,8 @@ interface SideBarProps {
 const backNavigationMap: Record<string, string> = {
   '/blog': '/',
   '/es/blog': '/es/',
-  '/lab': '/',
-  '/es/lab': '/es/',
+  // '/lab': '/',
+  // '/es/lab': '/es/',
 };
 
 export default function Sidebar({
@@ -77,9 +77,10 @@ export default function Sidebar({
     const handleScroll = () => {
       const sections = [
         'about',
-        'open-to',
         'experience',
-        'projects',
+        'open-to',
+        // 'projects',
+        // 'this-site',
         'contact',
       ];
       const mainContent = document.querySelector(
@@ -122,9 +123,9 @@ export default function Sidebar({
 
   const navItems = [
     { id: 'about' },
-    { id: 'open-to' },
     { id: 'experience' },
-    { id: 'projects' },
+    { id: 'open-to' },
+    // { id: 'projects' },
     // { id: 'this-site' },
     { id: 'contact' },
   ];
@@ -193,7 +194,7 @@ export default function Sidebar({
           <li>
             <div className="w-px h-2 md:h-4 ml-2 flex-1 bg-text-secondary opacity-30 hidden md:block mb-0 md:mb-4"></div>
           </li>
-          <li>
+          {/* <li>
             <a
               href={locale === 'es' ? '/es/lab' : '/lab'}
               className="text-text-secondary hover:text-accent transition-colors text-xs md:text-sm font-medium tracking-widest"
@@ -201,7 +202,7 @@ export default function Sidebar({
             >
               <span className="font-medium">{t.nav.lab}</span>
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
 
