@@ -68,7 +68,7 @@ export default function About({ locale }: AboutProps) {
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center px-2 lg:px-6 lg:px-8"
+      className="min-h-[100dvh] flex items-center px-2 lg:px-6 lg:px-8"
     >
       <div className="w-full">
         {/* Mobile Profile Header - Only visible on mobile */}

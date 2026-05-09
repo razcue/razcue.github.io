@@ -1,8 +1,14 @@
 import { useState, useEffect } from 'react';
 import { useToastStore } from '../stores/toast';
+import { getTranslation, type Locale } from '../utils/i18n';
 import ChatWidget from './ChatWidget';
 
-export default function ChatWithToast() {
+interface ChatWithToastProps {
+  locale: Locale;
+}
+
+export default function ChatWithToast({ locale }: ChatWithToastProps) {
+  const t = getTranslation(locale);
   const { activeToast, activeDialog, openChatDialog, dismissToast, closeDialog } = useToastStore();
   const isToastVisible = activeToast === 'chat';
   const isDialogVisible = activeDialog === 'chat';
@@ -31,8 +37,6 @@ export default function ChatWithToast() {
       <button
         onClick={handleChatClick}
         className="text-text-secondary hover:text-accent transition-colors cursor-pointer"
-        aria-label="Chat with AI assistant"
-        title="Chat with AI"
       >
         <i className="i-tabler-message w-6 h-6" />
       </button>
@@ -54,14 +58,14 @@ export default function ChatWithToast() {
                 boxShadow: '3px 3px 6px rgba(0,0,0,0.3)',
               }}
             />
-            <ChatWidget isOpen={true} onOpen={handleCloseChat} />
+<ChatWidget isOpen={true} onOpen={handleCloseChat} locale={locale} />
           </div>
         </div>
       )}
 
       {isDialogVisible && (
         <div className="lg:hidden fixed inset-0 z-50 flex items-start justify-center pt-16 p-2">
-          <ChatWidget isOpen={true} onOpen={handleCloseChat} />
+          <ChatWidget isOpen={true} onOpen={handleCloseChat} locale={locale} />
         </div>
       )}
 
@@ -85,34 +89,27 @@ export default function ChatWithToast() {
             />
             <div className="flex items-start gap-3">
               <div className="flex-1">
-                <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
-                    <i className="i-tabler-robot text-accent text-sm" />
-                  </div>
-                  <p className="text-text text-sm">
-                    Hi! I can answer questions about Rayko&apos;s experience,
-                    skills, and availability.
-                  </p>
-                </div>
-                <div className="flex flex-col sm:flex-row gap-2 mt-3 w-full">
+                <p className="text-text text-sm">
+                  {t.chat.toastMessage}
+                </p>
+                <div className="flex flex-col gap-2 mt-3 w-full">
                   <button
                     onClick={handleChatClick}
                     className="flex-1 px-3 py-1.5 bg-accent text-surface text-xs font-medium rounded-lg hover:bg-accent/90 transition-colors cursor-pointer"
                   >
-                    Chat now
+                    {t.chat.chatNow}
                   </button>
                   <button
                     onClick={handleDismiss}
                     className="flex-1 px-3 py-1.5 text-text-secondary text-xs hover:text-text transition-colors cursor-pointer border border-accent rounded-lg"
                   >
-                    Maybe later
+                    {t.chat.maybeLater}
                   </button>
                 </div>
               </div>
               <button
                 onClick={handleDismiss}
                 className="text-text-secondary hover:text-text transition-colors cursor-pointer"
-                aria-label="Dismiss"
               >
                 <i className="i-tabler-x text-lg" />
               </button>

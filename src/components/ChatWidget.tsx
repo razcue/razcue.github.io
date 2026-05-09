@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
+import { getTranslation, type Locale } from '../utils/i18n';
 
 interface Message {
   role: 'user' | 'assistant';
@@ -8,18 +9,20 @@ interface Message {
 interface ChatWidgetProps {
   isOpen?: boolean;
   onOpen?: (open: boolean) => void;
+  locale?: Locale;
 }
 
 export default function ChatWidget({
   isOpen: externalIsOpen,
   onOpen,
+  locale = 'en',
 }: ChatWidgetProps) {
+  const t = getTranslation(locale);
   const [internalIsOpen, setInternalIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
     {
       role: 'assistant',
-      content:
-        "Hi! I'm Rayko's AI assistant. Feel free to ask me anything about his experience, skills, or availability!",
+      content: t.chat.welcomeMessage,
     },
   ]);
   const [input, setInput] = useState('');
@@ -116,6 +119,7 @@ export default function ChatWidget({
             messagesEndRef={messagesEndRef}
             messages={messages}
             isMobile
+            t={t}
           />
         </div>
       </div>
@@ -131,6 +135,7 @@ export default function ChatWidget({
           messagesEndRef={messagesEndRef}
           messages={messages}
           isMobile={false}
+          t={t}
         />
       </div>
     </>
@@ -146,6 +151,7 @@ interface ChatContentProps {
   onClose: () => void;
   messagesEndRef: React.RefObject<HTMLDivElement | null>;
   isMobile: boolean;
+  t: ReturnType<typeof getTranslation>;
 }
 
 function ChatContent({
@@ -157,6 +163,7 @@ function ChatContent({
   onClose,
   messagesEndRef,
   isMobile,
+  t,
 }: ChatContentProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -164,21 +171,21 @@ function ChatContent({
     <div className="flex flex-col h-full overflow-hidden">
       {/* Fixed Header */}
       <div
-        className={`flex-shrink-0 p-4 bg-accent text-surface flex items-center justify-between ${isMobile ? 'rounded-t-xl' : ''}`}
+        className={`flex-shrink-0 p-4 bg-accent text-surface flex items-center justify-between rounded-t-lg ${isMobile ? 'rounded-t-xl' : ''}`}
       >
         <div className="flex items-center gap-3">
           <div className="w-8 h-8 rounded-full bg-surface/20 flex items-center justify-center">
             <i className="i-tabler-robot text-lg" />
           </div>
           <div>
-            <h3 className="font-semibold text-sm">AI Assistant</h3>
-            <p className="text-xs text-surface/70">Ask me about Rayko</p>
+            <h3 className="font-semibold text-sm">{t.chat.title}</h3>
+            <p className="text-xs text-surface/70">{t.chat.subtitle}</p>
           </div>
         </div>
         <button
           onClick={onClose}
           className="p-1 w-8 h-8 hover:bg-surface/20 rounded-lg transition-colors cursor-pointer"
-          aria-label="Close chat"
+          aria-label={t.chat.closeChat}
         >
           <i className="i-tabler-x text-lg" />
         </button>
@@ -234,7 +241,7 @@ function ChatContent({
             type="text"
             value={input}
             onChange={(e) => onInputChange(e.target.value)}
-            placeholder="Ask a question..."
+            placeholder={t.chat.placeholder}
             disabled={isLoading}
             className="flex-1 px-4 py-2 bg-background border border-text-secondary rounded-full text-text text-sm placeholder-text-secondary focus:outline-none focus:border-0 focus:ring-2 focus:ring-accent"
           />

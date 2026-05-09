@@ -115,7 +115,7 @@ export default function Contact({ locale }: ContactProps) {
   return (
     <section
       id="contact"
-      className="min-h-screen flex items-center px-2 lg:px-6 lg:px-8 py-12 lg:py-20 relative"
+      className="min-h-[100dvh] flex items-center px-2 lg:px-6 lg:px-8 py-12 lg:py-20 relative"
     >
       {/* Floating Feedback Message */}
       {status !== 'idle' && (

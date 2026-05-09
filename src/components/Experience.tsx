@@ -67,7 +67,7 @@ export default function Experience({ locale }: ExperienceProps) {
   return (
     <section
       id="experience"
-      className="min-h-screen flex items-center lg:items-center px-2 lg:px-6 lg:px-8 sm:py-12 lg:py-20"
+      className="min-h-[100dvh] flex items-center lg:items-center px-2 lg:px-6 lg:px-8 sm:py-12 lg:py-20"
     >
       <div className="w-full">
         <h2 className="text-lg sm:text-2xl lg:text-4xl font-bold text-text mb-1 sm:mb-2 lg:mb-4">
@@ -81,7 +81,7 @@ export default function Experience({ locale }: ExperienceProps) {
               className="flex items-center gap-2 text-accent hover:text-accent/80 transition-colors text-sm sm:text-base cursor-pointer"
             >
               <span className="i-tabler-arrow-left" />
-              <span>Back to highlights</span>
+              <span>{t.experience.backToHighlights}</span>
             </button>
 
             <div className="bg-surface/50 rounded-lg p-4 sm:p-6 border border-accent/10">
@@ -127,13 +127,13 @@ export default function Experience({ locale }: ExperienceProps) {
               <span
                 key={index}
                 role="button"
-                onClick={() => handleBulletClick(highlight.companyIndex)}
-                className="w-full text-left group cursor-pointer flex items-start gap-2"
+                onClick={() => {}}
+                className="w-full text-left group flex items-start gap-2"
               >
-                <span className="text-text-secondary text-sm sm:text-sm leading-relaxed group-hover:text-accent transition-colors">
+                <span className="text-text-secondary text-sm sm:text-sm leading-relaxed transition-colors">
                   {highlight.text}
                   <span
-                    className="text-accent opacity-80 font-medium group-hover:opacity-100 ml-1 cursor-pointer"
+                    className="text-accent opacity-80 font-medium ml-1"
                   >
                     @{highlight.companyName}
                   </span>

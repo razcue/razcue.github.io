@@ -39,6 +39,7 @@ export default {
       'I build exceptional digital experiences with modern web technologies.',
     cta: 'Get In Touch',
     downloadResume: 'Resume',
+    downloadResumeTitle: 'Download my resume, you have two options to choose from',
     onePageResume: 'One Page Resume',
     fullResumeCV: 'Full Resume',
   },
@@ -150,8 +151,9 @@ export default {
 
   // Experience Section
   experience: {
-    title: 'Experience Highlights',
+    title: 'Selected Experience',
     present: 'Present',
+    backToHighlights: 'Back to highlights',
     highlights: [
       'Increased organic traffic by 38% via polished SEO strategy and improved Core Web Vitals (LCP 3.2s → 1.4s, CLS 0.15 → 0.08). @Delfín Motor Labs SL',
       'Shipped pixel-perfect, responsive UIs across internal CMS and consumer-facing monetization app, closing 120+ Jira tasks by translating Figma designs into production-ready front-end features. @Blue Creator Agency | Kimia Group',
@@ -405,6 +407,18 @@ export default {
     },
   },
 
+  // Chat Widget
+  chat: {
+    title: 'AI Assistant',
+    subtitle: 'Ask me about Rayko',
+    placeholder: 'Ask a question...',
+    chatNow: 'Chat now',
+    maybeLater: 'Maybe later',
+    closeChat: 'Close chat',
+    toastMessage: "Hi! I can answer questions about Rayko's experience, skills, and availability.",
+    welcomeMessage: "Hi! I'm Rayko's AI assistant. Feel free to ask me anything about his experience, skills, or availability!",
+  },
+
   // Footer
   footer: {
     copyright: '© {year} Rayko Azcue. All rights reserved.',
@@ -428,12 +442,12 @@ export default {
     intro:
       "Below are the roles I'm targeting and my availability. If you think I might be a good fit, let's talk!",
     rolesTitle: 'Target Roles',
-    roles: ['Front End Developer', 'Full Stack Developer', 'Backend Developer', 'QA Automation'],
+    roles: ['Frontend Developer', 'Full Stack Developer', 'Backend Developer', 'QA Automation'],
     preferredRole: 'Preferred',
     availabilityTitle: 'Availability & Location',
     availability: [
       'Remote globally within an English or Spanish setup',
-      'On-site/Hybrid with relocation basis. Prefer family relocation packages. Primary interest: Latin America or Spain, but open to discussing other locations',
+      'On-site/Hybrid with relocation basis. Family visa-sponsorship needed, prefer offers with relocation package. Primary interest: Latin America or Europe, but open to discussing other locations',
     ],
     ctaTalk: "Let's Talk",
   },

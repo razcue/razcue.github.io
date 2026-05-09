@@ -10,7 +10,7 @@ export default function JobStatus({ locale }: JobStatusProps) {
   return (
     <section
       id="open-to"
-      className="min-h-screen flex items-center px-2 lg:px-6 lg:px-8"
+      className="min-h-[100dvh] flex items-center px-2 lg:px-6 lg:px-8"
     >
       <div className="w-full">
         <h2 className="text-lg sm:text-2xl lg:text-4xl font-bold text-text mb-1 sm:mb-2 lg:mb-4">

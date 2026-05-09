@@ -216,7 +216,6 @@ export default function Sidebar({
           href="https://github.com/razcue"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="GitHub"
         />
       </div>
 
@@ -230,7 +229,7 @@ export default function Sidebar({
 
       {/* Chat with Toast */}
       <div className="mb-1.5 md:mb-2.5">
-        <ChatWithToast />
+        <ChatWithToast locale={locale} />
       </div>
 
       {/* Download with Toast */}

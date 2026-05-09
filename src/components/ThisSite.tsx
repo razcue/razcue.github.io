@@ -101,7 +101,7 @@ export default function ThisSite({ locale }: ThisSiteProps) {
   return (
     <section
       id="this-site"
-      className="min-h-screen flex items-center px-2 lg:px-6 lg:px-8"
+      className="min-h-[100dvh] flex items-center px-2 lg:px-6 lg:px-8"
     >
       <div className="w-full max-w-4xl">
         {/* Section Title */}

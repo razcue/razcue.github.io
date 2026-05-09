@@ -14,7 +14,7 @@ export default function PortfolioLayout({
   sidebar,
 }: PortfolioLayoutProps) {
   return (
-    <div className="min-h-screen grid grid-cols-12 gap-0">
+    <div className="min-h-[100dvh] grid grid-cols-12 gap-0">
       {/* Column 1: Hero & Navigation */}
       {/* Large Desktop (>1536px): 5/12 */}
       {/* Standard Desktop (1024px-1536px): 5/12 */}

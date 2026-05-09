@@ -18,12 +18,12 @@ export default {
     intro:
       'Abajo están los roles que me interesan y mi disponibilidad. Si crees que puedo ser un buen candidato, ¡hablemos!',
     rolesTitle: 'Roles Buscados',
-    roles: ['Front End Developer', 'Full Stack Developer'],
+    roles: ['Frontend Developer', 'Full Stack Developer', 'Backend Developer', 'QA Automation'],
     preferredRole: 'Preferido',
     availabilityTitle: 'Disponibilidad y Ubicación',
     availability: [
-      'Remoto globalmente en entorno de inglés o español',
-      'Presencial/Híbrido con base de reubicación. Prefiero paquetes de reubicación familiar. Interés principal: América Latina o España, pero abierto a discutir otras ubicaciones',
+      'Remoto global en entorno de inglés o español',
+      'Presencial/Híbrido con reubicación. Se necesita patrocinio de visa familiar, prefiero ofertas con paquete de reubicación. Interés principal: América Latina o Europa, pero abierto a discutir otras ubicaciones',
     ],
     ctaTalk: 'Hablemos',
   },
@@ -54,6 +54,7 @@ export default {
       'Creo experiencias digitales excepcionales con tecnologías web modernas.',
     cta: 'Contactar',
     downloadResume: 'Currículum',
+    downloadResumeTitle: 'Descarga mi currículum, tienes dos opciones para elegir',
     onePageResume: 'CV de Una Página',
     fullResumeCV: 'CV Completo',
   },
@@ -64,7 +65,7 @@ export default {
     beforeDescription: 'Con más de',
     yearsOfExperience: 'años de experiencia',
     description: [
-      ', me especializo en dar vida a las ideas a través de aplicaciones de alto rendimiento que generan resultados comerciales reales. Con un enfoque principal en desarrollo front end y amplia experiencia en backend, creo soluciones personalizadas diseñadas para impulsar conversiones y alcanzar tus objetivos comerciales específicos.',
+      ', me especializo en dar vida a las ideas a través de aplicaciones de alto rendimiento que generan resultados comerciales reales. Con un enfoque principal en desarrollo frontend y amplia experiencia en backend, creo soluciones personalizadas diseñadas para impulsar conversiones y alcanzar tus objetivos comerciales específicos.',
       'Cada negocio es único, y también lo son mis soluciones. Entrego experiencias digitales personalizadas utilizando tecnologías modernas, con un fuerte énfasis en Core Web Vitals y métricas de negocio, traduciendo tus objetivos en resultados medibles.',
     ],
     githubStreak: 'Racha de GitHub',
@@ -165,14 +166,15 @@ export default {
 
   // Experience Section
   experience: {
-    title: 'Experiencia Destacada',
+    title: 'Experiencia Seleccionada',
     present: 'Presente',
+    backToHighlights: 'Volver a experiencia',
     highlights: [
-      'Incrementé tráfico orgánico 38% vía estrategia SEO y mejoré Core Web Vitals (LCP 3.2s → 1.4s, CLS 0.15 → 0.08). @Delfín Motor Labs SL',
-      'Implementé interfaces responsivas y pixel-perfect para CMS interno y app de monetización, cerrando 120+ tareas de Jira transformando diseños de Figma en features de producción. @Blue Creator Agency',
-      'Generé 15% más conversiones migrando 40+ componentes de Vuetify a Tailwind, reduciendo bundle 19% y mejorando LCP de 9.1s a 6.6s. @Blue Creator Agency',
-      'Formé 3 desarrolladores junior, elevando tasa de aprobación de code review de 40% a 85% mediante estándares de código. @BSE America',
-      'Mejoré capacidades de geolocalización para Fire & EMS, creé escáner de códigos procesando 5,000+ escaneos diarios con >99% precisión. @First Due',
+      'Tráfico orgánico incrementado en 38% gracias a arreglos implementados de SEO y mejoras a Core Web Vitals (LCP 3.2s → 1.4s, CLS 0.15 → 0.08). @Delfín Motor Labs SL',
+      'Implementé interfaces responsive y pixel-perfect para un CMS interno y app de monetización, cerrando 120+ tareas en Jira, mientras convertía diseños en Figma a características listas para producción. @Blue Creator Agency | Kimia Group',
+      'Impulsé +15% en conversiones migrando 40+ componentes de Vuetify a Tailwind, reduciendo el bundle un 19% y mejorando LCP de 9.1s a 6.6s. @Blue Creator Agency | Kimia Group',
+      'Formé 3 desarrolladores junior, elevando la tasa de aprobación de code review de 40% a 85% mediante estándares. @BSE America',
+      'Mejoré las capacidades de geolocalización para los módulos de Fire & EMS, creé escáner de códigos procesando 5,000+ escaneos diarios con >99% precisión. @First Due',
     ],
     items: [
       {
@@ -418,6 +420,18 @@ export default {
       subject: 'Consulta de proyecto',
       message: 'Cuéntame sobre tu proyecto...',
     },
+  },
+
+  // Chat Widget
+  chat: {
+    title: 'Asistente de IA',
+    subtitle: 'Pregúntame sobre Rayko',
+    placeholder: 'Haz una pregunta...',
+    chatNow: 'Chatear ahora',
+    maybeLater: 'Quizás después',
+    closeChat: 'Cerrar chat',
+    toastMessage: "¡Hola! Puedo responder preguntas sobre la experiencia, habilidades y disponibilidad de Rayko.",
+    welcomeMessage: "¡Hola! Soy el asistente de IA de Rayko. ¡No dudes en preguntarme sobre su experiencia, habilidades o disponibilidad!",
   },
 
   // Footer

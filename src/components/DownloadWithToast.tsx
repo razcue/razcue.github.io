@@ -50,8 +50,6 @@ export default function DownloadWithToast({ locale }: DownloadWithToastProps) {
       <button
         onClick={() => showDownloadToast()}
         className="text-text-secondary hover:text-accent transition-colors block"
-        aria-label="Download Resume"
-        title="Download Resume"
       >
         <i className="i-tabler-file-download w-6 h-6" />
       </button>
@@ -77,7 +75,7 @@ export default function DownloadWithToast({ locale }: DownloadWithToastProps) {
                     <i className="i-tabler-file-download text-accent text-sm" />
                   </div>
                   <p className="text-text text-sm">
-                    {currentTranslations.hero.downloadResume}
+                    {currentTranslations.hero.downloadResumeTitle}
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-2">
@@ -102,7 +100,6 @@ export default function DownloadWithToast({ locale }: DownloadWithToastProps) {
               <button
                 onClick={handleDismiss}
                 className="text-text-secondary hover:text-text transition-colors"
-                aria-label="Dismiss"
               >
                 <i className="i-tabler-x text-lg" />
               </button>

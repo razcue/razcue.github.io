@@ -28,7 +28,6 @@ export default function ThemeToggle() {
     return (
       <button
         className="p-2 rounded-lg transition-colors cursor-pointer"
-        aria-label="Toggle theme"
       >
         <i className="i-tabler-moon h-4 md:h-5 w-4 md:w-5" />
       </button>

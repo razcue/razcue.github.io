@@ -136,7 +136,7 @@ export default function Projects({ locale }: ProjectsProps) {
     <section
       ref={sectionRef}
       id="projects"
-      className="min-h-screen flex items-center lg:items-center px-2 lg:px-6 lg:px-8 py-12 lg:py-20 relative"
+      className="min-h-[100dvh] flex items-center lg:items-center px-2 lg:px-6 lg:px-8 py-12 lg:py-20 relative"
     >
       {/* Swipe Hint - Mobile Only */}
       {showSwipeHint && (
@@ -160,7 +160,6 @@ export default function Projects({ locale }: ProjectsProps) {
           <div
             className="flex justify-center gap-3 mb-6 lg:mb-8"
             role="tablist"
-            aria-label="Project navigation"
           >
             {projects.map((project, index) => (
               <button
@@ -273,8 +272,6 @@ export default function Projects({ locale }: ProjectsProps) {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-fit text-text-secondary hover:text-accent transition-colors"
-                        aria-label="View GitHub repository"
-                        title="GitHub"
                       >
                         <div className="i-tabler-brand-github w-4 h-4" />
                       </a>
@@ -285,8 +282,6 @@ export default function Projects({ locale }: ProjectsProps) {
                         target="_blank"
                         rel="noopener noreferrer"
                         className=" text-text-secondary hover:text-accent transition-colors"
-                        aria-label="View live site"
-                        title="Live Site"
                       >
                         <div className="i-tabler-external-link w-4 h-4" />
                       </a>
@@ -409,8 +404,6 @@ export default function Projects({ locale }: ProjectsProps) {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-2 text-text-secondary hover:text-accent transition-colors"
-                      aria-label="View GitHub repository"
-                      title="GitHub"
                     >
                       <div className="i-tabler-brand-github w-6 h-6" />
                     </a>
@@ -421,8 +414,6 @@ export default function Projects({ locale }: ProjectsProps) {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-2 text-text-secondary hover:text-accent transition-colors"
-                      aria-label="View live site"
-                      title="Live Site"
                     >
                       <div className="i-tabler-external-link w-6 h-6" />
                     </a>
