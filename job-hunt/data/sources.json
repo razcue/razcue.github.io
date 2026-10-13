@@ -1,250 +1,736 @@
 {
-  "description": "Curated list of job boards, talent platforms, and company career pages for finding remote LATAM developers",
+  "description": "Job boards, talent platforms and careers pages for the job-hunt skill. Tracks follow job-hunt/preferences.md: A = relocation with visa sponsorship, B = remote from Cuba, B→A = remote that can lead to relocation.",
+  "notes": {
+    "last_updated": "2026-10-13",
+    "fields": {
+      "track": "A, B or A/B (see description)",
+      "type": "relocation_board | job_board | talent_platform | staff_augmentation | direct_careers | reference",
+      "cuba_eligibility": "cuba-filter = the source has a Cuba-specific listing; unverified = check each posting for country restrictions before shortlisting",
+      "notes": "Why it is on the list and what to watch for",
+      "destination": "Track A only: the country or region the jobs are in"
+    },
+    "search_tips": [
+      "Read each posting in full; a platform being listed here does not make every job eligible",
+      "US-based companies and platforms are often unable to hire or pay people in Cuba because of US sanctions; look for an explicit statement before shortlisting",
+      "Remote talent platforms that only hire in countries where they have an entity (e.g. 'Colombia, Mexico, Argentina') are not eligible from Cuba",
+      "Local boards (InfoJobs, Tecnoempleo, OCC, Computrabajo, SEEK…) mostly list jobs for people who already have work rights: shortlist only postings that say they sponsor visas or support relocation",
+      "For Track A, prefer postings that mention visa sponsorship, relocation package or dependants",
+      "Add new sources here only if they publish postings that can be read and linked; skip homepages that only market developers to clients"
+    ],
+    "excluded": "Companies from Relocate.me and its handbook left out for deal-breakers: The Workshop, Betsson (gambling); Magic Square, BytePitch, Uphold (crypto/blockchain); Exness, XM, MetaQuotes, FxPro (forex trading). Left out for having no findable careers page: EXADS, Palta, Vivid Money."
+  },
   "sources": [
     {
-      "name": "Driver",
-      "url": "https://driverp.com/jobs",
-      "type": "job_board"
-    },
-    {
-      "name": "Boomering",
-      "url": "https://boomering.zohorecruit.com/jobs/Careers",
-      "type": "direct_careers"
-    },
-    {
-      "name": "Haystack People",
-      "url": "https://www.haystackpeople.nl/index.php/CurrentLanguage/3",
-      "type": "job_board"
-    },
-    {
-      "name": "WITi (Get on Board)",
-      "url": "https://www.getonbrd.com/companies/witi",
-      "type": "job_board"
-    },
-    {
-      "name": "My Expertify",
-      "url": "https://myexpertify.com/jobs",
-      "type": "job_board"
-    },
-    {
-      "name": "Jaabz Programming",
-      "url": "https://jaabz.com/jobs/category/programming?keyword=frontend&posted=3&search_submitted=1",
-      "type": "job_board"
-    },
-    {
-      "name": "Gorilla Logic",
-      "url": "https://gorillalogic.com/careers/open-roles/",
-      "type": "staff_augmentation"
-    },
-    {
-      "name": "Vates",
-      "url": "https://vates.tech/en/careers/",
-      "type": "staff_augmentation"
-    },
-    {
-      "name": "Parallel Staff",
-      "url": "https://www.careers.parallelstaff.com/job-openings",
-      "type": "staff_augmentation"
-    },
-    {
-      "name": "Deel Careers",
-      "url": "https://www.deel.com/careers/open-roles/?type=FullTime&team=Engineering",
-      "type": "direct_careers"
-    },
-    {
-      "name": "Deel Positions",
-      "url": "https://www.deel.com/careers/position/",
-      "type": "direct_careers"
-    },
-    {
-      "name": "10 Pearls (LATAM)",
-      "url": "https://10pearls.com/latin-america-job-openings/",
-      "type": "staff_augmentation"
-    },
-    {
-      "name": "Admios",
-      "url": "https://admios-new-site.webflow.io/careers#open-positions",
-      "type": "staff_augmentation"
-    },
-    {
-      "name": "Blue Coding (Lever)",
-      "url": "https://jobs.lever.co/bluecoding",
-      "type": "job_board"
-    },
-    {
-      "name": "Jobsity",
-      "url": "https://careers.jobsity.com/explore-opportunities",
-      "type": "staff_augmentation"
-    },
-    {
-      "name": "Terminal",
-      "url": "https://www.terminal.io/engineers/job-openings",
-      "type": "talent_platform"
-    },
-    {
-      "name": "Cloud Devs",
-      "url": "https://clouddevs.com/jobs/",
-      "type": "job_board"
-    },
-    {
-      "name": "TECLA Careers",
-      "url": "https://www.tecla.io/about/careers",
-      "type": "talent_platform"
-    },
-    {
-      "name": "Turing",
-      "url": "https://careers.turing.com/",
-      "type": "talent_platform"
-    },
-    {
-      "name": "Revelo",
-      "url": "https://careers.revelo.com/",
-      "type": "talent_platform"
-    },
-    {
-      "name": "Toptal",
-      "url": "https://www.toptal.com/careers#positions",
-      "type": "talent_platform"
-    },
-    {
-      "name": "BairesDev",
-      "url": "https://talent.bairesdev.com/",
-      "type": "talent_platform"
-    },
-    {
-      "name": "Hire With Near",
-      "url": "https://jobs.hirewithnear.com/",
-      "type": "talent_platform"
-    },
-    {
-      "name": "Howdy Latam",
-      "url": "https://www.howdylatam.com/oportunidades",
-      "type": "talent_platform"
-    },
-    {
-      "name": "Ncube",
-      "url": "https://ncube.com/career",
-      "type": "direct_careers"
-    },
-    {
-      "name": "1840 & Company",
-      "url": "https://jobs.lever.co/1840%26Company",
-      "type": "talent_platform"
-    },
-    {
-      "name": "LatamCent",
-      "url": "https://latamcent.com/careers/",
-      "type": "direct_careers"
-    },
-    {
-      "name": "Venon Solutions",
-      "url": "https://www.careers-page.com/venon-solutions",
-      "type": "staff_augmentation"
+      "name": "Jaabz",
+      "url": "https://jaabz.com/jobs/category/programming?keyword=frontend",
+      "type": "relocation_board",
+      "track": "A",
+      "cuba_eligibility": "unverified",
+      "notes": "Board focused on jobs with visa sponsorship and relocation. Main Track A source; check each posting's destination against preferences.",
+      "destination": "Global"
     },
     {
       "name": "Decskill",
       "url": "https://decskill.com/en/community/",
-      "type": "staff_augmentation"
+      "type": "staff_augmentation",
+      "track": "A",
+      "cuba_eligibility": "unverified",
+      "notes": "Portuguese IT consultancy. Relevant for relocation to Portugal; confirm whether it sponsors non-EU hires.",
+      "destination": "Portugal"
     },
     {
-      "name": "Team.blue",
-      "url": "https://careers.team.blue/jobs",
-      "type": "staff_augmentation"
+      "name": "Get on Board",
+      "url": "https://www.getonbrd.com/jobs/programming",
+      "type": "job_board",
+      "track": "A/B",
+      "cuba_eligibility": "unverified",
+      "notes": "Large LATAM tech board in Spanish and English, with remote and relocation filters. Replaces the old single-company link (WITi).",
+      "destination": "LATAM"
     },
     {
-      "name": "Hire Web Creators",
-      "url": "https://hirewebcreators.com/",
-      "type": "staff_augmentation"
+      "name": "Relocate.me (all countries)",
+      "url": "https://relocate.me/international-jobs",
+      "type": "relocation_board",
+      "track": "A",
+      "destination": "Global",
+      "cuba_eligibility": "unverified",
+      "notes": "Free job board of roles with visa/relocation support. As of Oct 2026 it is small (~24 jobs, mostly Netherlands, Japan and UK) and its country pages show no jobs; use the company lists and the newsletter instead."
     },
     {
-      "name": "LatHire",
-      "url": "https://lathire.com/latam-jobs/",
-      "type": "job_board"
+      "name": "The Global Move (Relocate.me newsletter)",
+      "url": "https://relocateme.substack.com",
+      "type": "relocation_board",
+      "track": "A",
+      "destination": "Global",
+      "cuba_eligibility": "unverified",
+      "notes": "Weekly curated list of relocation-friendly tech roles plus country guides (e.g. moving to Spain or Cyprus for work). Full job archive is paid; the free issues and guides are still useful."
+    },
+    {
+      "name": "Manfred",
+      "url": "https://www.getmanfred.com/ofertas-empleo",
+      "type": "job_board",
+      "track": "A",
+      "destination": "Spain",
+      "cuba_eligibility": "unverified",
+      "notes": "Spanish tech job board with salary shown on every offer. Check each offer for relocation or visa support; many are for people already in Spain."
+    },
+    {
+      "name": "Tecnoempleo",
+      "url": "https://www.tecnoempleo.com",
+      "type": "job_board",
+      "track": "A",
+      "destination": "Spain",
+      "cuba_eligibility": "unverified",
+      "notes": "Spain's main IT job board. Search with 'reubicación' or 'visa' and check residency requirements. Blocks automated requests; open in a browser if fetching fails."
+    },
+    {
+      "name": "InfoJobs (Informática y telecomunicaciones)",
+      "url": "https://www.infojobs.net",
+      "type": "job_board",
+      "track": "A",
+      "destination": "Spain",
+      "cuba_eligibility": "unverified",
+      "notes": "Spain's largest general job board; filter by the IT category. Most offers expect EU work rights, so look for explicit sponsorship. Blocks automated requests; open in a browser if fetching fails."
+    },
+    {
+      "name": "Landing.jobs",
+      "url": "https://landing.jobs/jobs?page=1&vs=true&hd=false&t_co=false&t_st=false",
+      "type": "job_board",
+      "track": "A",
+      "destination": "Portugal",
+      "cuba_eligibility": "unverified",
+      "notes": "Portugal-focused tech job board. This URL applies the 'Visa & work permit' filter (vs=true)."
+    },
+    {
+      "name": "ITJobs.pt",
+      "url": "https://www.itjobs.pt",
+      "type": "job_board",
+      "track": "A",
+      "destination": "Portugal",
+      "cuba_eligibility": "unverified",
+      "notes": "Portugal's main IT job board. Check each offer for relocation support or visa sponsorship."
+    },
+    {
+      "name": "SEEK (Software developer jobs)",
+      "url": "https://www.seek.com.au/software-developer-jobs",
+      "type": "job_board",
+      "track": "A",
+      "destination": "Australia",
+      "cuba_eligibility": "unverified",
+      "notes": "Australia's largest job board. Search with '482 visa sponsorship' or 'sponsorship available'; verify the employer on the Accredited Sponsor list. Blocks automated requests; open in a browser if fetching fails."
+    },
+    {
+      "name": "Jora Australia",
+      "url": "https://au.jora.com",
+      "type": "job_board",
+      "track": "A",
+      "destination": "Australia",
+      "cuba_eligibility": "unverified",
+      "notes": "Job aggregator; search 'software developer visa sponsorship'. Blocks automated requests; open in a browser if fetching fails."
+    },
+    {
+      "name": "Getonbrd: offers relocation",
+      "url": "https://www.getonbrd.com/jobs?relocation=true",
+      "type": "job_board",
+      "track": "A",
+      "destination": "LATAM (Mexico, Chile, Uruguay…)",
+      "cuba_eligibility": "unverified",
+      "notes": "Get on Board listings tagged 'offers relocation'. If the filter parameter is ignored, use the site's 'Offers relocation' filter manually."
+    },
+    {
+      "name": "OCC Mundial",
+      "url": "https://www.occ.com.mx",
+      "type": "job_board",
+      "track": "A",
+      "destination": "Mexico",
+      "cuba_eligibility": "unverified",
+      "notes": "Mexico's leading job board. Many offers require living in Mexico; shortlist only those mentioning relocation or visa support. Blocks automated requests; open in a browser if fetching fails."
+    },
+    {
+      "name": "Computrabajo México",
+      "url": "https://mx.computrabajo.com",
+      "type": "job_board",
+      "track": "A",
+      "destination": "Mexico",
+      "cuba_eligibility": "unverified",
+      "notes": "Large LATAM job board; same residency caveat as OCC. Blocks automated requests; open in a browser if fetching fails."
+    },
+    {
+      "name": "Buscojobs Uruguay",
+      "url": "https://www.buscojobs.com.uy",
+      "type": "job_board",
+      "track": "A",
+      "destination": "Uruguay",
+      "cuba_eligibility": "unverified",
+      "notes": "Uruguay's main job board. Few offers include relocation; useful to find Montevideo tech companies, then check their careers pages."
+    },
+    {
+      "name": "Computrabajo Uruguay",
+      "url": "https://uy.computrabajo.com",
+      "type": "job_board",
+      "track": "A",
+      "destination": "Uruguay",
+      "cuba_eligibility": "unverified",
+      "notes": "Uruguay job board; same caveat as Buscojobs. Blocks automated requests; open in a browser if fetching fails."
+    },
+    {
+      "name": "KeepMePosted",
+      "url": "https://www.keepmeposted.com.mt",
+      "type": "job_board",
+      "track": "A",
+      "destination": "Malta",
+      "cuba_eligibility": "unverified",
+      "notes": "Malta's main job board. Non-EU hires need a single permit sponsored by the employer; check the industry deal-breakers (iGaming)."
+    },
+    {
+      "name": "Jobsplus",
+      "url": "https://jobsplus.gov.mt",
+      "type": "job_board",
+      "track": "A",
+      "destination": "Malta",
+      "cuba_eligibility": "unverified",
+      "notes": "Malta's public employment service, with vacancies and official information on work permits for non-EU nationals."
+    },
+    {
+      "name": "Kariera.gr",
+      "url": "https://www.kariera.gr",
+      "type": "job_board",
+      "track": "A",
+      "destination": "Greece",
+      "cuba_eligibility": "unverified",
+      "notes": "Greece's main job board. Most offers are in Greek and expect local work rights; look for English-language roles with relocation."
+    },
+    {
+      "name": "Australian Accredited Sponsor list (Home Affairs)",
+      "url": "https://immi.homeaffairs.gov.au",
+      "type": "reference",
+      "track": "A",
+      "destination": "Australia",
+      "cuba_eligibility": "unverified",
+      "notes": "Official source for visa rules and for checking that an employer is an accredited sponsor before trusting a 'sponsorship' claim."
+    },
+    {
+      "name": "Relocate.me: companies hiring in Spain",
+      "url": "https://relocate.me/companies-hiring/spain",
+      "type": "reference",
+      "track": "A",
+      "destination": "Spain",
+      "cuba_eligibility": "unverified",
+      "notes": "Relocate.me's list of companies hiring foreigners in Spain. Careers pages of the tech companies on it are listed below."
+    },
+    {
+      "name": "Relocate.me: companies hiring in Portugal",
+      "url": "https://relocate.me/companies-hiring/portugal",
+      "type": "reference",
+      "track": "A",
+      "destination": "Portugal",
+      "cuba_eligibility": "unverified",
+      "notes": "Relocate.me's list of companies hiring foreigners in Portugal."
+    },
+    {
+      "name": "Relocate.me: companies hiring in Cyprus",
+      "url": "https://relocate.me/companies-hiring/cyprus",
+      "type": "reference",
+      "track": "A",
+      "destination": "Cyprus",
+      "cuba_eligibility": "unverified",
+      "notes": "Relocate.me's list of companies hiring foreigners in Cyprus. Several are forex/crypto firms (excluded below by deal-breakers)."
+    },
+    {
+      "name": "Relocate.me: companies hiring in Australia",
+      "url": "https://relocate.me/companies-hiring/australia",
+      "type": "reference",
+      "track": "A",
+      "destination": "Australia",
+      "cuba_eligibility": "unverified",
+      "notes": "Relocate.me's list of companies hiring foreigners in Australia."
+    },
+    {
+      "name": "Relocate.me country guides",
+      "url": "https://relocate.me/moving-to-spain",
+      "type": "reference",
+      "track": "A",
+      "destination": "Spain, Portugal, Cyprus, Australia",
+      "cuba_eligibility": "unverified",
+      "notes": "Guides on visas, costs, hubs and employers (also /moving-to-portugal, /moving-to-cyprus, /moving-to-australia; updated Mar–Apr 2026). No guides exist for Italy, Greece, Malta, Mexico or Uruguay."
+    },
+    {
+      "name": "Tech jobs with relocation (GitHub handbook)",
+      "url": "https://github.com/AndrewStetsenko/tech-jobs-with-relocation",
+      "type": "reference",
+      "track": "A",
+      "destination": "Global",
+      "cuba_eligibility": "unverified",
+      "notes": "Relocate.me founder's handbook: resume tips, relocation packages and a table of companies offering relocation with careers links."
+    },
+    {
+      "name": "@relocateme (Telegram)",
+      "url": "https://t.me/relocateme",
+      "type": "relocation_board",
+      "track": "A",
+      "destination": "Global",
+      "cuba_eligibility": "unverified",
+      "notes": "Daily alerts of jobs with relocation support."
+    },
+    {
+      "name": "Hacker News: Who is hiring?",
+      "url": "https://news.ycombinator.com/submitted?id=whoishiring",
+      "type": "job_board",
+      "track": "A",
+      "destination": "Global",
+      "cuba_eligibility": "unverified",
+      "notes": "Monthly hiring thread; search the current thread for 'visa' or 'relocation'."
+    },
+    {
+      "name": "Australian companies providing work visa sponsorship (GitHub)",
+      "url": "https://github.com/geshan/au-companies-providing-work-visa-sponsorship",
+      "type": "reference",
+      "track": "A",
+      "destination": "Australia",
+      "cuba_eligibility": "unverified",
+      "notes": "Community list of Australian companies known to sponsor work visas, with careers links. Verify each on the Accredited Sponsor list."
+    },
+    {
+      "name": "eDreams ODIGEO",
+      "url": "https://www.edreamsodigeo.com/about-us/talent/",
+      "type": "direct_careers",
+      "track": "A",
+      "destination": "Spain",
+      "cuba_eligibility": "unverified",
+      "notes": "Listed by Relocate.me as hiring foreigners. Travel e-commerce, Barcelona/Madrid."
+    },
+    {
+      "name": "EPAM",
+      "url": "https://careers.epam.com/en/jobs",
+      "type": "direct_careers",
+      "track": "A",
+      "destination": "Spain",
+      "cuba_eligibility": "unverified",
+      "notes": "Listed by Relocate.me as hiring foreigners. Global IT services; filter for Spain and check the role's location."
+    },
+    {
+      "name": "Glovo",
+      "url": "https://careers.glovoapp.com/",
+      "type": "direct_careers",
+      "track": "A",
+      "destination": "Spain",
+      "cuba_eligibility": "unverified",
+      "notes": "Listed by Relocate.me as hiring foreigners. Delivery app, Barcelona."
+    },
+    {
+      "name": "Happy Scribe",
+      "url": "https://www.happyscribe.com/careers",
+      "type": "direct_careers",
+      "track": "A",
+      "destination": "Spain",
+      "cuba_eligibility": "unverified",
+      "notes": "Listed by Relocate.me as hiring foreigners. Transcription SaaS, Barcelona. Blocks automated requests; open in a browser if fetching fails."
+    },
+    {
+      "name": "Huspy",
+      "url": "https://huspy.com/careers",
+      "type": "direct_careers",
+      "track": "A",
+      "destination": "Spain",
+      "cuba_eligibility": "unverified",
+      "notes": "Listed by Relocate.me as hiring foreigners. Proptech (mortgages); offices in Madrid and Dubai, check the role's location."
+    },
+    {
+      "name": "Kantox",
+      "url": "https://www.kantox.com/careers",
+      "type": "direct_careers",
+      "track": "A",
+      "destination": "Spain",
+      "cuba_eligibility": "unverified",
+      "notes": "Listed by Relocate.me as hiring foreigners. Currency-management fintech, Barcelona."
+    },
+    {
+      "name": "Manychat",
+      "url": "https://careers.manychat.com/",
+      "type": "direct_careers",
+      "track": "A",
+      "destination": "Spain",
+      "cuba_eligibility": "unverified",
+      "notes": "Listed by Relocate.me as hiring foreigners. Chat-marketing SaaS, Barcelona. Blocks automated requests; open in a browser if fetching fails."
+    },
+    {
+      "name": "Multiverse Computing",
+      "url": "https://multiversecomputing.com/join-us",
+      "type": "direct_careers",
+      "track": "A",
+      "destination": "Spain",
+      "cuba_eligibility": "unverified",
+      "notes": "Listed by Relocate.me as hiring foreigners. Quantum/AI software, San Sebastián and Madrid."
+    },
+    {
+      "name": "N26",
+      "url": "https://n26.com/en-eu/careers",
+      "type": "direct_careers",
+      "track": "A",
+      "destination": "Spain",
+      "cuba_eligibility": "unverified",
+      "notes": "Listed by Relocate.me as hiring foreigners. Mobile bank with a Barcelona tech hub; check the role's location."
+    },
+    {
+      "name": "Personio",
+      "url": "https://www.personio.com/about-personio/careers/",
+      "type": "direct_careers",
+      "track": "A",
+      "destination": "Spain",
+      "cuba_eligibility": "unverified",
+      "notes": "Listed by Relocate.me as hiring foreigners. HR SaaS with a Madrid office; check the role's location. Blocks automated requests; open in a browser if fetching fails."
+    },
+    {
+      "name": "Revolut",
+      "url": "https://www.revolut.com/careers/",
+      "type": "direct_careers",
+      "track": "A",
+      "destination": "Spain",
+      "cuba_eligibility": "unverified",
+      "notes": "Listed by Relocate.me as hiring foreigners. Fintech with many locations; filter for Spain. Blocks automated requests; open in a browser if fetching fails."
+    },
+    {
+      "name": "seQura",
+      "url": "https://sequra.recruitee.com/",
+      "type": "direct_careers",
+      "track": "A",
+      "destination": "Spain",
+      "cuba_eligibility": "unverified",
+      "notes": "Listed by Relocate.me as hiring foreigners. Buy-now-pay-later fintech, Barcelona."
+    },
+    {
+      "name": "Taxfix",
+      "url": "https://taxfix.de/en/careers/",
+      "type": "direct_careers",
+      "track": "A",
+      "destination": "Spain",
+      "cuba_eligibility": "unverified",
+      "notes": "Listed by Relocate.me as hiring foreigners. Tax-filing app; check for Spain-based roles."
+    },
+    {
+      "name": "TravelPerk (Perk)",
+      "url": "https://www.perk.com/careers/",
+      "type": "direct_careers",
+      "track": "A",
+      "destination": "Spain",
+      "cuba_eligibility": "unverified",
+      "notes": "Listed by Relocate.me as hiring foreigners. Business-travel SaaS, Barcelona."
+    },
+    {
+      "name": "Urban Sports Club",
+      "url": "https://culture.urbansportsclub.com/en/jobs",
+      "type": "direct_careers",
+      "track": "A",
+      "destination": "Spain",
+      "cuba_eligibility": "unverified",
+      "notes": "Listed by Relocate.me as hiring foreigners. Sports membership platform; check the role's location."
+    },
+    {
+      "name": "Wallapop",
+      "url": "https://job-boards.eu.greenhouse.io/wallapop",
+      "type": "direct_careers",
+      "track": "A",
+      "destination": "Spain",
+      "cuba_eligibility": "unverified",
+      "notes": "Listed by Relocate.me as hiring foreigners. Second-hand marketplace, Barcelona."
+    },
+    {
+      "name": "Xcelirate",
+      "url": "https://www.xcelirate.com/careers",
+      "type": "direct_careers",
+      "track": "A",
+      "destination": "Spain",
+      "cuba_eligibility": "unverified",
+      "notes": "Listed by Relocate.me as hiring foreigners. Digital media/tech group, Spain."
+    },
+    {
+      "name": "Catawiki",
+      "url": "https://catawiki.careers/vacancies",
+      "type": "direct_careers",
+      "track": "A",
+      "destination": "Portugal",
+      "cuba_eligibility": "unverified",
+      "notes": "Listed by Relocate.me as hiring foreigners. Online auctions; tech hubs in Lisbon and Amsterdam, check the role's location."
+    },
+    {
+      "name": "CELUS",
+      "url": "https://celus.jobs.personio.de/?language=en",
+      "type": "direct_careers",
+      "track": "A",
+      "destination": "Portugal",
+      "cuba_eligibility": "unverified",
+      "notes": "Listed by Relocate.me as hiring foreigners. Electronics design software; check the role's location."
+    },
+    {
+      "name": "Dashlane",
+      "url": "https://www.dashlane.com/about/careers",
+      "type": "direct_careers",
+      "track": "A",
+      "destination": "Portugal",
+      "cuba_eligibility": "unverified",
+      "notes": "Listed by Relocate.me as hiring foreigners. Password manager with a Lisbon office; check the role's location."
+    },
+    {
+      "name": "Mollie",
+      "url": "https://jobs.mollie.com",
+      "type": "direct_careers",
+      "track": "A",
+      "destination": "Portugal",
+      "cuba_eligibility": "unverified",
+      "notes": "Listed by Relocate.me as hiring foreigners. Payments; Lisbon and Amsterdam, check the role's location."
+    },
+    {
+      "name": "Reaktor",
+      "url": "https://www.reaktor.com/careers",
+      "type": "direct_careers",
+      "track": "A",
+      "destination": "Portugal",
+      "cuba_eligibility": "unverified",
+      "notes": "Listed by Relocate.me as hiring foreigners. Digital consultancy with a Lisbon office (from the relocation handbook)."
+    },
+    {
+      "name": "Volkswagen Digital Solutions",
+      "url": "https://vwg-digitalsolutions.pt/careers/",
+      "type": "direct_careers",
+      "track": "A",
+      "destination": "Portugal",
+      "cuba_eligibility": "unverified",
+      "notes": "Listed by Relocate.me as hiring foreigners. Volkswagen Group software hub in Lisbon (from the relocation handbook)."
+    },
+    {
+      "name": "Crae Group",
+      "url": "https://www.craegroup.com/careers",
+      "type": "direct_careers",
+      "track": "A",
+      "destination": "Cyprus",
+      "cuba_eligibility": "unverified",
+      "notes": "Listed by Relocate.me as hiring foreigners. Check the company's industry before applying (deal-breakers)."
+    },
+    {
+      "name": "Easybrain",
+      "url": "https://easybrain.com/careers",
+      "type": "direct_careers",
+      "track": "A",
+      "destination": "Cyprus",
+      "cuba_eligibility": "unverified",
+      "notes": "Listed by Relocate.me as hiring foreigners. Mobile puzzle games (not gambling), Limassol."
+    },
+    {
+      "name": "ennabl",
+      "url": "https://ennabl.ai/",
+      "type": "direct_careers",
+      "track": "A",
+      "destination": "Cyprus",
+      "cuba_eligibility": "unverified",
+      "notes": "Listed by Relocate.me as hiring foreigners. Insurance analytics SaaS; no careers page found, look for a jobs link on the site."
+    },
+    {
+      "name": "Welltech",
+      "url": "https://welltech.com/careers",
+      "type": "direct_careers",
+      "track": "A",
+      "destination": "Cyprus",
+      "cuba_eligibility": "unverified",
+      "notes": "Listed by Relocate.me as hiring foreigners. Health & fitness apps, Limassol."
+    },
+    {
+      "name": "Airtasker",
+      "url": "https://www.airtasker.com/au/careers/",
+      "type": "direct_careers",
+      "track": "A",
+      "destination": "Australia",
+      "cuba_eligibility": "unverified",
+      "notes": "Listed by Relocate.me as hiring foreigners. Marketplace, Sydney."
+    },
+    {
+      "name": "Canva",
+      "url": "https://www.canva.com/careers/",
+      "type": "direct_careers",
+      "track": "A",
+      "destination": "Australia",
+      "cuba_eligibility": "unverified",
+      "notes": "Listed by Relocate.me as hiring foreigners. Design platform, Sydney. Blocks automated requests; open in a browser if fetching fails."
+    },
+    {
+      "name": "League of Geeks",
+      "url": "https://leagueofgeeks.com/careers",
+      "type": "direct_careers",
+      "track": "A",
+      "destination": "Australia",
+      "cuba_eligibility": "unverified",
+      "notes": "Listed by Relocate.me as hiring foreigners. Game studio, Melbourne."
+    },
+    {
+      "name": "Optiver",
+      "url": "https://www.optiver.com/join-us/jobs/",
+      "type": "direct_careers",
+      "track": "A",
+      "destination": "Australia",
+      "cuba_eligibility": "unverified",
+      "notes": "Listed by Relocate.me as hiring foreigners. Proprietary trading firm (market making, not gambling), Sydney; check the role's location."
+    },
+    {
+      "name": "Pragmateam",
+      "url": "https://pragma.team/join-us",
+      "type": "direct_careers",
+      "track": "A",
+      "destination": "Australia",
+      "cuba_eligibility": "unverified",
+      "notes": "Listed by Relocate.me as hiring foreigners. Product development agency."
+    },
+    {
+      "name": "Vow",
+      "url": "https://www.eatvow.com/careers",
+      "type": "direct_careers",
+      "track": "A",
+      "destination": "Australia",
+      "cuba_eligibility": "unverified",
+      "notes": "Listed by Relocate.me as hiring foreigners. Cultured-meat food tech; few software roles."
+    },
+    {
+      "name": "WiseTech Global",
+      "url": "https://www.wisetechglobal.com/careers/current-openings/",
+      "type": "direct_careers",
+      "track": "A",
+      "destination": "Australia",
+      "cuba_eligibility": "unverified",
+      "notes": "Listed by Relocate.me as hiring foreigners. Logistics SaaS, Sydney."
     },
     {
       "name": "Arc.dev (Cuba)",
       "url": "https://arc.dev/en-cu/remote-jobs",
-      "type": "job_board"
+      "type": "job_board",
+      "track": "B",
+      "cuba_eligibility": "cuba-filter",
+      "notes": "Remote jobs listed as open to candidates in Cuba."
     },
     {
       "name": "Jobgether (Cuba)",
       "url": "https://jobgether.com/remote-jobs/cuba",
-      "type": "job_board"
+      "type": "job_board",
+      "track": "B",
+      "cuba_eligibility": "cuba-filter",
+      "notes": "Remote jobs filtered for Cuba. Blocks automated requests; open in a browser if fetching fails."
     },
     {
-      "name": "Pros Marketplace",
-      "url": "https://prosmarketplace.com",
-      "type": "talent_platform"
+      "name": "LatHire",
+      "url": "https://lathire.com/latam-jobs/",
+      "type": "job_board",
+      "track": "B",
+      "cuba_eligibility": "unverified",
+      "notes": "LATAM remote job listings."
     },
     {
-      "name": "Lupa",
-      "url": "https:// lupahire.com",
-      "type": "staff_augmentation"
+      "name": "My Expertify",
+      "url": "https://myexpertify.com/jobs",
+      "type": "job_board",
+      "track": "B",
+      "cuba_eligibility": "unverified",
+      "notes": "Remote job listings."
     },
     {
-      "name": "NeuronHire",
-      "url": "https://www.neuronhire.com/",
-      "type": "staff_augmentation"
+      "name": "Driver",
+      "url": "https://driverp.com/jobs",
+      "type": "job_board",
+      "track": "B",
+      "cuba_eligibility": "unverified",
+      "notes": "Job listings page."
     },
     {
-      "name": "LatinDevs",
-      "url": "https://latindevs.com/",
-      "type": "talent_platform"
+      "name": "Boomering",
+      "url": "https://boomering.zohorecruit.com/jobs/Careers",
+      "type": "direct_careers",
+      "track": "B",
+      "cuba_eligibility": "unverified",
+      "notes": "Careers page with open roles."
     },
     {
-      "name": "LatAmCoders",
-      "url": "https://www.latamcoders.com/",
-      "type": "talent_platform"
+      "name": "HireDevelopers (formerly Cloud Devs)",
+      "url": "https://hiredevelopers.com/jobs/",
+      "type": "job_board",
+      "track": "B",
+      "cuba_eligibility": "unverified",
+      "notes": "Remote developer jobs. The old clouddevs.com link now redirects here."
     },
     {
-      "name": "Solvedex",
-      "url": "https://solvedex.com/",
-      "type": "staff_augmentation"
+      "name": "Vates",
+      "url": "https://vates.tech/en/careers/",
+      "type": "staff_augmentation",
+      "track": "B",
+      "cuba_eligibility": "unverified",
+      "notes": "Nearshore software company with open roles."
     },
     {
-      "name": "Ideaware",
-      "url": "https://www.ideaware.co/",
-      "type": "staff_augmentation"
+      "name": "Blue Coding",
+      "url": "https://jobs.lever.co/bluecoding",
+      "type": "staff_augmentation",
+      "track": "B",
+      "cuba_eligibility": "unverified",
+      "notes": "Hires LATAM developers for US clients. US-based: check sanctions eligibility."
     },
     {
-      "name": "TalentHub",
-      "url": "https://www.talenthub.cloud/",
-      "type": "staff_augmentation"
+      "name": "Admios",
+      "url": "https://admios-new-site.webflow.io/careers#open-positions",
+      "type": "staff_augmentation",
+      "track": "B",
+      "cuba_eligibility": "unverified",
+      "notes": "Nearshore company with open positions. Check the country list per role."
     },
     {
-      "name": "Zipdev",
-      "url": "https://zipdevengineerstalent.com/",
-      "type": "staff_augmentation"
+      "name": "Venon Solutions",
+      "url": "https://www.careers-page.com/venon-solutions",
+      "type": "staff_augmentation",
+      "track": "B",
+      "cuba_eligibility": "unverified",
+      "notes": "Careers page with open roles."
     },
     {
-      "name": "TeamEx",
-      "url": "https://teamex.dev/",
-      "type": "talent_platform"
+      "name": "TECLA",
+      "url": "https://www.tecla.io/about/careers",
+      "type": "talent_platform",
+      "track": "B",
+      "cuba_eligibility": "unverified",
+      "notes": "LATAM talent platform for US companies. US-based: check sanctions eligibility. Apply through listed roles only."
     },
     {
-      "name": "Awana",
-      "url": "http://awana.io/",
-      "type": "staff_augmentation"
+      "name": "Hire With Near",
+      "url": "https://jobs.hirewithnear.com/",
+      "type": "talent_platform",
+      "track": "B",
+      "cuba_eligibility": "unverified",
+      "notes": "LATAM roles with US companies. US-based: check sanctions eligibility."
     },
     {
-      "name": "NetMidas",
-      "url": "https://netmidas.com/",
-      "type": "staff_augmentation"
+      "name": "Revelo",
+      "url": "https://www.revelo.com/work",
+      "type": "talent_platform",
+      "track": "B",
+      "cuba_eligibility": "unverified",
+      "notes": "LATAM talent platform for US companies. US-based: check sanctions eligibility."
+    },
+    {
+      "name": "BairesDev",
+      "url": "https://talent.bairesdev.com/",
+      "type": "talent_platform",
+      "track": "B",
+      "cuba_eligibility": "unverified",
+      "notes": "Large LATAM staffing company. US-based: check sanctions eligibility before applying."
+    },
+    {
+      "name": "LatamCent",
+      "url": "https://latamcent.com/careers/",
+      "type": "direct_careers",
+      "track": "B",
+      "cuba_eligibility": "unverified",
+      "notes": "Careers page. Blocks automated requests; open in a browser if fetching fails."
+    },
+    {
+      "name": "CloudLinux",
+      "url": "https://cloudlinux.com/about-us-company-jobs",
+      "type": "direct_careers",
+      "track": "B",
+      "cuba_eligibility": "unverified",
+      "notes": "Remote-first Linux/hosting software company (from the relocation handbook)."
     }
-  ],
-  "notes": {
-    "last_updated": "2026-04-18",
-    "categories": {
-      "job_board": "General tech job listings",
-      "staff_augmentation": "Companies that provide remote talent to US companies",
-      "talent_platform": "Platforms connecting LATAM talent with global companies",
-      "direct_careers": "Direct company career pages"
-    },
-    "search_tips": [
-      "Prioritize sources with active job openings",
-      "Look for companies with 'remote worldwide' or 'global team' language",
-      "Check for 'we hire from LATAM' or 'no location restrictions'",
-      "Focus on companies that already employ remote workers in similar timezones"
-    ]
-  }
+  ]
 }

@@ -155,6 +155,7 @@ export default {
     present: 'Present',
     backToHighlights: 'Back to highlights',
     highlights: [
+      'Built a company-wide ERP alone (Nuxt + Supabase) for a 3-province beverage distributor, saving an estimated 30+ hours/week of manual work and cutting stock discrepancies by ~70%. @El Asadito SRL',
       'Increased organic traffic by 38% via polished SEO strategy and improved Core Web Vitals (LCP 3.2s → 1.4s, CLS 0.15 → 0.08). @Delfín Motor Labs SL',
       'Shipped pixel-perfect, responsive UIs across internal CMS and consumer-facing monetization app, closing 120+ Jira tasks by translating Figma designs into production-ready front-end features. @Blue Creator Agency | Kimia Group',
       'Drove 15% conversion lift by migrating 40+ Vue components from Vuetify to Tailwind, cutting bundle size 19% and improving LCP from 9.1s to 6.6s. @Blue Creator Agency | Kimia Group',
@@ -162,6 +163,25 @@ export default {
       'Enhanced geolocation capabilities for Fire & EMS operations, built a barcode/QR scanner processing 5,000+ daily scans with >99% accuracy. @First Due',
     ],
     items: [
+      {
+        company: 'El Asadito SRL',
+        location: 'Remote, Havana, Cuba',
+        period: 'Jun/2026 - Present',
+        role: 'Software Engineer',
+        industry: 'Beverage Distribution, ERP',
+        technologies: [
+          'Nuxt',
+          'Vue 3',
+          'Supabase',
+          'shadcn-vue',
+          'Tailwind',
+          'TypeScript',
+        ],
+        bullets: [
+          'Designing and building, as sole engineer, a company-wide ERP (Nuxt + Supabase) for a wholesale beverage distributor operating across three provinces; inventory, sales/distribution, logistics, commercial, invoicing, supplier reconciliation and finance modules are live for 6–20 daily users.',
+          'Replaced manual processes saving an estimated 30+ hours of work per week, reduced stock discrepancies by ~70% and brought cash discrepancies close to zero.',
+        ],
+      },
       {
         company: 'Delfín Motor Labs SL',
         location: 'Remote, Madrid, Spain',
@@ -248,7 +268,7 @@ export default {
           'PHP',
         ],
         bullets: [
-          'Delivered multi-tenant SaaS features across Fire Prevention, EMS and Assets modules serving 40+ fire departments, supporting company growth and contributing to Inc 5000 recognition.',
+          'Delivered multi-tenant SaaS features across Fire Prevention, EMS and Assets modules serving 40+ fire departments during company growth from 50–60 to 150+ people (Inc 5000 since 2022).',
           'Enhanced geolocation capabilities and implemented a barcode/QR scanner processing 5,000+ daily scans with >99% accuracy, improving operational tracking and data reliability.',
         ],
       },
@@ -267,7 +287,7 @@ export default {
           'MySQL',
         ],
         bullets: [
-          'Built front-end modules for a fuel logistics system (availability, movement, asset management) in Angular 11/NgZorro and mentored a junior developer to ship production features within a few weeks.',
+          'Built front-end modules for a fuel logistics system (distribution, stations management, storage, cisterns) in Angular 11/NgZorro and mentored a junior developer to ship production features within a few weeks.',
           'Improved key logistics queries by an estimated 25–30% through PostgreSQL/MySQL optimization and migrations, increasing performance and reporting reliability.',
         ],
       },
@@ -288,8 +308,8 @@ export default {
           'PHP',
         ],
         bullets: [
-          'Led a multi-tenant Laravel/Vue 2 document management system for the Tourism Ministry with secure storage and enhanced search powered by Elasticsearch, cutting typical search times from several seconds to under one second.',
-          'Co‑built a hotel reservation system in Express.js/PostgreSQL, improving booking completion by an estimated 10–15% and enabling dynamic pricing with automated notifications.',
+          'Led a multi-tenant Laravel/Vue 2 document management system for the tourism sector and a government ministry (on-premise) with secure storage and enhanced search powered by Elasticsearch, cutting typical search times from several seconds to under one second.',
+          'Co‑built a hotel reservation system in Express.js/PostgreSQL, improving booking completion by an estimated 15% and enabling dynamic pricing with automated notifications.',
         ],
       },
       {
@@ -438,7 +458,7 @@ export default {
  
   // Job status / availability
   openTo: {
-    title: "I'm actively looking for new opportunities",
+    title: 'Currently employed, open to relocation and new opportunities',
     intro:
       "Below are the roles I'm targeting and my availability. If you think I might be a good fit, let's talk!",
     rolesTitle: 'Target Roles',
@@ -446,8 +466,10 @@ export default {
     preferredRole: 'Preferred',
     availabilityTitle: 'Availability & Location',
     availability: [
-      'Remote globally within an English or Spanish setup',
-      'On-site/Hybrid with relocation basis. Family visa-sponsorship needed, prefer offers with relocation package. Primary interest: Latin America or Europe, but open to discussing other locations',
+      'Relocation with my family: visa sponsorship for the family required, relocation package preferred. On-site, hybrid or remote in-country',
+      'Preferred destinations: Spain, Portugal, Latin America, Australia and other Mediterranean countries',
+      'Remote globally in English or Spanish, with working hours compatible with the Cuba time zone',
+      'Available to start after a two-week notice period',
     ],
     ctaTalk: "Let's Talk",
   },

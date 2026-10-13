@@ -14,7 +14,7 @@ export default {
 
   // Estado laboral / disponibilidad
   openTo: {
-    title: 'Estoy buscando activamente nuevas oportunidades',
+    title: 'Actualmente empleado, abierto a reubicación y nuevas oportunidades',
     intro:
       'Abajo están los roles que me interesan y mi disponibilidad. Si crees que puedo ser un buen candidato, ¡hablemos!',
     rolesTitle: 'Roles Buscados',
@@ -22,8 +22,10 @@ export default {
     preferredRole: 'Preferido',
     availabilityTitle: 'Disponibilidad y Ubicación',
     availability: [
-      'Remoto global en entorno de inglés o español',
-      'Presencial/Híbrido con reubicación. Se necesita patrocinio de visa familiar, prefiero ofertas con paquete de reubicación. Interés principal: América Latina o Europa, pero abierto a discutir otras ubicaciones',
+      'Reubicación con mi familia: se requiere patrocinio de visa para la familia, preferiblemente con paquete de reubicación. Presencial, híbrido o remoto en el país',
+      'Destinos preferidos: España, Portugal, América Latina, Australia y otros países del Mediterráneo',
+      'Remoto global en inglés o español, con horario compatible con la zona horaria de Cuba',
+      'Disponible para empezar tras un preaviso de dos semanas',
     ],
     ctaTalk: 'Hablemos',
   },
@@ -170,6 +172,7 @@ export default {
     present: 'Presente',
     backToHighlights: 'Volver a experiencia',
     highlights: [
+      'Construí en solitario un ERP para toda la empresa (Nuxt + Supabase) en una distribuidora de bebidas de tres provincias, ahorrando un estimado de 30+ horas semanales de trabajo manual y reduciendo ~70% las discrepancias de inventario. @El Asadito SRL',
       'Tráfico orgánico incrementado en 38% gracias a arreglos implementados de SEO y mejoras a Core Web Vitals (LCP 3.2s → 1.4s, CLS 0.15 → 0.08). @Delfín Motor Labs SL',
       'Implementé interfaces responsive y pixel-perfect para un CMS interno y app de monetización, cerrando 120+ tareas en Jira, mientras convertía diseños en Figma a características listas para producción. @Blue Creator Agency | Kimia Group',
       'Impulsé +15% en conversiones migrando 40+ componentes de Vuetify a Tailwind, reduciendo el bundle un 19% y mejorando LCP de 9.1s a 6.6s. @Blue Creator Agency | Kimia Group',
@@ -177,6 +180,25 @@ export default {
       'Mejoré las capacidades de geolocalización para los módulos de Fire & EMS, creé escáner de códigos procesando 5,000+ escaneos diarios con >99% precisión. @First Due',
     ],
     items: [
+      {
+        company: 'El Asadito SRL',
+        location: 'Remoto, La Habana, Cuba',
+        period: 'Jun/2026 - Presente',
+        role: 'Software Engineer',
+        industry: 'Distribución de Bebidas, ERP',
+        technologies: [
+          'Nuxt',
+          'Vue 3',
+          'Supabase',
+          'shadcn-vue',
+          'Tailwind',
+          'TypeScript',
+        ],
+        bullets: [
+          'Diseño y desarrollo, como único ingeniero, de un ERP para toda la empresa (Nuxt + Supabase) en una distribuidora mayorista de bebidas que opera en tres provincias; los módulos de inventario, ventas/distribución, logística, comercial, facturación, conciliación con proveedores y finanzas están en uso diario por 6–20 usuarios.',
+          'Reemplacé procesos manuales ahorrando un estimado de más de 30 horas de trabajo por semana, reduje ~70% las discrepancias de inventario y llevé las discrepancias de caja casi a cero.',
+        ],
+      },
       {
         company: 'Delfín Motor Labs SL',
         location: 'Remoto, Madrid, España',
@@ -192,7 +214,7 @@ export default {
           'Laravel',
         ],
         bullets: [
-          'Implementé estrategia SEO completa incluyendo meta tags, generación dinámica de sitemap en build, Schema markup y URLs canónicas; improved Core Web Vitals (LCP: 3.2s → 1.4s, CLS: 0.15 → 0.08) e incrementé tráfico orgánico 38%.',
+          'Implementé estrategia SEO completa incluyendo meta tags, generación dinámica de sitemap en build, Schema markup y URLs canónicas; mejoré Core Web Vitals (LCP: 3.2s → 1.4s, CLS: 0.15 → 0.08) e incrementé tráfico orgánico 38%.',
           'Aproveché estrategias de renderizado Nuxt (SSR, SSG, SWR, ISR) con Cloudflare Page Rules, CDN y caching; reduje TTFB 52% (450ms → 220ms) y tiempos de respuesta generales 48%.',
         ],
       },
@@ -238,7 +260,7 @@ export default {
       {
         company: 'EncodeBiz',
         location: 'Remoto, Madrid, España',
-        period: '11/2023 - 01/2024',
+        period: 'Nov/2023 - Ene/2024',
         role: 'Front End Developer',
         industry: 'Sports Tech',
         technologies: ['React', 'PrimeReact', 'JavaScript', 'TypeScript'],
@@ -250,7 +272,7 @@ export default {
       {
         company: 'First Due @Inc5000',
         location: 'Remoto, Nueva York, EE. UU.',
-        period: '03/2021 - 11/2023',
+        period: 'Mar/2021 - Nov/2023',
         role: 'Full Stack Developer',
         industry: 'Fire & EMS, Gestión de Activos',
         technologies: [
@@ -270,7 +292,7 @@ export default {
       {
         company: 'Tecnomática',
         location: 'Presencial, La Habana, Cuba',
-        period: '12/2020 - 03/2021',
+        period: 'Dic/2020 - Mar/2021',
         role: 'Front End Developer',
         industry: 'Logística',
         technologies: [
@@ -282,8 +304,8 @@ export default {
           'MySQL',
         ],
         bullets: [
-          'Implementé módulos de interfaz de usuario en Angular 11 (NgZorro) para un sistema de logística de combustible, centrados en disponibilidad, movimiento y gestión de activos.',
-          'Optimizé consultas claves de logística en ~25–30% mediante migraciones y ajustes de base de datos PostgreSQL/MySQL, aumentando el rendimiento y la fiabilidad de los informes.',
+          'Implementé módulos de interfaz de usuario en Angular 11 (NgZorro) para un sistema de logística de combustible (distribución, gestión de estaciones, almacenamiento y cisternas), y guié a un desarrollador junior que entregó funcionalidades en producción en pocas semanas.',
+          'Optimicé consultas clave de logística en ~25–30% mediante migraciones y ajustes de base de datos PostgreSQL/MySQL, aumentando el rendimiento y la fiabilidad de los informes.',
         ],
       },
       {
@@ -303,8 +325,8 @@ export default {
           'PHP',
         ],
         bullets: [
-          'Lideré el desarrollo de un sistema multi‑tenant de gestión documental (Laravel/Vue 2) con almacenamiento seguro y búsqueda mejorada basada en Elasticsearch, reduciendo tiempos de búsqueda típicos a <1s.',
-          'Co‑desarrollé una plataforma de reservas hoteleras (Express.js/PostgreSQL), mejorando la tasa de conversión de reservas en ~10–15% y habilitando precios dinámicos con notificaciones automatizadas.',
+          'Lideré el desarrollo de un sistema multi‑tenant de gestión documental (Laravel/Vue 2) para el sector turístico y un ministerio (on-premise) con almacenamiento seguro y búsqueda mejorada basada en Elasticsearch, reduciendo tiempos de búsqueda típicos a <1s.',
+          'Co‑desarrollé una plataforma de reservas hoteleras (Express.js/PostgreSQL), mejorando la finalización de reservas en ~15% y habilitando precios dinámicos con notificaciones automatizadas.',
         ],
       },
       {

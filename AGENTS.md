@@ -30,12 +30,15 @@ For resume building tasks, see `resume-build/` for standalone resume generation.
 
 ## Job-Hunt Workflow
 
-For automated job search, see `job-hunt/AGENTS.md`.
+Deep job search and application prep, see `job-hunt/AGENTS.md` and the `job-hunt` skill.
 
-**Trigger:** "run job-hunt", "automate job search"
+**Trigger:** "run job-hunt", "find jobs", "prepare application"
+
+**Rules:** never send emails or apply; never record companies in tracked files (the repo is public).
+All output (briefs, emails, tailored resumes) goes to `job-hunt/applications/`, which is git-ignored.
 
 **Key Files:**
-- `job-hunt/data/companies.json` - Company tracking
+- `job-hunt/data/sources.json` - Job boards and careers pages to search
 
 ---
 
@@ -201,8 +204,8 @@ npm run lint:fix     # ESLint with auto-fix
 npm run format       # Prettier write
 npm run format:check # Prettier check
 
-# Job-AI
-npm run build:resume       # Build resume from default.json
+# Resume / LinkedIn
+npm run build:resume       # Build CV from default.json (add `short` via node for the one-page resume)
 npm run build:linkedin     # Generate LinkedIn banners
 ```
 
@@ -254,7 +257,8 @@ chore: update dependencies
 When building UI, respect these skills:
 
 - `web-design-guidelines` - Accessibility & best practices
-- `tailwind-design-system` - Design tokens & consistent patterns
-- `vercel-react-best-practices` - Performance optimization
+- `frontend-design` - Distinctive, production-grade UI
+
+Don't use Tailwind/shadcn or Next.js-specific skills here: styling is UnoCSS and the site is Astro with React islands.
 
 ---

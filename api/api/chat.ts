@@ -5,16 +5,16 @@ const knowledgeBase = {
     name: 'Rayko Azcue',
     title: 'Senior Software Engineer',
     tagline:
-      'Front End & Full Stack Engineer with 7+ years building scalable, performant web applications across SaaS, e-commerce, and enterprise platforms. Expert in Vue, Nuxt, React and TypeScript.',
+      'Front End & Full Stack Engineer with 8+ years building scalable, performant web applications across SaaS, e-commerce, and enterprise platforms. Expert in Vue, Nuxt, React and TypeScript.',
     location: 'Madrid, Spain',
     openTo:
-      'Remote globally within English or Spanish setup. On-site/hybrid with relocation (Latin America or Spain preferred)',
+      'Remote globally in English or Spanish, with hours compatible with the Cuba time zone. Relocation with family (visa sponsorship required, relocation package preferred) to Spain, Portugal, Latin America, Australia or other Mediterranean countries. Two-week notice period.',
     targetRoles: ['Front End Developer', 'Full Stack Developer'],
-    availability: 'Actively looking for new opportunities',
+    availability: 'Currently employed, open to relocation and new opportunities',
     languages: 'English (C1 - Advanced), Spanish (Native)',
   },
   summary:
-    'Front End & Full Stack Engineer with 7+ years building scalable, performant web applications across SaaS, e-commerce, and enterprise platforms. Expert in Vue, Nuxt, React and TypeScript. Focus areas include Core Web Vitals optimization, accessible UI, and pragmatic component design. Proven track record in remote-first distributed teams across US, Spain, and LATAM.',
+    'Front End & Full Stack Engineer with 8+ years building scalable, performant web applications across SaaS, e-commerce, and enterprise platforms. Expert in Vue, Nuxt, React and TypeScript. Focus areas include Core Web Vitals optimization, accessible UI, and pragmatic component design. Proven track record in remote-first distributed teams across US, Spain, and LATAM.',
   education: [
     {
       institution: 'University of Informatics Sciences',
@@ -38,9 +38,31 @@ const knowledgeBase = {
   },
   experience: [
     {
+      company: 'El Asadito SRL',
+      location: 'Remote, Havana, Cuba',
+      period: 'Jun 2026 – Present',
+      role: 'Software Engineer',
+      industry: 'Wholesale Beverage Distribution, ERP',
+      technologies: [
+        'Nuxt',
+        'Vue 3',
+        'Supabase',
+        'shadcn-vue',
+        'Tailwind',
+        'TypeScript',
+      ],
+      highlights: [
+        'Designing and building, as sole engineer, a company-wide ERP (Nuxt + Supabase) for a wholesale beverage distributor operating across three provinces; inventory, sales/distribution, logistics, commercial, invoicing, supplier reconciliation and finance modules are live for 6–20 daily users.',
+        'Replaced manual processes across departments, saving an estimated 30+ hours of work per week.',
+        'Reduced stock discrepancies by ~70% and brought cash discrepancies close to zero through consignment-based supplier reconciliation and inventory controls.',
+        'Built delivery and client-visit route planning for the company fleet on the openrouteservice (HeiGIT) routing API, and integrated supplier APIs for client and business data.',
+        'Delivered the full stack alone using agent coding workflows, with Supabase Auth and business logic in Postgres RPCs and Vercel Edge Functions.',
+      ],
+    },
+    {
       company: 'Delfín Motor Labs SL',
       location: 'Remote, Madrid, Spain',
-      period: 'Jan 2026 – Present',
+      period: 'Jan 2026 – Apr 2026',
       role: 'Senior Front End Developer',
       industry: 'E-commerce, Automotive',
       technologies: [
@@ -58,7 +80,7 @@ const knowledgeBase = {
         'Implemented comprehensive SEO strategy including meta tags, dynamic sitemap generation at build time, Schema markup, and canonical URLs; improved Core Web Vitals (LCP: 3.2s → 1.4s, CLS: 0.15 → 0.08) and increased organic traffic by 38%',
         'Leveraged Nuxt rendering strategies (SSR, SSG, SWR, ISR) with Cloudflare Page Rules, CDN, and caching; reduced TTFB by 52% (450ms → 220ms) and overall response times by 48%',
         'Implemented Stripe payment integration for end-user product purchases within the store',
-        'Set up GitHub Actions CI/CD workflows for staging and production environments',
+        'Set up GitHub Actions CI/CD workflows for staging and production with ESLint and auto-format checks; caught 28+ code quality issues before deployment, cut code review time by 35% and prevented 62% of deployment failures',
       ],
     },
     {
@@ -80,7 +102,7 @@ const knowledgeBase = {
         'Developed monetization/gamification consumer app with missions system (install apps, play games), points rewards, referral program with codes, daily missions, and redemption for 20+ gift card providers',
         'Delivered 120+ Jira tasks for internal CMS and consumer monetization app; ownership of product and tasks, delivery of critical features to production',
         'Implemented responsive pixel-perfect UIs from Figma mockups for high-quality user interfaces',
-        'Led gradual migration of Vue components from Vuetify to Tailwind; pushed when ~70% migrated, reducing bundle size by 19% and improving LCP from 9.1s to 6.6s',
+        'Led gradual migration of 40+ Vue components from Vuetify to Tailwind; pushed when ~70% migrated, reducing bundle size by 19% and improving LCP from 9.1s to 6.6s, contributing to a 15% conversion lift',
         'Implemented mechanism to track conversions and revenue per user via Google Analytics',
       ],
     },
@@ -106,7 +128,7 @@ const knowledgeBase = {
         "Architected and developed end-to-end CRM with RESTful APIs in Laravel for WooCommerce integration (products, customers, orders sync) and Panama's electronic billing system (YAML format, tax compliance), achieving near 100% delivery success rate",
         'Implemented CI/CD pipelines with automated code quality checks (PSR-12, PHPStan, PHPUnit), deployed backend to VPS and frontend to Vercel; reduced deployment time from ~20min to ~4min',
         'Integrated AWS S3 for secure file storage, Redis for caching, and Swagger for API documentation',
-        'Mentored 3 developers to improve code review approval rates',
+        'Mentored 3 junior developers, improving code review approval rate from 40% to 85% through code standards',
       ],
     },
     {
@@ -127,7 +149,7 @@ const knowledgeBase = {
       highlights: [
         'Spearheaded frontend for padel tournament system with scheduling, results, player registration & tracking, scoreboards, and tournament management',
         'Translated Figma into pixel-perfect React UI and increased admin flow completion by ~20%',
-        'Integrated React UI with Node.js/Express API; optimized data flow and API calls, cutting integration issues by ~30%',
+        'Integrated React UI with Node.js/Express API; optimized data flow and API calls, cutting integration issues by ~30%, and optimized local workflows with ngrok, shrinking backend feedback cycles from hours to minutes',
         'Wrote unit tests with React Testing Library for critical components and flows; improved code reliability and reduced support tickets',
       ],
     },
@@ -172,7 +194,7 @@ const knowledgeBase = {
       ],
       highlights: [
         'Built Angular modules for fuel logistics system (distribution, stations management, storage, cisterns)',
-        'Mentored junior developer (recent graduate, no framework experience) via pair programming and study roadmap',
+        'Mentored junior developer (recent graduate, no framework experience) via pair programming and study roadmap, shipping production features within a few weeks',
         'Improved critical logistics queries by ~25-30% via database optimizations (indexes, normalization/denormalization) and migrations from MySQL to PostgreSQL',
       ],
     },
@@ -180,7 +202,7 @@ const knowledgeBase = {
       company: 'Grupo de Electrónica para el Turismo (GET)',
       location: 'On-site, Havana, Cuba',
       period: 'Mar 2019 – Nov 2020',
-      role: 'Full Stack Developer',
+      role: 'Full Stack Developer (Junior)',
       industry: 'Public Sector & Logistics',
       technologies: [
         'Laravel 6',
@@ -198,7 +220,7 @@ const knowledgeBase = {
         'Implemented Elasticsearch integration reducing search times to under 1 second',
         'Deployed on-premise version at Ministry (no internet, subnet only); manual deployment, stakeholder communication, infrastructure team coordination',
         'Implemented authentication via email + password + client selector',
-        'Designed and implemented RESTful APIs for hotel restaurant reservation system (Express.js/Sequelize/PostgreSQL) with booking, availability, and menus for restaurants within hotels; improved booking completion by ~15%',
+        'Designed and implemented RESTful APIs for hotel restaurant reservation system (Express.js/Sequelize/PostgreSQL) with booking, availability, menus for restaurants within hotels, dynamic pricing and automated notifications; improved booking completion by ~15%',
       ],
     },
     {

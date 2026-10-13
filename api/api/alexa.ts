@@ -32,14 +32,14 @@ const knowledgeBase = {
     name: 'Rayko Azcue',
     title: 'Senior Software Engineer',
     tagline:
-      'Front End & Full Stack Engineer with 7+ years building scalable, performant web applications. Expert in Vue, Nuxt, React and TypeScript.',
+      'Front End & Full Stack Engineer with 8+ years building scalable, performant web applications. Expert in Vue, Nuxt, React and TypeScript.',
     location: 'Madrid, Spain',
     openTo:
-      'Remote globally within English or Spanish setup. On-site/hybrid with relocation to Latin America or Spain.',
+      'Remote globally in English or Spanish, with hours compatible with the Cuba time zone. Relocation with family (visa sponsorship required, relocation package preferred) to Spain, Portugal, Latin America, Australia or other Mediterranean countries. Two-week notice period.',
     targetRoles: ['Front End Developer', 'Full Stack Developer'],
-    availability: 'Actively looking for new opportunities',
+    availability: 'Currently employed, open to relocation and new opportunities',
     languages: 'English (C1 - Advanced), Spanish (Native)',
-    yearsOfExperience: 7,
+    yearsOfExperience: 8,
   },
   contact: {
     email: 'razcue@yandex.com',
@@ -47,11 +47,11 @@ const knowledgeBase = {
     website: 'razcue.github.io',
   },
   currentRole: {
-    company: 'Delfín Motor Labs SL',
-    role: 'Senior Front End Developer',
-    period: 'Jan 2026 - Present',
-    location: 'Remote, Madrid, Spain',
-    industry: 'E-commerce, Automotive',
+    company: 'El Asadito SRL',
+    role: 'Software Engineer',
+    period: 'Jun 2026 - Present',
+    location: 'Remote, Havana, Cuba',
+    industry: 'Wholesale Beverage Distribution',
   },
   skills: {
     primary: ['Vue', 'Nuxt', 'React', 'Astro', 'TypeScript', 'JavaScript'],
@@ -89,8 +89,8 @@ function getStaticResponse(intentName: string, locale: string): string | null {
       es: 'Mi nombre es Rayko Azcue. Soy Ingeniero de Software Senior.',
     },
     GetTitleIntent: {
-      en: 'I am a Senior Front End and Full Stack Engineer with over 7 years of experience building web applications.',
-      es: 'Soy Ingeniero Front End y Full Stack Senior con más de 7 años de experiencia construyendo aplicaciones web.',
+      en: 'I am a Senior Front End and Full Stack Engineer with over 8 years of experience building web applications.',
+      es: 'Soy Ingeniero Front End y Full Stack Senior con más de 8 años de experiencia construyendo aplicaciones web.',
     },
     GetSummaryIntent: {
       en: `I am ${knowledgeBase.person.name}, ${knowledgeBase.person.tagline} I specialize in Vue, Nuxt, React and TypeScript, with experience in e-commerce, SaaS, and enterprise platforms.`,
@@ -110,7 +110,7 @@ function getStaticResponse(intentName: string, locale: string): string | null {
     },
     GetAvailabilityIntent: {
       en: knowledgeBase.person.availability,
-      es: `Estoy ${knowledgeBase.person.availability.toLowerCase()}.`,
+      es: 'Actualmente estoy empleado, abierto a reubicación y a nuevas oportunidades.',
     },
     GetLocationIntent: {
       en: `I am based in ${knowledgeBase.person.location}.`,

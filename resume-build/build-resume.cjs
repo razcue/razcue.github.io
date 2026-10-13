@@ -14,6 +14,7 @@
   *   node build-resume.cjs default
   *   node build-resume.cjs default short    # Build short resume with highlights
   *   node build-resume.cjs 2025-02-10-google short    # Build short tailored resume
+  *   node build-resume.cjs path/to/resume.json --out path/to/dir   # Config file + output dir
   *
   * Config files:
   *   - resume-build/configs/default.json (base profile, contact, education)
@@ -48,7 +49,10 @@ const OUTPUT_DIR = path.join(__dirname, '..', 'public');
  * Load config file
  */
 function loadConfig(configName) {
-  const configPath = path.join(CONFIGS_DIR, `${configName}.json`);
+  // Accept a path to a config file (e.g. a private job-hunt application folder)
+  const configPath = configName.endsWith('.json')
+    ? path.resolve(configName)
+    : path.join(CONFIGS_DIR, `${configName}.json`);
 
   if (!fs.existsSync(configPath)) {
     console.error(`❌ Config not found: ${configPath}`);
@@ -182,7 +186,9 @@ function renderResume(templateSource, config, isShort) {
     location: config.contactInfo.location || '',
     phone: config.contactInfo.phone || '',
     email: config.contactInfo.email || '',
-    website: config.contactInfo.website || '',
+    website: (config.contactInfo.website || '').replace(/^https?:\/\//, ''),
+    // Optional line under the contact info, e.g. "Open to relocation · Visa sponsorship required"
+    availability: config.contactInfo.availability || '',
     summary: config.summary || null,
     skills: config.skills || null,
     education: config.education || [],
@@ -249,7 +255,7 @@ function savePositionHistory(entry) {
 /**
  * Main build function
  */
-async function buildResume(configName, positionJsonPath, isShort) {
+async function buildResume(configName, positionJsonPath, isShort, outputDir = OUTPUT_DIR) {
   console.log(`\n📄 Building resume from config: ${configName}${isShort ? ' (SHORT)' : ''}\n`);
 
   try {
@@ -280,7 +286,8 @@ async function buildResume(configName, positionJsonPath, isShort) {
     console.log('   ✅ HTML rendered');
 
     // Save HTML (for debugging)
-    const htmlOutputPath = path.join(OUTPUT_DIR, 'resume.html');
+    fs.mkdirSync(outputDir, { recursive: true });
+    const htmlOutputPath = path.join(outputDir, 'resume.html');
     fs.writeFileSync(htmlOutputPath, html);
     console.log(`   📝 HTML saved: ${htmlOutputPath}`);
 
@@ -291,8 +298,8 @@ async function buildResume(configName, positionJsonPath, isShort) {
     const pdfFilename =
       configName === 'default'
         ? (isShort ? 'Rayko_Azcue_Resume.pdf' : 'Rayko_Azcue_CV.pdf')
-        : `resume-${configName}${isShort ? '-short' : ''}.pdf`;
-    const pdfOutputPath = path.join(OUTPUT_DIR, pdfFilename);
+        : `resume-${path.basename(configName, '.json')}${isShort ? '-short' : ''}.pdf`;
+    const pdfOutputPath = path.join(outputDir, pdfFilename);
 
     await htmlToPdf(html, pdfOutputPath);
     console.log(`   📄 PDF saved: ${pdfOutputPath}`);
@@ -342,6 +349,12 @@ async function buildResume(configName, positionJsonPath, isShort) {
 // CLI execution
 if (require.main === module) {
   const args = process.argv.slice(2);
+
+  // Optional --out <dir> to write the HTML/PDF somewhere other than public/
+  const outIdx = args.indexOf('--out');
+  const outputDir = outIdx !== -1 ? path.resolve(args[outIdx + 1]) : OUTPUT_DIR;
+  if (outIdx !== -1) args.splice(outIdx, 2);
+
   const configName = args[0] || 'default';
 
   // Check for 'short' flag anywhere in args
@@ -350,7 +363,7 @@ if (require.main === module) {
   // positionJsonPath is the last arg if it's not 'short'
   const positionJsonPath = args.find((arg, idx) => idx > 0 && arg !== 'short') || null;
 
-  buildResume(configName, positionJsonPath, isShort);
+  buildResume(configName, positionJsonPath, isShort, outputDir);
 }
 
 module.exports = { buildResume };

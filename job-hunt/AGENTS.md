@@ -1,34 +1,11 @@
 # Job-Hunt
 
-Automated job-hunting workflow that runs completely on autopilot with no user validation.
+Deep job search and application prep. Never sends emails or applies; never records companies or personal data in the repo (it's public).
 
----
+**Trigger phrases:** "run job-hunt", "find jobs", "search openings", "prepare application"
 
-## When to Use
+**Priorities:** relocation with visa sponsorship and a family package first, remote roles second. Details are in `preferences.md` (private, git-ignored; template in `preferences.example.md`).
 
-Use this agent skill when:
-- User wants fully automated job search (no manual approval)
-- User wants to set up and forget the job hunting process
-- Simple outreach workflow without complex application tracking
+**Workflow:** search → shortlist and skill questions (wait for approval) → per-job brief, email and tailored resume in `job-hunt/applications/` (git-ignored)
 
-**Trigger phrases:**
-- "run job-hunt"
-- "start job hunt"
-- "automate job search"
-
----
-
-## Workflow Overview
-
-```
-1. SEARCH → Find job opportunities via web search
-2. CHECK → Verify against current companies.json
-3. OUTREACH → Send email via yandex-mailer
-4. UPDATE → Update companies.json with contact history
-```
-
----
-
-## Skills
-
-- `job-hunt` skill: Complete automated job search workflow
+**Skills:** `job-hunt` (`skills/job-hunt/SKILL.md`), `resume-build` (`../resume-build/skills/resume-build/SKILL.md`)

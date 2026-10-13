@@ -155,14 +155,13 @@
       <h1>Rayko Azcue Pérez</h1>
       <div class="header-divider"></div>
       <div class="contact-info">
-        {{#if (eq language "es")}}La Habana, Cuba • +53 5476-1244 •
-        <a href="mailto:razcue@yandex.com">razcue@yandex.com</a> •
-        <a href="https://razcue.github.io" target="_blank">razcue.github.io</a>
-        {{else}}Havana, Cuba • +53 5476-1244 •
-        <a href="mailto:razcue@yandex.com">razcue@yandex.com</a> •
-        <a href="https://razcue.github.io" target="_blank">razcue.github.io</a>
-        {{/if}}
+        {{location}} • {{phone}} •
+        <a href="mailto:{{email}}">{{email}}</a> •
+        <a href="https://{{website}}" target="_blank">{{website}}</a>
       </div>
+      {{#if availability}}
+      <div class="contact-info">{{availability}}</div>
+      {{/if}}
     </div>
 
     <!-- Professional Summary -->
