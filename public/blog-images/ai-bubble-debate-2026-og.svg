@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="AI Bubble Debate 2026">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" x2="1">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Stars -->
+  <g fill="#fff" opacity="0.06">
+    <circle cx="80" cy="60" r="2" />
+    <circle cx="200" cy="120" r="1.6" />
+    <circle cx="980" cy="40" r="1.8" />
+    <circle cx="640" cy="90" r="1.2" />
+    <circle cx="1040" cy="180" r="1.4" />
+    <circle cx="520" cy="10" r="1.0" />
+  </g>
+
+  <!-- Title block -->
+  <g transform="translate(96,100)" font-family="Inter, Roboto, sans-serif">
+    <text x="0" y="0" font-size="52" fill="white" font-weight="800">The </text>
+    <text x="112" y="0" font-size="52" fill="url(#title)" font-weight="800">AI Bubble</text>
+    <text x="0" y="70" font-size="52" fill="white" font-weight="800">Mar–Oct 2026</text>
+    <text x="0" y="140" font-size="20" fill="#a5b4fc" opacity="0.9">How the debate changed, March to October</text>
+  </g>
+
+  <!-- Keyword collage - right side, moved down -->
+  <g transform="translate(650,160)" font-family="Inter, Roboto, sans-serif">
+    <!-- Top layer -->
+    <text x="80" y="30" font-size="36" fill="#22c55e" opacity="0.8" font-weight="700">Productivity</text>
+    <text x="320" y="55" font-size="28" fill="#ef4444" opacity="0.7" font-weight="600">Valuations</text>
+    <text x="0" y="85" font-size="24" fill="#e2e8f0" opacity="0.5" font-weight="500">Revenue</text>
+    <text x="200" y="115" font-size="32" fill="#22c55e" opacity="0.6" font-weight="600">Growth</text>
+    
+    <!-- Middle layer -->
+    <text x="350" y="145" font-size="20" fill="#ef4444" opacity="0.5">Correction</text>
+    <text x="50" y="170" font-size="22" fill="#a5b4fc" opacity="0.6">Investment</text>
+    <text x="280" y="195" font-size="18" fill="#e2e8f0" opacity="0.4">Infrastructure</text>
+    <text x="100" y="220" font-size="26" fill="#22c55e" opacity="0.5">Real ROI</text>
+    
+    <!-- Bottom layer -->
+    <text x="350" y="250" font-size="16" fill="#ef4444" opacity="0.4">Bubble</text>
+    <text x="0" y="275" font-size="20" fill="#a5b4fc" opacity="0.4">Capital</text>
+    <text x="180" y="300" font-size="18" fill="#e2e8f0" opacity="0.35">Hyperscalers</text>
+    <text x="320" y="325" font-size="22" fill="#22c55e" opacity="0.4">Enterprise</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="96" y="570" font-family="Inter, Roboto, sans-serif" font-size="20" fill="#9fbffb" opacity="0.85">Article by Rayko Azcue</text>
+</svg>

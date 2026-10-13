@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#071233"/>
+    </linearGradient>
+    <!-- Add custom gradients here -->
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Stars (decorative) -->
+  <g fill="#fff" opacity="0.06">
+    <circle cx="80" cy="60" r="2" />
+    <circle cx="200" cy="120" r="1.6" />
+    <circle cx="980" cy="40" r="1.8" />
+    <circle cx="640" cy="90" r="1.2" />
+    <circle cx="1040" cy="180" r="1.4" />
+    <circle cx="520" cy="10" r="1.0" />
+  </g>
+
+  <!-- 
+    LAYOUT REFERENCE (from astro-changes-everything-og.svg):
+    - Title block transform: translate(96,100)
+    - Last title line at y=68 (font-size: 64) or y=70 (font-size: 52)
+    - Subtitle: 70px below last title line (y=138 or y=140)
+    - Graphic area: x=650-1100 (right side)
+    - Footer: y=570 (font-size: 20)
+  -->
+
+  <!-- Title block - START -->
+  <g transform="translate(96,100)" font-family="Inter, Roboto, sans-serif">
+    <!-- INSERT TITLE LINES HERE -->
+    <!-- Example: <text x="0" y="0" font-size="52" fill="white" font-weight="800">Title</text> -->
+  </g>
+  <!-- Title block - END -->
+
+  <!-- INSERT GRAPHIC HERE -->
+  <!-- <g transform="translate(650,100)"> ... </g> -->
+
+  <!-- Footer -->
+  <text x="96" y="570" font-family="Inter, Roboto, sans-serif" font-size="20" fill="#9fbffb" opacity="0.85">Article by Rayko Azcue</text>
+</svg>

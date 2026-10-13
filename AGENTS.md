@@ -41,7 +41,8 @@ For automated job search, see `job-hunt/AGENTS.md`.
 
 ## Blog Article Workflow
 
-When asked to create a new blog article, follow this process:
+When asked to create, rewrite or review a blog article, use the project skill `bilingual-blog-post`
+(`.claude/skills/bilingual-blog-post/SKILL.md`). It holds the full conventions. Summary of the process:
 
 ### 1. Brainstorm & Research
 
@@ -88,6 +89,7 @@ When asked to create a new blog article, follow this process:
 ### 6. Create Spanish Article (only after EN is approved)
 
 - Location: `src/content/blog/es/`
+- **Same English filename/slug as the EN article** (e.g. `es/ai-bubble-debate-2026.mdx`), so switching language only toggles `/es`
 - Translate content maintaining structure and tone
 - Update sitemap with ES URL
 
@@ -137,8 +139,8 @@ Content here...
 
 ## Resources
 
-- [Link](URL) - Description
-- [Link](URL) - Description
+- [Link title](URL)
+- [Link title](URL)
 
 ---
 
@@ -161,10 +163,12 @@ _Call to action_
 | `seo-audit`                   | Audit portfolio for SEO issues                  |
 | `frontend-design`             | Build UI components, landing pages              |
 | `web-design-guidelines`       | Review UI for accessibility/best practices      |
-| `programmatic-seo`            | Create SEO pages at scale                       |
-| `vercel-react-best-practices` | React/Next.js performance optimization          |
-| `tailwind-design-system`      | Build scalable design systems with Tailwind CSS |
-| `dogfood`                     | Exploratory testing, find UX issues             |
+| `analytics-tracking`          | Set up or audit analytics                       |
+| `brainstorming`               | Explore ideas before building                   |
+
+Project skills (`.claude/skills/`): `bilingual-blog-post`, `job-hunt`, `resume-build`.
+
+Styling is UnoCSS, not Tailwind: don't use Tailwind/shadcn-specific skills here.
 
 ---
 
